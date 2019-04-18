@@ -1,0 +1,41 @@
+aemdc-files/
+target/
+core/target/
+ui.apps/target/
+
+*.iml
+*DoNotIncludeInGit.*
+.classpath
+
+.project
+.settings/
+
+!sling/auth
+sling/!auth
+out
+npm-debug.log
+
+
+.DS_Store
+node
+node_modules
+fragment-viewer
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
