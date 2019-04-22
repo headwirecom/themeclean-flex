@@ -9,5 +9,6 @@
             sling:resourceType="themecleanflex/components/page"
             jcr:title="themecleanflex template"
             brand="themecleanflex"
+            siteCSS="[/etc/felibs/themecleanflex.css]"
     />
 </jcr:root>
