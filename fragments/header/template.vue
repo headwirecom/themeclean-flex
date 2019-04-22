@@ -1,5 +1,5 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <nav class="navbar align-items-center navbar-light w-100" v-bind:class="{'navbar-expand-lg': model.collapsed === 'false','navbar-light': model.colorscheme === 'light','navbar-dark': model.colorscheme === 'dark'}">
       <h1 v-if="editAndEmpty">Configure Header</h1>
       <!-- Logo -->
@@ -16,12 +16,12 @@
       </button>
       <!-- Collapsible Menu -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <themeclean-components-textlinks v-bind:model="model"></themeclean-components-textlinks>
-        <themeclean-components-menubuttons v-bind:model="model"></themeclean-components-menubuttons>
+        <themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>
+        <themecleanflex-components-menubuttons v-bind:model="model"></themecleanflex-components-menubuttons>
       </div>
       <div v-if="isEditAndEmpty">no content defined for component</div>
     </nav>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

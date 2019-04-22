@@ -1,5 +1,5 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <div class="col-12 col-md-10">
       <div class="perIsEditAndEmpty" v-if="isEditAndEmpty">no content defined for component</div>
       <div class="row">
@@ -14,7 +14,7 @@
         }">
         <div class="col col-md-auto pb-3" v-if="model.showmedia == 'true'"
         v-bind:style="{width:`${model.mediawidth}%`}">
-          <themeclean-components-media :model="model"></themeclean-components-media>
+          <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
         <div class="col-12 col-md py-3 py-md-0 d-flex flex-column">
           <!-- Tab Nav -->
@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

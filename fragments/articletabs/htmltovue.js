@@ -1,7 +1,7 @@
 module.exports = {
     convert: function($, f) {
         //f.bindPath($)
-    	f.wrap($, 'themeclean-components-block')
+    	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
     	f.addFor($.find('li.nav-item').first(), 'model.tabs')
         let a = $.find('a').first()

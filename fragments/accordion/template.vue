@@ -1,5 +1,5 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <div class="col-12 col-md-10">
       <div class="perIsEditAndEmpty" v-if="isEditAndEmpty">no content defined for component</div>
       <h2 class="text-center pb-4" v-if="model.showtitle == 'true'"
@@ -7,7 +7,7 @@
       <div class="row" v-bind:class="model.mediaposition === 'after' ? 'flex-row-reverse': 'flex-row'">
         <div class="col-12 col-md-auto p-0 pb-3 p-md-3" v-if="model.showmedia === 'true'"
         v-bind:style="{width:`${model.mediawidth}%`}">
-          <themeclean-components-media :model="model"></themeclean-components-media>
+          <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
         <!-- Card Container -->
         <div class="col-12 col-md p-0 border-0" v-bind:id="`accordion${_uid}`">
@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

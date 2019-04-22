@@ -1,10 +1,10 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <div class="article col-12 col-md-8">
       <div v-html="model.text"></div>
       <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

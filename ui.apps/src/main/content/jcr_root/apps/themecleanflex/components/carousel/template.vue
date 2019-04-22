@@ -1,5 +1,5 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <div class="carousel slide w-100 text-light" ref="pcmscarousel" v-bind:style="`height:${model.carouselheight}vh;`"
     v-bind:id="name">
       <ol class="carousel-indicators" v-if="model.indicators === 'true'">
@@ -32,7 +32,7 @@
         </div>
       </a>
     </div>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

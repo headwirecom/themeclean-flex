@@ -1,5 +1,5 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <div class="d-flex flex-column col-12 col-md-10 justify-content-between align-items-center"
     v-bind:class="{
             'flex-md-row-reverse': model.buttonside === 'left',
@@ -36,7 +36,7 @@
       </div>
       <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <div class="col-12 col-md-10 align-items-center">
       <div class="d-flex col-12 p-0" v-bind:class="{
             'justify-content-start': model.aligncontent === 'left',
@@ -39,7 +39,7 @@
       </div>
       <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

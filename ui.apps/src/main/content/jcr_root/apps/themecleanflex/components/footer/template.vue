@@ -1,5 +1,5 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <footer class="col-12">
       <div class="row justify-content-between text-center text-md-left">
         <div class="col-12 col-md-auto" v-if="model.showlogo === 'true' &amp;&amp; model.logo">
@@ -19,11 +19,11 @@
         <div class="col-md-6">
           <p v-html="model.copyright"></p>
         </div>
-        <themeclean-components-socialicons v-bind:model="model"></themeclean-components-socialicons>
+        <themecleanflex-components-socialicons v-bind:model="model"></themecleanflex-components-socialicons>
       </div>
       <div v-if="isEditAndEmpty">no content defined for component</div>
     </footer>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

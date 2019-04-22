@@ -1,9 +1,9 @@
 module.exports = {
     convert: function($, f) {
-    	f.wrap($, 'themeclean-components-block')
+    	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
 
-        f.replace( $.find('img'), '<themeclean-components-media :model="model"></themeclean-components-media>')
+        f.replace( $.find('img'), '<themecleanflex-components-media :model="model"></themecleanflex-components-media>')
 
         let imageDiv = $.find('div.col-md-auto').first()
         f.addIf( imageDiv, 'model.showmedia == \'true\'')

@@ -1,6 +1,6 @@
 module.exports = {
     convert: function($, f) {
-    	f.wrap($, 'themeclean-components-block')
+    	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
 
         //Header
@@ -16,7 +16,7 @@ module.exports = {
         let mediaDiv  = $.find('div.row>div').first()
         f.addIf( mediaDiv, "model.showmedia === 'true'")
         f.bindAttribute( mediaDiv, 'style', "{width:`${model.mediawidth}%`}")
-        f.replace( mediaDiv.find('img'), '<themeclean-components-media :model="model"></themeclean-components-media>')
+        f.replace( mediaDiv.find('img'), '<themecleanflex-components-media :model="model"></themecleanflex-components-media>')
 
         //Accordion Container
         let accordionContainer = $.find('div.col-12').eq(1)

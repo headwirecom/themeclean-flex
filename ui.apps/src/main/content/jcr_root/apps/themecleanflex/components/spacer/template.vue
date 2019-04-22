@@ -1,10 +1,10 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <div>
       <div v-bind:style="`height:${model.height}vh;`"></div>
       <div v-if="isEditAndEmpty">height needs to be greater than 0</div>
     </div>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

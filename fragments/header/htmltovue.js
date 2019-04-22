@@ -1,7 +1,7 @@
 module.exports = {
     convert: function($, f) {
         //f.bindPath($)
-    	f.wrap($, 'themeclean-components-block')
+    	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
         f.addIf($.find('h1').first(), 'editAndEmpty')
         f.addIf($.find('span.navbar-logo a').first(), 'model.logo')
@@ -17,7 +17,7 @@ module.exports = {
     	f.bindAttribute($.find('img').first(), 'alt', 'model.logoalttext')
         f.addStyle($.find('img').first(), 'height', 'parseInt(model.logosize)', 'px')
 
-    	f.replace( $.find('div.textlink').eq(0), '<themeclean-components-textlinks v-bind:model="model"></themeclean-components-textlinks>')
-    	f.replace( $.find('div.menubutton').eq(0), '<themeclean-components-menubuttons v-bind:model="model"></themeclean-components-menubuttons>')
+    	f.replace( $.find('div.textlink').eq(0), '<themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>')
+    	f.replace( $.find('div.menubutton').eq(0), '<themecleanflex-components-menubuttons v-bind:model="model"></themecleanflex-components-menubuttons>')
     }
 }

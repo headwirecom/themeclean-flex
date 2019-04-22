@@ -1,5 +1,5 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <div class="col-12 col-md-8">
       <!-- Tab List -->
       <ul class="nav nav-pills d-flex justify-content-center" id="myTab" role="tablist">
@@ -33,7 +33,7 @@
         </div>
       </div>
     </div>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

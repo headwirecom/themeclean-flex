@@ -1,5 +1,5 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <div class="card-deck justify-content-center">
       <div class="perIsEditAndEmpty" v-if="isEditAndEmpty">no content defined for component</div>
       <div class="col-12 col-md-6 col-lg p-0 pb-md-3"
@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

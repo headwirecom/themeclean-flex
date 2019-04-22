@@ -1,5 +1,5 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <div class="col-12 col-md-8 article">
       <hr class="line" v-if="model.blockquote == 'false'" v-bind:class="{
             'border-secondary': model.colorscheme === '',
@@ -20,7 +20,7 @@
             'border-light' : model.colorscheme === 'dark'
         }" v-bind:style="`width:${`${model.linewidth}%`};`">
     </div>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <div class="d-flex justify-content-between col-12 col-md-8">
       <div class="perIsEditAndEmpty" v-if="isEditAndEmpty">no content defined for component</div>
       <a class="btn btn-sm percms-btn-pager"
@@ -13,7 +13,7 @@
             'btn-outline-primary': model.next !== 'unknown'
         }">{{model.nextlabel}}</a>
     </div>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>

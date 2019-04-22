@@ -1,10 +1,10 @@
 <template>
-  <themeclean-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model">
     <div v-bind:style="{flexBasis:`${model.mediawidth}%`}">
-      <themeclean-components-media v-bind:model="model"></themeclean-components-media>
+      <themecleanflex-components-media v-bind:model="model"></themecleanflex-components-media>
       <div class="perIsEditAndEmpty" v-if="isEditAndEmpty"></div>
     </div>
-  </themeclean-components-block>
+  </themecleanflex-components-block>
 </template>
 
 <script>
