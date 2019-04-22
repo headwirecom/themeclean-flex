@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./src/main/content/buildscripts/buildvue.js themeclean-flex",
-    "build:styles": "postcss -c ./postcss.config.js -o ./src/main/content/jcr_root/etc/felibs/themeclean-flex/css/build.css ./src/main/content/jcr_root/etc/felibs/themeclean-flex/css/styles.css"
+    "build": "node ./src/main/content/buildscripts/buildvue.js themecleanflex",
+    "build:styles": "postcss -c ./postcss.config.js -o ./src/main/content/jcr_root/etc/felibs/themecleanflex/css/build.css ./src/main/content/jcr_root/etc/felibs/themecleanflex/css/styles.css"
   },
   "author": "",
   "license": "Apache-2.0",

@@ -20,12 +20,12 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.themeclean-flex</groupId>
-    <artifactId>themeclean-flex-parent</artifactId>
+    <groupId>com.themecleanflex</groupId>
+    <artifactId>themecleanflex-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <description>themeclean-flex Parent POM</description>
+    <description>themecleanflex Parent POM</description>
 
     <!--
         ATTENTION: This archetype creates two modules: 'core' and 'ui.apps'

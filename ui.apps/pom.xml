@@ -23,8 +23,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>themeclean-flex-parent</artifactId>
-        <groupId>com.themeclean-flex</groupId>
+        <artifactId>themecleanflex-parent</artifactId>
+        <groupId>com.themecleanflex</groupId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -32,7 +32,7 @@
     <artifactId>ui.apps</artifactId>
     <packaging>content-package</packaging>
 
-    <name>themeclean-flex - UI Apps</name>
+    <name>themecleanflex - UI Apps</name>
     <description>
         This is an empty JCR Package where the JCR Content
         can be deployed with.
@@ -143,7 +143,7 @@
                             <goal>package</goal>
                         </goals>
                         <configuration>
-                            <embeddedTarget>/apps/themeclean-flex/install</embeddedTarget>
+                            <embeddedTarget>/apps/themecleanflex/install</embeddedTarget>
                             <embeddeds>
                                 <embedded>
                                     <groupId>${project.groupId}</groupId>

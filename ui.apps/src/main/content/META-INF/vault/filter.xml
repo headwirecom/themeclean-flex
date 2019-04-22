@@ -13,20 +13,20 @@
         filter list and add filter entries until all of the app provides
         nodes are included but none of the customer generatedd nodes.
 
-        Also any sub pckage of this module needs to exclude /apps/themeclean-flex/install
+        Also any sub pckage of this module needs to exclude /apps/themecleanflex/install
         folder otherwise they wipe all installed bundles.
     -->
-    <filter root="/content/sites/themeclean-flex"/>
-    <filter root="/content/assets/themeclean-flex"/>
-    <filter root="/content/objects/themeclean-flex"/>
-    <filter root="/content/templates/themeclean-flex"/>
-    <filter root="/etc/felibs/themeclean-flex"/>
+    <filter root="/content/sites/themecleanflex"/>
+    <filter root="/content/assets/themecleanflex"/>
+    <filter root="/content/objects/themecleanflex"/>
+    <filter root="/content/templates/themecleanflex"/>
+    <filter root="/etc/felibs/themecleanflex"/>
     <!--
         Need to exclude the Install folder otherwise the Bundle will be undeployed
-        as it is in the '/apps/themeclean-flex/install' folder (see the 'all'
+        as it is in the '/apps/themecleanflex/install' folder (see the 'all'
         package).
     -->
-    <filter root="/apps/themeclean-flex">
-        <exclude pattern="/apps/themeclean-flex/install/.*"/>
+    <filter root="/apps/themecleanflex">
+        <exclude pattern="/apps/themecleanflex/install/.*"/>
     </filter>
 </workspaceFilter>
