@@ -1,0 +1,26 @@
+{
+  "definitions": {
+    "Flexbox": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "select": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Choose Type",
+          "x-form-type": "materialselect",
+          "properties": {
+            "type1": {
+              "x-form-name": "Row",
+              "x-form-value": "flex-row"
+            },
+            "type2": {
+              "x-form-name": "Column",
+              "x-form-value": "flex-column"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,27 +1,25 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="col-12 col-md-10">
-      <div class="perIsEditAndEmpty" v-if="isEditAndEmpty">no content defined for component</div>
+    <div>
       <h2 class="text-center pb-4" v-if="model.showtitle == 'true'"
       v-html="model.title"></h2>
-      <div class="row" v-bind:class="model.mediaposition === 'after' ? 'flex-row-reverse': 'flex-row'">
-        <div class="col-12 col-md-auto p-0 pb-3 p-md-3" v-if="model.showmedia === 'true'"
-        v-bind:style="{width:`${model.mediawidth}%`}">
+      <div class="flex" v-for="(item,i) in model.accordiontoggle" :key="i"
+      v-bind:class="model.mediaposition === 'after' ? 'flex-row-reverse': 'flex-row'">
+        <div class="w-1/2" v-bind:class="model.mediaposition === 'after' ? 'flex-row-reverse': 'flex-row'"
+        v-if="model.showmedia === 'true'" v-bind:style="{width:`${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
         <!-- Card Container -->
-        <div class="col-12 col-md p-0 border-0" v-bind:id="`accordion${_uid}`">
-          <!-- Card Items -->
-          <div class="item card bg-transparent border-0" v-for="(item,i) in model.accordiontoggle"
-          :key="i">
-            <a aria-expanded="false" class="d-flex justify-content-between align-items-center card-header border-0 bg-transparent px-3"
-            ref="collapsible" data-toggle="collapse" v-bind:data-parent="model.toggletype === 'accordion' ? `#accordion${_uid}` : ''"
+        <div class="w-1/2" v-bind:class="model.mediaposition === 'after' ? 'flex-row-reverse': 'flex-row'">
+          <div class="pb-6" v-bind:class="model.mediaposition === 'after' ? 'flex-row-reverse': 'flex-row'"
+          v-bind:id="`accordion${_uid}`">
+            <a class="flex justify-between items-center pb-4" v-bind:data-parent="model.toggletype === 'accordion' ? `#accordion${_uid}` : ''"
             v-bind:href="`#accordion${_uid}${i}`" v-bind:aria-controls="`accordion${_uid}${i}`">
               <h4 v-html="item.title"></h4>
-              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              <i class aria-hidden="true">x</i>
             </a>
-            <div class="collapse" role="tabpanel" v-bind:id="`accordion${_uid}${i}`">
-              <div class="card-body p-0 px-3 bg-transparent border-0" v-html="item.text"></div>
+            <div class role="tabpanel" v-bind:class="model.mediaposition === 'after' ? 'flex-row-reverse': 'flex-row'">
+              <div class v-bind:class="model.mediaposition === 'after' ? 'flex-row-reverse': 'flex-row'">Toggle content 1</div>
             </div>
           </div>
         </div>

@@ -1,25 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="col-12 col-md-8 article">
-      <hr class="line" v-if="model.blockquote == 'false'" v-bind:class="{
-            'border-secondary': model.colorscheme === '',
-            'border-dark' : model.colorscheme === 'light',
-            'border-light' : model.colorscheme === 'dark'
-        }" v-bind:style="`width:${`${model.linewidth}%`};`">
-      <div class="text-center" v-html="model.text" v-bind:class="{
-            'percms-blockquote': model.blockquote === 'true',
-            'border-secondary': model.colorscheme === '',
-            'border-dark' : model.colorscheme === 'light',
-            'border-light' : model.colorscheme === 'dark'
-        }"></div>
-      <div class="perIsEditAndEmpty" v-if="isEditAndEmpty">no content defined for component</div>
-      <hr class="line" v-if="model.blockquote == 'false'"
-      v-bind:class="{
-            'border-secondary': model.colorscheme === '',
-            'border-dark' : model.colorscheme === 'light',
-            'border-light' : model.colorscheme === 'dark'
-        }" v-bind:style="`width:${`${model.linewidth}%`};`">
-    </div>
+    <div class="text-center border-t border-b border-grey p-4">Non iure eaque et cumque quas tempore. Molestiae iusto deleniti. Eos distinctio
+      ipsum consequuntur exercitationem amet distinctio dolor ut.</div>
   </themecleanflex-components-block>
 </template>
 

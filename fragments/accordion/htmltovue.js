@@ -6,20 +6,20 @@ module.exports = {
         //Header
     	f.addIf($.find('h2').first(), 'model.showtitle == \'true\'')
         f.mapRichField($.find('h2').first(), "model.title")
-        f.addFor($.find('div.card').first(), 'model.accordiontoggle')
+        f.addFor($.find('div>div').first(), 'model.accordiontoggle')
 
         //Content Container
-        let contentDiv = $.find('div.row')
+        let contentDiv = $.find('div>div')
         f.bindAttribute(  contentDiv,  'class', "model.mediaposition === 'after' ? 'flex-row-reverse': 'flex-row'", false)
 
         //Media
-        let mediaDiv  = $.find('div.row>div').first()
+        let mediaDiv  = contentDiv.find('div').first()
         f.addIf( mediaDiv, "model.showmedia === 'true'")
         f.bindAttribute( mediaDiv, 'style', "{width:`${model.mediawidth}%`}")
         f.replace( mediaDiv.find('img'), '<themecleanflex-components-media :model="model"></themecleanflex-components-media>')
 
         //Accordion Container
-        let accordionContainer = $.find('div.col-12').eq(1)
+        let accordionContainer = $.find('div:nth-child(1)').eq(1)
         // f.bindAttribute( accordionContainer, 'id', "model.toggletype === 'accordion' ? `accordion${_uid}` : ''")
         f.bindAttribute( accordionContainer, 'id', "`accordion${_uid}`")
 

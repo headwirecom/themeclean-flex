@@ -1,8 +1,11 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="article col-12 col-md-8">
-      <div v-html="model.text"></div>
-      <div v-if="isEditAndEmpty">no content defined for component</div>
+    <div>Consequuntur unde ipsum. Ullam ut voluptates laboriosam numquam voluptatem
+      molestias. Quod quaerat ipsam. Nisi dolorem minus blanditiis necessitatibus
+      magnam. Asperiores est qui et assumenda. Magnam molestiae eveniet. Rerum
+      eos ut cum maxime ex. Non porro occaecati et quibusdam animi atque sunt.
+      <div
+      v-if="isEditAndEmpty">no content defined for component</div>
     </div>
   </themecleanflex-components-block>
 </template>

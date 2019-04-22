@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "Row",
+          "value": "flex-row"
+        },
+        {
+          "name": "Column",
+          "value": "flex-column"
+        }
+      ],
+      "placeholder": "select",
+      "label": "Choose Type",
+      "model": "select"
+    }
+  ]
+}

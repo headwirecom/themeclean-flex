@@ -1,25 +1,16 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <nav class="navbar align-items-center navbar-light w-100" v-bind:class="{'navbar-expand-lg': model.collapsed === 'false','navbar-light': model.colorscheme === 'light','navbar-dark': model.colorscheme === 'dark'}">
-      <h1 v-if="editAndEmpty">Configure Header</h1>
+    <nav class="flex w-100" v-bind:class="{'navbar-expand-lg': model.collapsed === 'false','navbar-light': model.colorscheme === 'light','navbar-dark': model.colorscheme === 'dark'}">
       <!-- Logo -->
-      <span class="navbar-logo">
-        <a v-if="model.logo" v-bind:href="$helper.pathToUrl(model.logourl)">
-          <img class="menu-logo" v-bind:src="$helper.pathToUrl(model.logo)" v-bind:alt="model.logoalttext"
-          v-bind:style="`height:${parseInt(model.logosize)}px;`">
-        </a>
-      </span>
-      <!-- Hamburger toggle button -->
-      <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse"
-      data-target="#navbarSupportedContent" aria-expanded="false" aria-controls="collapseExample">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Collapsible Menu -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>
-        <themecleanflex-components-menubuttons v-bind:model="model"></themecleanflex-components-menubuttons>
-      </div>
-      <div v-if="isEditAndEmpty">no content defined for component</div>
+      <a v-bind:href="$helper.pathToUrl(model.logourl)">
+        <img class v-bind:src="$helper.pathToUrl(model.logo)" v-bind:alt="model.logoalttext"
+        v-bind:style="`height:${parseInt(model.logosize)}px;`">
+      </a>
+      <!-- TODO Mobile Hamburger <!-- Collapsible Menu -->
+      <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <div class="textlink text-right"></div>
+    <div class="menubutton"></div>
+  </div> -->
     </nav>
   </themecleanflex-components-block>
 </template>
