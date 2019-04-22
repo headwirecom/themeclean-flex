@@ -1,0 +1,16 @@
+<!-- js includes required for this renderer -->
+
+<sly data-sly-use.helper="apps.pagerender.vue.structure.page.Helper"/>
+<sly data-sly-include="/apps/pagerender/vue/structure/page/renderer.html"/>
+<script src="/etc/felibs/${helper.siteName}.js"></script>
+<script>
+    $peregrineApp.loadComponent('pagerender-vue-components-placeholder')
+    $peregrineApp.loadComponent('themecleanflex-components-block')
+    $peregrineApp.loadComponent('themecleanflex-components-media')
+    $peregrineApp.loadComponent('themecleanflex-components-mediavisible')
+    $peregrineApp.loadComponent('themecleanflex-components-textlinks')
+    $peregrineApp.loadComponent('themecleanflex-components-menubuttons')
+    $peregrineApp.loadComponent('themecleanflex-components-socialicons')
+    $peregrineApp.loadComponent('themecleanflex-components-pagelistnested')
+</script>
+
