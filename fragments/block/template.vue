@@ -1,15 +1,13 @@
 <template>
-  <section class="d-flex align-items-center" ref="section" v-bind:class="[classes, colors]"
+  <section class="w-100" ref="section" v-bind:class="[classes, colors]"
   v-bind:style="[styles, sticky]" v-bind:data-per-path="model.path">
-    <a class="percms-anchor" ref="anchor" v-bind:id="model.anchorname"></a>
+    <a ref="anchor" v-bind:id="model.anchorname"></a>
     <div class="embed-responsive embed-responsive-16by9" v-if="model.custombackground === 'true' &amp;&amp; model.backgroundtype == 'video' &amp;&amp; model.bgvideo"
     v-bind:style="`position:${'absolute'};pointer-events:${'none'};`">
       <iframe class="embed-responsive-item" v-bind:src="model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1'"></iframe>
     </div>
-    <div v-bind:class="model.fullwidth === 'true' ? 'container-fluid' : 'container'">
-      <div class="row justify-content-center">
-        <slot></slot>
-      </div>
+    <div v-bind:class="{'container mx-auto' : model.fullwidth === 'false'}">
+      <slot></slot>
     </div>
   </section>
 </template>
@@ -43,20 +41,16 @@
         computed: {          
           classes: function() {
             let classObject = {}
-            classObject['percms-view-height'] = this.model.fullheight == 'true'
+            classObject['min-h-screen'] = this.model.fullheight == 'true'
             classObject[`elevation-${this.model.elevation}`] = this.model.elevation > 0
             return classObject      
           },
           colors: function() {
-            let classes = {}
-            if( this.model.colorscheme === '' ) return classes
-            if( this.model.custombackground === 'false' ) {
-              classes['bg-dark'] = this.model.colorscheme === 'dark'
-              classes['bg-light'] = this.model.colorscheme === 'light'
-            }
-            classes['text-dark'] = this.model.colorscheme === 'light'
-            classes['text-light'] = this.model.colorscheme === 'dark'
-            return classes
+            let classes = {};
+            if( this.model.colorscheme === '' ) return classes;
+            classes['theme-light'] = this.model.colorscheme === 'light';
+            classes['theme-dark'] = this.model.colorscheme === 'dark';
+            return classes;
           },
           sticky: function() {
             const sticky = this.model.sticky === 'true'
@@ -70,14 +64,19 @@
             } : {}
           },
           styles: function() {
-            return {
-              paddingTop: `${this.model.toppadding}px`,
-              paddingBottom: `${this.model.bottompadding}px`,
-              background: this.backgroundStyles(),
-              backgroundSize: 'cover',
-              position: 'relative',
-              overflow: 'hidden'
+            let styles = {}
+
+            styles.paddingTop = `${this.model.toppadding}px`;
+            styles.paddingBottom = `${this.model.bottompadding}px`;
+            styles.backgroundSize = 'cover';
+            styles.position = 'relative';
+            styles.overflow = 'hidden';
+
+            if( this.model.custombackground === 'true') {
+              styles.background = this.backgroundStyles();
             }
+
+            return styles;
           }
         },
         methods: {
