@@ -122,13 +122,15 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Full Width",
-          "x-form-type": "materialswitch"
+          "x-form-type": "materialswitch",
+          "x-default": "false"
         },
         "fullheight": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Full Height",
-          "x-form-type": "materialswitch"
+          "x-form-type": "materialswitch",
+          "x-default": "false"
         },
         "toppadding": {
           "type": "string",
