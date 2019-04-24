@@ -28,7 +28,7 @@
             }
           }
           //Offset height of anchor by height of the navbar and top padding
-          let navSection = document.querySelector('nav').parentElement.parentElement.parentElement
+          // let navSection = document.querySelector('nav').parentElement.parentElement.parentElement
           let navPosition = navSection.style.position
           let navSticky = navPosition === "sticky" || navPosition === "fixed" 
           let navOffset = navSticky ? navSection.clientHeight : 0

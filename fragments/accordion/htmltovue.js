@@ -25,15 +25,12 @@ module.exports = {
 
         //Accordion Item Title Bar
         let a = $.find('a').first()
-        let aClasses = `{
-            'text-light': model.colorscheme === 'dark',
-            'text-dark': model.colorscheme === 'light',
-        }`
         f.bindAttribute( a, 'data-parent', "model.toggletype === 'accordion' ? `#accordion${_uid}` : ''")
         f.mapRichField( a.find('h4'), "item.title")
 
         //Acocordion Item Body
-        f.bindAttribute($.find('div.collapse').first(), 'id', '`accordion${_uid}${i}`')
+        f.bindAttribute($.find('div.card-content').first(), 'style', '{height: 0}')
         f.mapRichField($.find('div.card-content').first(), "item.text")
+
     }
 }

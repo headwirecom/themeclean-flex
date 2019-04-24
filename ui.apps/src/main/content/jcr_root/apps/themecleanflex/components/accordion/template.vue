@@ -14,7 +14,8 @@
               <h4 v-html="item.title"></h4>
               <i class aria-hidden="true">x</i>
             </a>
-            <div class="card-content" role="tabpanel" v-html="item.text"></div>
+            <div class="card-content overflow-hidden " role="tabpanel" v-bind:style="{height: 0}"
+            v-html="item.text"></div>
           </div>
         </div>
       </div>
@@ -25,10 +26,18 @@
 <script>
     export default {
         props: ['model'],
+        data: {
+          opened: {}
+        },
         computed: {
         	isEditAndEmpty() {
             if(!$peregrineApp.isAuthorMode()) return false
             return this.$helper.areAllEmpty( this.model.showtitle === 'true' && this.model.title, this.model.showmedia === 'true', this.model.accordiontoggle );
+          }
+        },
+        methods: {
+          openItem(i) {
+            this.model.accordiontoggle[i]
           }
         }
     }

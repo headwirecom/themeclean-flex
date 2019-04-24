@@ -433,6 +433,10 @@ button,
   border-color: #b8c2cc;
 }
 
+.border-blue {
+  border-color: #3490dc;
+}
+
 .border-0 {
   border-width: 0;
 }
@@ -536,6 +540,10 @@ button,
   min-height: 100vh;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .p-0 {
   padding: 0;
 }
@@ -616,6 +624,8 @@ button,
 
 /* Custom Utilities */
 
+/* Themes */
+
 .theme-dark {
   color: #fff;
   background-color: #22292f;
@@ -627,3 +637,85 @@ button,
 }
 
 /* Drop Shadow Helpers */
+
+/* Buttons */
+
+.btn {
+  font-weight: 700;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: .25rem;
+  text-decoration: none;
+}
+
+.btn-lg {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.btn-sm {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-size: .875rem;
+}
+
+.btn-blue {
+  background-color: #3490dc;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #2779bd;
+}
+
+.btn-green {
+  background-color: #38c172;
+  color: #fff;
+}
+
+.btn-green:hover {
+  background-color: #1f9d55;
+}
+
+.btn-red {
+  background-color: #e3342f;
+  color: #fff;
+}
+
+.btn-red:hover {
+  background-color: #cc1f1a;
+}
+
+.btn-orange {
+  background-color: #f6993f;
+  color: #fff;
+}
+
+.btn-orange:hover {
+  background-color: #de751f;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #22292f;
+}
+
+.btn-white:hover {
+  background-color: #dae1e7;
+}
+
+.btn-black {
+  background-color: #22292f;
+  color: #fff;
+}
+
+.btn-black:hover {
+  background-color: #606f7b;
+}

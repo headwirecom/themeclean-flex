@@ -4,10 +4,10 @@
 
 /* Custom Utilities */
 
+/* Themes */ 
 .theme-dark {
   @apply .text-white .bg-black;
 }
-
 .theme-light {
   @apply .text-black .bg-white;
 }
@@ -37,4 +37,52 @@
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
   z-index: 10
+}
+
+
+/* Buttons */
+.btn {
+  @apply font-bold py-2 px-4 rounded no-underline;
+}
+.btn-lg {
+  @apply py-4 px-5 text-lg
+}
+.btn-sm {
+  @apply py-2 px-2 text-sm
+}
+.btn-blue {
+  @apply bg-blue text-white;
+}
+.btn-blue:hover {
+  @apply bg-blue-dark;
+}
+.btn-green {
+  @apply bg-green text-white;
+}
+.btn-green:hover {
+  @apply bg-green-dark;
+}
+.btn-red {
+  @apply bg-red text-white;
+}
+.btn-red:hover {
+  @apply bg-red-dark;
+}
+.btn-orange {
+  @apply bg-orange text-white;
+}
+.btn-orange:hover {
+  @apply bg-orange-dark;
+}
+.btn-white {
+  @apply bg-white text-black;
+}
+.btn-white:hover {
+  @apply bg-grey-light;
+}
+.btn-black {
+  @apply bg-black text-white;
+}
+.btn-black:hover {
+  @apply bg-grey-darker;
 }

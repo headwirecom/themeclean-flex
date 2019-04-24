@@ -5,8 +5,8 @@ module.exports = {
 
         //Container
         let containerClasses = `{
-            'flex-md-row-reverse': model.buttonside === 'left',
-            'flex-md-row': model.buttonside === 'right',
+            'flex-row-reverse': model.buttonside === 'left',
+            'flex-row': model.buttonside === 'right',
         }`
         f.bindAttribute( $, 'class', containerClasses ,false)
 
@@ -39,14 +39,13 @@ module.exports = {
         let aClasses = `{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
-            'btn-primary': item.buttoncolor === 'primary',
-            'btn-secondary': item.buttoncolor === 'secondary',
-            'btn-success': item.buttoncolor === 'success',
-            'btn-danger': item.buttoncolor === 'danger',
-            'btn-warning': item.buttoncolor === 'warning',
-            'btn-info': item.buttoncolor === 'info',
-            'btn-light': item.buttoncolor === 'light',
-            'btn-dark': item.buttoncolor === 'dark'
+            'btn-blue': item.buttoncolor === 'primary',
+            'btn-white border border-blue': item.buttoncolor === 'secondary',
+            'btn-green': item.buttoncolor === 'success',
+            'btn-red': item.buttoncolor === 'danger',
+            'btn-orange': item.buttoncolor === 'warning',
+            'btn-white': item.buttoncolor === 'light',
+            'btn-black': item.buttoncolor === 'dark'
         }`
         f.addIf( buttonsDiv, 'model.showbutton == \'true\'')
         f.bindAttribute( buttonsDiv, 'class', buttonsClasses,false)
