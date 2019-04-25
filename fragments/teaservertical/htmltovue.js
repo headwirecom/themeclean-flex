@@ -5,9 +5,9 @@ module.exports = {
 
         //Container
         let textContainerClasses = `{
-            'justify-content-start': model.aligncontent === 'left',
-            'justify-content-center': model.aligncontent === 'center',
-            'justify-content-end': model.aligncontent === 'right'
+            'justify-start': model.aligncontent === 'left',
+            'justify-center': model.aligncontent === 'center',
+            'justify-end': model.aligncontent === 'right'
         }`
         // f.bindAttribute( $, 'class', containerClasses ,false)
 
@@ -15,10 +15,9 @@ module.exports = {
         let textClasses = `{
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
-            'text-right': model.aligncontent === 'right',
-            'percms-text-large': model.isprimary === 'true'
+            'text-right': model.aligncontent === 'right'
         }`
-        let textContainer = $.find('div.d-flex.col-12').eq(0)
+        let textContainer = $.find('div>div').eq(0)
         let textDiv = textContainer.find('div').first()
         f.bindAttribute( textContainer, 'class', textContainerClasses, false)
         f.bindAttribute( textDiv, 'class', textClasses, false)
@@ -31,31 +30,25 @@ module.exports = {
         f.mapRichField($.find('p').first(), "model.text")
 
         //Buttons
-        let buttonsDiv = $.find('div.col-12').eq(1)
-        let link = buttonsDiv.find('a')
+        let buttonsDiv = $.find('div .flex-wrap').first()
+        let link = buttonsDiv.find('a').first()
         let buttonsClasses = `{
-            'justify-content-md-start': model.alignbuttons === 'start',
-            'justify-content-md-center': model.alignbuttons === 'center',
-            'justify-content-md-end': model.alignbuttons === 'end'
+            'justify-start': model.alignbuttons === 'start',
+            'justify-center': model.alignbuttons === 'center',
+            'justify-end': model.alignbuttons === 'end'
         }`
         let aClasses = `{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
-            'btn-primary': item.buttoncolor === 'primary',
-            'btn-secondary': item.buttoncolor === 'secondary',
-            'btn-success': item.buttoncolor === 'success',
-            'btn-danger': item.buttoncolor === 'danger',
-            'btn-warning': item.buttoncolor === 'warning',
-            'btn-info': item.buttoncolor === 'info',
+            'btn-p': item.buttoncolor === 'primary',
+            'btn-white border border-blue': item.buttoncolor === 'secondary',
+            'btn-green': item.buttoncolor === 'success',
+            'btn-red': item.buttoncolor === 'danger',
+            'btn-orange': item.buttoncolor === 'warning',
             'btn-light': item.buttoncolor === 'light',
             'btn-dark': item.buttoncolor === 'dark'
         }`
 
-        f.addIf( buttonsDiv, 'model.showbutton == \'true\'')
-        f.bindAttribute( buttonsDiv, 'class', buttonsClasses,false)
-
-        let buttonClasses = `{
-        }`
         f.addFor( link, 'model.buttons')
         f.bindAttribute( link, 'href', f.pathToUrl('item.buttonlink'))
         f.bindAttribute( link, 'class', aClasses, false)
@@ -63,6 +56,7 @@ module.exports = {
         f.addStyle( link, 'backgroundColor', 'item.buttoncolor')
         f.addStyle( link, 'borderColor', 'item.buttoncolor')
 
-        $.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
+        f.addIf( buttonsDiv, 'model.showbutton == \'true\'')
+        f.bindAttribute( buttonsDiv, 'class', buttonsClasses, false)
     }
 }

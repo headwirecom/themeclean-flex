@@ -1,5 +1,5 @@
 <template>
-  <section class="w-100" ref="section" v-bind:class="[classes, colors]"
+  <section class="w-100 px-5" ref="section" v-bind:class="[classes, colors]"
   v-bind:style="[styles, sticky]" v-bind:data-per-path="model.path">
     <a ref="anchor" v-bind:id="model.anchorname"></a>
     <div class="embed-responsive embed-responsive-16by9" v-if="model.custombackground === 'true' &amp;&amp; model.backgroundtype == 'video' &amp;&amp; model.bgvideo"
@@ -29,9 +29,9 @@
           }
           //Offset height of anchor by height of the navbar and top padding
           // let navSection = document.querySelector('nav').parentElement.parentElement.parentElement
-          let navPosition = navSection.style.position
-          let navSticky = navPosition === "sticky" || navPosition === "fixed" 
-          let navOffset = navSticky ? navSection.clientHeight : 0
+          // let navPosition = navSection.style.position
+          // let navSticky = navPosition === "sticky" || navPosition === "fixed" 
+          // let navOffset = navSticky ? navSection.clientHeight : 0
 
           this.$refs.anchor.style.top = `0px`
           this.$refs.anchor.style.marginTop = `-${navOffset}px`

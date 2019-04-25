@@ -10,12 +10,12 @@
         <!-- Card Container -->
         <div>
           <div class="pb-6" v-for="(item,i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}`">
-            <a class="flex justify-between items-center pb-4" v-bind:data-parent="model.toggletype === 'accordion' ? `#accordion${_uid}` : ''">
+            <a class="flex justify-between items-center pb-4" v-bind:data-parent="model.toggletype === 'accordion' ? `#accordion${_uid}` : ''"
+            v-bind:click="toggleItem(i)">
               <h4 v-html="item.title"></h4>
               <i class aria-hidden="true">x</i>
             </a>
-            <div class="card-content overflow-hidden " role="tabpanel" v-bind:style="{height: 0}"
-            v-html="item.text"></div>
+            <div role="tabpanel" v-html="item.text" v-bind:class="{'hidden': itemsActive[i]}"></div>
           </div>
         </div>
       </div>
@@ -26,8 +26,10 @@
 <script>
     export default {
         props: ['model'],
-        data: {
-          opened: {}
+        data: function() {
+          return {
+            itemsActive: new Array(this.model.accordiontoggle.length).fill(true)
+          }
         },
         computed: {
         	isEditAndEmpty() {
@@ -36,8 +38,8 @@
           }
         },
         methods: {
-          openItem(i) {
-            this.model.accordiontoggle[i]
+          toggleItem(i) {
+            this.itemsActive[i] = !this.itemsActive[i];
           }
         }
     }

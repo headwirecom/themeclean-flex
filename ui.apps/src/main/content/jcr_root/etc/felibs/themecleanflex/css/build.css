@@ -489,6 +489,14 @@ button,
   align-self: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -540,10 +548,6 @@ button,
   min-height: 100vh;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .p-0 {
   padding: 0;
 }
@@ -568,6 +572,11 @@ button,
 .px-3 {
   padding-left: .75rem;
   padding-right: .75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .pb-1 {
