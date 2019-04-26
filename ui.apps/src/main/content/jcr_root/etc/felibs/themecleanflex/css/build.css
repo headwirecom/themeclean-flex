@@ -437,10 +437,6 @@ button,
   border-color: #3490dc;
 }
 
-.border-0 {
-  border-width: 0;
-}
-
 .border {
   border-width: 1px;
 }
@@ -567,11 +563,6 @@ button,
 .py-3 {
   padding-top: .75rem;
   padding-bottom: .75rem;
-}
-
-.px-3 {
-  padding-left: .75rem;
-  padding-right: .75rem;
 }
 
 .px-5 {
