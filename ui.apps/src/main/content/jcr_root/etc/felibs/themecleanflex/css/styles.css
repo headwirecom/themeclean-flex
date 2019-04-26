@@ -18,9 +18,9 @@
   @apply .bg-white;
 }
 .text-dark {
-  @apply .text-dark;
+  @apply .text-black;
 }
-.text-white {
+.text-light {
   @apply .text-white;
 }
 

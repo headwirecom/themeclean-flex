@@ -417,10 +417,6 @@ button,
   padding: 0;
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .bg-black {
   background-color: #22292f;
 }
@@ -634,6 +630,22 @@ button,
 .theme-light {
   color: #22292f;
   background-color: #fff;
+}
+
+.bg-dark {
+  background-color: #22292f;
+}
+
+.bg-light {
+  background-color: #fff;
+}
+
+.text-dark {
+  color: #22292f;
+}
+
+.text-light {
+  color: #fff;
 }
 
 /* Drop Shadow Helpers */

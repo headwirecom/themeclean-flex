@@ -9,17 +9,15 @@ module.exports = {
             'bg-light': model.customcardcolor !== 'true' &&  model.colorscheme === 'dark',
             'text-dark': (model.showcard === 'false' && model.colorscheme === 'light') || (model.showcard === 'true' && model.colorscheme === 'dark'),
             'text-light': (model.showcard === 'false' && model.colorscheme === 'dark') || (model.showcard === 'true' && model.colorscheme === 'light'),
-            'bg-transparent': model.showcard === 'false'
         }`
         f.addFor($.find('div.card').first(), 'model.cards')
-        f.addStyle($.find('div.card').first(), 'background-color', "model.customcardcolor === 'true' ? model.cardcolor: ''")
+        f.addStyle($.find('div.card').first(), 'background-color', "model.customcardcolor === 'true' && model.showcard === 'true' ? model.cardcolor: ''")
         f.bindAttribute($.find('div.card').first(), 'class', cardClasses, false)
 
         let cardBodyClasses = `{
-            'card-body': model.showcard === 'true',
-            'px-3 p-md-0': model.showcard === 'false'
+            'p-3': model.showcard === 'true'
         }`
-        f.bindAttribute($.find('div.card-body').first(), 'class', cardBodyClasses)
+        f.bindAttribute($.find('div.card>div').first(), 'class', cardBodyClasses, false)
 
         //Image
         f.bindAttribute($.find('img').first(), 'class', "model.showcard == 'true' ? 'card-img pb-1' : 'card-img pb-3'")
@@ -38,17 +36,17 @@ module.exports = {
 
         //Button
         let aClasses = `{
-            'btn-lg': item.buttonsize === 'large',
-            'btn-sm': item.buttonsize === 'small',
-            'btn-primary': item.buttoncolor === 'primary',
-            'btn-secondary': item.buttoncolor === 'secondary',
-            'btn-success': item.buttoncolor === 'success',
-            'btn-danger': item.buttoncolor === 'danger',
-            'btn-warning': item.buttoncolor === 'warning',
-            'btn-info': item.buttoncolor === 'info',
-            'btn-light': item.buttoncolor === 'light',
-            'btn-dark': item.buttoncolor === 'dark'
+            'btn-lg': model.buttonsize === 'large',
+            'btn-sm': model.buttonsize === 'small',
+            'btn-blue': item.buttoncolor === 'primary',
+            'btn-white border border-blue': item.buttoncolor === 'secondary',
+            'btn-green': item.buttoncolor === 'success',
+            'btn-red': item.buttoncolor === 'danger',
+            'btn-orange': item.buttoncolor === 'warning',
+            'btn-white': item.buttoncolor === 'light',
+            'btn-black': item.buttoncolor === 'dark'
         }`
+
         let a = $.find('a.btn')
         f.addIf($.find('div.text-center').first(), 'item.buttontext')
         f.addIf( a, 'model.showbutton == \'true\'')
