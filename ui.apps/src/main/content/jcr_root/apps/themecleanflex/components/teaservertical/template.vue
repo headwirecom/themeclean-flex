@@ -9,7 +9,7 @@
         <div class v-bind:class="{
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
-            'text-right': model.aligncontent === 'right',
+            'text-right': model.aligncontent === 'right'
         }" v-bind:style="`width:${model.textwidth}%;`">
           <h2 class v-if="model.showtitle === 'true'" v-html="model.title"></h2>
           <h4 class v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h4>
@@ -26,7 +26,7 @@
         v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
-            'btn-blue': item.buttoncolor === 'primary',
+            'btn-p': item.buttoncolor === 'primary',
             'btn-white border border-blue': item.buttoncolor === 'secondary',
             'btn-green': item.buttoncolor === 'success',
             'btn-red': item.buttoncolor === 'danger',

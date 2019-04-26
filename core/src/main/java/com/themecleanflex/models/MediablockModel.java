@@ -1,4 +1,4 @@
-package com.themeclean.models;
+package com.themecleanflex.models;
 
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
@@ -237,13 +237,15 @@ import javax.inject.Named;
               "type": "string",
               "x-source": "inject",
               "x-form-label": "Full Width",
-              "x-form-type": "materialswitch"
+              "x-form-type": "materialswitch",
+              "x-default": "false"
             },
             "fullheight": {
               "type": "string",
               "x-source": "inject",
               "x-form-label": "Full Height",
-              "x-form-type": "materialswitch"
+              "x-form-type": "materialswitch",
+              "x-default": "false"
             },
             "toppadding": {
               "type": "string",
@@ -381,12 +383,14 @@ public class MediablockModel extends AbstractComponent {
 	@Default(values ="#c0c0c0")
 	private String color2;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Full Width","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Full Width","x-form-type":"materialswitch","x-default":"false"} */
 	@Inject
+	@Default(values ="false")
 	private String fullwidth;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Full Height","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Full Height","x-form-type":"materialswitch","x-default":"false"} */
 	@Inject
+	@Default(values ="false")
 	private String fullheight;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Top Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":150,"x-form-visible":"model.fullheight != 'true'"} */
@@ -496,12 +500,12 @@ public class MediablockModel extends AbstractComponent {
 		return color2;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Full Width","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Full Width","x-form-type":"materialswitch","x-default":"false"} */
 	public String getFullwidth() {
 		return fullwidth;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Full Height","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Full Height","x-form-type":"materialswitch","x-default":"false"} */
 	public String getFullheight() {
 		return fullheight;
 	}

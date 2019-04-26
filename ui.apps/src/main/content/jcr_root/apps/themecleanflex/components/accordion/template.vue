@@ -7,11 +7,9 @@
         <div class="img-wrapper" v-if="model.showmedia === 'true'" v-bind:style="{width:`${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
-        <!-- Card Container -->
         <div>
           <div class="pb-6" v-for="(item,i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}`">
-            <a class="flex justify-between items-center pb-4" v-bind:data-parent="model.toggletype === 'accordion' ? `#accordion${_uid}` : ''"
-            v-bind:click="toggleItem(i)">
+            <a class="flex justify-between items-center pb-4" v-bind:click="toggleItem(i)">
               <h4 v-html="item.title"></h4>
               <i class aria-hidden="true">x</i>
             </a>

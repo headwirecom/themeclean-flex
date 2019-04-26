@@ -5,14 +5,14 @@ module.exports = {
 
         f.replace( $.find('img'), '<themecleanflex-components-media :model="model"></themecleanflex-components-media>')
 
-        let imageDiv = $.find('div.col-md-auto').first()
+        let imageDiv = $.find('div.w-auto').first()
         f.addIf( imageDiv, 'model.showmedia == \'true\'')
 
         let containerClasses = `{
             'flex-row': model.mediaposition === 'before',
             'flex-row-reverse': model.mediaposition === 'after'
         }`
-        f.bindAttribute($.find('div.row').eq(1), 'class', containerClasses, false)
+        f.bindAttribute($.find('div.flex').first(), 'class', containerClasses, false)
 
         f.bindAttribute($.find('div.row>div.col').first(), 'style', "{width:`${model.mediawidth}%`}")
     	f.addIf($.find('h2').first(), 'model.showtitle == \'true\' && model.title')
@@ -23,7 +23,6 @@ module.exports = {
         f.addFor($.find('li.nav-item').first(), 'model.tabs')
         let a = $.find('a').first()
         let aClasses = `[
-            {'nav-link': true},
             {'active': i == 0},
             {'bg-primary': model.tabcolor === 'primary'},
             {'bg-secondary': model.tabcolor === 'secondary'},
@@ -40,13 +39,11 @@ module.exports = {
     	f.bindAttribute( a, 'id', '`tab-control-${_uid}${parseInt(i)+1}`')
     	f.bindAttribute( a, 'aria-controls', '`tab${_uid}${parseInt(i)+1}`')
     	f.mapRichField( a, "item.title")
-    	
-    	f.addFor($.find('div.tab-pane').first(), 'model.tabs')
-    	f.bindAttribute($.find('div.tab-pane').first(), 'id', '`tab${_uid}${parseInt(i)+1}`')
-        f.bindAttribute($.find('div.tab-pane').first(), 'aria-labelledby', '`tablabel${_uid}${parseInt(i)+1}`')
-        f.bindAttribute($.find('div.tab-pane').first(), 'class', 'i == 0 ? \'tab-pane fade show active\' : \'tab-pane fade\'')
-        f.mapRichField($.find('div.text-center').first(), "item.text")
-    	f.addIf($.find('.perIsEditAndEmpty').first(), 'isEditAndEmpty')
-        
+    	let tabPanel = $.find('[role="tabpanel"]').first()
+    	f.addFor( tabPanel, 'model.tabs')
+    	f.bindAttribute(tabPanel, 'id', '`tab${_uid}${parseInt(i)+1}`')
+        f.bindAttribute(tabPanel, 'aria-labelledby', '`tablabel${_uid}${parseInt(i)+1}`')
+        f.bindAttribute(tabPanel, 'class', 'i == 0 ? \'tab-pane fade show active\' : \'tab-pane fade\'')
+        f.mapRichField(tabPanel, "item.text")
     }
 }

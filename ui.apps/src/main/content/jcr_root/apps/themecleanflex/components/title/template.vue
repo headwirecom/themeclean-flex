@@ -1,6 +1,5 @@
 <template>
-    <div v-bind:data-per-path="model.path" v-html="model.text">
-    </div>
+  <div v-bind:data-per-path="model.path">title</div>
 </template>
 
 <script>

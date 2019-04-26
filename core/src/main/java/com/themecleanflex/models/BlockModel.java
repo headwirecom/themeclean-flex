@@ -1,4 +1,4 @@
-package com.themeclean.models;
+package com.themecleanflex.models;
 
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
