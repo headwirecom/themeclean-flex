@@ -1,6 +1,6 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <nav class="flex w-100" v-bind:class="{'navbar-expand-lg': model.collapsed === 'false','navbar-light': model.colorscheme === 'light','navbar-dark': model.colorscheme === 'dark'}">
+    <nav class="flex w-full" v-bind:class="{'navbar-expand-lg': model.collapsed === 'false','navbar-light': model.colorscheme === 'light','navbar-dark': model.colorscheme === 'dark'}">
       <!-- Logo -->
       <a v-bind:href="$helper.pathToUrl(model.logourl)">
         <img class v-bind:src="$helper.pathToUrl(model.logo)" v-bind:alt="model.logoalttext"

@@ -1,15 +1,13 @@
 <template>
-  <div class="w-100">
-
-    <div v-if="model.mediatype === 'video'" class="embed-responsive embed-responsive-16by9">
-      <iframe :src="$helper.pathToUrl(model.videosrc)" frameborder="0" allowfullscreen></iframe>
-      </iframe>
+  <div class="w-full">
+    <div v-if="model.mediatype === 'video'" class="relative block w-full p-0 overflow-hidden aspect-ratio-16/9">
+      <iframe class="absolute pin w-full h-full" :src="$helper.pathToUrl(model.videosrc)" frameborder="0" allowfullscreen></iframe>
     </div>
-    <i v-else-if="model.mediatype === 'icon'" class="w-100 text-center" v-bind:class="iconClass" v-bind:style="{'font-size': `${model.mediaiconsize}px`, 'color': model.mediaiconcolor}">
+    <i v-else-if="model.mediatype === 'icon'" class="w-full text-center" v-bind:class="iconClass" v-bind:style="{'font-size': `${model.mediaiconsize}px`, 'color': model.mediaiconcolor}">
       {{iconContent}}
     </i>
-    <img v-else-if="model.mediatype === 'image'" class="w-100" :src="$helper.pathToUrl(model.imagesrc)" v-bind:alt="model.mediaalttext"> 
-    <h3 v-if="noMedia" class="w-100 text-center">No media content</h3>
+    <img v-else-if="model.mediatype === 'image'" class="w-full" :src="$helper.pathToUrl(model.imagesrc)" v-bind:alt="model.mediaalttext"> 
+    <h3 v-if="noMedia" class="w-full text-center">No media content</h3>
   </div>
 </template>
 

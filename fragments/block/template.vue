@@ -1,12 +1,12 @@
 <template>
-  <section class="w-100 px-5" ref="section" v-bind:class="[classes, colors]"
+  <section class="w-full p-5" ref="section" v-bind:class="[classes, colors]"
   v-bind:style="[styles, sticky]" v-bind:data-per-path="model.path">
     <a ref="anchor" v-bind:id="model.anchorname"></a>
     <div class="embed-responsive embed-responsive-16by9" v-if="model.custombackground === 'true' &amp;&amp; model.backgroundtype == 'video' &amp;&amp; model.bgvideo"
     v-bind:style="`position:${'absolute'};pointer-events:${'none'};`">
       <iframe class="embed-responsive-item" v-bind:src="model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1'"></iframe>
     </div>
-    <div v-bind:class="{'container mx-auto' : model.fullwidth === 'false'}">
+    <div class="flex" v-bind:class="{'container mx-auto' : model.fullwidth === 'false'}">
       <slot></slot>
     </div>
   </section>
