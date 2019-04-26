@@ -25,6 +25,7 @@
     "postcss": "^7.0.14",
     "postcss-cli": "^6.1.2",
     "purgecss": "^1.2.0",
-    "tailwindcss": "^0.7.4"
+    "tailwindcss": "^0.7.4",
+    "tailwindcss-aspect-ratio": "^1.0.3"
   }
 }
