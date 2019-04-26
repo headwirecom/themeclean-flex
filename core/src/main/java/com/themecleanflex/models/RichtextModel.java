@@ -149,13 +149,27 @@ import javax.inject.Named;
               "x-form-visible": "model.backgroundtype == 'gradient' and model.custombackground == 'true'",
               "x-default": "#c0c0c0"
             },
+            "fullwidth": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Full Width",
+              "x-form-type": "materialswitch",
+              "x-default": "false"
+            },
+            "fullheight": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Full Height",
+              "x-form-type": "materialswitch",
+              "x-default": "false"
+            },
             "toppadding": {
               "type": "string",
               "x-source": "inject",
               "x-form-label": "Top Padding",
               "x-form-type": "materialrange",
               "x-form-min": 0,
-              "x-form-max": 120,
+              "x-form-max": 150,
               "x-form-visible": "model.fullheight != 'true'"
             },
             "bottompadding": {
@@ -164,7 +178,7 @@ import javax.inject.Named;
               "x-form-label": "Bottom Padding",
               "x-form-type": "materialrange",
               "x-form-min": 0,
-              "x-form-max": 120,
+              "x-form-max": 150,
               "x-form-visible": "model.fullheight != 'true'"
             }
           }
@@ -254,11 +268,21 @@ public class RichtextModel extends AbstractComponent {
 	@Default(values ="#c0c0c0")
 	private String color2;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Top Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":120,"x-form-visible":"model.fullheight != 'true'"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Full Width","x-form-type":"materialswitch","x-default":"false"} */
+	@Inject
+	@Default(values ="false")
+	private String fullwidth;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Full Height","x-form-type":"materialswitch","x-default":"false"} */
+	@Inject
+	@Default(values ="false")
+	private String fullheight;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Top Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":150,"x-form-visible":"model.fullheight != 'true'"} */
 	@Inject
 	private String toppadding;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Bottom Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":120,"x-form-visible":"model.fullheight != 'true'"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Bottom Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":150,"x-form-visible":"model.fullheight != 'true'"} */
 	@Inject
 	private String bottompadding;
 
@@ -326,12 +350,22 @@ public class RichtextModel extends AbstractComponent {
 		return color2;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Top Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":120,"x-form-visible":"model.fullheight != 'true'"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Full Width","x-form-type":"materialswitch","x-default":"false"} */
+	public String getFullwidth() {
+		return fullwidth;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Full Height","x-form-type":"materialswitch","x-default":"false"} */
+	public String getFullheight() {
+		return fullheight;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Top Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":150,"x-form-visible":"model.fullheight != 'true'"} */
 	public String getToppadding() {
 		return toppadding;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Bottom Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":120,"x-form-visible":"model.fullheight != 'true'"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Bottom Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":150,"x-form-visible":"model.fullheight != 'true'"} */
 	public String getBottompadding() {
 		return bottompadding;
 	}

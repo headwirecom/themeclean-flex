@@ -1,6 +1,6 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div>richtext</div>
+    <div v-html="model.text"></div>
   </themecleanflex-components-block>
 </template>
 

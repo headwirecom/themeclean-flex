@@ -130,13 +130,33 @@
       "visible": "model.backgroundtype == 'gradient' and model.custombackground == 'true'"
     },
     {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "fullwidth",
+      "label": "Full Width",
+      "model": "fullwidth"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "fullheight",
+      "label": "Full Height",
+      "model": "fullheight"
+    },
+    {
       "type": "material-range",
       "placeholder": "toppadding",
       "label": "Top Padding",
       "model": "toppadding",
       "visible": "model.fullheight != 'true'",
       "min": 0,
-      "max": 120
+      "max": 150
     },
     {
       "type": "material-range",
@@ -145,7 +165,7 @@
       "model": "bottompadding",
       "visible": "model.fullheight != 'true'",
       "min": 0,
-      "max": 120
+      "max": 150
     }
   ]
 }
