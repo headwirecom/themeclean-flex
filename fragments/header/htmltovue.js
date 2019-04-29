@@ -17,7 +17,7 @@ module.exports = {
     	f.bindAttribute($.find('img').first(), 'alt', 'model.logoalttext')
         f.addStyle($.find('img').first(), 'height', 'parseInt(model.logosize)', 'px')
 
-    	f.replace( $.find('div.textlink').eq(0), '<themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>')
-    	f.replace( $.find('div.menubutton').eq(0), '<themecleanflex-components-menubuttons v-bind:model="model"></themecleanflex-components-menubuttons>')
+    	f.replace( $.find('nav>div div:nth-child(1)'), '<themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>')
+    	f.replace( $.find('nav>div div:nth-child(2)'), '<themecleanflex-components-menubuttons v-bind:model="model"></themecleanflex-components-menubuttons>')
     }
 }
