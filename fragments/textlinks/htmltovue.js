@@ -5,9 +5,10 @@ module.exports = {
         f.mapRichField($.find('a').first(), "item.text")
 
 
-        let colorscheme = 
+        let linkClasses = 
         "{'text-dark' : model.colorscheme === 'light'," +
-        "'text-light' : model.colorscheme === 'dark'}"
-        f.bindAttribute($.find('a').first(), 'class', colorscheme, false)
+        "'text-light' : model.colorscheme === 'dark'," +
+        "activeClass}"
+        f.bindAttribute($.find('a').first(), 'class', linkClasses, false)
     }
 }
