@@ -8,7 +8,7 @@ module.exports = {
         let linkClasses = 
         "{'text-dark' : model.colorscheme === 'light'," +
         "'text-light' : model.colorscheme === 'dark'," +
-        "activeClass}"
+        "'font-bold' : $data.path === $helper.pathToUrl(item.link)}"
         f.bindAttribute($.find('a').first(), 'class', linkClasses, false)
     }
 }
