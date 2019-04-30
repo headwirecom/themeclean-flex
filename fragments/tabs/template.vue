@@ -10,8 +10,9 @@
       <div class="flex justify-center" v-bind:class="{
             'flex-row': model.mediaposition === 'before',
             'flex-row-reverse': model.mediaposition === 'after'
+
         }">
-        <div class="w-auto pb-3" v-if="model.showmedia == 'true'">
+        <div class="w-auto pb-3" v-if="model.showmedia == 'true'" v-bind:style="{width:`${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
         <div class="py-3 py-md-0 flex flex-column">
@@ -35,8 +36,8 @@
           </ul>
           <!-- Tab Content -->
           <div class id="myTabContent">
-            <div role="tabpanel" v-for="(item,i) in model.tabs" :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`"
-            v-bind:aria-labelledby="`tablabel${_uid}${parseInt(i)+1}`" v-bind:class="i == 0 ? 'tab-pane fade show active' : 'tab-pane fade'"
+            <div class="text-center py-3" role="tabpanel" v-for="(item,i) in model.tabs"
+            :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`" v-bind:aria-labelledby="`tablabel${_uid}${parseInt(i)+1}`"
             v-html="item.text"></div>
           </div>
         </div>
