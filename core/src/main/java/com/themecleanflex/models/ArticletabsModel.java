@@ -204,7 +204,7 @@ import javax.inject.Named;
               "x-form-visible": "model.backgroundtype == 'gradient' and model.custombackground == 'true'",
               "x-default": "#c0c0c0"
             },
-            "fullwidth": {
+            "blockwidth": {
               "type": "string",
               "x-source": "inject",
               "x-form-label": "Full Width",
@@ -331,7 +331,7 @@ public class ArticletabsModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Full Width","x-form-type":"materialswitch","x-default":"false"} */
 	@Inject
 	@Default(values ="false")
-	private String fullwidth;
+	private String blockwidth;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Full Height","x-form-type":"materialswitch","x-default":"false"} */
 	@Inject
@@ -416,8 +416,8 @@ public class ArticletabsModel extends AbstractComponent {
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Full Width","x-form-type":"materialswitch","x-default":"false"} */
-	public String getFullwidth() {
-		return fullwidth;
+	public String getblockwidth() {
+		return blockwidth;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Full Height","x-form-type":"materialswitch","x-default":"false"} */

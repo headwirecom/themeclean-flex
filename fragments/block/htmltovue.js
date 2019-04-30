@@ -12,6 +12,6 @@ module.exports = {
         f.addStyle( $.find('div.embed-responsive').first(), 'position', "'absolute'")
         f.addStyle( $.find('div.embed-responsive').first(), 'pointer-events', "'none'")
         $.find('div.flex').append( '<slot>')
-        f.bindAttribute( $.find('div.flex').first(), 'class', "{'container mx-auto' : model.fullwidth === 'false'}", false)
+        f.bindAttribute( $.find('div.flex').first(), 'class', "{'container mx-auto' : model.blockwidth === 'false'}", false)
     }
 }

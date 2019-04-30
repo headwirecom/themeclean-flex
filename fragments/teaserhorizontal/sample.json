@@ -7,7 +7,7 @@
     "showsubtitle": "true",
     "showtext": "true",
     "showbutton": "true",
-    "fullwidth": "false",
+    "blockwidth": "false",
     "fullheight": "false",
     "textwidth": "60",
     "backgroundtype": "color",
