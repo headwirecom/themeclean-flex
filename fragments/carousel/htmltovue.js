@@ -6,9 +6,14 @@ module.exports = {
         f.addStyle( $, 'height', 'model.carouselheight', 'vh')
 
         let carousel = $.find('carousel').first();
-        f.bindAttribute(carousel, "autoPlay", "model.autoplay")
-        f.bindAttribute(carousel, "autoPlayTimeout", "model.interval")
-        f.bindAttribute(carousel, "navigationEnabled", "true")
+        f.bindAttribute(carousel, "autoplay", "model.autoplay === 'true'")
+        f.bindAttribute(carousel, "navigationEnabled", "model.controls === 'true'")
+        f.bindAttribute(carousel, "paginationEnabled", "model.indicators === 'true'")
+        f.bindAttribute(carousel, "autoplayHoverPause", "model.pause === 'true'")
+        f.bindAttribute(carousel, "loop", "model.loop === 'true'")
+        f.bindAttribute(carousel, "autoplayTimeout", "model.interval * 1000")
+        f.bindAttribute(carousel, "perPage", 1)
+
 
         let slide = $.find('slide').first();
         f.addFor(slide, "model.slides");

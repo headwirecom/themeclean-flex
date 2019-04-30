@@ -53,7 +53,11 @@ function compileComponent(file){
     input: `${basePath}${file}`,
     plugins: [
       resolve(),
-      commonjs(),
+      commonjs({
+        namedExports: {
+          'vue-carousel': ['Carousel', 'Slide']
+        }
+      }),
       vue({
         compileTemplate: true,
         css: `${distBasePath}/css/${nameCamelCase}.css`
