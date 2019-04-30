@@ -3,10 +3,7 @@
     <div>Consequuntur unde ipsum. Ullam ut voluptates laboriosam numquam voluptatem
       molestias. Quod quaerat ipsam. Nisi dolorem minus blanditiis necessitatibus
       magnam. Asperiores est qui et assumenda. Magnam molestiae eveniet. Rerum
-      eos ut cum maxime ex. Non porro occaecati et quibusdam animi atque sunt.
-      <div
-      v-if="isEditAndEmpty">no content defined for component</div>
-    </div>
+      eos ut cum maxime ex. Non porro occaecati et quibusdam animi atque sunt.</div>
   </themecleanflex-components-block>
 </template>
 

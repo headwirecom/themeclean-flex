@@ -328,9 +328,23 @@ import javax.inject.Named;
             "blockwidth": {
               "type": "string",
               "x-source": "inject",
-              "x-form-label": "Full Width",
-              "x-form-type": "materialswitch",
-              "x-default": "false"
+              "x-form-label": "Block Width",
+              "x-form-type": "materialradio",
+              "x-form-visible": "model.custombackground == 'true'",
+              "properties": {
+                "default": {
+                  "x-form-name": "Default",
+                  "x-form-value": "default"
+                },
+                "full": {
+                  "x-form-name": "Full Width",
+                  "x-form-value": "full"
+                },
+                "article": {
+                  "x-form-name": "Article Width",
+                  "x-form-value": "article"
+                }
+              }
             },
             "fullheight": {
               "type": "string",
@@ -496,9 +510,8 @@ public class TeaserhorizontalModel extends AbstractComponent {
 	@Default(values ="#c0c0c0")
 	private String color2;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Full Width","x-form-type":"materialswitch","x-default":"false"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Block Width","x-form-type":"materialradio","x-form-visible":"model.custombackground == 'true'","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"full":{"x-form-name":"Full Width","x-form-value":"full"},"article":{"x-form-name":"Article Width","x-form-value":"article"}}} */
 	@Inject
-	@Default(values ="false")
 	private String blockwidth;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Full Height","x-form-type":"materialswitch","x-default":"false"} */
@@ -638,8 +651,8 @@ public class TeaserhorizontalModel extends AbstractComponent {
 		return color2;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Full Width","x-form-type":"materialswitch","x-default":"false"} */
-	public String getblockwidth() {
+	/* {"type":"string","x-source":"inject","x-form-label":"Block Width","x-form-type":"materialradio","x-form-visible":"model.custombackground == 'true'","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"full":{"x-form-name":"Full Width","x-form-value":"full"},"article":{"x-form-name":"Article Width","x-form-value":"article"}}} */
+	public String getBlockwidth() {
 		return blockwidth;
 	}
 

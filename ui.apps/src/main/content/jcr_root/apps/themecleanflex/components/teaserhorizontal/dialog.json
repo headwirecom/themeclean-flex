@@ -329,14 +329,25 @@
       "visible": "model.backgroundtype == 'gradient' and model.custombackground == 'true'"
     },
     {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
+      "type": "material-radios",
+      "values": [
+        {
+          "name": "Default",
+          "value": "default"
+        },
+        {
+          "name": "Full Width",
+          "value": "full"
+        },
+        {
+          "name": "Article Width",
+          "value": "article"
+        }
+      ],
       "placeholder": "blockwidth",
-      "label": "Full Width",
-      "model": "blockwidth"
+      "label": "Block Width",
+      "model": "blockwidth",
+      "visible": "model.custombackground == 'true'"
     },
     {
       "type": "materialswitch",
