@@ -12,6 +12,11 @@ module.exports = {
         f.addStyle( $.find('div.embed-responsive').first(), 'position', "'absolute'")
         f.addStyle( $.find('div.embed-responsive').first(), 'pointer-events', "'none'")
         $.find('div.flex').append( '<slot>')
-        f.bindAttribute( $.find('div.flex').first(), 'class', "{'container mx-auto' : model.blockwidth === 'default', }", false)
+
+        let containerClasses = `{
+            'container mx-auto' : model.blockwidth === 'default',
+            'max-w-xl mx-auto' : model.blockwidth === 'article'
+        }`
+        f.bindAttribute( $.find('div.flex').first(), 'class', containerClasses, false)
     }
 }

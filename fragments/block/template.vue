@@ -6,7 +6,10 @@
     v-bind:style="`position:${'absolute'};pointer-events:${'none'};`">
       <iframe class="embed-responsive-item" v-bind:src="model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1'"></iframe>
     </div>
-    <div class="flex" v-bind:class="{'container mx-auto' : model.blockwidth === 'default', }">
+    <div class="flex" v-bind:class="{
+            'container mx-auto' : model.blockwidth === 'default',
+            'max-w-xl mx-auto' : model.blockwidth === 'article'
+        }">
       <slot></slot>
     </div>
   </section>

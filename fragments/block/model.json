@@ -123,7 +123,7 @@
           "x-source": "inject",
           "x-form-label": "Block Width",
           "x-form-type": "materialradio",
-          "x-form-visible": "model.custombackground == 'true'",
+          "x-default": "default",
           "properties": {
             "default": {
               "x-form-name": "Default",

@@ -276,8 +276,7 @@
       ],
       "placeholder": "blockwidth",
       "label": "Block Width",
-      "model": "blockwidth",
-      "visible": "model.custombackground == 'true'"
+      "model": "blockwidth"
     },
     {
       "type": "materialswitch",
