@@ -1,6 +1,6 @@
 {
-  "title": "Article Pager",
-  "group": "Article",
+  "title": " Pager",
+  "group": "Features",
   "model": {
     "prevlabel": "Prev",
     "nextlabel": "Next",

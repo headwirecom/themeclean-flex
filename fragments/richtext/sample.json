@@ -1,7 +1,7 @@
 {
   "title": "Text Block",
   "default": true,
-  "group": "Article",
+  "group": "Features",
   "model": {
     "toppadding": "50",
     "bottompadding": "50",

@@ -1,6 +1,6 @@
 {
   "definitions": {
-    "Articlepager": {
+    "Pager": {
       "type": "object",
       "x-type": "component",
       "properties": {
@@ -18,7 +18,7 @@
         },
         "bgref": {
             "x-form-type": "reference",
-        	"$ref": "fragments/block/model.json#/definitions/Block"
+            "$ref": "fragments/block/model.json#/definitions/Block"
         }
       }
     }
