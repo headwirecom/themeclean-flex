@@ -8,12 +8,17 @@
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
         <div>
-          <div class="pb-6" v-for="(item,i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}`">
-            <a class="flex justify-between items-center pb-4" v-bind:click="toggleItem(i)">
+          <div class="bg-grey-lighter" v-for="(item,i) in model.accordiontoggle"
+          :key="i" v-bind:id="`accordion${_uid}`">
+            <a class="flex justify-between items-center p-4 cursor-pointer" v-on:click="toggleItem(i)">
               <h4 v-html="item.title"></h4>
               <i class aria-hidden="true">x</i>
             </a>
-            <div role="tabpanel" v-html="item.text" v-bind:class="{'hidden': itemsActive[i]}"></div>
+            <div class="card-content overflow-hidden bg-white" role="tabpanel" v-html="item.text"
+            v-bind:class="{
+            'h-auto p-4': active[i],
+            'h-px p-0 invisible': !active[i]
+        }"></div>
           </div>
         </div>
       </div>
@@ -26,7 +31,7 @@
         props: ['model'],
         data: function() {
           return {
-            itemsActive: new Array(this.model.accordiontoggle.length).fill(true)
+            active: new Array(this.model.accordiontoggle.length).fill(false)
           }
         },
         computed: {
@@ -37,7 +42,14 @@
         },
         methods: {
           toggleItem(i) {
-            this.itemsActive[i] = !this.itemsActive[i];
+            if (this.model.toggletype === 'accordion') {
+              this.active.forEach( (active,j) => {
+                Vue.set(this.active, j, j === i ? !this.active[j] : false);
+              })
+            }
+            else {
+              Vue.set(this.active, i, !this.active[i])
+            }
           }
         }
     }

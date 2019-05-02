@@ -25,12 +25,16 @@ module.exports = {
 
         //Accordion Item Title Bar
         let a = $.find('a').first()
-        f.bindAttribute( a, 'click', "toggleItem(i)")
+        f.bindEvent( a, 'click', "toggleItem(i)")
         f.mapRichField( a.find('h4'), "item.title")
 
         //Acocordion Item Body
         f.mapRichField($.find('div.card-content').first(), "item.text")
-        f.bindAttribute($.find('div.card-content').first(), 'class', '{\'hidden\': itemsActive[i]}')
+        let cardClasses = `{
+            'h-auto p-4': active[i],
+            'h-px p-0 invisible': !active[i]
+        }`
+        f.bindAttribute($.find('div.card-content').first(), 'class', cardClasses, false)
 
     }
 }
