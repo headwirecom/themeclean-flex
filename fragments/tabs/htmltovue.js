@@ -46,7 +46,7 @@ module.exports = {
     	f.addFor( tabPanel, 'tabs')
     	f.bindAttribute(tabPanel, 'id', '`tab${_uid}${parseInt(i)+1}`')
         f.bindAttribute(tabPanel, 'aria-labelledby', '`tablabel${_uid}${parseInt(i)+1}`')
-    	f.bindAttribute(tabPanel, 'class', "item.active ? 'block' : 'hidden'", false)
+    	f.bindAttribute(tabPanel, 'class', "item.active ? 'opacity-100' : 'opacity-0'", false)
         f.mapRichField(tabPanel, "item.text")
     }
 }

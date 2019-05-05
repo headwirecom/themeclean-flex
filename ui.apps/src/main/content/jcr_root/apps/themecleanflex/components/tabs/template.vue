@@ -15,7 +15,7 @@
         <div class="w-auto pb-3" v-if="model.showmedia == 'true'" v-bind:style="{width:`${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
-        <div class="py-3 py-md-0 flex flex-col">
+        <div class="w-full py-3 flex flex-col">
           <!-- Tab Nav -->
           <ul class="flex justify-center list-reset pb-3" role="tablist">
             <li class="nav-item" v-for="(item,i) in tabs" :key="i">
@@ -34,10 +34,11 @@
             </li>
           </ul>
           <!-- Tab Content -->
-          <div class id="myTabContent">
-            <div class="text-center py-3" role="tabpanel" v-for="(item,i) in tabs"
-            :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`" v-bind:aria-labelledby="`tablabel${_uid}${parseInt(i)+1}`"
-            v-bind:class="item.active ? 'block' : 'hidden'" v-html="item.text"></div>
+          <div class="relative" id="myTabContent">
+            <div class="absolute w-full text-center py-3 transition-opacity" role="tabpanel"
+            v-for="(item,i) in tabs" :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`"
+            v-bind:aria-labelledby="`tablabel${_uid}${parseInt(i)+1}`" v-bind:class="item.active ? 'opacity-100' : 'opacity-0'"
+            v-html="item.text"></div>
           </div>
         </div>
       </div>

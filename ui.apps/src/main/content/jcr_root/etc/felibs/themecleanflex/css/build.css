@@ -6114,6 +6114,54 @@ table {
   padding-top: 42.86%;
 }
 
+.transition-none {
+  transition: none;
+}
+
+.transition-opacity {
+  transition: opacity 100ms ease;
+}
+
+.transition-height {
+  transition: height 100ms ease;
+}
+
+.transition-duration-200 {
+  transition-duration: 200ms;
+}
+
+.transition-duration-300 {
+  transition-duration: 300ms;
+}
+
+.transition-duration-400 {
+  transition-duration: 400ms;
+}
+
+.transition-duration-500 {
+  transition-duration: 500ms;
+}
+
+.transition-timing-ease {
+  transition-timing-function: ease;
+}
+
+.transition-timing-linear {
+  transition-timing-function: linear;
+}
+
+.transition-delay-none {
+  transition-delay: 0s;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+.will-change-transform {
+  will-change: transform;
+}
+
 /* Custom Utilities */
 
 /* Themes */
@@ -11822,6 +11870,54 @@ table {
   .sm\:z-auto {
     z-index: auto;
   }
+
+  .sm\:transition-none {
+    transition: none;
+  }
+
+  .sm\:transition-opacity {
+    transition: opacity 100ms ease;
+  }
+
+  .sm\:transition-height {
+    transition: height 100ms ease;
+  }
+
+  .sm\:transition-duration-200 {
+    transition-duration: 200ms;
+  }
+
+  .sm\:transition-duration-300 {
+    transition-duration: 300ms;
+  }
+
+  .sm\:transition-duration-400 {
+    transition-duration: 400ms;
+  }
+
+  .sm\:transition-duration-500 {
+    transition-duration: 500ms;
+  }
+
+  .sm\:transition-timing-ease {
+    transition-timing-function: ease;
+  }
+
+  .sm\:transition-timing-linear {
+    transition-timing-function: linear;
+  }
+
+  .sm\:transition-delay-none {
+    transition-delay: 0s;
+  }
+
+  .sm\:will-change-opacity {
+    will-change: opacity;
+  }
+
+  .sm\:will-change-transform {
+    will-change: transform;
+  }
 }
 
 @media (min-width: 768px) {
@@ -17386,6 +17482,54 @@ table {
 
   .md\:z-auto {
     z-index: auto;
+  }
+
+  .md\:transition-none {
+    transition: none;
+  }
+
+  .md\:transition-opacity {
+    transition: opacity 100ms ease;
+  }
+
+  .md\:transition-height {
+    transition: height 100ms ease;
+  }
+
+  .md\:transition-duration-200 {
+    transition-duration: 200ms;
+  }
+
+  .md\:transition-duration-300 {
+    transition-duration: 300ms;
+  }
+
+  .md\:transition-duration-400 {
+    transition-duration: 400ms;
+  }
+
+  .md\:transition-duration-500 {
+    transition-duration: 500ms;
+  }
+
+  .md\:transition-timing-ease {
+    transition-timing-function: ease;
+  }
+
+  .md\:transition-timing-linear {
+    transition-timing-function: linear;
+  }
+
+  .md\:transition-delay-none {
+    transition-delay: 0s;
+  }
+
+  .md\:will-change-opacity {
+    will-change: opacity;
+  }
+
+  .md\:will-change-transform {
+    will-change: transform;
   }
 }
 
@@ -22952,6 +23096,54 @@ table {
   .lg\:z-auto {
     z-index: auto;
   }
+
+  .lg\:transition-none {
+    transition: none;
+  }
+
+  .lg\:transition-opacity {
+    transition: opacity 100ms ease;
+  }
+
+  .lg\:transition-height {
+    transition: height 100ms ease;
+  }
+
+  .lg\:transition-duration-200 {
+    transition-duration: 200ms;
+  }
+
+  .lg\:transition-duration-300 {
+    transition-duration: 300ms;
+  }
+
+  .lg\:transition-duration-400 {
+    transition-duration: 400ms;
+  }
+
+  .lg\:transition-duration-500 {
+    transition-duration: 500ms;
+  }
+
+  .lg\:transition-timing-ease {
+    transition-timing-function: ease;
+  }
+
+  .lg\:transition-timing-linear {
+    transition-timing-function: linear;
+  }
+
+  .lg\:transition-delay-none {
+    transition-delay: 0s;
+  }
+
+  .lg\:will-change-opacity {
+    will-change: opacity;
+  }
+
+  .lg\:will-change-transform {
+    will-change: transform;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -28516,5 +28708,53 @@ table {
 
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:transition-none {
+    transition: none;
+  }
+
+  .xl\:transition-opacity {
+    transition: opacity 100ms ease;
+  }
+
+  .xl\:transition-height {
+    transition: height 100ms ease;
+  }
+
+  .xl\:transition-duration-200 {
+    transition-duration: 200ms;
+  }
+
+  .xl\:transition-duration-300 {
+    transition-duration: 300ms;
+  }
+
+  .xl\:transition-duration-400 {
+    transition-duration: 400ms;
+  }
+
+  .xl\:transition-duration-500 {
+    transition-duration: 500ms;
+  }
+
+  .xl\:transition-timing-ease {
+    transition-timing-function: ease;
+  }
+
+  .xl\:transition-timing-linear {
+    transition-timing-function: linear;
+  }
+
+  .xl\:transition-delay-none {
+    transition-delay: 0s;
+  }
+
+  .xl\:will-change-opacity {
+    will-change: opacity;
+  }
+
+  .xl\:will-change-transform {
+    will-change: transform;
   }
 }
