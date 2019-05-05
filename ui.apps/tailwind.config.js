@@ -966,8 +966,33 @@ module.exports = {
         '21/9': [21, 9],
       }
     }),
+    require('tailwindcss-transitions')({
+      variants: ['responsive'],
+      properties: {
+        'opacity': 'opacity',
+        'height': 'height',
+      },
+      durations: {
+        'default': '100ms',
+        '200': '200ms',
+        '300': '300ms',
+        '400': '400ms',
+        '500': '500ms',
+      },
+      timingFunctions: {
+        'default': 'ease',
+        'ease': 'ease',
+        'linear': 'linear'
+      },
+      delays: {
+        'none': '0s',
+      },
+      willChange: {
+        'opacity': 'opacity',
+        'transform': 'transform',
+      },
+    }),
   ],
-
 
   /*
   |-----------------------------------------------------------------------------

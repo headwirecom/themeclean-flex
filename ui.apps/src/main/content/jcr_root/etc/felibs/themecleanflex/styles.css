@@ -6,22 +6,22 @@
 
 /* Themes */ 
 .theme-dark {
-  @apply .text-white .bg-black;
+  @apply text-white bg-black;
 }
 .theme-light {
-  @apply .text-black .bg-white;
+  @apply text-black bg-white;
 }
 .bg-dark {
-  @apply .bg-black;
+  @apply bg-black;
 }
 .bg-light {
-  @apply .bg-white;
+  @apply bg-white;
 }
 .text-dark {
-  @apply .text-black;
+  @apply text-black;
 }
 .text-light {
-  @apply .text-white;
+  @apply text-white;
 }
 
 /* Drop Shadow Helpers */
@@ -54,7 +54,9 @@
 /* Buttons */
 .btn {
   @apply font-bold py-2 px-4 rounded no-underline;
+  transition: background-color 0.2s ease;
 }
+
 .btn-lg {
   @apply py-4 px-5 text-lg
 }
