@@ -4,14 +4,14 @@ module.exports = {
 		f.bindAttribute($.parent(),'model','model')
 
 		//Logo
-		f.addIf($.find('div.col-12').first(), "model.showlogo === 'true' && model.logo")
+		f.addIf($.find('a').first(), "model.showlogo === 'true' && model.logo")
     	f.bindAttribute($.find('a').first(), 'href', f.pathToUrl('model.logourl'))
     	f.bindAttribute($.find('img').first(), 'src', f.pathToUrl('model.logo'))
     	f.bindAttribute($.find('img').first(), 'alt', 'model.logoalttext')
 		f.addStyle($.find('img').first(), 'height', 'parseInt(model.logosize)', 'px')
 
 		//Columns
-		let col = $.find('div.col-12').eq(1)
+		let col = $.find('.footer-col').first()
 		let coltitle = col.find('h5').first()
 		let colcontent = col.find('div').first()
 		f.addFor( col, "model.columns")

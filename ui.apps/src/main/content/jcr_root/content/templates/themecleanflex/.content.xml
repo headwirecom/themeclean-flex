@@ -9,6 +9,6 @@
             sling:resourceType="themecleanflex/components/page"
             jcr:title="themecleanflex template"
             brand="themecleanflex"
-            siteCSS="[/etc/felibs/themecleanflex.css]"
+            siteCSS="[/etc/felibs/themecleanflex.css,https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css]"
     />
 </jcr:root>

@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
+  <div class="flex justify-center">
     <a class="m-1" v-for="(item,i) in model.icons" :key="i" v-bind:href="$helper.pathToUrl(item.url)">
       <i v-bind:class="[
             {'text-light': model.colorscheme === 'dark' &amp;&amp; model.iconcustomcolor != 'true'},
