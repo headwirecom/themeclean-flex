@@ -19,17 +19,8 @@
           <!-- Tab Nav -->
           <ul class="flex justify-center list-reset pb-3" role="tablist">
             <li class="nav-item" v-for="(item,i) in tabs" :key="i">
-              <a class="no-underline p-3 cursor-pointer" v-bind:class="{
-            'bg-blue text-white': item.active === true,
-            'bg-primary': model.tabcolor === 'primary',
-            'bg-secondary': model.tabcolor === 'secondary',
-            'bg-success': model.tabcolor === 'success',
-            'bg-danger': model.tabcolor === 'danger',
-            'bg-warning': model.tabcolor === 'warning',
-            'bg-info': model.tabcolor === 'info',
-            'bg-light': model.tabcolor === 'light',
-            'bg-dark': model.tabcolor === 'dark'
-        }" v-bind:id="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:aria-controls="`tab${_uid}${parseInt(i)+1}`"
+              <a class="no-underline p-3 cursor-pointer" v-bind:class="item.active === true ?  `bg-${model.tabcolor} text-white` : `text-${model.tabcolor}`"
+              v-bind:id="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:aria-controls="`tab${_uid}${parseInt(i)+1}`"
               v-on:click="toggleActive(i)" v-html="item.title"></a>
             </li>
           </ul>

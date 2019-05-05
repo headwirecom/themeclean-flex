@@ -153,27 +153,19 @@
       "values": [
         {
           "name": "Primary",
-          "value": "primary"
-        },
-        {
-          "name": "Secondary",
-          "value": "secondary"
+          "value": "blue"
         },
         {
           "name": "Success",
-          "value": "success"
+          "value": "green"
         },
         {
           "name": "Danger",
-          "value": "danger"
+          "value": "red"
         },
         {
           "name": "Warning",
-          "value": "warning"
-        },
-        {
-          "name": "Info",
-          "value": "info"
+          "value": "orange"
         },
         {
           "name": "Light",

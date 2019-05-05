@@ -58,31 +58,23 @@
           "x-source": "inject",
           "x-form-label": "Tab Color",
           "x-form-type": "materialselect",
-          "x-default": "primary",
+          "x-default": "blue",
           "properties":{
             "primary": {
               "x-form-name": "Primary",
-              "x-form-value": "primary"
-            },
-            "secondary": {
-              "x-form-name": "Secondary",
-              "x-form-value": "secondary"
+              "x-form-value": "blue"
             },
             "success": {
               "x-form-name": "Success",
-              "x-form-value": "success"
+              "x-form-value": "green"
             },
             "danger": {
               "x-form-name": "Danger",
-              "x-form-value": "danger"
+              "x-form-value": "red"
             },
             "warning": {
               "x-form-name": "Warning",
-              "x-form-value": "warning"
-            },
-            "info": {
-              "x-form-name": "Info",
-              "x-form-value": "info"
+              "x-form-value": "orange"
             },
             "light": {
               "x-form-name": "Light",
