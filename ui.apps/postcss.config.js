@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
     tailwind('./tailwind.config.js'),
     new purgecss({
-      content: ['./src/main/content/jcr_root/**/*.vue', './src/main/content/jcr_root/**/dialog.json'],
+      content: ['./src/main/content/jcr_root/**/*.vue', './src/main/content/jcr_root/**/dialog.json', './src/main/content/jcr_root/**/*html'],
       extractors: [
         {
           extractor: TailwindExtractor,
