@@ -1,7 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="flex flex-col align-items-center">
-      <div class="flex" v-bind:class="{
+    <div class="w-full flex flex-col align-items-center justify-center">
+      <div class="flex flex-col" v-bind:class="{
             'justify-start': model.aligncontent === 'left',
             'justify-center': model.aligncontent === 'center',
             'justify-end': model.aligncontent === 'right'
@@ -26,13 +26,13 @@
         v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
-            'btn-p': item.buttoncolor === 'primary',
+            'btn-blue': item.buttoncolor === 'primary',
             'btn-white border border-blue': item.buttoncolor === 'secondary',
             'btn-green': item.buttoncolor === 'success',
             'btn-red': item.buttoncolor === 'danger',
             'btn-orange': item.buttoncolor === 'warning',
-            'btn-light': item.buttoncolor === 'light',
-            'btn-dark': item.buttoncolor === 'dark'
+            'btn-white': item.buttoncolor === 'light',
+            'btn-black': item.buttoncolor === 'dark'
         }" v-html="item.buttontext" v-bind:style="`backgroundColor:${item.buttoncolor};borderColor:${item.buttoncolor};`"></a>
       </div>
     </div>
