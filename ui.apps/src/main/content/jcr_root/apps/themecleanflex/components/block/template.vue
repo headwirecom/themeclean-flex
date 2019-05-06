@@ -36,9 +36,9 @@
           // let navSticky = navPosition === "sticky" || navPosition === "fixed" 
           // let navOffset = navSticky ? navSection.clientHeight : 0
 
-          this.$refs.anchor.style.top = `0px`
-          this.$refs.anchor.style.marginTop = `-${navOffset}px`
-          this.$refs.anchor.style.paddingTop = `${navOffset}px`
+          // this.$refs.anchor.style.top = `0px`
+          // this.$refs.anchor.style.marginTop = `-${navOffset}px`
+          // this.$refs.anchor.style.paddingTop = `${navOffset}px`
 
         },
         computed: {          
