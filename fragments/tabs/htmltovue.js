@@ -24,7 +24,21 @@ module.exports = {
         f.addFor($.find('li.nav-item').first(), 'tabs')
         let a = $.find('a').first()
 
-        let aClasses = 'item.active === true ?  \`bg-$\{model.tabcolor} text-white\` : \`text-$\{model.tabcolor}\`'
+        let aClasses = `{
+            'text-white' : item.active === true,
+            'bg-blue' : item.active  && model.tabcolor === 'blue',
+            'bg-green' : item.active && model.tabcolor === 'green',
+            'bg-red' : item.active && model.tabcolor === 'red',
+            'bg-orange' : item.active && model.tabcolor === 'orange',
+            'bg-light' : item.active && model.tabcolor === 'light',
+            'bg-dark' : item.active && model.tabcolor === 'dark',
+            'text-blue' : !item.active  && model.tabcolor === 'blue',
+            'text-green' : !item.active && model.tabcolor === 'green',
+            'text-red' : !item.active && model.tabcolor === 'red',
+            'text-orange' : !item.active && model.tabcolor === 'orange',
+            'text-light' : !item.active && model.tabcolor === 'light',
+            'text-dark' : !item.active && model.tabcolor === 'dark',
+        }`
 
     	f.bindAttribute( a, 'class', aClasses, false)
     	f.bindAttribute( a, 'id', '`tab-control-${_uid}${parseInt(i)+1}`')

@@ -19,8 +19,21 @@
           <!-- Tab Nav -->
           <ul class="flex justify-center list-reset pb-3" role="tablist">
             <li class="nav-item" v-for="(item,i) in tabs" :key="i">
-              <a class="no-underline p-3 cursor-pointer" v-bind:class="item.active === true ?  `bg-${model.tabcolor} text-white` : `text-${model.tabcolor}`"
-              v-bind:id="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:aria-controls="`tab${_uid}${parseInt(i)+1}`"
+              <a class="no-underline p-3 cursor-pointer" v-bind:class="{
+            'text-white' : item.active === true,
+            'bg-blue' : item.active  &amp;&amp; model.tabcolor === 'blue',
+            'bg-green' : item.active &amp;&amp; model.tabcolor === 'green',
+            'bg-red' : item.active &amp;&amp; model.tabcolor === 'red',
+            'bg-orange' : item.active &amp;&amp; model.tabcolor === 'orange',
+            'bg-light' : item.active &amp;&amp; model.tabcolor === 'light',
+            'bg-dark' : item.active &amp;&amp; model.tabcolor === 'dark',
+            'text-blue' : !item.active  &amp;&amp; model.tabcolor === 'blue',
+            'text-green' : !item.active &amp;&amp; model.tabcolor === 'green',
+            'text-red' : !item.active &amp;&amp; model.tabcolor === 'red',
+            'text-orange' : !item.active &amp;&amp; model.tabcolor === 'orange',
+            'text-light' : !item.active &amp;&amp; model.tabcolor === 'light',
+            'text-dark' : !item.active &amp;&amp; model.tabcolor === 'dark',
+        }" v-bind:id="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:aria-controls="`tab${_uid}${parseInt(i)+1}`"
               v-on:click="toggleActive(i)" v-html="item.title"></a>
             </li>
           </ul>
