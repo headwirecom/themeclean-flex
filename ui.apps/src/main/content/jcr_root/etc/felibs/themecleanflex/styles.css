@@ -4,6 +4,10 @@
 
 /* Custom Utilities */
 
+.transform-rotate-90 {
+  transform: rotate(90deg);
+}
+
 /* Themes */ 
 .theme-dark {
   @apply text-white bg-black;
