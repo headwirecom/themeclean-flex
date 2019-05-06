@@ -14,11 +14,10 @@
               <h4 v-html="item.title"></h4>
               <i class aria-hidden="true">x</i>
             </a>
-            <div class="card-content overflow-hidden bg-white" role="tabpanel" v-html="item.text"
-            v-bind:class="{
-            'h-auto p-4': active[i],
-            'h-px p-0 invisible': !active[i]
-        }"></div>
+            <div class="card-content overflow-hidden bg-white transition-height" role="tabpanel"
+            v-bind:style="`height:${active[i] ? heights[i] + 'px' : '0px'};`">
+              <div class="p-4" v-html="item.text" v-bind:ref="`cardContent${i}`"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -31,8 +30,14 @@
         props: ['model'],
         data: function() {
           return {
-            active: new Array(this.model.accordiontoggle.length).fill(false)
+            active: new Array(this.model.accordiontoggle.length).fill(false),
+            heights: new Array(this.model.accordiontoggle.length).fill(0),
           }
+        },
+        mounted: function() {
+          this.heights.forEach( (item,i) => {
+            Vue.set(this.heights, i, this.$refs[`cardContent${i}`][0].clientHeight )}
+          );
         },
         computed: {
         	isEditAndEmpty() {

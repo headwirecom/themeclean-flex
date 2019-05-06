@@ -29,12 +29,10 @@ module.exports = {
         f.mapRichField( a.find('h4'), "item.title")
 
         //Acocordion Item Body
-        f.mapRichField($.find('div.card-content').first(), "item.text")
-        let cardClasses = `{
-            'h-auto p-4': active[i],
-            'h-px p-0 invisible': !active[i]
-        }`
-        f.bindAttribute($.find('div.card-content').first(), 'class', cardClasses, false)
+        f.mapRichField($.find('div.card-content > div').first(), "item.text")
+        f.bindAttribute($.find('div.card-content > div').first(), 'ref', "`cardContent${i}`")
+        f.addStyle($.find('div.card-content').first(), 'height', "active[i] ? heights[i] + 'px' : '0px'")
+
 
     }
 }
