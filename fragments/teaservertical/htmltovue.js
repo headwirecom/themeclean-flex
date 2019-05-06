@@ -19,7 +19,7 @@ module.exports = {
             'text-3xl': model.isprimary === 'true'
         }`
         let textContainer = $.find('div>div').eq(0)
-        let textDiv = textContainer.find('div').first()
+        let textDiv = $.find('div>div>div').first()
         f.bindAttribute( textContainer, 'class', textContainerClasses, false)
         f.bindAttribute( textDiv, 'class', textClasses, false)
         f.addStyle( textDiv, 'width', 'model.textwidth', '%')
@@ -31,7 +31,7 @@ module.exports = {
         f.mapRichField($.find('p').first(), "model.text")
 
         //Buttons
-        let buttonsDiv = $.find('div .flex-wrap').first()
+        let buttonsDiv = $.find('.flex-wrap').first()
         let link = buttonsDiv.find('a').first()
         let buttonsClasses = `{
             'justify-start': model.alignbuttons === 'start',

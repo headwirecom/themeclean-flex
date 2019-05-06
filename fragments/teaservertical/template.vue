@@ -1,15 +1,40 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="w-full flex flex-col justify-center">
+    <div class="w-full flex flex-col align-items-center">
       <div class="flex flex-col mb-3" v-bind:class="{
             'justify-start': model.aligncontent === 'left',
             'justify-center': model.aligncontent === 'center',
             'justify-end': model.aligncontent === 'right'
-        }"></div>
-      <div class>
-        <h2 class v-if="model.showtitle === 'true'" v-html="model.title"></h2>
-        <h4 class v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h4>
-        <p v-if="model.showtext === 'true'" v-html="model.text"></p>
+        }">
+        <div class v-bind:class="{
+            'text-left': model.aligncontent === 'left',
+            'text-center': model.aligncontent === 'center',
+            'text-right': model.aligncontent === 'right',
+            'text-3xl': model.isprimary === 'true'
+        }" v-bind:style="`width:${model.textwidth}%;`">
+          <h2 class v-if="model.showtitle === 'true'" v-html="model.title"></h2>
+          <h4 class v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h4>
+          <p v-if="model.showtext === 'true'" v-html="model.text"></p>
+        </div>
+      </div>
+      <div class="flex flex-wrap p-0" v-if="model.showbutton == 'true'"
+      v-bind:class="{
+            'justify-start': model.alignbuttons === 'start',
+            'justify-center': model.alignbuttons === 'center',
+            'justify-end': model.alignbuttons === 'end'
+        }">
+        <a class="btn m-2" v-for="(item,i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
+        v-bind:class="{
+            'btn-lg': model.buttonsize === 'large',
+            'btn-sm': model.buttonsize === 'small',
+            'btn-blue': item.buttoncolor === 'primary',
+            'btn-white border border-blue': item.buttoncolor === 'secondary',
+            'btn-green': item.buttoncolor === 'success',
+            'btn-red': item.buttoncolor === 'danger',
+            'btn-orange': item.buttoncolor === 'warning',
+            'btn-white': item.buttoncolor === 'light',
+            'btn-black': item.buttoncolor === 'dark'
+        }" v-html="item.buttontext" v-bind:style="`backgroundColor:${item.buttoncolor};borderColor:${item.buttoncolor};`"></a>
       </div>
     </div>
   </themecleanflex-components-block>
