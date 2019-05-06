@@ -15,7 +15,7 @@ module.exports = {
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
             'text-right': model.aligncontent === 'right',
-            'percms-text-large': model.isprimary === 'true'
+            'text-3xl': model.isprimary === 'true'
         }`
         let textDiv = $.find('div').eq(0)
         f.bindAttribute( textDiv, 'class', textClasses,false)

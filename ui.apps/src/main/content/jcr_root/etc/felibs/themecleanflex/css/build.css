@@ -20,6 +20,10 @@ html {
  * Remove the margin in all browsers.
  */
 
+body {
+  margin: 0;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */
@@ -695,6 +699,10 @@ button,
 
 .hover\:text-grey-lighter:hover {
   color: #f1f5f8;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
 }
 
 .no-underline {

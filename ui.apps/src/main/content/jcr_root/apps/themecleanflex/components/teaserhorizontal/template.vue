@@ -8,7 +8,7 @@
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
             'text-right': model.aligncontent === 'right',
-            'percms-text-large': model.isprimary === 'true'
+            'text-3xl': model.isprimary === 'true'
         }" v-bind:style="`flex-basis:${model.textwidth}%;`">
         <h2 class v-if="model.showtitle === 'true'" v-html="model.title"></h2>
         <h4 class v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h4>

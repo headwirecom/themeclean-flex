@@ -15,7 +15,8 @@ module.exports = {
         let textClasses = `{
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
-            'text-right': model.aligncontent === 'right'
+            'text-right': model.aligncontent === 'right',
+            'text-3xl': model.isprimary === 'true'
         }`
         let textContainer = $.find('div>div').eq(0)
         let textDiv = textContainer.find('div').first()
