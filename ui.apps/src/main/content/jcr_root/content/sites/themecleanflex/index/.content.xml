@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
+    jcr:lastModified="{Date}2019-05-06T21:14:05.790Z"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="per:Page">
+    <jcr:content
+        jcr:lastModified="{Date}2019-05-06T21:15:41.195Z"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="index"
+        sling:resourceType="themecleanflex/components/page"
+        description="sample root page of the site"
+        name="index"
+        template="/content/templates/themecleanflex"
+        templatePath="/content/templates/themecleanflex">
+        <ncd41d0e6-6c8b-4036-8eee-003a29ef9626
+            jcr:lastModified="{Date}2019-05-06T21:14:16.098Z"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/header"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
+            bottompadding="0"
+            buttonsize="default"
+            collapsed="false"
+            colorscheme="light"
+            elevation="1"
+            logo="/content/assets/themeclean/images/peregrine-logo.png"
+            logoalttext="home"
+            logosize="60"
+            logourl="http://www.peregrine-cms.com"
+            toppadding="0">
+            <links jcr:primaryType="nt:unstructured">
+                <links0
+                    jcr:primaryType="nt:unstructured"
+                    link="/content/sites/themeclean"
+                    text="Services"/>
+                <links1
+                    jcr:primaryType="nt:unstructured"
+                    link="/content/sites/themeclean"
+                    text="About Us"/>
+                <links2
+                    jcr:primaryType="nt:unstructured"
+                    link="/content/sites/themeclean"
+                    text="Contact Us"/>
+            </links>
+            <buttons jcr:primaryType="nt:unstructured">
+                <buttons0
+                    jcr:primaryType="nt:unstructured"
+                    buttoncolor="primary"
+                    buttonlink="/content/sites/themeclean"
+                    buttontext="Try It Now"/>
+            </buttons>
+        </ncd41d0e6-6c8b-4036-8eee-003a29ef9626>
+        <ndc181338-1751-495f-914f-830ad5600fc5
+            jcr:lastModified="{Date}2019-05-06T21:14:11.417Z"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/footer"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            bottompadding="0"
+            colorscheme="light"
+            copyright="Copyright 2019 headwire.com, Inc - All Rights Reserved"
+            logo="/content/assets/themeclean/images/peregrine-logo.png"
+            logosize="60"
+            logoalttext="home"
+            logourl="http://www.peregrine-cms.com"
+            showlogo="true"
+            toppadding="30">
+            <columns jcr:primaryType="nt:unstructured">
+                <columns0
+                    jcr:primaryType="nt:unstructured"
+                    text=""
+                    title=""/>
+                <columns1
+                    jcr:primaryType="nt:unstructured"
+                    text="&lt;p>email@email.com&lt;br>1-800-888-8888&lt;/p>"
+                    title="Contact"/>
+                <columns2
+                    jcr:primaryType="nt:unstructured"
+                    text="&lt;p>1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p>"
+                    title="Location"/>
+            </columns>
+            <icons jcr:primaryType="nt:unstructured">
+            </icons>
+        </ndc181338-1751-495f-914f-830ad5600fc5>
+    </jcr:content>
+</jcr:root>
