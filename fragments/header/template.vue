@@ -13,7 +13,7 @@
           <themecleanflex-components-menubuttons
           v-bind:model="model"></themecleanflex-components-menubuttons>
         </div>
-        <div class="btn btn-lg btn-white cursor-pointer block md:hidden transform-rotate-90"
+        <div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90"
         v-on:click="toggleMenu">|||</div>
       </div>
       <div class="flex flex-col w-full md:hidden transition-height" v-bind:style="`height:${menuActive ? menuHeight + 'px' : '0px'};`">
