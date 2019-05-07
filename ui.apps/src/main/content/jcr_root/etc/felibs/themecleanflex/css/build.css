@@ -713,6 +713,10 @@ button,
   color: #f1f5f8;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
 }
