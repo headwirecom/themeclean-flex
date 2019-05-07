@@ -537,6 +537,10 @@ button,
   justify-content: space-between;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -551,6 +555,10 @@ button,
 
 .m-2 {
   margin: .5rem;
+}
+
+.m-3 {
+  margin: .75rem;
 }
 
 .m-4 {
@@ -590,6 +598,10 @@ button,
 
 .min-w-full {
   min-width: 100%;
+}
+
+.-m-4 {
+  margin: -1rem;
 }
 
 .opacity-0 {
@@ -730,11 +742,11 @@ button,
 }
 
 .transition-opacity {
-  transition: opacity 100ms ease;
+  transition: opacity 200ms ease;
 }
 
 .transition-height {
-  transition: height 100ms ease;
+  transition: height 200ms ease;
 }
 
 /* Custom Utilities */
@@ -856,6 +868,13 @@ button,
   background-color: #606f7b;
 }
 
+@media (min-width: 576px) {
+
+  .sm\:pr-0 {
+    padding-right: 0;
+  }
+}
+
 @media (min-width: 768px) {
 
   .md\:hidden {
@@ -868,5 +887,25 @@ button,
 
   .md\:flex-row {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .lg\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .lg\:pr-3 {
+    padding-right: .75rem;
   }
 }

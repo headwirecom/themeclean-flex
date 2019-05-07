@@ -973,7 +973,8 @@ module.exports = {
         'height': 'height',
       },
       durations: {
-        'default': '100ms',
+        'default': '200ms',
+        '100': '100ms',
         '200': '200ms',
         '300': '300ms',
         '400': '400ms',

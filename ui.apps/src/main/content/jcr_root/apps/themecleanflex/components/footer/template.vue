@@ -1,12 +1,12 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="w-full">
-      <div class="flex justify-between">
+      <div class="flex flex-col lg:flex-row justify-between">
         <a v-if="model.showlogo === 'true' &amp;&amp; model.logo" v-bind:href="$helper.pathToUrl(model.logourl)">
           <img class="mb-3" v-bind:src="$helper.pathToUrl(model.logo)" v-bind:alt="model.logoalttext"
           v-bind:style="`height:${parseInt(model.logosize)}px;`">
         </a>
-        <div class="footer-col m-4" v-for="(item,i) in model.columns" :key="i">
+        <div class="footer-col lg:mx-4" v-for="(item,i) in model.columns" :key="i">
           <h5 class="my-4" v-if="item.title !== ''">{{item.title}}</h5>
           <div v-if="item.text !== ''" v-html="item.text"></div>
         </div>

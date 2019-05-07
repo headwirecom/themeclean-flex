@@ -7,14 +7,20 @@ module.exports = {
     	f.addIf($.find('h2').first(), 'model.showtitle == \'true\'')
         f.mapRichField($.find('h2').first(), "model.title")
 
+        let containerClasses = `{
+            'lg:flex-row': model.mediaposition === 'before',
+            'lg:flex-row-reverse': model.mediaposition === 'after'
+
+        }`
+
         //Content Container
         let contentDiv = $.find('.flex').first()
-        f.bindAttribute(  contentDiv,  'class', "model.mediaposition === 'after' ? 'flex-row-reverse': 'flex-row'", false)
+        f.bindAttribute(  contentDiv,  'class', containerClasses, false)
 
         //Media
         let mediaDiv  = contentDiv.find('.img-wrapper').first()
         f.addIf( mediaDiv, "model.showmedia === 'true'")
-        f.bindAttribute( mediaDiv, 'style', "{width:`${model.mediawidth}%`}")
+        f.bindAttribute( mediaDiv, 'style', "{flex:`0 0 ${model.mediawidth}%`}")
         f.replace( mediaDiv.find('img'), '<themecleanflex-components-media :model="model"></themecleanflex-components-media>')
 
         //Accordion Container

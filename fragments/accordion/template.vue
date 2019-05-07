@@ -3,8 +3,13 @@
     <div>
       <h2 class="text-center pb-4" v-if="model.showtitle == 'true'"
       v-html="model.title"></h2>
-      <div class="flex" v-bind:class="model.mediaposition === 'after' ? 'flex-row-reverse': 'flex-row'">
-        <div class="img-wrapper" v-if="model.showmedia === 'true'" v-bind:style="{width:`${model.mediawidth}%`}">
+      <div class="flex flex-col" v-bind:class="{
+            'lg:flex-row': model.mediaposition === 'before',
+            'lg:flex-row-reverse': model.mediaposition === 'after'
+
+        }">
+        <div class="img-wrapper sm:pr-0 lg:pr-3" v-if="model.showmedia === 'true'"
+        v-bind:style="{flex:`0 0 ${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
         <div>

@@ -1,7 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="flex">
-      <div class="m-4 card w-auto flex flex-col items-stretch" v-for="(item,i) in model.cards"
+    <div class="-m-4 flex flex-col md:flex-row">
+      <div class="flex-1 m-4 card w-auto flex flex-col items-stretch" v-for="(item,i) in model.cards"
       :key="i" v-bind:style="`background-color:${model.customcardcolor === 'true' &amp;&amp; model.showcard === 'true' ? model.cardcolor: ''};`"
       v-bind:class="{
             'bg-dark': model.customcardcolor !== 'true' &amp;&amp; model.colorscheme === 'light',

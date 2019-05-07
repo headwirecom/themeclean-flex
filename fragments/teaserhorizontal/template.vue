@@ -1,6 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="w-full flex justify-between items-center" v-bind:class="{
+    <div class="w-full flex flex-col md:flex-row justify-between items-center"
+    v-bind:class="{
             'flex-row-reverse': model.buttonside === 'left',
             'flex-row': model.buttonside === 'right',
         }">

@@ -5,17 +5,17 @@ module.exports = {
 
         f.replace( $.find('img'), '<themecleanflex-components-media :model="model"></themecleanflex-components-media>')
 
-        let imageDiv = $.find('div.w-auto').first()
+        let imageDiv = $.find('div.img-wrapper').first()
         f.addIf( imageDiv, 'model.showmedia == \'true\'')
 
         let containerClasses = `{
-            'flex-row': model.mediaposition === 'before',
-            'flex-row-reverse': model.mediaposition === 'after'
+            'lg:flex-row': model.mediaposition === 'before',
+            'lg:flex-row-reverse': model.mediaposition === 'after'
 
         }`
         f.bindAttribute($.find('div.flex').first(), 'class', containerClasses, false)
 
-        f.bindAttribute($.find('div.flex > div').first(), 'style', "{width:`${model.mediawidth}%`}")
+        f.bindAttribute($.find('div.flex > div').first(), 'style', "{'flex':`0 0 ${model.mediawidth}%`}")
     	f.addIf($.find('h2').first(), 'model.showtitle == \'true\' && model.title')
         f.mapRichField($.find('h2').first(), "model.title")
         f.addIf($.find('h3').first(), 'model.showsubtitle == \'true\' && model.subtitle')
@@ -50,7 +50,7 @@ module.exports = {
     	f.addFor( tabPanel, 'tabs')
     	f.bindAttribute(tabPanel, 'id', '`tab${_uid}${parseInt(i)+1}`')
         f.bindAttribute(tabPanel, 'aria-labelledby', '`tablabel${_uid}${parseInt(i)+1}`')
-    	f.bindAttribute(tabPanel, 'class', "item.active ? 'opacity-100' : 'opacity-0'", false)
+    	f.bindAttribute(tabPanel, 'class', "item.active ? 'block opacity-100' : 'hidden'", false)
         f.mapRichField(tabPanel, "item.text")
     }
 }

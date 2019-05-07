@@ -7,18 +7,19 @@
         <h3 class="text-center pb-4" v-if="model.showsubtitle == 'true' &amp;&amp; model.subtitle"
         v-html="model.subtitle"></h3>
       </div>
-      <div class="flex justify-center" v-bind:class="{
-            'flex-row': model.mediaposition === 'before',
-            'flex-row-reverse': model.mediaposition === 'after'
+      <div class="flex flex-col" v-bind:class="{
+            'lg:flex-row': model.mediaposition === 'before',
+            'lg:flex-row-reverse': model.mediaposition === 'after'
 
         }">
-        <div class="w-auto pb-3" v-if="model.showmedia == 'true'" v-bind:style="{width:`${model.mediawidth}%`}">
+        <div class="img-wrapper sm:pr-0 lg:pr-3" v-if="model.showmedia == 'true'"
+        v-bind:style="{'flex':`0 0 ${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
         <div class="w-full py-3 flex flex-col">
           <!-- Tab Nav -->
-          <ul class="flex justify-center list-reset pb-3" role="tablist">
-            <li class="nav-item" v-for="(item,i) in tabs" :key="i">
+          <ul class="flex flex-wrap justify-center list-reset pb-3" role="tablist">
+            <li class="nav-item m-3" v-for="(item,i) in tabs" :key="i">
               <a class="no-underline p-3 cursor-pointer" v-bind:class="{
             'text-white' : item.active === true,
             'bg-blue' : item.active  &amp;&amp; model.tabcolor === 'blue',
@@ -39,9 +40,9 @@
           </ul>
           <!-- Tab Content -->
           <div class="relative" id="myTabContent">
-            <div class="absolute w-full text-center py-3 transition-opacity" role="tabpanel"
+            <div class="w-full text-center py-3 opacity-0 transition-opacity" role="tabpanel"
             v-for="(item,i) in tabs" :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`"
-            v-bind:aria-labelledby="`tablabel${_uid}${parseInt(i)+1}`" v-bind:class="item.active ? 'opacity-100' : 'opacity-0'"
+            v-bind:aria-labelledby="`tablabel${_uid}${parseInt(i)+1}`" v-bind:class="item.active ? 'block opacity-100' : 'hidden'"
             v-html="item.text"></div>
           </div>
         </div>
