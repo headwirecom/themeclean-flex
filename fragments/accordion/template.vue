@@ -13,7 +13,7 @@
         </div>
         <div>
           <div class="bg-grey-lighter" v-for="(item,i) in model.accordiontoggle"
-          :key="i" v-bind:id="`accordion${_uid}`">
+          :key="i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`">
             <a class="flex justify-between items-center p-4 cursor-pointer" v-on:click="toggleItem(i)">
               <h4 v-html="item.title"></h4>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"

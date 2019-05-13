@@ -6,7 +6,7 @@
     <i v-else-if="model.mediatype === 'icon'" class="w-full text-center" v-bind:class="iconClass" v-bind:style="{'font-size': `${model.mediaiconsize}px`, 'color': model.mediaiconcolor}">
       {{iconContent}}
     </i>
-    <img v-else-if="model.mediatype === 'image'" class="w-full" :src="$helper.pathToUrl(model.imagesrc)" v-bind:alt="model.mediaalttext"> 
+    <img v-else-if="model.mediatype === 'image'" class="w-full" :src="$helper.pathToUrl(model.imagesrc)" :alt="model.imagealttext"> 
     <h3 v-if="noMedia" class="w-full text-center">No media content</h3>
   </div>
 </template>

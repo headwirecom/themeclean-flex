@@ -8,7 +8,7 @@
     <i v-if="model.mediatype === 'icon'" class="w-full text-center" v-bind:class="model.mediaicon.split(':')[1]" v-bind:style="{'font-size': `${model.mediaiconsize}px`, 'color': model.mediaiconcolor}">
       {{model.mediaicon.split(':')[2]}}
     </i>
-    <img v-if="model.mediatype === 'image'" class="w-full" :src="$helper.pathToUrl(model.imagesrc)" v-bind:alt="model.imagealttext">
+    <img v-if="model.mediatype === 'image'" class="w-full" :src="$helper.pathToUrl(model.imagesrc)" :alt="model.imagealttext">
 
 
 

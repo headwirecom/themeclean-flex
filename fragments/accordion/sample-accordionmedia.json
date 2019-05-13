@@ -12,6 +12,7 @@
     "toppadding": "30",
     "mediatype": "image",
     "imagesrc": "/content/assets/themeclean/images/workers-looking-tablet.jpg",
+    "imagealttext": "Dude checking out tablet",
     "mediawidth": "33",
     "showmedia": "true",
     "toggletype": "accordion",

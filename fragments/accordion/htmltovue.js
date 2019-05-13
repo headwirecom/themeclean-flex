@@ -24,8 +24,7 @@ module.exports = {
         //Accordion Container
         let accordionContainer = $.find('div:nth-child(1)').eq(1)
         f.addFor(accordionContainer, 'model.accordiontoggle')
-        // f.bindAttribute( accordionContainer, 'id', "model.toggletype === 'accordion' ? `accordion${_uid}` : ''")
-        f.bindAttribute( accordionContainer, 'id', "`accordion${_uid}`")
+        f.bindAttribute( accordionContainer, 'id', "`accordion${_uid}${parseInt(i)+1}`")
 
         //Accordion Item Title Bar
         let a = $.find('a').first()
