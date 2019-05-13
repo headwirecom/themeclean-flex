@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+            jcr:primaryType="per:Page"
+            jcr:title="tf-cl | mediavisible"
+            jcr:description="mediavisible themecleanflex component library"
+>
+    <jcr:content
+        jcr:primaryType="per:PageContent"
+        sling:resourceType="themecleanflex/components/page"
+        jcr:title="mediavisible"
+        brand="themecleanflex"
+        template="/content/templates/themecleanflex"
+            ><text0 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            text="&lt;a href=&quot;/content/sites/themecleanflex/cl.html&quot;&gt;component library home&lt;/a&gt;">
+        </text0><title1 jcr:primaryType="nt:unstructured" 
+    sling:resourceType="themecleanflex/components/richtext" 
+    text="&lt;h1&gt;mediavisible&lt;/h1&gt;">
+</title1></jcr:content></jcr:root>
