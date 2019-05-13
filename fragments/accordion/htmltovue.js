@@ -7,13 +7,11 @@ module.exports = {
     	f.addIf($.find('h2').first(), 'model.showtitle == \'true\'')
         f.mapRichField($.find('h2').first(), "model.title")
 
+        //Content Container
         let containerClasses = `{
             'lg:flex-row': model.mediaposition === 'before',
             'lg:flex-row-reverse': model.mediaposition === 'after'
-
         }`
-
-        //Content Container
         let contentDiv = $.find('.flex').first()
         f.bindAttribute(  contentDiv,  'class', containerClasses, false)
 
@@ -38,6 +36,7 @@ module.exports = {
         f.mapRichField($.find('div.card-content > div').first(), "item.text")
         f.bindAttribute($.find('div.card-content > div').first(), 'ref', "`cardContent${i}`")
         f.addStyle($.find('div.card-content').first(), 'height', "active[i] ? heights[i] + 'px' : '0px'")
+        f.addStyle($.find('svg').first(), 'transform', "active[i] ? 'rotate(180deg)': 'rotate(0)'")
 
 
     }
