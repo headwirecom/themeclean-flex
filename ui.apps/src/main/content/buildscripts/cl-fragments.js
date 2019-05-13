@@ -49,7 +49,7 @@ return `<title${idx} jcr:primaryType="nt:unstructured"
 
     listChildren(path, children) {
         const text = `<ul>
-${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`))}
+${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)).join('')}
 </ul>`;
         return this.text(text);
     },
