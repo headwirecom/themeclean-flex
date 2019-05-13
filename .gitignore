@@ -40,3 +40,8 @@ yarn-error.log*
 *.sln
 *.sw?
 ui.apps/.factorypath
+
+# eclipse related
+.classpath
+.project
+.settings
