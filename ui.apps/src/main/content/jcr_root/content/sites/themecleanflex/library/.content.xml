@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+            jcr:primaryType="per:Page"
+            jcr:title="tf-cl | component library"
+            jcr:description="component library themecleanflex component library"
+>
+    <jcr:content
+        jcr:primaryType="per:PageContent"
+        sling:resourceType="themecleanflex/components/page"
+        jcr:title="component library"
+        brand="themecleanflex"
+        template="/content/templates/themecleanflex"
+            ><title0 jcr:primaryType="nt:unstructured" 
+    sling:resourceType="themecleanflex/components/richtext" 
+    text="&lt;h1&gt;component library&lt;/h1&gt;">
+</title0><text1 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            text="&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;library/accordion.html&quot;&gt;accordion&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/block.html&quot;&gt;block&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/breadcrumb.html&quot;&gt;breadcrumb&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/cards.html&quot;&gt;cards&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/carousel.html&quot;&gt;carousel&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/container.html&quot;&gt;container&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/footer.html&quot;&gt;footer&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/header.html&quot;&gt;header&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/media.html&quot;&gt;media&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/mediablock.html&quot;&gt;mediablock&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/mediavisible.html&quot;&gt;mediavisible&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/menubuttons.html&quot;&gt;menubuttons&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/pagelist.html&quot;&gt;pagelist&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/pagelistnested.html&quot;&gt;pagelistnested&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/pager.html&quot;&gt;pager&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/richtext.html&quot;&gt;richtext&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/socialicons.html&quot;&gt;socialicons&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/spacer.html&quot;&gt;spacer&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/tabs.html&quot;&gt;tabs&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/teaserhorizontal.html&quot;&gt;teaserhorizontal&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/teaservertical.html&quot;&gt;teaservertical&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;library/textlinks.html&quot;&gt;textlinks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;">
+        </text1></jcr:content></jcr:root>

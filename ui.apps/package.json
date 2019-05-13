@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:styles && node ./src/main/content/buildscripts/buildvue.js themecleanflex",
+    "build:componentlibrary": "node ./src/main/content/buildscripts/cl.js",
     "build:styles": "postcss -c ./postcss.config.js -o ./src/main/content/jcr_root/etc/felibs/themecleanflex/css/build.css ./src/main/content/jcr_root/etc/felibs/themecleanflex/styles.css"
   },
   "author": "",
