@@ -1,12 +1,12 @@
 <template>
   <div class="w-full">
     <div v-if="model.mediatype === 'video'" class="relative block w-full p-0 overflow-hidden aspect-ratio-16/9">
-      <iframe class="absolute pin w-full h-full" :src="$helper.pathToUrl(model.videosrc)" frameborder="0" allowfullscreen></iframe>
+      <iframe :title="model.mediatitle" class="absolute inset-0 w-full h-full" :src="$helper.pathToUrl(model.videosrc)" frameborder="0" allowfullscreen></iframe>
     </div>
     <i v-else-if="model.mediatype === 'icon'" class="w-full text-center" v-bind:class="iconClass" v-bind:style="{'font-size': `${model.mediaiconsize}px`, 'color': model.mediaiconcolor}">
       {{iconContent}}
     </i>
-    <img v-else-if="model.mediatype === 'image'" class="w-full" :src="$helper.pathToUrl(model.imagesrc)" :alt="model.imagealttext"> 
+    <img v-else-if="model.mediatype === 'image'" class="w-full" :src="$helper.pathToUrl(model.imagesrc)" :alt="model.mediatitle"> 
     <h3 v-if="noMedia" class="w-full text-center">No media content</h3>
   </div>
 </template>

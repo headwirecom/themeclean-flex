@@ -60,11 +60,10 @@
           "x-form-type": "pathbrowser",
           "x-form-browserRoot": "/content/assets"
         },
-        "mediaalttext": {
+        "mediatitle": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Media Alt Text",
-          "x-form-visible": "model.mediatype == 'image'",
+          "x-form-label": "Media Alt Text/Title",
           "x-form-type": "text"
         },
         "videosrc": {

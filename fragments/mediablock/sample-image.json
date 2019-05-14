@@ -3,8 +3,8 @@
   "group": "Features",
   "model": {
     "mediatype": "image",
-    "videosrc": "https://www.youtube-nocookie.com/embed/NM2wtte1JRE",
-    "imagesrc": "/content/assets/themeclean/images/013.jpg",
+    "imagesrc": "/content/assets/themecleanflex/sailing-lake_large.jpg",
+    "mediatitle": "Sailboat on a lake",
     "toppadding": "30",
     "bottompadding": "30",
     "backgroundtype": "color"
