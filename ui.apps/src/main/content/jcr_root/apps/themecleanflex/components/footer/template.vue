@@ -7,7 +7,7 @@
           v-bind:style="`height:${parseInt(model.logosize)}px;`">
         </a>
         <div class="footer-col lg:mx-4" v-for="(item,i) in model.columns" :key="i">
-          <h5 class="my-4" v-if="item.title !== ''">{{item.title}}</h5>
+          <h5 class="text-xl my-4" v-if="item.title !== ''">{{item.title}}</h5>
           <div v-if="item.text !== ''" v-html="item.text"></div>
         </div>
       </div>

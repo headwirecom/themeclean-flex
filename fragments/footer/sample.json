@@ -10,6 +10,7 @@
     "showlogo": "true",
     "logo": "/content/assets/themeclean/images/peregrine-logo.png",
     "logourl": "http://www.peregrine-cms.com",
+    "logoalttext": "Peregrine CMS Logo",
     "logosize": "60",
     "copyright": "Copyright 2017 Peregrine - All Rights Reserved",
     "columns": [
