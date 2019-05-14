@@ -561,10 +561,6 @@ button,
   margin: .75rem;
 }
 
-.m-4 {
-  margin: 1rem;
-}
-
 .my-3 {
   margin-top: .75rem;
   margin-bottom: .75rem;
@@ -600,8 +596,8 @@ button,
   min-width: 100%;
 }
 
-.-m-4 {
-  margin: -1rem;
+.-m-3 {
+  margin: -0.75rem;
 }
 
 .-mx-3 {
