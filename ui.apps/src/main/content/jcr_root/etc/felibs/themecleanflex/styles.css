@@ -1,4 +1,4 @@
-@tailwind preflight;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -68,38 +68,38 @@
   @apply py-2 px-2 text-sm
 }
 .btn-blue {
-  @apply bg-blue text-white;
+  @apply bg-blue-700 text-white;
 }
 .btn-blue:hover {
-  @apply bg-blue-dark;
+  @apply bg-blue-800;
 }
 .btn-green {
-  @apply bg-green text-white;
+  @apply bg-green-700 text-white;
 }
 .btn-green:hover {
-  @apply bg-green-dark;
+  @apply bg-green-800;
 }
 .btn-red {
-  @apply bg-red text-white;
+  @apply bg-red-700 text-white;
 }
 .btn-red:hover {
-  @apply bg-red-dark;
+  @apply bg-red-800;
 }
 .btn-orange {
-  @apply bg-orange text-white;
+  @apply bg-orange-700 text-white;
 }
 .btn-orange:hover {
-  @apply bg-orange-dark;
+  @apply bg-orange-800;
 }
 .btn-white {
   @apply bg-white text-black;
 }
 .btn-white:hover {
-  @apply bg-grey-light;
+  @apply bg-gray-200;
 }
 .btn-black {
   @apply bg-black text-white;
 }
 .btn-black:hover {
-  @apply bg-grey-darker;
+  @apply bg-gray-800;
 }
