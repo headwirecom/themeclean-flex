@@ -12,7 +12,7 @@
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
         <div class="px-3">
-          <div class="bg-grey-lighter" v-for="(item,i) in model.accordiontoggle"
+          <div class="bg-gray-lighter" v-for="(item,i) in model.accordiontoggle"
           :key="i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`">
             <a class="flex justify-between items-center p-4 cursor-pointer" v-on:click="toggleItem(i)">
               <h4 v-html="item.title"></h4>
