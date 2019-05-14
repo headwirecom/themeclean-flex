@@ -29,23 +29,28 @@
     "icons": [
       {
         "url": "https://www.facebook.com/",
-        "icon": "fontAwesome:fa fa-facebook:"
+        "icon": "fontAwesome:fa fa-facebook:",
+        "iconalttext": "Facebook"
       },
       {
         "url": "https://twitter.com/",
-        "icon": "fontAwesome:fa fa-twitter:"
+        "icon": "fontAwesome:fa fa-twitter:",
+        "iconalttext": "Twitter"
       },
       {
         "url": "https://www.instagram.com/",
-        "icon": "fontAwesome:fa fa-instagram:"
+        "icon": "fontAwesome:fa fa-instagram:",
+        "iconalttext": "Instagram"
       },
       {
         "url": "https://www.pinterest.com/",
-        "icon": "fontAwesome:fa fa-pinterest-p:"
+        "icon": "fontAwesome:fa fa-pinterest-p:",
+        "iconalttext": "Pinterest"
       },
       {
         "url": "https://www.youtube.com/",
-        "icon": "fontAwesome:fa fa-youtube-play:"
+        "icon": "fontAwesome:fa fa-youtube-play:",
+        "iconalttext": "Youtube"
       }
     ]
   }

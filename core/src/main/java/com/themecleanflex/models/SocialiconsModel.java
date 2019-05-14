@@ -69,6 +69,12 @@ import javax.inject.Named;
               "x-form-label": "Icon Url",
               "x-form-type": "pathbrowser",
               "x-form-browserRoot": "/content/sites"
+            },
+            "iconalttext": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Icon Alt Text",
+              "x-form-type": "text"
             }
           }
         }
@@ -116,7 +122,7 @@ public class SocialiconsModel extends AbstractComponent {
 	@Default(values ="25")
 	private String iconsize;
 
-	/* {"type":"object","x-form-type":"collection","x-form-label":"Icons","x-source":"inject","properties":{"icon":{"type":"string","x-source":"inject","x-form-label":"Icon Chooser","x-form-type":"iconbrowser","x-form-hint":"Select an icon.","x-form-required":true,"x-form-validator":"required","x-form-families":["material","font awesome"]},"url":{"type":"string","x-source":"inject","x-form-label":"Icon Url","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"}}} */
+	/* {"type":"object","x-form-type":"collection","x-form-label":"Icons","x-source":"inject","properties":{"icon":{"type":"string","x-source":"inject","x-form-label":"Icon Chooser","x-form-type":"iconbrowser","x-form-hint":"Select an icon.","x-form-required":true,"x-form-validator":"required","x-form-families":["material","font awesome"]},"url":{"type":"string","x-source":"inject","x-form-label":"Icon Url","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"},"iconalttext":{"type":"string","x-source":"inject","x-form-label":"Icon Alt Text","x-form-type":"text"}}} */
 	@Inject
 	private List<IComponent> icons;
 
@@ -139,7 +145,7 @@ public class SocialiconsModel extends AbstractComponent {
 		return iconsize;
 	}
 
-	/* {"type":"object","x-form-type":"collection","x-form-label":"Icons","x-source":"inject","properties":{"icon":{"type":"string","x-source":"inject","x-form-label":"Icon Chooser","x-form-type":"iconbrowser","x-form-hint":"Select an icon.","x-form-required":true,"x-form-validator":"required","x-form-families":["material","font awesome"]},"url":{"type":"string","x-source":"inject","x-form-label":"Icon Url","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"}}} */
+	/* {"type":"object","x-form-type":"collection","x-form-label":"Icons","x-source":"inject","properties":{"icon":{"type":"string","x-source":"inject","x-form-label":"Icon Chooser","x-form-type":"iconbrowser","x-form-hint":"Select an icon.","x-form-required":true,"x-form-validator":"required","x-form-families":["material","font awesome"]},"url":{"type":"string","x-source":"inject","x-form-label":"Icon Url","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"},"iconalttext":{"type":"string","x-source":"inject","x-form-label":"Icon Alt Text","x-form-type":"text"}}} */
 	public List<IComponent> getIcons() {
 		return icons;
 	}

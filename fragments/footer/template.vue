@@ -7,13 +7,13 @@
           v-bind:style="`height:${parseInt(model.logosize)}px;`">
         </a>
         <div class="footer-col lg:mx-4" v-for="(item,i) in model.columns" :key="i">
-          <h5 class="text-xl my-4" v-if="item.title !== ''">{{item.title}}</h5>
+          <h5 class="text-xl my-2" v-if="item.title !== ''">{{item.title}}</h5>
           <div v-if="item.text !== ''" v-html="item.text"></div>
         </div>
       </div>
       <hr class="border-b">
       <div class="flex justify-between">
-        <p class="my-4" v-html="model.copyright"></p>
+        <p class="my-3" v-html="model.copyright"></p>
         <themecleanflex-components-socialicons v-bind:model="model"></themecleanflex-components-socialicons>
       </div>
     </div>

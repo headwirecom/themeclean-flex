@@ -130,6 +130,13 @@
           "placeholder": "url",
           "label": "Icon Url",
           "model": "url"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "iconalttext",
+          "label": "Icon Alt Text",
+          "model": "iconalttext"
         }
       ],
       "placeholder": "icons",

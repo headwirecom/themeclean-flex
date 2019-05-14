@@ -49,10 +49,15 @@
               "x-form-label": "Icon Url",
               "x-form-type": "pathbrowser",
               "x-form-browserRoot": "/content/sites"
+            },
+            "iconalttext": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Icon Alt Text",
+              "x-form-type": "text"
             }
           }
         }
-        
       }
     }
   }

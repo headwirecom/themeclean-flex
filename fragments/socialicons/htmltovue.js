@@ -3,6 +3,7 @@ module.exports = {
         let a = $.find('a').first()
         f.addFor( a, 'model.icons')
         f.bindAttribute( a, 'href', f.pathToUrl('item.url'))
+        f.bindAttribute( a, 'aria-label', 'item.iconalttext')
 
         let iClasses = `[
             {'text-light': model.colorscheme === 'dark' && model.iconcustomcolor != 'true'},
@@ -14,5 +15,6 @@ module.exports = {
         f.bindAttribute( i, 'class', iClasses, false)
         f.addStyle( i, 'font-size', 'model.iconsize', 'px')
         f.addStyle( i, 'color', "model.iconcustomcolor === 'true' ? model.iconcolor : 'inherit'")
+        f.bindAttribute( i, 'alt', 'item.iconalttext')
     }
 }
