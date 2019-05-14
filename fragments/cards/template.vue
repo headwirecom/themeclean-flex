@@ -20,8 +20,8 @@
           <p class="my-3" v-if="model.showtext == 'true'" v-html="item.text"></p>
           <a class="btn self-center my-3" v-if="model.showbutton == 'true'"
           v-bind:href="$helper.pathToUrl(item.buttonlink)" v-bind:class="{
-            'btn-lg': model.buttonsize === 'large',
-            'btn-sm': model.buttonsize === 'small',
+            'btn-lg': item.buttonsize === 'large',
+            'btn-sm': item.buttonsize === 'small',
             'btn-blue': item.buttoncolor === 'primary',
             'btn-white border border-blue': item.buttoncolor === 'secondary',
             'btn-green': item.buttoncolor === 'success',

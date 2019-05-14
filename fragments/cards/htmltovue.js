@@ -36,8 +36,8 @@ module.exports = {
 
         //Button
         let aClasses = `{
-            'btn-lg': model.buttonsize === 'large',
-            'btn-sm': model.buttonsize === 'small',
+            'btn-lg': item.buttonsize === 'large',
+            'btn-sm': item.buttonsize === 'small',
             'btn-blue': item.buttoncolor === 'primary',
             'btn-white border border-blue': item.buttoncolor === 'secondary',
             'btn-green': item.buttoncolor === 'success',
