@@ -1,0 +1,8 @@
+{
+  "title": "Basic Text Block",
+  "group": "",
+  "model": {
+    "text": "Themeclean Basic Text Element",
+    "element": "p"
+  }
+}
