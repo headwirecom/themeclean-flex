@@ -25,10 +25,10 @@
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Features: Image&lt;/h2&gt;">
         </title4><mediablock5
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" videosrc="https://www.youtube-nocookie.com/embed/NM2wtte1JRE" imagesrc="/content/assets/themeclean/images/013.jpg" toppadding="30" bottompadding="30" backgroundtype="color">
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color">
         </mediablock5><title6 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Features: Video&lt;/h2&gt;">
         </title6><mediablock7
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="video" videosrc="https://www.youtube-nocookie.com/embed/NM2wtte1JRE" imagesrc="/content/assets/themeclean/images/013.jpg" toppadding="30" bottompadding="30" backgroundtype="color">
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="video" videosrc="https://www.youtube-nocookie.com/embed/R5qdE0_mOcw" mediatitle="Sailing Video" toppadding="30" bottompadding="30" backgroundtype="color">
         </mediablock7></jcr:content></jcr:root>

@@ -18,7 +18,7 @@
         </div>
         <div class="w-full py-3 flex flex-col">
           <!-- Tab Nav -->
-          <ul class="flex flex-wrap justify-center list-reset pb-3" role="tablist">
+          <ul class="flex flex-wrap justify-center  pb-3" role="tablist">
             <li class="nav-item m-3" v-for="(item,i) in tabs" :key="i">
               <a class="no-underline p-3 cursor-pointer" v-bind:class="{
             'text-white' : item.active === true,

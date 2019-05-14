@@ -1,7 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <ul class="list-reset">
-      <li class="list-reset">
+    <ul class="">
+      <li class="">
         <a href>Sub Page 1</a>
         <ul>
           <li class>

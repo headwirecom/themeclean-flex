@@ -25,7 +25,7 @@
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Chrome: Footer&lt;/h2&gt;">
         </title4><footer13
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themeclean/images/peregrine-logo.png" logourl="http://www.peregrine-cms.com" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved"><columns jcr:primaryType="nt:unstructured"><c5
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themeclean/images/peregrine-logo.png" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved"><columns jcr:primaryType="nt:unstructured"><c5
         jcr:primaryType="nt:unstructured" title="" text="">
         </c5><c6
         jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
@@ -33,14 +33,14 @@
         jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
         </c7></columns>
 <icons jcr:primaryType="nt:unstructured"><c8
-        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="fontAwesome:fa fa-facebook:">
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="fontAwesome:fa fa-facebook:" iconalttext="Facebook">
         </c8><c9
-        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="fontAwesome:fa fa-twitter:">
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="fontAwesome:fa fa-twitter:" iconalttext="Twitter">
         </c9><c10
-        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="fontAwesome:fa fa-instagram:">
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="fontAwesome:fa fa-instagram:" iconalttext="Instagram">
         </c10><c11
-        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="fontAwesome:fa fa-pinterest-p:">
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="fontAwesome:fa fa-pinterest-p:" iconalttext="Pinterest">
         </c11><c12
-        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="fontAwesome:fa fa-youtube-play:">
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="fontAwesome:fa fa-youtube-play:" iconalttext="Youtube">
         </c12></icons>
         </footer13></jcr:content></jcr:root>

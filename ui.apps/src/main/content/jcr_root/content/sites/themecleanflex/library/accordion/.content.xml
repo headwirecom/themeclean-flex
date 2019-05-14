@@ -20,7 +20,7 @@
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Features: Accordion With Media&lt;/h2&gt;">
         </title2><accordion5
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" imagesrc="/content/assets/themeclean/images/workers-looking-tablet.jpg" imagealttext="Dude checking out tablet" mediawidth="33" showmedia="true" toggletype="accordion"><accordiontoggle jcr:primaryType="nt:unstructured"><c3
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" imagesrc="/content/assets/themecleanflex/heel_small.jpg" imagealttext="Sailboat Heeling" mediawidth="33" showmedia="true" toggletype="accordion"><accordiontoggle jcr:primaryType="nt:unstructured"><c3
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
         </c3><c4
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
@@ -45,7 +45,7 @@
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Features: Toggle With Media&lt;/h2&gt;">
         </title13><accordion16
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" imagesrc="/content/assets/themeclean/images/workers-looking-tablet.jpg" imagealttext="Worker Staring at tablet" mediawidth="33" showmedia="true" toggletype="toggle"><accordiontoggle jcr:primaryType="nt:unstructured"><c14
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/oldboat_small.jpg" imagealttext="Old Ship sailing into sunset" mediawidth="33" showmedia="true" toggletype="toggle"><accordiontoggle jcr:primaryType="nt:unstructured"><c14
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
         </c14><c15
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
