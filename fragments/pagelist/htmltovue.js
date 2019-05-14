@@ -2,8 +2,8 @@ module.exports = {
     convert: function($, f) {
         f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
-        f.addIf($.find('.perIsEditAndEmpty').first(), 'isEditAndEmpty')
-        f.addIf($.find('ul.root').first(), 'model.includeroot === \'true\'')
+
+        f.addIf($, 'model.includeroot === \'true\'')
         f.bindAttribute($.find('li.root a').first(),'href',f.pathToUrl('model.rootPageLink'))
         f.mapField($.find('li.root a').first(),'model.rootPageTitle')
         f.addFor($.find('li.children').first(), 'model.childrenPages', 'child')
@@ -18,5 +18,7 @@ module.exports = {
         f.mapField($.find('li.childrennoroot a').first(),'child.title')
         f.replace( $.find('ul.nestednoroot').eq(0), '<themecleanflex-components-pagelistnested v-bind:model="child"></themecleanflex-components-pagelistnested>')
         f.addIf($.find('li.childrennoroot themecleanflex-components-pagelistnested').first(), 'child.hasChildren')
+
+        f.addIf($.find('.perIsEditAndEmpty').first(), 'isEditAndEmpty')
     }
 }
