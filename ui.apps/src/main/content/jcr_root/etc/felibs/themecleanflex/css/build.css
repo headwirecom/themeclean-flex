@@ -604,6 +604,11 @@ button,
   margin: -1rem;
 }
 
+.-mx-3 {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -635,6 +640,11 @@ button,
 .py-3 {
   padding-top: .75rem;
   padding-bottom: .75rem;
+}
+
+.px-3 {
+  padding-left: .75rem;
+  padding-right: .75rem;
 }
 
 .px-5 {

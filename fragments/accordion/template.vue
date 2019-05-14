@@ -3,15 +3,15 @@
     <div>
       <h2 class="text-center pb-4" v-if="model.showtitle == 'true'"
       v-html="model.title"></h2>
-      <div class="flex flex-col" v-bind:class="{
+      <div class="flex flex-col -mx-3" v-bind:class="{
             'lg:flex-row': model.mediaposition === 'before',
             'lg:flex-row-reverse': model.mediaposition === 'after'
         }">
-        <div class="img-wrapper sm:pr-0 lg:pr-3" v-if="model.showmedia === 'true'"
+        <div class="img-wrapper px-3" v-if="model.showmedia === 'true'"
         v-bind:style="{flex:`0 0 ${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
-        <div>
+        <div class="px-3">
           <div class="bg-grey-lighter" v-for="(item,i) in model.accordiontoggle"
           :key="i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`">
             <a class="flex justify-between items-center p-4 cursor-pointer" v-on:click="toggleItem(i)">
