@@ -595,6 +595,10 @@ video {
   flex: 1 1 0%;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -753,8 +757,16 @@ video {
   color: #fff;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
 }
 
 .text-3xl {
