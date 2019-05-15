@@ -11,6 +11,7 @@
     "toppadding": "30",
     "showmedia": "false",
     "mediawidth": "33",
+    "blockwidth": "article",
     "accordionortoggle": "false",
     "accordiontoggle": [
       {

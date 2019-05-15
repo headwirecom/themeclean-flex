@@ -13,8 +13,9 @@
     "mediatype": "image",
     "mediaposition": "after",
     "imagesrc": "/content/assets/themecleanflex/oldboat_small.jpg",
-    "imagealttext": "Old Ship sailing into sunset",
+    "mediatitle": "Old Ship sailing into sunset",
     "mediawidth": "33",
+    "blockwidth": "article",
     "showmedia": "true",
     "toggletype": "toggle",
     "accordiontoggle": [

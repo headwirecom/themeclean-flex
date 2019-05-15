@@ -12,9 +12,10 @@
     "toppadding": "30",
     "mediatype": "image",
     "imagesrc": "/content/assets/themecleanflex/heel_small.jpg",
-    "imagealttext": "Sailboat Heeling",
+    "mediatitle": "Old Ship sailing into sunset",
     "mediawidth": "33",
     "showmedia": "true",
+    "blockwidth": "article",
     "toggletype": "accordion",
     "accordiontoggle": [
       {

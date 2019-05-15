@@ -106,10 +106,9 @@
     {
       "type": "input",
       "inputType": "text",
-      "placeholder": "imagealttext",
-      "label": "Image Alt Text",
-      "model": "imagealttext",
-      "visible": "model.mediatype == 'image' and model.showmedia == 'true'"
+      "placeholder": "mediatitle",
+      "label": "Media Alt Text/Title",
+      "model": "mediatitle"
     },
     {
       "type": "pathbrowser",
