@@ -25,7 +25,7 @@
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Features: Tabs With Media&lt;/h2&gt;">
         </title4><tabs8
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="true" mediaposition="before" mediatype="image" mediawidth="33" mediaiconsize="200" imagesrc="/content/assets/themeclean/images/yosemite.jpg"><tabs jcr:primaryType="nt:unstructured"><c5
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="true" mediaposition="before" mediatype="image" mediawidth="33" mediaiconsize="200" imagesrc="/content/assets/themecleanflex/beach-clouds-daytime_small.jpg" mediatitle="Tropical sailing destination"><tabs jcr:primaryType="nt:unstructured"><c5
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
         </c5><c6
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
@@ -36,7 +36,7 @@
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Features: Tabs&lt;/h2&gt;">
         </title9><tabs13
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" mediatype="image" imagesrc="/content/assets/themeclean/images/yosemite.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200"><tabs jcr:primaryType="nt:unstructured"><c10
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200"><tabs jcr:primaryType="nt:unstructured"><c10
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
         </c10><c11
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">

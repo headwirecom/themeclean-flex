@@ -137,11 +137,10 @@ import javax.inject.Named;
               "x-form-type": "pathbrowser",
               "x-form-browserRoot": "/content/assets"
             },
-            "imagealttext": {
+            "mediatitle": {
               "type": "string",
               "x-source": "inject",
-              "x-form-label": "Image Alt Text",
-              "x-form-visible": "model.mediatype == 'image' and model.showmedia == 'true'",
+              "x-form-label": "Media Alt Text/Title",
               "x-form-type": "text"
             },
             "videosrc": {
@@ -464,9 +463,9 @@ public class TabsModel extends AbstractComponent {
 	@Inject
 	private String imagesrc;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-visible":"model.mediatype == 'image' and model.showmedia == 'true'","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-type":"text"} */
 	@Inject
-	private String imagealttext;
+	private String mediatitle;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
 	@Inject
@@ -614,9 +613,9 @@ public class TabsModel extends AbstractComponent {
 		return imagesrc;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-visible":"model.mediatype == 'image' and model.showmedia == 'true'","x-form-type":"text"} */
-	public String getImagealttext() {
-		return imagealttext;
+	/* {"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-type":"text"} */
+	public String getMediatitle() {
+		return mediatitle;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */

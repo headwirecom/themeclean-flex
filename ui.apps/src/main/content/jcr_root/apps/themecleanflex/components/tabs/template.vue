@@ -7,42 +7,41 @@
         <h3 class="text-center pb-4" v-if="model.showsubtitle == 'true' &amp;&amp; model.subtitle"
         v-html="model.subtitle"></h3>
       </div>
-      <div class="flex flex-col" v-bind:class="{
+      <div class="flex flex-col -mx-3" v-bind:class="{
             'lg:flex-row': model.mediaposition === 'before',
             'lg:flex-row-reverse': model.mediaposition === 'after'
 
         }">
-        <div class="img-wrapper sm:pr-0 lg:pr-3" v-if="model.showmedia == 'true'"
+        <div class="img-wrapper mx-3" v-if="model.showmedia == 'true'"
         v-bind:style="{'flex':`0 0 ${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
-        <div class="w-full py-3 flex flex-col">
+        <div class="w-full py-3 flex flex-col mx-3">
           <!-- Tab Nav -->
-          <ul class="flex flex-wrap justify-center list-reset pb-3" role="tablist">
-            <li class="nav-item m-3" v-for="(item,i) in tabs" :key="i">
-              <a class="no-underline p-3 cursor-pointer" v-bind:class="{
+          <section class="flex flex-wrap justify-center  pb-3" role="tablist">
+            <a class="m-3 no-underline p-3 cursor-pointer" role="tab" v-for="(item,i) in tabs"
+            :key="i" v-bind:class="{
             'text-white' : item.active === true,
-            'bg-blue' : item.active  &amp;&amp; model.tabcolor === 'blue',
-            'bg-green' : item.active &amp;&amp; model.tabcolor === 'green',
-            'bg-red' : item.active &amp;&amp; model.tabcolor === 'red',
-            'bg-orange' : item.active &amp;&amp; model.tabcolor === 'orange',
-            'bg-light' : item.active &amp;&amp; model.tabcolor === 'light',
+            'bg-blue-700' : item.active  &amp;&amp; model.tabcolor === 'blue',
+            'bg-green-700' : item.active &amp;&amp; model.tabcolor === 'green',
+            'bg-red-700' : item.active &amp;&amp; model.tabcolor === 'red',
+            'bg-orange-700' : item.active &amp;&amp; model.tabcolor === 'orange',
+            'bg-light-700' : item.active &amp;&amp; model.tabcolor === 'light',
             'bg-dark' : item.active &amp;&amp; model.tabcolor === 'dark',
-            'text-blue' : !item.active  &amp;&amp; model.tabcolor === 'blue',
-            'text-green' : !item.active &amp;&amp; model.tabcolor === 'green',
-            'text-red' : !item.active &amp;&amp; model.tabcolor === 'red',
-            'text-orange' : !item.active &amp;&amp; model.tabcolor === 'orange',
-            'text-light' : !item.active &amp;&amp; model.tabcolor === 'light',
-            'text-dark' : !item.active &amp;&amp; model.tabcolor === 'dark',
+            'text-blue-700' : !item.active  &amp;&amp; model.tabcolor === 'blue',
+            'text-green-700' : !item.active &amp;&amp; model.tabcolor === 'green',
+            'text-red-700' : !item.active &amp;&amp; model.tabcolor === 'red',
+            'text-orange-700' : !item.active &amp;&amp; model.tabcolor === 'orange',
+            'text-light' : !item.active &amp;&amp; model.tabcolor === 'light' || item.active &amp;&amp; model.tabcolor === 'dark',
+            'text-dark' : !item.active &amp;&amp; model.tabcolor === 'dark' || item.active &amp;&amp; model.tabcolor === 'light',
         }" v-bind:id="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:aria-controls="`tab${_uid}${parseInt(i)+1}`"
-              v-on:click="toggleActive(i)" v-html="item.title"></a>
-            </li>
-          </ul>
+            v-bind:aria-selected="item.active" v-on:click="toggleActive(i)" v-html="item.title"></a>
+          </section>
           <!-- Tab Content -->
-          <div class="relative" id="myTabContent">
+          <div class="relative">
             <div class="w-full text-center py-3 opacity-0 transition-opacity" role="tabpanel"
             v-for="(item,i) in tabs" :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`"
-            v-bind:aria-labelledby="`tablabel${_uid}${parseInt(i)+1}`" v-bind:class="item.active ? 'block opacity-100' : 'hidden'"
+            v-bind:aria-labelledby="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:class="item.active ? 'block opacity-100' : 'hidden'"
             v-html="item.text"></div>
           </div>
         </div>
