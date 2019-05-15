@@ -515,6 +515,10 @@ video {
   background-color: #fff;
 }
 
+.bg-gray-200 {
+  background-color: #edf2f7;
+}
+
 .hover\:bg-black:hover {
   background-color: #000;
 }
@@ -647,8 +651,8 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.max-w-xl {
-  max-width: 36rem;
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .max-w-full {
