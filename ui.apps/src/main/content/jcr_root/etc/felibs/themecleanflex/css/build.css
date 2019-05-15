@@ -805,6 +805,31 @@ video {
   transition: height 200ms ease;
 }
 
+/* Base Overrides */
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
 /* Custom Utilities */
 
 .transform-rotate-90 {
