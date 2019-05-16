@@ -78,12 +78,6 @@
               "x-form-type": "pathbrowser",
               "x-form-browserRoot": "/content/assets"
             },
-            "heading": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Image Heading",
-              "x-form-type": "text"
-            },
             "text": {
               "type": "string",
               "x-source": "inject",

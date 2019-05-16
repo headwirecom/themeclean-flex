@@ -94,13 +94,6 @@
           "model": "imagepath"
         },
         {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "heading",
-          "label": "Image Heading",
-          "model": "heading"
-        },
-        {
           "type": "texteditor",
           "rows": 10,
           "placeholder": "text",

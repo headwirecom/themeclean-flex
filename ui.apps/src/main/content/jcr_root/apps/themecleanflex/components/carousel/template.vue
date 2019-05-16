@@ -3,7 +3,7 @@
     <carousel class="w-full" v-bind:autoplay="model.autoplay === 'true'"
     v-bind:navigationEnabled="model.controls === 'true'" v-bind:paginationEnabled="model.indicators === 'true'"
     v-bind:autoplayHoverPause="model.pause === 'true'" v-bind:centerMode="true"
-    v-bind:loop="model.loop === 'true'" v-bind:autoplayTimeout="model.interval * 1000"
+    v-bind:loop="model.wrap === 'true'" v-bind:autoplayTimeout="model.interval * 1000"
     v-bind:perPage="1">
       <slide v-for="(item,i) in model.slides" :key="i">
         <div class="relative flex flex-col" v-bind:style="`height:${model.carouselheight}vh;`">

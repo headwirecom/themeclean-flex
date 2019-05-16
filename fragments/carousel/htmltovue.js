@@ -11,7 +11,7 @@ module.exports = {
         f.bindAttribute(carousel, "paginationEnabled", "model.indicators === 'true'")
         f.bindAttribute(carousel, "autoplayHoverPause", "model.pause === 'true'")
         f.bindAttribute(carousel, "centerMode", "true")
-        f.bindAttribute(carousel, "loop", "model.loop === 'true'")
+        f.bindAttribute(carousel, "loop", "model.wrap === 'true'")
         f.bindAttribute(carousel, "autoplayTimeout", "model.interval * 1000")
         f.bindAttribute(carousel, "perPage", 1)
 
