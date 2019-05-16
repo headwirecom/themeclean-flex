@@ -1,0 +1,10 @@
+{
+  "title": "Spacer Image",
+  "group": "Chrome",
+  "model": {
+    "height": "80",
+    "custombackground": "true",
+    "backgroundtype": "image",
+    "bgimage": "/content/assets/themecleanflex/beach-bird-s-eye-view-daytime-1249586.jpg"
+  }
+}
