@@ -539,14 +539,6 @@ video {
   background-color: #2b6cb0;
 }
 
-.hover\:bg-black:hover {
-  background-color: #000;
-}
-
-.border-black {
-  border-color: #000;
-}
-
 .border {
   border-width: 1px;
 }
@@ -710,10 +702,6 @@ video {
 
 .p-0 {
   padding: 0;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .p-3 {

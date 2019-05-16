@@ -2,8 +2,8 @@
   "title": " Pager",
   "group": "Features",
   "model": {
-    "prevlabel": "Prev",
-    "nextlabel": "Next",
+    "prevlabel": "< Prev",
+    "nextlabel": "Next >",
     "colorscheme": "",
     "toppadding": "10",
     "bottompadding": "10"

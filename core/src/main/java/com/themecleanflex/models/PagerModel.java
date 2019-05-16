@@ -28,6 +28,68 @@ import javax.inject.Named;
       "type": "object",
       "x-type": "component",
       "properties": {
+        "buttonsize": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Button Size",
+          "x-form-type": "materialselect",
+          "x-default": "default",
+          "properties": {
+            "default": {
+              "x-form-name": "Default",
+              "x-form-value": "default"
+            },
+            "large": {
+              "x-form-name": "Large",
+              "x-form-value": "large"
+            },
+            "small": {
+              "x-form-name": "Small",
+              "x-form-value": "small"
+            }
+          }
+        },
+        "buttoncolor": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Button Color",
+          "x-form-type": "materialselect",
+          "x-default": "primary",
+          "properties": {
+            "primary": {
+              "x-form-name": "Primary",
+              "x-form-value": "primary"
+            },
+            "secondary": {
+              "x-form-name": "Secondary",
+              "x-form-value": "secondary"
+            },
+            "success": {
+              "x-form-name": "Success",
+              "x-form-value": "success"
+            },
+            "danger": {
+              "x-form-name": "Danger",
+              "x-form-value": "danger"
+            },
+            "warning": {
+              "x-form-name": "Warning",
+              "x-form-value": "warning"
+            },
+            "info": {
+              "x-form-name": "Info",
+              "x-form-value": "info"
+            },
+            "light": {
+              "x-form-name": "Light",
+              "x-form-value": "light"
+            },
+            "dark": {
+              "x-form-name": "Dark",
+              "x-form-value": "dark"
+            }
+          }
+        },
         "prevlabel": {
           "type": "string",
           "x-source": "inject",
@@ -234,8 +296,6 @@ import javax.inject.Named;
         extensions = "json"
 )
 
-
-
 //GEN]
 public class PagerModel extends AbstractComponent {
 
@@ -244,7 +304,17 @@ public class PagerModel extends AbstractComponent {
     public PagerModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
+	@Inject
+	@Default(values ="default")
+	private String buttonsize;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"info":{"x-form-name":"Info","x-form-value":"info"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
+	@Inject
+	@Default(values ="primary")
+	private String buttoncolor;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text"} */
 	@Inject
 	private String prevlabel;
 
@@ -325,7 +395,17 @@ public class PagerModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
+	public String getButtonsize() {
+		return buttonsize;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"info":{"x-form-name":"Info","x-form-value":"info"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
+	public String getButtoncolor() {
+		return buttoncolor;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text"} */
 	public String getPrevlabel() {
 		return prevlabel;
 	}

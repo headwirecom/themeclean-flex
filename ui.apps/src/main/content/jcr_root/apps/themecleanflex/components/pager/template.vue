@@ -1,16 +1,31 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="flex justify-between">
+    <div class="w-full flex justify-between">
       <!-- <div class="perIsEditAndEmpty">no content defined for component</div> -->
-      <a class="p-2 border border-black hover:bg-black hover:text-gray-lighter"
-      v-bind:href="$helper.pathToUrl(model.previous)" v-bind:class="{
+      <a class="btn" v-bind:href="$helper.pathToUrl(model.previous)" v-bind:class="{
+            'btn-lg': model.buttonsize === 'large',
+            'btn-sm': model.buttonsize === 'small',
+            'btn-blue': model.buttoncolor === 'primary',
+            'btn-white border border-blue': model.buttoncolor === 'secondary',
+            'btn-green': model.buttoncolor === 'success',
+            'btn-red': model.buttoncolor === 'danger',
+            'btn-orange': model.buttoncolor === 'warning',
+            'btn-white': model.buttoncolor === 'light',
+            'btn-black': model.buttoncolor === 'dark',
             'disabled': model.previous === 'unknown',
-            'btn-outline-primary': model.previous !== 'unknown'
         }">{{model.prevlabel}}</a>
-      <a class="p-2 border border-black hover:bg-black hover:text-gray-lighter"
-      v-bind:href="$helper.pathToUrl(model.next)" v-bind:class="{
+      <a class="btn" v-bind:href="$helper.pathToUrl(model.next)"
+      v-bind:class="{
+            'btn-lg': model.buttonsize === 'large',
+            'btn-sm': model.buttonsize === 'small',
+            'btn-blue': model.buttoncolor === 'primary',
+            'btn-white border border-blue': model.buttoncolor === 'secondary',
+            'btn-green': model.buttoncolor === 'success',
+            'btn-red': model.buttoncolor === 'danger',
+            'btn-orange': model.buttoncolor === 'warning',
+            'btn-white': model.buttoncolor === 'light',
+            'btn-black': model.buttoncolor === 'dark',
             'disabled': model.next === 'unknown',
-            'btn-outline-primary': model.next !== 'unknown'
         }">{{model.nextlabel}}</a>
     </div>
   </themecleanflex-components-block>
