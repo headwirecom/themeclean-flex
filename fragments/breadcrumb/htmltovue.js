@@ -5,7 +5,7 @@ module.exports = {
 
         let span = $.find('span').first()
         f.addFor( span, 'model.links' )
-        f.bindAttribute( span, 'class', "{active: i === model.links.length - 1}", false)
+        f.bindAttribute( span, 'class', "{'font-bold': i === model.links.length - 1}", false)
 
         let anchor = $.find('a')
         f.addIf( anchor, "i + 1 < model.links.length" )
