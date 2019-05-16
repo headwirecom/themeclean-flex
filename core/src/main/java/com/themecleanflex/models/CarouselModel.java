@@ -75,13 +75,6 @@ import javax.inject.Named;
           "x-form-type": "materialswitch",
           "x-default": "true"
         },
-        "keyboard": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Keyboard",
-          "x-form-type": "materialswitch",
-          "x-default": "true"
-        },
         "captionbg": {
           "type": "string",
           "x-source": "inject",
@@ -356,11 +349,6 @@ public class CarouselModel extends AbstractComponent {
 	@Default(values ="true")
 	private String controls;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Keyboard","x-form-type":"materialswitch","x-default":"true"} */
-	@Inject
-	@Default(values ="true")
-	private String keyboard;
-
 	/* {"type":"string","x-source":"inject","x-form-label":"Caption Background","x-form-type":"materialswitch"} */
 	@Inject
 	private String captionbg;
@@ -475,11 +463,6 @@ public class CarouselModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Controls","x-form-type":"materialswitch","x-default":"true"} */
 	public String getControls() {
 		return controls;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Keyboard","x-form-type":"materialswitch","x-default":"true"} */
-	public String getKeyboard() {
-		return keyboard;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Caption Background","x-form-type":"materialswitch"} */

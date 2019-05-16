@@ -58,13 +58,6 @@
           "x-form-type": "materialswitch",
           "x-default": "true"
         },
-        "keyboard": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Keyboard",
-          "x-form-type": "materialswitch",
-          "x-default": "true"
-        },
         "captionbg": {
           "type": "string",
           "x-source": "inject",

@@ -7,15 +7,15 @@
     "bottompadding": 0,
     "slides": [
       {
-        "imagepath": "/content/assets/themeclean/images/background1.jpg",
+        "imagepath": "/content/assets/themecleanflex/architecture-blue-skies_extra-large.jpg",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         "heading": "Slide One"
       },{
-        "imagepath": "/content/assets/themeclean/images/background2.jpg",
+        "imagepath": "/content/assets/themecleanflex/sailing-lake_large.jpg",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         "heading": "Slide Two"
       },{
-        "imagepath": "/content/assets/themeclean/images/background3.jpg",
+        "imagepath": "/content/assets/themecleanflex/beach-boats-ocean_large.jpg",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         "heading": "Slide Three"
       }
