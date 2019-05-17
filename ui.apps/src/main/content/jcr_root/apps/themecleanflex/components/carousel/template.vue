@@ -7,7 +7,7 @@
     v-bind:perPage="1">
       <slide v-for="(item,i) in model.slides" :key="i">
         <div class="relative" v-bind:style="`height:${model.carouselheight}vh;`">
-          <img class="flex-grow object-cover object-center" v-if="item.imagepath"
+          <img class="w-full h-full object-cover object-center" v-if="item.imagepath"
           v-bind:src="item.imagepath" v-bind:alt="item.alt">
           <figcaption class="absolute bottom-0 p-4 text-white text-xl w-full" v-if="item.text"
           v-html="item.text" v-bind:class="{'bg-gray-700': model.captionbg === 'true'}"></figcaption>
