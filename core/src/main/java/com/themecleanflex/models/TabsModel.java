@@ -227,6 +227,43 @@ import javax.inject.Named;
               "x-form-label": "Anchor Name",
               "x-form-type": "text"
             },
+            "htmlelement": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Semantic Element",
+              "x-form-type": "materialselect",
+              "x-default": "section",
+              "properties": {
+                "section": {
+                  "x-form-name": "section",
+                  "x-form-value": "section"
+                },
+                "nav": {
+                  "x-form-name": "nav",
+                  "x-form-value": "nav"
+                },
+                "footer": {
+                  "x-form-name": "footer",
+                  "x-form-value": "footer"
+                },
+                "header": {
+                  "x-form-name": "header",
+                  "x-form-value": "header"
+                },
+                "main": {
+                  "x-form-name": "main",
+                  "x-form-value": "main"
+                },
+                "div": {
+                  "x-form-name": "div",
+                  "x-form-value": "div"
+                },
+                "article": {
+                  "x-form-name": "article",
+                  "x-form-value": "article"
+                }
+              }
+            },
             "colorscheme": {
               "type": "string",
               "x-source": "inject",
@@ -489,6 +526,11 @@ public class TabsModel extends AbstractComponent {
 	@Inject
 	private String anchorname;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"},"header":{"x-form-name":"header","x-form-value":"header"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"article":{"x-form-name":"article","x-form-value":"article"}}} */
+	@Inject
+	@Default(values ="section")
+	private String htmlelement;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Block Color Scheme","x-form-type":"materialradio","x-default":"","properties":{"none":{"x-form-name":"None","x-form-value":""},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
 	@Inject
 	@Default(values ="")
@@ -641,6 +683,11 @@ public class TabsModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	public String getAnchorname() {
 		return anchorname;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"},"header":{"x-form-name":"header","x-form-value":"header"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"article":{"x-form-name":"article","x-form-value":"article"}}} */
+	public String getHtmlelement() {
+		return htmlelement;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Block Color Scheme","x-form-type":"materialradio","x-default":"","properties":{"none":{"x-form-name":"None","x-form-value":""},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */

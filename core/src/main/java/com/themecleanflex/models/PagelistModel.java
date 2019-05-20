@@ -49,8 +49,8 @@ import java.util.List;
     }
   },
   "name": "Pagelist",
-  "componentPath": "themeclean/components/pagelist",
-  "package": "com.themeclean.models",
+  "componentPath": "themecleanflex/components/pagelist",
+  "package": "com.themecleanflex.models",
   "modelName": "Pagelist",
   "classNameParent": "AbstractComponent"
 }
@@ -60,7 +60,7 @@ import java.util.List;
 //GEN[:DEF
 @Model(
         adaptables = Resource.class,
-        resourceType = "themeclean/components/pagelist",
+        resourceType = "themecleanflex/components/pagelist",
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
         adapters = IComponent.class
 )
