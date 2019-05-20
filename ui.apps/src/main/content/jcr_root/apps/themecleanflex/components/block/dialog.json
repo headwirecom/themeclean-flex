@@ -8,6 +8,42 @@
       "model": "anchorname"
     },
     {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "section",
+          "value": "section"
+        },
+        {
+          "name": "nav",
+          "value": "nav"
+        },
+        {
+          "name": "footer",
+          "value": "footer"
+        },
+        {
+          "name": "header",
+          "value": "header"
+        },
+        {
+          "name": "main",
+          "value": "main"
+        },
+        {
+          "name": "div",
+          "value": "div"
+        },
+        {
+          "name": "article",
+          "value": "article"
+        }
+      ],
+      "placeholder": "htmlelement",
+      "label": "Semantic Element",
+      "model": "htmlelement"
+    },
+    {
       "type": "material-radios",
       "values": [
         {
