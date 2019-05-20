@@ -19,7 +19,7 @@ module.exports = {
         let slide = $.find('slide').first();
         f.addFor(slide, "model.slides");
 
-        let image = $.find('img').first()
+        let image = $.find('v-lazy-image').first()
 
         f.addIf(image, "item.imagepath")
         f.bindAttribute(image, "src", "item.imagepath")
