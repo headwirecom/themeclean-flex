@@ -1,5 +1,4 @@
-
-package com.themeclean.models;
+package com.themecleanflex.models;
 
 import com.peregrine.nodetypes.merge.PageMerge;
 import com.peregrine.nodetypes.models.AbstractComponent;
