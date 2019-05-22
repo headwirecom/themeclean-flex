@@ -1,0 +1,8 @@
+{
+  "definitions": {
+    "Grid": {
+      "type": "object",
+      "x-type": "container"
+    }
+  }
+}
