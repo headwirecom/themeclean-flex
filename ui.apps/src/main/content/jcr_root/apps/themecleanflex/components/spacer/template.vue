@@ -1,10 +1,8 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
-    <div>
-      <div v-bind:style="`height:${model.height}vh;`"></div>
-      <div v-if="isEditAndEmpty">height needs to be greater than 0</div>
-    </div>
-  </themecleanflex-components-block>
+  <div v-bind:data-per-path="model.path">
+    <div v-bind:style="`height:${model.height}vh;`"></div>
+    <div v-if="isEditAndEmpty">height needs to be greater than 0</div>
+  </div>
 </template>
 
 <script>

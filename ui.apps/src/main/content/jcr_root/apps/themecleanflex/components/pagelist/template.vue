@@ -1,28 +1,26 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
-    <div class="w-full" v-if="model.includeroot === 'true'">
-      <div class="perIsEditAndEmpty" v-if="isEditAndEmpty">no content defined for component</div>
-      <ul class="root">
-        <li class="root">
-          <a v-bind:href="$helper.pathToUrl(model.rootPageLink)">{{model.rootPageTitle}}</a>
-          <ul>
-            <li class="children" v-for="(child,i) in model.childrenPages" :key="i">
-              <a v-bind:href="$helper.pathToUrl(child.path)">{{child.title}}</a>
-              <themecleanflex-components-pagelistnested v-bind:model="child"
-              v-if="child.hasChildren"></themecleanflex-components-pagelistnested>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="noroot" v-if="model.includeroot !== 'true'">
-        <li class="childrennoroot" v-for="(child,i) in model.childrenPages" :key="i">
-          <a v-bind:href="$helper.pathToUrl(child.path)">{{child.title}}</a>
-          <themecleanflex-components-pagelistnested v-bind:model="child"
-          v-if="child.hasChildren"></themecleanflex-components-pagelistnested>
-        </li>
-      </ul>
-    </div>
-  </themecleanflex-components-block>
+  <div class="w-full" v-bind:data-per-path="model.path" v-if="model.includeroot === 'true'">
+    <div class="perIsEditAndEmpty" v-if="isEditAndEmpty">no content defined for component</div>
+    <ul class="root">
+      <li class="root">
+        <a v-bind:href="$helper.pathToUrl(model.rootPageLink)">{{model.rootPageTitle}}</a>
+        <ul>
+          <li class="children" v-for="(child,i) in model.childrenPages" :key="i">
+            <a v-bind:href="$helper.pathToUrl(child.path)">{{child.title}}</a>
+            <themecleanflex-components-pagelistnested v-bind:model="child"
+            v-if="child.hasChildren"></themecleanflex-components-pagelistnested>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="noroot" v-if="model.includeroot !== 'true'">
+      <li class="childrennoroot" v-for="(child,i) in model.childrenPages" :key="i">
+        <a v-bind:href="$helper.pathToUrl(child.path)">{{child.title}}</a>
+        <themecleanflex-components-pagelistnested v-bind:model="child"
+        v-if="child.hasChildren"></themecleanflex-components-pagelistnested>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>

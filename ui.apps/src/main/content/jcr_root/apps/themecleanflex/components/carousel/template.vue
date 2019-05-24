@@ -1,20 +1,18 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
-    <carousel class="w-full" v-bind:autoplay="model.autoplay === 'true'"
-    v-bind:navigationEnabled="model.controls === 'true'" v-bind:paginationEnabled="model.indicators === 'true'"
-    v-bind:autoplayHoverPause="model.pause === 'true'" v-bind:centerMode="true"
-    v-bind:loop="model.wrap === 'true'" v-bind:autoplayTimeout="model.interval * 1000"
-    v-bind:perPage="1">
-      <slide v-for="(item,i) in model.slides" :key="i">
-        <div class="relative" v-bind:style="`height:${model.carouselheight}vh;`">
-          <v-lazy-image class="w-full h-full object-cover object-center" v-if="item.imagepath"
-          v-bind:src="item.imagepath" v-bind:alt="item.alt"></v-lazy-image>
-          <figcaption class="absolute bottom-0 p-4 text-white text-xl w-full"
-          v-if="item.text" v-html="item.text" v-bind:class="{'bg-gray-700': model.captionbg === 'true'}"></figcaption>
-        </div>
-      </slide>
-    </carousel>
-  </themecleanflex-components-block>
+  <carousel class="w-full" v-bind:data-per-path="model.path" v-bind:autoplay="model.autoplay === 'true'"
+  v-bind:navigationEnabled="model.controls === 'true'" v-bind:paginationEnabled="model.indicators === 'true'"
+  v-bind:autoplayHoverPause="model.pause === 'true'" v-bind:centerMode="true"
+  v-bind:loop="model.wrap === 'true'" v-bind:autoplayTimeout="model.interval * 1000"
+  v-bind:perPage="1">
+    <slide v-for="(item,i) in model.slides" :key="i">
+      <div class="relative" v-bind:style="`height:${model.carouselheight}vh;`">
+        <v-lazy-image class="w-full h-full object-cover object-center" v-if="item.imagepath"
+        v-bind:src="item.imagepath" v-bind:alt="item.alt"></v-lazy-image>
+        <figcaption class="absolute bottom-0 p-4 text-white text-xl w-full"
+        v-if="item.text" v-html="item.text" v-bind:class="{'bg-gray-700': model.captionbg === 'true'}"></figcaption>
+      </div>
+    </slide>
+  </carousel>
 </template>
 
 <script>

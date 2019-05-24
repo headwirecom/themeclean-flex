@@ -1,6 +1,6 @@
 module.exports = {
     convert: function($, f) {
-    	f.wrap($, 'themecleanflex-components-block')
+    	f.bindPath($);
     	f.addIf($.find('.perIsEditAndEmpty').first(), 'isEditAndEmpty')
         f.bindAttribute($.parent(),'model','model')
         

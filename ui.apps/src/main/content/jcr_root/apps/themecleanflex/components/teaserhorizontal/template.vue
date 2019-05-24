@@ -1,27 +1,26 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
-    <div class="w-full flex flex-col md:flex-row justify-between items-center"
-    v-bind:class="{
+  <div class="w-full flex flex-col md:flex-row justify-between items-center"
+  v-bind:data-per-path="model.path" v-bind:class="{
             'flex-row-reverse': model.buttonside === 'left',
             'flex-row': model.buttonside === 'right',
         }">
-      <div class v-bind:class="{
+    <div class v-bind:class="{
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
             'text-right': model.aligncontent === 'right',
             'text-3xl': model.isprimary === 'true'
         }" v-bind:style="`flex-basis:${model.textwidth}%;`">
-        <h2 class v-if="model.showtitle === 'true'" v-html="model.title"></h2>
-        <h4 class v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h4>
-        <p v-if="model.showtext === 'true'" v-html="model.text"></p>
-      </div>
-      <div class="flex flex-wrap justify-center" v-if="model.showbutton == 'true'"
-      v-bind:class="{
+      <h2 class v-if="model.showtitle === 'true'" v-html="model.title"></h2>
+      <h4 class v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h4>
+      <p v-if="model.showtext === 'true'" v-html="model.text"></p>
+    </div>
+    <div class="flex flex-wrap justify-center" v-if="model.showbutton == 'true'"
+    v-bind:class="{
             'justify-content-md-end': model.buttonside === 'right',
             'justify-content-md-start': model.buttonside === 'left',
         }">
-        <a class="btn m-2" v-for="(item,i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
-        v-bind:class="{
+      <a class="btn m-2" v-for="(item,i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
+      v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
             'btn-blue': item.buttoncolor === 'primary',
@@ -32,10 +31,9 @@
             'btn-white': item.buttoncolor === 'light',
             'btn-black': item.buttoncolor === 'dark'
         }" v-html="item.buttontext" v-bind:style="`backgroundColor:${item.buttoncolor};borderColor:${item.buttoncolor};`"></a>
-      </div>
-      <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
-  </themecleanflex-components-block>
+    <div v-if="isEditAndEmpty">no content defined for component</div>
+  </div>
 </template>
 
 <script>

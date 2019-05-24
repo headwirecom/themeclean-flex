@@ -1,7 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
-    <div v-html="model.text"></div>
-  </themecleanflex-components-block>
+  <div v-bind:data-per-path="model.path" v-html="model.text"></div>
 </template>
 
 <script>

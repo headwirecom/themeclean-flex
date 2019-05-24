@@ -1,8 +1,7 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
-    <div class="w-full flex justify-between">
-      <!-- <div class="perIsEditAndEmpty">no content defined for component</div> -->
-      <a class="btn" v-bind:href="$helper.pathToUrl(model.previous)" v-bind:class="{
+  <div class="w-full flex justify-between" v-bind:data-per-path="model.path">
+    <!-- <div class="perIsEditAndEmpty">no content defined for component</div> -->
+    <a class="btn" v-bind:href="$helper.pathToUrl(model.previous)" v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
             'btn-blue': model.buttoncolor === 'primary',
@@ -14,8 +13,8 @@
             'btn-black': model.buttoncolor === 'dark',
             'disabled': model.previous === 'unknown',
         }">{{model.prevlabel}}</a>
-      <a class="btn" v-bind:href="$helper.pathToUrl(model.next)"
-      v-bind:class="{
+    <a class="btn" v-bind:href="$helper.pathToUrl(model.next)"
+    v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
             'btn-blue': model.buttoncolor === 'primary',
@@ -27,8 +26,7 @@
             'btn-black': model.buttoncolor === 'dark',
             'disabled': model.next === 'unknown',
         }">{{model.nextlabel}}</a>
-    </div>
-  </themecleanflex-components-block>
+  </div>
 </template>
 
 <script>

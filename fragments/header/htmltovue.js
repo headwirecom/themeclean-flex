@@ -1,7 +1,7 @@
 module.exports = {
     convert: function($, f) {
         //f.bindPath($)
-    	f.wrap($, 'themecleanflex-components-block')
+    	f.bindPath($);
         f.bindAttribute($.parent(),'model','model')
         f.addIf($.find('a').first(), 'model.logo')
         let navclasses = "{" +
