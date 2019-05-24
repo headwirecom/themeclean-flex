@@ -246,7 +246,7 @@ import javax.inject.Named;
 )
 
 //GEN]
-public class BlockModel extends AbstractComponent {
+public class BlockModel extends Container {
 
     public BlockModel(Resource r) { super(r); }
 

@@ -1,17 +1,21 @@
 <template>
   <component class="w-full px-5 flex flex-col justify-center" ref="section"
-  v-bind:class="[classes, colors]" v-bind:style="[styles, sticky]" v-bind:data-per-path="model.path"
-  v-bind:is="model.htmlelement">
+  v-bind:class="[classes, colors]" v-bind:style="[styles, sticky]" v-bind:is="model.htmlelement"
+  v-bind:data-per-path="model.path">
     <a ref="anchor" v-bind:id="model.anchorname"></a>
     <div class="embed-responsive embed-responsive-16by9" v-if="model.custombackground === 'true' &amp;&amp; model.backgroundtype == 'video' &amp;&amp; model.bgvideo"
     v-bind:style="`position:${'absolute'};pointer-events:${'none'};`">
       <iframe class="embed-responsive-item" v-bind:src="model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1'"></iframe>
     </div>
-    <div class="flex" v-bind:class="{
+    <div class="flex flex-col" v-bind:class="{
             'container mx-auto' : model.blockwidth === 'default',
             'max-w-3xl mx-auto' : model.blockwidth === 'article'
         }">
-      <slot></slot>
+      <pagerender-vue-components-placeholder v-bind:model="{ path: model.path, component: model.component, location: 'before' }"></pagerender-vue-components-placeholder>
+      <template v-for="child in model.children">
+        <component v-bind:is="child.component" v-bind:model="child"></component>
+      </template>
+      <pagerender-vue-components-placeholder v-bind:model="{ path: model.path, component: model.component, location: 'after' }"></pagerender-vue-components-placeholder>
     </div>
   </component>
 </template>
