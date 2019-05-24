@@ -22,6 +22,10 @@ h6 {
   @apply text-lg;
 }
 
+a {
+  @apply underline text-blue-700;
+}
+
 /* Custom Utilities */
 .transform-rotate-90 {
   transform: rotate(90deg);
@@ -29,10 +33,10 @@ h6 {
 
 /* Themes */ 
 .theme-dark {
-  @apply text-white bg-black;
+  @apply text-gray-100 bg-black;
 }
 .theme-light {
-  @apply text-black bg-white;
+  @apply text-black bg-gray-100;
 }
 .bg-dark {
   @apply bg-black;

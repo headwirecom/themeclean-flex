@@ -867,6 +867,11 @@ h5 {
   font-weight: 600;
 }
 
+a {
+  text-decoration: underline;
+  color: #2b6cb0;
+}
+
 /* Custom Utilities */
 
 .transform-rotate-90 {
@@ -876,13 +881,13 @@ h5 {
 /* Themes */
 
 .theme-dark {
-  color: #fff;
+  color: #f7fafc;
   background-color: #000;
 }
 
 .theme-light {
   color: #000;
-  background-color: #fff;
+  background-color: #f7fafc;
 }
 
 .bg-dark {
