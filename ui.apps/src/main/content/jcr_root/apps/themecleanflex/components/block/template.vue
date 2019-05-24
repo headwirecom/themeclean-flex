@@ -9,7 +9,7 @@
     </div>
     <div class="flex" v-bind:class="{
             'container mx-auto' : model.blockwidth === 'default',
-            'max-w-3xl mx-auto' : model.blockwidth === 'article'
+            'w-full max-w-3xl mx-auto' : model.blockwidth === 'article'
         }">
       <slot></slot>
     </div>

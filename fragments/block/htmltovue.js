@@ -16,7 +16,7 @@ module.exports = {
 
         let containerClasses = `{
             'container mx-auto' : model.blockwidth === 'default',
-            'max-w-3xl mx-auto' : model.blockwidth === 'article'
+            'w-full max-w-3xl mx-auto' : model.blockwidth === 'article'
         }`
         f.bindAttribute( $.find('div.flex').first(), 'class', containerClasses, false)
     }
