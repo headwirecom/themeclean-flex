@@ -14,7 +14,8 @@
         <div class="px-3">
           <div class="bg-gray-200" v-for="(item,i) in model.accordiontoggle" :key="i"
           v-bind:id="`accordion${_uid}${parseInt(i)+1}`">
-            <a class="flex justify-between items-center p-3 cursor-pointer" v-on:click="toggleItem(i)">
+            <a class="flex justify-between items-center p-3 cursor-pointer no-underline text-gray-800"
+            v-on:click="toggleItem(i)">
               <h4 v-html="item.title"></h4>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
               v-bind:style="`transform:${active[i] ? 'rotate(180deg)': 'rotate(0)'};`">
