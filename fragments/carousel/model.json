@@ -91,10 +91,6 @@
 	          "x-form-type": "text"
             }
           }
-        },
-        "bgref": {
-          "$ref": "fragments/block/model.json#/definitions/Block",
-          "x-form-type": "reference"
         }
       }
     }

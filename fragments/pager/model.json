@@ -77,10 +77,6 @@
           "x-source": "inject",
           "x-form-label": "Next Label",
           "x-form-type": "text"
-        },
-        "bgref": {
-            "x-form-type": "reference",
-            "$ref": "fragments/block/model.json#/definitions/Block"
         }
       }
     }

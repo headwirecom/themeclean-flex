@@ -62,10 +62,6 @@
         "buttonsref": {
             "x-form-type": "reference",
         	"$ref": "fragments/menubuttons/model.json#/definitions/Menubuttons"
-        },
-        "bgref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/block/model.json#/definitions/Block"
         }
       }
     }

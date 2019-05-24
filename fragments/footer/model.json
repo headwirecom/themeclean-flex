@@ -72,10 +72,6 @@
         "socialref": {
             "x-form-type": "reference",
         	"$ref": "fragments/socialicons/model.json#/definitions/Socialicons"
-        },
-        "bgref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/block/model.json#/definitions/Block"
         }
       }
     }

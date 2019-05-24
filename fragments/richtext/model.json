@@ -9,10 +9,6 @@
           "x-source": "inject",
           "x-form-label": "Text",
           "x-form-type": "texteditor"
-        },
-        "bgref": {
-          "$ref": "fragments/block/model.json#/definitions/Block",
-          "x-form-type": "reference"
         }
       }
     }

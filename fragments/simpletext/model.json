@@ -41,10 +41,6 @@
               "x-form-value": "p"
             }
           }
-        },
-        "bgref": {
-          "$ref": "fragments/block/model.json#/definitions/Block",
-          "x-form-type": "reference"
         }
       }
     }
