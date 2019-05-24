@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* purgecss start ignore */
+
 /* Base Overrides */
 h1 {
   @apply text-2xl font-semibold;
@@ -126,3 +128,5 @@ a {
 .btn-black:hover {
   @apply bg-gray-800;
 }
+
+/* purgecss end ignore */
