@@ -1,0 +1,76 @@
+{
+  "fields": [
+    {
+      "type": "material-radios",
+      "values": [
+        {
+          "name": "Row",
+          "value": "flex-row"
+        },
+        {
+          "name": "Column",
+          "value": "flex-column"
+        }
+      ],
+      "placeholder": "flexdirection",
+      "label": "Flex Direction",
+      "model": "flexdirection"
+    },
+    {
+      "type": "material-radios",
+      "values": [
+        {
+          "name": "Start",
+          "value": "justify-start"
+        },
+        {
+          "name": "Center",
+          "value": "justify-center"
+        },
+        {
+          "name": "End",
+          "value": "justify-end"
+        },
+        {
+          "name": "Between",
+          "value": "justify-between"
+        },
+        {
+          "name": "Around",
+          "value": "justify-around"
+        }
+      ],
+      "placeholder": "alignitems",
+      "label": "Align Items",
+      "model": "alignitems"
+    },
+    {
+      "type": "material-radios",
+      "values": [
+        {
+          "name": "Start",
+          "value": "justify-start"
+        },
+        {
+          "name": "Center",
+          "value": "justify-center"
+        },
+        {
+          "name": "End",
+          "value": "justify-end"
+        },
+        {
+          "name": "Between",
+          "value": "justify-between"
+        },
+        {
+          "name": "Around",
+          "value": "justify-around"
+        }
+      ],
+      "placeholder": "justifycontent",
+      "label": "Justify Content",
+      "model": "justifycontent"
+    }
+  ]
+}

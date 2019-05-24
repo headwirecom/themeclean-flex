@@ -607,6 +607,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
