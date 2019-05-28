@@ -6,7 +6,7 @@
         v-bind:href="item.link">{{item.text}}</a>
         <span class="mr-2" v-if="i+1 === model.links.length">{{item.text}}</span>
       </span>
-      <div v-if="isEditAndEmpty">no content defined for component</div>
+      <div v-if="isEditAndEmpty">No links found for breadcrumb</div>
     </div>
   </themecleanflex-components-block>
 </template>
@@ -14,6 +14,13 @@
 <script>
     export default {
         props: ['model'],
+        computed: {
+          isEditAndEmpty() {
+              if(!$peregrineApp.isAuthorMode()) return false
+              //return (this.model.cards.length === 0)
+              return this.$helper.areAllEmpty(this.model.links)
+          }
+        },
         methods: {
            beforeSave(data) {
                delete data.links
