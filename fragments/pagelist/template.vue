@@ -1,7 +1,6 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="w-full" v-if="model.includeroot === 'true'">
-      <div class="perIsEditAndEmpty" v-if="isEditAndEmpty">no content defined for component</div>
       <ul class="root">
         <li class="root">
           <a v-bind:href="$helper.pathToUrl(model.rootPageLink)">{{model.rootPageTitle}}</a>
@@ -21,6 +20,7 @@
           v-if="child.hasChildren"></themecleanflex-components-pagelistnested>
         </li>
       </ul>
+      <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
   </themecleanflex-components-block>
 </template>

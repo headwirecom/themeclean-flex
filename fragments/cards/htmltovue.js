@@ -54,7 +54,8 @@ module.exports = {
         f.bindAttribute( a, 'class', aClasses, false)
         f.mapRichField( a, "item.buttontext")
 
-        f.addIf($.find('.perIsEditAndEmpty').first(), 'isEditAndEmpty')
         f.addIf($.find('h1').first(), 'editAndEmpty')
+
+        $.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }

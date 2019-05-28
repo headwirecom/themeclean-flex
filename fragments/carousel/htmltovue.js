@@ -30,5 +30,7 @@ module.exports = {
         f.mapRichField(figcaption, "item.text")
         f.bindAttribute( figcaption, 'class', "{'bg-gray-700': model.captionbg === 'true'}", false)
 
+        $.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
+
     }
 }

@@ -3,7 +3,8 @@ module.exports = {
         f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
         f.replace( $.find('img').first(), '<themecleanflex-components-media v-bind:model="model"></themecleanflex-components-media>')
-        f.addIf($.find('.perIsEditAndEmpty').first(), 'isEditAndEmpty')
         f.bindAttribute($, 'style', "{flexBasis:`${model.mediawidth}%`}")
+
+        $.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }

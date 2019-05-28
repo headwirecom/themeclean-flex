@@ -59,5 +59,7 @@ module.exports = {
 
         f.addIf( buttonsDiv, 'model.showbutton == \'true\'')
         f.bindAttribute( buttonsDiv, 'class', buttonsClasses, false)
+
+		$.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }

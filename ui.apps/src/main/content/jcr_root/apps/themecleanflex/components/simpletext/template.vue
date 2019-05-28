@@ -6,7 +6,9 @@
             'text-xl': model.element === 'h3',
             'text-lg font-semibold': model.element === 'h4',
             'text-lg': model.element === 'h5',
-        }">{{model.text}}</component>
+        }">{{model.text}}
+      <div v-if="isEditAndEmpty">no content defined for component</div>
+    </component>
   </themecleanflex-components-block>
 </template>
 

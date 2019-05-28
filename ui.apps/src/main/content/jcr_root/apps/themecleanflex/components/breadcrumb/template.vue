@@ -6,6 +6,7 @@
         v-bind:href="item.link">{{item.text}}</a>
         <span class="mr-2" v-if="i+1 === model.links.length">{{item.text}}</span>
       </span>
+      <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
   </themecleanflex-components-block>
 </template>

@@ -13,6 +13,7 @@
           v-if="item.text" v-html="item.text" v-bind:class="{'bg-gray-700': model.captionbg === 'true'}"></figcaption>
         </div>
       </slide>
+      <div v-if="isEditAndEmpty">no content defined for component</div>
     </carousel>
   </themecleanflex-components-block>
 </template>

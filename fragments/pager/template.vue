@@ -1,7 +1,6 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="w-full flex justify-between">
-      <!-- <div class="perIsEditAndEmpty">no content defined for component</div> -->
       <a class="btn" v-bind:href="$helper.pathToUrl(model.previous)" v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
@@ -27,6 +26,7 @@
             'btn-black': model.buttoncolor === 'dark',
             'disabled': model.next === 'unknown',
         }">{{model.nextlabel}}</a>
+      <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
   </themecleanflex-components-block>
 </template>

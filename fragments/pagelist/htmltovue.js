@@ -19,6 +19,6 @@ module.exports = {
         f.replace( $.find('ul.nestednoroot').eq(0), '<themecleanflex-components-pagelistnested v-bind:model="child"></themecleanflex-components-pagelistnested>')
         f.addIf($.find('li.childrennoroot themecleanflex-components-pagelistnested').first(), 'child.hasChildren')
 
-        f.addIf($.find('.perIsEditAndEmpty').first(), 'isEditAndEmpty')
+		$.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }

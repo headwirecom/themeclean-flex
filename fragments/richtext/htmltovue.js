@@ -3,5 +3,7 @@ module.exports = {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
         f.mapRichField( $, 'model.text')
+
+		$.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }

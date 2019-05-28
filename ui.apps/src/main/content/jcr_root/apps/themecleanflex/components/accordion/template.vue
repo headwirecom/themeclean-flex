@@ -30,6 +30,7 @@
           </div>
         </div>
       </div>
+      <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
   </themecleanflex-components-block>
 </template>

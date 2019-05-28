@@ -40,5 +40,7 @@ module.exports = {
         f.mapField(a2, 'model.nextlabel')
         f.bindAttribute(a2, 'href', f.pathToUrl('model.next'))
         f.bindAttribute( a2, 'class', a2Classes, false)
+
+		$.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }
