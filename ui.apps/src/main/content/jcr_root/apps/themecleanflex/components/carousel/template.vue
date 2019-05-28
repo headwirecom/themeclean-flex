@@ -27,6 +27,11 @@
     computed: {
       name() {
           return this.model.path.split('/').slice(1).join('-').slice(4)
+      },
+      isEditAndEmpty() {
+          if(!$peregrineApp.isAuthorMode()) return false
+          //return (this.model.cards.length === 0)
+          return this.$helper.areAllEmpty(this.model.slides)
       }
     },
     components: {
