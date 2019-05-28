@@ -3,7 +3,7 @@ module.exports = {
         f.bindAttribute( $, 'class', '[classes, colors]', false)
         f.bindAttribute( $, 'style', '[styles, sticky]', false)
         f.bindAttribute( $, 'data-per-path', 'model.path')
-        f.bindAttribute( $, 'is', 'model.htmlelement')
+        f.bindAttribute( $, 'is', 'model.htmlelement || "div"')
 
         let anchor = $.find('a')
         f.bindAttribute( anchor, 'id', 'model.anchorname')
