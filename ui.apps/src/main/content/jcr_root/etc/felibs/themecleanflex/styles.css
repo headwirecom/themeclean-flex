@@ -28,6 +28,15 @@ a {
   @apply underline text-blue-700;
 }
 
+.color-inherit {
+  color: inherit;
+}
+
+.pipe-after:after {
+  content: "|";
+  @apply ml-2;
+}
+
 /* Custom Utilities */
 .transform-rotate-90 {
   transform: rotate(90deg);

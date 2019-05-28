@@ -16,5 +16,6 @@ module.exports = {
         f.addIf( spanInner, "i+1 === model.links.length" )
         f.mapField( spanInner, "item.text")
 
+
     }
 }
