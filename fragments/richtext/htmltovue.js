@@ -4,6 +4,6 @@ module.exports = {
         f.bindAttribute($.parent(),'model','model')
         f.mapRichField( $, 'model.text')
 
-		$.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
+		$.parent().append('<div v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }
