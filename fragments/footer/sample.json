@@ -2,6 +2,7 @@
   "title": "Footer",
   "group": "Chrome",
   "model": {
+    "htmlelement": "footer",
     "backgroundtype": "color",
     "bgcolor": "#eeeeee",
     "bottompadding": "0",

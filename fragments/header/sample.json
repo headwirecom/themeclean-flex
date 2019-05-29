@@ -2,6 +2,7 @@
   "title": "Header",
   "group": "Chrome",
   "model": {
+    "htmlelement": "header",
     "backgroundtype": "color",
     "bgcolor": "#eeeeee",
     "colorscheme": "light",
