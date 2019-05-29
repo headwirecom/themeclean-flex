@@ -172,17 +172,9 @@ import javax.inject.Named;
                   "x-form-name": "section",
                   "x-form-value": "section"
                 },
-                "nav": {
-                  "x-form-name": "nav",
-                  "x-form-value": "nav"
-                },
-                "footer": {
-                  "x-form-name": "footer",
-                  "x-form-value": "footer"
-                },
-                "header": {
-                  "x-form-name": "header",
-                  "x-form-value": "header"
+                "article": {
+                  "x-form-name": "article",
+                  "x-form-value": "article"
                 },
                 "main": {
                   "x-form-name": "main",
@@ -192,9 +184,17 @@ import javax.inject.Named;
                   "x-form-name": "div",
                   "x-form-value": "div"
                 },
-                "article": {
-                  "x-form-name": "article",
-                  "x-form-value": "article"
+                "header": {
+                  "x-form-name": "header",
+                  "x-form-value": "header"
+                },
+                "nav": {
+                  "x-form-name": "nav",
+                  "x-form-value": "nav"
+                },
+                "footer": {
+                  "x-form-name": "footer",
+                  "x-form-value": "footer"
                 }
               }
             },
@@ -437,7 +437,7 @@ public class FooterModel extends AbstractComponent {
 	@Inject
 	private String anchorname;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"},"header":{"x-form-name":"header","x-form-value":"header"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"article":{"x-form-name":"article","x-form-value":"article"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */
 	@Inject
 	@Default(values ="section")
 	private String htmlelement;
@@ -571,7 +571,7 @@ public class FooterModel extends AbstractComponent {
 		return anchorname;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"},"header":{"x-form-name":"header","x-form-value":"header"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"article":{"x-form-name":"article","x-form-value":"article"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */
 	public String getHtmlelement() {
 		return htmlelement;
 	}

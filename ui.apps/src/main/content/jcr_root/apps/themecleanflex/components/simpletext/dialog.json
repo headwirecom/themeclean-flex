@@ -54,16 +54,8 @@
           "value": "section"
         },
         {
-          "name": "nav",
-          "value": "nav"
-        },
-        {
-          "name": "footer",
-          "value": "footer"
-        },
-        {
-          "name": "header",
-          "value": "header"
+          "name": "article",
+          "value": "article"
         },
         {
           "name": "main",
@@ -74,8 +66,16 @@
           "value": "div"
         },
         {
-          "name": "article",
-          "value": "article"
+          "name": "header",
+          "value": "header"
+        },
+        {
+          "name": "nav",
+          "value": "nav"
+        },
+        {
+          "name": "footer",
+          "value": "footer"
         }
       ],
       "placeholder": "htmlelement",
