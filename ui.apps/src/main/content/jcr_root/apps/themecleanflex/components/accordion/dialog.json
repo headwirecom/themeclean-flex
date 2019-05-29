@@ -108,7 +108,8 @@
       "inputType": "text",
       "placeholder": "mediatitle",
       "label": "Media Alt Text/Title",
-      "model": "mediatitle"
+      "model": "mediatitle",
+      "visible": "model.mediatype == 'image' or model.mediatype == 'video'"
     },
     {
       "type": "pathbrowser",

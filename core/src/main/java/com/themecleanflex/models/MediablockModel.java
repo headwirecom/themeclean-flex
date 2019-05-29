@@ -89,6 +89,7 @@ import javax.inject.Named;
               "type": "string",
               "x-source": "inject",
               "x-form-label": "Media Alt Text/Title",
+              "x-form-visible": "model.mediatype == 'image' or model.mediatype == 'video'",
               "x-form-type": "text"
             },
             "videosrc": {
@@ -369,7 +370,7 @@ public class MediablockModel extends AbstractComponent {
 	@Inject
 	private String imagesrc;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-visible":"model.mediatype == 'image' or model.mediatype == 'video'","x-form-type":"text"} */
 	@Inject
 	private String mediatitle;
 
@@ -485,7 +486,7 @@ public class MediablockModel extends AbstractComponent {
 		return imagesrc;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-visible":"model.mediatype == 'image' or model.mediatype == 'video'","x-form-type":"text"} */
 	public String getMediatitle() {
 		return mediatitle;
 	}

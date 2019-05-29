@@ -64,6 +64,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Media Alt Text/Title",
+          "x-form-visible": "model.mediatype == 'image' or model.mediatype == 'video'",
           "x-form-type": "text"
         },
         "videosrc": {
