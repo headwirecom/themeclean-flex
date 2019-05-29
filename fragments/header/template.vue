@@ -1,6 +1,6 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <nav class="w-full" v-bind:class="{'navbar-expand-lg': model.collapsed === 'false','navbar-light': model.colorscheme === 'light','navbar-dark': model.colorscheme === 'dark'}">
+    <nav class="w-full">
       <div class="flex w-full justify-between items-center">
         <!-- Logo -->
         <a v-if="model.logo" v-bind:href="$helper.pathToUrl(model.logourl)">
@@ -8,15 +8,15 @@
           v-bind:style="`height:${parseInt(model.logosize)}px;`">
         </a>
         <!-- Collapsible Menu -->
-        <div class="hidden md:flex justify-end">
+        <div class="hidden md:flex justify-end" v-bind:class="{'md:hidden': model.collapsed === 'true'}">
           <themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>
           <themecleanflex-components-menubuttons
           v-bind:model="model"></themecleanflex-components-menubuttons>
         </div>
         <div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90"
-        v-on:click="toggleMenu">|||</div>
+        v-on:click="toggleMenu" v-bind:style="{display: model.collapsed === 'true' ? 'flex': false}">|||</div>
       </div>
-      <div class="flex flex-col w-full md:hidden transition-height" v-bind:style="`height:${menuActive ? menuHeight + 'px' : '0px'};`">
+      <div class="flex flex-col w-full transition-height" v-bind:style="`height:${menuActive ? menuHeight + 'px' : '0px'};`">
         <div ref="autoHeight" class="p-4">
           <themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>
           <themecleanflex-components-menubuttons
