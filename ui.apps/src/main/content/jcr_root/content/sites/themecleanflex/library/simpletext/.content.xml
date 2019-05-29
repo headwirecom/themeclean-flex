@@ -23,17 +23,17 @@
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/simpletext">
         </simpletext3><title4 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
-            text="&lt;h2&gt;: Basic Heading 1&lt;/h2&gt;">
+            text="&lt;h2&gt;Text Components: Basic Heading 1&lt;/h2&gt;">
         </title4><simpletext5
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/simpletext" text="Themeclean Heading" element="h1">
         </simpletext5><title6 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
-            text="&lt;h2&gt;: Basic Heading 2&lt;/h2&gt;">
+            text="&lt;h2&gt;Text Components: Basic Heading 2&lt;/h2&gt;">
         </title6><simpletext7
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/simpletext" text="Themeclean Secondary Heading" element="h2">
         </simpletext7><title8 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
-            text="&lt;h2&gt;: Basic Text Block&lt;/h2&gt;">
+            text="&lt;h2&gt;Text Components: Basic Text Block&lt;/h2&gt;">
         </title8><simpletext9
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/simpletext" text="Themeclean Basic Text Element" element="p">
         </simpletext9></jcr:content></jcr:root>
