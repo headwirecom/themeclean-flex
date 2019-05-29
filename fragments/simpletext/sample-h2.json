@@ -1,6 +1,6 @@
 {
   "title": "Basic Heading 2",
-  "group": "",
+  "group": "Text Components",
   "model": {
     "text": "Themeclean Secondary Heading",
     "element": "h2"

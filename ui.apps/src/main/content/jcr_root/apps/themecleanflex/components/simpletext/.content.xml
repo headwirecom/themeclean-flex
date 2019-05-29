@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Basic Text Block">
   <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
-    <sample jcr:primaryType="nt:unstructured" title="Basic Text Block" group="">
+    <sample jcr:primaryType="nt:unstructured" title="Basic Text Block" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="Themeclean Basic Text Element" element="p"/>
     </sample>
-    <sample-h1 jcr:primaryType="nt:unstructured" title="Basic Heading 1" group="">
+    <sample-h1 jcr:primaryType="nt:unstructured" title="Basic Heading 1" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="Themeclean Heading" element="h1"/>
     </sample-h1>
-    <sample-h2 jcr:primaryType="nt:unstructured" title="Basic Heading 2" group="">
+    <sample-h2 jcr:primaryType="nt:unstructured" title="Basic Heading 2" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="Themeclean Secondary Heading" element="h2"/>
     </sample-h2>
   </jcr:content>

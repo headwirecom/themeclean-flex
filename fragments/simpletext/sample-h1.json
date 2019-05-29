@@ -1,6 +1,6 @@
 {
   "title": "Basic Heading 1",
-  "group": "",
+  "group": "Text Components",
   "model": {
     "text": "Themeclean Heading",
     "element": "h1"

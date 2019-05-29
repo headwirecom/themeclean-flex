@@ -1,6 +1,6 @@
 {
   "title": "Basic Text Block",
-  "group": "",
+  "group": "Text Components",
   "model": {
     "text": "Themeclean Basic Text Element",
     "element": "p"
