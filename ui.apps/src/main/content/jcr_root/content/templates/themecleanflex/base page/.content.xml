@@ -25,10 +25,15 @@
             logo="/content/assets/themeclean/images/peregrine-logo.png"
             logosize="60"
             logourl="http://www.peregrine-cms.com"
+            logoalttext="Peregrine CMS Logo"
             toppadding="0">
             <links jcr:primaryType="nt:unstructured">
+            <links0 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="Services"/>
+            <links1 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="About Us"/>
+            <links2 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="Contact Us"/>
             </links>
             <buttons jcr:primaryType="nt:unstructured">
+            <buttons0 jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="Try It Now" buttoncolor="primary"/>
             </buttons>
         </n1f964177-2026-4697-80ce-7ea78fa1b3e2>
         <n9f934ff9-79f2-46cb-8f81-cbd26702fdf3
@@ -52,20 +57,16 @@
             showlogo="true"
             toppadding="30">
             <columns jcr:primaryType="nt:unstructured">
-                <columns0
-                    jcr:primaryType="nt:unstructured"
-                    text=""
-                    title=""/>
-                <columns1
-                    jcr:primaryType="nt:unstructured"
-                    text="&lt;p>email@email.com&lt;br>1-800-888-8888&lt;/p>"
-                    title="Contact"/>
-                <columns2
-                    jcr:primaryType="nt:unstructured"
-                    text="&lt;p>1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p>"
-                    title="Location"/>
+            <columns0 jcr:primaryType="nt:unstructured" title="" text=""/>
+            <columns1 jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p>email@email.com&lt;br>1-800-888-8888&lt;/p>"/>
+            <columns2 jcr:primaryType="nt:unstructured" title="Location" text="&lt;p>1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p>"/>
             </columns>
             <icons jcr:primaryType="nt:unstructured">
+            <icons0 jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="fontAwesome:fa fa-facebook:" iconalttext="Facebook"/>
+            <icons1 jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="fontAwesome:fa fa-twitter:" iconalttext="Twitter"/>
+            <icons2 jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="fontAwesome:fa fa-instagram:" iconalttext="Instagram"/>
+            <icons3 jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="fontAwesome:fa fa-pinterest-p:" iconalttext="Pinterest"/>
+            <icons4 jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="fontAwesome:fa fa-youtube-play:" iconalttext="Youtube"/>
             </icons>
         </nbeb05b9b-3df4-4d4a-a770-a2d7357912db>
     </jcr:content>
