@@ -25,6 +25,10 @@
           "x-form-label": "Levels",
           "x-form-default": 1,
           "x-form-min": 1
+        },
+        "bgref": {
+          "x-form-type": "reference",
+        	"$ref": "fragments/block/model.json#/definitions/Block"
         }
       }
     }
