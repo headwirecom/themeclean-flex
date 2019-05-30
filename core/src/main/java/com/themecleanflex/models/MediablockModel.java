@@ -85,13 +85,6 @@ import javax.inject.Named;
               "x-form-type": "pathbrowser",
               "x-form-browserRoot": "/content/assets"
             },
-            "mediatitle": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Media Alt Text/Title",
-              "x-form-visible": "model.mediatype == 'image' or model.mediatype == 'video'",
-              "x-form-type": "text"
-            },
             "videosrc": {
               "type": "string",
               "x-source": "inject",
@@ -99,6 +92,13 @@ import javax.inject.Named;
               "x-form-visible": "model.mediatype == 'video'",
               "x-form-type": "pathbrowser",
               "x-form-browserRoot": "/content/assets"
+            },
+            "mediatitle": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Media Alt Text/Title",
+              "x-form-visible": "model.mediatype == 'image' or model.mediatype == 'video'",
+              "x-form-type": "text"
             },
             "mediawidth": {
               "type": "string",
@@ -370,13 +370,13 @@ public class MediablockModel extends AbstractComponent {
 	@Inject
 	private String imagesrc;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-visible":"model.mediatype == 'image' or model.mediatype == 'video'","x-form-type":"text"} */
-	@Inject
-	private String mediatitle;
-
 	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
 	@Inject
 	private String videosrc;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-visible":"model.mediatype == 'image' or model.mediatype == 'video'","x-form-type":"text"} */
+	@Inject
+	private String mediatitle;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-default":100,"x-form-min":10,"x-form-max":100} */
 	@Inject
@@ -486,14 +486,14 @@ public class MediablockModel extends AbstractComponent {
 		return imagesrc;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-visible":"model.mediatype == 'image' or model.mediatype == 'video'","x-form-type":"text"} */
-	public String getMediatitle() {
-		return mediatitle;
-	}
-
 	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
 	public String getVideosrc() {
 		return videosrc;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-visible":"model.mediatype == 'image' or model.mediatype == 'video'","x-form-type":"text"} */
+	public String getMediatitle() {
+		return mediatitle;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-default":100,"x-form-min":10,"x-form-max":100} */

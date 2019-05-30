@@ -60,13 +60,6 @@
           "x-form-type": "pathbrowser",
           "x-form-browserRoot": "/content/assets"
         },
-        "mediatitle": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Media Alt Text/Title",
-          "x-form-visible": "model.mediatype == 'image' or model.mediatype == 'video'",
-          "x-form-type": "text"
-        },
         "videosrc": {
           "type": "string",
           "x-source": "inject",
@@ -74,6 +67,13 @@
           "x-form-visible": "model.mediatype == 'video'",
           "x-form-type": "pathbrowser",
           "x-form-browserRoot": "/content/assets"
+        },
+        "mediatitle": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Media Alt Text/Title",
+          "x-form-visible": "model.mediatype == 'image' or model.mediatype == 'video'",
+          "x-form-type": "text"
         },
         "mediawidth": {
           "type": "string",
