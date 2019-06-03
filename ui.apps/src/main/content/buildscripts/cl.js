@@ -4,7 +4,7 @@ const clfrags = require('./cl-fragments.js');
 
 function outSample(out, name, sample) {
     const data = fs.readJSONSync('../fragments/'+name+'/'+sample);
-    out.write(clfrags.subtitle(data.group +': '+data.title));
+    out.write(clfrags.subtitle(`${data.title} (${data.group})`));
     const attrs = [['jcr:primaryType', 'nt:unstructured'], ['sling:resourceType','themecleanflex/components/'+name]];
     const children = [];
     for(let prop in data.model) {
@@ -38,7 +38,7 @@ function buildPage(target, name, samples, readme) {
     const out = fs.createWriteStream(targetFolder + '/.content.xml');
     out.write(clfrags.header(name));
     out.write(clfrags.home());
-    out.write(clfrags.title());
+    // out.write(clfrags.title(name.charAt(0).toUpperCase() + name.slice(1)));
 
     if( readme ) {
         let md = fs.readFileSync('../fragments/' + name + '/readme.md', 'utf-8');
@@ -72,9 +72,15 @@ function forEachComponent(target = 'src/main/content/jcr_root/content/sites/them
         if(entry.isDirectory()) {
             pages.push(name);
             const files = fs.readdirSync(root+name);
-            const samples = files.filter( (name) => {
+            let hasEmptySample = false;
+            const samples = files.filter( (name) => { 
+                if (name == 'sample-empty.json') {
+                    hasEmptySample = true;
+                    return false;
+                }
                 return name.startsWith('sample') && name.endsWith('.json');
             } );
+            if (hasEmptySample) samples.push('sample-empty.json');
             const readme = files.includes( 'readme.md' );
             buildPage(target, name, samples, readme);
         }

@@ -38,6 +38,11 @@ return `<title${idx} jcr:primaryType="nt:unstructured"
     subtitle(title) {
         return `<title${idx} jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
             text="${escape('<h2>'+title+'</h2>')}">
         </title${idx++}>`
             },
@@ -70,7 +75,13 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
         return `
         <intro${idx} jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
-            text="${escape(`<main>${marked(md)}</main>`)}">
+            bottompadding="25"
+            toppadding="25"
+            htmlelement="main"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="${escape(marked(md))}">
         </intro${idx++}>
         `
     }

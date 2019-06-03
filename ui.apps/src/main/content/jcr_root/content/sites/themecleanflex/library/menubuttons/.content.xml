@@ -13,14 +13,17 @@
             ><text0 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;p&gt;&lt;a href=&quot;/content/sites/themecleanflex/library.html&quot;&gt;component library home&lt;/a&gt;&lt;/p&gt;">
-        </text0><title1 jcr:primaryType="nt:unstructured" 
-    sling:resourceType="themecleanflex/components/richtext" 
-    text="&lt;h1&gt;undefined&lt;/h1&gt;">
-</title1>
-        <intro2 jcr:primaryType="nt:unstructured" 
+        </text0>
+        <intro1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
-            text="&lt;main&gt;&lt;h2 id=&quot;menu-buttons&quot;&gt;Menu Buttons&lt;/h2&gt;
+            bottompadding="25"
+            toppadding="25"
+            htmlelement="main"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h1 id=&quot;menu-buttons&quot;&gt;Menu Buttons&lt;/h1&gt;
 &lt;p&gt;The Menu Buttons components contains a collection of simple Buttons for use in the Header.&lt;/p&gt;
-&lt;/main&gt;">
-        </intro2>
+">
+        </intro1>
         </jcr:content></jcr:root>

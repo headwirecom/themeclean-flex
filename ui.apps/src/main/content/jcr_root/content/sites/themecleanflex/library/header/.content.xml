@@ -13,34 +13,47 @@
             ><text0 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;p&gt;&lt;a href=&quot;/content/sites/themecleanflex/library.html&quot;&gt;component library home&lt;/a&gt;&lt;/p&gt;">
-        </text0><title1 jcr:primaryType="nt:unstructured" 
-    sling:resourceType="themecleanflex/components/richtext" 
-    text="&lt;h1&gt;undefined&lt;/h1&gt;">
-</title1>
-        <intro2 jcr:primaryType="nt:unstructured" 
+        </text0>
+        <intro1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
-            text="&lt;main&gt;&lt;h2 id=&quot;header&quot;&gt;Header&lt;/h2&gt;
+            bottompadding="25"
+            toppadding="25"
+            htmlelement="main"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h1 id=&quot;header&quot;&gt;Header&lt;/h1&gt;
 &lt;p&gt;The Header component is used to display your logo and the main navigation section for your page. &lt;/p&gt;
-&lt;/main&gt;">
-        </intro2>
-        <title3 jcr:primaryType="nt:unstructured" 
+">
+        </intro1>
+        <title2 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
-            text="&lt;h2&gt;Empty: Header no default value&lt;/h2&gt;">
-        </title3><header4
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header">
-        </header4><title5 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            text="&lt;h2&gt;Chrome: Header&lt;/h2&gt;">
-        </title5><header10
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Header (Chrome)&lt;/h2&gt;">
+        </title2><header7
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themeclean/images/peregrine-logo.png" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
-<links jcr:primaryType="nt:unstructured"><c6
+<links jcr:primaryType="nt:unstructured"><c3
         jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="Services">
-        </c6><c7
+        </c3><c4
         jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="About Us">
-        </c7><c8
+        </c4><c5
         jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="Contact Us">
-        </c8></links>
-<buttons jcr:primaryType="nt:unstructured"><c9
+        </c5></links>
+<buttons jcr:primaryType="nt:unstructured"><c6
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="Try It Now" buttoncolor="primary">
-        </c9></buttons>
-        </header10></jcr:content></jcr:root>
+        </c6></buttons>
+        </header7><title8 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Header no default value (Empty)&lt;/h2&gt;">
+        </title8><header9
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header">
+        </header9></jcr:content></jcr:root>
