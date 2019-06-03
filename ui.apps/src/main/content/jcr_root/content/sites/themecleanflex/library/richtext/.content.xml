@@ -15,15 +15,22 @@
             text="&lt;p&gt;&lt;a href=&quot;/content/sites/themecleanflex/library.html&quot;&gt;component library home&lt;/a&gt;&lt;/p&gt;">
         </text0><title1 jcr:primaryType="nt:unstructured" 
     sling:resourceType="themecleanflex/components/richtext" 
-    text="&lt;h1&gt;richtext&lt;/h1&gt;">
-</title1><title2 jcr:primaryType="nt:unstructured" 
+    text="&lt;h1&gt;undefined&lt;/h1&gt;">
+</title1>
+        <intro2 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            text="&lt;main&gt;&lt;h2 id=&quot;rich-text&quot;&gt;Rich Text&lt;/h2&gt;
+&lt;p&gt;The Rich Text component displays text and is edited using a powerful rich text editor allowing you full control over the content of the component.&lt;/p&gt;
+&lt;/main&gt;">
+        </intro2>
+        <title3 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Empty: Empty Rich Text Test&lt;/h2&gt;">
-        </title2><richtext3
+        </title3><richtext4
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/richtext">
-        </richtext3><title4 jcr:primaryType="nt:unstructured" 
+        </richtext4><title5 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Text Components: Text Block&lt;/h2&gt;">
-        </title4><richtext5
+        </title5><richtext6
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/richtext" toppadding="50" bottompadding="50" textcolor="#000000" bgcolor="#ffffff" text="&lt;p&gt;&lt;br&gt;&lt;h1&gt;Vestibulum vel volutpat enim, vel euismod tortor.&nbsp;&lt;/h1&gt;&lt;br&gt;Vestibulum vel volutpat enim, vel euismod tortor. Pellentesque sed dignissim est. Curabitur lacinia elit nec tortor tincidunt, et laoreet libero gravida. Aenean sodales, est id commodo rhoncus, dui orci mollis quam, quis tincidunt orci metus sit amet quam. Aenean ac egestas elit. Aenean nec vehicula lectus.&lt;/p&gt;">
-        </richtext5></jcr:content></jcr:root>
+        </richtext6></jcr:content></jcr:root>

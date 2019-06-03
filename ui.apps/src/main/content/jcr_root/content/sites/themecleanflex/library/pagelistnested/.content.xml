@@ -15,10 +15,17 @@
             text="&lt;p&gt;&lt;a href=&quot;/content/sites/themecleanflex/library.html&quot;&gt;component library home&lt;/a&gt;&lt;/p&gt;">
         </text0><title1 jcr:primaryType="nt:unstructured" 
     sling:resourceType="themecleanflex/components/richtext" 
-    text="&lt;h1&gt;pagelistnested&lt;/h1&gt;">
-</title1><title2 jcr:primaryType="nt:unstructured" 
+    text="&lt;h1&gt;undefined&lt;/h1&gt;">
+</title1>
+        <intro2 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            text="&lt;main&gt;&lt;h2 id=&quot;page-list-nested&quot;&gt;Page List Nested&lt;/h2&gt;
+&lt;p&gt;Used by the PageList component&lt;/p&gt;
+&lt;/main&gt;">
+        </intro2>
+        <title3 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;.hidden: Pagelistnested&lt;/h2&gt;">
-        </title2><pagelistnested3
+        </title3><pagelistnested4
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelistnested">
-        </pagelistnested3></jcr:content></jcr:root>
+        </pagelistnested4></jcr:content></jcr:root>

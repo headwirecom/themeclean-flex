@@ -15,10 +15,17 @@
             text="&lt;p&gt;&lt;a href=&quot;/content/sites/themecleanflex/library.html&quot;&gt;component library home&lt;/a&gt;&lt;/p&gt;">
         </text0><title1 jcr:primaryType="nt:unstructured" 
     sling:resourceType="themecleanflex/components/richtext" 
-    text="&lt;h1&gt;container&lt;/h1&gt;">
-</title1><title2 jcr:primaryType="nt:unstructured" 
+    text="&lt;h1&gt;undefined&lt;/h1&gt;">
+</title1>
+        <intro2 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            text="&lt;main&gt;&lt;h2 id=&quot;container&quot;&gt;Container&lt;/h2&gt;
+&lt;p&gt;The container component is used by Peregrine cms to allow components to be dragged onto other components&lt;/p&gt;
+&lt;/main&gt;">
+        </intro2>
+        <title3 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Chrome: Container&lt;/h2&gt;">
-        </title2><container3
+        </title3><container4
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/container">
-        </container3></jcr:content></jcr:root>
+        </container4></jcr:content></jcr:root>

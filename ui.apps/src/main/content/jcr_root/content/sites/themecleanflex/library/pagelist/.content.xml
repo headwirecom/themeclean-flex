@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
             jcr:primaryType="per:Page"
-            jcr:title="tf-cl | spacer"
-            jcr:description="spacer themecleanflex component library"
+            jcr:title="tf-cl | pagelist"
+            jcr:description="pagelist themecleanflex component library"
 >
     <jcr:content
         jcr:primaryType="per:PageContent"
         sling:resourceType="themecleanflex/components/page"
-        jcr:title="spacer"
+        jcr:title="pagelist"
         brand="themecleanflex"
         template="/content/templates/themecleanflex"
             ><text0 jcr:primaryType="nt:unstructured" 
@@ -19,18 +19,18 @@
 </title1>
         <intro2 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
-            text="&lt;main&gt;&lt;h2 id=&quot;spacer&quot;&gt;Spacer&lt;/h2&gt;
-&lt;p&gt;The Spacer component is a very simple Block, allowing you to add extra space with or without a background to your page.&lt;/p&gt;
+            text="&lt;main&gt;&lt;h2 id=&quot;pagelist&quot;&gt;Pagelist&lt;/h2&gt;
+&lt;p&gt;The Page List component displays the hierarchy of the current site to a given depth.&lt;/p&gt;
 &lt;/main&gt;">
         </intro2>
         <title3 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
-            text="&lt;h2&gt;Chrome: Spacer Image&lt;/h2&gt;">
-        </title3><spacer4
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/spacer" height="80" custombackground="true" backgroundtype="image" bgimage="/content/assets/themecleanflex/beach-bird-s-eye-view-daytime-1249586.jpg">
-        </spacer4><title5 jcr:primaryType="nt:unstructured" 
+            text="&lt;h2&gt;Empty: Page List no default values&lt;/h2&gt;">
+        </title3><pagelist4
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist">
+        </pagelist4><title5 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
-            text="&lt;h2&gt;Chrome: Spacer&lt;/h2&gt;">
-        </title5><spacer6
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/spacer" height="20">
-        </spacer6></jcr:content></jcr:root>
+            text="&lt;h2&gt;Features: Page List&lt;/h2&gt;">
+        </title5><pagelist6
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" rootpage="/content/sites/themecleanflex"><levels jcr:primaryType="nt:unstructured"></levels>
+        </pagelist6></jcr:content></jcr:root>

@@ -15,5 +15,12 @@
             text="&lt;p&gt;&lt;a href=&quot;/content/sites/themecleanflex/library.html&quot;&gt;component library home&lt;/a&gt;&lt;/p&gt;">
         </text0><title1 jcr:primaryType="nt:unstructured" 
     sling:resourceType="themecleanflex/components/richtext" 
-    text="&lt;h1&gt;textlinks&lt;/h1&gt;">
-</title1></jcr:content></jcr:root>
+    text="&lt;h1&gt;undefined&lt;/h1&gt;">
+</title1>
+        <intro2 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            text="&lt;main&gt;&lt;h2 id=&quot;text-links&quot;&gt;Text Links&lt;/h2&gt;
+&lt;p&gt;The Text Links components contains a collection of simple Links for use in the Header.&lt;/p&gt;
+&lt;/main&gt;">
+        </intro2>
+        </jcr:content></jcr:root>

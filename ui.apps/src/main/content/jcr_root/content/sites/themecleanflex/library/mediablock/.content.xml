@@ -15,20 +15,27 @@
             text="&lt;p&gt;&lt;a href=&quot;/content/sites/themecleanflex/library.html&quot;&gt;component library home&lt;/a&gt;&lt;/p&gt;">
         </text0><title1 jcr:primaryType="nt:unstructured" 
     sling:resourceType="themecleanflex/components/richtext" 
-    text="&lt;h1&gt;mediablock&lt;/h1&gt;">
-</title1><title2 jcr:primaryType="nt:unstructured" 
+    text="&lt;h1&gt;undefined&lt;/h1&gt;">
+</title1>
+        <intro2 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            text="&lt;main&gt;&lt;h2 id=&quot;media-block&quot;&gt;Media Block&lt;/h2&gt;
+&lt;p&gt;The Media Block component is a simple Block that embeds a video or image.&lt;/p&gt;
+&lt;/main&gt;">
+        </intro2>
+        <title3 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Empty: Image/Video with no default value&lt;/h2&gt;">
-        </title2><mediablock3
+        </title3><mediablock4
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock">
-        </mediablock3><title4 jcr:primaryType="nt:unstructured" 
+        </mediablock4><title5 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Features: Image&lt;/h2&gt;">
-        </title4><mediablock5
+        </title5><mediablock6
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color">
-        </mediablock5><title6 jcr:primaryType="nt:unstructured" 
+        </mediablock6><title7 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Features: Video&lt;/h2&gt;">
-        </title6><mediablock7
+        </title7><mediablock8
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="video" videosrc="https://www.youtube-nocookie.com/embed/R5qdE0_mOcw" mediatitle="Sailing Video" toppadding="30" bottompadding="30" backgroundtype="color">
-        </mediablock7></jcr:content></jcr:root>
+        </mediablock8></jcr:content></jcr:root>

@@ -15,11 +15,18 @@
             text="&lt;p&gt;&lt;a href=&quot;/content/sites/themecleanflex/library.html&quot;&gt;component library home&lt;/a&gt;&lt;/p&gt;">
         </text0><title1 jcr:primaryType="nt:unstructured" 
     sling:resourceType="themecleanflex/components/richtext" 
-    text="&lt;h1&gt;breadcrumb&lt;/h1&gt;">
-</title1><title2 jcr:primaryType="nt:unstructured" 
+    text="&lt;h1&gt;undefined&lt;/h1&gt;">
+</title1>
+        <intro2 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            text="&lt;main&gt;&lt;h2 id=&quot;breadcrumb&quot;&gt;Breadcrumb&lt;/h2&gt;
+&lt;p&gt;The breadcrumb component displays the current route in the site with links to quickly navigate back up to parent pages.&lt;/p&gt;
+&lt;/main&gt;">
+        </intro2>
+        <title3 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="&lt;h2&gt;Chrome: Breadcrumb&lt;/h2&gt;">
-        </title2><breadcrumb3
+        </title3><breadcrumb4
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="3"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
 <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </breadcrumb3></jcr:content></jcr:root>
+        </breadcrumb4></jcr:content></jcr:root>

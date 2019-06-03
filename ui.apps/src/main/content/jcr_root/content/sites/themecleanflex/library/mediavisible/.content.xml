@@ -15,5 +15,12 @@
             text="&lt;p&gt;&lt;a href=&quot;/content/sites/themecleanflex/library.html&quot;&gt;component library home&lt;/a&gt;&lt;/p&gt;">
         </text0><title1 jcr:primaryType="nt:unstructured" 
     sling:resourceType="themecleanflex/components/richtext" 
-    text="&lt;h1&gt;mediavisible&lt;/h1&gt;">
-</title1></jcr:content></jcr:root>
+    text="&lt;h1&gt;undefined&lt;/h1&gt;">
+</title1>
+        <intro2 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            text="&lt;main&gt;&lt;h2 id=&quot;media-visible&quot;&gt;Media Visible&lt;/h2&gt;
+&lt;p&gt;The Media Visible component is a variation of the regular media component with dialog options that will be hidden when the embedding component does not display any media.&lt;/p&gt;
+&lt;/main&gt;">
+        </intro2>
+        </jcr:content></jcr:root>
