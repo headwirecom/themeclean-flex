@@ -1,3 +1,5 @@
+let marked = require('marked')
+
 let idx = 0;
 
 function escape(text) {
@@ -68,7 +70,7 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
         return `
         <intro${idx} jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
-            text="${escape(marked(md))}">
+            text="${escape(`<main>${marked(md)}</main>`)}">
         </intro${idx++}>
         `
     }
