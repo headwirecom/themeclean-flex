@@ -31,14 +31,20 @@ function outSample(out, name, sample) {
 }
 
 
-function buildPage(target, name, samples) {
+function buildPage(target, name, samples, readme) {
     
     const targetFolder = target+'/'+name;
     fs.mkdirsSync(targetFolder);
     const out = fs.createWriteStream(targetFolder + '/.content.xml');
     out.write(clfrags.header(name));
     out.write(clfrags.home());
-    out.write(clfrags.title(name));
+    out.write(clfrags.title());
+
+    if( readme ) {
+        let md = fs.readFileSync('../fragments/' + name + '/readme.md', 'utf-8');
+        out.write(clfrags.intro(md));
+    }
+
     samples.forEach( ( sample ) => {
         outSample(out, name, sample);
     });
@@ -69,7 +75,8 @@ function forEachComponent(target = 'src/main/content/jcr_root/content/sites/them
             const samples = files.filter( (name) => {
                 return name.startsWith('sample') && name.endsWith('.json');
             } );
-            buildPage(target, name, samples);
+            const readme = files.includes( 'readme.md' );
+            buildPage(target, name, samples, readme);
         }
     });
     buildIndexPage(target, pages);
