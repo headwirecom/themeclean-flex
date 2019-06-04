@@ -1,0 +1,23 @@
+{
+  "title": "Menu Buttons",
+  "group": ".hidden",
+  "model": {
+    "buttons": [
+      {
+        "buttonlink": "/content/sites/themeclean",
+        "buttontext": "Try It Now",
+        "buttoncolor": "primary"
+      },
+      {
+        "buttonlink": "/content/sites/themeclean",
+        "buttontext": "Click Here!",
+        "buttoncolor": "primary"
+      },
+      {
+        "buttonlink": "/content/sites/themeclean",
+        "buttontext": "Enter",
+        "buttoncolor": "warning"
+      }
+    ]
+  }
+}

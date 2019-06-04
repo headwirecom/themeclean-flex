@@ -1,5 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-          jcr:primaryType="per:Component"
-          jcr:title="Menu Buttons"
-          group=".hidden"/>
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Menu Buttons" group=".hidden">
+  <jcr:content jcr:primaryType="nt:unstructured">
+    <buttons jcr:primaryType="nt:unstructured">
+      <buttons0 jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="Try It Now" buttoncolor="primary"/>
+      <buttons1 jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="Click Here!" buttoncolor="primary"/>
+      <buttons2 jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="Enter" buttoncolor="warning"/>
+    </buttons>
+  </jcr:content>
+</jcr:root>

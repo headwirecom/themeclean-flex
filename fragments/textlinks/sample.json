@@ -1,0 +1,18 @@
+{
+  "title": "Text Links",
+  "group": ".hidden",
+  "model": {
+    "links": [
+      {
+        "link": "/content/sites/themeclean",
+        "text": "Services"
+      },{
+        "link": "/content/sites/themeclean",
+        "text": "About Us"
+      },{
+        "link": "/content/sites/themeclean",
+        "text": "Contact Us"
+      }
+    ]
+  }
+}
