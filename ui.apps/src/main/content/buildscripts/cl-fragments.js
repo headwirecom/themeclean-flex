@@ -19,6 +19,7 @@ module.exports = {
         jcr:primaryType="per:PageContent"
         sling:resourceType="themecleanflex/components/page"
         jcr:title="${name}"
+        description="${name} themecleanflex component library"
         brand="themecleanflex"
         template="/content/templates/themecleanflex"
             >`;

@@ -8,6 +8,7 @@
         jcr:primaryType="per:PageContent"
         sling:resourceType="themecleanflex/components/page"
         jcr:title="carousel"
+        description="carousel themecleanflex component library"
         brand="themecleanflex"
         template="/content/templates/themecleanflex"
             ><text0 jcr:primaryType="nt:unstructured" 
