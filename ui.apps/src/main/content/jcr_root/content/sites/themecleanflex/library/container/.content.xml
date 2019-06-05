@@ -11,11 +11,19 @@
         description="container themecleanflex component library"
         brand="themecleanflex"
         template="/content/templates/themecleanflex"
-            ><text0 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            text="&lt;p&gt;&lt;a href=&quot;/content/sites/themecleanflex/library.html&quot;&gt;component library home&lt;/a&gt;&lt;/p&gt;">
-        </text0>
-        <intro1 jcr:primaryType="nt:unstructured" 
+            ><clheader
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themeclean/images/peregrine-logo.png" logoalttext="Peregrine CMS Logo" logourl="/content/sites/themecleanflex/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
+    <links jcr:primaryType="nt:unstructured"></links>
+    <buttons jcr:primaryType="nt:unstructured"></buttons>
+            </clheader><clbreadcrumb
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="4"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        </clbreadcrumb>
+        <intro0 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             bottompadding="25"
             toppadding="25"
@@ -26,8 +34,8 @@
             text="&lt;h1 id=&quot;container&quot;&gt;Container&lt;/h1&gt;
 &lt;p&gt;The container component is used by Peregrine cms to allow components to be dragged onto other components&lt;/p&gt;
 ">
-        </intro1>
-        <title2 jcr:primaryType="nt:unstructured" 
+        </intro0>
+        <title1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -35,6 +43,19 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Container (Chrome)&lt;/h2&gt;">
-        </title2><container3
+        </title1><container2
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/container">
-        </container3></jcr:content></jcr:root>
+        </container2>
+        <clfooter
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themeclean/images/peregrine-logo.png" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
+        <columns jcr:primaryType="nt:unstructured">
+        <c3
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c3><c4
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
+        </c4><c5
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c5></columns>
+<icons jcr:primaryType="nt:unstructured"></icons>
+        </clfooter>        
+        </jcr:content></jcr:root>

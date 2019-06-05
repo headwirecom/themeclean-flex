@@ -22,11 +22,28 @@ module.exports = {
         description="${name} themecleanflex component library"
         brand="themecleanflex"
         template="/content/templates/themecleanflex"
-            >`;
+            ><clheader
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themeclean/images/peregrine-logo.png" logoalttext="Peregrine CMS Logo" logourl="/content/sites/themecleanflex/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
+    <links jcr:primaryType="nt:unstructured"></links>
+    <buttons jcr:primaryType="nt:unstructured"></buttons>
+            </clheader>`;
     },
 
     footer() {
-        return `</jcr:content></jcr:root>`
+        return `
+        <clfooter
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themeclean/images/peregrine-logo.png" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
+        <columns jcr:primaryType="nt:unstructured">
+        <c3
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c3><c4
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
+        </c4><c5
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c5></columns>
+<icons jcr:primaryType="nt:unstructured"></icons>
+        </clfooter>        
+        </jcr:content></jcr:root>`
     },
 
     title(title) {
@@ -69,7 +86,15 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
     },
 
     home() {
-        return this.text('<p><a href="/content/sites/themecleanflex/library.html">component library home</a></p>');
+        return `<clbreadcrumb
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="4"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        </clbreadcrumb>`;
+        // return this.text('<p><a href="/content/sites/themecleanflex/library.html">component library home</a></p>');
     },
 
     intro(md) {
