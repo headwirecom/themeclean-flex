@@ -1,6 +1,8 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="-m-3 flex flex-col md:flex-row">
+    <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
+    <div class="-m-3 flex flex-col md:flex-row"
+    v-else>
       <div class="flex-1 m-3 card w-auto flex flex-col items-stretch" v-for="(item,i) in model.cards"
       :key="i" v-bind:style="`background-color:${model.customcardcolor === 'true' &amp;&amp; model.showcard === 'true' ? model.cardcolor: ''};`"
       v-bind:class="{
@@ -32,7 +34,6 @@
         }" v-html="item.buttontext"></a>
         </div>
       </div>
-      <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
   </themecleanflex-components-block>
 </template>
