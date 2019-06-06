@@ -23,11 +23,11 @@ module.exports = {
         f.bindAttribute( textContainer, 'class', textContainerClasses, false)
         f.bindAttribute( textDiv, 'class', textClasses, false)
         f.addStyle( textDiv, 'width', 'model.textwidth', '%')
-    	f.addIf($.find('h2').first(), "model.showtitle === 'true'")
-        f.addIf($.find('h4').first(), "model.showsubtitle === 'true'")
+    	f.addIf($.find('h1').first(), "model.showtitle === 'true'")
+        f.addIf($.find('h2').first(), "model.showsubtitle === 'true'")
         f.addIf($.find('p').first(), "model.showtext === 'true'")
-        f.mapRichField($.find('h2').first(), "model.title")
-        f.mapRichField($.find('h4').first(), "model.subtitle")
+        f.mapRichField($.find('h1').first(), "model.title")
+        f.mapRichField($.find('h2').first(), "model.subtitle")
         f.mapRichField($.find('p').first(), "model.text")
 
         //Buttons
