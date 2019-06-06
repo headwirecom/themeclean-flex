@@ -15,6 +15,42 @@
       "model": "anchorname"
     },
     {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "section",
+          "value": "section"
+        },
+        {
+          "name": "article",
+          "value": "article"
+        },
+        {
+          "name": "main",
+          "value": "main"
+        },
+        {
+          "name": "div",
+          "value": "div"
+        },
+        {
+          "name": "header",
+          "value": "header"
+        },
+        {
+          "name": "nav",
+          "value": "nav"
+        },
+        {
+          "name": "footer",
+          "value": "footer"
+        }
+      ],
+      "placeholder": "htmlelement",
+      "label": "Semantic Element",
+      "model": "htmlelement"
+    },
+    {
       "type": "material-radios",
       "values": [
         {
@@ -130,13 +166,43 @@
       "visible": "model.backgroundtype == 'gradient' and model.custombackground == 'true'"
     },
     {
+      "type": "material-radios",
+      "values": [
+        {
+          "name": "Default",
+          "value": "default"
+        },
+        {
+          "name": "Full Width",
+          "value": "full"
+        },
+        {
+          "name": "Article Width",
+          "value": "article"
+        }
+      ],
+      "placeholder": "blockwidth",
+      "label": "Block Width",
+      "model": "blockwidth"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "fullheight",
+      "label": "Full Height",
+      "model": "fullheight"
+    },
+    {
       "type": "material-range",
       "placeholder": "toppadding",
       "label": "Top Padding",
       "model": "toppadding",
       "visible": "model.fullheight != 'true'",
       "min": 0,
-      "max": 120
+      "max": 150
     },
     {
       "type": "material-range",
@@ -145,7 +211,7 @@
       "model": "bottompadding",
       "visible": "model.fullheight != 'true'",
       "min": 0,
-      "max": 120
+      "max": 150
     }
   ]
 }
