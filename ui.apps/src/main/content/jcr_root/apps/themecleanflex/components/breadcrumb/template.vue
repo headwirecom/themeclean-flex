@@ -3,7 +3,7 @@
     <div class="flex">
       <span v-for="(item,i) in model.links" :key="i" v-bind:class="{'font-bold': i === model.links.length - 1}">
         <a class="pipe-after color-inherit no-underline mr-2" v-if="i + 1 &lt; model.links.length"
-        v-bind:href="item.link">{{item.text}}</a>
+        v-bind:href="item.link + '.html'">{{item.text}}</a>
         <span class="mr-2" v-if="i+1 === model.links.length">{{item.text}}</span>
       </span>
       <div v-if="isEditAndEmpty">No links found for breadcrumb</div>
