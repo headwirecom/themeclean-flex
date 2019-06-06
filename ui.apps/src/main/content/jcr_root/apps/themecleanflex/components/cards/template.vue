@@ -15,8 +15,8 @@
         <div class="flex flex-col justify-center p-0" v-bind:class="{
             'p-3': model.showcard === 'true'
         }">
-          <h5 class="text-xl my-3" v-if="model.showtitle == 'true'" v-html="item.title"
-          v-bind:style="`color:${item.color};`"></h5>
+          <h1 class="text-lg my-3" v-if="model.showtitle == 'true'" v-html="item.title"
+          v-bind:style="`color:${item.color};`"></h1>
           <p class="my-3" v-if="model.showtext == 'true'" v-html="item.text"></p>
           <a class="btn self-center my-3" v-if="model.showbutton == 'true'"
           v-bind:href="$helper.pathToUrl(item.buttonlink)" v-bind:class="{

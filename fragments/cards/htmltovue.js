@@ -26,9 +26,9 @@ module.exports = {
         f.addIf($.find('img').first(), 'item.image')
 
         //Title
-        f.addIf($.find('h5').first(), 'model.showtitle == \'true\'')
-        f.mapRichField($.find('h5').first(), "item.title")
-        f.addStyle($.find('h5').first(), 'color', 'item.color')
+        f.addIf($.find('h1').first(), 'model.showtitle == \'true\'')
+        f.mapRichField($.find('h1').first(), "item.title")
+        f.addStyle($.find('h1').first(), 'color', 'item.color')
 
         //Text
         f.addIf($.find('p').first(), 'model.showtext == \'true\'')
@@ -53,8 +53,6 @@ module.exports = {
         f.bindAttribute( a, 'href', f.pathToUrl('item.buttonlink'))
         f.bindAttribute( a, 'class', aClasses, false)
         f.mapRichField( a, "item.buttontext")
-
-        f.addIf($.find('h1').first(), 'editAndEmpty')
 
         $.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
     }
