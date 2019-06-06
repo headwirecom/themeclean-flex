@@ -24,5 +24,8 @@ module.exports = {
 
     	f.replace( $.find('nav>div:nth-child(2) div>div:nth-child(1)'), '<themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>')
         f.replace( $.find('nav>div:nth-child(2) div>div:nth-child(2)'), '<themecleanflex-components-menubuttons v-bind:model="model"></themecleanflex-components-menubuttons>')
+
+        f.addElse($);
+        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }

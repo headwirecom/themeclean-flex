@@ -1,6 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <nav class="w-full">
+    <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
+    <nav class="w-full" v-else>
       <div class="flex w-full justify-between items-center">
         <!-- Logo -->
         <a v-if="model.logo" v-bind:href="$helper.pathToUrl(model.logourl)">
