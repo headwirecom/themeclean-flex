@@ -59,7 +59,9 @@
         }
       },
       created: function(){
-        Vue.set(this.tabs[0], 'active',true)
+        if( this.tabs.length > 0) {
+          Vue.set(this.tabs[0], 'active', true)
+        }
       },
       computed: {
         isEditAndEmpty() {
