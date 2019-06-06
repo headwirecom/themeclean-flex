@@ -2,7 +2,7 @@
   "title": "Teaser Primary",
   "group": "Features",
   "model": {
-    "showtitle": "true",
+    "showtitle": "false",
     "showsubtitle": "false",
     "showtext": "true",
     "showbutton": "true",
