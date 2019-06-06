@@ -41,6 +41,7 @@ module.exports = {
         f.bindAttribute(a2, 'href', f.pathToUrl('model.next'))
         f.bindAttribute( a2, 'class', a2Classes, false)
 
-		$.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
+        f.addElse($);
+        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }
