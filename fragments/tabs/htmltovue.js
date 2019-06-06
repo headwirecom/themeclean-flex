@@ -16,10 +16,10 @@ module.exports = {
         f.bindAttribute($.find('div.flex').first(), 'class', containerClasses, false)
 
         f.bindAttribute($.find('div.flex > div').first(), 'style', "{'flex':`0 0 ${model.mediawidth}%`}")
-    	f.addIf($.find('h2').first(), 'model.showtitle == \'true\' && model.title')
-        f.mapRichField($.find('h2').first(), "model.title")
-        f.addIf($.find('h3').first(), 'model.showsubtitle == \'true\' && model.subtitle')
-        f.mapRichField($.find('h3').first(), "model.subtitle")
+    	f.addIf($.find('h1').first(), 'model.showtitle == \'true\' && model.title')
+        f.mapRichField($.find('h1').first(), "model.title")
+        f.addIf($.find('h2').first(), 'model.showsubtitle == \'true\' && model.subtitle')
+        f.mapRichField($.find('h2').first(), "model.subtitle")
 
         let a = $.find('a').first()
         f.addFor(a, 'tabs')

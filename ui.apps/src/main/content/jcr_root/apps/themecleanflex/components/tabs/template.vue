@@ -2,10 +2,10 @@
   <themecleanflex-components-block v-bind:model="model">
     <div class="w-full">
       <div>
-        <h2 class="text-center pb-4" v-if="model.showtitle == 'true' &amp;&amp; model.title"
-        v-html="model.title"></h2>
-        <h3 class="text-center pb-4" v-if="model.showsubtitle == 'true' &amp;&amp; model.subtitle"
-        v-html="model.subtitle"></h3>
+        <h1 class="text-center pb-4" v-if="model.showtitle == 'true' &amp;&amp; model.title"
+        v-html="model.title"></h1>
+        <h2 class="text-center pb-4" v-if="model.showsubtitle == 'true' &amp;&amp; model.subtitle"
+        v-html="model.subtitle"></h2>
       </div>
       <div class="flex flex-col -mx-3" v-bind:class="{
             'lg:flex-row': model.mediaposition === 'before',
