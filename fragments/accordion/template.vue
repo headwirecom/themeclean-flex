@@ -39,9 +39,10 @@
     export default {
         props: ['model'],
         data: function() {
+          const numElements = this.model.accordiontoggle ? this.model.accordiontoggle.length : 0;
           return {
-            active: new Array(this.model.accordiontoggle.length).fill(false),
-            heights: new Array(this.model.accordiontoggle.length).fill(0),
+            active: new Array(numElements).fill(false),
+            heights: new Array(numElements).fill(0),
           }
         },
         mounted: function() {
