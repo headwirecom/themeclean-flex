@@ -1,10 +1,11 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
+    <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full flex flex-col md:flex-row justify-between items-center"
     v-bind:class="{
             'flex-row-reverse': model.buttonside === 'left',
             'flex-row': model.buttonside === 'right',
-        }">
+        }" v-else>
       <div class v-bind:class="{
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
@@ -34,7 +35,6 @@
             'btn-black': item.buttoncolor === 'dark'
         }" v-html="item.buttontext" v-bind:style="`backgroundColor:${item.buttoncolor};borderColor:${item.buttoncolor};`"></a>
       </div>
-      <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
   </themecleanflex-components-block>
 </template>
