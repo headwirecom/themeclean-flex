@@ -1,6 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="w-full">
+    <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
+    <div class="w-full" v-else>
       <div>
         <h1 class="text-center pb-4" v-if="model.showtitle == 'true' &amp;&amp; model.title"
         v-html="model.title"></h1>
