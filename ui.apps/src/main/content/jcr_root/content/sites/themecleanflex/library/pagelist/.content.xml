@@ -44,7 +44,7 @@
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List (Features)&lt;/h2&gt;">
         </title1><pagelist2
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" rootpage="/content/sites/themecleanflex"><levels jcr:primaryType="nt:unstructured"></levels>
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2">
         </pagelist2><title3 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"

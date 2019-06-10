@@ -1,11 +1,11 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="w-full" v-if="model.includeroot === 'true'">
-      <ul class="root">
+    <div class="w-full">
+      <ul class="root" v-if="model.includeroot === 'true'">
         <li class="root">
           <a v-bind:href="$helper.pathToUrl(model.rootPageLink)">{{model.rootPageTitle}}</a>
-          <ul>
-            <li class="children" v-for="(child,i) in model.childrenPages" :key="i">
+          <ul class="ml-2">
+            <li class="children ml-2" v-for="(child,i) in model.childrenPages" :key="i">
               <a v-bind:href="$helper.pathToUrl(child.path)">{{child.title}}</a>
               <themecleanflex-components-pagelistnested v-bind:model="child"
               v-if="child.hasChildren"></themecleanflex-components-pagelistnested>
@@ -13,8 +13,9 @@
           </ul>
         </li>
       </ul>
-      <ul class="noroot" v-if="model.includeroot !== 'true'">
-        <li class="childrennoroot" v-for="(child,i) in model.childrenPages" :key="i">
+      <ul class="noroot" v-else>
+        <li class="childrennoroot ml-2" v-for="(child,i) in model.childrenPages"
+        :key="i">
           <a v-bind:href="$helper.pathToUrl(child.path)">{{child.title}}</a>
           <themecleanflex-components-pagelistnested v-bind:model="child"
           v-if="child.hasChildren"></themecleanflex-components-pagelistnested>
