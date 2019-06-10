@@ -91,7 +91,7 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
         custombackground="false"
         backgroundtype="color"
         bgcolor="#eeeeee"
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="4"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
 <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
         </clbreadcrumb>`;
         // return this.text('<p><a href="/content/sites/themecleanflex/library.html">component library home</a></p>');
