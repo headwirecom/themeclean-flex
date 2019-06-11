@@ -5,13 +5,16 @@
     "links": [
       {
         "link": "/content/sites/themeclean",
-        "text": "Services"
+        "text": "Services",
+        "color": "dark"
       },{
         "link": "/content/sites/themeclean",
-        "text": "About Us"
+        "text": "About Us",
+        "color": "dark"
       },{
         "link": "/content/sites/themeclean",
-        "text": "Contact Us"
+        "text": "Contact Us",
+        "color": "dark"
       }
     ]
   }

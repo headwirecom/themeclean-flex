@@ -97,6 +97,39 @@ import javax.inject.Named;
                   "x-form-browserRoot": "/content/sites"
                 }
               }
+            },
+            "linkcolor": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Link Color",
+              "x-form-type": "materialselect",
+              "x-default": "text-blue-800",
+              "properties": {
+                "primary": {
+                  "x-form-name": "Primary",
+                  "x-form-value": "primary"
+                },
+                "success": {
+                  "x-form-name": "Success",
+                  "x-form-value": "success"
+                },
+                "danger": {
+                  "x-form-name": "Danger",
+                  "x-form-value": "danger"
+                },
+                "warning": {
+                  "x-form-name": "Warning",
+                  "x-form-value": "warning"
+                },
+                "light": {
+                  "x-form-name": "Light",
+                  "x-form-value": "light"
+                },
+                "dark": {
+                  "x-form-name": "Dark",
+                  "x-form-value": "dark"
+                }
+              }
             }
           }
         },
@@ -460,6 +493,11 @@ public class HeaderModel extends AbstractComponent {
 	@Inject
 	private List<IComponent> links;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Link Color","x-form-type":"materialselect","x-default":"text-blue-800","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
+	@Inject
+	@Default(values ="text-blue-800")
+	private String linkcolor;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
 	@Inject
 	@Default(values ="default")
@@ -585,6 +623,11 @@ public class HeaderModel extends AbstractComponent {
 	/* {"type":"object","x-source":"inject","x-form-type":"collection","x-form-label":"Links","properties":{"text":{"type":"string","x-source":"inject","x-form-label":"Link Text","x-form-type":"text"},"link":{"type":"string","x-source":"inject","x-form-label":"Link Url","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"}}} */
 	public List<IComponent> getLinks() {
 		return links;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Link Color","x-form-type":"materialselect","x-default":"text-blue-800","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
+	public String getLinkcolor() {
+		return linkcolor;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */

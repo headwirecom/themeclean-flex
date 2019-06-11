@@ -41,6 +41,39 @@ import javax.inject.Named;
               "x-form-browserRoot": "/content/sites"
             }
           }
+        },
+        "linkcolor": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Link Color",
+          "x-form-type": "materialselect",
+          "x-default": "text-blue-800",
+          "properties": {
+            "primary": {
+              "x-form-name": "Primary",
+              "x-form-value": "primary"
+            },
+            "success": {
+              "x-form-name": "Success",
+              "x-form-value": "success"
+            },
+            "danger": {
+              "x-form-name": "Danger",
+              "x-form-value": "danger"
+            },
+            "warning": {
+              "x-form-name": "Warning",
+              "x-form-value": "warning"
+            },
+            "light": {
+              "x-form-name": "Light",
+              "x-form-value": "light"
+            },
+            "dark": {
+              "x-form-name": "Dark",
+              "x-form-value": "dark"
+            }
+          }
         }
       }
     }
@@ -76,6 +109,11 @@ public class TextlinksModel extends AbstractComponent {
 	@Inject
 	private List<IComponent> links;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Link Color","x-form-type":"materialselect","x-default":"text-blue-800","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
+	@Inject
+	@Default(values ="text-blue-800")
+	private String linkcolor;
+
 
 //GEN]
 
@@ -83,6 +121,11 @@ public class TextlinksModel extends AbstractComponent {
     	/* {"type":"object","x-source":"inject","x-form-type":"collection","x-form-label":"Links","properties":{"text":{"type":"string","x-source":"inject","x-form-label":"Link Text","x-form-type":"text"},"link":{"type":"string","x-source":"inject","x-form-label":"Link Url","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"}}} */
 	public List<IComponent> getLinks() {
 		return links;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Link Color","x-form-type":"materialselect","x-default":"text-blue-800","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
+	public String getLinkcolor() {
+		return linkcolor;
 	}
 
 

@@ -26,6 +26,38 @@
       "placeholder": "links",
       "label": "Links",
       "model": "links"
+    },
+    {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "Primary",
+          "value": "primary"
+        },
+        {
+          "name": "Success",
+          "value": "success"
+        },
+        {
+          "name": "Danger",
+          "value": "danger"
+        },
+        {
+          "name": "Warning",
+          "value": "warning"
+        },
+        {
+          "name": "Light",
+          "value": "light"
+        },
+        {
+          "name": "Dark",
+          "value": "dark"
+        }
+      ],
+      "placeholder": "linkcolor",
+      "label": "Link Color",
+      "model": "linkcolor"
     }
   ]
 }

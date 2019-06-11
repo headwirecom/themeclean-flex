@@ -28,6 +28,7 @@
         "text": "Contact Us"
       }
     ],
+    "linkcolor": "dark",
     "buttons": [
       {
         "buttonlink": "/content/sites/themeclean",
