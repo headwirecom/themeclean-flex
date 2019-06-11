@@ -3,11 +3,12 @@
   v-bind:class="[classes, colors]" v-bind:style="[styles, sticky]" v-bind:data-per-path="model.path"
   v-bind:is="model.htmlelement || &quot;div&quot;">
     <a ref="anchor" v-bind:id="model.anchorname"></a>
-    <div class="embed-responsive embed-responsive-16by9" v-if="model.custombackground === 'true' &amp;&amp; model.backgroundtype == 'video' &amp;&amp; model.bgvideo"
+    <div class="embed-responsive embed-responsive-16by9 w-full h-full top-0 left-0"
+    v-if="model.custombackground === 'true' &amp;&amp; model.backgroundtype == 'video' &amp;&amp; model.bgvideo"
     v-bind:style="`position:${'absolute'};pointer-events:${'none'};`">
-      <iframe class="embed-responsive-item" v-bind:src="model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1'"></iframe>
+      <iframe class="w-full h-full" v-bind:src="model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1'"></iframe>
     </div>
-    <div class="flex" v-bind:class="{
+    <div class="flex z-10" v-bind:class="{
             'container mx-auto' : model.blockwidth === 'default',
             'w-full max-w-3xl mx-auto' : model.blockwidth === 'article'
         }">
