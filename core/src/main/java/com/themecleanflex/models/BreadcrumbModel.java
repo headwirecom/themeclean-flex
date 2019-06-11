@@ -33,6 +33,39 @@ import javax.inject.Inject;
           "x-form-label": "Number Of Levels",
           "x-form-type": "number"
         },
+        "linkcolor": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Link Color",
+          "x-form-type": "materialselect",
+          "x-default": "primary",
+          "properties": {
+            "primary": {
+              "x-form-name": "Primary",
+              "x-form-value": "primary"
+            },
+            "success": {
+              "x-form-name": "Success",
+              "x-form-value": "success"
+            },
+            "danger": {
+              "x-form-name": "Danger",
+              "x-form-value": "danger"
+            },
+            "warning": {
+              "x-form-name": "Warning",
+              "x-form-value": "warning"
+            },
+            "light": {
+              "x-form-name": "Light",
+              "x-form-value": "light"
+            },
+            "dark": {
+              "x-form-name": "Dark",
+              "x-form-value": "dark"
+            }
+          }
+        },
         "bgref": {
           "x-form-type": "reference",
           "type": "object",
@@ -274,6 +307,11 @@ public class BreadcrumbModel extends AbstractComponent {
 	@Inject
 	private String level;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Link Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
+	@Inject
+	@Default(values ="primary")
+	private String linkcolor;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
 	private String anchorname;
@@ -355,6 +393,11 @@ public class BreadcrumbModel extends AbstractComponent {
     	/* {"type":"string","x-source":"inject","x-form-label":"Number Of Levels","x-form-type":"number"} */
 	public String getLevel() {
 		return level;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Link Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
+	public String getLinkcolor() {
+		return linkcolor;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
