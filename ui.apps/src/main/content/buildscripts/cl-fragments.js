@@ -91,8 +91,9 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
         custombackground="false"
         backgroundtype="color"
         bgcolor="#eeeeee"
+        htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
-<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
         </clbreadcrumb>`;
         // return this.text('<p><a href="/content/sites/themecleanflex/library.html">component library home</a></p>');
     },
@@ -103,13 +104,23 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
             sling:resourceType="themecleanflex/components/richtext" 
             bottompadding="25"
             toppadding="25"
-            htmlelement="main"
+            htmlelement="banner"
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="${escape(marked(md))}">
         </intro${idx++}>
         `
+    },
+
+    container(el, content) {
+        return `<container${idx}
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/container"
+            htmlelement="${el}">
+            ${content}
+        </container${idx++}>`
+
     }
 
 }

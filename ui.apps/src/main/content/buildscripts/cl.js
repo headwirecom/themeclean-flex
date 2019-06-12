@@ -2,9 +2,10 @@ const fs = require('fs-extra');
 
 const clfrags = require('./cl-fragments.js');
 
-function outSample(out, name, sample) {
+function outSample(name, sample) {
     const data = fs.readJSONSync('../fragments/'+name+'/'+sample);
-    out.write(clfrags.subtitle(`${data.title} (${data.group})`));
+    let out = ""
+    out += clfrags.subtitle(`${data.title} (${data.group})`);
     const attrs = [['jcr:primaryType', 'nt:unstructured'], ['sling:resourceType','themecleanflex/components/'+name]];
     const children = [];
     for(let prop in data.model) {
@@ -27,7 +28,8 @@ function outSample(out, name, sample) {
             children.push(ret.join(''));
         }
     }
-    out.write(clfrags.tag(name, attrs, children));
+    out += clfrags.tag(name, attrs, children);
+    return out;
 }
 
 
@@ -38,16 +40,15 @@ function buildPage(target, name, samples, readme) {
     const out = fs.createWriteStream(targetFolder + '/.content.xml');
     out.write(clfrags.header(name));
     out.write(clfrags.home());
-    // out.write(clfrags.title(name.charAt(0).toUpperCase() + name.slice(1)));
 
+    let readmeContent = ""
     if( readme ) {
         let md = fs.readFileSync('../fragments/' + name + '/readme.md', 'utf-8');
-        out.write(clfrags.intro(md));
+        readmeContent = clfrags.intro(md);
     }
 
-    samples.forEach( ( sample ) => {
-        outSample(out, name, sample);
-    });
+    const samplesContent = samples.reduce( (val, sample) => val + outSample(name,sample), readmeContent )
+    out.write(clfrags.container('main', samplesContent));
     out.write(clfrags.footer());
     out.close();
 }
@@ -58,8 +59,12 @@ function buildIndexPage(target, pages) {
     fs.mkdirsSync(targetFolder);
     const out = fs.createWriteStream(targetFolder + '/.content.xml');
     out.write(clfrags.header('component library'));
-    out.write(clfrags.title('component library'));
-    out.write(clfrags.listChildren('library/',pages));
+
+    let mainContent = ""
+    mainContent += clfrags.title('component library');
+    mainContent += clfrags.listChildren('library/',pages);
+
+    out.write(clfrags.container('main',mainContent));
     out.write(clfrags.footer());
     out.close();
 }
