@@ -1,3 +1,40 @@
 {
-  "fields": []
+  "fields": [
+    {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "section",
+          "value": "section"
+        },
+        {
+          "name": "article",
+          "value": "article"
+        },
+        {
+          "name": "main",
+          "value": "main"
+        },
+        {
+          "name": "div",
+          "value": "div"
+        },
+        {
+          "name": "header",
+          "value": "header"
+        },
+        {
+          "name": "nav",
+          "value": "nav"
+        },
+        {
+          "name": "footer",
+          "value": "footer"
+        }
+      ],
+      "placeholder": "htmlelement",
+      "label": "Semantic Element",
+      "model": "htmlelement"
+    }
+  ]
 }

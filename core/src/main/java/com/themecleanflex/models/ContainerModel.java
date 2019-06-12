@@ -20,7 +20,45 @@ import javax.inject.Named;
     "Container": {
       "type": "object",
       "x-type": "component",
-      "properties": {}
+      "properties": {
+        "htmlelement": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Semantic Element",
+          "x-form-type": "materialselect",
+          "x-default": "section",
+          "properties": {
+            "section": {
+              "x-form-name": "section",
+              "x-form-value": "section"
+            },
+            "article": {
+              "x-form-name": "article",
+              "x-form-value": "article"
+            },
+            "main": {
+              "x-form-name": "main",
+              "x-form-value": "main"
+            },
+            "div": {
+              "x-form-name": "div",
+              "x-form-value": "div"
+            },
+            "header": {
+              "x-form-name": "header",
+              "x-form-value": "header"
+            },
+            "nav": {
+              "x-form-name": "nav",
+              "x-form-value": "nav"
+            },
+            "footer": {
+              "x-form-name": "footer",
+              "x-form-value": "footer"
+            }
+          }
+        }
+      }
     }
   },
   "name": "Container",
@@ -50,11 +88,21 @@ public class ContainerModel extends Container {
     public ContainerModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    
+    	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */
+	@Inject
+	@Default(values ="section")
+	private String htmlelement;
+
+
 //GEN]
 
     //GEN[:GETTERS
-    
+    	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */
+	public String getHtmlelement() {
+		return htmlelement;
+	}
+
+
 //GEN]
 
     //GEN[:CUSTOMGETTERS
