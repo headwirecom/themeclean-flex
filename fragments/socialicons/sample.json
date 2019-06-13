@@ -5,27 +5,27 @@
     "icons": [
       {
         "url": "https://www.facebook.com/",
-        "icon": "fontAwesome:fa fa-facebook:",
+        "icon": "facebook",
         "iconalttext": "Facebook"
       },
       {
         "url": "https://twitter.com/",
-        "icon": "fontAwesome:fa fa-twitter:",
+        "icon": "twitter",
         "iconalttext": "Twitter"
       },
       {
         "url": "https://www.instagram.com/",
-        "icon": "fontAwesome:fa fa-instagram:",
+        "icon": "instagram",
         "iconalttext": "Instagram"
       },
       {
         "url": "https://www.pinterest.com/",
-        "icon": "fontAwesome:fa fa-pinterest-p:",
+        "icon": "pinterest",
         "iconalttext": "Pinterest"
       },
       {
         "url": "https://www.youtube.com/",
-        "icon": "fontAwesome:fa fa-youtube-play:",
+        "icon": "youtube",
         "iconalttext": "Youtube"
       }
     ]

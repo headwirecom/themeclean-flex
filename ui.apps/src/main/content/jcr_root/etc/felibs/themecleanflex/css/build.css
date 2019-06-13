@@ -782,6 +782,10 @@ video {
   left: 0;
 }
 
+.fill-current {
+  fill: currentColor;
+}
+
 .text-left {
   text-align: left;
 }

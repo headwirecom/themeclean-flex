@@ -7,11 +7,11 @@
       <columns2 jcr:primaryType="nt:unstructured" title="Location" text="&lt;p>1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p>"/>
     </columns>
     <icons jcr:primaryType="nt:unstructured">
-      <icons0 jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="fontAwesome:fa fa-facebook:" iconalttext="Facebook"/>
-      <icons1 jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="fontAwesome:fa fa-twitter:" iconalttext="Twitter"/>
-      <icons2 jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="fontAwesome:fa fa-instagram:" iconalttext="Instagram"/>
-      <icons3 jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="fontAwesome:fa fa-pinterest-p:" iconalttext="Pinterest"/>
-      <icons4 jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="fontAwesome:fa fa-youtube-play:" iconalttext="Youtube"/>
+      <icons0 jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook"/>
+      <icons1 jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter"/>
+      <icons2 jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram"/>
+      <icons3 jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest"/>
+      <icons4 jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube"/>
     </icons>
   </jcr:content>
 </jcr:root>

@@ -35,17 +35,11 @@
       ],
       "fields": [
         {
-          "type": "iconbrowser",
+          "type": "input",
+          "inputType": "text",
           "placeholder": "icon",
-          "label": "Icon Chooser",
-          "model": "icon",
-          "hint": "Select an icon.",
-          "required": true,
-          "validator": "required",
-          "families": [
-            "material",
-            "font awesome"
-          ]
+          "label": "Icon Name",
+          "model": "icon"
         },
         {
           "type": "pathbrowser",

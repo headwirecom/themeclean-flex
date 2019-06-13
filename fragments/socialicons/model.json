@@ -36,12 +36,8 @@
             "icon": {
               "type": "string",
               "x-source": "inject",
-              "x-form-label": "Icon Chooser",
-              "x-form-type": "iconbrowser",
-              "x-form-hint": "Select an icon.",
-              "x-form-required": true,
-              "x-form-validator": "required",
-              "x-form-families": ["material","font awesome"]
+              "x-form-label": "Icon Name",
+              "x-form-type": "text"
             },
             "url": {
               "type": "string",
