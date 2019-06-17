@@ -57,15 +57,15 @@
         jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
         </c4></columns>
 <icons jcr:primaryType="nt:unstructured"><c5
-        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="fontAwesome:fa fa-facebook:" iconalttext="Facebook">
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
         </c5><c6
-        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="fontAwesome:fa fa-twitter:" iconalttext="Twitter">
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
         </c6><c7
-        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="fontAwesome:fa fa-instagram:" iconalttext="Instagram">
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
         </c7><c8
-        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="fontAwesome:fa fa-pinterest-p:" iconalttext="Pinterest">
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
         </c8><c9
-        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="fontAwesome:fa fa-youtube-play:" iconalttext="Youtube">
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
         </c9></icons>
         </footer10><title11 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
