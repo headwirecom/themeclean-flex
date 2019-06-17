@@ -3,8 +3,8 @@ module.exports = {
         let a = $.find('a').first()
         f.addFor( a, 'model.icons')
         f.bindAttribute( a, 'href', f.pathToUrl('item.url'))
-        f.bindAttribute( a, 'aria-label', 'item.iconalttext')
-        f.addStyle( a, 'color', "model.iconcustomcolor === 'true' ? model.iconcolor : 'inherit'")
+        f.bindAttribute( a, 'title', 'item.iconalttext')
+        f.addStyle( a, 'color', "model.iconcustomcolor === 'true' ? model.iconcolor : false")
 
         f.addStyle( $.find('svg'), 'width', 'model.iconsize', 'px')
 
