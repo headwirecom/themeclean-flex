@@ -71,10 +71,6 @@
                   "x-form-name": "Warning",
                   "x-form-value": "warning"
                 },
-                "info": {
-                  "x-form-name": "Info",
-                  "x-form-value": "info"
-                },
                 "light": {
                   "x-form-name": "Light",
                   "x-form-value": "light"

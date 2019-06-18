@@ -539,6 +539,14 @@ video {
   background-color: #2b6cb0;
 }
 
+.hover\:bg-blue-700:hover {
+  background-color: #2b6cb0;
+}
+
+.border-blue-700 {
+  border-color: #2b6cb0;
+}
+
 .border {
   border-width: 1px;
 }
@@ -826,6 +834,10 @@ video {
   color: #2b6cb0;
 }
 
+.hover\:text-white:hover {
+  color: #fff;
+}
+
 .text-lg {
   font-size: 1.125rem;
 }
@@ -1015,6 +1027,10 @@ a:hover {
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
+.btn:hover {
+  color: #fff;
+}
+
 .btn-lg {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1073,7 +1089,10 @@ a:hover {
 }
 
 .btn-white:hover {
-  background-color: #edf2f7;
+  background-color: #000;
+  color: #fff;
+  border-width: 1px;
+  border-color: #fff;
 }
 
 .btn-black {

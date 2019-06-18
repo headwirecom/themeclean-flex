@@ -66,10 +66,6 @@
               "value": "warning"
             },
             {
-              "name": "Info",
-              "value": "info"
-            },
-            {
               "name": "Light",
               "value": "light"
             },
