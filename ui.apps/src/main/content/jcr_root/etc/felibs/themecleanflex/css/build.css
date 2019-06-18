@@ -1010,6 +1010,11 @@ a:hover {
   transition: background-color 0.2s ease;
 }
 
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
 .btn-lg {
   padding-top: 1rem;
   padding-bottom: 1rem;
