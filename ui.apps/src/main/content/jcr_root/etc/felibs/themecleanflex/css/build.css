@@ -914,6 +914,10 @@ a {
   color: #2b6cb0;
 }
 
+a:hover {
+  color: #2c5282;
+}
+
 .color-inherit {
   color: inherit;
 }
