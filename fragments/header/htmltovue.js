@@ -21,6 +21,7 @@ module.exports = {
         f.bindAttribute(collapseButton, 'style', "{display: model.collapsed === 'true' ? 'flex': false}", false)
 
         f.addStyle( $.find('nav>div:nth-child(2)'), 'height', "menuActive ? menuHeight + 'px' : '0px'")
+        f.bindAttribute( $.find('nav>div:nth-child(2)'), 'class', "{'invisible': !menuActive}")
 
     	f.replace( $.find('nav>div:nth-child(2) div>div:nth-child(1)'), '<themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>')
         f.replace( $.find('nav>div:nth-child(2) div>div:nth-child(2)'), '<themecleanflex-components-menubuttons v-bind:model="model"></themecleanflex-components-menubuttons>')

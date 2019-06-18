@@ -854,6 +854,10 @@ video {
   visibility: visible;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .w-auto {
   width: auto;
 }

@@ -17,7 +17,8 @@
         <div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90"
         v-on:click="toggleMenu" v-bind:style="{display: model.collapsed === 'true' ? 'flex': false}">|||</div>
       </div>
-      <div class="flex flex-col w-full transition-height" v-bind:style="`height:${menuActive ? menuHeight + 'px' : '0px'};`">
+      <div v-bind:style="`height:${menuActive ? menuHeight + 'px' : '0px'};`"
+      v-bind:class="{'invisible': !menuActive}">
         <div ref="autoHeight" class="p-4 flex flex-col justify-end">
           <themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>
           <themecleanflex-components-menubuttons
