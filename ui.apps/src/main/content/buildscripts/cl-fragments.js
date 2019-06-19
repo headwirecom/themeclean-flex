@@ -136,22 +136,25 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
 
 
     cards(cards) {
+        let cardNum = idx;
+        idx++;
         return (
-        `<cards${idx}
+        `<cards${cardNum}
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/cards"
             bgcolor="#ffffff" bottompadding="20"
             showbutton="true"
             showtext="true"
-            showtitle="true"
+            showtitle="false"
             showcard="true"
             toppadding="20"
+            cardsperrow="4"
             customcardcolor="true"
             cardcolor="#eeeeee">
                 <cards jcr:primaryType="nt:unstructured">
                     ${cards.reduce( (cards, {title,text,link}) => cards + card(title,text,link), "")}
                 </cards>
-        </cards${idx}>
+        </cards${cardNum}>
         `)
     }
 
