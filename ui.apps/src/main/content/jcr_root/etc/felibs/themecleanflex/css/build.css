@@ -615,6 +615,10 @@ video {
   flex: 1 1 0%;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .font-semibold {
   font-weight: 600;
 }
