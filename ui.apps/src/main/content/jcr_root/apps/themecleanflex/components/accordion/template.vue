@@ -12,9 +12,8 @@
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
         <div class="px-3">
-          <div class="bg-gray-200" v-for="(item,i) in model.accordiontoggle" :key="i"
-          v-bind:id="`accordion${_uid}${parseInt(i)+1}`">
-            <a class="flex justify-between items-center p-3 cursor-pointer no-underline text-gray-800"
+          <div v-for="(item,i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`">
+            <a class="flex bg-gray-200 justify-between items-center p-3 cursor-pointer no-underline text-gray-800"
             v-on:click="toggleItem(i)">
               <h2 class="text-lg" v-html="item.title"></h2>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +22,7 @@
                 fill="black" />
               </svg>
             </a>
-            <div class="card-content overflow-hidden bg-white transition-height" role="tabpanel"
+            <div class="card-content overflow-hidden transition-height" role="tabpanel"
             v-bind:style="`height:${active[i] ? heights[i] + 'px' : '0px'};`">
               <div class="p-3" v-html="item.text" v-bind:ref="`cardContent${i}`"></div>
             </div>
