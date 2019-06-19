@@ -587,10 +587,6 @@ video {
   align-items: center;
 }
 
-.items-stretch {
-  align-items: stretch;
-}
-
 .self-center {
   align-self: center;
 }
@@ -609,10 +605,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
 }
 
 .flex-grow {
@@ -641,10 +633,6 @@ video {
 
 .m-3 {
   margin: 0.75rem;
-}
-
-.-m-3 {
-  margin: -0.75rem;
 }
 
 .my-2 {
@@ -870,10 +858,6 @@ video {
   visibility: hidden;
 }
 
-.w-auto {
-  width: auto;
-}
-
 .w-full {
   width: 100%;
 }
@@ -932,6 +916,13 @@ a {
 
 a:hover {
   color: #2c5282;
+}
+
+.card-grid {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
 }
 
 .color-inherit {

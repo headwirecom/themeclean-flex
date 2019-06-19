@@ -1,10 +1,10 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
-    <div class="-m-3 flex flex-col md:flex-row"
+    <div class="card-grid" v-bind:style="`grid-template-columns:${`repeat(${model.cardsperrow}, 1fr)`};`"
     v-else>
-      <div class="flex-1 m-3 card w-auto flex flex-col items-stretch" v-for="(item,i) in model.cards"
-      :key="i" v-bind:style="`background-color:${model.customcardcolor === 'true' &amp;&amp; model.showcard === 'true' ? model.cardcolor: ''};`"
+      <div class="flex flex-col card" v-for="(item,i) in model.cards" :key="i"
+      v-bind:style="`background-color:${model.customcardcolor === 'true' &amp;&amp; model.showcard === 'true' ? model.cardcolor: ''};`"
       v-bind:class="{
             'bg-dark': model.customcardcolor !== 'true' &amp;&amp; model.colorscheme === 'light',
             'bg-light': model.customcardcolor !== 'true' &amp;&amp;  model.colorscheme === 'dark',

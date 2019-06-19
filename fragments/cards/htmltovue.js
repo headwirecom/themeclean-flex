@@ -3,6 +3,8 @@ module.exports = {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
 
+        f.addStyle($, 'grid-template-columns', '`repeat(${model.cardsperrow}, 1fr)`')
+
         //Card
         let cardClasses = `{
             'bg-dark': model.customcardcolor !== 'true' && model.colorscheme === 'light',

@@ -60,6 +60,13 @@
       "visible": "model.showcard == 'true' and model.customcardcolor == 'true'"
     },
     {
+      "type": "input",
+      "inputType": "number",
+      "placeholder": "cardsperrow",
+      "label": "Cards Per Row",
+      "model": "cardsperrow"
+    },
+    {
       "type": "collection",
       "multifield": true,
       "fieldLabel": [

@@ -43,6 +43,13 @@
           "x-form-visible": "model.showcard == 'true' and model.customcardcolor == 'true'",
           "x-default": "#ffffff"
         },
+        "cardsperrow": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Cards Per Row",
+          "x-form-type": "number",
+          "x-default": "3"
+        },
         "cards": {
           "type": "string",
           "x-source": "inject",

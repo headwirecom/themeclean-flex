@@ -31,6 +31,13 @@ a:hover {
   @apply text-blue-800;
 }
 
+.card-grid {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+}
+
 .color-inherit {
   color: inherit;
 }
