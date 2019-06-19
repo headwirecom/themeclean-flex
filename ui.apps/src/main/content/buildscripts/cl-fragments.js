@@ -6,6 +6,18 @@ function escape(text) {
     return text.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+function card(title, text, link) {
+    return `<card${idx}
+        jcr:primaryType="nt:unstructured"
+        buttontext="See ${title}"
+        buttonlink="${link}"
+        buttoncolor="primary"
+        title="${title}"
+        text="${escape(marked(text))}">
+        </card${idx++}>
+    `
+}
+
 module.exports = {
     header(name) {
         idx = 0;
@@ -120,7 +132,27 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
             htmlelement="${el}">
             ${content}
         </container${idx++}>`
+    },
 
+
+    cards(cards) {
+        return (
+        `<cards${idx}
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/cards"
+            bgcolor="#ffffff" bottompadding="20"
+            showbutton="true"
+            showtext="true"
+            showtitle="true"
+            showcard="true"
+            toppadding="20"
+            customcardcolor="true"
+            cardcolor="#eeeeee">
+                <cards jcr:primaryType="nt:unstructured">
+                    ${cards.reduce( (cards, {title,text,link}) => cards + card(title,text,link), "")}
+                </cards>
+        </cards${idx}>
+        `)
     }
 
 }

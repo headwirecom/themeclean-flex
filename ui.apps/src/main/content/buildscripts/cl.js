@@ -62,7 +62,14 @@ function buildIndexPage(target, pages) {
 
     let mainContent = ""
     mainContent += clfrags.title('component library');
-    mainContent += clfrags.listChildren('library/',pages);
+
+    let cards = pages.map( page => ({
+        title: page.name,
+        text: fs.readFileSync('../fragments/' + page.name + '/readme.md', 'utf-8'),
+        link: `library/${page}.html`
+    }))
+
+    mainContent += clfrags.cards(cards);
 
     out.write(clfrags.container('main',mainContent));
     out.write(clfrags.footer());
@@ -75,7 +82,8 @@ function forEachComponent(target = 'src/main/content/jcr_root/content/sites/them
     components.forEach( (name) => {
         const entry = fs.statSync(root+name);
         if(entry.isDirectory()) {
-            pages.push(name);
+            const page = {};
+            page.name = name;
             const files = fs.readdirSync(root+name);
             let hasEmptySample = false;
             const samples = files.filter( (name) => { 
@@ -87,7 +95,9 @@ function forEachComponent(target = 'src/main/content/jcr_root/content/sites/them
             } );
             if (hasEmptySample) samples.push('sample-empty.json');
             const readme = files.includes( 'readme.md' );
+            page.readme = readme;
             buildPage(target, name, samples, readme);
+            pages.push(page);
         }
     });
     buildIndexPage(target, pages);
