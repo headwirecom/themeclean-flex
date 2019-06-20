@@ -63,8 +63,10 @@
       "type": "input",
       "inputType": "number",
       "placeholder": "cardsperrow",
-      "label": "Cards Per Row",
-      "model": "cardsperrow"
+      "label": "Cards Per Row (1-6)",
+      "model": "cardsperrow",
+      "min": 1,
+      "max": 6
     },
     {
       "type": "collection",

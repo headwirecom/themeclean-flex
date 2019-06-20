@@ -3,7 +3,17 @@ module.exports = {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
 
-        f.addStyle($, 'grid-template-columns', '`repeat(${model.cardsperrow}, 1fr)`')
+        let widths = `{
+            'w-full': model.cardsperrow == 1,
+            'w-full md:w-1/2 lg:w-1/2': model.cardsperrow == 2,
+            'w-full sm:w-1/2 md:w-1/2 lg:w-1/3': model.cardsperrow == 3,
+            'w-full sm:w-1/2 md:w-1/3 lg:w-1/4': model.cardsperrow == 4,
+            'w-full sm:w-1/2 md:w-1/4 lg:w-1/5': model.cardsperrow == 5,
+            'w-full sm:w-1/2 md:w-1/3 lg:w-1/6': model.cardsperrow == 6,
+        }`
+
+        //Card Width
+        f.bindAttribute($.find('div.card').first(), 'class', widths, false);
 
         //Card
         let cardClasses = `{
@@ -12,14 +22,15 @@ module.exports = {
             'text-dark': (model.showcard === 'false' && model.colorscheme === 'light') || (model.showcard === 'true' && model.colorscheme === 'dark'),
             'text-light': (model.showcard === 'false' && model.colorscheme === 'dark') || (model.showcard === 'true' && model.colorscheme === 'light'),
         }`
+
         f.addFor($.find('div.card').first(), 'model.cards')
-        f.addStyle($.find('div.card').first(), 'background-color', "model.customcardcolor === 'true' && model.showcard === 'true' ? model.cardcolor: ''")
-        f.bindAttribute($.find('div.card').first(), 'class', cardClasses, false)
+        f.addStyle($.find('div.card > div').first(), 'background-color', "model.customcardcolor === 'true' && model.showcard === 'true' ? model.cardcolor: ''")
+        f.bindAttribute($.find('div.card > div').first(), 'class', cardClasses, false)
 
         let cardBodyClasses = `{
             'p-3': model.showcard === 'true'
         }`
-        f.bindAttribute($.find('div.card>div').first(), 'class', cardBodyClasses, false)
+        f.bindAttribute($.find('div.card>div>div').first(), 'class', cardBodyClasses, false)
 
         //Image
         f.bindAttribute($.find('img').first(), 'class', "model.showcard == 'true' ? 'card-img pb-1' : 'card-img pb-3'")

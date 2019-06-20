@@ -46,9 +46,11 @@
         "cardsperrow": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Cards Per Row",
+          "x-form-label": "Cards Per Row (1-6)",
           "x-form-type": "number",
-          "x-default": "3"
+          "x-default": 3,
+          "x-form-max": 6,
+          "x-form-min": 1
         },
         "cards": {
           "type": "string",
