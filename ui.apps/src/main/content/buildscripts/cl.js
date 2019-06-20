@@ -66,7 +66,7 @@ function buildIndexPage(target, pages) {
     let cards = pages.map( page => ({
         title: page.name,
         text: fs.readFileSync('../fragments/' + page.name + '/readme.md', 'utf-8'),
-        link: `library/${page}.html`
+        link: `library/${page.name}.html`
     }))
 
     mainContent += clfrags.cards(cards);

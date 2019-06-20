@@ -38,7 +38,7 @@
                     <card2
         jcr:primaryType="nt:unstructured"
         buttontext="See accordion"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/accordion.html"
         buttoncolor="primary"
         title="accordion"
         text="&lt;h1 id=&quot;toggleaccordion&quot;&gt;Toggle/Accordion&lt;/h1&gt;
@@ -48,7 +48,7 @@
     <card3
         jcr:primaryType="nt:unstructured"
         buttontext="See block"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/block.html"
         buttoncolor="primary"
         title="block"
         text="&lt;h1 id=&quot;block&quot;&gt;Block&lt;/h1&gt;
@@ -58,7 +58,7 @@
     <card4
         jcr:primaryType="nt:unstructured"
         buttontext="See breadcrumb"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/breadcrumb.html"
         buttoncolor="primary"
         title="breadcrumb"
         text="&lt;h1 id=&quot;breadcrumb&quot;&gt;Breadcrumb&lt;/h1&gt;
@@ -68,7 +68,7 @@
     <card5
         jcr:primaryType="nt:unstructured"
         buttontext="See cards"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/cards.html"
         buttoncolor="primary"
         title="cards"
         text="&lt;h1 id=&quot;cards&quot;&gt;Cards&lt;/h1&gt;
@@ -78,7 +78,7 @@
     <card6
         jcr:primaryType="nt:unstructured"
         buttontext="See carousel"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/carousel.html"
         buttoncolor="primary"
         title="carousel"
         text="&lt;h1 id=&quot;carousel&quot;&gt;Carousel&lt;/h1&gt;
@@ -88,7 +88,7 @@
     <card7
         jcr:primaryType="nt:unstructured"
         buttontext="See container"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/container.html"
         buttoncolor="primary"
         title="container"
         text="&lt;h1 id=&quot;container&quot;&gt;Container&lt;/h1&gt;
@@ -98,7 +98,7 @@
     <card8
         jcr:primaryType="nt:unstructured"
         buttontext="See footer"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/footer.html"
         buttoncolor="primary"
         title="footer"
         text="&lt;h1 id=&quot;footer&quot;&gt;Footer&lt;/h1&gt;
@@ -108,7 +108,7 @@
     <card9
         jcr:primaryType="nt:unstructured"
         buttontext="See header"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/header.html"
         buttoncolor="primary"
         title="header"
         text="&lt;h1 id=&quot;header&quot;&gt;Header&lt;/h1&gt;
@@ -118,7 +118,7 @@
     <card10
         jcr:primaryType="nt:unstructured"
         buttontext="See media"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/media.html"
         buttoncolor="primary"
         title="media"
         text="&lt;h1 id=&quot;media&quot;&gt;Media&lt;/h1&gt;
@@ -128,7 +128,7 @@
     <card11
         jcr:primaryType="nt:unstructured"
         buttontext="See mediablock"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/mediablock.html"
         buttoncolor="primary"
         title="mediablock"
         text="&lt;h1 id=&quot;media-block&quot;&gt;Media Block&lt;/h1&gt;
@@ -138,7 +138,7 @@
     <card12
         jcr:primaryType="nt:unstructured"
         buttontext="See mediavisible"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/mediavisible.html"
         buttoncolor="primary"
         title="mediavisible"
         text="&lt;h1 id=&quot;media-visible&quot;&gt;Media Visible&lt;/h1&gt;
@@ -148,7 +148,7 @@
     <card13
         jcr:primaryType="nt:unstructured"
         buttontext="See menubuttons"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/menubuttons.html"
         buttoncolor="primary"
         title="menubuttons"
         text="&lt;h1 id=&quot;menu-buttons&quot;&gt;Menu Buttons&lt;/h1&gt;
@@ -158,7 +158,7 @@
     <card14
         jcr:primaryType="nt:unstructured"
         buttontext="See pagelist"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/pagelist.html"
         buttoncolor="primary"
         title="pagelist"
         text="&lt;h1 id=&quot;pagelist&quot;&gt;Pagelist&lt;/h1&gt;
@@ -168,7 +168,7 @@
     <card15
         jcr:primaryType="nt:unstructured"
         buttontext="See pagelistnested"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/pagelistnested.html"
         buttoncolor="primary"
         title="pagelistnested"
         text="&lt;h1 id=&quot;page-list-nested&quot;&gt;Page List Nested&lt;/h1&gt;
@@ -178,7 +178,7 @@
     <card16
         jcr:primaryType="nt:unstructured"
         buttontext="See pager"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/pager.html"
         buttoncolor="primary"
         title="pager"
         text="&lt;h1 id=&quot;pager&quot;&gt;Pager&lt;/h1&gt;
@@ -188,7 +188,7 @@
     <card17
         jcr:primaryType="nt:unstructured"
         buttontext="See richtext"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/richtext.html"
         buttoncolor="primary"
         title="richtext"
         text="&lt;h1 id=&quot;rich-text&quot;&gt;Rich Text&lt;/h1&gt;
@@ -198,7 +198,7 @@
     <card18
         jcr:primaryType="nt:unstructured"
         buttontext="See simpletext"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/simpletext.html"
         buttoncolor="primary"
         title="simpletext"
         text="&lt;h1 id=&quot;simple-text&quot;&gt;Simple Text&lt;/h1&gt;
@@ -208,7 +208,7 @@
     <card19
         jcr:primaryType="nt:unstructured"
         buttontext="See socialicons"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/socialicons.html"
         buttoncolor="primary"
         title="socialicons"
         text="&lt;h1 id=&quot;social-icons&quot;&gt;Social Icons&lt;/h1&gt;
@@ -218,7 +218,7 @@
     <card20
         jcr:primaryType="nt:unstructured"
         buttontext="See spacer"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/spacer.html"
         buttoncolor="primary"
         title="spacer"
         text="&lt;h1 id=&quot;spacer&quot;&gt;Spacer&lt;/h1&gt;
@@ -228,7 +228,7 @@
     <card21
         jcr:primaryType="nt:unstructured"
         buttontext="See tabs"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/tabs.html"
         buttoncolor="primary"
         title="tabs"
         text="&lt;h1 id=&quot;tabs&quot;&gt;Tabs&lt;/h1&gt;
@@ -238,7 +238,7 @@
     <card22
         jcr:primaryType="nt:unstructured"
         buttontext="See teaserhorizontal"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/teaserhorizontal.html"
         buttoncolor="primary"
         title="teaserhorizontal"
         text="&lt;h1 id=&quot;teaser-horizontal&quot;&gt;Teaser Horizontal&lt;/h1&gt;
@@ -248,7 +248,7 @@
     <card23
         jcr:primaryType="nt:unstructured"
         buttontext="See teaservertical"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/teaservertical.html"
         buttoncolor="primary"
         title="teaservertical"
         text="&lt;h1 id=&quot;teaser-vertical&quot;&gt;Teaser Vertical&lt;/h1&gt;
@@ -258,7 +258,7 @@
     <card24
         jcr:primaryType="nt:unstructured"
         buttontext="See textlinks"
-        buttonlink="library/[object Object].html"
+        buttonlink="library/textlinks.html"
         buttoncolor="primary"
         title="textlinks"
         text="&lt;h1 id=&quot;text-links&quot;&gt;Text Links&lt;/h1&gt;
