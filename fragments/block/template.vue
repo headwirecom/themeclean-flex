@@ -61,7 +61,6 @@
             const sticky = this.model.sticky === 'true'
             return sticky && !$peregrineApp.isAuthorMode() ?
             {
-              position: 'fixed',
               position: 'sticky',
               top: '0',
               width: '100%',
