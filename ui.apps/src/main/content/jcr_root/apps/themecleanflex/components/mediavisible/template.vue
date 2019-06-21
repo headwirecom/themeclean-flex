@@ -7,7 +7,7 @@
     <i v-if="model.mediatype === 'icon'" class="w-full text-center" v-bind:class="model.mediaicon.split(':')[1]" v-bind:style="{'font-size': `${model.mediaiconsize}px`, 'color': model.mediaiconcolor}">
       {{model.mediaicon.split(':')[2]}}
     </i>
-    <img v-if="model.mediatype === 'image'" class="w-full" :src="$helper.pathToUrl(model.imagesrc)" :alt="model.mediatitle">
+    <v-lazy-image v-if="model.mediatype === 'image'" class="w-full" :src="$helper.pathToUrl(model.imagesrc)" :alt="model.mediatitle"></v-lazy-image>
 
 
 
@@ -15,7 +15,11 @@
 </template>
 
 <script>
-export default {
-  props: ["model"]
-}
+  import VLazyImage from 'v-lazy-image';
+  export default {
+    props: ["model"],
+    components: {
+      VLazyImage
+    }
+  }
 </script>
