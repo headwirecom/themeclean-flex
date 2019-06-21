@@ -10,5 +10,6 @@
             jcr:title="themecleanflex template"
             brand="themecleanflex"
             siteCSS="[/etc/felibs/themecleanflex.css]"
+            prefetchDNS="[http://www.youtube.com]"
     />
 </jcr:root>
