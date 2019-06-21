@@ -33,10 +33,11 @@ module.exports = {
         f.bindAttribute($.find('div.card>div>div').first(), 'class', cardBodyClasses, false)
 
         //Image
-        f.bindAttribute($.find('img').first(), 'class', "model.showcard == 'true' ? 'card-img pb-1' : 'card-img pb-3'")
-        f.bindAttribute($.find('img').first(), 'src', f.pathToUrl('item.image'))
-        f.bindAttribute($.find('img').first(), 'alt', 'item.imagealttext')
-        f.addIf($.find('img').first(), 'item.image')
+        f.replace($.find('img'), '<v-lazy-image></v-lazy-image>')
+        f.bindAttribute($.find('v-lazy-image').first(), 'class', "model.showcard == 'true' ? 'card-img pb-1' : 'card-img pb-3'")
+        f.bindAttribute($.find('v-lazy-image').first(), 'src', f.pathToUrl('item.image'))
+        f.bindAttribute($.find('v-lazy-image').first(), 'alt', 'item.imagealttext')
+        f.addIf($.find('v-lazy-image').first(), 'item.image')
 
         //Title
         f.addIf($.find('h1').first(), 'model.showtitle == \'true\'')
