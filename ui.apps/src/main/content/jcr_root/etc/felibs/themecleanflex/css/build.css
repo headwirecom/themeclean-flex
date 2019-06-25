@@ -831,15 +831,15 @@ video {
 }
 
 .text-xl {
-  font-size: 1.25rem;
-}
-
-.text-2xl {
   font-size: 1.5rem;
 }
 
-.text-3xl {
+.text-2xl {
   font-size: 1.875rem;
+}
+
+.text-3xl {
+  font-size: 2.25rem;
 }
 
 .no-underline {
@@ -882,31 +882,35 @@ video {
 
 /* Base Overrides */
 
+body {
+  font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 h1 {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.875rem;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.875rem;
 }
 
 h5 {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 h6 {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
 }
 
 a {
