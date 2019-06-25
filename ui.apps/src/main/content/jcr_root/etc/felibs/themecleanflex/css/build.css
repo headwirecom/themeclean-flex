@@ -619,8 +619,16 @@ video {
   font-weight: 700;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
 .h-full {
   height: 100%;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .m-1 {
@@ -807,6 +815,10 @@ video {
   color: #fff;
 }
 
+.text-gray-700 {
+  color: #4a5568;
+}
+
 .text-gray-800 {
   color: #2d3748;
 }
@@ -845,6 +857,10 @@ video {
 
 .text-3xl {
   font-size: 1.875rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
 }
 
 .no-underline {
@@ -886,6 +902,10 @@ video {
 /* purgecss start ignore */
 
 /* Base Overrides */
+
+body {
+  font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
 h1 {
   font-size: 1.5rem;

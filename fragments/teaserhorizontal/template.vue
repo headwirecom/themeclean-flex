@@ -12,10 +12,12 @@
             'text-right': model.aligncontent === 'right',
             'text-3xl': model.isprimary === 'true'
         }" v-bind:style="`flex-basis:${model.textwidth}%;`">
-        <h1 class="text-2xl" v-if="model.showtitle === 'true'" v-html="model.title"></h1>
-        <h2 class="text-xl" v-if="model.showsubtitle === 'true'"
+        <h1 class="text-4xl font-black leading-tight mb-3" v-if="model.showtitle === 'true'"
+        v-html="model.title"></h1>
+        <h2 class="text-xl font-bold mb-3" v-if="model.showsubtitle === 'true'"
         v-html="model.subtitle"></h2>
-        <p class="text-lg" v-if="model.showtext === 'true'" v-html="model.text"></p>
+        <p class="text-lg font-bold text-gray-700" v-if="model.showtext === 'true'"
+        v-html="model.text"></p>
       </div>
       <div class="flex flex-wrap justify-center -mx-2" v-if="model.showbutton == 'true'"
       v-bind:class="{

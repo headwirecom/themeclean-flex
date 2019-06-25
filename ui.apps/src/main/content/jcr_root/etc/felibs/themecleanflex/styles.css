@@ -5,6 +5,10 @@
 /* purgecss start ignore */
 
 /* Base Overrides */
+body { 
+  @apply font-sans;
+}
+
 h1 {
   @apply text-2xl font-semibold;
 }
