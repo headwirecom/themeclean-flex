@@ -322,6 +322,45 @@
       "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'"
     },
     {
+      "type": "material-range",
+      "placeholder": "bgxposition",
+      "label": "Background X Position",
+      "model": "bgxposition",
+      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "material-range",
+      "placeholder": "bgyposition",
+      "label": "Background Y Position",
+      "model": "bgyposition",
+      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "cover",
+          "value": "cover"
+        },
+        {
+          "name": "contain",
+          "value": "contain"
+        },
+        {
+          "name": "auto",
+          "value": "auto"
+        }
+      ],
+      "placeholder": "bgsize",
+      "label": "Background Image Size",
+      "model": "bgsize",
+      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'"
+    },
+    {
       "type": "materialswitch",
       "textOn": "yes",
       "textOff": "no",

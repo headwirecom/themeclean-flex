@@ -80,6 +80,10 @@
               styles.background = this.backgroundStyles();
             }
 
+            styles.backgroundPositionX = this.model.bgxposition + '%';
+            styles.backgroundPositionY = this.model.bgyposition + '%';
+            styles.backgroundSize = this.model.bgsize;
+
             return styles;
           }
         },

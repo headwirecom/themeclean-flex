@@ -335,6 +335,48 @@ import javax.inject.Named;
               "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
               "x-form-browserRoot": "/content/assets"
             },
+            "bgxposition": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Background X Position",
+              "x-form-type": "materialrange",
+              "x-form-min": 0,
+              "x-form-max": 100,
+              "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+              "x-default": "50"
+            },
+            "bgyposition": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Background Y Position",
+              "x-form-type": "materialrange",
+              "x-form-min": 0,
+              "x-form-max": 100,
+              "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+              "x-default": "50"
+            },
+            "bgsize": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Background Image Size",
+              "x-form-type": "materialselect",
+              "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+              "x-default": "cover",
+              "properties": {
+                "section": {
+                  "x-form-name": "cover",
+                  "x-form-value": "cover"
+                },
+                "article": {
+                  "x-form-name": "contain",
+                  "x-form-value": "contain"
+                },
+                "main": {
+                  "x-form-name": "auto",
+                  "x-form-value": "auto"
+                }
+              }
+            },
             "overlay": {
               "type": "string",
               "x-source": "inject",
@@ -555,6 +597,21 @@ public class TabsModel extends AbstractComponent {
 	@Inject
 	private String bgimage;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Background X Position","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-default":"50"} */
+	@Inject
+	@Default(values ="50")
+	private String bgxposition;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Y Position","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-default":"50"} */
+	@Inject
+	@Default(values ="50")
+	private String bgyposition;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Image Size","x-form-type":"materialselect","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-default":"cover","properties":{"section":{"x-form-name":"cover","x-form-value":"cover"},"article":{"x-form-name":"contain","x-form-value":"contain"},"main":{"x-form-name":"auto","x-form-value":"auto"}}} */
+	@Inject
+	@Default(values ="cover")
+	private String bgsize;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Overlay","x-form-type":"materialswitch","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'"} */
 	@Inject
 	private String overlay;
@@ -714,6 +771,21 @@ public class TabsModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Background Image","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-form-browserRoot":"/content/assets"} */
 	public String getBgimage() {
 		return bgimage;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Background X Position","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-default":"50"} */
+	public String getBgxposition() {
+		return bgxposition;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Y Position","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-default":"50"} */
+	public String getBgyposition() {
+		return bgyposition;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Image Size","x-form-type":"materialselect","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-default":"cover","properties":{"section":{"x-form-name":"cover","x-form-value":"cover"},"article":{"x-form-name":"contain","x-form-value":"contain"},"main":{"x-form-name":"auto","x-form-value":"auto"}}} */
+	public String getBgsize() {
+		return bgsize;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Overlay","x-form-type":"materialswitch","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'"} */

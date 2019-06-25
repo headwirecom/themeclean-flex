@@ -114,6 +114,48 @@
           "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
           "x-form-browserRoot": "/content/assets"
         },
+        "bgxposition": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Background X Position",
+          "x-form-type": "materialrange",
+          "x-form-min": 0,
+          "x-form-max": 100,
+          "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "x-default": "50"
+        },
+        "bgyposition": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Background Y Position",
+          "x-form-type": "materialrange",
+          "x-form-min": 0,
+          "x-form-max": 100,
+          "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "x-default": "50"
+        },
+        "bgsize": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Background Image Size",
+          "x-form-type": "materialselect",
+          "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "x-default": "cover",
+          "properties":{
+            "section": {
+              "x-form-name": "cover",
+              "x-form-value": "cover"
+            },
+            "article": {
+              "x-form-name": "contain",
+              "x-form-value": "contain"
+            },
+            "main": {
+              "x-form-name": "auto",
+              "x-form-value": "auto"
+            }
+          }
+        },
         "overlay": {
           "type": "string",
           "x-source": "inject",
