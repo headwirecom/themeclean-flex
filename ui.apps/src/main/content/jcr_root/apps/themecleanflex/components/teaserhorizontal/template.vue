@@ -17,7 +17,7 @@
         v-html="model.subtitle"></h2>
         <p class="text-lg" v-if="model.showtext === 'true'" v-html="model.text"></p>
       </div>
-      <div class="flex flex-wrap justify-center" v-if="model.showbutton == 'true'"
+      <div class="flex flex-wrap justify-center -mx-2" v-if="model.showbutton == 'true'"
       v-bind:class="{
             'justify-content-md-end': model.buttonside === 'right',
             'justify-content-md-start': model.buttonside === 'left',
