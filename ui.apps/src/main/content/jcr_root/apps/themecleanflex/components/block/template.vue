@@ -72,7 +72,6 @@
 
             styles.paddingTop = `${this.model.toppadding}px`;
             styles.paddingBottom = `${this.model.bottompadding}px`;
-            styles.backgroundSize = 'cover';
             styles.position = 'relative';
             styles.overflow = 'hidden';
 
@@ -83,6 +82,7 @@
             styles.backgroundPositionX = this.model.bgxposition + '%';
             styles.backgroundPositionY = this.model.bgyposition + '%';
             styles.backgroundSize = this.model.bgsize;
+            styles.backgroundRepeat = 'no-repeat';
 
             return styles;
           }
@@ -94,7 +94,7 @@
 
                 case 'image':
                   const overlay = this.model.overlay === 'true' ? `${this.overlayStyle()},` : '' 
-                  return overlay + `url("${this.model.bgimage}") center center / cover no-repeat`
+                  return overlay + `url("${this.model.bgimage}")`
 
                 case 'gradient':
                   return `linear-gradient(to right,${this.model.bgcolor},${this.model.color2})`

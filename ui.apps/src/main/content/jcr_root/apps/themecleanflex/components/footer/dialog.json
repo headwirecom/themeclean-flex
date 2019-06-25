@@ -270,25 +270,11 @@
       "max": 100
     },
     {
-      "type": "material-select",
-      "values": [
-        {
-          "name": "cover",
-          "value": "cover"
-        },
-        {
-          "name": "contain",
-          "value": "contain"
-        },
-        {
-          "name": "auto",
-          "value": "auto"
-        }
-      ],
+      "type": "input",
+      "inputType": "text",
       "placeholder": "bgsize",
-      "label": "Background Image Size",
-      "model": "bgsize",
-      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'"
+      "label": "Background Size Style",
+      "model": "bgsize"
     },
     {
       "type": "materialswitch",

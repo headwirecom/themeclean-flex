@@ -187,24 +187,8 @@ import java.util.List;
             "bgsize": {
               "type": "string",
               "x-source": "inject",
-              "x-form-label": "Background Image Size",
-              "x-form-type": "materialselect",
-              "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
-              "x-default": "cover",
-              "properties": {
-                "section": {
-                  "x-form-name": "cover",
-                  "x-form-value": "cover"
-                },
-                "article": {
-                  "x-form-name": "contain",
-                  "x-form-value": "contain"
-                },
-                "main": {
-                  "x-form-name": "auto",
-                  "x-form-value": "auto"
-                }
-              }
+              "x-form-label": "Background Size Style",
+              "x-form-type": "text"
             },
             "overlay": {
               "type": "string",
@@ -379,9 +363,8 @@ public class PagelistModel extends AbstractComponent {
 	@Default(values ="50")
 	private String bgyposition;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Background Image Size","x-form-type":"materialselect","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-default":"cover","properties":{"section":{"x-form-name":"cover","x-form-value":"cover"},"article":{"x-form-name":"contain","x-form-value":"contain"},"main":{"x-form-name":"auto","x-form-value":"auto"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Size Style","x-form-type":"text"} */
 	@Inject
-	@Default(values ="cover")
 	private String bgsize;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Overlay","x-form-type":"materialswitch","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'"} */
@@ -485,7 +468,7 @@ public class PagelistModel extends AbstractComponent {
 		return bgyposition;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Background Image Size","x-form-type":"materialselect","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-default":"cover","properties":{"section":{"x-form-name":"cover","x-form-value":"cover"},"article":{"x-form-name":"contain","x-form-value":"contain"},"main":{"x-form-name":"auto","x-form-value":"auto"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Size Style","x-form-type":"text"} */
 	public String getBgsize() {
 		return bgsize;
 	}
