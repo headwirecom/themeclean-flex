@@ -105,6 +105,13 @@
             }
           }
         },
+        "buttonshadow": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Button Shadow",
+          "x-form-type": "materialswitch",
+          "x-default": "false"
+        },
         "buttonsize": {
           "type": "string",
           "x-source": "inject",

@@ -842,6 +842,10 @@ video {
   color: #fff;
 }
 
+.hover\:text-blue-900:hover {
+  color: #2a4365;
+}
+
 .text-sm {
   font-size: 0.875rem;
 }

@@ -126,6 +126,13 @@ import javax.inject.Named;
             }
           }
         },
+        "buttonshadow": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Button Shadow",
+          "x-form-type": "materialswitch",
+          "x-default": "false"
+        },
         "buttonsize": {
           "type": "string",
           "x-source": "inject",
@@ -521,6 +528,11 @@ public class TeaserverticalModel extends AbstractComponent {
 	@Default(values ="center")
 	private String alignbuttons;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Button Shadow","x-form-type":"materialswitch","x-default":"false"} */
+	@Inject
+	@Default(values ="false")
+	private String buttonshadow;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-form-visible":"model.showbutton == 'true'","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
 	@Inject
 	@Default(values ="default")
@@ -675,6 +687,11 @@ public class TeaserverticalModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Button Alignment","x-form-visible":"","x-form-type":"materialradio","x-default":"center","properties":{"left":{"x-form-name":"Left","x-form-value":"start"},"center":{"x-form-name":"Center","x-form-value":"center"},"right":{"x-form-name":"Right","x-form-value":"end"}}} */
 	public String getAlignbuttons() {
 		return alignbuttons;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Button Shadow","x-form-type":"materialswitch","x-default":"false"} */
+	public String getButtonshadow() {
+		return buttonshadow;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-form-visible":"model.showbutton == 'true'","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */

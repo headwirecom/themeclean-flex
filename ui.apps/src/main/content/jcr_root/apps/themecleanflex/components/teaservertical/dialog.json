@@ -125,6 +125,16 @@
       "model": "alignbuttons"
     },
     {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "buttonshadow",
+      "label": "Button Shadow",
+      "model": "buttonshadow"
+    },
+    {
       "type": "material-select",
       "values": [
         {

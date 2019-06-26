@@ -47,7 +47,9 @@ module.exports = {
             'btn-red': item.buttoncolor === 'danger',
             'btn-orange': item.buttoncolor === 'warning',
             'btn-white': item.buttoncolor === 'light',
-            'btn-black': item.buttoncolor === 'dark'
+            'btn-black': item.buttoncolor === 'dark',
+            'p-0 hover:text-blue-900 hover:underline': item.buttoncolor === 'info',
+            'elevation-5': model.buttonshadow === 'true'
         }`
 
         f.addFor( link, 'model.buttons')
