@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-start">
     <a class="m-1" v-for="(item,i) in model.icons" :key="i" v-bind:href="$helper.pathToUrl(item.url)"
     v-bind:title="item.iconalttext" v-bind:style="`color:${model.iconcustomcolor === 'true' ? model.iconcolor : false};`">
       <svg class="fill-current" viewBox="0 0 24 24" v-bind:style="`width:${model.iconsize}px;`">

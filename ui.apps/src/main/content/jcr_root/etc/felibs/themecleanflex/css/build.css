@@ -647,11 +647,6 @@ video {
   margin: 0.75rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -845,6 +840,10 @@ video {
 
 .hover\:text-white:hover {
   color: #fff;
+}
+
+.text-sm {
+  font-size: 0.875rem;
 }
 
 .text-lg {
