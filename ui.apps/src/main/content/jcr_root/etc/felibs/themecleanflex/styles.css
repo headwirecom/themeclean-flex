@@ -36,7 +36,7 @@ a:hover {
 }
 
 footer a {
-  @apply no-underline text-white;
+  @apply no-underline text-gray-100;
 }
 
 .color-inherit {
@@ -55,10 +55,10 @@ footer a {
 
 /* Themes */ 
 .theme-dark {
-  @apply text-gray-100 bg-black;
+  @apply text-gray-100 bg-gray-900;
 }
 .theme-light {
-  @apply text-black bg-gray-100;
+  @apply text-gray-900 bg-gray-100;
 }
 .bg-dark {
   @apply bg-black;

@@ -949,7 +949,7 @@ a:hover {
 
 footer a {
   text-decoration: none;
-  color: #fff;
+  color: #f7fafc;
 }
 
 .color-inherit {
@@ -971,11 +971,11 @@ footer a {
 
 .theme-dark {
   color: #f7fafc;
-  background-color: #000;
+  background-color: #1a202c;
 }
 
 .theme-light {
-  color: #000;
+  color: #1a202c;
   background-color: #f7fafc;
 }
 
