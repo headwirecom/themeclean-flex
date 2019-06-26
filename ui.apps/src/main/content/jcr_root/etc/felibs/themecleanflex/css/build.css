@@ -947,6 +947,11 @@ a:hover {
   color: #2c5282;
 }
 
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .color-inherit {
   color: inherit;
 }

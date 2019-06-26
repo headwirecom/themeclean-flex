@@ -35,6 +35,10 @@ a:hover {
   @apply text-blue-800;
 }
 
+footer a {
+  @apply no-underline text-white;
+}
+
 .color-inherit {
   color: inherit;
 }
