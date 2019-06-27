@@ -9,9 +9,9 @@
             'justify-end': model.aligncontent === 'right'
         }">
         <div class v-bind:class="{
-            'text-left': model.aligncontent === 'left',
-            'text-center': model.aligncontent === 'center',
-            'text-right': model.aligncontent === 'right',
+            'text-left self-start': model.aligncontent === 'left',
+            'text-center self-center': model.aligncontent === 'center',
+            'text-right self-end': model.aligncontent === 'right',
             'text-3xl': model.isprimary === 'true'
         }" v-bind:style="`width:${model.textwidth}%;`">
           <h1 class="text-4xl font-black leading-tight mb-3" v-if="model.showtitle === 'true'"

@@ -12,9 +12,9 @@ module.exports = {
 
         //Text
         let textClasses = `{
-            'text-left': model.aligncontent === 'left',
-            'text-center': model.aligncontent === 'center',
-            'text-right': model.aligncontent === 'right',
+            'text-left self-start': model.aligncontent === 'left',
+            'text-center self-center': model.aligncontent === 'center',
+            'text-right self-end': model.aligncontent === 'right',
             'text-3xl': model.isprimary === 'true'
         }`
         let textDiv = $.find('div').eq(0)
