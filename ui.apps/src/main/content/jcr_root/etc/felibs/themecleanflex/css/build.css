@@ -512,7 +512,7 @@ video {
 }
 
 .bg-gray-100 {
-  background-color: #f7fafc;
+  background-color: #fffbfb;
 }
 
 .bg-gray-200 {
@@ -964,7 +964,7 @@ a:hover {
 
 footer a {
   text-decoration: none;
-  color: #f7fafc;
+  color: #fffbfb;
 }
 
 .color-inherit {
@@ -985,13 +985,13 @@ footer a {
 /* Themes */
 
 .theme-dark {
-  color: #f7fafc;
+  color: #fffbfb;
   background-color: #1a202c;
 }
 
 .theme-light {
   color: #1a202c;
-  background-color: #f7fafc;
+  background-color: #fffbfb;
 }
 
 .bg-dark {
