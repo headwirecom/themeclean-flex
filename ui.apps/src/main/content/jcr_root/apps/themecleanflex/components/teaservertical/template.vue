@@ -28,18 +28,18 @@
             'justify-center': model.alignbuttons === 'center',
             'justify-end': model.alignbuttons === 'end'
         }">
-        <a class="btn m-2" v-for="(item,i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
+        <a class="m-2" v-for="(item,i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
         v-bind:class="{
-            'btn-lg': model.buttonsize === 'large',
-            'btn-sm': model.buttonsize === 'small',
-            'btn-blue': item.buttoncolor === 'primary',
-            'btn-white border border-blue': item.buttoncolor === 'secondary',
-            'btn-green': item.buttoncolor === 'success',
-            'btn-red': item.buttoncolor === 'danger',
-            'btn-orange': item.buttoncolor === 'warning',
-            'btn-white': item.buttoncolor === 'light',
-            'btn-black': item.buttoncolor === 'dark',
-            'p-0 hover:text-blue-900 hover:underline': item.buttoncolor === 'info',
+            'btn btn-lg': model.buttonsize === 'large',
+            'btn btn-sm': model.buttonsize === 'small',
+            'btn btn-blue': item.buttoncolor === 'primary',
+            'btn btn-white border border-blue': item.buttoncolor === 'secondary',
+            'btn btn-green': item.buttoncolor === 'success',
+            'btn btn-red': item.buttoncolor === 'danger',
+            'btn btn-orange': item.buttoncolor === 'warning',
+            'btn btn-white': item.buttoncolor === 'light',
+            'btn btn-black': item.buttoncolor === 'dark',
+            'p-0 font-bold hover:text-blue-900 no-underline hover:underline': item.buttoncolor === 'info',
             'elevation-5': model.buttonshadow === 'true'
         }" v-html="item.buttontext" v-bind:style="`backgroundColor:${item.buttoncolor};borderColor:${item.buttoncolor};`"></a>
       </div>
