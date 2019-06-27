@@ -25,7 +25,7 @@ module.exports = {
         f.addFor(a, 'tabs')
 
         let aClasses = `{
-            'text-white' : item.active === true,
+            'text-white hover:text-white' : item.active === true,
             'bg-blue-700' : item.active  && model.tabcolor === 'blue',
             'bg-green-700' : item.active && model.tabcolor === 'green',
             'bg-red-700' : item.active && model.tabcolor === 'red',

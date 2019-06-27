@@ -17,12 +17,12 @@
         v-bind:style="{'flex':`0 0 ${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
-        <div class="w-full py-3 flex flex-col mx-3">
+        <div class="w-full overflow-hidden py-3 flex flex-col mx-3">
           <!-- Tab Nav -->
           <div class="flex flex-wrap justify-center  pb-3" role="tablist">
             <a class="m-3 no-underline p-3 cursor-pointer" role="tab" v-for="(item,i) in tabs"
             :key="i" v-bind:class="{
-            'text-white' : item.active === true,
+            'text-white hover:text-white' : item.active === true,
             'bg-blue-700' : item.active  &amp;&amp; model.tabcolor === 'blue',
             'bg-green-700' : item.active &amp;&amp; model.tabcolor === 'green',
             'bg-red-700' : item.active &amp;&amp; model.tabcolor === 'red',
