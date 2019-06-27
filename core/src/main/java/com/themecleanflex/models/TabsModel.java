@@ -214,6 +214,51 @@ import javax.inject.Named;
               "x-source": "inject",
               "x-form-label": "Tab Text",
               "x-form-type": "texteditor"
+            },
+            "tabshowimage": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Show Media",
+              "x-form-type": "materialswitch"
+            },
+            "tabimagesrc": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Image Source",
+              "x-form-type": "pathbrowser",
+              "x-form-browserRoot": "/content/assets"
+            },
+            "tabimagetitle": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Media Alt Text/Title",
+              "x-form-type": "text"
+            },
+            "tabimagewidth": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Width",
+              "x-form-type": "materialrange",
+              "x-default": 100,
+              "x-form-min": 10,
+              "x-form-max": 100
+            },
+            "tabimageposition": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Media Position",
+              "x-form-type": "materialradio",
+              "x-default": "before",
+              "properties": {
+                "type1": {
+                  "x-form-name": "Before Content",
+                  "x-form-value": "before"
+                },
+                "type2": {
+                  "x-form-name": "After Content",
+                  "x-form-value": "after"
+                }
+              }
             }
           }
         },
@@ -545,7 +590,7 @@ public class TabsModel extends AbstractComponent {
 	@Default(values ="blue")
 	private String tabcolor;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Tabs","x-form-type":"collection","properties":{"title":{"type":"string","x-source":"inject","x-form-label":"Tab Title","x-form-type":"text"},"text":{"type":"string","x-source":"inject","x-form-label":"Tab Text","x-form-type":"texteditor"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Tabs","x-form-type":"collection","properties":{"title":{"type":"string","x-source":"inject","x-form-label":"Tab Title","x-form-type":"text"},"text":{"type":"string","x-source":"inject","x-form-label":"Tab Text","x-form-type":"texteditor"},"tabshowimage":{"type":"string","x-source":"inject","x-form-label":"Show Media","x-form-type":"materialswitch"},"tabimagesrc":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"},"tabimagetitle":{"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-type":"text"},"tabimagewidth":{"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-default":100,"x-form-min":10,"x-form-max":100},"tabimageposition":{"type":"string","x-source":"inject","x-form-label":"Media Position","x-form-type":"materialradio","x-default":"before","properties":{"type1":{"x-form-name":"Before Content","x-form-value":"before"},"type2":{"x-form-name":"After Content","x-form-value":"after"}}}}} */
 	@Inject
 	private List<IComponent> tabs;
 
@@ -716,7 +761,7 @@ public class TabsModel extends AbstractComponent {
 		return tabcolor;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Tabs","x-form-type":"collection","properties":{"title":{"type":"string","x-source":"inject","x-form-label":"Tab Title","x-form-type":"text"},"text":{"type":"string","x-source":"inject","x-form-label":"Tab Text","x-form-type":"texteditor"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Tabs","x-form-type":"collection","properties":{"title":{"type":"string","x-source":"inject","x-form-label":"Tab Title","x-form-type":"text"},"text":{"type":"string","x-source":"inject","x-form-label":"Tab Text","x-form-type":"texteditor"},"tabshowimage":{"type":"string","x-source":"inject","x-form-label":"Show Media","x-form-type":"materialswitch"},"tabimagesrc":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"},"tabimagetitle":{"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-type":"text"},"tabimagewidth":{"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-default":100,"x-form-min":10,"x-form-max":100},"tabimageposition":{"type":"string","x-source":"inject","x-form-label":"Media Position","x-form-type":"materialradio","x-default":"before","properties":{"type1":{"x-form-name":"Before Content","x-form-value":"before"},"type2":{"x-form-name":"After Content","x-form-value":"after"}}}}} */
 	public List<IComponent> getTabs() {
 		return tabs;
 	}

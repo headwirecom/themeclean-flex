@@ -201,6 +201,54 @@
           "placeholder": "text",
           "label": "Tab Text",
           "model": "text"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "tabshowimage",
+          "label": "Show Media",
+          "model": "tabshowimage"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/assets",
+          "placeholder": "tabimagesrc",
+          "label": "Image Source",
+          "model": "tabimagesrc"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "tabimagetitle",
+          "label": "Media Alt Text/Title",
+          "model": "tabimagetitle"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "tabimagewidth",
+          "label": "Width",
+          "model": "tabimagewidth",
+          "min": 10,
+          "max": 100
+        },
+        {
+          "type": "material-radios",
+          "values": [
+            {
+              "name": "Before Content",
+              "value": "before"
+            },
+            {
+              "name": "After Content",
+              "value": "after"
+            }
+          ],
+          "placeholder": "tabimageposition",
+          "label": "Media Position",
+          "model": "tabimageposition"
         }
       ],
       "placeholder": "tabs",
