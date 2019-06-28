@@ -582,11 +582,11 @@ public class BreadcrumbModel extends AbstractComponent {
     	} catch(Exception e){
     		LOG.error("getDeepLinks error: {}",e);
 		}
-    	
-    	return links;
-    	
-    	
-    }
+    	if(links.size() >= 2 && links.get(0).getLink().equals(links.get(1).getLink())) {
+        links.remove(0);
+      }
+    return links;
+  }
     	
 	private String getPageTitle(String pageUrl){
 		try{
