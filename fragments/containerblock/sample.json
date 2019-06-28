@@ -1,7 +1,6 @@
 {
-  "title": "Containerblock",
-  "group": "",
+  "title": "Container Block",
+  "group": "Chrome",
   "model": {
-    "text": "example"
   }
 }

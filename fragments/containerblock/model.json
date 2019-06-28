@@ -4,6 +4,10 @@
             "type": "object",
             "x-type": "container",
             "properties": {
+                "bgref": {
+                "$ref": "fragments/block/model.json#/definitions/Block",
+                "x-form-type": "reference"
+                }
             }
         }
     }
