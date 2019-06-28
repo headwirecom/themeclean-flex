@@ -1,0 +1,24 @@
+{
+  "definitions": {
+    "Code": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "language": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "text"
+        },
+        "text": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "textarea"
+        },
+        "bgref": {
+          "$ref": "fragments/block/model.json#/definitions/Block",
+          "x-form-type": "reference"
+        }
+      }
+    }
+  }
+}
