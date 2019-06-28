@@ -1,0 +1,8 @@
+{
+  "title": "Text Block - all styles",
+  "default": true,
+  "group": ".hidden",
+  "model": {
+    "text": "<p>unordered list:</p><ul><li>item 1</li><li>item 2<br></li><li>item 3</li></ul><p>ordered list</p><ol><li>item 1</li><li>item 2</li><li>item 3</li></ol>\n<p>left</p><p style=\"text-align: right; \">right</p><p style=\"text-align: center; \">center</p><p>sub<sub>script</sub> super<sup>script</sup></p><p><strong>bold</strong> <em>italic</em></p><p><a href=\"https://www.example.com\" title=\"example.com\">some link text</a></p><p>a line followed by a shift return (&lt;br/&gt;)<br>a line followed by a return (end of paragraph)<br>another line</p>"
+  }
+}

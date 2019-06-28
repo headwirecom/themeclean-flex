@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Text Block" group="Text Components">
-  <jcr:content jcr:primaryType="nt:unstructured" toppadding="50" bottompadding="50" textcolor="#000000" bgcolor="#ffffff" text="&lt;p>&lt;br>&lt;/p>&lt;h1>Vestibulum vel volutpat enim, vel euismod tortor.&lt;/h1>&lt;br>&lt;p>Vestibulum vel volutpat enim, vel euismod tortor. Pellentesque sed dignissim est. Curabitur lacinia elit nec tortor tincidunt, et laoreet libero gravida. Aenean sodales, est id commodo rhoncus, dui orci mollis quam, quis tincidunt orci metus sit amet quam. Aenean ac egestas elit. Aenean nec vehicula lectus.&lt;/p>"/>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Text Block">
+  <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
+    <sample jcr:primaryType="nt:unstructured" title="Text Block" group="Text Components">
+      <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>lets go and write some content!&lt;/p>"/>
+    </sample>
+    <sample-allstyles jcr:primaryType="nt:unstructured" title="Text Block - all styles" group=".hidden">
+      <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>unordered list:&lt;/p>&lt;ul>&lt;li>item 1&lt;/li>&lt;li>item 2&lt;br>&lt;/li>&lt;li>item 3&lt;/li>&lt;/ul>&lt;p>ordered list&lt;/p>&lt;ol>&lt;li>item 1&lt;/li>&lt;li>item 2&lt;/li>&lt;li>item 3&lt;/li>&lt;/ol>&#xA;&lt;p>left&lt;/p>&lt;p style=&quot;text-align: right; &quot;>right&lt;/p>&lt;p style=&quot;text-align: center; &quot;>center&lt;/p>&lt;p>sub&lt;sub>script&lt;/sub> super&lt;sup>script&lt;/sup>&lt;/p>&lt;p>&lt;strong>bold&lt;/strong> &lt;em>italic&lt;/em>&lt;/p>&lt;p>&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;>some link text&lt;/a>&lt;/p>&lt;p>a line followed by a shift return (&amp;amp;&amp;lt;br/&amp;amp;&amp;gt;)&lt;br>a line followed by a return (end of paragraph)&lt;br>another line&lt;/p>"/>
+    </sample-allstyles>
+  </jcr:content>
 </jcr:root>
