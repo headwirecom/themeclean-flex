@@ -21,6 +21,13 @@ import javax.inject.Named;
       "type": "object",
       "x-type": "component",
       "properties": {
+        "width": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Container Width",
+          "x-form-type": "text",
+          "x-default": "w-full"
+        },
         "htmlelement": {
           "type": "string",
           "x-source": "inject",
@@ -88,7 +95,12 @@ public class ContainerModel extends Container {
     public ContainerModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Container Width","x-form-type":"text","x-default":"w-full"} */
+	@Inject
+	@Default(values ="w-full")
+	private String width;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */
 	@Inject
 	@Default(values ="section")
 	private String htmlelement;
@@ -97,7 +109,12 @@ public class ContainerModel extends Container {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Container Width","x-form-type":"text","x-default":"w-full"} */
+	public String getWidth() {
+		return width;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */
 	public String getHtmlelement() {
 		return htmlelement;
 	}

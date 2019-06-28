@@ -4,6 +4,13 @@
       "type": "object",
       "x-type": "component",
       "properties": {
+        "width": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Container Width",
+          "x-form-type": "text",
+          "x-default": "w-full"
+        },
         "htmlelement": {
           "type": "string",
           "x-source": "inject",
