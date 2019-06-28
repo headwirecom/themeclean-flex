@@ -21,6 +21,35 @@ import javax.inject.Named;
       "type": "object",
       "x-type": "container",
       "properties": {
+        "alignitems": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Items Alignment",
+          "x-form-type": "materialselect",
+          "x-default": "primary",
+          "properties": {
+            "start": {
+              "x-form-name": "Start",
+              "x-form-value": "items-start"
+            },
+            "center": {
+              "x-form-name": "Center",
+              "x-form-value": "items-center"
+            },
+            "end": {
+              "x-form-name": "End",
+              "x-form-value": "items-end"
+            },
+            "stretch": {
+              "x-form-name": "Stretch",
+              "x-form-value": "items-stretch"
+            },
+            "baseline": {
+              "x-form-name": "Baseline",
+              "x-form-value": "items-baseline"
+            }
+          }
+        },
         "bgref": {
           "x-form-type": "reference",
           "type": "object",
@@ -284,7 +313,12 @@ public class ContainerblockModel extends Container {
     public ContainerblockModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Items Alignment","x-form-type":"materialselect","x-default":"primary","properties":{"start":{"x-form-name":"Start","x-form-value":"items-start"},"center":{"x-form-name":"Center","x-form-value":"items-center"},"end":{"x-form-name":"End","x-form-value":"items-end"},"stretch":{"x-form-name":"Stretch","x-form-value":"items-stretch"},"baseline":{"x-form-name":"Baseline","x-form-value":"items-baseline"}}} */
+	@Inject
+	@Default(values ="primary")
+	private String alignitems;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
 	private String anchorname;
 
@@ -376,7 +410,12 @@ public class ContainerblockModel extends Container {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Items Alignment","x-form-type":"materialselect","x-default":"primary","properties":{"start":{"x-form-name":"Start","x-form-value":"items-start"},"center":{"x-form-name":"Center","x-form-value":"items-center"},"end":{"x-form-name":"End","x-form-value":"items-end"},"stretch":{"x-form-name":"Stretch","x-form-value":"items-stretch"},"baseline":{"x-form-name":"Baseline","x-form-value":"items-baseline"}}} */
+	public String getAlignitems() {
+		return alignitems;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	public String getAnchorname() {
 		return anchorname;
 	}

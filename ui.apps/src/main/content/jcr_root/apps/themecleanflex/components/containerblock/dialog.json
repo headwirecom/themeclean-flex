@@ -1,6 +1,34 @@
 {
   "fields": [
     {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "Start",
+          "value": "items-start"
+        },
+        {
+          "name": "Center",
+          "value": "items-center"
+        },
+        {
+          "name": "End",
+          "value": "items-end"
+        },
+        {
+          "name": "Stretch",
+          "value": "items-stretch"
+        },
+        {
+          "name": "Baseline",
+          "value": "items-baseline"
+        }
+      ],
+      "placeholder": "alignitems",
+      "label": "Items Alignment",
+      "model": "alignitems"
+    },
+    {
       "type": "input",
       "inputType": "text",
       "placeholder": "anchorname",

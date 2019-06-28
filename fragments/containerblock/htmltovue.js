@@ -5,5 +5,6 @@ module.exports = {
         f.addChildren($)
         f.addPlaceholders($)
         f.bindAttribute($.parent(),'model','model')
+        f.bindAttribute($,'class','model.alignitems', false)
     }
 }
