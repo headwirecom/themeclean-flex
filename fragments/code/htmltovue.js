@@ -6,7 +6,7 @@ module.exports = {
 
         // inject the code
         f.bindAttribute($.find('code').first(), "class", "model.language")
-        f.mapField($.find('code').first(), "model.text")
+        f.mapField($.find('code').first(), "code")
 
     }
 }
