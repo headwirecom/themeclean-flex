@@ -1,0 +1,10 @@
+{
+    "definitions": {
+        "Containerblock": {
+            "type": "object",
+            "x-type": "container",
+            "properties": {
+            }
+        }
+    }
+}
