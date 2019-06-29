@@ -1,7 +1,6 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <pre>
-      <code v-bind:class="model.language">{{code}}</code>
+    <pre><code v-bind:class="'language-'+model.language" v-html="code"></code>
     </pre>
   </themecleanflex-components-block>
 </template>
@@ -11,8 +10,12 @@
         props: ['model'],
         computed: {
           code() {
-            if(Prism) {
-              return Prism.highlight(this.model.text ? this.model.text : '', Prism.languages.javascript, 'javascript')
+            let lang = this.model.language;
+            if(window.Prism) {
+              if(!lang || !Prism.languages[lang]) {
+                lang = 'javascript';
+              }
+              return Prism.highlight(this.model.text ? this.model.text : '', Prism.languages[lang], lang)
             } else {
               return this.model.text;
             }

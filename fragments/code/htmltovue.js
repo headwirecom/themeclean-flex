@@ -5,8 +5,8 @@ module.exports = {
         f.bindAttribute($.parent(),'model','model')
 
         // inject the code
-        f.bindAttribute($.find('code').first(), "class", "model.language")
-        f.mapField($.find('code').first(), "code")
+        f.bindAttribute($.find('code').first(), "class", "'language-'+model.language")
+        f.mapRichField($.find('code').first(), "code")
 
     }
 }

@@ -2,7 +2,7 @@
   "title": "Code",
   "group": "",
   "model": {
-    "text": "example",
-    "language": "language-shell"
+    "text": "var a = {};",
+    "language": "javascript"
   }
 }

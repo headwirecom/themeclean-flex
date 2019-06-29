@@ -15,7 +15,7 @@
             jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themeclean/images/peregrine-logo.png" logoalttext="Peregrine CMS Logo" logourl="/content/sites/themecleanflex/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
     <links jcr:primaryType="nt:unstructured"></links>
     <buttons jcr:primaryType="nt:unstructured"></buttons>
-            </clheader><container25
+            </clheader><container26
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
@@ -87,6 +87,17 @@
         </card6>
     <card7
         jcr:primaryType="nt:unstructured"
+        buttontext="See code"
+        buttonlink="library/code.html"
+        buttoncolor="primary"
+        title="code"
+        text="&lt;h1 id=&quot;code&quot;&gt;Code&lt;/h1&gt;
+&lt;p&gt;This component renders the text as &lt;code&gt;&lt;pre&gt;&lt;code class=&quot;language-{{language}}&gt;{{text}}&lt;/code&gt;&lt;/pre&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If the base template includes prism.js it will be used to generate the markup of the code. &lt;/p&gt;
+">
+        </card7>
+    <card8
+        jcr:primaryType="nt:unstructured"
         buttontext="See container"
         buttonlink="library/container.html"
         buttoncolor="primary"
@@ -94,8 +105,8 @@
         text="&lt;h1 id=&quot;container&quot;&gt;Container&lt;/h1&gt;
 &lt;p&gt;The container component is used by Peregrine cms to allow components to be dragged onto other components&lt;/p&gt;
 ">
-        </card7>
-    <card8
+        </card8>
+    <card9
         jcr:primaryType="nt:unstructured"
         buttontext="See footer"
         buttonlink="library/footer.html"
@@ -104,8 +115,8 @@
         text="&lt;h1 id=&quot;footer&quot;&gt;Footer&lt;/h1&gt;
 &lt;p&gt;The Footer component is a great way to display extra information or navigation related to your site.&lt;/p&gt;
 ">
-        </card8>
-    <card9
+        </card9>
+    <card10
         jcr:primaryType="nt:unstructured"
         buttontext="See header"
         buttonlink="library/header.html"
@@ -114,8 +125,8 @@
         text="&lt;h1 id=&quot;header&quot;&gt;Header&lt;/h1&gt;
 &lt;p&gt;The Header component is used to display your logo and the main navigation section for your page. &lt;/p&gt;
 ">
-        </card9>
-    <card10
+        </card10>
+    <card11
         jcr:primaryType="nt:unstructured"
         buttontext="See media"
         buttonlink="library/media.html"
@@ -124,8 +135,8 @@
         text="&lt;h1 id=&quot;media&quot;&gt;Media&lt;/h1&gt;
 &lt;p&gt;The Media component can be used to embed images or video within your components.&lt;/p&gt;
 ">
-        </card10>
-    <card11
+        </card11>
+    <card12
         jcr:primaryType="nt:unstructured"
         buttontext="See mediablock"
         buttonlink="library/mediablock.html"
@@ -134,8 +145,8 @@
         text="&lt;h1 id=&quot;media-block&quot;&gt;Media Block&lt;/h1&gt;
 &lt;p&gt;The Media Block component is a simple Block that embeds a video or image.&lt;/p&gt;
 ">
-        </card11>
-    <card12
+        </card12>
+    <card13
         jcr:primaryType="nt:unstructured"
         buttontext="See mediavisible"
         buttonlink="library/mediavisible.html"
@@ -144,8 +155,8 @@
         text="&lt;h1 id=&quot;media-visible&quot;&gt;Media Visible&lt;/h1&gt;
 &lt;p&gt;The Media Visible component is a variation of the regular media component with dialog options that will be hidden when the embedding component does not display any media.&lt;/p&gt;
 ">
-        </card12>
-    <card13
+        </card13>
+    <card14
         jcr:primaryType="nt:unstructured"
         buttontext="See menubuttons"
         buttonlink="library/menubuttons.html"
@@ -154,8 +165,8 @@
         text="&lt;h1 id=&quot;menu-buttons&quot;&gt;Menu Buttons&lt;/h1&gt;
 &lt;p&gt;The Menu Buttons components contains a collection of simple Buttons for use in the Header.&lt;/p&gt;
 ">
-        </card13>
-    <card14
+        </card14>
+    <card15
         jcr:primaryType="nt:unstructured"
         buttontext="See pagelist"
         buttonlink="library/pagelist.html"
@@ -164,8 +175,8 @@
         text="&lt;h1 id=&quot;pagelist&quot;&gt;Pagelist&lt;/h1&gt;
 &lt;p&gt;The Page List component displays the hierarchy of the current site to a given depth.&lt;/p&gt;
 ">
-        </card14>
-    <card15
+        </card15>
+    <card16
         jcr:primaryType="nt:unstructured"
         buttontext="See pagelistnested"
         buttonlink="library/pagelistnested.html"
@@ -174,8 +185,8 @@
         text="&lt;h1 id=&quot;page-list-nested&quot;&gt;Page List Nested&lt;/h1&gt;
 &lt;p&gt;Used by the PageList component&lt;/p&gt;
 ">
-        </card15>
-    <card16
+        </card16>
+    <card17
         jcr:primaryType="nt:unstructured"
         buttontext="See pager"
         buttonlink="library/pager.html"
@@ -184,8 +195,8 @@
         text="&lt;h1 id=&quot;pager&quot;&gt;Pager&lt;/h1&gt;
 &lt;p&gt;The Pager Component provides convenient access to the next and previous pages in the content repository.&lt;/p&gt;
 ">
-        </card16>
-    <card17
+        </card17>
+    <card18
         jcr:primaryType="nt:unstructured"
         buttontext="See richtext"
         buttonlink="library/richtext.html"
@@ -194,8 +205,8 @@
         text="&lt;h1 id=&quot;rich-text&quot;&gt;Rich Text&lt;/h1&gt;
 &lt;p&gt;The Rich Text component displays text and is edited using a powerful rich text editor allowing you full control over the content of the component.&lt;/p&gt;
 ">
-        </card17>
-    <card18
+        </card18>
+    <card19
         jcr:primaryType="nt:unstructured"
         buttontext="See simpletext"
         buttonlink="library/simpletext.html"
@@ -204,8 +215,8 @@
         text="&lt;h1 id=&quot;simple-text&quot;&gt;Simple Text&lt;/h1&gt;
 &lt;p&gt;The Simple Text component displays text that is rendered into a single tag type. Great for quickly creating Headings.&lt;/p&gt;
 ">
-        </card18>
-    <card19
+        </card19>
+    <card20
         jcr:primaryType="nt:unstructured"
         buttontext="See socialicons"
         buttonlink="library/socialicons.html"
@@ -214,8 +225,8 @@
         text="&lt;h1 id=&quot;social-icons&quot;&gt;Social Icons&lt;/h1&gt;
 &lt;p&gt;The Social Icons component is used in the footer to provide links to your sites relevant social media.&lt;/p&gt;
 ">
-        </card19>
-    <card20
+        </card20>
+    <card21
         jcr:primaryType="nt:unstructured"
         buttontext="See spacer"
         buttonlink="library/spacer.html"
@@ -224,8 +235,8 @@
         text="&lt;h1 id=&quot;spacer&quot;&gt;Spacer&lt;/h1&gt;
 &lt;p&gt;The Spacer component is a very simple Block, allowing you to add extra space with or without a background to your page.&lt;/p&gt;
 ">
-        </card20>
-    <card21
+        </card21>
+    <card22
         jcr:primaryType="nt:unstructured"
         buttontext="See tabs"
         buttonlink="library/tabs.html"
@@ -234,8 +245,8 @@
         text="&lt;h1 id=&quot;tabs&quot;&gt;Tabs&lt;/h1&gt;
 &lt;p&gt;The Tabs component displays a list of content, but with only 1 active piece of content at a time.&lt;/p&gt;
 ">
-        </card21>
-    <card22
+        </card22>
+    <card23
         jcr:primaryType="nt:unstructured"
         buttontext="See teaserhorizontal"
         buttonlink="library/teaserhorizontal.html"
@@ -244,8 +255,8 @@
         text="&lt;h1 id=&quot;teaser-horizontal&quot;&gt;Teaser Horizontal&lt;/h1&gt;
 &lt;p&gt;The Horizontal Teaser component can be used to display a small amount of content with relevant links.&lt;/p&gt;
 ">
-        </card22>
-    <card23
+        </card23>
+    <card24
         jcr:primaryType="nt:unstructured"
         buttontext="See teaservertical"
         buttonlink="library/teaservertical.html"
@@ -254,8 +265,8 @@
         text="&lt;h1 id=&quot;teaser-vertical&quot;&gt;Teaser Vertical&lt;/h1&gt;
 &lt;p&gt;The Vertical Teaser component can be used to display a small amount of content with relevant links.&lt;/p&gt;
 ">
-        </card23>
-    <card24
+        </card24>
+    <card25
         jcr:primaryType="nt:unstructured"
         buttontext="See textlinks"
         buttonlink="library/textlinks.html"
@@ -264,12 +275,12 @@
         text="&lt;h1 id=&quot;text-links&quot;&gt;Text Links&lt;/h1&gt;
 &lt;p&gt;The Text Links components contains a collection of simple Links for use in the Header.&lt;/p&gt;
 ">
-        </card24>
+        </card25>
     
                 </cards>
         </cards1>
         
-        </container25>
+        </container26>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themeclean/images/peregrine-logo.png" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">
