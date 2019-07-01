@@ -31,6 +31,14 @@ a:hover {
   @apply text-blue-800;
 }
 
+ul {
+  @apply list-disc pl-5;
+}
+
+ol {
+  @apply list-decimal pl-5;
+}
+
 .color-inherit {
   color: inherit;
 }
