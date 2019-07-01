@@ -5,7 +5,7 @@
       <jcr:content jcr:primaryType="nt:unstructured" height="20"/>
     </sample>
     <sample-image jcr:primaryType="nt:unstructured" title="Spacer Image" group="Chrome">
-      <jcr:content jcr:primaryType="nt:unstructured" height="80" custombackground="true" backgroundtype="image" bgimage="/content/assets/themecleanflex/beach-bird-s-eye-view-daytime-1249586.jpg"/>
+      <jcr:content jcr:primaryType="nt:unstructured" height="80" custombackground="true" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg"/>
     </sample-image>
   </jcr:content>
 </jcr:root>

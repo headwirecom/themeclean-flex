@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Carousel" group="Features">
   <jcr:content jcr:primaryType="nt:unstructured" carouselheight="80" toppadding="20" bottompadding="20">
     <slides jcr:primaryType="nt:unstructured">
-      <slides0 jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset"/>
-      <slides1 jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake"/>
-      <slides2 jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean"/>
+      <slides0 jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset"/>
+      <slides1 jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake"/>
+      <slides2 jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean"/>
     </slides>
   </jcr:content>
 </jcr:root>

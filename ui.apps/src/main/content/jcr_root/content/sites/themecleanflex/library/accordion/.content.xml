@@ -12,7 +12,7 @@
         brand="themecleanflex"
         template="/content/templates/themecleanflex"
             ><clheader
-            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themeclean/images/peregrine-logo.png" logoalttext="Peregrine CMS Logo" logourl="/content/sites/themecleanflex/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.png" logoalttext="Peregrine CMS Logo" logourl="/content/sites/themecleanflex/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
     <links jcr:primaryType="nt:unstructured"></links>
     <buttons jcr:primaryType="nt:unstructured"></buttons>
             </clheader><clbreadcrumb
@@ -49,7 +49,7 @@
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Accordion Dark (Features)&lt;/h2&gt;">
         </title1><accordion4
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion Dark Theme" backgroundtype="color" colorscheme="dark" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" imagesrc="/content/assets/themecleanflex/heel_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" toggletype="accordion"><accordiontoggle jcr:primaryType="nt:unstructured"><c2
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion Dark Theme" backgroundtype="color" colorscheme="dark" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/heel_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" toggletype="accordion"><accordiontoggle jcr:primaryType="nt:unstructured"><c2
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
         </c2><c3
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
@@ -63,7 +63,7 @@
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Accordion With Media (Features)&lt;/h2&gt;">
         </title5><accordion8
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" imagesrc="/content/assets/themecleanflex/heel_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" showmedia="true" blockwidth="article" toggletype="accordion"><accordiontoggle jcr:primaryType="nt:unstructured"><c6
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/heel_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" showmedia="true" blockwidth="article" toggletype="accordion"><accordiontoggle jcr:primaryType="nt:unstructured"><c6
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
         </c6><c7
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
@@ -93,7 +93,7 @@
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media (Features)&lt;/h2&gt;">
         </title14><accordion17
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle"><accordiontoggle jcr:primaryType="nt:unstructured"><c15
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle"><accordiontoggle jcr:primaryType="nt:unstructured"><c15
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
         </c15><c16
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
@@ -127,7 +127,7 @@
         </accordion24>
         </container25>
         <clfooter
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themeclean/images/peregrine-logo.png" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.png" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">
         <c3
         jcr:primaryType="nt:unstructured" title="" text="">

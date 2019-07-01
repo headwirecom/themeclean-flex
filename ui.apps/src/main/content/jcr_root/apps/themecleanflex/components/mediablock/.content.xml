@@ -5,7 +5,7 @@
       <jcr:content jcr:primaryType="nt:unstructured" mediatype="video" videosrc="https://www.youtube-nocookie.com/embed/R5qdE0_mOcw" mediatitle="Sailing Video" toppadding="30" bottompadding="30" backgroundtype="color"/>
     </sample>
     <sample-image jcr:primaryType="nt:unstructured" title="Image" group="Features">
-      <jcr:content jcr:primaryType="nt:unstructured" mediatype="image" imagesrc="/content/assets/themecleanflex/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color"/>
+      <jcr:content jcr:primaryType="nt:unstructured" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color"/>
     </sample-image>
   </jcr:content>
 </jcr:root>
