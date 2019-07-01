@@ -1,5 +1,6 @@
 {
   "title": "Code",
+  "default": true,
   "group": "Text Components",
   "model": {
     "text": "var a = {};",
