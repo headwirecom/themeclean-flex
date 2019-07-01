@@ -1,5 +1,5 @@
 <template>
-  <ul class=" flex flex-col items-center md:flex-row">
+  <ul class="list-none flex flex-col items-center md:flex-row">
     <li class="m-2" v-for="(item,i) in model.links" :key="i">
       <a class="no-underline p-3 hover:underline" v-bind:href="$helper.pathToUrl(item.link)"
       v-html="item.text" v-bind:class="{

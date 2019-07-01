@@ -623,6 +623,10 @@ video {
   height: 100%;
 }
 
+.list-none {
+  list-style-type: none;
+}
+
 .m-1 {
   margin: 0.25rem;
 }
