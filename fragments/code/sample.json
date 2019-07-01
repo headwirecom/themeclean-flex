@@ -1,6 +1,6 @@
 {
   "title": "Code",
-  "group": "",
+  "group": "Text Components",
   "model": {
     "text": "var a = {};",
     "language": "javascript"
