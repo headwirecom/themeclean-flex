@@ -826,8 +826,24 @@ video {
   color: #2b6cb0;
 }
 
+.hover\:text-black:hover {
+  color: #000;
+}
+
 .hover\:text-white:hover {
   color: #fff;
+}
+
+.hover\:text-red-600:hover {
+  color: #e53e3e;
+}
+
+.hover\:text-orange-600:hover {
+  color: #dd6b20;
+}
+
+.hover\:text-green-600:hover {
+  color: #38a169;
 }
 
 .text-lg {

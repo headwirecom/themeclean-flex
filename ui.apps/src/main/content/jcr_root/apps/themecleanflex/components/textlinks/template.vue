@@ -4,11 +4,11 @@
       <a class="no-underline p-3 hover:underline" v-bind:href="$helper.pathToUrl(item.link)"
       v-html="item.text" v-bind:class="{
             'text-blue-700': model.linkcolor === 'primary',
-            'text-green-700': model.linkcolor === 'success',
-            'text-red-700': model.linkcolor === 'danger',
-            'text-orange-700': model.linkcolor === 'warning',
-            'text-white': model.linkcolor === 'light',
-            'text-black': model.linkcolor === 'dark',
+            'text-green-700 hover:text-green-600': model.linkcolor === 'success',
+            'text-red-700 hover:text-red-600': model.linkcolor === 'danger',
+            'text-orange-700 hover:text-orange-600': model.linkcolor === 'warning',
+            'text-white hover:text-white': model.linkcolor === 'light',
+            'text-black hover:text-black': model.linkcolor === 'dark',
             'font-bold' : $data.path === $helper.pathToUrl(item.link)
         }"></a>
     </li>
