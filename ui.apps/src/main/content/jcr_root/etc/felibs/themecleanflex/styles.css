@@ -39,6 +39,10 @@ ol {
   @apply list-decimal pl-5 py-2 m-0;
 }
 
+p {
+  @apply mb-3;
+}
+
 .color-inherit {
   color: inherit;
 }

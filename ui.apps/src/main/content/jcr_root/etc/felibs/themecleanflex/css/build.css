@@ -934,6 +934,10 @@ ol {
   margin: 0;
 }
 
+p {
+  margin-bottom: 0.75rem;
+}
+
 .color-inherit {
   color: inherit;
 }
