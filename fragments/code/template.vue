@@ -21,6 +21,16 @@
               return this.model.text;
             }
           }
+        },
+        mounted: function() {
+          if(Prism) {
+            Prism.highlightAllUnder(this.$el)
+          }
+        },
+        updated: function() {
+          if(Prism) {
+            Prism.highlightAllUnder(this.$el)
+          }
         }
     }
 </script>
