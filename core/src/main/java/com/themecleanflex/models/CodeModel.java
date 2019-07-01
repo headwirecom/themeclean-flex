@@ -26,10 +26,16 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-type": "text"
         },
+        "classes": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "text"
+        },
         "text": {
           "type": "string",
           "x-source": "inject",
-          "x-form-type": "textarea"
+          "x-form-type": "textarea",
+          "x-form-max": "16000"
         },
         "bgref": {
           "x-form-type": "reference",
@@ -298,7 +304,11 @@ public class CodeModel extends AbstractComponent {
 	@Inject
 	private String language;
 
-	/* {"type":"string","x-source":"inject","x-form-type":"textarea"} */
+	/* {"type":"string","x-source":"inject","x-form-type":"text"} */
+	@Inject
+	private String classes;
+
+	/* {"type":"string","x-source":"inject","x-form-type":"textarea","x-form-max":"16000"} */
 	@Inject
 	private String text;
 
@@ -399,7 +409,12 @@ public class CodeModel extends AbstractComponent {
 		return language;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-type":"textarea"} */
+	/* {"type":"string","x-source":"inject","x-form-type":"text"} */
+	public String getClasses() {
+		return classes;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-type":"textarea","x-form-max":"16000"} */
 	public String getText() {
 		return text;
 	}

@@ -8,9 +8,16 @@
       "model": "language"
     },
     {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "classes",
+      "label": "classes",
+      "model": "classes"
+    },
+    {
       "type": "material-textarea",
       "rows": 10,
-      "max": 500,
+      "max": "16000",
       "placeholder": "text",
       "label": "text",
       "model": "text"

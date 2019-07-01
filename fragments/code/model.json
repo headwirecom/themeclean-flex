@@ -9,10 +9,16 @@
           "x-source": "inject",
           "x-form-type": "text"
         },
+        "classes": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "text"
+        },
         "text": {
           "type": "string",
           "x-source": "inject",
-          "x-form-type": "textarea"
+          "x-form-type": "textarea",
+          "x-form-max": "16000"
         },
         "bgref": {
           "$ref": "fragments/block/model.json#/definitions/Block",
