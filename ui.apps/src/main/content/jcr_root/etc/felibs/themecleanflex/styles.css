@@ -32,11 +32,11 @@ a:hover {
 }
 
 ul {
-  @apply list-disc pl-5;
+  @apply list-disc pl-5 py-2 m-0;
 }
 
 ol {
-  @apply list-decimal pl-5;
+  @apply list-decimal pl-5 py-2 m-0;
 }
 
 .color-inherit {
