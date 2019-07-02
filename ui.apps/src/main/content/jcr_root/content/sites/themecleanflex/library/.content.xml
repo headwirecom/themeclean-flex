@@ -94,32 +94,6 @@
         text="&lt;h1 id=&quot;code&quot;&gt;Code&lt;/h1&gt;
 &lt;p&gt;This component renders the text as &lt;code&gt;&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-{{language}} {{classes}}&amp;quot;&amp;gt;{{text}}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;If the base template includes prism.js it will be used to generate the markup of the code. &lt;/p&gt;
-&lt;h2 id=&quot;configuring-prism&quot;&gt;Configuring Prism&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Please note: Using Prism will impact your site&amp;#39;s accessibility and mobile performance score. This is not an issue with Peregrine, rather a consequence of using Prism.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;If you wish to use &lt;a href=&quot;Prism&quot;&gt;https://prismjs.com/&lt;/a&gt; with the code component, perform the following steps:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Visit the Prism &lt;a href=&quot;https://prismjs.com/download.html&quot;&gt;download page&lt;/a&gt; and download &lt;code&gt;prism.js&lt;/code&gt; and &lt;code&gt;prism.css&lt;/code&gt; with the options that you need.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Upload &lt;code&gt;prism.js&lt;/code&gt; and &lt;code&gt;prism.css&lt;/code&gt; to &lt;code&gt;Assets&lt;/code&gt;. It is recommended that you create folders for &lt;code&gt;/content/assets/_tenant_/css/&lt;/code&gt; and &lt;code&gt;/content/assets/_tenant_/js/&lt;/code&gt; first, then upload &lt;code&gt;prism.js&lt;/code&gt; and &lt;code&gt;prism.css&lt;/code&gt; to their respective folders.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Click on the &lt;code&gt;Template&lt;/code&gt; tile from the home screen, then click on the page icon for your tenant.  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Click &lt;code&gt;page start&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;(optional) If you enabled the &lt;code&gt;Copy to Clipboard button&lt;/code&gt; when you downloaded Prism, add &lt;code&gt;https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js&lt;/code&gt; to &lt;code&gt;Site JS Files&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Add &lt;code&gt;/content/assets/_tenant_/js/prism.js&lt;/code&gt; to &lt;code&gt;Site JS Files&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Add &lt;code&gt;/content/assets/_tenant_/css/prism.css&lt;/code&gt; to &lt;code&gt;Site CSS Files&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Navigate to your site, edit a page and place a &lt;em&gt;Code&lt;/em&gt; component on the page. Enter your language without the &lt;code&gt;language-&lt;/code&gt; prefix (e.g., ruby, script, java, etc). You can add additional classes to the &lt;code&gt;classes&lt;/code&gt; property. For example, adding &lt;code&gt;line-numbers&lt;/code&gt; will enable line numbers if you included the line number plugin when you downloaded Prism.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;pending-features--issues&quot;&gt;Pending Features &amp;amp; Issues&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Add support for defining Prism data attributes&lt;/li&gt;
-&lt;li&gt;Update the code component to be less plugin dependent&lt;/li&gt;
-&lt;/ul&gt;
 ">
         </card7>
     <card8

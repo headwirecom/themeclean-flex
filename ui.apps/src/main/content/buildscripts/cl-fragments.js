@@ -7,13 +7,15 @@ function escape(text) {
 }
 
 function card(title, text, link) {
+    let shortened = text.split('#');
+    let md = marked('#' + shortened[1]);
     return `<card${idx}
         jcr:primaryType="nt:unstructured"
         buttontext="See ${title}"
         buttonlink="${link}"
         buttoncolor="primary"
         title="${title}"
-        text="${escape(marked(text))}">
+        text="${escape(md)}">
         </card${idx++}>
     `
 }
