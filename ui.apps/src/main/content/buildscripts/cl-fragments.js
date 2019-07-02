@@ -3,7 +3,7 @@ let marked = require('marked')
 let idx = 0;
 
 function escape(text) {
-    return text.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    return text.replace(/&/g,'&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 function card(title, text, link) {
