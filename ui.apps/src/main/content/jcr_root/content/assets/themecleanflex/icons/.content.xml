@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:lastModified="{Date}2019-07-03T14:49:00.103Z"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="sling:OrderedFolder"
+    jcr:title="icons">
+    <facebook.svg/>
+    <google.svg/>
+    <instagram.svg/>
+    <linkedin.svg/>
+    <pinterest.svg/>
+    <telegram.svg/>
+    <tumblr.svg/>
+    <twitch.svg/>
+    <twitter.svg/>
+    <yammer.svg/>
+    <yelp.svg/>
+    <youtube.svg/>
+</jcr:root>

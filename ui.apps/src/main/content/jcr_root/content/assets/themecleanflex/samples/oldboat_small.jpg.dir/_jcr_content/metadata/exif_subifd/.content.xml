@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:Folder"
+    date_time_original="2014:09:26 18:05:13"
+    exposure_time="1/800 sec"
+    f-number="f/2.8"
+    focal_length="110 mm"/>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
+    jcr:lastModified="{Date}2019-07-03T14:50:42.842Z"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="per:Asset">
+    <jcr:content
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="per:AssetContent">
+        <metadata/>
+    </jcr:content>
+</jcr:root>
