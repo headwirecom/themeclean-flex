@@ -2,6 +2,11 @@
   "name": "build",
   "version": "1.0.0",
   "description": "default vue build for peregrinecms",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/headwirecom/themeclean-flex.git",
+    "directory": "ui.apps"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
