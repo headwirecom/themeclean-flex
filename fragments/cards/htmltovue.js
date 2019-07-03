@@ -33,13 +33,10 @@ module.exports = {
         f.bindAttribute($.find('div.card>div>div').first(), 'class', cardBodyClasses, false)
 
         //Image
-        f.replace($.find('img'), '<v-lazy-image use-picture></v-lazy-image>')
-        f.bindAttribute($.find('v-lazy-image'), 'class', "model.showcard == 'true' ? 'card-img pb-1' : 'card-img pb-3'")
-        f.bindAttribute($.find('v-lazy-image'), 'src', f.pathToUrl('item.image'))
-        f.bindAttribute($.find('v-lazy-image'), 'alt', 'item.imagealttext')
-        $.find('v-lazy-image').append('<source :srcset="$helper.pathToUrl(item.image).replace(/.\w+$/,\'.webp\')">')
-        $.find('v-lazy-image').append('<source :srcset="$helper.pathToUrl(item.image)">')
-      
+        f.replace($.find('img'), '<v-lazy-image></v-lazy-image>')
+        f.bindAttribute($.find('v-lazy-image').first(), 'class', "model.showcard == 'true' ? 'card-img pb-1' : 'card-img pb-3'")
+        f.bindAttribute($.find('v-lazy-image').first(), 'src', f.pathToUrl('item.image'))
+        f.bindAttribute($.find('v-lazy-image').first(), 'alt', 'item.imagealttext')
         f.addIf($.find('v-lazy-image').first(), 'item.image')
 
         //Title
