@@ -6,11 +6,7 @@
     <i v-else-if="model.mediatype === 'icon'" class="w-full text-center" v-bind:class="iconClass" v-bind:style="{'font-size': `${model.mediaiconsize}px`, 'color': model.mediaiconcolor}">
       {{iconContent}}
     </i>
-    <v-lazy-image v-else-if="model.mediatype === 'image'" class="w-full" :src="$helper.pathToUrl(model.imagesrc)" :alt="model.mediatitle" use-picture>
-      <!-- Attempt to load webp image first -->
-      <source :srcset="$helper.pathToUrl(model.imagesrc).replace(/.\w+$/,'.webp')" />
-      <source :srcset="$helper.pathToUrl(model.imagesrc)" />
-    </v-lazy-image> 
+    <v-lazy-image v-else-if="model.mediatype === 'image'" class="w-full" :src="$helper.pathToUrl(model.imagesrc)" :alt="model.mediatitle"></v-lazy-image> 
     <h3 v-if="noMedia" class="w-full text-center">No media content</h3>
   </div>
 </template>
