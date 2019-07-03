@@ -15,7 +15,6 @@
   "dependencies": {
     "camelcase": "^5.0.0",
     "fs-extra": "^7.0.1",
-    "intersection-observer": "^0.7.0",
     "marked": "^0.6.2",
     "rollup": "^1.1.2",
     "rollup-plugin-buble": "^0.19.6",

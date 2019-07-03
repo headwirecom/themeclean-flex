@@ -9,7 +9,6 @@
 </template>
 
 <script>
-    import "intersection-observer";
     export default {
         props: [ 'model' ]
     }
