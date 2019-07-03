@@ -23,7 +23,7 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><container7
+        </clbreadcrumb><container9
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
@@ -58,9 +58,10 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Text Block (Text Components)&lt;/h2&gt;">
+            text="&lt;h2&gt;Text Block - with media (.hidden)&lt;/h2&gt;">
         </title3><richtext4
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/richtext" text="&lt;p&gt;lets go and write some content!&lt;/p&gt;">
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/richtext" showmedia="true" imagesrc="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" mediatitle="Bird's eye view of the beach" blockwidth="article" text="&lt;p&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;br&gt;&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ol&gt;
+&lt;p&gt;left&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;right&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;center&lt;/p&gt;&lt;p&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;)&lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p&gt;another line&lt;/p&gt;">
         </richtext4><title5 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
@@ -68,11 +69,21 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Empty Rich Text Test (Empty)&lt;/h2&gt;">
+            text="&lt;h2&gt;Text Block (Text Components)&lt;/h2&gt;">
         </title5><richtext6
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/richtext" text="&lt;p&gt;lets go and write some content!&lt;/p&gt;">
+        </richtext6><title7 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Empty Rich Text Test (Empty)&lt;/h2&gt;">
+        </title7><richtext8
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/richtext">
-        </richtext6>
-        </container7>
+        </richtext8>
+        </container9>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.png" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">
