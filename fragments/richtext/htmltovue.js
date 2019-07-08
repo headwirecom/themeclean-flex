@@ -3,7 +3,7 @@ module.exports = {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
         f.mapRichField( $.find('div').eq(1), 'model.text')
-        f.bindAttribute($.find('div').eq(1),'class',"{'p-4': model.showmedia === 'true'}")
+        f.bindAttribute($.find('div').eq(1),'class',"{'px-4': model.showmedia === 'true'}")
 
         //Content Container
         let containerClasses = `{

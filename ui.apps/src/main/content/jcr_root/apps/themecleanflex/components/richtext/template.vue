@@ -7,7 +7,7 @@
       <div class="img-wrapper" v-if="model.showmedia === 'true'" v-bind:style="{flex:`0 0 ${model.mediawidth}%`}">
         <themecleanflex-components-media :model="model"></themecleanflex-components-media>
       </div>
-      <div v-html="model.text" v-bind:class="{'p-4': model.showmedia === 'true'}"></div>
+      <div v-html="model.text" v-bind:class="{'px-4': model.showmedia === 'true'}"></div>
     </div>
     <div v-if="isEditAndEmpty">no content defined for component</div>
   </themecleanflex-components-block>
