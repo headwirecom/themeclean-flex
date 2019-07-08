@@ -19,10 +19,12 @@
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
             'text-right': model.aligncontent === 'right',
-            'text-3xl': model.isprimary === 'true'
+            'text-2xl': model.isprimary === 'true'
         }" v-bind:style="`width:${model.textwidth}%;`">
-          <h1 class="text-xl" v-if="model.showtitle === 'true'" v-html="model.title"></h1>
+          <h1 class="text-xl" v-if="model.showtitle === 'true'" v-bind:class="{'text-5xl': model.isprimary==='true'}"
+          v-html="model.title"></h1>
           <h2 class="text-lg" v-if="model.showsubtitle === 'true'"
+          v-bind:class="{'text-4xl': model.isprimary==='true'}"
           v-html="model.subtitle"></h2>
           <p v-if="model.showtext === 'true'" v-html="model.text"></p>
         </div>

@@ -29,15 +29,20 @@ module.exports = {
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
             'text-right': model.aligncontent === 'right',
-            'text-3xl': model.isprimary === 'true'
+            'text-2xl': model.isprimary === 'true'
         }`
         let textContainer = $.find('div>div').eq(0)
         let textDiv = $.find('div>div>div').first()
         f.bindAttribute( textContainer, 'class', textContainerClasses, false)
         f.bindAttribute( textDiv, 'class', textClasses, false)
         f.addStyle( textDiv, 'width', 'model.textwidth', '%')
-    	f.addIf($.find('h1').first(), "model.showtitle === 'true'")
+
+        f.addIf($.find('h1').first(), "model.showtitle === 'true'")
+        f.bindAttribute( $.find('h1').first(), 'class', "{'text-5xl': model.isprimary==='true'}", false)
+
         f.addIf($.find('h2').first(), "model.showsubtitle === 'true'")
+        f.bindAttribute( $.find('h2').first(), 'class', "{'text-4xl': model.isprimary==='true'}", false)
+
         f.addIf($.find('p').first(), "model.showtext === 'true'")
         f.mapRichField($.find('h1').first(), "model.title")
         f.mapRichField($.find('h2').first(), "model.subtitle")
