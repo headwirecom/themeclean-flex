@@ -6,7 +6,7 @@ module.exports = {
         //Content Container
         let containerClasses = `{
             'lg:flex-row': model.mediaposition === 'before',
-            'lg:flex-row-reverse': model.mediaposition === 'after'
+            'lg:flex-row-reverse': model.mediaposition === 'after',
         }`
         f.bindAttribute(  $,  'class', containerClasses, false)
 

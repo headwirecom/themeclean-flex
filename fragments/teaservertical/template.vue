@@ -1,20 +1,20 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
-    <div class="w-full flex items-center"
+    <div class="w-full flex flex-col items-center md:-mx-3"
     v-bind:class="{
             'lg:flex-row': model.mediaposition === 'before',
-            'lg:flex-row-reverse': model.mediaposition === 'after'
+            'lg:flex-row-reverse': model.mediaposition === 'after',
         }" v-else>
-      <div class="img-wrapper" v-if="model.showmedia === 'true'" v-bind:style="{flex:`0 0 ${model.mediawidth}%`}"
-      v-bind:class="{
+      <div class="img-wrapper md:mx-3" v-if="model.showmedia === 'true'"
+      v-bind:style="{flex:`0 0 ${model.mediawidth}%`}" v-bind:class="{
             'justify-start': model.aligncontent === 'left',
             'justify-center': model.aligncontent === 'center',
             'justify-end': model.aligncontent === 'right'
         }">
         <themecleanflex-components-media :model="model"></themecleanflex-components-media>
       </div>
-      <div class="flex flex-col flex-grow mb-3">
+      <div class="flex flex-col flex-grow mb-3 md:mx-3">
         <div class v-bind:class="{
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
