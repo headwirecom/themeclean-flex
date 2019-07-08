@@ -1,6 +1,6 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="flex flex-col md:-mx-3" v-bind:class="{
+    <div class="w-full flex flex-col md:-mx-3" v-bind:class="{
             'md:flex-row': model.mediaposition === 'before',
             'md:flex-row-reverse': model.mediaposition === 'after'
         }">
