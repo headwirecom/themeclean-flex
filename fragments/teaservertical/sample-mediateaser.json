@@ -1,0 +1,40 @@
+{
+  "title": "Teaser with Media",
+  "group": "Features",
+  "model": {
+    "showtitle": "true",
+    "showsubtitle": "true",
+    "showtext": "true",
+    "showbutton": "true",
+    "fullheight": "false",
+    "backgroundtype": "gradient",
+    "bgcolor": "#ffffff",
+    "gradient": "true",
+    "color2": "#c0c0c0",
+    "bottompadding": "30",
+    "toppadding": "30",
+    "text": "<p>Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.</p>",
+    "subtitle": "Molestiae alias et inventore voluptas",
+    "title": "Peregrine blocks",
+    "buttonsize": "default",
+    "buttons": [
+      {
+        "buttonlink": "/content/sites/themeclean",
+        "buttontext": "See More",
+        "buttoncolor": "primary",
+        "iconclass": ""
+      },{
+        "buttonlink": "/content/sites/themeclean",
+        "buttontext": "About Us",
+        "buttoncolor": "primary",
+        "iconclass": ""
+      }
+    ],
+    "showmedia": "true",
+    "mediatype": "image",
+    "imagesrc": "/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg",
+    "mediatitle": "Bird's eye view of the beach",
+    "mediawidth": "50",
+    "mediaposition": "after"
+  }
+}
