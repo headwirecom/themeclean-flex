@@ -2,9 +2,8 @@
   "title": "Teaser Primary",
   "group": "Features",
   "model": {
-    "showtitle": "false",
-    "showsubtitle": "false",
-    "showtext": "true",
+    "showtitle": "true",
+    "showsubtitle": "true",
     "showbutton": "true",
     "isprimary": "true",
     "fullheight": "true",
@@ -19,7 +18,7 @@
     "text": "<p>Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.</p>",
     "subtitle": "Molestiae alias et inventore voluptas",
     "buttonsize": "large",
-    "title": "Peregrine blocks",
+    "title": "Themeclean Flex Blocks",
     "buttons": [
       {
         "buttonlink": "/content/sites/themeclean",
