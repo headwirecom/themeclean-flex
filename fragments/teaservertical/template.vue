@@ -6,7 +6,7 @@
             'lg:flex-row': model.mediaposition === 'before',
             'lg:flex-row-reverse': model.mediaposition === 'after',
         }" v-else>
-      <div class="img-wrapper md:mx-3" v-if="model.showmedia === 'true'"
+      <div class="img-wrapper mb-3 md:mx-0 md:mx-3" v-if="model.showmedia === 'true'"
       v-bind:style="{flex:`0 0 ${model.mediawidth}%`}" v-bind:class="{
             'justify-start': model.aligncontent === 'left',
             'justify-center': model.aligncontent === 'center',

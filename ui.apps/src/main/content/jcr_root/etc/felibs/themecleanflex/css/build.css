@@ -1172,6 +1172,11 @@ p {
     flex-direction: row;
   }
 
+  .md\:mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .md\:mx-3 {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
