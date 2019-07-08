@@ -2,7 +2,7 @@
   <component class="w-full px-5 flex flex-col justify-center" ref="section"
   v-bind:class="[classes, colors]" v-bind:style="[styles, sticky]" v-bind:data-per-path="model.path"
   v-bind:is="model.htmlelement || &quot;div&quot;">
-    <a ref="anchor" v-bind:id="model.anchorname"></a>
+    <a ref="anchor" v-if="model.anchorname" v-bind:id="model.anchorname"></a>
     <div class="embed-responsive embed-responsive-16by9 w-full h-full top-0 left-0"
     v-if="model.custombackground === 'true' &amp;&amp; model.backgroundtype == 'video' &amp;&amp; model.bgvideo"
     v-bind:style="`position:${'absolute'};pointer-events:${'none'};`">

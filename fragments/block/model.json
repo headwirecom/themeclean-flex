@@ -138,7 +138,8 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Background Size Style",
-          "x-form-type": "text"
+          "x-form-type": "text",
+          "x-default": "cover"
         },
         "overlay": {
           "type": "string",
