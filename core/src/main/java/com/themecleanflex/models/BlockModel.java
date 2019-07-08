@@ -158,7 +158,8 @@ import javax.inject.Named;
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Background Size Style",
-          "x-form-type": "text"
+          "x-form-type": "text",
+          "x-default": "cover"
         },
         "overlay": {
           "type": "string",
@@ -319,8 +320,9 @@ public class BlockModel extends AbstractComponent {
 	@Default(values ="50")
 	private String bgyposition;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Background Size Style","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Size Style","x-form-type":"text","x-default":"cover"} */
 	@Inject
+	@Default(values ="cover")
 	private String bgsize;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Overlay","x-form-type":"materialswitch","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'"} */
@@ -414,7 +416,7 @@ public class BlockModel extends AbstractComponent {
 		return bgyposition;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Background Size Style","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Size Style","x-form-type":"text","x-default":"cover"} */
 	public String getBgsize() {
 		return bgsize;
 	}
