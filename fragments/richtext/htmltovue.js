@@ -3,12 +3,11 @@ module.exports = {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
         f.mapRichField( $.find('div').eq(1), 'model.text')
-        f.bindAttribute($.find('div').eq(1),'class',"{'px-4': model.showmedia === 'true'}")
 
         //Content Container
         let containerClasses = `{
-            'lg:flex-row': model.mediaposition === 'before',
-            'lg:flex-row-reverse': model.mediaposition === 'after'
+            'md:flex-row': model.mediaposition === 'before',
+            'md:flex-row-reverse': model.mediaposition === 'after'
         }`
         f.bindAttribute(  $,  'class', containerClasses, false)
 

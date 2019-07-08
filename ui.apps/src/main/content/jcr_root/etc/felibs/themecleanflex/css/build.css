@@ -746,11 +746,6 @@ video {
   padding-right: 0.75rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1172,19 +1167,22 @@ p {
     flex-direction: row;
   }
 
-  .md\:mx-0 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .md\:mx-3 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
   }
 
   .md\:-mx-3 {
     margin-left: -0.75rem;
     margin-right: -0.75rem;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .md\:w-1\/2 {

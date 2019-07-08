@@ -3,10 +3,10 @@
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full flex flex-col items-center md:-mx-3"
     v-bind:class="{
-            'lg:flex-row': model.mediaposition === 'before',
-            'lg:flex-row-reverse': model.mediaposition === 'after',
+            'md:flex-row': model.mediaposition === 'before',
+            'md:flex-row-reverse': model.mediaposition === 'after',
         }" v-else>
-      <div class="img-wrapper mb-3 md:mx-0 md:mx-3" v-if="model.showmedia === 'true'"
+      <div class="img-wrapper mb-3 md:mb-0 md:px-3" v-if="model.showmedia === 'true'"
       v-bind:style="{flex:`0 0 ${model.mediawidth}%`}" v-bind:class="{
             'justify-start': model.aligncontent === 'left',
             'justify-center': model.aligncontent === 'center',
@@ -14,7 +14,7 @@
         }">
         <themecleanflex-components-media :model="model"></themecleanflex-components-media>
       </div>
-      <div class="flex flex-col flex-grow mb-3 md:mx-3">
+      <div class="flex flex-col flex-grow mb-3 md:px-3">
         <div class v-bind:class="{
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
