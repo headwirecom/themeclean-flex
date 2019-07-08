@@ -8,7 +8,7 @@
       v-bind:style="{flex:`0 0 ${model.mediawidth}%`}">
         <themecleanflex-components-media :model="model"></themecleanflex-components-media>
       </div>
-      <div class="md:px-3" v-html="model.text"></div>
+      <div class="flex-grow md:px-3" v-html="model.text"></div>
     </div>
     <div v-if="isEditAndEmpty">no content defined for component</div>
   </themecleanflex-components-block>
