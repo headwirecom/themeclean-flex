@@ -1,0 +1,26 @@
+{
+  "definitions": {
+    "Quote": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "text": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Text",
+          "x-form-type": "texteditor"
+        },
+        "blockquote": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Block Quote?",
+          "x-form-type": "materialswitch"
+        },
+        "bgref": {
+          "$ref": "fragments/block/model.json#/definitions/Block",
+          "x-form-type": "reference"
+        }
+      }
+    }
+  }
+}
