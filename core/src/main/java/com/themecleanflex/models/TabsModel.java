@@ -158,7 +158,7 @@ import javax.inject.Named;
               "x-form-label": "Width",
               "x-form-type": "materialrange",
               "x-form-visible": "model.showmedia == 'true'",
-              "x-default": 100,
+              "x-default": 50,
               "x-form-min": 10,
               "x-form-max": 100
             }
@@ -535,9 +535,9 @@ public class TabsModel extends AbstractComponent {
 	@Inject
 	private String mediatitle;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-form-visible":"model.showmedia == 'true'","x-default":100,"x-form-min":10,"x-form-max":100} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-form-visible":"model.showmedia == 'true'","x-default":50,"x-form-min":10,"x-form-max":100} */
 	@Inject
-	@Default(values ="100")
+	@Default(values ="50")
 	private String mediawidth;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Tab Color","x-form-type":"materialselect","x-default":"blue","properties":{"primary":{"x-form-name":"Primary","x-form-value":"blue"},"success":{"x-form-name":"Success","x-form-value":"green"},"danger":{"x-form-name":"Danger","x-form-value":"red"},"warning":{"x-form-name":"Warning","x-form-value":"orange"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
@@ -706,7 +706,7 @@ public class TabsModel extends AbstractComponent {
 		return mediatitle;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-form-visible":"model.showmedia == 'true'","x-default":100,"x-form-min":10,"x-form-max":100} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-form-visible":"model.showmedia == 'true'","x-default":50,"x-form-min":10,"x-form-max":100} */
 	public String getMediawidth() {
 		return mediawidth;
 	}

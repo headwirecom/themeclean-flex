@@ -88,7 +88,7 @@
           "x-form-label": "Width",
           "x-form-type": "materialrange",
           "x-form-visible": "model.showmedia == 'true'",
-          "x-default": 100,
+          "x-default": 50,
           "x-form-min": 10,
           "x-form-max": 100
         }

@@ -303,7 +303,7 @@ import javax.inject.Named;
               "x-form-label": "Width",
               "x-form-type": "materialrange",
               "x-form-visible": "model.showmedia == 'true'",
-              "x-default": 100,
+              "x-default": 50,
               "x-form-min": 10,
               "x-form-max": 100
             }
@@ -680,9 +680,9 @@ public class TeaserverticalModel extends AbstractComponent {
 	@Inject
 	private String mediatitle;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-form-visible":"model.showmedia == 'true'","x-default":100,"x-form-min":10,"x-form-max":100} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-form-visible":"model.showmedia == 'true'","x-default":50,"x-form-min":10,"x-form-max":100} */
 	@Inject
-	@Default(values ="100")
+	@Default(values ="50")
 	private String mediawidth;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Media Position","x-form-type":"materialradio","x-form-visible":"model.showmedia == 'true'","x-default":"before","properties":{"type1":{"x-form-name":"Before Content","x-form-value":"before"},"type2":{"x-form-name":"After Content","x-form-value":"after"}}} */
@@ -887,7 +887,7 @@ public class TeaserverticalModel extends AbstractComponent {
 		return mediatitle;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-form-visible":"model.showmedia == 'true'","x-default":100,"x-form-min":10,"x-form-max":100} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-form-visible":"model.showmedia == 'true'","x-default":50,"x-form-min":10,"x-form-max":100} */
 	public String getMediawidth() {
 		return mediawidth;
 	}
