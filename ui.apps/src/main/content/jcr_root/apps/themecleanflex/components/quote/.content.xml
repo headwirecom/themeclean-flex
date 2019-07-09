@@ -7,5 +7,8 @@
     <sample-blockquote jcr:primaryType="nt:unstructured" title="Quote" group="">
       <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>If you think you can do a thing or think you cant do a thing, youre right. &lt;/p>&lt;/i>- Henry Ford&lt;/i>" blockquote="true" blockwidth="article" toppadding="30" bottompadding="30"/>
     </sample-blockquote>
+    <sample-largequote jcr:primaryType="nt:unstructured" title="Quote" group="">
+      <jcr:content jcr:primaryType="nt:unstructured" text="&lt;h2>&lt;em>That's one small step for a man, one giant leap for mankind.&lt;br>&lt;/em>&lt;em>-Neil Armstrong&lt;/em>&lt;/h2>" blockquote="true" blockwidth="article" toppadding="30" bottompadding="30"/>
+    </sample-largequote>
   </jcr:content>
 </jcr:root>
