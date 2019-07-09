@@ -1,6 +1,6 @@
 {
   "title": "Quote",
-  "group": "",
+  "group": "Text Components",
   "model": {
     "text": "<p>\"Thats one small step for a man, one giant leap for mankind.\"</p><p>-<i>Neil Armstrong</i></p>",
     "blockquote" : "false",

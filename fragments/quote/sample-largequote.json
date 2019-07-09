@@ -1,6 +1,6 @@
 {
   "title": "Quote Large",
-  "group": ".hidden",
+  "group": "Text Components",
   "model": {
     "text": "<h2><em>That's one small step for a man, one giant leap for mankind.<br></em><em>-Neil Armstrong</em></h2>",
     "blockquote" : "true",
