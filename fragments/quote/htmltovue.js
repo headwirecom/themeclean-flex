@@ -5,8 +5,8 @@ module.exports = {
         f.mapRichField( $.find('div'), 'model.text')
 
         const quoteClasses = `{
-            'p-4 border-gray-600 border-l-8': model.blockquote === "true",
-            'p-4 border-gray-600 border-t-2 border-b-4': model.blockquote === "false",
+            'p-4 border-gray-800 border-l-8': model.blockquote === "true",
+            'p-4 border-gray-800 border-t-2 border-b-4': model.blockquote === "false",
             'p-4 border-gray-800 border-l-8': model.blockquote === "true" && model.colorscheme === "light",
             'p-4 border-gray-800 border-t-2 border-b-4': model.blockquote === "false" && model.colorscheme === "light",
             'p-4 border-gray-200 border-l-8': model.blockquote === "true" && model.colorscheme === "dark",
