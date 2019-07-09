@@ -555,8 +555,16 @@ video {
   background-color: #2b6cb0;
 }
 
-.border-gray-500 {
-  border-color: #a0aec0;
+.border-gray-200 {
+  border-color: #edf2f7;
+}
+
+.border-gray-600 {
+  border-color: #718096;
+}
+
+.border-gray-800 {
+  border-color: #2d3748;
 }
 
 .border-blue-700 {
