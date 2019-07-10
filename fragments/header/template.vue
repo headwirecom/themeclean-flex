@@ -57,6 +57,7 @@
         methods: {
           resizeHandler: function(e) {
             const height = this.$refs.autoHeight.clientHeight
+            if (this.menuActive) this.menuActive = false;
             this.menuHeight = height;
           },
           toggleMenu: function(){
