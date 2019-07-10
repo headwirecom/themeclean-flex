@@ -1,7 +1,6 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <pre v-bind:class="'language-'+model.language+ ((model.classes) ? ' '+model.classes : '')">
-      <code v-bind:class="'language-'+model.language" v-html="code"></code>
+    <pre v-bind:class="'language-'+model.language+ ((model.classes) ? ' '+model.classes : '')"><code v-bind:class="'language-'+model.language" v-html="code"></code>
     </pre>
   </themecleanflex-components-block>
 </template>

@@ -426,7 +426,7 @@
       "model": "toppadding",
       "visible": "model.fullheight != 'true'",
       "min": 0,
-      "max": 150
+      "max": 300
     },
     {
       "type": "material-range",
@@ -435,7 +435,7 @@
       "model": "bottompadding",
       "visible": "model.fullheight != 'true'",
       "min": 0,
-      "max": 150
+      "max": 300
     }
   ]
 }

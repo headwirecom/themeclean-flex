@@ -363,7 +363,7 @@ import javax.inject.Named;
               "x-form-label": "Top Padding",
               "x-form-type": "materialrange",
               "x-form-min": 0,
-              "x-form-max": 150,
+              "x-form-max": 300,
               "x-form-visible": "model.fullheight != 'true'"
             },
             "bottompadding": {
@@ -372,7 +372,7 @@ import javax.inject.Named;
               "x-form-label": "Bottom Padding",
               "x-form-type": "materialrange",
               "x-form-min": 0,
-              "x-form-max": 150,
+              "x-form-max": 300,
               "x-form-visible": "model.fullheight != 'true'"
             }
           }
@@ -534,11 +534,11 @@ public class FooterModel extends AbstractComponent {
 	@Default(values ="false")
 	private String fullheight;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Top Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":150,"x-form-visible":"model.fullheight != 'true'"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Top Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":300,"x-form-visible":"model.fullheight != 'true'"} */
 	@Inject
 	private String toppadding;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Bottom Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":150,"x-form-visible":"model.fullheight != 'true'"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Bottom Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":300,"x-form-visible":"model.fullheight != 'true'"} */
 	@Inject
 	private String bottompadding;
 
@@ -686,12 +686,12 @@ public class FooterModel extends AbstractComponent {
 		return fullheight;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Top Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":150,"x-form-visible":"model.fullheight != 'true'"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Top Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":300,"x-form-visible":"model.fullheight != 'true'"} */
 	public String getToppadding() {
 		return toppadding;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Bottom Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":150,"x-form-visible":"model.fullheight != 'true'"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Bottom Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":300,"x-form-visible":"model.fullheight != 'true'"} */
 	public String getBottompadding() {
 		return bottompadding;
 	}

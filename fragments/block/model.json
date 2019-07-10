@@ -216,7 +216,7 @@
           "x-form-label": "Top Padding",
           "x-form-type": "materialrange",
           "x-form-min": 0,
-          "x-form-max": 150,
+          "x-form-max": 300,
           "x-form-visible": "model.fullheight != 'true'"
         },
         "bottompadding": {
@@ -225,7 +225,7 @@
           "x-form-label": "Bottom Padding",
           "x-form-type": "materialrange",
           "x-form-min": 0,
-          "x-form-max": 150,
+          "x-form-max": 300,
           "x-form-visible": "model.fullheight != 'true'"
         }
       }
