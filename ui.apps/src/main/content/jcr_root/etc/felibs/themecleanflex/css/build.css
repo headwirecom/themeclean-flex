@@ -827,6 +827,10 @@ video {
   left: 0;
 }
 
+.resize {
+  resize: both;
+}
+
 .fill-current {
   fill: currentColor;
 }

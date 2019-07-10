@@ -39,6 +39,12 @@
             menuHeight: 0
           }
         },
+        created() {
+          addEventListener("resize", this.resizeHandler);
+        },
+        destroyed() {
+          removeEventListener("resize", this.resizeHandler);
+        },
         mounted: function() {
           this.menuHeight = this.$refs.autoHeight.clientHeight;
         },
@@ -49,6 +55,10 @@
             }
         },
         methods: {
+          resizeHandler: function(e) {
+            const height = this.$refs.autoHeight.clientHeight
+            this.menuHeight = height;
+          },
           toggleMenu: function(){
             this.menuActive = !this.menuActive
           }
