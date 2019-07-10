@@ -12,7 +12,7 @@
         brand="themecleanflex"
         template="/content/templates/themecleanflex"
             ><clheader
-            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.png" logoalttext="Peregrine CMS Logo" logourl="/content/sites/themecleanflex/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/sites/themecleanflex/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
     <links jcr:primaryType="nt:unstructured"></links>
     <buttons jcr:primaryType="nt:unstructured"></buttons>
             </clheader><clbreadcrumb
@@ -63,7 +63,7 @@
         </pagelist4>
         </container5>
         <clfooter
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.png" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">
         <c3
         jcr:primaryType="nt:unstructured" title="" text="">

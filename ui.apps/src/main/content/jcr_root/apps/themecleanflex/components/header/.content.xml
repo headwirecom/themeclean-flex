@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Header">
   <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
     <sample jcr:primaryType="nt:unstructured" title="Header" group="Chrome">
-      <jcr:content jcr:primaryType="nt:unstructured" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" elevation="1" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.png" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="dark">
+      <jcr:content jcr:primaryType="nt:unstructured" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" elevation="1" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="dark">
         <links jcr:primaryType="nt:unstructured">
           <links0 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="Services"/>
           <links1 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="About Us"/>
@@ -14,7 +14,7 @@
       </jcr:content>
     </sample>
     <sample-dark jcr:primaryType="nt:unstructured" title="Header Dark" group="Chrome">
-      <jcr:content jcr:primaryType="nt:unstructured" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="dark" elevation="1" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.png" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light">
+      <jcr:content jcr:primaryType="nt:unstructured" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="dark" elevation="1" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light">
         <links jcr:primaryType="nt:unstructured">
           <links0 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="Services"/>
           <links1 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="About Us"/>
