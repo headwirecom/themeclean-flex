@@ -150,7 +150,7 @@ p {
   @apply bg-white text-black;
 }
 .btn-white:hover {
-  @apply bg-black text-white border border-white;
+  @apply bg-black text-white;
 }
 .btn-black {
   @apply bg-black text-white;
