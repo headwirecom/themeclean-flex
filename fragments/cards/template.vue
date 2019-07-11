@@ -1,7 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
-    <div class="flex flex-wrap -mx-3"
+    <div class="w-full flex flex-wrap -mx-3"
     v-else>
       <div class="card my-3 px-3" v-bind:class="{
             'w-full': model.cardsperrow == 1,
