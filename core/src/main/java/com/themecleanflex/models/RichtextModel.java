@@ -96,7 +96,8 @@ import javax.inject.Named;
               "x-form-label": "Image Source",
               "x-form-visible": "model.mediatype == 'image' and model.showmedia == 'true'",
               "x-form-type": "pathbrowser",
-              "x-form-browserRoot": "/content/assets"
+              "x-form-browserRoot": "/content/assets",
+              "x-default": ""
             },
             "videosrc": {
               "type": "string",
@@ -104,7 +105,8 @@ import javax.inject.Named;
               "x-form-label": "Video Source",
               "x-form-visible": "model.mediatype == 'video' and model.showmedia == 'true'",
               "x-form-type": "pathbrowser",
-              "x-form-browserRoot": "/content/assets"
+              "x-form-browserRoot": "/content/assets",
+              "x-default": ""
             },
             "mediatitle": {
               "type": "string",
@@ -433,12 +435,14 @@ public class RichtextModel extends AbstractComponent {
 	@Default(values ="#000000")
 	private String mediaiconcolor;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets","x-default":""} */
 	@Inject
+	@Default(values ="")
 	private String imagesrc;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets","x-default":""} */
 	@Inject
+	@Default(values ="")
 	private String videosrc;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Media Alt Text/Title","x-form-visible":"model.showmedia == 'true'","x-form-type":"text"} */
@@ -578,12 +582,12 @@ public class RichtextModel extends AbstractComponent {
 		return mediaiconcolor;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets","x-default":""} */
 	public String getImagesrc() {
 		return imagesrc;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets","x-default":""} */
 	public String getVideosrc() {
 		return videosrc;
 	}
