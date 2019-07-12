@@ -5,8 +5,8 @@ module.exports = {
 
         //Container
         let containerClasses = `{
-            'flex-row-reverse': model.buttonside === 'left',
-            'flex-row': model.buttonside === 'right',
+            'md:flex-row-reverse': model.buttonside === 'left',
+            'md:flex-row': model.buttonside === 'right',
         }`
         f.bindAttribute( $, 'class', containerClasses ,false)
 
@@ -32,8 +32,8 @@ module.exports = {
         let buttonsDiv = $.find('div').eq(1)
         let link = buttonsDiv.find('a')
         let buttonsClasses = `{
-            'justify-content-md-end': model.buttonside === 'right',
-            'justify-content-md-start': model.buttonside === 'left',
+            'md:justify-end': model.buttonside === 'right',
+            'md:justify-start': model.buttonside === 'left',
         }`
 
         let aClasses = `{

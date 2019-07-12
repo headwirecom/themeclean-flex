@@ -107,17 +107,17 @@ import javax.inject.Named;
         "buttonside": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Button Side",
+          "x-form-label": "Button Position",
           "x-form-type": "materialradio",
           "x-form-visible": "model.showbutton == 'true'",
           "x-default": "right",
           "properties": {
             "left": {
-              "x-form-name": "Left",
+              "x-form-name": "Before Content",
               "x-form-value": "left"
             },
             "right": {
-              "x-form-name": "Right",
+              "x-form-name": "After Content",
               "x-form-value": "right"
             }
           }
@@ -509,7 +509,7 @@ public class TeaserhorizontalModel extends AbstractComponent {
 	@Inject
 	private String showbutton;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Button Side","x-form-type":"materialradio","x-form-visible":"model.showbutton == 'true'","x-default":"right","properties":{"left":{"x-form-name":"Left","x-form-value":"left"},"right":{"x-form-name":"Right","x-form-value":"right"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Button Position","x-form-type":"materialradio","x-form-visible":"model.showbutton == 'true'","x-default":"right","properties":{"left":{"x-form-name":"Before Content","x-form-value":"left"},"right":{"x-form-name":"After Content","x-form-value":"right"}}} */
 	@Inject
 	@Default(values ="right")
 	private String buttonside;
@@ -666,7 +666,7 @@ public class TeaserhorizontalModel extends AbstractComponent {
 		return showbutton;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Button Side","x-form-type":"materialradio","x-form-visible":"model.showbutton == 'true'","x-default":"right","properties":{"left":{"x-form-name":"Left","x-form-value":"left"},"right":{"x-form-name":"Right","x-form-value":"right"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Button Position","x-form-type":"materialradio","x-form-visible":"model.showbutton == 'true'","x-default":"right","properties":{"left":{"x-form-name":"Before Content","x-form-value":"left"},"right":{"x-form-name":"After Content","x-form-value":"right"}}} */
 	public String getButtonside() {
 		return buttonside;
 	}

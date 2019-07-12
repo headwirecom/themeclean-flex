@@ -108,16 +108,16 @@
       "type": "material-radios",
       "values": [
         {
-          "name": "Left",
+          "name": "Before Content",
           "value": "left"
         },
         {
-          "name": "Right",
+          "name": "After Content",
           "value": "right"
         }
       ],
       "placeholder": "buttonside",
-      "label": "Button Side",
+      "label": "Button Position",
       "model": "buttonside",
       "visible": "model.showbutton == 'true'"
     },

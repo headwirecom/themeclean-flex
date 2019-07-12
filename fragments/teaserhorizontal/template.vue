@@ -1,10 +1,10 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
-    <div class="w-full flex flex-col md:flex-row justify-between items-center"
+    <div class="w-full flex flex-col justify-between items-center"
     v-bind:class="{
-            'flex-row-reverse': model.buttonside === 'left',
-            'flex-row': model.buttonside === 'right',
+            'md:flex-row-reverse': model.buttonside === 'left',
+            'md:flex-row': model.buttonside === 'right',
         }" v-else>
       <div class v-bind:class="{
             'text-left': model.aligncontent === 'left',
@@ -19,8 +19,8 @@
       </div>
       <div class="flex flex-wrap justify-center" v-if="model.showbutton == 'true'"
       v-bind:class="{
-            'justify-content-md-end': model.buttonside === 'right',
-            'justify-content-md-start': model.buttonside === 'left',
+            'md:justify-end': model.buttonside === 'right',
+            'md:justify-start': model.buttonside === 'left',
         }">
         <a class="btn m-2" v-for="(item,i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
         v-bind:class="{
