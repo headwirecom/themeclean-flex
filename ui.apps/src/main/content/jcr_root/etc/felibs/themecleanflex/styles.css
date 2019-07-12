@@ -40,7 +40,7 @@ ol {
 }
 
 p {
-  @apply mb-3;
+  @apply my-3;
 }
 
 .color-inherit {

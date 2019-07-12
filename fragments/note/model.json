@@ -1,0 +1,48 @@
+{
+  "definitions": {
+    "Note": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "text": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "texteditor"
+        },
+        "notecolor": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Note Color",
+          "x-form-type": "materialselect",
+          "x-default": "blue",
+          "properties":{
+            "primary": {
+              "x-form-name": "Blue",
+              "x-form-value": "blue"
+            },
+            "success": {
+              "x-form-name": "Green",
+              "x-form-value": "green"
+            },
+            "danger": {
+              "x-form-name": "Orange",
+              "x-form-value": "orange"
+            },
+            "warning": {
+              "x-form-name": "Red",
+              "x-form-value": "red"
+            },
+            "light": {
+              "x-form-name": "Yellow",
+              "x-form-value": "yellow"
+            }
+          }
+        },
+        "bgref": {
+          "$ref": "fragments/block/model.json#/definitions/Block",
+          "x-form-type": "reference"
+        }
+      }
+    }
+  }
+}
