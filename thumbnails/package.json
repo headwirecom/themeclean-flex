@@ -4,7 +4,8 @@
   "description": "create thumbnails for components",
   "main": "image.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node makethumbnails.js"
   },
   "author": "",
   "license": "Apache-2.0",
