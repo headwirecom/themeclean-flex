@@ -2,17 +2,21 @@
   "name": "thumbnails",
   "version": "1.0.0",
   "description": "create thumbnails for components",
-  "main": "image.js",
+  "main": "makethumbnails.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/headwirecom/themeclean-flex.git",
+    "directory": "thumbnails"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node makethumbnails.js"
   },
-  "author": "",
+  "author": "tcf.thumbnails@peregrine-cms.com",
   "license": "Apache-2.0",
-  "dependencies": {
-    "puppeteer": "^1.18.1"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "puppeteer": "^1.18.1",
     "jimp": "^0.6.4"
   }
 }
