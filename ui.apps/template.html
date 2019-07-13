@@ -1,0 +1,48 @@
+<html>
+<head>
+  <link rel="stylesheet" href="src/main/content/jcr_root/etc/felibs/themecleanflex/css/build.css"
+    type="text/css">
+  <script>
+    var $peregrineApp = { isAuthorMode: function () { return false; } };
+    var sampleData = [[SAMPLE]];
+  </script>
+</head>
+
+<body>
+  <div id="app">
+    <[[COMPONENT-NAME]] v-bind:model="model" />
+  </div>
+
+  <script src="node_modules/vue/dist/vue.min.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsBlock.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsMedia.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsMediavisible.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsTextlinks.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsMenubuttons.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsSocialicons.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsBlock.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsPagelistnested.js"></script>
+
+  <script src="target/classes/etc/felibs/themecleanflex/js/[[COMPONENT-SCRIPT]].js"></script>
+
+  <script>
+    Vue.component('themecleanflex-components-block', cmpThemecleanflexComponentsBlock);
+    Vue.component('themecleanflex-components-media', cmpThemecleanflexComponentsMedia);
+    Vue.component('themecleanflex-components-mediavisible', cmpThemecleanflexComponentsMediavisible);
+    Vue.component('themecleanflex-components-textlinks', cmpThemecleanflexComponentsTextlinks);
+    Vue.component('themecleanflex-components-menubuttons', cmpThemecleanflexComponentsMenubuttons);
+    Vue.component('themecleanflex-components-socialicons', cmpThemecleanflexComponentsSocialicons);
+    Vue.component('themecleanflex-components-pagelistnested', cmpThemecleanflexComponentsPagelistnested);
+
+    Vue.component('[[COMPONENT-NAME]]', [[COMPONENT-VAR]]);
+    var app = new Vue({
+      el: '#app',
+      data: {
+        model: sampleData.model
+      }
+    })
+  </script>
+
+</body>
+
+</html>
