@@ -1,0 +1,88 @@
+<html>
+<head>
+  <link rel="stylesheet" href="../ui.apps/src/main/content/jcr_root/etc/felibs/themecleanflex/css/build.css"
+    type="text/css">
+  <script>
+    var $peregrineApp = { isAuthorMode: function () { return false; } };
+    var sampleData = {"title":"Teaser Vertical","group":"Features","model":{"showtitle":"true","showsubtitle":"true","showtext":"true","showbutton":"true","fullheight":"false","backgroundtype":"gradient","bgcolor":"#ffffff","gradient":"true","color2":"#c0c0c0","bottompadding":"30","toppadding":"30","text":"<p>Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.</p>","subtitle":"Molestiae alias et inventore voluptas","title":"Peregrine blocks","buttonsize":"default","buttons":[{"buttonlink":"/content/sites/themeclean","buttontext":"See More","buttoncolor":"primary","iconclass":""},{"buttonlink":"/content/sites/themeclean","buttontext":"About Us","buttoncolor":"primary","iconclass":""}]}};
+  </script>
+  <script>
+  const helpers = {
+    isEmpty: function(field) {
+        if(field === undefined || field === null || field === '' || field === '<p><br></p>' || field.length === 0 || field === false) {
+            return true
+        }
+        return false
+    },
+    areAllEmpty() {
+        for(let i = 0; i < arguments.length; i++) {
+            const ret = helpers.isEmpty(arguments[i])
+            if(ret === false) return false
+        }
+        return true
+    },
+    pathToUrl(path) {
+        if( path[0] === '#') return path
+        let absoluteUrl = new RegExp('^(?:[a-z]+:)?//', 'i');   //Matches absolute URLs
+        let file = new RegExp(/\.\w+$/, 'i')                    //Matches URL ending with a file extension
+        if( absoluteUrl.test(path) === false ) {
+            return file.test(path) ? path : `${path}.html`
+        }
+        else return path
+    }
+}
+
+const helper = {
+    install(vue) {
+        vue.prototype.$helper = helpers
+    }
+}
+</script>
+</head>
+
+<body>
+  <div id="peregrine-app">
+    <div>
+      <span>
+        <div>
+            <themecleanflex-components-teaservertical v-bind:model="model" />
+          </div>
+      </span>
+    </div>
+  </div>
+
+  <script src="../ui.apps/node_modules/vue/dist/vue.min.js"></script>
+  <script src="../ui.apps/target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsBlock.js"></script>
+  <script src="../ui.apps/target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsMedia.js"></script>
+  <script src="../ui.apps/target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsMediavisible.js"></script>
+  <script src="../ui.apps/target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsTextlinks.js"></script>
+  <script src="../ui.apps/target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsMenubuttons.js"></script>
+  <script src="../ui.apps/target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsSocialicons.js"></script>
+  <script src="../ui.apps/target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsBlock.js"></script>
+  <script src="../ui.apps/target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsPagelistnested.js"></script>
+
+  <script src="../ui.apps/target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsTeaservertical.js"></script>
+
+  <script>
+    Vue.use(helper);
+
+    Vue.component('themecleanflex-components-block', cmpThemecleanflexComponentsBlock);
+    Vue.component('themecleanflex-components-media', cmpThemecleanflexComponentsMedia);
+    Vue.component('themecleanflex-components-mediavisible', cmpThemecleanflexComponentsMediavisible);
+    Vue.component('themecleanflex-components-textlinks', cmpThemecleanflexComponentsTextlinks);
+    Vue.component('themecleanflex-components-menubuttons', cmpThemecleanflexComponentsMenubuttons);
+    Vue.component('themecleanflex-components-socialicons', cmpThemecleanflexComponentsSocialicons);
+    Vue.component('themecleanflex-components-pagelistnested', cmpThemecleanflexComponentsPagelistnested);
+
+    Vue.component('themecleanflex-components-teaservertical', cmpThemecleanflexComponentsTeaservertical);
+    var app = new Vue({
+      el: '#peregrine-app',
+      data: {
+        model: sampleData.model
+      }
+    })
+  </script>
+
+</body>
+
+</html>
