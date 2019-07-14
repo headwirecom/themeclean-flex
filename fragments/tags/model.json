@@ -1,0 +1,21 @@
+{
+  "definitions": {
+    "Tags": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "label": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Label"
+        },
+        "landing": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Tag Landing Page",
+          "x-form-type": "pathbrowser"          
+        }
+      }
+    }
+  }
+}
