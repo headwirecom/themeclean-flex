@@ -1,12 +1,10 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="w-full flex justify-center">
-      <div class="p-6" v-html="model.text" v-bind:class="[
+    <div class="w-full p-6" v-html="model.text" v-bind:class="[
             {'border-l-8': model.blockquote === 'true'},
             {'border-t-2 border-b-4': model.blockquote === 'false'},
             model.colorscheme === 'dark' ? 'border-gray-200' : 'border-gray-800'
         ]"></div>
-    </div>
     <div v-if="isEditAndEmpty">no content defined for component</div>
   </themecleanflex-components-block>
 </template>
