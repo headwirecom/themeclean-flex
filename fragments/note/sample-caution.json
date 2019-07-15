@@ -1,8 +1,9 @@
 {
-  "title": "Note",
+  "title": "Note - Caution",
   "group": "Text Components",
   "model": {
-    "text": "<p>Here is some example note text default style</p>",
+    "text": "<p>caution</p>",
+    "notetype": "caution",
     "toppadding": "30",
     "bottompadding": "30"
   }

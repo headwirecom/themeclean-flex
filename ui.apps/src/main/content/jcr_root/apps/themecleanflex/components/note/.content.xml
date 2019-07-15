@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Note" group="">
-  <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>Here is some example note text with a blue background.&lt;/p>" color="blue" toppadding="30" bottompadding="30"/>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Note">
+  <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
+    <sample jcr:primaryType="nt:unstructured" title="Note" group="Text Components">
+      <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>Here is some example note text default style&lt;/p>" toppadding="30" bottompadding="30"/>
+    </sample>
+    <sample-caution jcr:primaryType="nt:unstructured" title="Note - Caution" group="Text Components">
+      <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>caution&lt;/p>" notetype="caution" toppadding="30" bottompadding="30"/>
+    </sample-caution>
+    <sample-important jcr:primaryType="nt:unstructured" title="Note - Important" group="Text Components">
+      <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>important&lt;/p>" notetype="important" toppadding="30" bottompadding="30"/>
+    </sample-important>
+    <sample-note jcr:primaryType="nt:unstructured" title="Note - Note" group="Text Components">
+      <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>note&lt;/p>" notetype="note" toppadding="30" bottompadding="30"/>
+    </sample-note>
+    <sample-tip jcr:primaryType="nt:unstructured" title="Note - Tip" group="Text Components">
+      <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>tip&lt;/p>" notetype="tip" toppadding="30" bottompadding="30"/>
+    </sample-tip>
+    <sample-warning-dark jcr:primaryType="nt:unstructured" title="Note - Warning Dark" group=".hidden">
+      <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>warning&lt;/p>" notetype="warning" colorscheme="dark" toppadding="30" bottompadding="30"/>
+    </sample-warning-dark>
+    <sample-warning jcr:primaryType="nt:unstructured" title="Note - Warning" group="Text Components">
+      <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>warning&lt;/p>" notetype="warning" toppadding="30" bottompadding="30"/>
+    </sample-warning>
+  </jcr:content>
 </jcr:root>

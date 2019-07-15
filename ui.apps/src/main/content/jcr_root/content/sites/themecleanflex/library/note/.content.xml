@@ -23,7 +23,7 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><container3
+        </clbreadcrumb><container15
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
@@ -47,11 +47,71 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Note ()&lt;/h2&gt;">
+            text="&lt;h2&gt;Note - Caution (Text Components)&lt;/h2&gt;">
         </title1><note2
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;Here is some example note text with a blue background.&lt;/p&gt;" color="blue" toppadding="30" bottompadding="30">
-        </note2>
-        </container3>
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;caution&lt;/p&gt;" notetype="caution" toppadding="30" bottompadding="30">
+        </note2><title3 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Note - Important (Text Components)&lt;/h2&gt;">
+        </title3><note4
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30">
+        </note4><title5 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Note - Note (Text Components)&lt;/h2&gt;">
+        </title5><note6
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;note&lt;/p&gt;" notetype="note" toppadding="30" bottompadding="30">
+        </note6><title7 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Note - Tip (Text Components)&lt;/h2&gt;">
+        </title7><note8
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;tip&lt;/p&gt;" notetype="tip" toppadding="30" bottompadding="30">
+        </note8><title9 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Note - Warning Dark (.hidden)&lt;/h2&gt;">
+        </title9><note10
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;warning&lt;/p&gt;" notetype="warning" colorscheme="dark" toppadding="30" bottompadding="30">
+        </note10><title11 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Note - Warning (Text Components)&lt;/h2&gt;">
+        </title11><note12
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;warning&lt;/p&gt;" notetype="warning" toppadding="30" bottompadding="30">
+        </note12><title13 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Note (Text Components)&lt;/h2&gt;">
+        </title13><note14
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;Here is some example note text default style&lt;/p&gt;" toppadding="30" bottompadding="30">
+        </note14>
+        </container15>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">
