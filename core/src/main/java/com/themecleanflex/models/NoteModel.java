@@ -26,32 +26,32 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-type": "texteditor"
         },
-        "notecolor": {
+        "notetype": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Note Color",
+          "x-form-label": "Note Type",
           "x-form-type": "materialselect",
-          "x-default": "blue",
+          "x-default": "note",
           "properties": {
-            "primary": {
-              "x-form-name": "Blue",
-              "x-form-value": "blue"
+            "note": {
+              "x-form-name": "Note",
+              "x-form-value": "note"
             },
-            "success": {
-              "x-form-name": "Green",
-              "x-form-value": "green"
+            "tip": {
+              "x-form-name": "Tip",
+              "x-form-value": "tip"
             },
-            "danger": {
-              "x-form-name": "Orange",
-              "x-form-value": "orange"
+            "important": {
+              "x-form-name": "Important",
+              "x-form-value": "important"
+            },
+            "caution": {
+              "x-form-name": "Caution",
+              "x-form-value": "caution"
             },
             "warning": {
-              "x-form-name": "Red",
-              "x-form-value": "red"
-            },
-            "light": {
-              "x-form-name": "Yellow",
-              "x-form-value": "yellow"
+              "x-form-name": "Warning",
+              "x-form-value": "warning"
             }
           }
         },
@@ -323,10 +323,10 @@ public class NoteModel extends AbstractComponent {
 	@Inject
 	private String text;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Note Color","x-form-type":"materialselect","x-default":"blue","properties":{"primary":{"x-form-name":"Blue","x-form-value":"blue"},"success":{"x-form-name":"Green","x-form-value":"green"},"danger":{"x-form-name":"Orange","x-form-value":"orange"},"warning":{"x-form-name":"Red","x-form-value":"red"},"light":{"x-form-name":"Yellow","x-form-value":"yellow"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Note Type","x-form-type":"materialselect","x-default":"note","properties":{"note":{"x-form-name":"Note","x-form-value":"note"},"tip":{"x-form-name":"Tip","x-form-value":"tip"},"important":{"x-form-name":"Important","x-form-value":"important"},"caution":{"x-form-name":"Caution","x-form-value":"caution"},"warning":{"x-form-name":"Warning","x-form-value":"warning"}}} */
 	@Inject
-	@Default(values ="blue")
-	private String notecolor;
+	@Default(values ="note")
+	private String notetype;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
@@ -426,9 +426,9 @@ public class NoteModel extends AbstractComponent {
 		return text;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Note Color","x-form-type":"materialselect","x-default":"blue","properties":{"primary":{"x-form-name":"Blue","x-form-value":"blue"},"success":{"x-form-name":"Green","x-form-value":"green"},"danger":{"x-form-name":"Orange","x-form-value":"orange"},"warning":{"x-form-name":"Red","x-form-value":"red"},"light":{"x-form-name":"Yellow","x-form-value":"yellow"}}} */
-	public String getNotecolor() {
-		return notecolor;
+	/* {"type":"string","x-source":"inject","x-form-label":"Note Type","x-form-type":"materialselect","x-default":"note","properties":{"note":{"x-form-name":"Note","x-form-value":"note"},"tip":{"x-form-name":"Tip","x-form-value":"tip"},"important":{"x-form-name":"Important","x-form-value":"important"},"caution":{"x-form-name":"Caution","x-form-value":"caution"},"warning":{"x-form-name":"Warning","x-form-value":"warning"}}} */
+	public String getNotetype() {
+		return notetype;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */

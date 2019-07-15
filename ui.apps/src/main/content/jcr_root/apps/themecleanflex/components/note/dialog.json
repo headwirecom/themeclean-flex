@@ -11,29 +11,29 @@
       "type": "material-select",
       "values": [
         {
-          "name": "Blue",
-          "value": "blue"
+          "name": "Note",
+          "value": "note"
         },
         {
-          "name": "Green",
-          "value": "green"
+          "name": "Tip",
+          "value": "tip"
         },
         {
-          "name": "Orange",
-          "value": "orange"
+          "name": "Important",
+          "value": "important"
         },
         {
-          "name": "Red",
-          "value": "red"
+          "name": "Caution",
+          "value": "caution"
         },
         {
-          "name": "Yellow",
-          "value": "yellow"
+          "name": "Warning",
+          "value": "warning"
         }
       ],
-      "placeholder": "notecolor",
-      "label": "Note Color",
-      "model": "notecolor"
+      "placeholder": "notetype",
+      "label": "Note Type",
+      "model": "notetype"
     },
     {
       "type": "input",

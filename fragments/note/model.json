@@ -9,32 +9,32 @@
           "x-source": "inject",
           "x-form-type": "texteditor"
         },
-        "notecolor": {
+        "notetype": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Note Color",
+          "x-form-label": "Note Type",
           "x-form-type": "materialselect",
-          "x-default": "blue",
+          "x-default": "note",
           "properties":{
-            "primary": {
-              "x-form-name": "Blue",
-              "x-form-value": "blue"
+            "note": {
+              "x-form-name": "Note",
+              "x-form-value": "note"
             },
-            "success": {
-              "x-form-name": "Green",
-              "x-form-value": "green"
+            "tip": {
+              "x-form-name": "Tip",
+              "x-form-value": "tip"
             },
-            "danger": {
-              "x-form-name": "Orange",
-              "x-form-value": "orange"
+            "important": {
+              "x-form-name": "Important",
+              "x-form-value": "important"
+            },
+            "caution": {
+              "x-form-name": "Caution",
+              "x-form-value": "caution"
             },
             "warning": {
-              "x-form-name": "Red",
-              "x-form-value": "red"
-            },
-            "light": {
-              "x-form-name": "Yellow",
-              "x-form-value": "yellow"
+              "x-form-name": "Warning",
+              "x-form-value": "warning"
             }
           }
         },

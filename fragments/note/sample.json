@@ -2,7 +2,7 @@
   "title": "Note",
   "group": "",
   "model": {
-    "text": "<p><strong>Example:</strong> Here is some example note text with a blue background.</p>",
+    "text": "<p>Here is some example note text with a blue background.</p>",
     "color": "blue",
     "toppadding": "30",
     "bottompadding": "30"
