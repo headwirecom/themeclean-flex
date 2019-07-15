@@ -3,8 +3,7 @@ module.exports = {
     	f.wrap($, 'themecleanflex-components-block');
         f.bindAttribute($.parent(),'model','model');
 
-        f.mapField( $.find('p'), 'model.notetype.charAt(0).toUpperCase() + model.notetype.slice(1) + ":"' );
-        f.mapRichField( $.find('span'), 'model.text');
+        f.mapRichField( $.find('div'), 'model.text');
 
         let styles = `{
             'bg-blue-200 border-blue-500': model.notetype === "note",
