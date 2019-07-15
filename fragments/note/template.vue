@@ -7,7 +7,7 @@
             'bg-red-200 border-red-500': model.notetype === &quot;important&quot;,
             'bg-yellow-200 border-yellow-500': model.notetype === &quot;caution&quot;
         }">
-      <div class="flex">
+      <div class="flex text-black">
         <p class="font-bold mr-3">{{model.notetype.charAt(0).toUpperCase() + model.notetype.slice(1) + &quot;:&quot;}}</p>
         <span
         v-html="model.text"></span>
