@@ -59,6 +59,11 @@
           tabs: [...this.model.tabs]
         }
       },
+      watch: {
+        'model.tabs': function(newTabs){
+          this.tabs = [...newTabs];
+        }
+      },
       created: function(){
         if( this.tabs.length > 0) {
           Vue.set(this.tabs[0], 'active', true)
