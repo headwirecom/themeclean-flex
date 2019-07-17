@@ -21,10 +21,34 @@ import javax.inject.Named;
       "type": "object",
       "x-type": "component",
       "properties": {
-        "text": {
+        "tagcolor": {
           "type": "string",
           "x-source": "inject",
-          "x-form-type": "texteditor"
+          "x-form-label": "Tag Color",
+          "x-form-type": "materialselect",
+          "x-default": "blue",
+          "properties": {
+            "note": {
+              "x-form-name": "Blue",
+              "x-form-value": "blue"
+            },
+            "tip": {
+              "x-form-name": "Green",
+              "x-form-value": "green"
+            },
+            "important": {
+              "x-form-name": "Orange",
+              "x-form-value": "orange"
+            },
+            "caution": {
+              "x-form-name": "Red",
+              "x-form-value": "red"
+            },
+            "warning": {
+              "x-form-name": "Yellow",
+              "x-form-value": "yellow"
+            }
+          }
         }
       }
     }
@@ -56,17 +80,18 @@ public class TagsModel extends AbstractComponent {
     public TagsModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-type":"texteditor"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Tag Color","x-form-type":"materialselect","x-default":"blue","properties":{"note":{"x-form-name":"Blue","x-form-value":"blue"},"tip":{"x-form-name":"Green","x-form-value":"green"},"important":{"x-form-name":"Orange","x-form-value":"orange"},"caution":{"x-form-name":"Red","x-form-value":"red"},"warning":{"x-form-name":"Yellow","x-form-value":"yellow"}}} */
 	@Inject
-	private String text;
+	@Default(values ="blue")
+	private String tagcolor;
 
 
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-type":"texteditor"} */
-	public String getText() {
-		return text;
+    	/* {"type":"string","x-source":"inject","x-form-label":"Tag Color","x-form-type":"materialselect","x-default":"blue","properties":{"note":{"x-form-name":"Blue","x-form-value":"blue"},"tip":{"x-form-name":"Green","x-form-value":"green"},"important":{"x-form-name":"Orange","x-form-value":"orange"},"caution":{"x-form-name":"Red","x-form-value":"red"},"warning":{"x-form-name":"Yellow","x-form-value":"yellow"}}} */
+	public String getTagcolor() {
+		return tagcolor;
 	}
 
 

@@ -1,1 +1,32 @@
-{"fields":[{"type":"texteditor","rows":10,"placeholder":"text","label":"text","model":"text"}]}
+{
+  "fields": [
+    {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "Blue",
+          "value": "blue"
+        },
+        {
+          "name": "Green",
+          "value": "green"
+        },
+        {
+          "name": "Orange",
+          "value": "orange"
+        },
+        {
+          "name": "Red",
+          "value": "red"
+        },
+        {
+          "name": "Yellow",
+          "value": "yellow"
+        }
+      ],
+      "placeholder": "tagcolor",
+      "label": "Tag Color",
+      "model": "tagcolor"
+    }
+  ]
+}

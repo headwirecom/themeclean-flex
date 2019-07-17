@@ -1,6 +1,16 @@
 <template>
-    <div v-bind:data-per-path="model.path" v-html="model.text">
+  <themecleanflex-components-block v-bind:model="model">
+    <div class="w-full">
+      <a class="text-white px-4 py-1 mr-3 rounded-full shadow-md" v-for="(item,i) in model.tags"
+      :key="i" v-bind:class="{
+            'bg-blue-600': model.tagcolor === &quot;blue&quot;,
+            'bg-green-600': model.tagcolor === &quot;green&quot;,
+            'bg-orange-600': model.tagcolor === &quot;orange&quot;,
+            'bg-red-600': model.tagcolor === &quot;red&quot;,
+            'bg-yellow-600': model.tagcolor === &quot;yellow&quot;
+        }">{{model.tags}}</a>
     </div>
+  </themecleanflex-components-block>
 </template>
 
 <script>
