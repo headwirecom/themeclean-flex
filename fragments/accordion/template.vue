@@ -44,10 +44,14 @@
             heights: new Array(numElements).fill(0),
           }
         },
+        created() {
+          addEventListener("resize", this.setHeights);
+        },
+        destroyed() {
+          removeEventListener("resize", this.setHeights);
+        },
         mounted: function() {
-          this.heights.forEach( (item,i) => {
-            Vue.set(this.heights, i, this.$refs[`cardContent${i}`][0].clientHeight )}
-          );
+          this.setHeights();
         },
         computed: {
         	isEditAndEmpty() {
@@ -56,6 +60,11 @@
           }
         },
         methods: {
+          setHeights: function() {
+            this.heights.forEach( (item,i) => {
+              Vue.set(this.heights, i, this.$refs[`cardContent${i}`][0].clientHeight )}
+            );
+          },
           toggleItem(i) {
             if (this.model.toggletype === 'accordion') {
               this.active.forEach( (active,j) => {
