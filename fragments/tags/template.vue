@@ -8,7 +8,7 @@
             'bg-orange-600': model.tagcolor === &quot;orange&quot;,
             'bg-red-600': model.tagcolor === &quot;red&quot;,
             'bg-yellow-600': model.tagcolor === &quot;yellow&quot;
-        }">{{model.tags}}</a>
+        }">{{item.text}}</a>
     </div>
   </themecleanflex-components-block>
 </template>

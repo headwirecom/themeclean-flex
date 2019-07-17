@@ -3,7 +3,7 @@ module.exports = {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
         f.addFor($.find('a'), 'model.tags')
-        f.mapField($.find('a'), 'model.tags')
+        f.mapField($.find('a'), 'item.text')
 
         let styles = `{
             'bg-blue-600': model.tagcolor === "blue",
