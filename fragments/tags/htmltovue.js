@@ -2,8 +2,8 @@ module.exports = {
     convert: function($, f) {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
-        f.addFor($.find('a'), 'model.tags')
-        f.mapField($.find('a'), 'item.text')
+        f.addFor($.find('a'), 'tags')
+        f.mapField($.find('a'), 'item.name')
 
         let styles = `{
             'bg-blue-600': model.tagcolor === "blue",
@@ -14,5 +14,6 @@ module.exports = {
         }`;
 
         f.bindAttribute($.find('a'), 'class', styles, false);
+        $.parent().prepend('<div v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }
