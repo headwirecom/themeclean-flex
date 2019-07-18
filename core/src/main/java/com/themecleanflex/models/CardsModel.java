@@ -63,11 +63,11 @@ import javax.inject.Named;
         "cardsperrow": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Cards Per Row (1-6)",
-          "x-form-type": "number",
+          "x-form-label": "Cards Per Row",
+          "x-form-type": "materialrange",
           "x-default": 3,
-          "x-form-max": 6,
-          "x-form-min": 1
+          "x-form-min": 1,
+          "x-form-max": 6
         },
         "cards": {
           "type": "string",
@@ -471,7 +471,7 @@ public class CardsModel extends AbstractComponent {
 	@Default(values ="#ffffff")
 	private String cardcolor;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row (1-6)","x-form-type":"number","x-default":3,"x-form-max":6,"x-form-min":1} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row","x-form-type":"materialrange","x-default":3,"x-form-min":1,"x-form-max":6} */
 	@Inject
 	@Default(values ="3")
 	private String cardsperrow;
@@ -603,7 +603,7 @@ public class CardsModel extends AbstractComponent {
 		return cardcolor;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row (1-6)","x-form-type":"number","x-default":3,"x-form-max":6,"x-form-min":1} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row","x-form-type":"materialrange","x-default":3,"x-form-min":1,"x-form-max":6} */
 	public String getCardsperrow() {
 		return cardsperrow;
 	}
