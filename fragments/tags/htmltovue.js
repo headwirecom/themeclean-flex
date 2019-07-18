@@ -2,8 +2,6 @@ module.exports = {
     convert: function($, f) {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
-        f.addFor($.find('a'), 'tags')
-        f.mapField($.find('a'), 'item.name')
 
         let styles = `{
             'bg-blue-600': model.tagcolor === "blue",
@@ -13,7 +11,18 @@ module.exports = {
             'bg-yellow-600': model.tagcolor === "yellow"
         }`;
 
-        f.bindAttribute($.find('a'), 'class', styles, false);
+        let link = $.find('component');
+        f.addFor(link, 'tags')
+        f.mapField(link, 'item.name')
+        f.bindAttribute(link, 'class', styles, false);
+        f.bindAttribute(link, 'href', 'model.pagelink ? model.pagelink + item.value : ""');
+        f.bindAttribute(link, 'is', 'model.pagelink ? "a":"div"');
+
+
+        let label = $.find('span');
+        f.mapField(label, 'model.tagslabel')
+        f.addIf(label, 'model.tagslabel')
+
         $.parent().prepend('<div v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }

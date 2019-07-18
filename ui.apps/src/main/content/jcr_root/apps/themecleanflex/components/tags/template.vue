@@ -1,15 +1,17 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
-    <div class="w-full">
-      <a class="text-white px-4 py-1 mr-3 rounded-full shadow-md" v-for="(item,i) in tags"
-      :key="i" v-bind:class="{
+    <div v-if="isEditAndEmpty">no content defined for component</div>
+    <div class="w-full flex items-center -mx-2">
+      <span class="ml-2 mr-4" v-if="model.tagslabel">{{model.tagslabel}}</span>
+      <component class="text-white hover:text-white px-4 py-1 mx-2 rounded-full shadow-md no-underline"
+      v-for="(item,i) in tags" :key="i" v-bind:class="{
             'bg-blue-600': model.tagcolor === &quot;blue&quot;,
             'bg-green-600': model.tagcolor === &quot;green&quot;,
             'bg-orange-600': model.tagcolor === &quot;orange&quot;,
             'bg-red-600': model.tagcolor === &quot;red&quot;,
             'bg-yellow-600': model.tagcolor === &quot;yellow&quot;
-        }">{{item.name}}</a>
+        }" v-bind:href="model.pagelink ? model.pagelink + item.value : &quot;&quot;"
+      v-bind:is="model.pagelink ? &quot;a&quot;:&quot;div&quot;">{{item.name}}</component>
     </div>
   </themecleanflex-components-block>
 </template>
@@ -23,7 +25,7 @@
         },
         isEditAndEmpty() {
               if(!$peregrineApp.isAuthorMode()) return false
-              return this.tags.length === 0
+              return (this.tags.length !== 0)
         }
       }
     }
