@@ -47,6 +47,7 @@ function buildPage(target, name, samples, readme, variations) {
     const out = fs.createWriteStream(targetFolder + '/.content.xml');
     out.write(clfrags.header(name));
     out.write(clfrags.home());
+    out.write(clfrags.pager());
 
     let readmeContent = ""
     if( readme ) {
@@ -73,6 +74,7 @@ function buildVariationPages(target, name, samples, variations) {
             const out = fs.createWriteStream(targetFolder + '/.content.xml');
             out.write(clfrags.header(name+sampleName+variationName));
             out.write(clfrags.home());
+            out.write(clfrags.pager());
             const sampleContent = outSample(name, sample, variation);
             out.write(clfrags.container('main', sampleContent));
             out.write(clfrags.footer());
@@ -87,6 +89,7 @@ function buildIndexPage(target, pages) {
     fs.mkdirsSync(targetFolder);
     const out = fs.createWriteStream(targetFolder + '/.content.xml');
     out.write(clfrags.header('component library'));
+    out.write(clfrags.pager());
 
     let mainContent = ""
     mainContent += clfrags.title('component library');
