@@ -2,12 +2,19 @@ const fs = require('fs-extra');
 
 const clfrags = require('./cl-fragments.js');
 
-function outSample(name, sample) {
+const compvars = require('./variations.js');
+
+function outSample(name, sample, variation=null) {
     const data = fs.readJSONSync('../fragments/'+name+'/'+sample);
     let out = ""
     out += clfrags.subtitle(`${data.title} (${data.group})`);
     const attrs = [['jcr:primaryType', 'nt:unstructured'], ['sling:resourceType','themecleanflex/components/'+name]];
     const children = [];
+    if(variation) {
+        const withoutName = Object.assign({}, variation);
+        delete withoutName.name;
+        Object.assign(data.model, withoutName);
+    }
     for(let prop in data.model) {
         if(typeof data.model[prop] === 'string') {
             attrs.push( [prop, data.model[prop]] );
@@ -33,7 +40,7 @@ function outSample(name, sample) {
 }
 
 
-function buildPage(target, name, samples, readme) {
+function buildPage(target, name, samples, readme, variations) {
     
     const targetFolder = target+'/'+name;
     fs.mkdirsSync(targetFolder);
@@ -51,6 +58,27 @@ function buildPage(target, name, samples, readme) {
     out.write(clfrags.container('main', samplesContent));
     out.write(clfrags.footer());
     out.close();
+    buildVariationPages(target, name, samples, variations);
+}
+
+function buildVariationPages(target, name, samples, variations) {
+    const targetRoot = target+'/'+name;
+    samples.forEach((sample) => {
+        variations.forEach((variation) => {
+            const sampleName = sample.substring(0,sample.length - 5);
+            const variationName = variation.name;
+            const targetFolder = targetRoot + '/' + sampleName + variationName;
+            //console.log(targetFolder);
+            fs.mkdirsSync(targetFolder);
+            const out = fs.createWriteStream(targetFolder + '/.content.xml');
+            out.write(clfrags.header(name+sampleName+variationName));
+            out.write(clfrags.home());
+            const sampleContent = outSample(name, sample, variation);
+            out.write(clfrags.container('main', sampleContent));
+            out.write(clfrags.footer());
+            out.close();
+        });
+    });
 }
 
 function buildIndexPage(target, pages) {
@@ -79,6 +107,8 @@ function buildIndexPage(target, pages) {
 function forEachComponent(target = 'src/main/content/jcr_root/content/sites/themecleanflex/library', root = '../fragments/') {
     const pages = [];
     const components = fs.readdirSync(root);
+    const variations = compvars.getVariations();
+    console.log(variations);
     components.forEach( (name) => {
         const entry = fs.statSync(root+name);
         if(entry.isDirectory()) {
@@ -96,7 +126,13 @@ function forEachComponent(target = 'src/main/content/jcr_root/content/sites/them
             if (hasEmptySample) samples.push('sample-empty.json');
             const readme = files.includes( 'readme.md' );
             page.readme = readme;
-            buildPage(target, name, samples, readme);
+            console.log('name: ' + name);
+            console.log('samples:');
+            console.log(samples);
+            console.log('variations:');
+            console.log(variations);
+            console.log('');
+            buildPage(target, name, samples, readme, variations);
             pages.push(page);
         }
     });
