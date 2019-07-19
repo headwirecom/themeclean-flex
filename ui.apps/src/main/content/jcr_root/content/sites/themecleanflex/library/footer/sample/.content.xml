@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+            jcr:primaryType="per:Page"
+            jcr:title="tf-cl | footersample"
+            jcr:description="footersample themecleanflex component library"
+>
+    <jcr:content
+        jcr:primaryType="per:PageContent"
+        sling:resourceType="themecleanflex/components/page"
+        jcr:title="footersample"
+        description="footersample themecleanflex component library"
+        brand="themecleanflex"
+        template="/content/templates/themecleanflex"
+            ><clheader
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/sites/themecleanflex/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
+    <links jcr:primaryType="nt:unstructured"></links>
+    <buttons jcr:primaryType="nt:unstructured"></buttons>
+            </clheader><clbreadcrumb
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
+        <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        </clbreadcrumb><pager0
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager0><container291
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/container"
+            htmlelement="main">
+            [object Object]<title1 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title1><footer10
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#ff80c0" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c2
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c2><c3
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c3><c4
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c4></columns>
+<icons jcr:primaryType="nt:unstructured"><c5
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c5><c6
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c6><c7
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c7><c8
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c8><c9
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c9></icons>
+        </footer10><title11 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title11><footer20
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#ff80c0" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c12
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c12><c13
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c13><c14
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c14></columns>
+<icons jcr:primaryType="nt:unstructured"><c15
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c15><c16
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c16><c17
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c17><c18
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c18><c19
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c19></icons>
+        </footer20><title21 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title21><footer30
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#ff80c0" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c22
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c22><c23
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c23><c24
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c24></columns>
+<icons jcr:primaryType="nt:unstructured"><c25
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c25><c26
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c26><c27
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c27><c28
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c28><c29
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c29></icons>
+        </footer30><title31 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title31><footer40
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#ff80c0" bottompadding="0" toppadding="30" colorscheme="" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c32
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c32><c33
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c33><c34
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c34></columns>
+<icons jcr:primaryType="nt:unstructured"><c35
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c35><c36
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c36><c37
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c37><c38
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c38><c39
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c39></icons>
+        </footer40><title41 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title41><footer50
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#ff80c0" bottompadding="0" toppadding="30" colorscheme="" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c42
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c42><c43
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c43><c44
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c44></columns>
+<icons jcr:primaryType="nt:unstructured"><c45
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c45><c46
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c46><c47
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c47><c48
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c48><c49
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c49></icons>
+        </footer50><title51 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title51><footer60
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="gradient" bgcolor="#ff8040" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" color2="#0080ff" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c52
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c52><c53
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c53><c54
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c54></columns>
+<icons jcr:primaryType="nt:unstructured"><c55
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c55><c56
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c56><c57
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c57><c58
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c58><c59
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c59></icons>
+        </footer60><title61 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title61><footer70
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="gradient" bgcolor="#ff8040" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" color2="#0080ff" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c62
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c62><c63
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c63><c64
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c64></columns>
+<icons jcr:primaryType="nt:unstructured"><c65
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c65><c66
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c66><c67
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c67><c68
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c68><c69
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c69></icons>
+        </footer70><title71 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title71><footer80
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="gradient" bgcolor="#ff8040" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" color2="#0080ff" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c72
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c72><c73
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c73><c74
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c74></columns>
+<icons jcr:primaryType="nt:unstructured"><c75
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c75><c76
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c76><c77
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c77><c78
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c78><c79
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c79></icons>
+        </footer80><title81 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title81><footer90
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="gradient" bgcolor="#ff8040" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" color2="#0080ff" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c82
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c82><c83
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c83><c84
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c84></columns>
+<icons jcr:primaryType="nt:unstructured"><c85
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c85><c86
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c86><c87
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c87><c88
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c88><c89
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c89></icons>
+        </footer90><title91 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title91><footer100
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="gradient" bgcolor="#ff8040" bottompadding="0" toppadding="30" colorscheme="" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" color2="#0080ff" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c92
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c92><c93
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c93><c94
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c94></columns>
+<icons jcr:primaryType="nt:unstructured"><c95
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c95><c96
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c96><c97
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c97><c98
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c98><c99
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c99></icons>
+        </footer100><title101 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title101><footer110
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="gradient" bgcolor="#ff8040" bottompadding="0" toppadding="30" colorscheme="" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" color2="#0080ff" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c102
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c102><c103
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c103><c104
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c104></columns>
+<icons jcr:primaryType="nt:unstructured"><c105
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c105><c106
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c106><c107
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c107><c108
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c108><c109
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c109></icons>
+        </footer110><title111 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title111><footer120
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="image" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c112
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c112><c113
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c113><c114
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c114></columns>
+<icons jcr:primaryType="nt:unstructured"><c115
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c115><c116
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c116><c117
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c117><c118
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c118><c119
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c119></icons>
+        </footer120><title121 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title121><footer130
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="image" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c122
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c122><c123
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c123><c124
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c124></columns>
+<icons jcr:primaryType="nt:unstructured"><c125
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c125><c126
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c126><c127
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c127><c128
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c128><c129
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c129></icons>
+        </footer130><title131 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title131><footer140
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="image" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c132
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c132><c133
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c133><c134
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c134></columns>
+<icons jcr:primaryType="nt:unstructured"><c135
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c135><c136
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c136><c137
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c137><c138
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c138><c139
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c139></icons>
+        </footer140><title141 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title141><footer150
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="image" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c142
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c142><c143
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c143><c144
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c144></columns>
+<icons jcr:primaryType="nt:unstructured"><c145
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c145><c146
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c146><c147
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c147><c148
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c148><c149
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c149></icons>
+        </footer150><title151 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title151><footer160
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="image" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c152
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c152><c153
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c153><c154
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c154></columns>
+<icons jcr:primaryType="nt:unstructured"><c155
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c155><c156
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c156><c157
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c157><c158
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c158><c159
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c159></icons>
+        </footer160><title161 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title161><footer170
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="image" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c162
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c162><c163
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c163><c164
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c164></columns>
+<icons jcr:primaryType="nt:unstructured"><c165
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c165><c166
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c166><c167
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c167><c168
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c168><c169
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c169></icons>
+        </footer170><title171 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title171><footer180
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="false" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c172
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c172><c173
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c173><c174
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c174></columns>
+<icons jcr:primaryType="nt:unstructured"><c175
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c175><c176
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c176><c177
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c177><c178
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c178><c179
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c179></icons>
+        </footer180><title181 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title181><footer190
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="false" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c182
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c182><c183
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c183><c184
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c184></columns>
+<icons jcr:primaryType="nt:unstructured"><c185
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c185><c186
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c186><c187
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c187><c188
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c188><c189
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c189></icons>
+        </footer190><title191 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title191><footer200
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="false" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c192
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c192><c193
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c193><c194
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c194></columns>
+<icons jcr:primaryType="nt:unstructured"><c195
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c195><c196
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c196><c197
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c197><c198
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c198><c199
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c199></icons>
+        </footer200><title201 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title201><footer210
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="false" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c202
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c202><c203
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c203><c204
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c204></columns>
+<icons jcr:primaryType="nt:unstructured"><c205
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c205><c206
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c206><c207
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c207><c208
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c208><c209
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c209></icons>
+        </footer210><title211 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title211><footer220
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="false" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c212
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c212><c213
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c213><c214
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c214></columns>
+<icons jcr:primaryType="nt:unstructured"><c215
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c215><c216
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c216><c217
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c217><c218
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c218><c219
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c219></icons>
+        </footer220><title221 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title221><footer230
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="false" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c222
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c222><c223
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c223><c224
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c224></columns>
+<icons jcr:primaryType="nt:unstructured"><c225
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c225><c226
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c226><c227
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c227><c228
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c228><c229
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c229></icons>
+        </footer230><title231 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title231><footer240
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="video" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c232
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c232><c233
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c233><c234
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c234></columns>
+<icons jcr:primaryType="nt:unstructured"><c235
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c235><c236
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c236><c237
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c237><c238
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c238><c239
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c239></icons>
+        </footer240><title241 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title241><footer250
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="video" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c242
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c242><c243
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c243><c244
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c244></columns>
+<icons jcr:primaryType="nt:unstructured"><c245
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c245><c246
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c246><c247
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c247><c248
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c248><c249
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c249></icons>
+        </footer250><title251 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title251><footer260
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="video" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c252
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c252><c253
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c253><c254
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c254></columns>
+<icons jcr:primaryType="nt:unstructured"><c255
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c255><c256
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c256><c257
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c257><c258
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c258><c259
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c259></icons>
+        </footer260><title261 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title261><footer270
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="video" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c262
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c262><c263
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c263><c264
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c264></columns>
+<icons jcr:primaryType="nt:unstructured"><c265
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c265><c266
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c266><c267
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c267><c268
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c268><c269
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c269></icons>
+        </footer270><title271 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title271><footer280
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="video" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="false"><columns jcr:primaryType="nt:unstructured"><c272
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c272><c273
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c273><c274
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c274></columns>
+<icons jcr:primaryType="nt:unstructured"><c275
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c275><c276
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c276><c277
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c277><c278
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c278><c279
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c279></icons>
+        </footer280><title281 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Footer Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title281><footer290
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="video" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="true"><columns jcr:primaryType="nt:unstructured"><c282
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c282><c283
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c283><c284
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c284></columns>
+<icons jcr:primaryType="nt:unstructured"><c285
+        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
+        </c285><c286
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
+        </c286><c287
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        </c287><c288
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c288><c289
+        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
+        </c289></icons>
+        </footer290>
+        </container291><pager292
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager292>
+        <clfooter
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
+        <columns jcr:primaryType="nt:unstructured">
+        <c3
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c3><c4
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
+        </c4><c5
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c5></columns>
+<icons jcr:primaryType="nt:unstructured"></icons>
+        </clfooter>        
+        </jcr:content></jcr:root>

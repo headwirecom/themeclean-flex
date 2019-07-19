@@ -112,6 +112,20 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
         // return this.text('<p><a href="/content/sites/themecleanflex/library.html">component library home</a></p>');
     },
 
+    pager() {
+        return `<pager${idx}
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager${idx++}>`;
+        // return this.text('<p><a href="/content/sites/themecleanflex/library.html">component library home</a></p>');
+    },
+
     intro(md) {
         return `
         <intro${idx} jcr:primaryType="nt:unstructured" 

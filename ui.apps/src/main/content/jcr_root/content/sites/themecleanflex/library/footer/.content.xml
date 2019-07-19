@@ -23,12 +23,21 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><container13
+        </clbreadcrumb><pager0
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager0><container14
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
             
-        <intro0 jcr:primaryType="nt:unstructured" 
+        <intro1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             bottompadding="25"
             toppadding="25"
@@ -39,8 +48,8 @@
             text="&lt;h1 id=&quot;footer&quot;&gt;Footer&lt;/h1&gt;
 &lt;p&gt;The Footer component is a great way to display extra information or navigation related to your site.&lt;/p&gt;
 ">
-        </intro0>
-        <title1 jcr:primaryType="nt:unstructured" 
+        </intro1>
+        <title2 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -48,26 +57,26 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Footer (Chrome)&lt;/h2&gt;">
-        </title1><footer10
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved"><columns jcr:primaryType="nt:unstructured"><c2
+        </title2><footer11
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved"><columns jcr:primaryType="nt:unstructured"><c3
         jcr:primaryType="nt:unstructured" title="" text="">
-        </c2><c3
-        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
         </c3><c4
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+        </c4><c5
         jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
-        </c4></columns>
-<icons jcr:primaryType="nt:unstructured"><c5
+        </c5></columns>
+<icons jcr:primaryType="nt:unstructured"><c6
         jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
-        </c5><c6
-        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
         </c6><c7
-        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
+        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
         </c7><c8
-        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
         </c8><c9
+        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
+        </c9><c10
         jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
-        </c9></icons>
-        </footer10><title11 jcr:primaryType="nt:unstructured" 
+        </c10></icons>
+        </footer11><title12 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -75,10 +84,19 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Footer no default values (Empty)&lt;/h2&gt;">
-        </title11><footer12
+        </title12><footer13
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer"><coluimns jcr:primaryType="nt:unstructured"></coluimns>
-        </footer12>
-        </container13>
+        </footer13>
+        </container14><pager15
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager15>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">
