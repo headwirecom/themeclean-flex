@@ -10,7 +10,7 @@
             'bg-orange-600': model.tagcolor === &quot;orange&quot;,
             'bg-red-600': model.tagcolor === &quot;red&quot;,
             'bg-yellow-600': model.tagcolor === &quot;yellow&quot;
-        }" v-bind:href="model.pagelink ? model.pagelink + item.value : false"
+        }" v-bind:href="model.pagelink ? model.pagelink + '.html' + item.value : false"
       v-bind:is="model.pagelink ? &quot;a&quot;:&quot;div&quot;">{{item.name}}</component>
     </div>
   </themecleanflex-components-block>
@@ -25,7 +25,7 @@
         },
         isEditAndEmpty() {
               if(!$peregrineApp.isAuthorMode()) return false
-              return this.tags.length === 0
+              return this.tags.length === 0 && this.model.tagsLabel && this.model.tagsLabel.length === 0
         }
       }
     }

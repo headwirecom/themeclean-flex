@@ -4,14 +4,6 @@
       "type": "object",
       "x-type": "component",
       "properties": {
-        "pagelink": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Tag Link Base Path",
-          "x-form-type": "pathbrowser",
-          "x-default": "content",
-          "x-form-browserRoot": "content"
-        },
         "tagslabel": {
           "type": "string",
           "x-source": "inject",
@@ -46,6 +38,13 @@
               "x-form-value": "yellow"
             }
           }
+        },
+        "pagelink": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Tag Link Base Path",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content/sites"
         },
         "bgref": {
           "$ref": "fragments/block/model.json#/definitions/Block",

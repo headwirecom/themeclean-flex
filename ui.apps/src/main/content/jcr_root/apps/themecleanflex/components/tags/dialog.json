@@ -1,13 +1,6 @@
 {
   "fields": [
     {
-      "type": "pathbrowser",
-      "browserRoot": "content",
-      "placeholder": "pagelink",
-      "label": "Tag Link Base Path",
-      "model": "pagelink"
-    },
-    {
       "type": "input",
       "inputType": "text",
       "placeholder": "tagslabel",
@@ -41,6 +34,13 @@
       "placeholder": "tagcolor",
       "label": "Tag Color",
       "model": "tagcolor"
+    },
+    {
+      "type": "pathbrowser",
+      "browserRoot": "/content/sites",
+      "placeholder": "pagelink",
+      "label": "Tag Link Base Path",
+      "model": "pagelink"
     },
     {
       "type": "input",

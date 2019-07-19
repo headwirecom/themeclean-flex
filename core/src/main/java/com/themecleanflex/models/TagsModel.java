@@ -21,14 +21,6 @@ import javax.inject.Named;
       "type": "object",
       "x-type": "component",
       "properties": {
-        "pagelink": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Tag Link Base Path",
-          "x-form-type": "pathbrowser",
-          "x-default": "content",
-          "x-form-browserRoot": "content"
-        },
         "tagslabel": {
           "type": "string",
           "x-source": "inject",
@@ -63,6 +55,13 @@ import javax.inject.Named;
               "x-form-value": "yellow"
             }
           }
+        },
+        "pagelink": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Tag Link Base Path",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content/sites"
         },
         "bgref": {
           "x-form-type": "reference",
@@ -328,12 +327,7 @@ public class TagsModel extends AbstractComponent {
     public TagsModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Tag Link Base Path","x-form-type":"pathbrowser","x-default":"content","x-form-browserRoot":"content"} */
-	@Inject
-	@Default(values ="content")
-	private String pagelink;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Tags Label","x-form-type":"text"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Tags Label","x-form-type":"text"} */
 	@Inject
 	private String tagslabel;
 
@@ -341,6 +335,10 @@ public class TagsModel extends AbstractComponent {
 	@Inject
 	@Default(values ="blue")
 	private String tagcolor;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Tag Link Base Path","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"} */
+	@Inject
+	private String pagelink;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
@@ -435,12 +433,7 @@ public class TagsModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Tag Link Base Path","x-form-type":"pathbrowser","x-default":"content","x-form-browserRoot":"content"} */
-	public String getPagelink() {
-		return pagelink;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Tags Label","x-form-type":"text"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Tags Label","x-form-type":"text"} */
 	public String getTagslabel() {
 		return tagslabel;
 	}
@@ -448,6 +441,11 @@ public class TagsModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Tag Color","x-form-type":"materialselect","x-default":"blue","properties":{"note":{"x-form-name":"Blue","x-form-value":"blue"},"tip":{"x-form-name":"Green","x-form-value":"green"},"important":{"x-form-name":"Orange","x-form-value":"orange"},"caution":{"x-form-name":"Red","x-form-value":"red"},"warning":{"x-form-name":"Yellow","x-form-value":"yellow"}}} */
 	public String getTagcolor() {
 		return tagcolor;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Tag Link Base Path","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"} */
+	public String getPagelink() {
+		return pagelink;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
