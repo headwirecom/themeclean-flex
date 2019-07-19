@@ -25,6 +25,8 @@
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
         </clbreadcrumb><pager0
         colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
         custombackground="false"
         backgroundtype="color"
         bgcolor="#eeeeee"
@@ -68,6 +70,8 @@
         </menubuttons6>
         </container7><pager8
         colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
         custombackground="false"
         backgroundtype="color"
         bgcolor="#eeeeee"

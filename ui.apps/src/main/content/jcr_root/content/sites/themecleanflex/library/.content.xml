@@ -17,6 +17,8 @@
     <buttons jcr:primaryType="nt:unstructured"></buttons>
             </clheader><pager0
         colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
         custombackground="false"
         backgroundtype="color"
         bgcolor="#eeeeee"
@@ -321,6 +323,8 @@
         
         </container30><pager31
         colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
         custombackground="false"
         backgroundtype="color"
         bgcolor="#eeeeee"

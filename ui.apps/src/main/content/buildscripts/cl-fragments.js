@@ -115,6 +115,8 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
     pager() {
         return `<pager${idx}
         colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
         custombackground="false"
         backgroundtype="color"
         bgcolor="#eeeeee"
