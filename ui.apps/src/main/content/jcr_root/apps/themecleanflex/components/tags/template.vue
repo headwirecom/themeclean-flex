@@ -2,7 +2,7 @@
   <themecleanflex-components-block v-bind:model="model">
     <div v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full flex items-center -mx-2">
-      <span class="ml-2 mr-4" v-if="model.tagslabel">{{model.tagslabel}}</span>
+      <span class="font-bold ml-2 mr-4" v-if="model.tagslabel">{{model.tagslabel}}</span>
       <component class="text-white hover:text-white px-4 py-1 mx-2 rounded-full shadow-md no-underline"
       v-for="(item,i) in tags" :key="i" v-bind:class="{
             'bg-blue-600': model.tagcolor === &quot;blue&quot;,
