@@ -15,7 +15,16 @@
             jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/sites/themecleanflex/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
     <links jcr:primaryType="nt:unstructured"></links>
     <buttons jcr:primaryType="nt:unstructured"></buttons>
-            </clheader><container29
+            </clheader><pager0
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager0><container30
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
@@ -275,8 +284,8 @@
         text="&lt;h3 id=&quot;tags&quot;&gt;Tags&lt;/h3&gt;
 &lt;p&gt;Display the tags that are attached to this page.&lt;/p&gt;
 ">
-        </card25>
-    <card26
+        </card26>
+    <card27
         jcr:primaryType="nt:unstructured"
         buttontext="See teaserhorizontal"
         buttonlink="library/teaserhorizontal.html"
@@ -285,8 +294,8 @@
         text="&lt;h3 id=&quot;teaser-horizontal&quot;&gt;Teaser Horizontal&lt;/h3&gt;
 &lt;p&gt;The Horizontal Teaser component can be used to display a small amount of content with relevant links.&lt;/p&gt;
 ">
-        </card26>
-    <card27
+        </card27>
+    <card28
         jcr:primaryType="nt:unstructured"
         buttontext="See teaservertical"
         buttonlink="library/teaservertical.html"
@@ -295,8 +304,8 @@
         text="&lt;h3 id=&quot;teaser-vertical&quot;&gt;Teaser Vertical&lt;/h3&gt;
 &lt;p&gt;The Vertical Teaser component can be used to display a small amount of content with relevant links.&lt;/p&gt;
 ">
-        </card27>
-    <card28
+        </card28>
+    <card29
         jcr:primaryType="nt:unstructured"
         buttontext="See textlinks"
         buttonlink="library/textlinks.html"
@@ -305,13 +314,12 @@
         text="&lt;h3 id=&quot;text-links&quot;&gt;Text Links&lt;/h3&gt;
 &lt;p&gt;The Text Links components contains a collection of simple Links for use in the Header.&lt;/p&gt;
 ">
-        </card28>
+        </card29>
     
                 </cards>
         </cards2>
         
-<<<<<<< HEAD
-        </container29><pager30
+        </container30><pager31
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -320,10 +328,7 @@
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager30>
-=======
-        </container29>
->>>>>>> develop
+        </pager31>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">
