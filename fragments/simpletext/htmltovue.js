@@ -6,10 +6,10 @@ module.exports = {
         f.mapField( $, 'model.text')
 
         let classes = `{
-            'text-2xl font-semibold': model.element === \'h1\',
-            'text-xl font-semibold': model.element === \'h2\',
-            'text-xl': model.element === \'h3\',
-            'text-lg font-semibold': model.element === \'h4\',
+            'text-4xl font-semibold': model.element === \'h1\',
+            'text-3xl font-semibold': model.element === \'h2\',
+            'text-2xl': model.element === \'h3\',
+            'text-xl font-semibold': model.element === \'h4\',
             'text-lg': model.element === \'h5\',
         }`
 
