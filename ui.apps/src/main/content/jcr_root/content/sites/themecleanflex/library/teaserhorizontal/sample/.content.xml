@@ -23,7 +23,7 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager
+        </clbreadcrumb><pager0
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -32,11 +32,11 @@
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager><container116
+        </pager0><container117
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
-            [object Object]<title0 jcr:primaryType="nt:unstructured" 
+            [object Object]<title1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -44,13 +44,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title0><teaserhorizontal3
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="color" bgcolor="#ff80c0" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c1
+        </title1><teaserhorizontal4
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="color" bgcolor="#ff80c0" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c2
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c1><c2
+        </c2><c3
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c2></buttons>
-        </teaserhorizontal3><title4 jcr:primaryType="nt:unstructured" 
+        </c3></buttons>
+        </teaserhorizontal4><title5 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -58,13 +58,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title4><teaserhorizontal7
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="color" bgcolor="#ff80c0" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c5
+        </title5><teaserhorizontal8
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="color" bgcolor="#ff80c0" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c6
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c5><c6
+        </c6><c7
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c6></buttons>
-        </teaserhorizontal7><title8 jcr:primaryType="nt:unstructured" 
+        </c7></buttons>
+        </teaserhorizontal8><title9 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -72,13 +72,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title8><teaserhorizontal11
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="color" bgcolor="#ff80c0" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c9
+        </title9><teaserhorizontal12
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="color" bgcolor="#ff80c0" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c10
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c9><c10
+        </c10><c11
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c10></buttons>
-        </teaserhorizontal11><title12 jcr:primaryType="nt:unstructured" 
+        </c11></buttons>
+        </teaserhorizontal12><title13 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -86,13 +86,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title12><teaserhorizontal15
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="color" bgcolor="#ff80c0" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c13
+        </title13><teaserhorizontal16
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="color" bgcolor="#ff80c0" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c14
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c13><c14
+        </c14><c15
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c14></buttons>
-        </teaserhorizontal15><title16 jcr:primaryType="nt:unstructured" 
+        </c15></buttons>
+        </teaserhorizontal16><title17 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -100,13 +100,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title16><teaserhorizontal19
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="color" bgcolor="#ff80c0" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c17
+        </title17><teaserhorizontal20
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="color" bgcolor="#ff80c0" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c18
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c17><c18
+        </c18><c19
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c18></buttons>
-        </teaserhorizontal19><title20 jcr:primaryType="nt:unstructured" 
+        </c19></buttons>
+        </teaserhorizontal20><title21 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -114,13 +114,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title20><teaserhorizontal23
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="gradient" bgcolor="#ff8040" gradient="true" color2="#0080ff" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c21
+        </title21><teaserhorizontal24
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="gradient" bgcolor="#ff8040" gradient="true" color2="#0080ff" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c22
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c21><c22
+        </c22><c23
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c22></buttons>
-        </teaserhorizontal23><title24 jcr:primaryType="nt:unstructured" 
+        </c23></buttons>
+        </teaserhorizontal24><title25 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -128,13 +128,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title24><teaserhorizontal27
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="gradient" bgcolor="#ff8040" gradient="true" color2="#0080ff" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c25
+        </title25><teaserhorizontal28
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="gradient" bgcolor="#ff8040" gradient="true" color2="#0080ff" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c26
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c25><c26
+        </c26><c27
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c26></buttons>
-        </teaserhorizontal27><title28 jcr:primaryType="nt:unstructured" 
+        </c27></buttons>
+        </teaserhorizontal28><title29 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -142,13 +142,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title28><teaserhorizontal31
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="gradient" bgcolor="#ff8040" gradient="true" color2="#0080ff" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c29
+        </title29><teaserhorizontal32
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="gradient" bgcolor="#ff8040" gradient="true" color2="#0080ff" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c30
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c29><c30
+        </c30><c31
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c30></buttons>
-        </teaserhorizontal31><title32 jcr:primaryType="nt:unstructured" 
+        </c31></buttons>
+        </teaserhorizontal32><title33 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -156,13 +156,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title32><teaserhorizontal35
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="gradient" bgcolor="#ff8040" gradient="true" color2="#0080ff" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c33
+        </title33><teaserhorizontal36
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="gradient" bgcolor="#ff8040" gradient="true" color2="#0080ff" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c34
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c33><c34
+        </c34><c35
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c34></buttons>
-        </teaserhorizontal35><title36 jcr:primaryType="nt:unstructured" 
+        </c35></buttons>
+        </teaserhorizontal36><title37 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -170,13 +170,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title36><teaserhorizontal39
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="gradient" bgcolor="#ff8040" gradient="true" color2="#0080ff" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c37
+        </title37><teaserhorizontal40
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="gradient" bgcolor="#ff8040" gradient="true" color2="#0080ff" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c38
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c37><c38
+        </c38><c39
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c38></buttons>
-        </teaserhorizontal39><title40 jcr:primaryType="nt:unstructured" 
+        </c39></buttons>
+        </teaserhorizontal40><title41 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -184,13 +184,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title40><teaserhorizontal43
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="gradient" bgcolor="#ff8040" gradient="true" color2="#0080ff" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c41
+        </title41><teaserhorizontal44
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="gradient" bgcolor="#ff8040" gradient="true" color2="#0080ff" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c42
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c41><c42
+        </c42><c43
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c42></buttons>
-        </teaserhorizontal43><title44 jcr:primaryType="nt:unstructured" 
+        </c43></buttons>
+        </teaserhorizontal44><title45 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -198,13 +198,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title44><teaserhorizontal47
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="image" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c45
+        </title45><teaserhorizontal48
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="image" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c46
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c45><c46
+        </c46><c47
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c46></buttons>
-        </teaserhorizontal47><title48 jcr:primaryType="nt:unstructured" 
+        </c47></buttons>
+        </teaserhorizontal48><title49 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -212,13 +212,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title48><teaserhorizontal51
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="image" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c49
+        </title49><teaserhorizontal52
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="image" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c50
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c49><c50
+        </c50><c51
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c50></buttons>
-        </teaserhorizontal51><title52 jcr:primaryType="nt:unstructured" 
+        </c51></buttons>
+        </teaserhorizontal52><title53 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -226,13 +226,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title52><teaserhorizontal55
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="image" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c53
+        </title53><teaserhorizontal56
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="image" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c54
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c53><c54
+        </c54><c55
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c54></buttons>
-        </teaserhorizontal55><title56 jcr:primaryType="nt:unstructured" 
+        </c55></buttons>
+        </teaserhorizontal56><title57 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -240,13 +240,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title56><teaserhorizontal59
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="image" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c57
+        </title57><teaserhorizontal60
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="image" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c58
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c57><c58
+        </c58><c59
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c58></buttons>
-        </teaserhorizontal59><title60 jcr:primaryType="nt:unstructured" 
+        </c59></buttons>
+        </teaserhorizontal60><title61 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -254,13 +254,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title60><teaserhorizontal63
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="image" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c61
+        </title61><teaserhorizontal64
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="image" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c62
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c61><c62
+        </c62><c63
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c62></buttons>
-        </teaserhorizontal63><title64 jcr:primaryType="nt:unstructured" 
+        </c63></buttons>
+        </teaserhorizontal64><title65 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -268,13 +268,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title64><teaserhorizontal67
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="image" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c65
+        </title65><teaserhorizontal68
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="image" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c66
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c65><c66
+        </c66><c67
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c66></buttons>
-        </teaserhorizontal67><title68 jcr:primaryType="nt:unstructured" 
+        </c67></buttons>
+        </teaserhorizontal68><title69 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -282,13 +282,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title68><teaserhorizontal71
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="color" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="false" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c69
+        </title69><teaserhorizontal72
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="color" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="false" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c70
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c69><c70
+        </c70><c71
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c70></buttons>
-        </teaserhorizontal71><title72 jcr:primaryType="nt:unstructured" 
+        </c71></buttons>
+        </teaserhorizontal72><title73 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -296,13 +296,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title72><teaserhorizontal75
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="color" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="false" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c73
+        </title73><teaserhorizontal76
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="color" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="false" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c74
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c73><c74
+        </c74><c75
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c74></buttons>
-        </teaserhorizontal75><title76 jcr:primaryType="nt:unstructured" 
+        </c75></buttons>
+        </teaserhorizontal76><title77 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -310,13 +310,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title76><teaserhorizontal79
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="color" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="false" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c77
+        </title77><teaserhorizontal80
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="color" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="false" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c78
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c77><c78
+        </c78><c79
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c78></buttons>
-        </teaserhorizontal79><title80 jcr:primaryType="nt:unstructured" 
+        </c79></buttons>
+        </teaserhorizontal80><title81 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -324,13 +324,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title80><teaserhorizontal83
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="color" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="false" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c81
+        </title81><teaserhorizontal84
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="color" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="false" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c82
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c81><c82
+        </c82><c83
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c82></buttons>
-        </teaserhorizontal83><title84 jcr:primaryType="nt:unstructured" 
+        </c83></buttons>
+        </teaserhorizontal84><title85 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -338,13 +338,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title84><teaserhorizontal87
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="color" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="false" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c85
+        </title85><teaserhorizontal88
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="color" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="false" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c86
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c85><c86
+        </c86><c87
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c86></buttons>
-        </teaserhorizontal87><title88 jcr:primaryType="nt:unstructured" 
+        </c87></buttons>
+        </teaserhorizontal88><title89 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -352,13 +352,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title88><teaserhorizontal91
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="color" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="false" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c89
+        </title89><teaserhorizontal92
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="color" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="false" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c90
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c89><c90
+        </c90><c91
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c90></buttons>
-        </teaserhorizontal91><title92 jcr:primaryType="nt:unstructured" 
+        </c91></buttons>
+        </teaserhorizontal92><title93 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -366,13 +366,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title92><teaserhorizontal95
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="video" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c93
+        </title93><teaserhorizontal96
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="video" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c94
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c93><c94
+        </c94><c95
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c94></buttons>
-        </teaserhorizontal95><title96 jcr:primaryType="nt:unstructured" 
+        </c95></buttons>
+        </teaserhorizontal96><title97 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -380,13 +380,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title96><teaserhorizontal99
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="video" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c97
+        </title97><teaserhorizontal100
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="video" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark"><buttons jcr:primaryType="nt:unstructured"><c98
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c97><c98
+        </c98><c99
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c98></buttons>
-        </teaserhorizontal99><title100 jcr:primaryType="nt:unstructured" 
+        </c99></buttons>
+        </teaserhorizontal100><title101 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -394,13 +394,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title100><teaserhorizontal103
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="video" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c101
+        </title101><teaserhorizontal104
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="video" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c102
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c101><c102
+        </c102><c103
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c102></buttons>
-        </teaserhorizontal103><title104 jcr:primaryType="nt:unstructured" 
+        </c103></buttons>
+        </teaserhorizontal104><title105 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -408,13 +408,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title104><teaserhorizontal107
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="video" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c105
+        </title105><teaserhorizontal108
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="video" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light"><buttons jcr:primaryType="nt:unstructured"><c106
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c105><c106
+        </c106><c107
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c106></buttons>
-        </teaserhorizontal107><title108 jcr:primaryType="nt:unstructured" 
+        </c107></buttons>
+        </teaserhorizontal108><title109 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -422,13 +422,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title108><teaserhorizontal111
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="video" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c109
+        </title109><teaserhorizontal112
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" textwidth="60" backgroundtype="video" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c110
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c109><c110
+        </c110><c111
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c110></buttons>
-        </teaserhorizontal111><title112 jcr:primaryType="nt:unstructured" 
+        </c111></buttons>
+        </teaserhorizontal112><title113 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -436,14 +436,23 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Horizontal Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title112><teaserhorizontal115
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="video" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c113
+        </title113><teaserhorizontal116
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaserhorizontal" aligncontent="left" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="true" textwidth="60" backgroundtype="video" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" isprimary="false" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme=""><buttons jcr:primaryType="nt:unstructured"><c114
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c113><c114
+        </c114><c115
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c114></buttons>
-        </teaserhorizontal115>
-        </container116>
+        </c115></buttons>
+        </teaserhorizontal116>
+        </container117><pager118
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager118>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">

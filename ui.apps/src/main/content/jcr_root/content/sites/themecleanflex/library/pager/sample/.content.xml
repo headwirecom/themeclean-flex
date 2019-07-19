@@ -23,7 +23,7 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager
+        </clbreadcrumb><pager0
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -32,11 +32,11 @@
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager><container58
+        </pager0><container59
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
-            [object Object]<title0 jcr:primaryType="nt:unstructured" 
+            [object Object]<title1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -44,9 +44,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title0><pager1
+        </title1><pager2
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="dark" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" fullheight="true">
-        </pager1><title2 jcr:primaryType="nt:unstructured" 
+        </pager2><title3 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -54,9 +54,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title2><pager3
+        </title3><pager4
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="light" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" fullheight="false">
-        </pager3><title4 jcr:primaryType="nt:unstructured" 
+        </pager4><title5 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -64,9 +64,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title4><pager5
+        </title5><pager6
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="light" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" fullheight="true">
-        </pager5><title6 jcr:primaryType="nt:unstructured" 
+        </pager6><title7 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -74,9 +74,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title6><pager7
+        </title7><pager8
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" fullheight="false">
-        </pager7><title8 jcr:primaryType="nt:unstructured" 
+        </pager8><title9 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -84,9 +84,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title8><pager9
+        </title9><pager10
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" fullheight="true">
-        </pager9><title10 jcr:primaryType="nt:unstructured" 
+        </pager10><title11 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -94,9 +94,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title10><pager11
+        </title11><pager12
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="dark" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="false">
-        </pager11><title12 jcr:primaryType="nt:unstructured" 
+        </pager12><title13 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -104,9 +104,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title12><pager13
+        </title13><pager14
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="dark" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="true">
-        </pager13><title14 jcr:primaryType="nt:unstructured" 
+        </pager14><title15 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -114,9 +114,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title14><pager15
+        </title15><pager16
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="light" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="false">
-        </pager15><title16 jcr:primaryType="nt:unstructured" 
+        </pager16><title17 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -124,9 +124,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title16><pager17
+        </title17><pager18
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="light" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="true">
-        </pager17><title18 jcr:primaryType="nt:unstructured" 
+        </pager18><title19 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -134,9 +134,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title18><pager19
+        </title19><pager20
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="false">
-        </pager19><title20 jcr:primaryType="nt:unstructured" 
+        </pager20><title21 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -144,9 +144,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title20><pager21
+        </title21><pager22
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="true">
-        </pager21><title22 jcr:primaryType="nt:unstructured" 
+        </pager22><title23 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -154,9 +154,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title22><pager23
+        </title23><pager24
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="dark" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="false">
-        </pager23><title24 jcr:primaryType="nt:unstructured" 
+        </pager24><title25 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -164,9 +164,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title24><pager25
+        </title25><pager26
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="dark" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="true">
-        </pager25><title26 jcr:primaryType="nt:unstructured" 
+        </pager26><title27 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -174,9 +174,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title26><pager27
+        </title27><pager28
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="light" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="false">
-        </pager27><title28 jcr:primaryType="nt:unstructured" 
+        </pager28><title29 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -184,9 +184,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title28><pager29
+        </title29><pager30
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="light" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="true">
-        </pager29><title30 jcr:primaryType="nt:unstructured" 
+        </pager30><title31 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -194,9 +194,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title30><pager31
+        </title31><pager32
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="false">
-        </pager31><title32 jcr:primaryType="nt:unstructured" 
+        </pager32><title33 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -204,9 +204,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title32><pager33
+        </title33><pager34
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="true">
-        </pager33><title34 jcr:primaryType="nt:unstructured" 
+        </pager34><title35 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -214,9 +214,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title34><pager35
+        </title35><pager36
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="dark" toppadding="10" bottompadding="10" custombackground="false" fullheight="false">
-        </pager35><title36 jcr:primaryType="nt:unstructured" 
+        </pager36><title37 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -224,9 +224,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title36><pager37
+        </title37><pager38
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="dark" toppadding="10" bottompadding="10" custombackground="false" fullheight="true">
-        </pager37><title38 jcr:primaryType="nt:unstructured" 
+        </pager38><title39 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -234,9 +234,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title38><pager39
+        </title39><pager40
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="light" toppadding="10" bottompadding="10" custombackground="false" fullheight="false">
-        </pager39><title40 jcr:primaryType="nt:unstructured" 
+        </pager40><title41 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -244,9 +244,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title40><pager41
+        </title41><pager42
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="light" toppadding="10" bottompadding="10" custombackground="false" fullheight="true">
-        </pager41><title42 jcr:primaryType="nt:unstructured" 
+        </pager42><title43 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -254,9 +254,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title42><pager43
+        </title43><pager44
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="" toppadding="10" bottompadding="10" custombackground="false" fullheight="false">
-        </pager43><title44 jcr:primaryType="nt:unstructured" 
+        </pager44><title45 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -264,9 +264,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title44><pager45
+        </title45><pager46
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="" toppadding="10" bottompadding="10" custombackground="false" fullheight="true">
-        </pager45><title46 jcr:primaryType="nt:unstructured" 
+        </pager46><title47 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -274,9 +274,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title46><pager47
+        </title47><pager48
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="dark" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="false">
-        </pager47><title48 jcr:primaryType="nt:unstructured" 
+        </pager48><title49 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -284,9 +284,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title48><pager49
+        </title49><pager50
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="dark" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="true">
-        </pager49><title50 jcr:primaryType="nt:unstructured" 
+        </pager50><title51 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -294,9 +294,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title50><pager51
+        </title51><pager52
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="light" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="false">
-        </pager51><title52 jcr:primaryType="nt:unstructured" 
+        </pager52><title53 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -304,9 +304,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title52><pager53
+        </title53><pager54
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="light" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="true">
-        </pager53><title54 jcr:primaryType="nt:unstructured" 
+        </pager54><title55 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -314,9 +314,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title54><pager55
+        </title55><pager56
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="false">
-        </pager55><title56 jcr:primaryType="nt:unstructured" 
+        </pager56><title57 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -324,10 +324,19 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt; Pager Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title56><pager57
+        </title57><pager58
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager" prevlabel="&lt; Prev" nextlabel="Next &gt;" colorscheme="" toppadding="10" bottompadding="10" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="true">
-        </pager57>
-        </container58>
+        </pager58>
+        </container59><pager60
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager60>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">

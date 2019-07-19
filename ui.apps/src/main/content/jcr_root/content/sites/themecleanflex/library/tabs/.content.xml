@@ -23,7 +23,7 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager
+        </clbreadcrumb><pager0
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -32,12 +32,12 @@
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager><container13
+        </pager0><container14
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
             
-        <intro0 jcr:primaryType="nt:unstructured" 
+        <intro1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             bottompadding="25"
             toppadding="25"
@@ -48,8 +48,8 @@
             text="&lt;h1 id=&quot;tabs&quot;&gt;Tabs&lt;/h1&gt;
 &lt;p&gt;The Tabs component displays a list of content, but with only 1 active piece of content at a time.&lt;/p&gt;
 ">
-        </intro0>
-        <title1 jcr:primaryType="nt:unstructured" 
+        </intro1>
+        <title2 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -57,15 +57,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs With Media (Features)&lt;/h2&gt;">
-        </title1><tabs5
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="true" mediaposition="before" mediatype="image" mediawidth="33" mediaiconsize="200" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediatitle="Tropical sailing destination"><tabs jcr:primaryType="nt:unstructured"><c2
+        </title2><tabs6
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="true" mediaposition="before" mediatype="image" mediawidth="33" mediaiconsize="200" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediatitle="Tropical sailing destination"><tabs jcr:primaryType="nt:unstructured"><c3
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c2><c3
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c3><c4
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c4><c5
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c4></tabs>
-        </tabs5><title6 jcr:primaryType="nt:unstructured" 
+        </c5></tabs>
+        </tabs6><title7 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -73,15 +73,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs (Features)&lt;/h2&gt;">
-        </title6><tabs10
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200"><tabs jcr:primaryType="nt:unstructured"><c7
+        </title7><tabs11
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200"><tabs jcr:primaryType="nt:unstructured"><c8
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c7><c8
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c8><c9
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c9><c10
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c9></tabs>
-        </tabs10><title11 jcr:primaryType="nt:unstructured" 
+        </c10></tabs>
+        </tabs11><title12 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -89,10 +89,19 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs no default values (Empty)&lt;/h2&gt;">
-        </title11><tabs12
+        </title12><tabs13
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs"><tabs jcr:primaryType="nt:unstructured"></tabs>
-        </tabs12>
-        </container13>
+        </tabs13>
+        </container14><pager15
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager15>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">

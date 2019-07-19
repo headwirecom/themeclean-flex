@@ -23,7 +23,7 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager
+        </clbreadcrumb><pager0
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -32,11 +32,11 @@
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager><container145
+        </pager0><container146
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
-            [object Object]<title0 jcr:primaryType="nt:unstructured" 
+            [object Object]<title1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -44,15 +44,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title0><tabs4
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff80c0" color2="#e7e7e7" fullheight="true" backgroundtype="color" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c1
+        </title1><tabs5
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff80c0" color2="#e7e7e7" fullheight="true" backgroundtype="color" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c2
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c1><c2
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c2><c3
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c3><c4
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c3></tabs>
-        </tabs4><title5 jcr:primaryType="nt:unstructured" 
+        </c4></tabs>
+        </tabs5><title6 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -60,15 +60,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title5><tabs9
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff80c0" color2="#e7e7e7" fullheight="false" backgroundtype="color" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c6
+        </title6><tabs10
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff80c0" color2="#e7e7e7" fullheight="false" backgroundtype="color" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c7
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c6><c7
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c7><c8
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c8><c9
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c8></tabs>
-        </tabs9><title10 jcr:primaryType="nt:unstructured" 
+        </c9></tabs>
+        </tabs10><title11 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -76,15 +76,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title10><tabs14
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff80c0" color2="#e7e7e7" fullheight="true" backgroundtype="color" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c11
+        </title11><tabs15
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff80c0" color2="#e7e7e7" fullheight="true" backgroundtype="color" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c12
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c11><c12
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c12><c13
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c13><c14
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c13></tabs>
-        </tabs14><title15 jcr:primaryType="nt:unstructured" 
+        </c14></tabs>
+        </tabs15><title16 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -92,15 +92,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title15><tabs19
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff80c0" color2="#e7e7e7" fullheight="false" backgroundtype="color" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c16
+        </title16><tabs20
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff80c0" color2="#e7e7e7" fullheight="false" backgroundtype="color" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c17
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c16><c17
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c17><c18
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c18><c19
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c18></tabs>
-        </tabs19><title20 jcr:primaryType="nt:unstructured" 
+        </c19></tabs>
+        </tabs20><title21 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -108,15 +108,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title20><tabs24
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff80c0" color2="#e7e7e7" fullheight="true" backgroundtype="color" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c21
+        </title21><tabs25
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff80c0" color2="#e7e7e7" fullheight="true" backgroundtype="color" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c22
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c21><c22
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c22><c23
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c23><c24
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c23></tabs>
-        </tabs24><title25 jcr:primaryType="nt:unstructured" 
+        </c24></tabs>
+        </tabs25><title26 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -124,15 +124,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title25><tabs29
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff8040" color2="#0080ff" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c26
+        </title26><tabs30
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff8040" color2="#0080ff" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c27
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c26><c27
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c27><c28
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c28><c29
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c28></tabs>
-        </tabs29><title30 jcr:primaryType="nt:unstructured" 
+        </c29></tabs>
+        </tabs30><title31 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -140,15 +140,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title30><tabs34
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff8040" color2="#0080ff" fullheight="true" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c31
+        </title31><tabs35
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff8040" color2="#0080ff" fullheight="true" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c32
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c31><c32
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c32><c33
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c33><c34
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c33></tabs>
-        </tabs34><title35 jcr:primaryType="nt:unstructured" 
+        </c34></tabs>
+        </tabs35><title36 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -156,15 +156,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title35><tabs39
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff8040" color2="#0080ff" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c36
+        </title36><tabs40
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff8040" color2="#0080ff" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c37
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c36><c37
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c37><c38
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c38><c39
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c38></tabs>
-        </tabs39><title40 jcr:primaryType="nt:unstructured" 
+        </c39></tabs>
+        </tabs40><title41 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -172,15 +172,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title40><tabs44
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff8040" color2="#0080ff" fullheight="true" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c41
+        </title41><tabs45
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff8040" color2="#0080ff" fullheight="true" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c42
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c41><c42
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c42><c43
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c43><c44
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c43></tabs>
-        </tabs44><title45 jcr:primaryType="nt:unstructured" 
+        </c44></tabs>
+        </tabs45><title46 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -188,15 +188,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title45><tabs49
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff8040" color2="#0080ff" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c46
+        </title46><tabs50
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff8040" color2="#0080ff" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c47
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c46><c47
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c47><c48
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c48><c49
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c48></tabs>
-        </tabs49><title50 jcr:primaryType="nt:unstructured" 
+        </c49></tabs>
+        </tabs50><title51 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -204,15 +204,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title50><tabs54
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff8040" color2="#0080ff" fullheight="true" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c51
+        </title51><tabs55
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ff8040" color2="#0080ff" fullheight="true" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c52
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c51><c52
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c52><c53
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c53><c54
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c53></tabs>
-        </tabs54><title55 jcr:primaryType="nt:unstructured" 
+        </c54></tabs>
+        </tabs55><title56 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -220,15 +220,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title55><tabs59
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="image" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c56
+        </title56><tabs60
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="image" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c57
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c56><c57
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c57><c58
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c58><c59
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c58></tabs>
-        </tabs59><title60 jcr:primaryType="nt:unstructured" 
+        </c59></tabs>
+        </tabs60><title61 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -236,15 +236,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title60><tabs64
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="image" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c61
+        </title61><tabs65
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="image" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c62
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c61><c62
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c62><c63
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c63><c64
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c63></tabs>
-        </tabs64><title65 jcr:primaryType="nt:unstructured" 
+        </c64></tabs>
+        </tabs65><title66 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -252,15 +252,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title65><tabs69
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="image" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c66
+        </title66><tabs70
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="image" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c67
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c66><c67
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c67><c68
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c68><c69
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c68></tabs>
-        </tabs69><title70 jcr:primaryType="nt:unstructured" 
+        </c69></tabs>
+        </tabs70><title71 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -268,15 +268,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title70><tabs74
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="image" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c71
+        </title71><tabs75
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="image" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c72
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c71><c72
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c72><c73
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c73><c74
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c73></tabs>
-        </tabs74><title75 jcr:primaryType="nt:unstructured" 
+        </c74></tabs>
+        </tabs75><title76 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -284,15 +284,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title75><tabs79
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="image" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c76
+        </title76><tabs80
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="image" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c77
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c76><c77
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c77><c78
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c78><c79
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c78></tabs>
-        </tabs79><title80 jcr:primaryType="nt:unstructured" 
+        </c79></tabs>
+        </tabs80><title81 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -300,15 +300,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title80><tabs84
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="image" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c81
+        </title81><tabs85
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="image" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c82
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c81><c82
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c82><c83
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c83><c84
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c83></tabs>
-        </tabs84><title85 jcr:primaryType="nt:unstructured" 
+        </c84></tabs>
+        </tabs85><title86 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -316,15 +316,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title85><tabs89
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="false" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c86
+        </title86><tabs90
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="false" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c87
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c86><c87
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c87><c88
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c88><c89
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c88></tabs>
-        </tabs89><title90 jcr:primaryType="nt:unstructured" 
+        </c89></tabs>
+        </tabs90><title91 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -332,15 +332,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title90><tabs94
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="false" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c91
+        </title91><tabs95
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="false" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c92
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c91><c92
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c92><c93
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c93><c94
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c93></tabs>
-        </tabs94><title95 jcr:primaryType="nt:unstructured" 
+        </c94></tabs>
+        </tabs95><title96 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -348,15 +348,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title95><tabs99
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="false" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c96
+        </title96><tabs100
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="false" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c97
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c96><c97
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c97><c98
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c98><c99
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c98></tabs>
-        </tabs99><title100 jcr:primaryType="nt:unstructured" 
+        </c99></tabs>
+        </tabs100><title101 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -364,15 +364,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title100><tabs104
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="false" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c101
+        </title101><tabs105
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="false" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c102
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c101><c102
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c102><c103
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c103><c104
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c103></tabs>
-        </tabs104><title105 jcr:primaryType="nt:unstructured" 
+        </c104></tabs>
+        </tabs105><title106 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -380,15 +380,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title105><tabs109
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="false" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c106
+        </title106><tabs110
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="false" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c107
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c106><c107
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c107><c108
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c108><c109
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c108></tabs>
-        </tabs109><title110 jcr:primaryType="nt:unstructured" 
+        </c109></tabs>
+        </tabs110><title111 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -396,15 +396,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title110><tabs114
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="false" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c111
+        </title111><tabs115
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="gradient" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="false" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c112
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c111><c112
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c112><c113
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c113><c114
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c113></tabs>
-        </tabs114><title115 jcr:primaryType="nt:unstructured" 
+        </c114></tabs>
+        </tabs115><title116 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -412,15 +412,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title115><tabs119
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="video" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c116
+        </title116><tabs120
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="video" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c117
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c116><c117
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c117><c118
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c118><c119
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c118></tabs>
-        </tabs119><title120 jcr:primaryType="nt:unstructured" 
+        </c119></tabs>
+        </tabs120><title121 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -428,15 +428,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title120><tabs124
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="video" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c121
+        </title121><tabs125
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="video" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark"><tabs jcr:primaryType="nt:unstructured"><c122
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c121><c122
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c122><c123
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c123><c124
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c123></tabs>
-        </tabs124><title125 jcr:primaryType="nt:unstructured" 
+        </c124></tabs>
+        </tabs125><title126 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -444,15 +444,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title125><tabs129
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="video" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c126
+        </title126><tabs130
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="video" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c127
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c126><c127
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c127><c128
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c128><c129
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c128></tabs>
-        </tabs129><title130 jcr:primaryType="nt:unstructured" 
+        </c129></tabs>
+        </tabs130><title131 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -460,15 +460,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title130><tabs134
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="video" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c131
+        </title131><tabs135
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="video" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light"><tabs jcr:primaryType="nt:unstructured"><c132
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c131><c132
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c132><c133
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c133><c134
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c133></tabs>
-        </tabs134><title135 jcr:primaryType="nt:unstructured" 
+        </c134></tabs>
+        </tabs135><title136 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -476,15 +476,15 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title135><tabs139
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="video" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c136
+        </title136><tabs140
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="false" backgroundtype="video" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c137
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c136><c137
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c137><c138
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c138><c139
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c138></tabs>
-        </tabs139><title140 jcr:primaryType="nt:unstructured" 
+        </c139></tabs>
+        </tabs140><title141 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -492,16 +492,25 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Tabs Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title140><tabs144
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="video" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c141
+        </title141><tabs145
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/tabs" bgcolor="#ffffff" color2="#e7e7e7" fullheight="true" backgroundtype="video" bottompadding="40" toppadding="10" showmedia="false" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-clouds-daytime_small.jpg" mediaposition="before" mediawidth="33" mediaiconsize="200" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme=""><tabs jcr:primaryType="nt:unstructured"><c142
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c141><c142
-        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
         </c142><c143
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c143><c144
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Again when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="About Us">
-        </c143></tabs>
-        </tabs144>
-        </container145>
+        </c144></tabs>
+        </tabs145>
+        </container146><pager147
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager147>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">

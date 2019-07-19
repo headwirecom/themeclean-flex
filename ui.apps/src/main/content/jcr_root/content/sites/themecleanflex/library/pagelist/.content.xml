@@ -23,7 +23,7 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager
+        </clbreadcrumb><pager0
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -32,12 +32,12 @@
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager><container5
+        </pager0><container6
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
             
-        <intro0 jcr:primaryType="nt:unstructured" 
+        <intro1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             bottompadding="25"
             toppadding="25"
@@ -48,8 +48,8 @@
             text="&lt;h1 id=&quot;pagelist&quot;&gt;Pagelist&lt;/h1&gt;
 &lt;p&gt;The Page List component displays the hierarchy of the current site to a given depth.&lt;/p&gt;
 ">
-        </intro0>
-        <title1 jcr:primaryType="nt:unstructured" 
+        </intro1>
+        <title2 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -57,9 +57,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List (Features)&lt;/h2&gt;">
-        </title1><pagelist2
+        </title2><pagelist3
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2">
-        </pagelist2><title3 jcr:primaryType="nt:unstructured" 
+        </pagelist3><title4 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -67,10 +67,19 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List no default values (Empty)&lt;/h2&gt;">
-        </title3><pagelist4
+        </title4><pagelist5
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist">
-        </pagelist4>
-        </container5>
+        </pagelist5>
+        </container6><pager7
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager7>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">

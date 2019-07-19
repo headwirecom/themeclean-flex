@@ -23,7 +23,7 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager
+        </clbreadcrumb><pager0
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -32,11 +32,11 @@
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager><container116
+        </pager0><container117
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
-            [object Object]<title0 jcr:primaryType="nt:unstructured" 
+            [object Object]<title1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -44,13 +44,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title0><accordion3
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c1
+        </title1><accordion4
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c2
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c1><c2
+        </c2><c3
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c2></accordiontoggle>
-        </accordion3><title4 jcr:primaryType="nt:unstructured" 
+        </c3></accordiontoggle>
+        </accordion4><title5 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -58,13 +58,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title4><accordion7
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c5
+        </title5><accordion8
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c6
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c5><c6
+        </c6><c7
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c6></accordiontoggle>
-        </accordion7><title8 jcr:primaryType="nt:unstructured" 
+        </c7></accordiontoggle>
+        </accordion8><title9 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -72,13 +72,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title8><accordion11
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c9
+        </title9><accordion12
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c10
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c9><c10
+        </c10><c11
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c10></accordiontoggle>
-        </accordion11><title12 jcr:primaryType="nt:unstructured" 
+        </c11></accordiontoggle>
+        </accordion12><title13 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -86,13 +86,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title12><accordion15
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c13
+        </title13><accordion16
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c14
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c13><c14
+        </c14><c15
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c14></accordiontoggle>
-        </accordion15><title16 jcr:primaryType="nt:unstructured" 
+        </c15></accordiontoggle>
+        </accordion16><title17 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -100,13 +100,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title16><accordion19
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c17
+        </title17><accordion20
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c18
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c17><c18
+        </c18><c19
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c18></accordiontoggle>
-        </accordion19><title20 jcr:primaryType="nt:unstructured" 
+        </c19></accordiontoggle>
+        </accordion20><title21 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -114,13 +114,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title20><accordion23
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c21
+        </title21><accordion24
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c22
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c21><c22
+        </c22><c23
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c22></accordiontoggle>
-        </accordion23><title24 jcr:primaryType="nt:unstructured" 
+        </c23></accordiontoggle>
+        </accordion24><title25 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -128,13 +128,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title24><accordion27
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c25
+        </title25><accordion28
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c26
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c25><c26
+        </c26><c27
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c26></accordiontoggle>
-        </accordion27><title28 jcr:primaryType="nt:unstructured" 
+        </c27></accordiontoggle>
+        </accordion28><title29 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -142,13 +142,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title28><accordion31
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c29
+        </title29><accordion32
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c30
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c29><c30
+        </c30><c31
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c30></accordiontoggle>
-        </accordion31><title32 jcr:primaryType="nt:unstructured" 
+        </c31></accordiontoggle>
+        </accordion32><title33 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -156,13 +156,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title32><accordion35
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c33
+        </title33><accordion36
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c34
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c33><c34
+        </c34><c35
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c34></accordiontoggle>
-        </accordion35><title36 jcr:primaryType="nt:unstructured" 
+        </c35></accordiontoggle>
+        </accordion36><title37 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -170,13 +170,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title36><accordion39
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c37
+        </title37><accordion40
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c38
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c37><c38
+        </c38><c39
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c38></accordiontoggle>
-        </accordion39><title40 jcr:primaryType="nt:unstructured" 
+        </c39></accordiontoggle>
+        </accordion40><title41 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -184,13 +184,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title40><accordion43
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c41
+        </title41><accordion44
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c42
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c41><c42
+        </c42><c43
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c42></accordiontoggle>
-        </accordion43><title44 jcr:primaryType="nt:unstructured" 
+        </c43></accordiontoggle>
+        </accordion44><title45 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -198,13 +198,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title44><accordion47
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="image" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c45
+        </title45><accordion48
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="image" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c46
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c45><c46
+        </c46><c47
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c46></accordiontoggle>
-        </accordion47><title48 jcr:primaryType="nt:unstructured" 
+        </c47></accordiontoggle>
+        </accordion48><title49 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -212,13 +212,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title48><accordion51
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="image" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c49
+        </title49><accordion52
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="image" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c50
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c49><c50
+        </c50><c51
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c50></accordiontoggle>
-        </accordion51><title52 jcr:primaryType="nt:unstructured" 
+        </c51></accordiontoggle>
+        </accordion52><title53 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -226,13 +226,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title52><accordion55
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="image" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c53
+        </title53><accordion56
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="image" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c54
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c53><c54
+        </c54><c55
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c54></accordiontoggle>
-        </accordion55><title56 jcr:primaryType="nt:unstructured" 
+        </c55></accordiontoggle>
+        </accordion56><title57 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -240,13 +240,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title56><accordion59
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="image" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c57
+        </title57><accordion60
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="image" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c58
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c57><c58
+        </c58><c59
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c58></accordiontoggle>
-        </accordion59><title60 jcr:primaryType="nt:unstructured" 
+        </c59></accordiontoggle>
+        </accordion60><title61 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -254,13 +254,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title60><accordion63
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="image" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c61
+        </title61><accordion64
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="image" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c62
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c61><c62
+        </c62><c63
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c62></accordiontoggle>
-        </accordion63><title64 jcr:primaryType="nt:unstructured" 
+        </c63></accordiontoggle>
+        </accordion64><title65 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -268,13 +268,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title64><accordion67
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="image" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c65
+        </title65><accordion68
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="image" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c66
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c65><c66
+        </c66><c67
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c66></accordiontoggle>
-        </accordion67><title68 jcr:primaryType="nt:unstructured" 
+        </c67></accordiontoggle>
+        </accordion68><title69 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -282,13 +282,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title68><accordion71
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="false" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c69
+        </title69><accordion72
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="false" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c70
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c69><c70
+        </c70><c71
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c70></accordiontoggle>
-        </accordion71><title72 jcr:primaryType="nt:unstructured" 
+        </c71></accordiontoggle>
+        </accordion72><title73 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -296,13 +296,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title72><accordion75
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="false" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c73
+        </title73><accordion76
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="false" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c74
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c73><c74
+        </c74><c75
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c74></accordiontoggle>
-        </accordion75><title76 jcr:primaryType="nt:unstructured" 
+        </c75></accordiontoggle>
+        </accordion76><title77 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -310,13 +310,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title76><accordion79
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="false" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c77
+        </title77><accordion80
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="false" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c78
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c77><c78
+        </c78><c79
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c78></accordiontoggle>
-        </accordion79><title80 jcr:primaryType="nt:unstructured" 
+        </c79></accordiontoggle>
+        </accordion80><title81 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -324,13 +324,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title80><accordion83
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="false" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c81
+        </title81><accordion84
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="false" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c82
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c81><c82
+        </c82><c83
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c82></accordiontoggle>
-        </accordion83><title84 jcr:primaryType="nt:unstructured" 
+        </c83></accordiontoggle>
+        </accordion84><title85 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -338,13 +338,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title84><accordion87
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="false" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c85
+        </title85><accordion88
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="false" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c86
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c85><c86
+        </c86><c87
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c86></accordiontoggle>
-        </accordion87><title88 jcr:primaryType="nt:unstructured" 
+        </c87></accordiontoggle>
+        </accordion88><title89 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -352,13 +352,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title88><accordion91
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="false" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c89
+        </title89><accordion92
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="false" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c90
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c89><c90
+        </c90><c91
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c90></accordiontoggle>
-        </accordion91><title92 jcr:primaryType="nt:unstructured" 
+        </c91></accordiontoggle>
+        </accordion92><title93 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -366,13 +366,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title92><accordion95
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="video" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c93
+        </title93><accordion96
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="video" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c94
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c93><c94
+        </c94><c95
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c94></accordiontoggle>
-        </accordion95><title96 jcr:primaryType="nt:unstructured" 
+        </c95></accordiontoggle>
+        </accordion96><title97 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -380,13 +380,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title96><accordion99
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="video" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c97
+        </title97><accordion100
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="video" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark"><accordiontoggle jcr:primaryType="nt:unstructured"><c98
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c97><c98
+        </c98><c99
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c98></accordiontoggle>
-        </accordion99><title100 jcr:primaryType="nt:unstructured" 
+        </c99></accordiontoggle>
+        </accordion100><title101 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -394,13 +394,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title100><accordion103
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="video" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c101
+        </title101><accordion104
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="video" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c102
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c101><c102
+        </c102><c103
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c102></accordiontoggle>
-        </accordion103><title104 jcr:primaryType="nt:unstructured" 
+        </c103></accordiontoggle>
+        </accordion104><title105 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -408,13 +408,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title104><accordion107
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="video" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c105
+        </title105><accordion108
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="video" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light"><accordiontoggle jcr:primaryType="nt:unstructured"><c106
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c105><c106
+        </c106><c107
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c106></accordiontoggle>
-        </accordion107><title108 jcr:primaryType="nt:unstructured" 
+        </c107></accordiontoggle>
+        </accordion108><title109 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -422,13 +422,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title108><accordion111
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="video" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c109
+        </title109><accordion112
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="video" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c110
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c109><c110
+        </c110><c111
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c110></accordiontoggle>
-        </accordion111><title112 jcr:primaryType="nt:unstructured" 
+        </c111></accordiontoggle>
+        </accordion112><title113 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -436,14 +436,23 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Toggle With Media Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title112><accordion115
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="video" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c113
+        </title113><accordion116
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="video" bgcolor="#ffffff" color2="#ffffff" fullheight="true" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme=""><accordiontoggle jcr:primaryType="nt:unstructured"><c114
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
-        </c113><c114
+        </c114><c115
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
-        </c114></accordiontoggle>
-        </accordion115>
-        </container116>
+        </c115></accordiontoggle>
+        </accordion116>
+        </container117><pager118
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager118>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">

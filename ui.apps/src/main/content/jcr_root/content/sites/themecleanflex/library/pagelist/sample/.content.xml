@@ -23,7 +23,7 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager
+        </clbreadcrumb><pager0
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -32,11 +32,11 @@
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager><container58
+        </pager0><container59
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
-            [object Object]<title0 jcr:primaryType="nt:unstructured" 
+            [object Object]<title1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -44,9 +44,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title0><pagelist1
+        </title1><pagelist2
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="dark" fullheight="true">
-        </pagelist1><title2 jcr:primaryType="nt:unstructured" 
+        </pagelist2><title3 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -54,9 +54,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title2><pagelist3
+        </title3><pagelist4
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light" fullheight="false">
-        </pagelist3><title4 jcr:primaryType="nt:unstructured" 
+        </pagelist4><title5 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -64,9 +64,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title4><pagelist5
+        </title5><pagelist6
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light" fullheight="true">
-        </pagelist5><title6 jcr:primaryType="nt:unstructured" 
+        </pagelist6><title7 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -74,9 +74,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title6><pagelist7
+        </title7><pagelist8
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="" fullheight="false">
-        </pagelist7><title8 jcr:primaryType="nt:unstructured" 
+        </pagelist8><title9 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -84,9 +84,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title8><pagelist9
+        </title9><pagelist10
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="" fullheight="true">
-        </pagelist9><title10 jcr:primaryType="nt:unstructured" 
+        </pagelist10><title11 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -94,9 +94,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title10><pagelist11
+        </title11><pagelist12
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="dark" fullheight="false">
-        </pagelist11><title12 jcr:primaryType="nt:unstructured" 
+        </pagelist12><title13 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -104,9 +104,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title12><pagelist13
+        </title13><pagelist14
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="dark" fullheight="true">
-        </pagelist13><title14 jcr:primaryType="nt:unstructured" 
+        </pagelist14><title15 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -114,9 +114,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title14><pagelist15
+        </title15><pagelist16
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="light" fullheight="false">
-        </pagelist15><title16 jcr:primaryType="nt:unstructured" 
+        </pagelist16><title17 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -124,9 +124,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title16><pagelist17
+        </title17><pagelist18
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="light" fullheight="true">
-        </pagelist17><title18 jcr:primaryType="nt:unstructured" 
+        </pagelist18><title19 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -134,9 +134,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title18><pagelist19
+        </title19><pagelist20
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="" fullheight="false">
-        </pagelist19><title20 jcr:primaryType="nt:unstructured" 
+        </pagelist20><title21 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -144,9 +144,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title20><pagelist21
+        </title21><pagelist22
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="" fullheight="true">
-        </pagelist21><title22 jcr:primaryType="nt:unstructured" 
+        </pagelist22><title23 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -154,9 +154,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title22><pagelist23
+        </title23><pagelist24
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="false">
-        </pagelist23><title24 jcr:primaryType="nt:unstructured" 
+        </pagelist24><title25 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -164,9 +164,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title24><pagelist25
+        </title25><pagelist26
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="true">
-        </pagelist25><title26 jcr:primaryType="nt:unstructured" 
+        </pagelist26><title27 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -174,9 +174,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title26><pagelist27
+        </title27><pagelist28
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="false">
-        </pagelist27><title28 jcr:primaryType="nt:unstructured" 
+        </pagelist28><title29 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -184,9 +184,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title28><pagelist29
+        </title29><pagelist30
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="true">
-        </pagelist29><title30 jcr:primaryType="nt:unstructured" 
+        </pagelist30><title31 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -194,9 +194,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title30><pagelist31
+        </title31><pagelist32
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="false">
-        </pagelist31><title32 jcr:primaryType="nt:unstructured" 
+        </pagelist32><title33 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -204,9 +204,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title32><pagelist33
+        </title33><pagelist34
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="true">
-        </pagelist33><title34 jcr:primaryType="nt:unstructured" 
+        </pagelist34><title35 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -214,9 +214,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title34><pagelist35
+        </title35><pagelist36
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="false" colorscheme="dark" fullheight="false">
-        </pagelist35><title36 jcr:primaryType="nt:unstructured" 
+        </pagelist36><title37 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -224,9 +224,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title36><pagelist37
+        </title37><pagelist38
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="false" colorscheme="dark" fullheight="true">
-        </pagelist37><title38 jcr:primaryType="nt:unstructured" 
+        </pagelist38><title39 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -234,9 +234,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title38><pagelist39
+        </title39><pagelist40
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="false" colorscheme="light" fullheight="false">
-        </pagelist39><title40 jcr:primaryType="nt:unstructured" 
+        </pagelist40><title41 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -244,9 +244,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title40><pagelist41
+        </title41><pagelist42
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="false" colorscheme="light" fullheight="true">
-        </pagelist41><title42 jcr:primaryType="nt:unstructured" 
+        </pagelist42><title43 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -254,9 +254,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title42><pagelist43
+        </title43><pagelist44
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="false" colorscheme="" fullheight="false">
-        </pagelist43><title44 jcr:primaryType="nt:unstructured" 
+        </pagelist44><title45 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -264,9 +264,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title44><pagelist45
+        </title45><pagelist46
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="false" colorscheme="" fullheight="true">
-        </pagelist45><title46 jcr:primaryType="nt:unstructured" 
+        </pagelist46><title47 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -274,9 +274,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title46><pagelist47
+        </title47><pagelist48
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="false">
-        </pagelist47><title48 jcr:primaryType="nt:unstructured" 
+        </pagelist48><title49 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -284,9 +284,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title48><pagelist49
+        </title49><pagelist50
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="true">
-        </pagelist49><title50 jcr:primaryType="nt:unstructured" 
+        </pagelist50><title51 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -294,9 +294,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title50><pagelist51
+        </title51><pagelist52
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="false">
-        </pagelist51><title52 jcr:primaryType="nt:unstructured" 
+        </pagelist52><title53 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -304,9 +304,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title52><pagelist53
+        </title53><pagelist54
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="true">
-        </pagelist53><title54 jcr:primaryType="nt:unstructured" 
+        </pagelist54><title55 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -314,9 +314,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title54><pagelist55
+        </title55><pagelist56
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="false">
-        </pagelist55><title56 jcr:primaryType="nt:unstructured" 
+        </pagelist56><title57 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -324,10 +324,19 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Page List Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title56><pagelist57
+        </title57><pagelist58
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pagelist" bottompadding="20" toppadding="20" rootpage="/content/sites/themecleanflex" levels="2" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="true">
-        </pagelist57>
-        </container58>
+        </pagelist58>
+        </container59><pager60
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager60>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">

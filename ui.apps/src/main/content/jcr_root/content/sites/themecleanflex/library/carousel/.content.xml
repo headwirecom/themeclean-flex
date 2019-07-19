@@ -23,7 +23,7 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager
+        </clbreadcrumb><pager0
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -32,12 +32,12 @@
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager><container8
+        </pager0><container9
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
             
-        <intro0 jcr:primaryType="nt:unstructured" 
+        <intro1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             bottompadding="25"
             toppadding="25"
@@ -48,8 +48,8 @@
             text="&lt;h1 id=&quot;carousel&quot;&gt;Carousel&lt;/h1&gt;
 &lt;p&gt;The Carousel components is used for displaying a slideshow of images.&lt;/p&gt;
 ">
-        </intro0>
-        <title1 jcr:primaryType="nt:unstructured" 
+        </intro1>
+        <title2 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -57,18 +57,18 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Carousel (Features)&lt;/h2&gt;">
-        </title1><carousel5
+        </title2><carousel6
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
 <toppadding jcr:primaryType="nt:unstructured"></toppadding>
 <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-<slides jcr:primaryType="nt:unstructured"><c2
+<slides jcr:primaryType="nt:unstructured"><c3
         jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
-        </c2><c3
-        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
         </c3><c4
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c4><c5
         jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
-        </c4></slides>
-        </carousel5><title6 jcr:primaryType="nt:unstructured" 
+        </c5></slides>
+        </carousel6><title7 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -76,10 +76,19 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Carousel empty (Empty)&lt;/h2&gt;">
-        </title6><carousel7
+        </title7><carousel8
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel"><slides jcr:primaryType="nt:unstructured"></slides>
-        </carousel7>
-        </container8>
+        </carousel8>
+        </container9><pager10
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager10>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">

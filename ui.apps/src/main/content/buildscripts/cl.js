@@ -62,6 +62,7 @@ function buildPage(target, name, samples, readme, variations) {
 
     const samplesContent = samples.reduce( (val, sample) => val + outSample(name,sample), readmeContent )
     out.write(clfrags.container('main', samplesContent));
+    out.write(clfrags.pager());
     out.write(clfrags.footer());
     out.close();
     buildVariationPages(target, name, samples, variations);
@@ -82,6 +83,7 @@ function buildVariationPages(target, name, samples, variations) {
         out.write(clfrags.pager());
         const samplesContent = variations.reduce( (val, variation) => val + outSample(name,sample,variation));
         out.write(clfrags.container('main', samplesContent));
+        out.write(clfrags.pager());
         out.write(clfrags.footer());
         out.close();
     });
@@ -107,6 +109,7 @@ function buildIndexPage(target, pages) {
     mainContent += clfrags.cards(cards);
 
     out.write(clfrags.container('main',mainContent));
+    out.write(clfrags.pager());
     out.write(clfrags.footer());
     out.close();
 }

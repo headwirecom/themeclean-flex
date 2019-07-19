@@ -23,7 +23,7 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager
+        </clbreadcrumb><pager0
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -32,11 +32,11 @@
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager><container58
+        </pager0><container59
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
-            [object Object]<title0 jcr:primaryType="nt:unstructured" 
+            [object Object]<title1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -44,9 +44,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title0><mediablock1
+        </title1><mediablock2
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color" custombackground="true" bgsize="cover" bgcolor="#ff80c0" colorscheme="dark" fullheight="true">
-        </mediablock1><title2 jcr:primaryType="nt:unstructured" 
+        </mediablock2><title3 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -54,9 +54,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title2><mediablock3
+        </title3><mediablock4
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color" custombackground="true" bgsize="cover" bgcolor="#ff80c0" colorscheme="light" fullheight="false">
-        </mediablock3><title4 jcr:primaryType="nt:unstructured" 
+        </mediablock4><title5 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -64,9 +64,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title4><mediablock5
+        </title5><mediablock6
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color" custombackground="true" bgsize="cover" bgcolor="#ff80c0" colorscheme="light" fullheight="true">
-        </mediablock5><title6 jcr:primaryType="nt:unstructured" 
+        </mediablock6><title7 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -74,9 +74,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title6><mediablock7
+        </title7><mediablock8
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color" custombackground="true" bgsize="cover" bgcolor="#ff80c0" colorscheme="" fullheight="false">
-        </mediablock7><title8 jcr:primaryType="nt:unstructured" 
+        </mediablock8><title9 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -84,9 +84,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title8><mediablock9
+        </title9><mediablock10
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color" custombackground="true" bgsize="cover" bgcolor="#ff80c0" colorscheme="" fullheight="true">
-        </mediablock9><title10 jcr:primaryType="nt:unstructured" 
+        </mediablock10><title11 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -94,9 +94,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title10><mediablock11
+        </title11><mediablock12
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="gradient" custombackground="true" bgsize="cover" bgcolor="#ff8040" color2="#0080ff" colorscheme="dark" fullheight="false">
-        </mediablock11><title12 jcr:primaryType="nt:unstructured" 
+        </mediablock12><title13 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -104,9 +104,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title12><mediablock13
+        </title13><mediablock14
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="gradient" custombackground="true" bgsize="cover" bgcolor="#ff8040" color2="#0080ff" colorscheme="dark" fullheight="true">
-        </mediablock13><title14 jcr:primaryType="nt:unstructured" 
+        </mediablock14><title15 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -114,9 +114,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title14><mediablock15
+        </title15><mediablock16
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="gradient" custombackground="true" bgsize="cover" bgcolor="#ff8040" color2="#0080ff" colorscheme="light" fullheight="false">
-        </mediablock15><title16 jcr:primaryType="nt:unstructured" 
+        </mediablock16><title17 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -124,9 +124,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title16><mediablock17
+        </title17><mediablock18
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="gradient" custombackground="true" bgsize="cover" bgcolor="#ff8040" color2="#0080ff" colorscheme="light" fullheight="true">
-        </mediablock17><title18 jcr:primaryType="nt:unstructured" 
+        </mediablock18><title19 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -134,9 +134,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title18><mediablock19
+        </title19><mediablock20
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="gradient" custombackground="true" bgsize="cover" bgcolor="#ff8040" color2="#0080ff" colorscheme="" fullheight="false">
-        </mediablock19><title20 jcr:primaryType="nt:unstructured" 
+        </mediablock20><title21 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -144,9 +144,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title20><mediablock21
+        </title21><mediablock22
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="gradient" custombackground="true" bgsize="cover" bgcolor="#ff8040" color2="#0080ff" colorscheme="" fullheight="true">
-        </mediablock21><title22 jcr:primaryType="nt:unstructured" 
+        </mediablock22><title23 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -154,9 +154,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title22><mediablock23
+        </title23><mediablock24
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="image" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="false">
-        </mediablock23><title24 jcr:primaryType="nt:unstructured" 
+        </mediablock24><title25 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -164,9 +164,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title24><mediablock25
+        </title25><mediablock26
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="image" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="true">
-        </mediablock25><title26 jcr:primaryType="nt:unstructured" 
+        </mediablock26><title27 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -174,9 +174,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title26><mediablock27
+        </title27><mediablock28
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="image" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="false">
-        </mediablock27><title28 jcr:primaryType="nt:unstructured" 
+        </mediablock28><title29 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -184,9 +184,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title28><mediablock29
+        </title29><mediablock30
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="image" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="true">
-        </mediablock29><title30 jcr:primaryType="nt:unstructured" 
+        </mediablock30><title31 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -194,9 +194,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title30><mediablock31
+        </title31><mediablock32
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="image" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="false">
-        </mediablock31><title32 jcr:primaryType="nt:unstructured" 
+        </mediablock32><title33 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -204,9 +204,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title32><mediablock33
+        </title33><mediablock34
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="image" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="true">
-        </mediablock33><title34 jcr:primaryType="nt:unstructured" 
+        </mediablock34><title35 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -214,9 +214,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title34><mediablock35
+        </title35><mediablock36
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color" custombackground="false" colorscheme="dark" fullheight="false">
-        </mediablock35><title36 jcr:primaryType="nt:unstructured" 
+        </mediablock36><title37 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -224,9 +224,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title36><mediablock37
+        </title37><mediablock38
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color" custombackground="false" colorscheme="dark" fullheight="true">
-        </mediablock37><title38 jcr:primaryType="nt:unstructured" 
+        </mediablock38><title39 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -234,9 +234,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title38><mediablock39
+        </title39><mediablock40
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color" custombackground="false" colorscheme="light" fullheight="false">
-        </mediablock39><title40 jcr:primaryType="nt:unstructured" 
+        </mediablock40><title41 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -244,9 +244,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title40><mediablock41
+        </title41><mediablock42
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color" custombackground="false" colorscheme="light" fullheight="true">
-        </mediablock41><title42 jcr:primaryType="nt:unstructured" 
+        </mediablock42><title43 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -254,9 +254,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title42><mediablock43
+        </title43><mediablock44
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color" custombackground="false" colorscheme="" fullheight="false">
-        </mediablock43><title44 jcr:primaryType="nt:unstructured" 
+        </mediablock44><title45 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -264,9 +264,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title44><mediablock45
+        </title45><mediablock46
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color" custombackground="false" colorscheme="" fullheight="true">
-        </mediablock45><title46 jcr:primaryType="nt:unstructured" 
+        </mediablock46><title47 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -274,9 +274,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title46><mediablock47
+        </title47><mediablock48
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="video" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="false">
-        </mediablock47><title48 jcr:primaryType="nt:unstructured" 
+        </mediablock48><title49 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -284,9 +284,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title48><mediablock49
+        </title49><mediablock50
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="video" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="true">
-        </mediablock49><title50 jcr:primaryType="nt:unstructured" 
+        </mediablock50><title51 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -294,9 +294,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title50><mediablock51
+        </title51><mediablock52
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="video" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="false">
-        </mediablock51><title52 jcr:primaryType="nt:unstructured" 
+        </mediablock52><title53 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -304,9 +304,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title52><mediablock53
+        </title53><mediablock54
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="video" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="true">
-        </mediablock53><title54 jcr:primaryType="nt:unstructured" 
+        </mediablock54><title55 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -314,9 +314,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title54><mediablock55
+        </title55><mediablock56
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="video" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="false">
-        </mediablock55><title56 jcr:primaryType="nt:unstructured" 
+        </mediablock56><title57 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -324,10 +324,19 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Image Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title56><mediablock57
+        </title57><mediablock58
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/mediablock" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="video" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="true">
-        </mediablock57>
-        </container58>
+        </mediablock58>
+        </container59><pager60
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager60>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">

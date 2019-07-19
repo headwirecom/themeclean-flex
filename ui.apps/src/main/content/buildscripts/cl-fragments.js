@@ -113,7 +113,7 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
     },
 
     pager() {
-        return `<pager
+        return `<pager${idx}
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -122,7 +122,7 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager>`;
+        </pager${idx++}>`;
         // return this.text('<p><a href="/content/sites/themecleanflex/library.html">component library home</a></p>');
     },
 

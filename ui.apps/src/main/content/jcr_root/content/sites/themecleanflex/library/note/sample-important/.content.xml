@@ -23,7 +23,7 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager
+        </clbreadcrumb><pager0
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -32,11 +32,11 @@
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager><container58
+        </pager0><container59
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
-            [object Object]<title0 jcr:primaryType="nt:unstructured" 
+            [object Object]<title1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -44,9 +44,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title0><note1
+        </title1><note2
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="dark" fullheight="true">
-        </note1><title2 jcr:primaryType="nt:unstructured" 
+        </note2><title3 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -54,9 +54,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title2><note3
+        </title3><note4
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light" fullheight="false">
-        </note3><title4 jcr:primaryType="nt:unstructured" 
+        </note4><title5 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -64,9 +64,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title4><note5
+        </title5><note6
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light" fullheight="true">
-        </note5><title6 jcr:primaryType="nt:unstructured" 
+        </note6><title7 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -74,9 +74,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title6><note7
+        </title7><note8
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="" fullheight="false">
-        </note7><title8 jcr:primaryType="nt:unstructured" 
+        </note8><title9 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -84,9 +84,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title8><note9
+        </title9><note10
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="" fullheight="true">
-        </note9><title10 jcr:primaryType="nt:unstructured" 
+        </note10><title11 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -94,9 +94,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title10><note11
+        </title11><note12
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="dark" fullheight="false">
-        </note11><title12 jcr:primaryType="nt:unstructured" 
+        </note12><title13 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -104,9 +104,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title12><note13
+        </title13><note14
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="dark" fullheight="true">
-        </note13><title14 jcr:primaryType="nt:unstructured" 
+        </note14><title15 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -114,9 +114,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title14><note15
+        </title15><note16
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="light" fullheight="false">
-        </note15><title16 jcr:primaryType="nt:unstructured" 
+        </note16><title17 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -124,9 +124,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title16><note17
+        </title17><note18
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="light" fullheight="true">
-        </note17><title18 jcr:primaryType="nt:unstructured" 
+        </note18><title19 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -134,9 +134,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title18><note19
+        </title19><note20
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="" fullheight="false">
-        </note19><title20 jcr:primaryType="nt:unstructured" 
+        </note20><title21 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -144,9 +144,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title20><note21
+        </title21><note22
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="" fullheight="true">
-        </note21><title22 jcr:primaryType="nt:unstructured" 
+        </note22><title23 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -154,9 +154,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title22><note23
+        </title23><note24
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="false">
-        </note23><title24 jcr:primaryType="nt:unstructured" 
+        </note24><title25 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -164,9 +164,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title24><note25
+        </title25><note26
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="true">
-        </note25><title26 jcr:primaryType="nt:unstructured" 
+        </note26><title27 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -174,9 +174,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title26><note27
+        </title27><note28
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="false">
-        </note27><title28 jcr:primaryType="nt:unstructured" 
+        </note28><title29 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -184,9 +184,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title28><note29
+        </title29><note30
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="true">
-        </note29><title30 jcr:primaryType="nt:unstructured" 
+        </note30><title31 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -194,9 +194,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title30><note31
+        </title31><note32
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="false">
-        </note31><title32 jcr:primaryType="nt:unstructured" 
+        </note32><title33 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -204,9 +204,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title32><note33
+        </title33><note34
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="true">
-        </note33><title34 jcr:primaryType="nt:unstructured" 
+        </note34><title35 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -214,9 +214,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title34><note35
+        </title35><note36
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="false" colorscheme="dark" fullheight="false">
-        </note35><title36 jcr:primaryType="nt:unstructured" 
+        </note36><title37 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -224,9 +224,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title36><note37
+        </title37><note38
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="false" colorscheme="dark" fullheight="true">
-        </note37><title38 jcr:primaryType="nt:unstructured" 
+        </note38><title39 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -234,9 +234,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title38><note39
+        </title39><note40
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="false" colorscheme="light" fullheight="false">
-        </note39><title40 jcr:primaryType="nt:unstructured" 
+        </note40><title41 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -244,9 +244,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title40><note41
+        </title41><note42
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="false" colorscheme="light" fullheight="true">
-        </note41><title42 jcr:primaryType="nt:unstructured" 
+        </note42><title43 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -254,9 +254,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title42><note43
+        </title43><note44
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="false" colorscheme="" fullheight="false">
-        </note43><title44 jcr:primaryType="nt:unstructured" 
+        </note44><title45 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -264,9 +264,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title44><note45
+        </title45><note46
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="false" colorscheme="" fullheight="true">
-        </note45><title46 jcr:primaryType="nt:unstructured" 
+        </note46><title47 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -274,9 +274,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title46><note47
+        </title47><note48
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="false">
-        </note47><title48 jcr:primaryType="nt:unstructured" 
+        </note48><title49 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -284,9 +284,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title48><note49
+        </title49><note50
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="true">
-        </note49><title50 jcr:primaryType="nt:unstructured" 
+        </note50><title51 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -294,9 +294,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title50><note51
+        </title51><note52
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="false">
-        </note51><title52 jcr:primaryType="nt:unstructured" 
+        </note52><title53 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -304,9 +304,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title52><note53
+        </title53><note54
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="true">
-        </note53><title54 jcr:primaryType="nt:unstructured" 
+        </note54><title55 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -314,9 +314,9 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title54><note55
+        </title55><note56
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="false">
-        </note55><title56 jcr:primaryType="nt:unstructured" 
+        </note56><title57 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -324,10 +324,19 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Note - Important Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title56><note57
+        </title57><note58
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="true">
-        </note57>
-        </container58>
+        </note58>
+        </container59><pager60
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager60>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">
