@@ -41,7 +41,7 @@
         buttonlink="library/accordion.html"
         buttoncolor="primary"
         title="accordion"
-        text="&lt;h1 id=&quot;toggleaccordion&quot;&gt;Toggle/Accordion&lt;/h1&gt;
+        text="&lt;h3 id=&quot;toggleaccordion&quot;&gt;Toggle/Accordion&lt;/h3&gt;
 &lt;p&gt;Contains a list of items that expand when clicked on allowing you to hide content that is not immediately relevant to the user.&lt;/p&gt;
 ">
         </card2>
@@ -51,7 +51,7 @@
         buttonlink="library/block.html"
         buttoncolor="primary"
         title="block"
-        text="&lt;h1 id=&quot;block&quot;&gt;Block&lt;/h1&gt;
+        text="&lt;h3 id=&quot;block&quot;&gt;Block&lt;/h3&gt;
 &lt;p&gt;The basic building block of the theme. Pages can be built quickly by vertically stacking blocks with different content. Blocks have many options for changing background settings to add visual variety to your pages.&lt;/p&gt;
 ">
         </card3>
@@ -61,7 +61,7 @@
         buttonlink="library/breadcrumb.html"
         buttoncolor="primary"
         title="breadcrumb"
-        text="&lt;h1 id=&quot;breadcrumb&quot;&gt;Breadcrumb&lt;/h1&gt;
+        text="&lt;h3 id=&quot;breadcrumb&quot;&gt;Breadcrumb&lt;/h3&gt;
 &lt;p&gt;The breadcrumb component displays the current route in the site with links to quickly navigate back up to parent pages.&lt;/p&gt;
 ">
         </card4>
@@ -71,7 +71,7 @@
         buttonlink="library/cards.html"
         buttoncolor="primary"
         title="cards"
-        text="&lt;h1 id=&quot;cards&quot;&gt;Cards&lt;/h1&gt;
+        text="&lt;h3 id=&quot;cards&quot;&gt;Cards&lt;/h3&gt;
 &lt;p&gt;Cards are used for displaying small bits of information in visually distinct boxes with an optional image and link.&lt;/p&gt;
 ">
         </card5>
@@ -81,7 +81,7 @@
         buttonlink="library/carousel.html"
         buttoncolor="primary"
         title="carousel"
-        text="&lt;h1 id=&quot;carousel&quot;&gt;Carousel&lt;/h1&gt;
+        text="&lt;h3 id=&quot;carousel&quot;&gt;Carousel&lt;/h3&gt;
 &lt;p&gt;The Carousel components is used for displaying a slideshow of images.&lt;/p&gt;
 ">
         </card6>
@@ -91,7 +91,7 @@
         buttonlink="library/code.html"
         buttoncolor="primary"
         title="code"
-        text="&lt;h1 id=&quot;code&quot;&gt;Code&lt;/h1&gt;
+        text="&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
 &lt;p&gt;This component renders the text as &lt;code&gt;&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-{{language}} {{classes}}&amp;quot;&amp;gt;{{text}}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;If the base template includes prism.js it will be used to generate the markup of the code. &lt;/p&gt;
 ">
@@ -102,7 +102,7 @@
         buttonlink="library/container.html"
         buttoncolor="primary"
         title="container"
-        text="&lt;h1 id=&quot;container&quot;&gt;Container&lt;/h1&gt;
+        text="&lt;h3 id=&quot;container&quot;&gt;Container&lt;/h3&gt;
 &lt;p&gt;The container component is used by Peregrine cms to allow components to be dragged onto other components&lt;/p&gt;
 ">
         </card8>
@@ -112,7 +112,7 @@
         buttonlink="library/footer.html"
         buttoncolor="primary"
         title="footer"
-        text="&lt;h1 id=&quot;footer&quot;&gt;Footer&lt;/h1&gt;
+        text="&lt;h3 id=&quot;footer&quot;&gt;Footer&lt;/h3&gt;
 &lt;p&gt;The Footer component is a great way to display extra information or navigation related to your site.&lt;/p&gt;
 ">
         </card9>
@@ -122,7 +122,7 @@
         buttonlink="library/header.html"
         buttoncolor="primary"
         title="header"
-        text="&lt;h1 id=&quot;header&quot;&gt;Header&lt;/h1&gt;
+        text="&lt;h3 id=&quot;header&quot;&gt;Header&lt;/h3&gt;
 &lt;p&gt;The Header component is used to display your logo and the main navigation section for your page. &lt;/p&gt;
 ">
         </card10>
@@ -132,7 +132,7 @@
         buttonlink="library/media.html"
         buttoncolor="primary"
         title="media"
-        text="&lt;h1 id=&quot;media&quot;&gt;Media&lt;/h1&gt;
+        text="&lt;h3 id=&quot;media&quot;&gt;Media&lt;/h3&gt;
 &lt;p&gt;The Media component can be used to embed images or video within your components.&lt;/p&gt;
 ">
         </card11>
@@ -142,7 +142,7 @@
         buttonlink="library/mediablock.html"
         buttoncolor="primary"
         title="mediablock"
-        text="&lt;h1 id=&quot;media-block&quot;&gt;Media Block&lt;/h1&gt;
+        text="&lt;h3 id=&quot;media-block&quot;&gt;Media Block&lt;/h3&gt;
 &lt;p&gt;The Media Block component is a simple Block that embeds a video or image.&lt;/p&gt;
 ">
         </card12>
@@ -152,7 +152,7 @@
         buttonlink="library/mediavisible.html"
         buttoncolor="primary"
         title="mediavisible"
-        text="&lt;h1 id=&quot;media-visible&quot;&gt;Media Visible&lt;/h1&gt;
+        text="&lt;h3 id=&quot;media-visible&quot;&gt;Media Visible&lt;/h3&gt;
 &lt;p&gt;The Media Visible component is a variation of the regular media component with dialog options that will be hidden when the embedding component does not display any media.&lt;/p&gt;
 ">
         </card13>
@@ -162,7 +162,7 @@
         buttonlink="library/menubuttons.html"
         buttoncolor="primary"
         title="menubuttons"
-        text="&lt;h1 id=&quot;menu-buttons&quot;&gt;Menu Buttons&lt;/h1&gt;
+        text="&lt;h3 id=&quot;menu-buttons&quot;&gt;Menu Buttons&lt;/h3&gt;
 &lt;p&gt;The Menu Buttons components contains a collection of simple Buttons for use in the Header.&lt;/p&gt;
 ">
         </card14>
@@ -172,7 +172,7 @@
         buttonlink="library/note.html"
         buttoncolor="primary"
         title="note"
-        text="&lt;h1 id=&quot;note&quot;&gt;Note&lt;/h1&gt;
+        text="&lt;h3 id=&quot;note&quot;&gt;Note&lt;/h3&gt;
 &lt;p&gt;The Note component is used to display small important messages to the reader&lt;/p&gt;
 ">
         </card15>
@@ -182,7 +182,7 @@
         buttonlink="library/pagelist.html"
         buttoncolor="primary"
         title="pagelist"
-        text="&lt;h1 id=&quot;pagelist&quot;&gt;Pagelist&lt;/h1&gt;
+        text="&lt;h3 id=&quot;pagelist&quot;&gt;Pagelist&lt;/h3&gt;
 &lt;p&gt;The Page List component displays the hierarchy of the current site to a given depth.&lt;/p&gt;
 ">
         </card16>
@@ -192,7 +192,7 @@
         buttonlink="library/pagelistnested.html"
         buttoncolor="primary"
         title="pagelistnested"
-        text="&lt;h1 id=&quot;page-list-nested&quot;&gt;Page List Nested&lt;/h1&gt;
+        text="&lt;h3 id=&quot;page-list-nested&quot;&gt;Page List Nested&lt;/h3&gt;
 &lt;p&gt;Used by the PageList component&lt;/p&gt;
 ">
         </card17>
@@ -202,7 +202,7 @@
         buttonlink="library/pager.html"
         buttoncolor="primary"
         title="pager"
-        text="&lt;h1 id=&quot;pager&quot;&gt;Pager&lt;/h1&gt;
+        text="&lt;h3 id=&quot;pager&quot;&gt;Pager&lt;/h3&gt;
 &lt;p&gt;The Pager Component provides convenient access to the next and previous pages in the content repository.&lt;/p&gt;
 ">
         </card18>
@@ -212,7 +212,7 @@
         buttonlink="library/quote.html"
         buttoncolor="primary"
         title="quote"
-        text="&lt;h1 id=&quot;quote&quot;&gt;Quote&lt;/h1&gt;
+        text="&lt;h3 id=&quot;quote&quot;&gt;Quote&lt;/h3&gt;
 &lt;p&gt;The Quote component displays a text block with styling to indicate that is is a quote.&lt;/p&gt;
 ">
         </card19>
@@ -222,7 +222,7 @@
         buttonlink="library/richtext.html"
         buttoncolor="primary"
         title="richtext"
-        text="&lt;h1 id=&quot;rich-text&quot;&gt;Rich Text&lt;/h1&gt;
+        text="&lt;h3 id=&quot;rich-text&quot;&gt;Rich Text&lt;/h3&gt;
 &lt;p&gt;The Rich Text component displays text and is edited using a powerful rich text editor allowing you full control over the content of the component.&lt;/p&gt;
 ">
         </card20>
@@ -232,7 +232,7 @@
         buttonlink="library/simpletext.html"
         buttoncolor="primary"
         title="simpletext"
-        text="&lt;h1 id=&quot;simple-text&quot;&gt;Simple Text&lt;/h1&gt;
+        text="&lt;h3 id=&quot;simple-text&quot;&gt;Simple Text&lt;/h3&gt;
 &lt;p&gt;The Simple Text component displays text that is rendered into a single tag type. Great for quickly creating Headings.&lt;/p&gt;
 ">
         </card21>
@@ -242,7 +242,7 @@
         buttonlink="library/socialicons.html"
         buttoncolor="primary"
         title="socialicons"
-        text="&lt;h1 id=&quot;social-icons&quot;&gt;Social Icons&lt;/h1&gt;
+        text="&lt;h3 id=&quot;social-icons&quot;&gt;Social Icons&lt;/h3&gt;
 &lt;p&gt;The Social Icons component is used in the footer to provide links to your sites relevant social media.&lt;/p&gt;
 ">
         </card22>
@@ -252,7 +252,7 @@
         buttonlink="library/spacer.html"
         buttoncolor="primary"
         title="spacer"
-        text="&lt;h1 id=&quot;spacer&quot;&gt;Spacer&lt;/h1&gt;
+        text="&lt;h3 id=&quot;spacer&quot;&gt;Spacer&lt;/h3&gt;
 &lt;p&gt;The Spacer component is a very simple Block, allowing you to add extra space with or without a background to your page.&lt;/p&gt;
 ">
         </card23>
@@ -262,7 +262,7 @@
         buttonlink="library/tabs.html"
         buttoncolor="primary"
         title="tabs"
-        text="&lt;h1 id=&quot;tabs&quot;&gt;Tabs&lt;/h1&gt;
+        text="&lt;h3 id=&quot;tabs&quot;&gt;Tabs&lt;/h3&gt;
 &lt;p&gt;The Tabs component displays a list of content, but with only 1 active piece of content at a time.&lt;/p&gt;
 ">
         </card24>
@@ -272,7 +272,7 @@
         buttonlink="library/tags.html"
         buttoncolor="primary"
         title="tags"
-        text="&lt;h1 id=&quot;tags&quot;&gt;Tags&lt;/h1&gt;
+        text="&lt;h3 id=&quot;tags&quot;&gt;Tags&lt;/h3&gt;
 &lt;p&gt;Display the tags that are attached to this page.&lt;/p&gt;
 ">
         </card25>
@@ -282,7 +282,7 @@
         buttonlink="library/teaserhorizontal.html"
         buttoncolor="primary"
         title="teaserhorizontal"
-        text="&lt;h1 id=&quot;teaser-horizontal&quot;&gt;Teaser Horizontal&lt;/h1&gt;
+        text="&lt;h3 id=&quot;teaser-horizontal&quot;&gt;Teaser Horizontal&lt;/h3&gt;
 &lt;p&gt;The Horizontal Teaser component can be used to display a small amount of content with relevant links.&lt;/p&gt;
 ">
         </card26>
@@ -292,7 +292,7 @@
         buttonlink="library/teaservertical.html"
         buttoncolor="primary"
         title="teaservertical"
-        text="&lt;h1 id=&quot;teaser-vertical&quot;&gt;Teaser Vertical&lt;/h1&gt;
+        text="&lt;h3 id=&quot;teaser-vertical&quot;&gt;Teaser Vertical&lt;/h3&gt;
 &lt;p&gt;The Vertical Teaser component can be used to display a small amount of content with relevant links.&lt;/p&gt;
 ">
         </card27>
@@ -302,7 +302,7 @@
         buttonlink="library/textlinks.html"
         buttoncolor="primary"
         title="textlinks"
-        text="&lt;h1 id=&quot;text-links&quot;&gt;Text Links&lt;/h1&gt;
+        text="&lt;h3 id=&quot;text-links&quot;&gt;Text Links&lt;/h3&gt;
 &lt;p&gt;The Text Links components contains a collection of simple Links for use in the Header.&lt;/p&gt;
 ">
         </card28>

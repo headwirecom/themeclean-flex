@@ -8,7 +8,7 @@ function escape(text) {
 
 function card(title, text, link) {
     let shortened = text.split('#');
-    let md = marked('#' + shortened[1]);
+    let md = marked('###' + shortened[1]);
     return `<card${idx}
         jcr:primaryType="nt:unstructured"
         buttontext="See ${title}"
