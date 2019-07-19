@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+            jcr:primaryType="per:Page"
+            jcr:title="tf-cl | carouselsample"
+            jcr:description="carouselsample themecleanflex component library"
+>
+    <jcr:content
+        jcr:primaryType="per:PageContent"
+        sling:resourceType="themecleanflex/components/page"
+        jcr:title="carouselsample"
+        description="carouselsample themecleanflex component library"
+        brand="themecleanflex"
+        template="/content/templates/themecleanflex"
+            ><clheader
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/sites/themecleanflex/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
+    <links jcr:primaryType="nt:unstructured"></links>
+    <buttons jcr:primaryType="nt:unstructured"></buttons>
+            </clheader><clbreadcrumb
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
+        <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        </clbreadcrumb><pager
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager><container145
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/container"
+            htmlelement="main">
+            [object Object]<title0 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title0><carousel4
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="dark" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c1
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c1><c2
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c2><c3
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c3></slides>
+        </carousel4><title5 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title5><carousel9
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c6
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c6><c7
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c7><c8
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c8></slides>
+        </carousel9><title10 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title10><carousel14
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c11
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c11><c12
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c12><c13
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c13></slides>
+        </carousel14><title15 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title15><carousel19
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c16
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c16><c17
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c17><c18
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c18></slides>
+        </carousel19><title20 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title20><carousel24
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c21
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c21><c22
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c22><c23
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c23></slides>
+        </carousel24><title25 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title25><carousel29
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="dark" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c26
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c26><c27
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c27><c28
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c28></slides>
+        </carousel29><title30 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title30><carousel34
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="dark" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c31
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c31><c32
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c32><c33
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c33></slides>
+        </carousel34><title35 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title35><carousel39
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="light" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c36
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c36><c37
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c37><c38
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c38></slides>
+        </carousel39><title40 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title40><carousel44
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="light" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c41
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c41><c42
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c42><c43
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c43></slides>
+        </carousel44><title45 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title45><carousel49
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c46
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c46><c47
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c47><c48
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c48></slides>
+        </carousel49><title50 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title50><carousel54
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c51
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c51><c52
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c52><c53
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c53></slides>
+        </carousel54><title55 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title55><carousel59
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c56
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c56><c57
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c57><c58
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c58></slides>
+        </carousel59><title60 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title60><carousel64
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c61
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c61><c62
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c62><c63
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c63></slides>
+        </carousel64><title65 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title65><carousel69
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c66
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c66><c67
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c67><c68
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c68></slides>
+        </carousel69><title70 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title70><carousel74
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c71
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c71><c72
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c72><c73
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c73></slides>
+        </carousel74><title75 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title75><carousel79
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c76
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c76><c77
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c77><c78
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c78></slides>
+        </carousel79><title80 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title80><carousel84
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c81
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c81><c82
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c82><c83
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c83></slides>
+        </carousel84><title85 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title85><carousel89
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="false" colorscheme="dark" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c86
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c86><c87
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c87><c88
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c88></slides>
+        </carousel89><title90 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title90><carousel94
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="false" colorscheme="dark" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c91
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c91><c92
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c92><c93
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c93></slides>
+        </carousel94><title95 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title95><carousel99
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="false" colorscheme="light" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c96
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c96><c97
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c97><c98
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c98></slides>
+        </carousel99><title100 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title100><carousel104
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="false" colorscheme="light" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c101
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c101><c102
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c102><c103
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c103></slides>
+        </carousel104><title105 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title105><carousel109
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="false" colorscheme="" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c106
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c106><c107
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c107><c108
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c108></slides>
+        </carousel109><title110 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title110><carousel114
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="false" colorscheme="" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c111
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c111><c112
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c112><c113
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c113></slides>
+        </carousel114><title115 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title115><carousel119
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c116
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c116><c117
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c117><c118
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c118></slides>
+        </carousel119><title120 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title120><carousel124
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c121
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c121><c122
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c122><c123
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c123></slides>
+        </carousel124><title125 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title125><carousel129
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c126
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c126><c127
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c127><c128
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c128></slides>
+        </carousel129><title130 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title130><carousel134
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c131
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c131><c132
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c132><c133
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c133></slides>
+        </carousel134><title135 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title135><carousel139
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="false"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c136
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c136><c137
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c137><c138
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c138></slides>
+        </carousel139><title140 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Carousel Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title140><carousel144
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/carousel" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="true"><carouselheight jcr:primaryType="nt:unstructured"></carouselheight>
+<toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+<slides jcr:primaryType="nt:unstructured"><c141
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." alt="Sailboats in front of city skyline and sunset">
+        </c141><c142
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboat sailing on a lake">
+        </c142><c143
+        jcr:primaryType="nt:unstructured" imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " alt="Sailboats sailing on an ocean">
+        </c143></slides>
+        </carousel144>
+        </container145>
+        <clfooter
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
+        <columns jcr:primaryType="nt:unstructured">
+        <c3
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c3><c4
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
+        </c4><c5
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c5></columns>
+<icons jcr:primaryType="nt:unstructured"></icons>
+        </clfooter>        
+        </jcr:content></jcr:root>
