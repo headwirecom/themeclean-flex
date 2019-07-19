@@ -119,6 +119,8 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
         backgroundtype="color"
         bgcolor="#eeeeee"
         htmlelement="nav"
+        bottompadding="10"
+        toppadding="10"
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
