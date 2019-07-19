@@ -1,0 +1,56 @@
+{
+  "definitions": {
+    "Tags": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "tagslabel": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Tags Label",
+          "x-form-type": "text"
+        },
+        "tagcolor": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Tag Color",
+          "x-form-type": "materialselect",
+          "x-default": "blue",
+          "properties":{
+            "note": {
+              "x-form-name": "Blue",
+              "x-form-value": "blue"
+            },
+            "tip": {
+              "x-form-name": "Green",
+              "x-form-value": "green"
+            },
+            "important": {
+              "x-form-name": "Orange",
+              "x-form-value": "orange"
+            },
+            "caution": {
+              "x-form-name": "Red",
+              "x-form-value": "red"
+            },
+            "warning": {
+              "x-form-name": "Yellow",
+              "x-form-value": "yellow"
+            }
+          }
+        },
+        "pagelink": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Tag Link Base Path",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content/sites"
+        },
+        "bgref": {
+          "$ref": "fragments/block/model.json#/definitions/Block",
+          "x-form-type": "reference"
+        }
+      }
+    }
+  }
+}

@@ -1,142 +1,46 @@
 {
   "fields": [
     {
-      "type": "material-radios",
-      "values": [
-        {
-          "name": "Toggle",
-          "value": "toggle"
-        },
-        {
-          "name": "Accordion",
-          "value": "accordion"
-        }
-      ],
-      "placeholder": "toggletype",
-      "label": "Collapse Style",
-      "model": "toggletype"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "showtitle",
-      "label": "Show Title",
-      "model": "showtitle"
-    },
-    {
       "type": "input",
       "inputType": "text",
-      "placeholder": "title",
-      "label": "Title",
-      "model": "title",
-      "visible": "model.showtitle == 'true'"
+      "placeholder": "tagslabel",
+      "label": "Tags Label",
+      "model": "tagslabel"
     },
     {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "showmedia",
-      "label": "Show Media",
-      "model": "showmedia"
-    },
-    {
-      "type": "material-radios",
+      "type": "material-select",
       "values": [
         {
-          "name": "Image",
-          "value": "image"
+          "name": "Blue",
+          "value": "blue"
         },
         {
-          "name": "Video",
-          "value": "video"
+          "name": "Green",
+          "value": "green"
+        },
+        {
+          "name": "Orange",
+          "value": "orange"
+        },
+        {
+          "name": "Red",
+          "value": "red"
+        },
+        {
+          "name": "Yellow",
+          "value": "yellow"
         }
       ],
-      "placeholder": "mediatype",
-      "label": "Media type",
-      "model": "mediatype",
-      "visible": "model.showmedia == 'true'"
+      "placeholder": "tagcolor",
+      "label": "Tag Color",
+      "model": "tagcolor"
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/assets",
-      "placeholder": "imagesrc",
-      "label": "Image Source",
-      "model": "imagesrc",
-      "visible": "model.mediatype == 'image' and model.showmedia == 'true'"
-    },
-    {
-      "type": "pathbrowser",
-      "browserRoot": "/content/assets",
-      "placeholder": "videosrc",
-      "label": "Video Source",
-      "model": "videosrc",
-      "visible": "model.mediatype == 'video' and model.showmedia == 'true'"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "mediatitle",
-      "label": "Media Alt Text/Title",
-      "model": "mediatitle",
-      "visible": "model.showmedia == 'true'"
-    },
-    {
-      "type": "material-range",
-      "placeholder": "mediawidth",
-      "label": "Width",
-      "model": "mediawidth",
-      "visible": "model.showmedia == 'true'",
-      "min": 10,
-      "max": 100
-    },
-    {
-      "type": "material-radios",
-      "values": [
-        {
-          "name": "Before Content",
-          "value": "before"
-        },
-        {
-          "name": "After Content",
-          "value": "after"
-        }
-      ],
-      "placeholder": "mediaposition",
-      "label": "Media Position",
-      "model": "mediaposition",
-      "visible": "model.showmedia == 'true'"
-    },
-    {
-      "type": "collection",
-      "multifield": true,
-      "fieldLabel": [
-        "title",
-        "value"
-      ],
-      "fields": [
-        {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "title",
-          "label": "Title",
-          "model": "title"
-        },
-        {
-          "type": "texteditor",
-          "rows": 10,
-          "placeholder": "text",
-          "label": "Text",
-          "model": "text"
-        }
-      ],
-      "placeholder": "accordiontoggle",
-      "label": "Accordion/Toggle",
-      "model": "accordiontoggle"
+      "browserRoot": "/content/sites",
+      "placeholder": "pagelink",
+      "label": "Tag Link Base Path",
+      "model": "pagelink"
     },
     {
       "type": "input",

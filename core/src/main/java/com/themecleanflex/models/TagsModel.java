@@ -17,170 +17,51 @@ import javax.inject.Named;
     //GEN[:DATA
     {
   "definitions": {
-    "Cards": {
+    "Tags": {
       "type": "object",
       "x-type": "component",
       "properties": {
-        "showtitle": {
+        "tagslabel": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Show Title",
-          "x-form-type": "materialswitch"
+          "x-form-label": "Tags Label",
+          "x-form-type": "text"
         },
-        "showtext": {
+        "tagcolor": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Show Text",
-          "x-form-type": "materialswitch"
-        },
-        "showbutton": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Show Button",
-          "x-form-type": "materialswitch"
-        },
-        "showcard": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Show Card Background",
-          "x-form-type": "materialswitch"
-        },
-        "customcardcolor": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Custom Card Color",
-          "x-form-visible": "model.showcard == 'true'",
-          "x-form-type": "materialswitch"
-        },
-        "cardcolor": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Card Color",
-          "x-form-type": "color",
-          "x-form-visible": "model.showcard == 'true' and model.customcardcolor == 'true'",
-          "x-default": "#ffffff"
-        },
-        "cardsperrow": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Cards Per Row",
-          "x-form-type": "materialrange",
-          "x-default": 3,
-          "x-form-min": 1,
-          "x-form-max": 6
-        },
-        "cards": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Cards",
-          "x-form-fieldLabel": "title",
-          "x-form-type": "collection",
+          "x-form-label": "Tag Color",
+          "x-form-type": "materialselect",
+          "x-default": "blue",
           "properties": {
-            "title": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Card Title",
-              "x-form-visible": "model.showtitle == 'true'",
-              "x-form-type": "text"
+            "note": {
+              "x-form-name": "Blue",
+              "x-form-value": "blue"
             },
-            "text": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Card Text",
-              "x-form-visible": "model.showtext == 'true'",
-              "x-form-type": "texteditor"
+            "tip": {
+              "x-form-name": "Green",
+              "x-form-value": "green"
             },
-            "image": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Card Image",
-              "x-form-type": "pathbrowser",
-              "x-form-browserRoot": "/content/assets"
+            "important": {
+              "x-form-name": "Orange",
+              "x-form-value": "orange"
             },
-            "imagealttext": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Image Alt Text",
-              "x-form-type": "text"
+            "caution": {
+              "x-form-name": "Red",
+              "x-form-value": "red"
             },
-            "buttontext": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Button Text",
-              "x-form-visible": "model.showbutton == 'true'",
-              "x-form-type": "text"
-            },
-            "buttonlink": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Button Link",
-              "x-form-visible": "model.showbutton == 'true'",
-              "x-form-type": "pathbrowser",
-              "x-form-browserRoot": "/content/sites"
-            },
-            "buttoncolor": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Button Color",
-              "x-form-type": "materialselect",
-              "x-default": "primary",
-              "properties": {
-                "primary": {
-                  "x-form-name": "Primary",
-                  "x-form-value": "primary"
-                },
-                "secondary": {
-                  "x-form-name": "Secondary",
-                  "x-form-value": "secondary"
-                },
-                "success": {
-                  "x-form-name": "Success",
-                  "x-form-value": "success"
-                },
-                "danger": {
-                  "x-form-name": "Danger",
-                  "x-form-value": "danger"
-                },
-                "warning": {
-                  "x-form-name": "Warning",
-                  "x-form-value": "warning"
-                },
-                "info": {
-                  "x-form-name": "Info",
-                  "x-form-value": "info"
-                },
-                "light": {
-                  "x-form-name": "Light",
-                  "x-form-value": "light"
-                },
-                "dark": {
-                  "x-form-name": "Dark",
-                  "x-form-value": "dark"
-                }
-              }
-            },
-            "buttonsize": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Button Size",
-              "x-form-type": "materialselect",
-              "x-default": "default",
-              "properties": {
-                "default": {
-                  "x-form-name": "Default",
-                  "x-form-value": "default"
-                },
-                "large": {
-                  "x-form-name": "Large",
-                  "x-form-value": "large"
-                },
-                "small": {
-                  "x-form-name": "Small",
-                  "x-form-value": "small"
-                }
-              }
+            "warning": {
+              "x-form-name": "Yellow",
+              "x-form-value": "yellow"
             }
           }
+        },
+        "pagelink": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Tag Link Base Path",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content/sites"
         },
         "bgref": {
           "x-form-type": "reference",
@@ -419,10 +300,10 @@ import javax.inject.Named;
       }
     }
   },
-  "name": "Cards",
-  "componentPath": "themecleanflex/components/cards",
+  "name": "Tags",
+  "componentPath": "themecleanflex/components/tags",
   "package": "com.themecleanflex.models",
-  "modelName": "Cards",
+  "modelName": "Tags",
   "classNameParent": "AbstractComponent"
 }
 //GEN]
@@ -431,7 +312,7 @@ import javax.inject.Named;
 //GEN[:DEF
 @Model(
         adaptables = Resource.class,
-        resourceType = "themecleanflex/components/cards",
+        resourceType = "themecleanflex/components/tags",
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
         adapters = IComponent.class
 )
@@ -441,44 +322,23 @@ import javax.inject.Named;
 )
 
 //GEN]
-public class CardsModel extends AbstractComponent {
+public class TagsModel extends AbstractComponent {
 
-    public CardsModel(Resource r) { super(r); }
+    public TagsModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Show Title","x-form-type":"materialswitch"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Tags Label","x-form-type":"text"} */
 	@Inject
-	private String showtitle;
+	private String tagslabel;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Text","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Tag Color","x-form-type":"materialselect","x-default":"blue","properties":{"note":{"x-form-name":"Blue","x-form-value":"blue"},"tip":{"x-form-name":"Green","x-form-value":"green"},"important":{"x-form-name":"Orange","x-form-value":"orange"},"caution":{"x-form-name":"Red","x-form-value":"red"},"warning":{"x-form-name":"Yellow","x-form-value":"yellow"}}} */
 	@Inject
-	private String showtext;
+	@Default(values ="blue")
+	private String tagcolor;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Button","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Tag Link Base Path","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"} */
 	@Inject
-	private String showbutton;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Background","x-form-type":"materialswitch"} */
-	@Inject
-	private String showcard;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Custom Card Color","x-form-visible":"model.showcard == 'true'","x-form-type":"materialswitch"} */
-	@Inject
-	private String customcardcolor;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Card Color","x-form-type":"color","x-form-visible":"model.showcard == 'true' and model.customcardcolor == 'true'","x-default":"#ffffff"} */
-	@Inject
-	@Default(values ="#ffffff")
-	private String cardcolor;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row","x-form-type":"materialrange","x-default":3,"x-form-min":1,"x-form-max":6} */
-	@Inject
-	@Default(values ="3")
-	private String cardsperrow;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards","x-form-fieldLabel":"title","x-form-type":"collection","properties":{"title":{"type":"string","x-source":"inject","x-form-label":"Card Title","x-form-visible":"model.showtitle == 'true'","x-form-type":"text"},"text":{"type":"string","x-source":"inject","x-form-label":"Card Text","x-form-visible":"model.showtext == 'true'","x-form-type":"texteditor"},"image":{"type":"string","x-source":"inject","x-form-label":"Card Image","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"},"imagealttext":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"},"buttontext":{"type":"string","x-source":"inject","x-form-label":"Button Text","x-form-visible":"model.showbutton == 'true'","x-form-type":"text"},"buttonlink":{"type":"string","x-source":"inject","x-form-label":"Button Link","x-form-visible":"model.showbutton == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"},"buttoncolor":{"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"info":{"x-form-name":"Info","x-form-value":"info"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}},"buttonsize":{"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}}}} */
-	@Inject
-	private List<IComponent> cards;
+	private String pagelink;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
@@ -573,44 +433,19 @@ public class CardsModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Show Title","x-form-type":"materialswitch"} */
-	public String getShowtitle() {
-		return showtitle;
+    	/* {"type":"string","x-source":"inject","x-form-label":"Tags Label","x-form-type":"text"} */
+	public String getTagslabel() {
+		return tagslabel;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Text","x-form-type":"materialswitch"} */
-	public String getShowtext() {
-		return showtext;
+	/* {"type":"string","x-source":"inject","x-form-label":"Tag Color","x-form-type":"materialselect","x-default":"blue","properties":{"note":{"x-form-name":"Blue","x-form-value":"blue"},"tip":{"x-form-name":"Green","x-form-value":"green"},"important":{"x-form-name":"Orange","x-form-value":"orange"},"caution":{"x-form-name":"Red","x-form-value":"red"},"warning":{"x-form-name":"Yellow","x-form-value":"yellow"}}} */
+	public String getTagcolor() {
+		return tagcolor;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Button","x-form-type":"materialswitch"} */
-	public String getShowbutton() {
-		return showbutton;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Background","x-form-type":"materialswitch"} */
-	public String getShowcard() {
-		return showcard;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Custom Card Color","x-form-visible":"model.showcard == 'true'","x-form-type":"materialswitch"} */
-	public String getCustomcardcolor() {
-		return customcardcolor;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Card Color","x-form-type":"color","x-form-visible":"model.showcard == 'true' and model.customcardcolor == 'true'","x-default":"#ffffff"} */
-	public String getCardcolor() {
-		return cardcolor;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row","x-form-type":"materialrange","x-default":3,"x-form-min":1,"x-form-max":6} */
-	public String getCardsperrow() {
-		return cardsperrow;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards","x-form-fieldLabel":"title","x-form-type":"collection","properties":{"title":{"type":"string","x-source":"inject","x-form-label":"Card Title","x-form-visible":"model.showtitle == 'true'","x-form-type":"text"},"text":{"type":"string","x-source":"inject","x-form-label":"Card Text","x-form-visible":"model.showtext == 'true'","x-form-type":"texteditor"},"image":{"type":"string","x-source":"inject","x-form-label":"Card Image","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"},"imagealttext":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"},"buttontext":{"type":"string","x-source":"inject","x-form-label":"Button Text","x-form-visible":"model.showbutton == 'true'","x-form-type":"text"},"buttonlink":{"type":"string","x-source":"inject","x-form-label":"Button Link","x-form-visible":"model.showbutton == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"},"buttoncolor":{"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"info":{"x-form-name":"Info","x-form-value":"info"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}},"buttonsize":{"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}}}} */
-	public List<IComponent> getCards() {
-		return cards;
+	/* {"type":"string","x-source":"inject","x-form-label":"Tag Link Base Path","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"} */
+	public String getPagelink() {
+		return pagelink;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
