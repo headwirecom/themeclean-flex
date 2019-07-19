@@ -7,7 +7,7 @@
 
 /* Base Overrides */
 html {
-  @apply font-sans;
+  @apply font-sans text-base;
 }
 
 h1 {
