@@ -23,12 +23,23 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><container3
+        </clbreadcrumb><pager0
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager0><container4
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
             
-        <intro0 jcr:primaryType="nt:unstructured" 
+        <intro1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             bottompadding="25"
             toppadding="25"
@@ -39,8 +50,8 @@
             text="&lt;h1 id=&quot;breadcrumb&quot;&gt;Breadcrumb&lt;/h1&gt;
 &lt;p&gt;The breadcrumb component displays the current route in the site with links to quickly navigate back up to parent pages.&lt;/p&gt;
 ">
-        </intro0>
-        <title1 jcr:primaryType="nt:unstructured" 
+        </intro1>
+        <title2 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -48,11 +59,22 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Breadcrumb (Chrome)&lt;/h2&gt;">
-        </title1><breadcrumb2
+        </title2><breadcrumb3
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="3" linkcolor="primary"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
 <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </breadcrumb2>
-        </container3>
+        </breadcrumb3>
+        </container4><pager5
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager5>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">

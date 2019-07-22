@@ -23,12 +23,23 @@
         htmlelement="nav"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><container15
+        </clbreadcrumb><pager0
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager0><container16
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
             
-        <intro0 jcr:primaryType="nt:unstructured" 
+        <intro1 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             bottompadding="25"
             toppadding="25"
@@ -39,8 +50,8 @@
             text="&lt;h1 id=&quot;teaser-vertical&quot;&gt;Teaser Vertical&lt;/h1&gt;
 &lt;p&gt;The Vertical Teaser component can be used to display a small amount of content with relevant links.&lt;/p&gt;
 ">
-        </intro0>
-        <title1 jcr:primaryType="nt:unstructured" 
+        </intro1>
+        <title2 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -48,13 +59,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser with Media (Features)&lt;/h2&gt;">
-        </title1><teaservertical4
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaservertical" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" backgroundtype="gradient" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" showmedia="true" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" mediatitle="Bird's eye view of the beach" mediawidth="50" mediaposition="after"><buttons jcr:primaryType="nt:unstructured"><c2
+        </title2><teaservertical5
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaservertical" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" backgroundtype="gradient" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" showmedia="true" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" mediatitle="Bird's eye view of the beach" mediawidth="50" mediaposition="after"><buttons jcr:primaryType="nt:unstructured"><c3
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c2><c3
+        </c3><c4
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c3></buttons>
-        </teaservertical4><title5 jcr:primaryType="nt:unstructured" 
+        </c4></buttons>
+        </teaservertical5><title6 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -62,13 +73,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Primary (Features)&lt;/h2&gt;">
-        </title5><teaservertical8
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaservertical" showtitle="true" showsubtitle="true" showbutton="true" isprimary="true" fullheight="true" custombackground="true" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" overlay="true" overlaycolor="#ffffff" overlayopacity="70" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" subtitle="Molestiae alias et inventore voluptas" buttonsize="large" title="Themeclean Flex Blocks"><buttons jcr:primaryType="nt:unstructured"><c6
+        </title6><teaservertical9
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaservertical" showtitle="true" showsubtitle="true" showbutton="true" isprimary="true" fullheight="true" custombackground="true" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" overlay="true" overlaycolor="#ffffff" overlayopacity="70" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" subtitle="Molestiae alias et inventore voluptas" buttonsize="large" title="Themeclean Flex Blocks"><buttons jcr:primaryType="nt:unstructured"><c7
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c6><c7
+        </c7><c8
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c7></buttons>
-        </teaservertical8><title9 jcr:primaryType="nt:unstructured" 
+        </c8></buttons>
+        </teaservertical9><title10 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -76,13 +87,13 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Vertical (Features)&lt;/h2&gt;">
-        </title9><teaservertical12
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaservertical" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" backgroundtype="gradient" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default"><buttons jcr:primaryType="nt:unstructured"><c10
+        </title10><teaservertical13
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaservertical" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" backgroundtype="gradient" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p&gt;Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p&gt;" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default"><buttons jcr:primaryType="nt:unstructured"><c11
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass="">
-        </c10><c11
+        </c11><c12
         jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="About Us" buttoncolor="primary" iconclass="">
-        </c11></buttons>
-        </teaservertical12><title13 jcr:primaryType="nt:unstructured" 
+        </c12></buttons>
+        </teaservertical13><title14 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -90,10 +101,21 @@
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="&lt;h2&gt;Teaser Vertical no default values (Empty)&lt;/h2&gt;">
-        </title13><teaservertical14
+        </title14><teaservertical15
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/teaservertical">
-        </teaservertical14>
-        </container15>
+        </teaservertical15>
+        </container16><pager17
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager17>
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">

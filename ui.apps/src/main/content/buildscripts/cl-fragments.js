@@ -8,7 +8,7 @@ function escape(text) {
 
 function card(title, text, link) {
     let shortened = text.split('#');
-    let md = marked('#' + shortened[1]);
+    let md = marked('###' + shortened[1]);
     return `<card${idx}
         jcr:primaryType="nt:unstructured"
         buttontext="See ${title}"
@@ -109,6 +109,22 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
         </clbreadcrumb>`;
+        // return this.text('<p><a href="/content/sites/themecleanflex/library.html">component library home</a></p>');
+    },
+
+    pager() {
+        return `<pager${idx}
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager${idx++}>`;
         // return this.text('<p><a href="/content/sites/themecleanflex/library.html">component library home</a></p>');
     },
 

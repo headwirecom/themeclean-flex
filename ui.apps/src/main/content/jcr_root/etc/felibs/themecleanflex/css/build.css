@@ -986,27 +986,27 @@ video {
 }
 
 .text-lg{
-  font-size: 1.125rem;
-}
-
-.text-xl{
   font-size: 1.25rem;
 }
 
-.text-2xl{
+.text-xl{
   font-size: 1.5rem;
 }
 
-.text-3xl{
+.text-2xl{
   font-size: 1.875rem;
 }
 
-.text-4xl{
+.text-3xl{
   font-size: 2.25rem;
 }
 
-.text-5xl{
+.text-4xl{
   font-size: 3rem;
+}
+
+.text-5xl{
+  font-size: 4rem;
 }
 
 .no-underline{
@@ -1051,35 +1051,36 @@ video {
 
 html {
   font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 1.875rem;
+  font-size: 2.25rem;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 h5 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 h6 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 a {
@@ -1214,7 +1215,7 @@ p {
   padding-bottom: 1rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  font-size: 1.125rem
+  font-size: 1.25rem
 }
 
 .btn-sm {
@@ -1222,7 +1223,7 @@ p {
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  font-size: 0.875rem
+  font-size: 1rem
 }
 
 .btn-blue {
