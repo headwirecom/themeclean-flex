@@ -1,5 +1,5 @@
 <script>
-    var enableServiceWorker = true;
+    var enableServiceWorker = $peregrineApp.isPublicFacingSite();
     if(enableServiceWorker) {
         if (!$peregrineApp.isAuthorMode() && !window.location.host.indexOf('local') >= 0) {
             if ('serviceWorker' in navigator) {
