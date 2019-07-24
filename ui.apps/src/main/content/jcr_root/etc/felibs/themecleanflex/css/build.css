@@ -1281,6 +1281,16 @@ p {
   background-color: #2d3748;
 }
 
+.media-sizeable {
+  flex-shrink: 1 !important;
+}
+
+@media (min-width: 768px){
+  .media-sizeable {
+    flex-shrink: 0 !important;
+  }
+}
+
 /* purgecss end ignore */
 
 @media (min-width: 640px){
