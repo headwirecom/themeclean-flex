@@ -2,6 +2,7 @@ aemdc-files/
 target/
 core/target/
 ui.apps/target/
+ui.apps/approved/
 **/bin
 
 *.iml

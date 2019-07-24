@@ -7,21 +7,24 @@ const pixelmatch = require('pixelmatch');
 
 const out_path = 'target/out';
 
-let out = [];
 const queue = [];
 const visited = [];
 
 function diff(name) {
   try {
-    const img2 = PNG.sync.read(fs.readFileSync(`${out_path}/${name}`));
+    const image2 = PNG.sync.read(fs.readFileSync(`${out_path}/${name}`));
     if(!fs.existsSync(`approved/${name}`)) {
-      fs.writeFileSync(`approved/${name}`, PNG.sync.write(img2));
+      fs.writeFileSync(`approved/${name}`, PNG.sync.write(image2));
     }
-    const img1 = PNG.sync.read(fs.readFileSync(`approved/${name}`));
-    const {width, height} = img1;
+    const image1 = PNG.sync.read(fs.readFileSync(`approved/${name}`));
+    const width = Math.max(image1.width, image2.width);
+    const height = Math.max(image1.height, image2.height);
+
     const diff = new PNG({width, height});
+    // const img1 = new PNG({width, height}); img1.bitblt(image1, 0,0, image1.width, image1.height, 0,0);
+    // const img2 = new PNG({width, height}); img2.bitblt(image2, 0,0, image2.width, image2.height, 0,0);
     
-    pixelmatch(img1.data, img2.data, diff.data, width, height, {threshold: 0.1});
+    pixelmatch(image1.data, image2.data, diff.data, width, height, {threshold: 0.1});
     
     fs.writeFileSync(`${out_path}/diff/${name}`, PNG.sync.write(diff));
   } catch( error ) {
@@ -29,36 +32,37 @@ function diff(name) {
   }
 }
 
-function report(url, version, name) {
+function report(out, url, version, name) {
   out.push({url, version, name})
 }
 
-function generateReport(name) {
+function generateReport(out, name) {
   console.log('writing report for', name);
   const data = [];
   data.push('<table width="100%">');
   out.forEach( entry => {
     data.push(`<tr><td colspan="3"><h2>${entry.version} ${entry.url}</h2></td></tr>`);
     data.push(`<tr>`);
-    data.push(`<td style="width: 30%"><img style="max-width: 100%" src="${entry.name}"></td>`);
-    data.push(`<td style="width: 30%"><img style="max-width: 100%" src="../../approved/${entry.name}"></td>`);
-    data.push(`<td style="width: 30%"><img style="max-width: 100%" src="diff/${entry.name}"></td>`);
+    data.push(`<td style="width: 30%" valign="top"><img style="max-width: 100%" src="${entry.name}"></td>`);
+    data.push(`<td style="width: 30%" valign="top"><img style="max-width: 100%" src="../../approved/${entry.name}"></td>`);
+    data.push(`<td style="width: 30%" valign="top"><img style="max-width: 100%" src="diff/${entry.name}"></td>`);
     data.push(`</tr>`);
   })
   data.push(`</table`);
   fs.writeFileSync(`${out_path}/${name}.html`, data.join('\n'));
 }
 
-async function screenShotAt(url, page, width, version, name) {
+async function screenShotAt(out, url, page, width, version, name) {
   console.log('screenshot:',url,width, version);
   await page.setViewport( { width: width, height: 1024 } );
   await page.screenshot({ path: `${out_path}/${name}-${version}.png`, fullPage: true});
   diff(`${name}-${version}.png`);
-  report(url, version, `${name}-${version}.png`);
+  report(out, url, version, `${name}-${version}.png`);
 }
 
 async function makeRenditions(base, path) {
   visited.push(path);
+  let out = [];
   const name = path.substring(base.length+1).replace(/[\.\/]/g, '-');
   if(name.split('-').length > 3) {
     return;
@@ -70,10 +74,10 @@ async function makeRenditions(base, path) {
   } catch (err) {
     console.log(err);
   }
-  await screenShotAt(path, page, 320, 'mobile', name);
-  await screenShotAt(path, page, 768, 'tablet', name);
-  await screenShotAt(path, page, 1024, 'desktop', name);
-  await screenShotAt(path, page, 1600, 'desktop-wide', name);
+  await screenShotAt(out, path, page, 320, 'mobile', name);
+  await screenShotAt(out, path, page, 768, 'tablet', name);
+  await screenShotAt(out, path, page, 1024, 'desktop', name);
+  await screenShotAt(out, path, page, 1600, 'desktop-wide', name);
   
   const hrefs = await page.$$eval('a', as => as.map(a => a.href));
   hrefs.forEach( url => {
@@ -83,12 +87,10 @@ async function makeRenditions(base, path) {
       }
     }    
   });
-  console.log(queue)
   console.log(queue.length, 'items to go')
 
   await browser.close();
-  generateReport(name);
-  out = [];
+  generateReport(out, name);
 
 };
 
@@ -105,12 +107,12 @@ function makeDirs(relpath) {
 (async () => {
   makeDirs('target/out/diff');
   makeDirs('approved');
-  console.log('vaildatepage <url> [single]');
-  const url = process.argv[2]
-  const single = process.argv[3]
-  const parent = url.substring(0, url.lastIndexOf('/'));
+  console.log('vaildatepage <parentUrl> <relativePath> [single]');
   if(process.argv.length >= 3) {
-    queue.push(url);
+    const url = process.argv[2] + process.argv[3]
+    const single = process.argv[4]
+    const parent = process.argv[2];
+      queue.push(url);
     let ps = [];
     while(queue.length > 0) {
       while(ps.length < 8 && queue.length > 0) {
