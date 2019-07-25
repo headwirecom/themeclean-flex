@@ -8,19 +8,26 @@
     "directory": "ui.apps"
   },
   "main": "index.js",
+  "config": {
+    "host": "localhost",
+    "port": "8080"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:styles && node ./src/main/content/buildscripts/buildvue.js themecleanflex",
     "build:componentlibrary": "node ./src/main/content/buildscripts/cl.js",
     "build:styles": "postcss -c ./postcss.config.js -o ./src/main/content/jcr_root/etc/felibs/themecleanflex/css/build.css ./src/main/content/jcr_root/etc/felibs/themecleanflex/styles.css",
-    "build:iconsprites": "node ./src/main/content/buildscripts/buildicons.js"
+    "build:iconsprites": "node ./src/main/content/buildscripts/buildicons.js",
+    "build:screenshots": "cross-var node src/main/content/buildscripts/validatepage.js http://$npm_package_config_host:$npm_package_config_port/content/sites/themecleanflex /library.html"
   },
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
     "camelcase": "^5.0.0",
+    "cross-var": "^1.1.0",
     "fs-extra": "^7.0.1",
     "marked": "^0.6.2",
+    "puppeteer": "^1.19.0",
     "rollup": "^1.1.2",
     "rollup-plugin-buble": "^0.19.6",
     "rollup-plugin-commonjs": "^9.2.0",
