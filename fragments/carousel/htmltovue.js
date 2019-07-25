@@ -4,6 +4,7 @@ module.exports = {
         f.bindAttribute($.parent(),'model','model')
 
         f.addStyle( $.find('div'), 'height', 'model.carouselheight', 'vh')
+        f.addStyle( $.find('div'), 'maxHeight', 'model.carouselheight', 'vh')
 
         let carousel = $;
         f.bindAttribute(carousel, "autoplay", "model.autoplay === 'true'")

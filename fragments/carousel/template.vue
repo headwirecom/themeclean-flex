@@ -6,7 +6,7 @@
     v-bind:loop="model.wrap === 'true'" v-bind:autoplayTimeout="model.interval * 1000"
     v-bind:perPage="1">
       <slide v-for="(item,i) in model.slides" :key="i">
-        <div class="relative" v-bind:style="`height:${model.carouselheight}vh;`">
+        <div class="relative overflow-hidden" v-bind:style="`height:${model.carouselheight}vh;maxHeight:${model.carouselheight}vh;`">
           <v-lazy-image class="w-full h-full object-cover object-center" v-if="item.imagepath"
           v-bind:src="item.imagepath" v-bind:alt="item.alt"></v-lazy-image>
           <figcaption class="absolute bottom-0 p-4 text-white text-xl w-full"
