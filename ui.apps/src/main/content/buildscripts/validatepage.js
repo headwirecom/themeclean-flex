@@ -104,6 +104,19 @@ function makeDirs(relpath) {
   }
 }
 
+function makeIndexPage(pages) {
+  console.log('Creating master index page.');
+  const out = fs.createWriteStream(out_path + '/index.html');
+  out.write('<ul>');
+  pages.forEach((page => {
+    out.write('<li>');
+    out.write('<a href="' + page + '">' + page + '</a>');
+    out.write('</li>');
+  }));
+  out.write('<ul>');
+  out.close();
+}
+
 (async () => {
   makeDirs('target/out/diff');
   makeDirs('approved');
@@ -128,5 +141,8 @@ function makeDirs(relpath) {
       ps = [];
       if(single) { break; }
     }
+    const files = fs.readdirSync(out_path);
+    const pages = files.filter(file => file.endsWith('.html'));
+    makeIndexPage(pages);
   }
 })();
