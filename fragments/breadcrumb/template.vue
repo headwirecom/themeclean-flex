@@ -1,6 +1,6 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="flex">
+    <div class="flex flex-wrap">
       <span v-for="(item,i) in model.links" :key="i" v-bind:class="{'font-bold': i === model.links.length - 1}">
         <a class="pipe-after no-underline mr-2" v-if="i + 1 &lt; model.links.length"
         v-bind:href="item.link + '.html'" v-bind:class="{
