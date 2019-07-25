@@ -7,7 +7,7 @@
             'bg-red-200 border-red-500': model.notetype === &quot;important&quot;,
             'bg-yellow-200 border-yellow-500': model.notetype === &quot;caution&quot;
         }">
-      <div class="flex text-black" v-html="model.text"></div>
+      <div class="text-black" v-html="model.text"></div>
     </div>
   </themecleanflex-components-block>
 </template>
