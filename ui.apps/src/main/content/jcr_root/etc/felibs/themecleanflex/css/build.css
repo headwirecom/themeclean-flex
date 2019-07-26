@@ -788,6 +788,10 @@ video {
   margin-right: 1rem;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
 .max-w-3xl{
   max-width: 48rem;
 }
@@ -1289,6 +1293,12 @@ p {
   .media-sizeable {
     flex-shrink: 0 !important;
   }
+}
+
+.VueCarousel-pagination {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
 }
 
 /* purgecss end ignore */

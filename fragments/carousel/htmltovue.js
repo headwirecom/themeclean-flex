@@ -29,7 +29,7 @@ module.exports = {
         let figcaption = $.find('figcaption').first()
         f.addIf(figcaption, "item.text")
         f.mapRichField(figcaption, "item.text")
-        f.bindAttribute( figcaption, 'class', "{'bg-gray-700': model.captionbg === 'true'}", false)
+        f.bindAttribute( figcaption, 'class', "{'bg-gray-700': model.captionbg === 'true', 'mb-6': model.indicators === 'true'}", false)
 
         $.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
 

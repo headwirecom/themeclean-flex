@@ -173,6 +173,9 @@ p {
   }
 }
 
+.VueCarousel-pagination {
+  @apply absolute bottom-0 mb-4;
+}
 
 
 /* purgecss end ignore */
