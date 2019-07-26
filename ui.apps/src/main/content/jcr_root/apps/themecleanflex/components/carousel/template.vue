@@ -10,7 +10,7 @@
           <v-lazy-image class="w-full h-full object-cover object-center" v-if="item.imagepath"
           v-bind:src="item.imagepath" v-bind:alt="item.alt"></v-lazy-image>
           <figcaption class="absolute bottom-0 p-4 text-white text-xl w-full"
-          v-if="item.text" v-html="item.text" v-bind:class="{'bg-gray-700': model.captionbg === 'true', 'mb-6': model.indicators === 'true'}"></figcaption>
+          v-if="item.text" v-html="item.text" v-bind:class="{'bg-gray-700': model.captionbg === 'true', 'pb-12': model.indicators === 'true'}"></figcaption>
         </div>
       </slide>
       <div v-if="isEditAndEmpty">no content defined for component</div>

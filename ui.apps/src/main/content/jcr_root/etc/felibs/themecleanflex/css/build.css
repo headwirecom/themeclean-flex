@@ -788,10 +788,6 @@ video {
   margin-right: 1rem;
 }
 
-.mb-6{
-  margin-bottom: 1.5rem;
-}
-
 .max-w-3xl{
   max-width: 48rem;
 }
@@ -880,6 +876,10 @@ video {
 
 .pb-4{
   padding-bottom: 1rem;
+}
+
+.pb-12{
+  padding-bottom: 3rem;
 }
 
 .fixed{
