@@ -4,5 +4,6 @@ module.exports = {
         f.addChildren($)
         f.addPlaceholders($)
         f.bindAttribute( $, 'is', 'model.htmlelement || "div"')
+        f.bindAttribute( $, 'class', 'model.width');
     }
 }

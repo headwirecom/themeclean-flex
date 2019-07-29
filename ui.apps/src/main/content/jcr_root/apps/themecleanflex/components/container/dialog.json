@@ -1,6 +1,13 @@
 {
   "fields": [
     {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "width",
+      "label": "Container Width",
+      "model": "width"
+    },
+    {
       "type": "material-select",
       "values": [
         {
