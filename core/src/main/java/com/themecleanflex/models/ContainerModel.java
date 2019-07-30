@@ -25,8 +25,28 @@ import javax.inject.Named;
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Container Width",
-          "x-form-type": "text",
-          "x-default": "w-full"
+          "x-form-type": "materialradio",
+          "x-default": "auto",
+          "properties": {
+            "auto": {
+              "x-form-name": "Auto (fill available space)",
+              "x-form-value": "auto"
+            },
+            "custom": {
+              "x-form-name": "Custom",
+              "x-form-value": "custom"
+            }
+          }
+        },
+        "colspan": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Column Span (12 Columns)",
+          "x-form-type": "materialrange",
+          "x-form-min": 1,
+          "x-form-max": 12,
+          "x-form-visible": "model.width == 'custom'",
+          "x-default": 12
         },
         "htmlelement": {
           "type": "string",
@@ -95,10 +115,15 @@ public class ContainerModel extends Container {
     public ContainerModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Container Width","x-form-type":"text","x-default":"w-full"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Container Width","x-form-type":"materialradio","x-default":"auto","properties":{"auto":{"x-form-name":"Auto (fill available space)","x-form-value":"auto"},"custom":{"x-form-name":"Custom","x-form-value":"custom"}}} */
 	@Inject
-	@Default(values ="w-full")
+	@Default(values ="auto")
 	private String width;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Column Span (12 Columns)","x-form-type":"materialrange","x-form-min":1,"x-form-max":12,"x-form-visible":"model.width == 'custom'","x-default":12} */
+	@Inject
+	@Default(values ="12")
+	private String colspan;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */
 	@Inject
@@ -109,9 +134,14 @@ public class ContainerModel extends Container {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Container Width","x-form-type":"text","x-default":"w-full"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Container Width","x-form-type":"materialradio","x-default":"auto","properties":{"auto":{"x-form-name":"Auto (fill available space)","x-form-value":"auto"},"custom":{"x-form-name":"Custom","x-form-value":"custom"}}} */
 	public String getWidth() {
 		return width;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Column Span (12 Columns)","x-form-type":"materialrange","x-form-min":1,"x-form-max":12,"x-form-visible":"model.width == 'custom'","x-default":12} */
+	public String getColspan() {
+		return colspan;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */

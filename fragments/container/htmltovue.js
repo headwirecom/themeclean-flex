@@ -4,6 +4,9 @@ module.exports = {
         f.addChildren($)
         f.addPlaceholders($)
         f.bindAttribute( $, 'is', 'model.htmlelement || "div"')
-        f.bindAttribute( $, 'class', 'model.width');
+
+        let widthClass = "model.width === 'custom'? model.colspan == 12 ? 'w-full' : \`w-\${model.colspan}/12\` : 'flex-grow'"
+        
+        f.bindAttribute( $, 'class', widthClass);
     }
 }

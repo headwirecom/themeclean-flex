@@ -8,8 +8,28 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Container Width",
-          "x-form-type": "text",
-          "x-default": "w-full"
+          "x-form-type": "materialradio",
+          "x-default": "auto",
+          "properties": {
+            "auto": {
+              "x-form-name": "Auto (fill available space)",
+              "x-form-value": "auto"
+            },
+            "custom": {
+              "x-form-name": "Custom",
+              "x-form-value": "custom"
+            }
+          }
+        },
+        "colspan": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Column Span (12 Columns)",
+          "x-form-type": "materialrange",
+          "x-form-min": 1,
+          "x-form-max": 12,
+          "x-form-visible": "model.width == 'custom'",
+          "x-default": 12 
         },
         "htmlelement": {
           "type": "string",

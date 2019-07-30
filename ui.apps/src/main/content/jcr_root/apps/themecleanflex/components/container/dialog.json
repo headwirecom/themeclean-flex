@@ -1,11 +1,29 @@
 {
   "fields": [
     {
-      "type": "input",
-      "inputType": "text",
+      "type": "material-radios",
+      "values": [
+        {
+          "name": "Auto (fill available space)",
+          "value": "auto"
+        },
+        {
+          "name": "Custom",
+          "value": "custom"
+        }
+      ],
       "placeholder": "width",
       "label": "Container Width",
       "model": "width"
+    },
+    {
+      "type": "material-range",
+      "placeholder": "colspan",
+      "label": "Column Span (12 Columns)",
+      "model": "colspan",
+      "visible": "model.width == 'custom'",
+      "min": 1,
+      "max": 12
     },
     {
       "type": "material-select",
