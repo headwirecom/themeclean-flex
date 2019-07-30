@@ -31,6 +31,60 @@
           "x-form-visible": "model.width == 'custom'",
           "x-default": 12 
         },
+        "tabletwidth": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Container Width (Tablet)",
+          "x-form-type": "materialradio",
+          "x-default": "auto",
+          "properties": {
+            "auto": {
+              "x-form-name": "Auto (fill available space)",
+              "x-form-value": "auto"
+            },
+            "custom": {
+              "x-form-name": "Custom",
+              "x-form-value": "custom"
+            }
+          }
+        },
+        "tabletcolspan": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Column Span (12 Columns)",
+          "x-form-type": "materialrange",
+          "x-form-min": 1,
+          "x-form-max": 12,
+          "x-form-visible": "model.tabletwidth == 'custom'",
+          "x-default": 12 
+        },
+        "mobilewidth": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Container Width (Mobile)",
+          "x-form-type": "materialradio",
+          "x-default": "auto",
+          "properties": {
+            "auto": {
+              "x-form-name": "Auto (fill available space)",
+              "x-form-value": "auto"
+            },
+            "custom": {
+              "x-form-name": "Custom",
+              "x-form-value": "custom"
+            }
+          }
+        },
+        "mobilecolspan": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Column Span (12 Columns)",
+          "x-form-type": "materialrange",
+          "x-form-min": 1,
+          "x-form-max": 12,
+          "x-form-visible": "model.mobilewidth == 'custom'",
+          "x-default": 12 
+        },
         "htmlelement": {
           "type": "string",
           "x-source": "inject",

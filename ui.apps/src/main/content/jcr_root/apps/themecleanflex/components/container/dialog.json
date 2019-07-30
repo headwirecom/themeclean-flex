@@ -26,6 +26,56 @@
       "max": 12
     },
     {
+      "type": "material-radios",
+      "values": [
+        {
+          "name": "Auto (fill available space)",
+          "value": "auto"
+        },
+        {
+          "name": "Custom",
+          "value": "custom"
+        }
+      ],
+      "placeholder": "tabletwidth",
+      "label": "Container Width (Tablet)",
+      "model": "tabletwidth"
+    },
+    {
+      "type": "material-range",
+      "placeholder": "tabletcolspan",
+      "label": "Column Span (12 Columns)",
+      "model": "tabletcolspan",
+      "visible": "model.tabletwidth == 'custom'",
+      "min": 1,
+      "max": 12
+    },
+    {
+      "type": "material-radios",
+      "values": [
+        {
+          "name": "Auto (fill available space)",
+          "value": "auto"
+        },
+        {
+          "name": "Custom",
+          "value": "custom"
+        }
+      ],
+      "placeholder": "mobilewidth",
+      "label": "Container Width (Mobile)",
+      "model": "mobilewidth"
+    },
+    {
+      "type": "material-range",
+      "placeholder": "mobilecolspan",
+      "label": "Column Span (12 Columns)",
+      "model": "mobilecolspan",
+      "visible": "model.mobilewidth == 'custom'",
+      "min": 1,
+      "max": 12
+    },
+    {
       "type": "material-select",
       "values": [
         {
