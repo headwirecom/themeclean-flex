@@ -7,11 +7,7 @@
             'md:flex-row-reverse': model.mediaposition === 'after',
         }" v-else>
       <div class="img-wrapper mb-3 md:mb-0 md:px-3 media-sizeable" v-if="model.showmedia === 'true'"
-      v-bind:style="{flex:`0 0 ${model.mediawidth}%`}" v-bind:class="{
-            'justify-start': model.aligncontent === 'left',
-            'justify-center': model.aligncontent === 'center',
-            'justify-end': model.aligncontent === 'right'
-        }">
+      v-bind:style="{flex:`0 0 ${model.mediawidth}%`}">
         <themecleanflex-components-media :model="model"></themecleanflex-components-media>
       </div>
       <div class="flex flex-col flex-grow mb-3 md:px-3">
@@ -19,7 +15,10 @@
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
             'text-right': model.aligncontent === 'right',
-            'text-2xl': model.isprimary === 'true'
+            'text-2xl': model.isprimary === 'true',
+            'self-start': model.aligncontent === 'left',
+            'self-center': model.aligncontent === 'center',
+            'self-end': model.aligncontent === 'right'
         }" v-bind:style="`width:${model.textwidth}%;`">
           <h1 class="text-xl" v-if="model.showtitle === 'true'" v-bind:class="{'text-5xl': model.isprimary==='true'}"
           v-html="model.title"></h1>

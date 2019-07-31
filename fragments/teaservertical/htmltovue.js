@@ -10,14 +10,6 @@ module.exports = {
         }`
         f.bindAttribute(  $,  'class', containerClasses, false)
 
-        //Container
-        let textContainerClasses = `{
-            'justify-start': model.aligncontent === 'left',
-            'justify-center': model.aligncontent === 'center',
-            'justify-end': model.aligncontent === 'right'
-        }`
-        // f.bindAttribute( $, 'class', containerClasses ,false)
-
         //Media
         let mediaDiv  = $.find('.img-wrapper').first()
         f.addIf( mediaDiv, "model.showmedia === 'true'")
@@ -29,11 +21,13 @@ module.exports = {
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
             'text-right': model.aligncontent === 'right',
-            'text-2xl': model.isprimary === 'true'
+            'text-2xl': model.isprimary === 'true',
+            'self-start': model.aligncontent === 'left',
+            'self-center': model.aligncontent === 'center',
+            'self-end': model.aligncontent === 'right'
         }`
-        let textContainer = $.find('div>div').eq(0)
+
         let textDiv = $.find('div>div>div').first()
-        f.bindAttribute( textContainer, 'class', textContainerClasses, false)
         f.bindAttribute( textDiv, 'class', textClasses, false)
         f.addStyle( textDiv, 'width', 'model.textwidth', '%')
 
