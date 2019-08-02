@@ -1169,10 +1169,6 @@ video {
   width: 100%;
 }
 
-.z-10{
-  z-index: 10;
-}
-
 .aspect-ratio-16\/9{
   padding-top: 56.25%;
 }

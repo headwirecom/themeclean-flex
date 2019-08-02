@@ -8,7 +8,7 @@
     v-bind:style="`position:${'absolute'};pointer-events:${'none'};`">
       <iframe class="w-full h-full" v-bind:src="model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1'"></iframe>
     </div>
-    <div class="flex z-10" v-bind:class="{
+    <div class="flex" v-bind:class="{
             'container mx-auto' : model.blockwidth === 'default',
             'w-full max-w-3xl mx-auto' : model.blockwidth === 'article'
         }">
