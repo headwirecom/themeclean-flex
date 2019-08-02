@@ -593,6 +593,14 @@ video {
   background-color: #2b6cb0;
 }
 
+.hover\:bg-black:hover{
+  background-color: #000;
+}
+
+.hover\:bg-gray-200:hover{
+  background-color: #edf2f7;
+}
+
 .hover\:bg-blue-700:hover{
   background-color: #2b6cb0;
 }
@@ -711,6 +719,10 @@ video {
 
 .self-center{
   align-self: center;
+}
+
+.self-stretch{
+  align-self: stretch;
 }
 
 .justify-start{
@@ -1005,6 +1017,10 @@ video {
   color: #fff;
 }
 
+.hover\:text-gray-200:hover{
+  color: #edf2f7;
+}
+
 .hover\:text-red-600:hover{
   color: #e53e3e;
 }
@@ -1167,6 +1183,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.z-10{
+  z-index: 10;
 }
 
 .aspect-ratio-16\/9{

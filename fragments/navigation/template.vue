@@ -1,16 +1,15 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <nav class="flex">
+    <nav class="flex z-10">
       <div class="flex flex-col dropdown-container" v-for="(child,i) in model.childrenPages"
       :key="i">
-        <a class v-bind:href="child.path">{{child.title}}</a>
-        <div class v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0">
-          <div class="flex flex-col dropdown-list">
-            <a v-bind:href="subchild.path" v-for="(subchild,i) in child.childrenPages"
-            :key="i">{{subchild.title}}</a>
+        <a class="p-3 no-underline" v-bind:href="child.path" v-bind:class="model.colorscheme === 'dark' ? 'hover:bg-gray-200 hover:text-black' : 'hover:bg-black hover:text-gray-200'">{{child.title}}</a>
+        <div class="self-stretch" v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0">
+          <div class="flex flex-col dropdown-list" v-bind:class="model.colorscheme === 'dark' ? 'theme-dark': 'theme-light'">
+            <a class="p-3 no-underline" v-bind:href="subchild.path" v-bind:class="model.colorscheme === 'dark' ? 'hover:bg-gray-200 hover:text-black' : 'hover:bg-black hover:text-gray-200'"
+            v-for="(subchild,i) in child.childrenPages" :key="i">{{subchild.title}}</a>
           </div>
         </div>
-        <div></div>
       </div>
       <div v-if="isEditAndEmpty">no content defined for component</div>
     </nav>
@@ -26,7 +25,7 @@
 <style>
   .dropdown-list {
     display: none;
-    position: absolute;
+    position: fixed;
   }
   .dropdown-container:hover .dropdown-list {
     display: flex;
