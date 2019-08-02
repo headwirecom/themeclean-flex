@@ -1,7 +1,10 @@
 {
   "title": "Navigation",
-  "group": "",
+  "group": "Chrome",
   "model": {
-    "text": "example"
+    "bottompadding": "20",
+    "toppadding": "20",
+    "rootpage": "/content/sites/themecleanflex",
+    "levels": "2"
   }
 }
