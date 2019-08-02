@@ -31,6 +31,14 @@ import java.util.List;
           "x-form-label": "Root Page",
           "x-form-browserRoot": "/content/sites"
         },
+        "levels": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "number",
+          "x-form-label": "Levels",
+          "x-form-default": 1,
+          "x-form-min": 1
+        },
         "bgref": {
           "x-form-type": "reference",
           "type": "object",
@@ -299,6 +307,10 @@ public class NavigationModel extends AbstractComponent {
 	@Inject
 	private String rootpage;
 
+	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
+	@Inject
+	private String levels;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
 	private String anchorname;
@@ -496,14 +508,11 @@ public class NavigationModel extends AbstractComponent {
 //GEN]
 
     //GEN[:CUSTOMGETTERS
-  private static final Logger LOG = LoggerFactory.getLogger(NavigationModel.class);
-
-	@Inject
-	private String levels;
+	private static final Logger LOG = LoggerFactory.getLogger(NavigationModel.class);
 
 	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
 	public String getLevels() {
-		return levels == null ? "2" : levels;
+		return levels == null ? "1" : levels;
 	}
 
 	public String getRootPageTitle() {
