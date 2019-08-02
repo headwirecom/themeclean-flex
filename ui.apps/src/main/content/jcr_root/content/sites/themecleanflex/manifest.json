@@ -6,22 +6,22 @@
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "/etc/felibs/themecleanflex/images/launcher-icon-1x.png",
+      "src": "/content/assets/themecleanflex/icons/launcher-icon-1x.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "/etc/felibs/themecleanflex/images/launcher-icon-2x.png",
+      "src": "/content/assets/themecleanflex/icons/launcher-icon-2x.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "/etc/felibs/themecleanflex/images/launcher-icon-4x.png",
+      "src": "/content/assets/themecleanflex/icons/launcher-icon-4x.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/etc/felibs/themecleanflex/images/launcher-icon-4x.png",
+      "src": "/content/assets/themecleanflex/icons/launcher-icon-4x.png",
       "type": "image/png",
       "sizes": "512x512"
     }
