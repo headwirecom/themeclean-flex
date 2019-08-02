@@ -1,6 +1,7 @@
 <template>
-    <div v-bind:data-per-path="model.path" v-html="model.text">
-    </div>
+  <ul>
+    <a></a>
+  </ul>
 </template>
 
 <script>

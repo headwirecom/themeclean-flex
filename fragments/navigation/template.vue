@@ -3,9 +3,7 @@
     <nav>
       <div v-for="(child,i) in model.childrenPages" :key="i">
         <a></a>
-        <ul v-if="child.children.length &gt; 0">
-          <a href></a>
-        </ul>
+        <themecleanflex-components-navnested v-bind:model="child" v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"></themecleanflex-components-navnested>
         <div></div>
       </div>
       <div v-if="isEditAndEmpty">no content defined for component</div>

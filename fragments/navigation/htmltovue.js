@@ -9,7 +9,8 @@ module.exports = {
         let single = $.find('a');
         
         let nested = $.find('ul');
-        f.addIf(nested, 'child.children.length > 0')
+        f.replace( nested, '<themecleanflex-components-navnested v-bind:model="child"></themecleanflex-components-navnested>')
+        f.addIf($.find('themecleanflex-components-navnested'), 'child.hasChildren && child.childrenPages && child.childrenPages.length > 0')
 
 		$.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
     }
