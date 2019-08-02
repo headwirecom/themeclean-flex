@@ -9,15 +9,6 @@
     },
     {
       "type": "input",
-      "inputType": "number",
-      "placeholder": "levels",
-      "label": "Levels",
-      "model": "levels",
-      "default": 1,
-      "min": 1
-    },
-    {
-      "type": "input",
       "inputType": "text",
       "placeholder": "anchorname",
       "label": "Anchor Name",

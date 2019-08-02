@@ -5,16 +5,13 @@ module.exports = {
 
         let rootItem = $.find('div').eq(0);
         f.addFor( rootItem, 'model.childrenPages', 'child' );
-        f.bindEvent(rootItem, 'mouseover', 'showDropDown(i)');
-        f.bindEvent(rootItem, 'mouseout', 'hideDropDown(i)');
 
         let rootLink = $.find('a');
         f.mapField(rootLink, 'child.title');
         f.bindAttribute(rootLink, 'href', 'child.path');
         
-        let nested = $.find('ul');
+        let nested = $.find('div').eq(1);
         f.addIf(nested, 'child.hasChildren && child.childrenPages && child.childrenPages.length > 0')
-        f.bindAttribute( nested, 'class', "active[i] ? 'visible':'invisible'", false)
 
         let nestedLink = $.find('a').eq(1);
         f.addFor( nestedLink, 'child.childrenPages', 'subchild' );
