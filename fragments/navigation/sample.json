@@ -2,8 +2,9 @@
   "title": "Navigation",
   "group": "Features",
   "model": {
-    "bottompadding": "20",
-    "toppadding": "20",
-    "rootpage": "/content/sites/themecleanflex"
+    "bottompadding": "0",
+    "toppadding": "0",
+    "rootpage": "/content/sites/themecleanflex",
+    "justifyitems": "end"
   }
 }

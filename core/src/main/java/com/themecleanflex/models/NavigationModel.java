@@ -36,9 +36,9 @@ import java.util.List;
           "x-source": "inject",
           "x-form-label": "Navigation Alignment",
           "x-form-type": "materialradio",
-          "x-default": "center",
+          "x-default": "end",
           "properties": {
-            "left": {
+            "start": {
               "x-form-name": "Start",
               "x-form-value": "start"
             },
@@ -46,7 +46,7 @@ import java.util.List;
               "x-form-name": "Center",
               "x-form-value": "center"
             },
-            "right": {
+            "end": {
               "x-form-name": "End",
               "x-form-value": "end"
             }
@@ -320,9 +320,9 @@ public class NavigationModel extends AbstractComponent {
 	@Inject
 	private String rootpage;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Navigation Alignment","x-form-type":"materialradio","x-default":"center","properties":{"left":{"x-form-name":"Start","x-form-value":"start"},"center":{"x-form-name":"Center","x-form-value":"center"},"right":{"x-form-name":"End","x-form-value":"end"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Navigation Alignment","x-form-type":"materialradio","x-default":"end","properties":{"start":{"x-form-name":"Start","x-form-value":"start"},"center":{"x-form-name":"Center","x-form-value":"center"},"end":{"x-form-name":"End","x-form-value":"end"}}} */
 	@Inject
-	@Default(values ="center")
+	@Default(values ="end")
 	private String justifyitems;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
@@ -423,7 +423,7 @@ public class NavigationModel extends AbstractComponent {
 		return rootpage;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Navigation Alignment","x-form-type":"materialradio","x-default":"center","properties":{"left":{"x-form-name":"Start","x-form-value":"start"},"center":{"x-form-name":"Center","x-form-value":"center"},"right":{"x-form-name":"End","x-form-value":"end"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Navigation Alignment","x-form-type":"materialradio","x-default":"end","properties":{"start":{"x-form-name":"Start","x-form-value":"start"},"center":{"x-form-name":"Center","x-form-value":"center"},"end":{"x-form-name":"End","x-form-value":"end"}}} */
 	public String getJustifyitems() {
 		return justifyitems;
 	}
