@@ -8,6 +8,26 @@
       "model": "rootpage"
     },
     {
+      "type": "material-radios",
+      "values": [
+        {
+          "name": "Start",
+          "value": "start"
+        },
+        {
+          "name": "Center",
+          "value": "center"
+        },
+        {
+          "name": "End",
+          "value": "end"
+        }
+      ],
+      "placeholder": "justifyitems",
+      "label": "Navigation Alignment",
+      "model": "justifyitems"
+    },
+    {
       "type": "input",
       "inputType": "text",
       "placeholder": "anchorname",

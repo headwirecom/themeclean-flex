@@ -3,6 +3,14 @@ module.exports = {
         f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
 
+        let justify = `{
+            'justify-start': model.justifyitems === 'start',
+            'justify-center': model.justifyitems === 'center',
+            'justify-end': model.justifyitems === 'end'
+        }`
+
+        f.bindAttribute($, 'class', justify, false);
+
         let rootItem = $.find('div').eq(0);
         f.addFor( rootItem, 'model.childrenPages', 'child' );
 

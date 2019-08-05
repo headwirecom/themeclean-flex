@@ -31,6 +31,27 @@ import java.util.List;
           "x-form-label": "Root Page",
           "x-form-browserRoot": "/content/sites"
         },
+        "justifyitems": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Navigation Alignment",
+          "x-form-type": "materialradio",
+          "x-default": "center",
+          "properties": {
+            "left": {
+              "x-form-name": "Start",
+              "x-form-value": "start"
+            },
+            "center": {
+              "x-form-name": "Center",
+              "x-form-value": "center"
+            },
+            "right": {
+              "x-form-name": "End",
+              "x-form-value": "end"
+            }
+          }
+        },
         "bgref": {
           "x-form-type": "reference",
           "type": "object",
@@ -299,6 +320,11 @@ public class NavigationModel extends AbstractComponent {
 	@Inject
 	private String rootpage;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Navigation Alignment","x-form-type":"materialradio","x-default":"center","properties":{"left":{"x-form-name":"Start","x-form-value":"start"},"center":{"x-form-name":"Center","x-form-value":"center"},"right":{"x-form-name":"End","x-form-value":"end"}}} */
+	@Inject
+	@Default(values ="center")
+	private String justifyitems;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
 	private String anchorname;
@@ -395,6 +421,11 @@ public class NavigationModel extends AbstractComponent {
     	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/sites"} */
 	public String getRootpage() {
 		return rootpage;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Navigation Alignment","x-form-type":"materialradio","x-default":"center","properties":{"left":{"x-form-name":"Start","x-form-value":"start"},"center":{"x-form-name":"Center","x-form-value":"center"},"right":{"x-form-name":"End","x-form-value":"end"}}} */
+	public String getJustifyitems() {
+		return justifyitems;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */

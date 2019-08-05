@@ -1,6 +1,10 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <nav class="flex z-10">
+    <nav class="flex z-10 w-full" v-bind:class="{
+            'justify-start': model.justifyitems === 'start',
+            'justify-center': model.justifyitems === 'center',
+            'justify-end': model.justifyitems === 'end'
+        }">
       <div class="flex flex-col dropdown-container" v-for="(child,i) in model.childrenPages"
       :key="i">
         <a class="p-3 no-underline" v-bind:href="child.path" v-bind:class="model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'">{{child.title}}</a>
