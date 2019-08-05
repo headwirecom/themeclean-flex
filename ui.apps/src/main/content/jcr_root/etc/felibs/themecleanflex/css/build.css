@@ -989,6 +989,10 @@ video {
   color: #fff;
 }
 
+.text-gray-200{
+  color: #edf2f7;
+}
+
 .text-gray-800{
   color: #2d3748;
 }

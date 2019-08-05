@@ -9,7 +9,7 @@ module.exports = {
         let rootLink = $.find('a');
         f.mapField(rootLink, 'child.title');
         f.bindAttribute(rootLink, 'href', 'child.path');
-        f.bindAttribute(rootLink, 'class', "model.colorscheme === 'dark' ? 'hover:bg-gray-200 hover:text-black' : 'hover:bg-black hover:text-gray-200'",false);
+        f.bindAttribute(rootLink, 'class', "model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'",false);
         
         let nested = $.find('div').eq(1);
         f.addIf(nested, 'child.hasChildren && child.childrenPages && child.childrenPages.length > 0')
@@ -20,7 +20,7 @@ module.exports = {
         f.addFor( nestedLink, 'child.childrenPages', 'subchild' );
         f.mapField( nestedLink, 'subchild.title' );
         f.bindAttribute(nestedLink, 'href', 'subchild.path');
-        f.bindAttribute(nestedLink, 'class', "model.colorscheme === 'dark' ? 'hover:bg-gray-200 hover:text-black' : 'hover:bg-black hover:text-gray-200'",false);
+        f.bindAttribute(nestedLink, 'class', "model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'",false);
 
 		$.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
     }
