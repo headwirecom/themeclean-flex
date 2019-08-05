@@ -10,6 +10,7 @@
             'flex-grow': model.mobilewidth === 'auto',
             'w-full': model.mobilewidth === 'custom' &amp;&amp; model.mobilecolspan == 12,
             [`w-${model.mobilecolspan}/12 flex-grow-0`]: model.mobilewidth === 'custom' &amp;&amp; model.mobilecolspan &lt; 12,
+            [`${model.component}`]: model.component
         }">
     <pagerender-vue-components-placeholder v-bind:model="{ path: model.path, component: model.component, location: 'before' }"></pagerender-vue-components-placeholder>
     <template v-for="child in model.children">

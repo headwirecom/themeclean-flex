@@ -15,6 +15,7 @@ module.exports = {
             'flex-grow': model.mobilewidth === 'auto',
             'w-full': model.mobilewidth === 'custom' && model.mobilecolspan == 12,
             [\`w-\${model.mobilecolspan}/12 flex-grow-0\`]: model.mobilewidth === 'custom' && model.mobilecolspan < 12,
+            [\`\${model.component}\`]: model.component
         }`
         
         f.bindAttribute( $, 'class', widthClass);
