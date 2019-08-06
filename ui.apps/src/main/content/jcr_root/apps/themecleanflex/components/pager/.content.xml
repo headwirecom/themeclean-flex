@@ -4,7 +4,7 @@
     <sample jcr:primaryType="nt:unstructured" title=" Pager" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured" prevlabel="&lt; Prev" nextlabel="Next >" colorscheme="" toppadding="10" bottompadding="10"/>
     </sample>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Pager" group="Blank">
+    <sample-blank jcr:primaryType="nt:unstructured" title="Pager (Empty)" group="Blank">
       <jcr:content jcr:primaryType="nt:unstructured"/>
     </sample-blank>
   </jcr:content>

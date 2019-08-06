@@ -10,7 +10,7 @@
         </cards>
       </jcr:content>
     </sample>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Cards" group="Blank">
+    <sample-blank jcr:primaryType="nt:unstructured" title="Cards (Empty)" group="Blank">
       <jcr:content jcr:primaryType="nt:unstructured">
         <cards jcr:primaryType="nt:unstructured"/>
       </jcr:content>

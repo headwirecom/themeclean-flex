@@ -10,7 +10,7 @@
         </tabs>
       </jcr:content>
     </sample>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Tabs" group="Blank">
+    <sample-blank jcr:primaryType="nt:unstructured" title="Tabs (Empty)" group="Blank">
       <jcr:content jcr:primaryType="nt:unstructured">
         <tabs jcr:primaryType="nt:unstructured"/>
       </jcr:content>

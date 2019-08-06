@@ -17,7 +17,7 @@
         </icons>
       </jcr:content>
     </sample>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Footer" group="Blank">
+    <sample-blank jcr:primaryType="nt:unstructured" title="Footer (Empty)" group="Blank">
       <jcr:content jcr:primaryType="nt:unstructured">
         <coluimns jcr:primaryType="nt:unstructured"/>
       </jcr:content>

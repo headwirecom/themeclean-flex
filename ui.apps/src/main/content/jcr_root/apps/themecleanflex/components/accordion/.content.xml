@@ -35,7 +35,7 @@
         </accordiontoggle>
       </jcr:content>
     </sample-bg>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Accordion" group="Blank">
+    <sample-blank jcr:primaryType="nt:unstructured" title="Accordion (Empty)" group="Blank">
       <jcr:content jcr:primaryType="nt:unstructured">
         <tabs jcr:primaryType="nt:unstructured"/>
       </jcr:content>

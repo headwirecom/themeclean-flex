@@ -4,7 +4,7 @@
     <sample jcr:primaryType="nt:unstructured" title="Video" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured" mediatype="video" videosrc="https://www.youtube-nocookie.com/embed/R5qdE0_mOcw" mediatitle="Sailing Video" toppadding="30" bottompadding="30" backgroundtype="color"/>
     </sample>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Media" group="Blank">
+    <sample-blank jcr:primaryType="nt:unstructured" title="Media (Empty)" group="Blank">
       <jcr:content jcr:primaryType="nt:unstructured"/>
     </sample-blank>
     <sample-image jcr:primaryType="nt:unstructured" title="Image" group="Features">
