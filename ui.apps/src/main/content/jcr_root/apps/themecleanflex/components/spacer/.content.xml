@@ -4,6 +4,9 @@
     <sample jcr:primaryType="nt:unstructured" title="Spacer" group="Chrome">
       <jcr:content jcr:primaryType="nt:unstructured" height="20"/>
     </sample>
+    <sample-blank jcr:primaryType="nt:unstructured" title="Spacer" group="Blank">
+      <jcr:content jcr:primaryType="nt:unstructured"/>
+    </sample-blank>
     <sample-image jcr:primaryType="nt:unstructured" title="Spacer Image" group="Chrome">
       <jcr:content jcr:primaryType="nt:unstructured" height="80" custombackground="true" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg"/>
     </sample-image>

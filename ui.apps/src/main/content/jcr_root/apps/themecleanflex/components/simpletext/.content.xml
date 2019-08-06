@@ -4,6 +4,9 @@
     <sample jcr:primaryType="nt:unstructured" title="Basic Text Block" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="Themeclean Basic Text Element" element="p"/>
     </sample>
+    <sample-blank jcr:primaryType="nt:unstructured" title="Simple Text" group="Blank">
+      <jcr:content jcr:primaryType="nt:unstructured"/>
+    </sample-blank>
     <sample-h1 jcr:primaryType="nt:unstructured" title="Basic Heading 1" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="Themeclean Heading" element="h1"/>
     </sample-h1>

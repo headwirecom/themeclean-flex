@@ -10,6 +10,11 @@
         </slides>
       </jcr:content>
     </sample>
+    <sample-blank jcr:primaryType="nt:unstructured" title="Carousel" group="Blank">
+      <jcr:content jcr:primaryType="nt:unstructured">
+        <slides jcr:primaryType="nt:unstructured"/>
+      </jcr:content>
+    </sample-blank>
     <sample-rte jcr:primaryType="nt:unstructured" title="Carousel With Full RTE" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured" carouselheight="80" toppadding="20" bottompadding="20">
         <slides jcr:primaryType="nt:unstructured">
