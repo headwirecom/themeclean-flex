@@ -19,6 +19,13 @@
           "x-form-label": "Auto Play",
           "x-form-type": "materialswitch"
         },
+        "itemsperpage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Images per page",
+          "x-form-type": "number",
+          "x-default": 1
+        },
         "interval": {
           "type": "string",
           "x-source": "inject",

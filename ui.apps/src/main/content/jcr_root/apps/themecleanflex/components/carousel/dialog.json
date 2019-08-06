@@ -19,6 +19,13 @@
       "model": "autoplay"
     },
     {
+      "type": "input",
+      "inputType": "number",
+      "placeholder": "itemsperpage",
+      "label": "Images per page",
+      "model": "itemsperpage"
+    },
+    {
       "type": "material-range",
       "placeholder": "interval",
       "label": "Interval",

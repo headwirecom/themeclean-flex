@@ -36,6 +36,13 @@ import javax.inject.Named;
           "x-form-label": "Auto Play",
           "x-form-type": "materialswitch"
         },
+        "itemsperpage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Images per page",
+          "x-form-type": "number",
+          "x-default": 1
+        },
         "interval": {
           "type": "string",
           "x-source": "inject",
@@ -382,6 +389,11 @@ public class CarouselModel extends AbstractComponent {
 	@Inject
 	private String autoplay;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Images per page","x-form-type":"number","x-default":1} */
+	@Inject
+	@Default(values ="1")
+	private String itemsperpage;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Interval","x-form-type":"materialrange","x-form-visible":"model.autoplay == 'true'","x-default":5,"x-form-min":1,"x-form-max":20} */
 	@Inject
 	@Default(values ="5")
@@ -516,6 +528,11 @@ public class CarouselModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Auto Play","x-form-type":"materialswitch"} */
 	public String getAutoplay() {
 		return autoplay;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Images per page","x-form-type":"number","x-default":1} */
+	public String getItemsperpage() {
+		return itemsperpage;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Interval","x-form-type":"materialrange","x-form-visible":"model.autoplay == 'true'","x-default":5,"x-form-min":1,"x-form-max":20} */
