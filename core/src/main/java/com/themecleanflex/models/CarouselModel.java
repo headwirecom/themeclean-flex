@@ -27,7 +27,7 @@ import javax.inject.Named;
           "x-form-label": "Carousel Height",
           "x-form-type": "materialrange",
           "x-default": 80,
-          "x-form-min": 50,
+          "x-form-min": 10,
           "x-form-max": 100
         },
         "autoplay": {
@@ -101,6 +101,23 @@ import javax.inject.Named;
               "x-form-label": "Image Source",
               "x-form-type": "pathbrowser",
               "x-form-browserRoot": "/content/assets"
+            },
+            "imagefit": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Slide Image Fit",
+              "x-form-type": "materialradio",
+              "x-default": "cover",
+              "properties": {
+                "toggle": {
+                  "x-form-name": "Contain",
+                  "x-form-value": "contain"
+                },
+                "accordion": {
+                  "x-form-name": "Cover",
+                  "x-form-value": "cover"
+                }
+              }
             },
             "slidelink": {
               "type": "string",
@@ -387,7 +404,7 @@ public class CarouselModel extends AbstractComponent {
     public CarouselModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Carousel Height","x-form-type":"materialrange","x-default":80,"x-form-min":50,"x-form-max":100} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Carousel Height","x-form-type":"materialrange","x-default":80,"x-form-min":10,"x-form-max":100} */
 	@Inject
 	@Default(values ="80")
 	private String carouselheight;
@@ -430,7 +447,7 @@ public class CarouselModel extends AbstractComponent {
 	@Inject
 	private String captionbg;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Slides","x-form-fieldLabel":"heading","x-form-type":"collection","properties":{"imagepath":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"},"slidelink":{"type":"string","x-source":"inject","x-form-label":"Slide Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"},"text":{"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"},"alt":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Slides","x-form-fieldLabel":"heading","x-form-type":"collection","properties":{"imagepath":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"},"imagefit":{"type":"string","x-source":"inject","x-form-label":"Slide Image Fit","x-form-type":"materialradio","x-default":"cover","properties":{"toggle":{"x-form-name":"Contain","x-form-value":"contain"},"accordion":{"x-form-name":"Cover","x-form-value":"cover"}}},"slidelink":{"type":"string","x-source":"inject","x-form-label":"Slide Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"},"text":{"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"},"alt":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"}}} */
 	@Inject
 	private List<IComponent> slides;
 
@@ -527,7 +544,7 @@ public class CarouselModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Carousel Height","x-form-type":"materialrange","x-default":80,"x-form-min":50,"x-form-max":100} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Carousel Height","x-form-type":"materialrange","x-default":80,"x-form-min":10,"x-form-max":100} */
 	public String getCarouselheight() {
 		return carouselheight;
 	}
@@ -572,7 +589,7 @@ public class CarouselModel extends AbstractComponent {
 		return captionbg;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Slides","x-form-fieldLabel":"heading","x-form-type":"collection","properties":{"imagepath":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"},"slidelink":{"type":"string","x-source":"inject","x-form-label":"Slide Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"},"text":{"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"},"alt":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Slides","x-form-fieldLabel":"heading","x-form-type":"collection","properties":{"imagepath":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"},"imagefit":{"type":"string","x-source":"inject","x-form-label":"Slide Image Fit","x-form-type":"materialradio","x-default":"cover","properties":{"toggle":{"x-form-name":"Contain","x-form-value":"contain"},"accordion":{"x-form-name":"Cover","x-form-value":"cover"}}},"slidelink":{"type":"string","x-source":"inject","x-form-label":"Slide Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/sites"},"text":{"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"},"alt":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"}}} */
 	public List<IComponent> getSlides() {
 		return slides;
 	}

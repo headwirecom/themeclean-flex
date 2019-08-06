@@ -5,7 +5,7 @@
       "placeholder": "carouselheight",
       "label": "Carousel Height",
       "model": "carouselheight",
-      "min": 50,
+      "min": 10,
       "max": 100
     },
     {
@@ -99,6 +99,22 @@
           "placeholder": "imagepath",
           "label": "Image Source",
           "model": "imagepath"
+        },
+        {
+          "type": "material-radios",
+          "values": [
+            {
+              "name": "Contain",
+              "value": "contain"
+            },
+            {
+              "name": "Cover",
+              "value": "cover"
+            }
+          ],
+          "placeholder": "imagefit",
+          "label": "Slide Image Fit",
+          "model": "imagefit"
         },
         {
           "type": "pathbrowser",

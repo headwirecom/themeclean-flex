@@ -8,14 +8,17 @@
     "slides": [
       {
         "imagepath": "/content/assets/themecleanflex/samples/architecture-blue-skies_large.jpg",
+        "imagefit": "cover",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "alt": "Sailboats in front of city skyline and sunset"
       },{
         "imagepath": "/content/assets/themecleanflex/samples/sailing-lake_large.jpg",
+        "imagefit": "cover",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         "alt": "Sailboat sailing on a lake"
       },{
         "imagepath": "/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg",
+        "imagefit": "cover",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         "alt": "Sailboats sailing on an ocean"
       }

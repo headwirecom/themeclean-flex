@@ -28,6 +28,7 @@ module.exports = {
         f.addIf(image, "item.imagepath")
         f.bindAttribute(image, "src", "item.imagepath")
         f.bindAttribute(image, "alt", "item.alt")
+        f.bindAttribute(image, "class", "item.imagefit === 'cover' ? 'object-cover' : 'object-contain'", false)
 
         let figcaption = $.find('figcaption').first()
         f.addIf(figcaption, "item.text")

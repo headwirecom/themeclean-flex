@@ -836,6 +836,10 @@ video {
   min-height: 100vh;
 }
 
+.object-contain{
+  object-fit: contain;
+}
+
 .object-cover{
   object-fit: cover;
 }

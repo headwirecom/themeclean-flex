@@ -8,8 +8,8 @@
       <slide v-for="(item,i) in model.slides" :key="i">
         <div class="relative overflow-hidden" v-bind:style="`height:${model.carouselheight}vh;maxHeight:${model.carouselheight}vh;`">
           <a class="absolute inset-0 z-10" v-if="item.slidelink" v-bind:href="item.slidelink"></a>
-          <v-lazy-image class="w-full h-full object-cover object-center" v-if="item.imagepath"
-          v-bind:src="item.imagepath" v-bind:alt="item.alt"></v-lazy-image>
+          <v-lazy-image class="w-full h-full object-center" v-if="item.imagepath"
+          v-bind:src="item.imagepath" v-bind:alt="item.alt" v-bind:class="item.imagefit === 'cover' ? 'object-cover' : 'object-contain'"></v-lazy-image>
           <figcaption class="absolute bottom-0 p-4 text-white text-xl w-full"
           v-if="item.text" v-html="item.text" v-bind:class="{'bg-gray-700': model.captionbg === 'true', 'pb-12': model.indicators === 'true'}"></figcaption>
         </div>
