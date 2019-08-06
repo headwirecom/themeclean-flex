@@ -85,6 +85,13 @@
               "x-form-type": "pathbrowser",
               "x-form-browserRoot": "/content/assets"
             },
+            "slidelink": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Slide Link",
+              "x-form-type": "pathbrowser",
+              "x-form-browserRoot": "/content/sites"
+            },
             "text": {
               "type": "string",
               "x-source": "inject",

@@ -101,6 +101,13 @@
           "model": "imagepath"
         },
         {
+          "type": "pathbrowser",
+          "browserRoot": "/content/sites",
+          "placeholder": "slidelink",
+          "label": "Slide Link",
+          "model": "slidelink"
+        },
+        {
           "type": "texteditor",
           "rows": 10,
           "placeholder": "text",

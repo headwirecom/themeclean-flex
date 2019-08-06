@@ -16,9 +16,12 @@ module.exports = {
         f.bindAttribute(carousel, "autoplayTimeout", "model.interval * 1000")
         f.bindAttribute(carousel, "perPage", "model.itemsperpage")
 
-
         let slide = $.find('slide').first();
         f.addFor(slide, "model.slides");
+
+        let link = $.find('a');
+        f.addIf(link, "item.slidelink")
+        f.bindAttribute(link, 'href', "item.slidelink")
 
         let image = $.find('v-lazy-image').first()
 

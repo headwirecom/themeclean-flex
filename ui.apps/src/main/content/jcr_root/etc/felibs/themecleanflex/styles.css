@@ -174,8 +174,11 @@ p {
 }
 
 .VueCarousel-pagination {
-  @apply absolute bottom-0 mb-4;
+  @apply absolute bottom-0 mb-4 pointer-events-none;
 }
 
+.VueCarousel-dot-container {
+  @apply pointer-events-auto;
+}
 
 /* purgecss end ignore */

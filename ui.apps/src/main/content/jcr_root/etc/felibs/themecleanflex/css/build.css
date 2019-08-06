@@ -1455,6 +1455,11 @@ p {
   position: absolute;
   bottom: 0;
   margin-bottom: 1rem;
+  pointer-events: none;
+}
+
+.VueCarousel-dot-container {
+  pointer-events: auto;
 }
 
 /* purgecss end ignore */
