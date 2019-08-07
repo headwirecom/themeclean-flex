@@ -5,9 +5,7 @@ module.exports = {
         f.bindAttribute( $, 'data-per-path', 'model.path')
         f.bindAttribute( $, 'is', 'model.htmlelement || "div"')
 
-        let anchor = $.find('a')
-        f.addIf( anchor, 'model.anchorname')
-        f.bindAttribute( anchor, 'id', 'model.anchorname')
+        f.bindAttribute( $, 'id', 'model.anchorname')
 
         f.addIf( $.find('div.embed-responsive').first(), "model.custombackground === 'true' && model.backgroundtype == 'video' && model.bgvideo" )
         f.bindAttribute( $.find('iframe').first(), 'src', "model.bgvideo + '?autoplay=1&loop=1&controls=0&mute=1'" )
