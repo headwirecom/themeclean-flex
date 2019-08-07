@@ -6,10 +6,10 @@ module.exports = {
         let widths = `{
             'w-full': model.cardsperrow == 1,
             'w-full md:w-1/2 lg:w-1/2': model.cardsperrow == 2,
-            'w-full sm:w-1/2 md:w-1/2 lg:w-1/3': model.cardsperrow == 3,
-            'w-full sm:w-1/2 md:w-1/3 lg:w-1/4': model.cardsperrow == 4,
-            'w-full sm:w-1/2 md:w-1/4 lg:w-1/5': model.cardsperrow == 5,
-            'w-full sm:w-1/2 md:w-1/3 lg:w-1/6': model.cardsperrow == 6,
+            'w-full md:w-1/3': model.cardsperrow == 3,
+            'w-full md:w-1/4': model.cardsperrow == 4,
+            'w-full md:w-1/5': model.cardsperrow == 5,
+            'w-full md:w-1/6': model.cardsperrow == 6,
         }`
 
         //Card Width
