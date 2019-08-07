@@ -32,7 +32,7 @@ module.exports = {
         }`
         f.bindAttribute($.find('div.card>div>div').eq(1), 'class', cardBodyClasses, false)
 
-        f.bindAttribute($.find('div.card>div>div').eq(0), 'style', '{maxWidth: item.imagewidth + "%"}')
+        f.bindAttribute($.find('div.card>div>div').eq(0), 'style', '{width: item.imagewidth + "%"}')
         //Image
         f.replace($.find('img'), '<v-lazy-image></v-lazy-image>')
         f.bindAttribute($.find('v-lazy-image').first(), 'class', "model.showcard == 'true' ? 'card-img pb-1' : 'card-img pb-3'")
