@@ -8,7 +8,7 @@
             'text-red-700 hover:text-red-600': model.linkcolor === 'danger',
             'text-orange-700 hover:text-orange-600': model.linkcolor === 'warning',
             'text-white hover:text-white': model.linkcolor === 'light',
-            'text-black hover:text-black': model.linkcolor === 'dark',
+            'text-gray-800 hover:text-black': model.linkcolor === 'dark',
             'font-bold' : $data.path === $helper.pathToUrl(item.link)
         }"></a>
     </li>
