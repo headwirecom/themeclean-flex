@@ -99,6 +99,14 @@
           "model": "image"
         },
         {
+          "type": "material-range",
+          "placeholder": "imagewidth",
+          "label": "Image Width",
+          "model": "imagewidth",
+          "min": "10",
+          "max": "100"
+        },
+        {
           "type": "input",
           "inputType": "text",
           "placeholder": "imagealttext",

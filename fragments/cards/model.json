@@ -80,6 +80,15 @@
               "x-form-type": "pathbrowser",
               "x-form-browserRoot": "/content/assets"
             },
+            "imagewidth": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Image Width",
+              "x-form-type": "materialrange",
+              "x-default": "100",
+              "x-form-min": "10",
+              "x-form-max": "100"
+            },
             "imagealttext": {
 	          "type": "string",
 	          "x-source": "inject",

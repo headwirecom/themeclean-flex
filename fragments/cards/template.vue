@@ -18,11 +18,12 @@
             'text-dark': (model.showcard === 'false' &amp;&amp; model.colorscheme === 'light') || (model.showcard === 'true' &amp;&amp; model.colorscheme === 'dark'),
             'text-light': (model.showcard === 'false' &amp;&amp; model.colorscheme === 'dark') || (model.showcard === 'true' &amp;&amp; model.colorscheme === 'light'),
         }">
-          <v-lazy-image v-bind:class="model.showcard == 'true' ? 'card-img pb-1' : 'card-img pb-3'"
-          v-bind:src="$helper.pathToUrl(item.image)" v-bind:alt="item.imagealttext"
-          v-if="item.image"></v-lazy-image>
-          <div class="flex flex-grow flex-col justify-between p-0"
-          v-bind:class="{
+          <div class="self-center" v-bind:style="{maxWidth: item.imagewidth + &quot;%&quot;}">
+            <v-lazy-image v-bind:class="model.showcard == 'true' ? 'card-img pb-1' : 'card-img pb-3'"
+            v-bind:src="$helper.pathToUrl(item.image)" v-bind:alt="item.imagealttext"
+            v-if="item.image"></v-lazy-image>
+          </div>
+          <div class="flex flex-grow flex-col justify-between p-0" v-bind:class="{
             'p-3': model.showcard === 'true'
         }">
             <div>
