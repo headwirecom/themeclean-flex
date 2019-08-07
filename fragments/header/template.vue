@@ -15,7 +15,7 @@
           v-bind:model="model"></themecleanflex-components-menubuttons>
         </div>
         <div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90"
-        v-on:click="toggleMenu" v-if="model.buttons.length &gt; 0 || model.links.length &gt; 0"
+        v-on:click="toggleMenu" v-if="model.buttons &amp;&amp; model.buttons.length &gt; 0 || model.links &amp;&amp;  model.links.length &gt; 0"
         v-bind:style="{display: model.collapsed === 'true' ? 'flex': false}">|||</div>
       </div>
       <div v-bind:style="`height:${menuActive ? menuHeight + 'px' : '0px'};`"

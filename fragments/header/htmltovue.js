@@ -18,7 +18,7 @@ module.exports = {
 
         let collapseButton = $.find('nav>div>div:nth-child(3)')
         f.bindEvent( collapseButton, 'click', 'toggleMenu')
-        f.addIf(collapseButton, 'model.buttons.length > 0 || model.links.length > 0')
+        f.addIf(collapseButton, 'model.buttons && model.buttons.length > 0 || model.links &&  model.links.length > 0')
         f.bindAttribute(collapseButton, 'style', "{display: model.collapsed === 'true' ? 'flex': false}", false)
 
         f.addStyle( $.find('nav>div:nth-child(2)'), 'height', "menuActive ? menuHeight + 'px' : '0px'")
