@@ -9,7 +9,7 @@
             sling:resourceType="themecleanflex/components/page"
             jcr:title="themecleanflex template"
             brand="themecleanflex"
-            siteCSS="[/etc/felibs/themecleanflex.css,/sites/themecleanflex/css/colors.css,/sites/themecleanflex/css/overrides.css]"
+            siteCSS="[/etc/felibs/themecleanflex.css,/sites/themecleanflex/css/colors.css,/sites/themecleanflex/css/custom.css]"
             prefetchDNS="[https://www.youtube.com,https://s.ytimg.com,https://www.google.com,https://fonts.gstatic.com,https://www.youtube-nocookie.com]"
     />
 </jcr:root>
