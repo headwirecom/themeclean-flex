@@ -7,19 +7,19 @@
         "showtitle": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Show Title",
+          "x-form-label": "Show Card Title",
           "x-form-type": "materialswitch"
         },
         "showtext": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Show Text",
+          "x-form-label": "Show Card Text",
           "x-form-type": "materialswitch"
         },
         "showbutton": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Show Button",
+          "x-form-label": "Show Card Button",
           "x-form-type": "materialswitch"
         },
         "showcard": {

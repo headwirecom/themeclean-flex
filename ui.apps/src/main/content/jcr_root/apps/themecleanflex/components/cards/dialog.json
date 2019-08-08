@@ -7,7 +7,7 @@
       "valueOn": "true",
       "valueOff": "false",
       "placeholder": "showtitle",
-      "label": "Show Title",
+      "label": "Show Card Title",
       "model": "showtitle"
     },
     {
@@ -17,7 +17,7 @@
       "valueOn": "true",
       "valueOff": "false",
       "placeholder": "showtext",
-      "label": "Show Text",
+      "label": "Show Card Text",
       "model": "showtext"
     },
     {
@@ -27,7 +27,7 @@
       "valueOn": "true",
       "valueOff": "false",
       "placeholder": "showbutton",
-      "label": "Show Button",
+      "label": "Show Card Button",
       "model": "showbutton"
     },
     {

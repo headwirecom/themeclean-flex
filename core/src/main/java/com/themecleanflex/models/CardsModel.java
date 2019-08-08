@@ -24,19 +24,19 @@ import javax.inject.Named;
         "showtitle": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Show Title",
+          "x-form-label": "Show Card Title",
           "x-form-type": "materialswitch"
         },
         "showtext": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Show Text",
+          "x-form-label": "Show Card Text",
           "x-form-type": "materialswitch"
         },
         "showbutton": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Show Button",
+          "x-form-label": "Show Card Button",
           "x-form-type": "materialswitch"
         },
         "showcard": {
@@ -455,15 +455,15 @@ public class CardsModel extends AbstractComponent {
     public CardsModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Show Title","x-form-type":"materialswitch"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Title","x-form-type":"materialswitch"} */
 	@Inject
 	private String showtitle;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Text","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Text","x-form-type":"materialswitch"} */
 	@Inject
 	private String showtext;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Button","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Button","x-form-type":"materialswitch"} */
 	@Inject
 	private String showbutton;
 
@@ -582,17 +582,17 @@ public class CardsModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Show Title","x-form-type":"materialswitch"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Title","x-form-type":"materialswitch"} */
 	public String getShowtitle() {
 		return showtitle;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Text","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Text","x-form-type":"materialswitch"} */
 	public String getShowtext() {
 		return showtext;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Button","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Button","x-form-type":"materialswitch"} */
 	public String getShowbutton() {
 		return showbutton;
 	}
