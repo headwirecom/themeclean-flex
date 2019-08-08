@@ -1,6 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="w-full">
+    <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
+    <div class="w-full" v-else>
       <h1 class="text-xl text-center pb-4" v-if="model.showtitle == 'true'"
       v-html="model.title"></h1>
       <div class="flex flex-col -mx-3 flex-grow" v-bind:class="{
@@ -29,7 +30,6 @@
           </div>
         </div>
       </div>
-      <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
   </themecleanflex-components-block>
 </template>

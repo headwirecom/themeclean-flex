@@ -4,6 +4,7 @@ module.exports = {
         f.bindAttribute($.parent(),'model','model')
         f.addStyle($.find("div").first(), 'height', 'model.height', 'vh')
         
-        $.append('<div v-if="isEditAndEmpty">height needs to be greater than 0</div>')
+        f.addElse($);
+        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }

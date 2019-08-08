@@ -17,6 +17,7 @@ module.exports = {
         f.bindAttribute( mediaDiv, 'style', "{flex:`0 0 ${model.mediawidth}%`}")
         f.replace( $.find('img'), '<themecleanflex-components-media :model="model"></themecleanflex-components-media>')
 
-		$.parent().append('<div v-if="isEditAndEmpty">no content defined for component</div>')
+        f.addElse($);
+        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }

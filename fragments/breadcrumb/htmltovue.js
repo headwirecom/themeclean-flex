@@ -27,7 +27,8 @@ module.exports = {
         f.addIf( spanInner, "i+1 === model.links.length" )
         f.mapField( spanInner, "item.text")
 
-        $.append('<div v-if="isEditAndEmpty">No links found for breadcrumb</div>')
+        f.addElse($);
+        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
 
     }
 }

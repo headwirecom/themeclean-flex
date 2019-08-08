@@ -15,6 +15,7 @@ module.exports = {
 
         f.bindAttribute($, 'class', classes, false);
 
-		$.parent().append('<div v-if="isEditAndEmpty">no content defined for component</div>')
+        f.addElse($);
+        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }

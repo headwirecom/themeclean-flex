@@ -23,6 +23,7 @@ module.exports = {
         f.mapField(label, 'model.tagslabel')
         f.addIf(label, 'model.tagslabel')
 
-        $.parent().prepend('<div v-if="isEditAndEmpty">no content defined for component</div>')
+        f.addElse($);
+        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }
