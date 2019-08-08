@@ -1,9 +1,9 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div>
+    <div class="w-full">
       <h1 class="text-xl text-center pb-4" v-if="model.showtitle == 'true'"
       v-html="model.title"></h1>
-      <div class="flex flex-col -mx-3" v-bind:class="{
+      <div class="flex flex-col -mx-3 flex-grow" v-bind:class="{
             'lg:flex-row': model.mediaposition === 'before',
             'lg:flex-row-reverse': model.mediaposition === 'after'
         }">
@@ -11,7 +11,7 @@
         v-bind:style="{flex:`0 0 ${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
-        <div class="px-3">
+        <div class="px-3 flex-grow">
           <div v-for="(item,i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`">
             <a class="flex bg-gray-200 justify-between items-center p-3 cursor-pointer no-underline text-gray-800"
             v-on:click="toggleItem(i)">
