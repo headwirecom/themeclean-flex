@@ -1,11 +1,11 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
-    <div class="flex flex-wrap -mx-3"
+    <div class="flex flex-wrap -mx-3 w-full"
     v-else>
       <div class="card my-3 px-3" v-bind:class="{
             'w-full': model.cardsperrow == 1,
-            'w-full md:w-1/2 lg:w-1/2': model.cardsperrow == 2,
+            'w-full md:w-1/2': model.cardsperrow == 2,
             'w-full md:w-1/3': model.cardsperrow == 3,
             'w-full md:w-1/4': model.cardsperrow == 4,
             'w-full md:w-1/5': model.cardsperrow == 5,

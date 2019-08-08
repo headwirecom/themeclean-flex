@@ -2,6 +2,10 @@
   "title": "Cards (Empty)",
   "group": "Blank",
   "model": {
+    "showtitle": "true",
+    "showtext" : "true",
+    "showbutton": "true",
+    "showcard": "true",
     "cards": [
       
     ]
