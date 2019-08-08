@@ -24,6 +24,8 @@ module.exports = {
 		f.mapRichField($.find('p').eq(0), "model.copyright")
 
 
-		$.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
+		f.addElse($);
+		$.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
+
     }
 }

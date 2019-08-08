@@ -1,6 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="w-full">
+    <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
+    <div class="w-full" v-else>
       <div class="flex flex-col lg:flex-row justify-between">
         <a v-if="model.showlogo === 'true' &amp;&amp; model.logo" v-bind:href="$helper.pathToUrl(model.logourl)">
           <img class="mb-3" v-bind:src="$helper.pathToUrl(model.logo)" v-bind:alt="model.logoalttext"
@@ -17,7 +18,6 @@
         <p class="my-3" v-html="model.copyright"></p>
         <themecleanflex-components-socialicons v-bind:model="model"></themecleanflex-components-socialicons>
       </div>
-      <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
   </themecleanflex-components-block>
 </template>
