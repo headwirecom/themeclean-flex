@@ -12,7 +12,13 @@
 
 <script>
     export default {
-        props: ['model']
+        props: ['model'],
+        computed: {
+          isEditAndEmpty() {
+              if(!$peregrineApp.isAuthorMode()) return false
+              return this.$helper.areAllEmpty(this.model.text)
+          }
+        }
     }
 </script>
 

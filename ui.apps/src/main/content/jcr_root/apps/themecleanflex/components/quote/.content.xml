@@ -4,6 +4,9 @@
     <sample jcr:primaryType="nt:unstructured" title="Quote" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>&quot;Thats one small step for a man, one giant leap for mankind.&quot;&lt;/p>&lt;p>-&lt;i>Neil Armstrong&lt;/i>&lt;/p>" blockquote="false" blockwidth="article" toppadding="30" bottompadding="30"/>
     </sample>
+    <sample-blank jcr:primaryType="nt:unstructured" title="Quote (Empty)" group="Blank">
+      <jcr:content jcr:primaryType="nt:unstructured"/>
+    </sample-blank>
     <sample-blockquote jcr:primaryType="nt:unstructured" title="Block Quote" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>If you think you can do a thing or think you cant do a thing, youre right. &lt;/p>&lt;/i>- Henry Ford&lt;/i>" blockquote="true" blockwidth="article" toppadding="30" bottompadding="30"/>
     </sample-blockquote>
