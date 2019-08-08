@@ -32,6 +32,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Choose Element Type",
           "x-form-type": "materialselect",
+          "x-default": "p",
           "properties": {
             "h1": {
               "x-form-name": "h1",
@@ -327,8 +328,9 @@ public class SimpletextModel extends AbstractComponent {
 	@Inject
 	private String text;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Choose Element Type","x-form-type":"materialselect","properties":{"h1":{"x-form-name":"h1","x-form-value":"h1"},"h2":{"x-form-name":"h2","x-form-value":"h2"},"h3":{"x-form-name":"h3","x-form-value":"h3"},"h4":{"x-form-name":"h4","x-form-value":"h4"},"h5":{"x-form-name":"h5","x-form-value":"h5"},"p":{"x-form-name":"p","x-form-value":"p"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Choose Element Type","x-form-type":"materialselect","x-default":"p","properties":{"h1":{"x-form-name":"h1","x-form-value":"h1"},"h2":{"x-form-name":"h2","x-form-value":"h2"},"h3":{"x-form-name":"h3","x-form-value":"h3"},"h4":{"x-form-name":"h4","x-form-value":"h4"},"h5":{"x-form-name":"h5","x-form-value":"h5"},"p":{"x-form-name":"p","x-form-value":"p"}}} */
 	@Inject
+	@Default(values ="p")
 	private String element;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
@@ -429,7 +431,7 @@ public class SimpletextModel extends AbstractComponent {
 		return text;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Choose Element Type","x-form-type":"materialselect","properties":{"h1":{"x-form-name":"h1","x-form-value":"h1"},"h2":{"x-form-name":"h2","x-form-value":"h2"},"h3":{"x-form-name":"h3","x-form-value":"h3"},"h4":{"x-form-name":"h4","x-form-value":"h4"},"h5":{"x-form-name":"h5","x-form-value":"h5"},"p":{"x-form-name":"p","x-form-value":"p"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Choose Element Type","x-form-type":"materialselect","x-default":"p","properties":{"h1":{"x-form-name":"h1","x-form-value":"h1"},"h2":{"x-form-name":"h2","x-form-value":"h2"},"h3":{"x-form-name":"h3","x-form-value":"h3"},"h4":{"x-form-name":"h4","x-form-value":"h4"},"h5":{"x-form-name":"h5","x-form-value":"h5"},"p":{"x-form-name":"p","x-form-value":"p"}}} */
 	public String getElement() {
 		return element;
 	}

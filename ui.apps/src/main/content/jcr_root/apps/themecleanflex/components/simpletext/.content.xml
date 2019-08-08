@@ -5,7 +5,7 @@
       <jcr:content jcr:primaryType="nt:unstructured" text="Themeclean Basic Text Element" element="p"/>
     </sample>
     <sample-blank jcr:primaryType="nt:unstructured" title="Simple Text (Empty)" group="Blank">
-      <jcr:content jcr:primaryType="nt:unstructured"/>
+      <jcr:content jcr:primaryType="nt:unstructured" text=""/>
     </sample-blank>
     <sample-h1 jcr:primaryType="nt:unstructured" title="Basic Heading 1" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="Themeclean Heading" element="h1"/>

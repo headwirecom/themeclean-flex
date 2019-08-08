@@ -15,6 +15,7 @@
           "x-source": "inject",
           "x-form-label": "Choose Element Type",
           "x-form-type": "materialselect",
+          "x-default": "p",
           "properties": {
             "h1": {
               "x-form-name": "h1",
