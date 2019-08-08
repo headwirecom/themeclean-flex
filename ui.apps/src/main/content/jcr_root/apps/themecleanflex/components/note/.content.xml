@@ -4,6 +4,9 @@
     <sample jcr:primaryType="nt:unstructured" title="Note" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>Here is some example note text default style&lt;/p>" toppadding="30" bottompadding="30"/>
     </sample>
+    <sample-blank jcr:primaryType="nt:unstructured" title="Note (Empty)" group="Blank">
+      <jcr:content jcr:primaryType="nt:unstructured"/>
+    </sample-blank>
     <sample-caution jcr:primaryType="nt:unstructured" title="Note - Caution" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>caution&lt;/p>" notetype="caution" toppadding="30" bottompadding="30"/>
     </sample-caution>
