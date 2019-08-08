@@ -31,7 +31,8 @@ import javax.inject.Named;
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Block Quote?",
-          "x-form-type": "materialswitch"
+          "x-form-type": "materialswitch",
+          "x-default": "false"
         },
         "bgref": {
           "x-form-type": "reference",
@@ -301,8 +302,9 @@ public class QuoteModel extends AbstractComponent {
 	@Inject
 	private String text;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Block Quote?","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Block Quote?","x-form-type":"materialswitch","x-default":"false"} */
 	@Inject
+	@Default(values ="false")
 	private String blockquote;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
@@ -403,7 +405,7 @@ public class QuoteModel extends AbstractComponent {
 		return text;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Block Quote?","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Block Quote?","x-form-type":"materialswitch","x-default":"false"} */
 	public String getBlockquote() {
 		return blockquote;
 	}
