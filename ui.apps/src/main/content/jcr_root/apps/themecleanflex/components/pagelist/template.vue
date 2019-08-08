@@ -1,6 +1,6 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
+    <div class="p-5" v-if="isEditAndEmpty">{{isEditAndEmpty}}</div>
     <div class="w-full" v-else>
       <ul class="root" v-if="model.includeroot === 'true'">
         <li class="root">
@@ -37,8 +37,10 @@
         },
         computed: {
         	isEditAndEmpty() {
-            if(!$peregrineApp.isAuthorMode()) return false
-            return this.$helper.areAllEmpty(this.model.rootpage && this.model.levels);
+            if(!$peregrineApp.isAuthorMode()) return false;
+            if (this.$helper.areAllEmpty(this.model.rootpage)) return 'Please choose a root page';
+            if (this.model.childrenPages && this.model.childrenPages.length == 0) return 'Chosen root page has no children (May need reload after root change)';
+            return false;
           }
         }
     }

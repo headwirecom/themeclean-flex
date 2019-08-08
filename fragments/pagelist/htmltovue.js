@@ -22,6 +22,6 @@ module.exports = {
         f.addIf($.find('li.childrennoroot themecleanflex-components-pagelistnested').first(), 'child.hasChildren && child.childrenPages && child.childrenPages.length > 0')
 
         f.addElse($);
-        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
+        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">{{isEditAndEmpty}}</div>')
     }
 }
