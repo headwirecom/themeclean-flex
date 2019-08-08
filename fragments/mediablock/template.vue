@@ -2,7 +2,6 @@
   <themecleanflex-components-block v-bind:model="model">
     <div class="mx-auto" v-bind:style="{flexBasis:`${model.mediawidth}%`}">
       <themecleanflex-components-media v-bind:model="model"></themecleanflex-components-media>
-      <div v-if="isEditAndEmpty">no content defined for component</div>
     </div>
   </themecleanflex-components-block>
 </template>
