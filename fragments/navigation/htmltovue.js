@@ -30,6 +30,7 @@ module.exports = {
         f.bindAttribute(nestedLink, 'href', 'subchild.path');
         f.bindAttribute(nestedLink, 'class', "model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'",false);
 
-		$.append('<div v-if="isEditAndEmpty">no content defined for component</div>')
+        f.addElse($);
+        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">{{isEditAndEmpty}}</div>')
     }
 }
