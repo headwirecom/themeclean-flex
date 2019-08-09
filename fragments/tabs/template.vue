@@ -40,7 +40,7 @@
           </div>
           <!-- Tab Content -->
           <div class="relative">
-            <div class="w-full text-center py-3 opacity-0 transition-opacity" role="tabpanel"
+            <div class="w-full py-3 opacity-0 transition-opacity" role="tabpanel"
             v-for="(item,i) in tabs" :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`"
             v-bind:aria-labelledby="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:class="item.active ? 'block opacity-100' : 'hidden'"
             v-html="item.text"></div>
