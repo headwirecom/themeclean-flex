@@ -24,6 +24,6 @@ module.exports = {
         f.addIf(label, 'model.tagslabel')
 
         f.addElse($);
-        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
+        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">There are no tags set for this page</div>')
     }
 }

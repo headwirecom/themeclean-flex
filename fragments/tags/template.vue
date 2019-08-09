@@ -1,6 +1,6 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
+    <div class="p-5" v-if="isEditAndEmpty">There are no tags set for this page</div>
     <div class="w-full flex items-center -mx-2"
     v-else>
       <span class="font-bold ml-2 mr-4" v-if="model.tagslabel">{{model.tagslabel}}</span>
@@ -26,7 +26,7 @@
         },
         isEditAndEmpty() {
               if(!$peregrineApp.isAuthorMode()) return false
-              return this.tags.length === 0 && this.model.tagsLabel && this.model.tagsLabel.length === 0
+              return this.tags.length === 0
         }
       }
     }
