@@ -9,6 +9,28 @@
         sling:resourceType="themecleanflex/components/page"
         jcr:title="themecleanflex"
         brand="themecleanflex"
-        template="/content/templates/themecleanflex"
-    />
+        template="/content/templates/themecleanflex">
+        <replacements jcr:primaryType="nt:unstructured">
+            <manifest.json jcr:primaryType="nt:unstructured">
+                <shortName
+                    jcr:primaryType="nt:unstructured"
+                    regex="\\&quot;short_name\\&quot;: \\&quot;(.*)\\&quot;"
+                    replaceWith="&quot;short_name&quot;: &quot;_SITENAME_&quot;"/>
+                <name
+                    jcr:primaryType="nt:unstructured"
+                    regex="\\&quot;name\\&quot;: \\&quot;(.*)\\&quot;"
+                    replaceWith="&quot;name&quot;: &quot;_SITENAME_ site&quot;"/>
+                <paths
+                    jcr:primaryType="nt:unstructured"
+                    regex="/themecleanflex"
+                    replaceWith="/_SITENAME_"/>
+            </manifest.json>
+            <serviceworker.js jcr:primaryType="nt:unstructured">
+                <paths
+                    jcr:primaryType="nt:unstructured"
+                    regex="/themecleanflex"
+                    replaceWith="/_SITENAME_"/>
+            </serviceworker.js>
+        </replacements>
+    </jcr:content>
 </jcr:root>
