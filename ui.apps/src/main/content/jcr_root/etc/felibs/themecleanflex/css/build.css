@@ -1218,6 +1218,68 @@ html {
   font-size: 1.125rem;
 }
 
+.enlarge-text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.enlarge-text h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.enlarge-text h3 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.enlarge-text h4 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.enlarge-text h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.enlarge-text h6 {
+  font-size: 1.5rem;
+}
+
+.enlarge-text p {
+  font-size: 1.25rem;
+}
+
+.enlarge-text .text-5xl {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.enlarge-text .text-4xl {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.enlarge-text .text-2xl {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.enlarge-text .text-2xl {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.enlarge-text .text-xl {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.enlarge-text .text-lg {
+  font-size: 1.5rem;
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: 600;
