@@ -1042,23 +1042,23 @@ video {
 }
 
 .text-lg{
-  font-size: 1.25rem;
+  font-size: var(--font-size-lg);
 }
 
 .text-xl{
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
 }
 
 .text-2xl{
-  font-size: 1.875rem;
+  font-size: var(--font-size-2xl);
 }
 
 .text-3xl{
-  font-size: 2.25rem;
+  font-size: var(--font-size-3xl);
 }
 
 .text-4xl{
-  font-size: 2.5rem;
+  font-size: var(--font-size-4xl);
 }
 
 .no-underline{
@@ -1211,98 +1211,98 @@ video {
 
 html {
   font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.125rem;
+  font-size: var(--font-size-base);
 }
 
 .enlarge-text h1 {
-  font-size: 3rem;
+  font-size: var(--font-size-5xl);
   font-weight: 600;
 }
 
 .enlarge-text h2 {
-  font-size: 2.5rem;
+  font-size: var(--font-size-4xl);
   font-weight: 600;
 }
 
 .enlarge-text h3 {
-  font-size: 2.25rem;
+  font-size: var(--font-size-3xl);
   font-weight: 600;
 }
 
 .enlarge-text h4 {
-  font-size: 1.875rem;
+  font-size: var(--font-size-2xl);
   font-weight: 600;
 }
 
 .enlarge-text h5 {
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
   font-weight: 600;
 }
 
 .enlarge-text h6 {
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
 }
 
 .enlarge-text p {
-  font-size: 1.25rem;
+  font-size: var(--font-size-lg);
 }
 
 .enlarge-text .text-5xl {
-  font-size: 4rem;
+  font-size: var(--font-size-6xl);
   font-weight: 600;
 }
 
 .enlarge-text .text-4xl {
-  font-size: 3rem;
+  font-size: var(--font-size-5xl);
   font-weight: 600;
 }
 
 .enlarge-text .text-2xl {
-  font-size: 2.5rem;
+  font-size: var(--font-size-4xl);
   font-weight: 600;
 }
 
 .enlarge-text .text-2xl {
-  font-size: 2.25rem;
+  font-size: var(--font-size-3xl);
   font-weight: 600;
 }
 
 .enlarge-text .text-xl {
-  font-size: 1.875rem;
+  font-size: var(--font-size-2xl);
   font-weight: 600;
 }
 
 .enlarge-text .text-lg {
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: var(--font-size-4xl);
   font-weight: 600;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: var(--font-size-3xl);
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.875rem;
+  font-size: var(--font-size-2xl);
   font-weight: 600;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl);
   font-weight: 600;
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: var(--font-size-lg);
   font-weight: 600;
 }
 
 h6 {
-  font-size: 1.25rem;
+  font-size: var(--font-size-lg);
 }
 
 a {
@@ -1437,7 +1437,7 @@ p {
   padding-bottom: 1rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  font-size: 1.25rem
+  font-size: var(--font-size-lg)
 }
 
 .btn-sm {
@@ -1445,7 +1445,7 @@ p {
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  font-size: 1rem
+  font-size: var(--font-size-sm)
 }
 
 .btn-blue {
