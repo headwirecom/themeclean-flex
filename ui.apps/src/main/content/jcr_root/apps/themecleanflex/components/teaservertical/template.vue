@@ -5,6 +5,7 @@
     v-bind:class="{
             'md:flex-row': model.mediaposition === 'before',
             'md:flex-row-reverse': model.mediaposition === 'after',
+            'enlarge-text': model.isprimary === 'true'
         }" v-else>
       <div class="img-wrapper mb-3 md:mb-0 md:px-3 media-sizeable" v-if="model.showmedia === 'true'"
       v-bind:style="{flex:`0 0 ${model.mediawidth}%`}">
@@ -15,16 +16,12 @@
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
             'text-right': model.aligncontent === 'right',
-            'text-2xl': model.isprimary === 'true',
             'self-start': model.aligncontent === 'left',
             'self-center': model.aligncontent === 'center',
             'self-end': model.aligncontent === 'right'
         }" v-bind:style="`width:${model.textwidth}%;`">
-          <h1 class="text-xl" v-if="model.showtitle === 'true'" v-bind:class="{'text-5xl': model.isprimary==='true'}"
-          v-html="model.title"></h1>
-          <h2 class="text-lg" v-if="model.showsubtitle === 'true'"
-          v-bind:class="{'text-4xl': model.isprimary==='true'}"
-          v-html="model.subtitle"></h2>
+          <h1 v-if="model.showtitle === 'true'" v-html="model.title"></h1>
+          <h2 v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h2>
           <p v-if="model.showtext === 'true'" v-html="model.text"></p>
         </div>
         <div class="flex flex-wrap p-0 -mx-2" v-if="model.showbutton == 'true'"

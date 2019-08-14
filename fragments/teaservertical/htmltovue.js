@@ -7,6 +7,7 @@ module.exports = {
         let containerClasses = `{
             'md:flex-row': model.mediaposition === 'before',
             'md:flex-row-reverse': model.mediaposition === 'after',
+            'enlarge-text': model.isprimary === 'true'
         }`
         f.bindAttribute(  $,  'class', containerClasses, false)
 
@@ -21,7 +22,6 @@ module.exports = {
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
             'text-right': model.aligncontent === 'right',
-            'text-2xl': model.isprimary === 'true',
             'self-start': model.aligncontent === 'left',
             'self-center': model.aligncontent === 'center',
             'self-end': model.aligncontent === 'right'
@@ -32,10 +32,7 @@ module.exports = {
         f.addStyle( textDiv, 'width', 'model.textwidth', '%')
 
         f.addIf($.find('h1').first(), "model.showtitle === 'true'")
-        f.bindAttribute( $.find('h1').first(), 'class', "{'text-5xl': model.isprimary==='true'}", false)
-
         f.addIf($.find('h2').first(), "model.showsubtitle === 'true'")
-        f.bindAttribute( $.find('h2').first(), 'class', "{'text-4xl': model.isprimary==='true'}", false)
 
         f.addIf($.find('p').first(), "model.showtext === 'true'")
         f.mapRichField($.find('h1').first(), "model.title")
