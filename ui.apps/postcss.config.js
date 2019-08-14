@@ -1,5 +1,6 @@
 const purgecss = require('@fullhuman/postcss-purgecss')
 const tailwind = require('tailwindcss');
+const atImport = require('postcss-import')
 
 class TailwindExtractor {
   static extract(content) {
@@ -9,6 +10,7 @@ class TailwindExtractor {
 
 module.exports = {
   plugins: [
+    atImport(),
     tailwind('./tailwind.config.js'),
     new purgecss({
       content: ['./src/main/content/jcr_root/**/*.vue', './src/main/content/jcr_root/**/dialog.json', './src/main/content/jcr_root/**/*html'],
