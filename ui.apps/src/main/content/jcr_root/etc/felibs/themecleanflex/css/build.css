@@ -988,6 +988,11 @@ video {
   padding: 1.5rem;
 }
 
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;

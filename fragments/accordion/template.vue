@@ -12,7 +12,7 @@
         v-bind:style="{flex:`0 0 ${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
-        <div class="px-3 flex-grow">
+        <div class="px-0 md:px-3 flex-grow">
           <div v-for="(item,i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`">
             <a class="flex bg-gray-200 justify-between items-center p-3 cursor-pointer no-underline text-gray-800"
             v-on:click="toggleItem(i)">
