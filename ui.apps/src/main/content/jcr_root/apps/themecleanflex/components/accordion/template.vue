@@ -8,7 +8,7 @@
             'lg:flex-row': model.mediaposition === 'before',
             'lg:flex-row-reverse': model.mediaposition === 'after'
         }">
-        <div class="img-wrapper px-3" v-if="model.showmedia === 'true'"
+        <div class="img-wrapper px-0 md:px-3" v-if="model.showmedia === 'true'"
         v-bind:style="{flex:`0 0 ${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
