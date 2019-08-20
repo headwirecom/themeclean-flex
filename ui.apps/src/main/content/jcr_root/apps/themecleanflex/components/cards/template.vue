@@ -4,12 +4,24 @@
     <div class="flex flex-wrap -mx-3"
     v-else>
       <div class="card my-3 px-0 md:px-3" v-bind:class="{
-            'w-full': model.cardsperrow == 1,
-            'w-full md:w-1/2': model.cardsperrow == 2,
-            'w-full md:w-1/3': model.cardsperrow == 3,
-            'w-full md:w-1/4': model.cardsperrow == 4,
-            'w-full md:w-1/5': model.cardsperrow == 5,
-            'w-full md:w-1/6': model.cardsperrow == 6,
+            'lg:w-full': model.cardsperrow == 1,
+            'lg:w-1/2': model.cardsperrow == 2,
+            'lg:w-1/3': model.cardsperrow == 3,
+            'lg:w-1/4': model.cardsperrow == 4,
+            'lg:w-1/5': model.cardsperrow == 5,
+            'lg:w-1/6': model.cardsperrow == 6,
+            'md:w-full': model.cardsperrowtab == 1,
+            'md:w-1/2': model.cardsperrowtab == 2,
+            'md:w-1/3': model.cardsperrowtab == 3,
+            'md:w-1/4': model.cardsperrowtab == 4,
+            'md:w-1/5': model.cardsperrowtab == 5,
+            'md:w-1/6': model.cardsperrowtab == 6,
+            'w-full': model.cardsperrowmobile == 1,
+            'w-1/2': model.cardsperrowmobile == 2,
+            'w-1/3': model.cardsperrowmobile == 3,
+            'w-1/4': model.cardsperrowmobile == 4,
+            'w-1/5': model.cardsperrowmobile == 5,
+            'w-1/6': model.cardsperrowmobile == 6,
         }" v-for="(item,i) in model.cards" :key="i">
         <div class="flex flex-col h-full" v-bind:style="`background-color:${model.customcardcolor === 'true' &amp;&amp; model.showcard === 'true' ? model.cardcolor: ''};`"
         v-bind:class="{

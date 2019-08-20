@@ -68,6 +68,22 @@
       "max": 6
     },
     {
+      "type": "material-range",
+      "placeholder": "cardsperrowtab",
+      "label": "Cards Per Row (Tablet)",
+      "model": "cardsperrowtab",
+      "min": 1,
+      "max": 6
+    },
+    {
+      "type": "material-range",
+      "placeholder": "cardsperrowmobile",
+      "label": "Cards Per Row (Mobile)",
+      "model": "cardsperrowmobile",
+      "min": 1,
+      "max": 6
+    },
+    {
       "type": "collection",
       "multifield": true,
       "fieldLabel": [

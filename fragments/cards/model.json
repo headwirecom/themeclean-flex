@@ -52,6 +52,24 @@
           "x-form-min": 1,
           "x-form-max": 6
         },
+        "cardsperrowtab": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Cards Per Row (Tablet)",
+          "x-form-type": "materialrange",
+          "x-default": 2,
+          "x-form-min": 1,
+          "x-form-max": 6
+        },
+        "cardsperrowmobile": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Cards Per Row (Mobile)",
+          "x-form-type": "materialrange",
+          "x-default": 1,
+          "x-form-min": 1,
+          "x-form-max": 6
+        },
         "cards": {
           "type": "string",
           "x-source": "inject",
