@@ -1,6 +1,6 @@
 module.exports = {
     convert: function($, f) {
-        f.bindAttribute($, "class", "'language-'+model.language+ ((model.classes) ? ' '+model.classes : '')")
+        f.bindAttribute($, "class", "'language-'+model.language+ ((model.classes) ? ' '+model.classes : '')", false)
 
         // make the element a block
         f.wrap($, 'themecleanflex-components-block')

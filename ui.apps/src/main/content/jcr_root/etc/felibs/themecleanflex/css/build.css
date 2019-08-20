@@ -968,6 +968,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .p-0 {
   padding: 0;
 }
