@@ -14,7 +14,7 @@
         </div>
       </div>
       <hr class="border-b">
-      <div class="flex justify-between">
+      <div class="flex items-center flex-wrap justify-between">
         <p class="my-3" v-html="model.copyright"></p>
         <themecleanflex-components-socialicons v-bind:model="model"></themecleanflex-components-socialicons>
       </div>
