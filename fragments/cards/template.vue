@@ -43,8 +43,8 @@
               v-bind:style="`color:${item.color};`"></h1>
               <p class="my-3" v-if="model.showtext == 'true'" v-html="item.text"></p>
             </div>
-            <a class="btn self-center my-3" v-if="model.showbutton == 'true'"
-            v-bind:href="$helper.pathToUrl(item.buttonlink)" v-bind:class="{
+            <a class="btn self-center my-3" v-if="showbutton(item)" v-bind:href="$helper.pathToUrl(item.buttonlink)"
+            v-bind:class="{
             'btn-lg': item.buttonsize === 'large',
             'btn-sm': item.buttonsize === 'small',
             'btn-blue': item.buttoncolor === 'primary',
@@ -71,6 +71,12 @@
               if(!$peregrineApp.isAuthorMode()) return false
               //return (this.model.cards.length === 0)
               return this.$helper.areAllEmpty(this.model.cards)
+          }
+      },
+      methods: {
+          showbutton(card) {
+            console.log(card)
+            return this.model.showbutton && card.buttontext
           }
       },
       components: {

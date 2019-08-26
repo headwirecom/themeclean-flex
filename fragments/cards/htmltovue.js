@@ -76,7 +76,7 @@ module.exports = {
 
         let a = $.find('a.btn')
         f.addIf($.find('div.text-center').first(), 'item.buttontext')
-        f.addIf( a, 'model.showbutton == \'true\'')
+        f.addIf( a, 'showbutton(item)')
         f.bindAttribute( a, 'href', f.pathToUrl('item.buttonlink'))
         f.bindAttribute( a, 'class', aClasses, false)
         f.mapRichField( a, "item.buttontext")
