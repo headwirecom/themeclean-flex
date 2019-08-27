@@ -1,6 +1,6 @@
 {
   "title": "Footer With All RTE Styles",
-  "group": "Chrome",
+  "group": ".hidden",
   "model": {
     "htmlelement": "footer",
     "backgroundtype": "color",

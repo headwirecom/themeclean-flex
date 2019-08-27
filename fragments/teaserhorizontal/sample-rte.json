@@ -1,6 +1,6 @@
 {
   "title": "Teaser Horizontal With All RTE Styles",
-  "group": "Features",
+  "group": ".hidden",
   "model": {
     "aligncontent": "left",
     "showtitle": "true",

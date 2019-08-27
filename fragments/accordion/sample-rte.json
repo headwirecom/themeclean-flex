@@ -1,6 +1,6 @@
 {
   "title": "Accordion With Full RTE",
-  "group": "Features",
+  "group": ".hidden",
   "model": {
     "showtitle": "true",
     "title": "Peregrine Accordion With Full RTE",

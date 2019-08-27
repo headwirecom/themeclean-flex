@@ -22,7 +22,7 @@
         <coluimns jcr:primaryType="nt:unstructured"/>
       </jcr:content>
     </sample-blank>
-    <sample-rte jcr:primaryType="nt:unstructured" title="Footer With All RTE Styles" group="Chrome">
+    <sample-rte jcr:primaryType="nt:unstructured" title="Footer With All RTE Styles" group=".hidden">
       <jcr:content jcr:primaryType="nt:unstructured" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">
           <columns0 jcr:primaryType="nt:unstructured" title="" text=""/>

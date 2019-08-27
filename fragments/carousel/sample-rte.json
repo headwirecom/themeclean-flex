@@ -1,6 +1,6 @@
 {
   "title": "Carousel With Full RTE",
-  "group": "Features",
+  "group": ".hidden",
   "model" : {
     "carouselheight": 80,
     "toppadding": 20,

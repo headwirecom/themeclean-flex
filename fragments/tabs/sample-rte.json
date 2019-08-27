@@ -1,6 +1,6 @@
 {
   "title": "Tabs With All RTE Styles",
-  "group": "Features",
+  "group": ".hidden",
   "model": {
     "bgcolor": "#ffffff",
     "color2": "#e7e7e7",

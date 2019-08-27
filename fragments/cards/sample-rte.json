@@ -1,6 +1,6 @@
 {
   "title": "Cards With Full RTE",
-  "group": "Features",
+  "group": ".hidden",
   "model": {
     "bgcolor": "#ffffff",
     "bottompadding": "20",
