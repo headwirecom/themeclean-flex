@@ -5,7 +5,7 @@
   v-bind:id="model.anchorname">
     <div class="embed-responsive embed-responsive-16by9 w-full h-full top-0 left-0"
     v-if="model.custombackground === 'true' &amp;&amp; model.backgroundtype == 'video' &amp;&amp; model.bgvideo"
-    v-bind:style="`position:${'absolute'};pointer-events:${'none'};`">
+    v-bind:style="`position:${'absolute'};pointer-events:${'none'};z-index:${'-1'};`">
       <iframe class="w-full h-full" v-bind:src="videoSource"></iframe>
     </div>
     <div class="flex" v-bind:class="{

@@ -11,6 +11,7 @@ module.exports = {
         f.bindAttribute( $.find('iframe').first(), 'src', "videoSource" )
         f.addStyle( $.find('div.embed-responsive').first(), 'position', "'absolute'")
         f.addStyle( $.find('div.embed-responsive').first(), 'pointer-events', "'none'")
+        f.addStyle( $.find('div.embed-responsive').first(), 'z-index', "'-1'")
         $.find('div.flex').append( '<slot>')
 
         let containerClasses = `{
