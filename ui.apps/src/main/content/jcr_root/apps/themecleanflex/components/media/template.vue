@@ -13,15 +13,18 @@
     props: ["model"],
     data: function() {
       return {
-        videoSource: null
+        loadVideo: null
       }
     },
     mounted: function() {
       this.$nextTick(function () {
-        this.videoSource = this.$helper.pathToUrl(this.model.videosrc)
+        this.loadVideo = true;
       })
     },
     computed: {
+      videoSource() {
+        return this.loadVideo ? this.$helper.pathToUrl(this.model.videosrc) : ""
+      },
       noMedia() {
         let { mediatype, videosrc, imagesrc } = this.model
         if (mediatype !== 'image' && mediatype !== 'video') return true;
