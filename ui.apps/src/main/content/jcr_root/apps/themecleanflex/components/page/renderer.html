@@ -6,7 +6,9 @@
 <sly data-sly-use.helper="apps.pagerender.vue.structure.page.Helper"/>
 <sly data-sly-include="/apps/pagerender/vue/structure/page/renderer.html"/>
 <script src="/etc/felibs/${helper.siteName}.js"></script>
+<script src="/etc/felibs/${helper.siteName}/dependencies/v-lazy-image.min.js"></script>
 <script>
+    Vue.use(window.VLazyImage.VLazyImagePlugin);
     $peregrineApp.loadComponent('pagerender-vue-components-placeholder')
     $peregrineApp.loadComponent('themecleanflex-components-block')
     $peregrineApp.loadComponent('themecleanflex-components-media')
