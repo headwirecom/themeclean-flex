@@ -9,7 +9,6 @@
 </template>
 
 <script>
-  import VLazyImage from 'v-lazy-image';
   export default {
     props: ["model"],
     data: function() {
@@ -30,9 +29,6 @@
         if (mediatype === 'video' && (videosrc == null || videosrc == "")) return true;
         return false
       }
-    },
-    components: {
-      VLazyImage
     }
   }
 </script>

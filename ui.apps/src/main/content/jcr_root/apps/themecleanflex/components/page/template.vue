@@ -9,6 +9,7 @@
 </template>
 
 <script>
+    import VLazyImage from 'v-lazy-image';
     export default {
         props: [ 'model' ]
     }
