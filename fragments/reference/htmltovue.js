@@ -1,6 +1,7 @@
 module.exports = {
     convert: function($, f) {
-        f.wrap($, 'themecleanflex-components-block');
-        f.bindAttribute($.parent(),'model','model');
+        f.bindAttribute( $, 'data-per-path', 'model.path')
+        f.bindAttribute( $.find('component'), 'is', 'getLoadedComponent(refModel.component)')
+        f.bindAttribute( $.find('component'), 'model', 'refModel')
     }
 }
