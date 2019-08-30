@@ -8,7 +8,7 @@ module.exports = {
 
         f.addStyle( $.find('svg'), 'width', 'model.iconsize', 'px')
 
-        f.bindAttribute( $.find('use'), '', '{\'xlink:href\':`#${item.icon}`}')
+        f.bindAttribute( $.find('use'), false, '{\'xlink:href\':`#${item.icon}`}')
         f.bindAttribute( $.find('use'), 'href', '`#${item.icon}`')
     }
 }
