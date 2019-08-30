@@ -21,7 +21,6 @@
 
 <script>
   import { Carousel, Slide } from 'vue-carousel';
-  import VLazyImage from 'v-lazy-image';
 
   export default {
     props: ['model'],
@@ -37,8 +36,7 @@
     },
     components: {
       Carousel,
-      Slide,
-      VLazyImage
+      Slide
     },
   }
 </script>

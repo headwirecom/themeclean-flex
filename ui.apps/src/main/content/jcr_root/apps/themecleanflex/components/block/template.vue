@@ -5,8 +5,8 @@
   v-bind:id="model.anchorname">
     <div class="embed-responsive embed-responsive-16by9 w-full h-full top-0 left-0"
     v-if="model.custombackground === 'true' &amp;&amp; model.backgroundtype == 'video' &amp;&amp; model.bgvideo"
-    v-bind:style="`position:${'absolute'};pointer-events:${'none'};`">
-      <iframe class="w-full h-full" v-bind:src="model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1'"></iframe>
+    v-bind:style="`position:${'absolute'};pointer-events:${'none'};z-index:${'-1'};`">
+      <iframe class="w-full h-full" v-bind:src="videoSource"></iframe>
     </div>
     <div class="flex" v-bind:class="{
             'container mx-auto' : model.blockwidth === 'default',
@@ -24,7 +24,16 @@
             type: Object
           }
         },
+        data: function() {
+          return {
+            loadVideo: null
+          }
+        },
         mounted() {
+          this.$nextTick(function () {
+            this.loadVideo = true;
+          })
+
           // Add top margin to perApp to account for fixed header when sticky is true
           if( this.model.sticky === 'true' && !$peregrineApp.isAuthorMode()) {
             if( this.$refs.section.style.position === 'fixed' ){
@@ -44,6 +53,9 @@
 
         },
         computed: {          
+          videoSource() {
+            return this.loadVideo ? this.model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1' : "";
+          },
           classes: function() {
             let classObject = {}
             classObject['min-h-screen'] = this.model.fullheight == 'true'
