@@ -3,5 +3,6 @@ module.exports = {
         f.bindAttribute( $, 'data-per-path', 'model.path')
         f.bindAttribute( $.find('component'), 'is', 'getLoadedComponent(refModel.component)')
         f.bindAttribute( $.find('component'), 'model', 'refModel')
+        f.addIf( $.find('div'), 'maskReference')
     }
 }
