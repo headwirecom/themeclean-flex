@@ -7,15 +7,12 @@
 
 <script>
     export default { props: ['model'],
-      data: function(){
-        const refModel = JSON.parse(this.model.referenceJson);
-        return {
-          refModel: refModel
-        }
-      },
       computed: {
         maskReference() {
             return $peregrineApp.isAuthorMode(); 
+        },
+        refModel() {
+          return JSON.parse(this.model.referenceJson)
         }
       },
       methods: {
