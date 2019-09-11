@@ -63,7 +63,6 @@
 </template>
 
 <script>
-  import VLazyImage from 'v-lazy-image';
   export default {
       props: ['model'],
       computed: {
@@ -75,11 +74,8 @@
       },
       methods: {
           showbutton(card) {
-            return this.model.showbutton && card.buttontext
+            return this.model.showbutton === 'true' && card.buttontext.length
           }
-      },
-      components: {
-        VLazyImage
       }
   }
 </script>

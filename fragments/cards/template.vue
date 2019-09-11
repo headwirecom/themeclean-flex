@@ -68,14 +68,12 @@
       computed: {
           isEditAndEmpty() {
               if(!$peregrineApp.isAuthorMode()) return false
-              //return (this.model.cards.length === 0)
               return this.$helper.areAllEmpty(this.model.cards)
           }
       },
       methods: {
           showbutton(card) {
-            console.log(card)
-            return this.model.showbutton && card.buttontext
+            return this.model.showbutton === 'true' && card.buttontext.length
           }
       }
   }
