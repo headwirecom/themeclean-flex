@@ -20,29 +20,29 @@
         <div class="py-3 flex flex-col mx-3 lg:flex-grow">
           <!-- Tab Nav -->
           <div class="flex flex-wrap justify-center  pb-3" role="tablist">
-            <a class="mx-2 no-underline p-3 cursor-pointer" role="tab" v-for="(item,i) in tabs"
+            <a class="mx-2 no-underline p-3 cursor-pointer" role="tab" v-for="(item,i) in model.tabs"
             :key="i" v-bind:class="{
-            'text-white' : item.active === true,
-            'bg-blue-700' : item.active  &amp;&amp; model.tabcolor === 'blue',
-            'bg-green-700' : item.active &amp;&amp; model.tabcolor === 'green',
-            'bg-red-700' : item.active &amp;&amp; model.tabcolor === 'red',
-            'bg-orange-700' : item.active &amp;&amp; model.tabcolor === 'orange',
-            'bg-light-700' : item.active &amp;&amp; model.tabcolor === 'light',
-            'bg-dark' : item.active &amp;&amp; model.tabcolor === 'dark',
-            'text-blue-700' : !item.active  &amp;&amp; model.tabcolor === 'blue',
-            'text-green-700' : !item.active &amp;&amp; model.tabcolor === 'green',
-            'text-red-700' : !item.active &amp;&amp; model.tabcolor === 'red',
-            'text-orange-700' : !item.active &amp;&amp; model.tabcolor === 'orange',
-            'text-light' : !item.active &amp;&amp; model.tabcolor === 'light' || item.active &amp;&amp; model.tabcolor === 'dark',
-            'text-dark' : !item.active &amp;&amp; model.tabcolor === 'dark' || item.active &amp;&amp; model.tabcolor === 'light',
+            'text-white' : active === i,
+            'bg-blue-700' : active === i &amp;&amp; model.tabcolor === 'blue',
+            'bg-green-700' : active === i &amp;&amp; model.tabcolor === 'green',
+            'bg-red-700' : active === i &amp;&amp; model.tabcolor === 'red',
+            'bg-orange-700' : active === i &amp;&amp; model.tabcolor === 'orange',
+            'bg-light-700' : active === i &amp;&amp; model.tabcolor === 'light',
+            'bg-dark' : active === i &amp;&amp; model.tabcolor === 'dark',
+            'text-blue-700' : active !== i  &amp;&amp; model.tabcolor === 'blue',
+            'text-green-700' : active !== i &amp;&amp; model.tabcolor === 'green',
+            'text-red-700' : active !== i &amp;&amp; model.tabcolor === 'red',
+            'text-orange-700' : active !== i &amp;&amp; model.tabcolor === 'orange',
+            'text-light' : active !== i &amp;&amp; model.tabcolor === 'light' || active === i &amp;&amp; model.tabcolor === 'dark',
+            'text-dark' : active !== i &amp;&amp; model.tabcolor === 'dark' || active === i &amp;&amp; model.tabcolor === 'light',
         }" v-bind:id="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:aria-controls="`tab${_uid}${parseInt(i)+1}`"
-            v-bind:aria-selected="item.active" v-on:click="toggleActive(i)" v-html="item.title"></a>
+            v-bind:aria-selected="active === i" v-on:click="toggleActive(i)" v-html="item.title"></a>
           </div>
           <!-- Tab Content -->
           <div class="relative">
             <div class="w-full py-3 opacity-0 transition-opacity" role="tabpanel"
-            v-for="(item,i) in tabs" :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`"
-            v-bind:aria-labelledby="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:class="item.active ? 'block opacity-100' : 'hidden'"
+            v-for="(item,i) in model.tabs" :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`"
+            v-bind:aria-labelledby="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:class="active === i ? 'block opacity-100' : 'hidden'"
             v-html="item.text"></div>
           </div>
         </div>
@@ -56,17 +56,7 @@
       props: ['model'],
       data: function(){
         return { 
-          tabs: [...this.model.tabs]
-        }
-      },
-      watch: {
-        'model.tabs': function(newTabs){
-          this.tabs = [...newTabs];
-        }
-      },
-      created: function(){
-        if( this.tabs.length > 0) {
-          Vue.set(this.tabs[0], 'active', true)
+          active: 0
         }
       },
       computed: {
@@ -78,9 +68,7 @@
       },
       methods: {
         toggleActive: function(i) {
-          this.tabs.forEach((tab,j) => {
-            Vue.set(this.tabs[j], 'active', j === i);
-          });
+          this.active = i;
         }
       }
     }

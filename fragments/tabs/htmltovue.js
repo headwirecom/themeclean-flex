@@ -22,36 +22,36 @@ module.exports = {
         f.mapRichField($.find('h2').first(), "model.subtitle")
 
         let a = $.find('a').first()
-        f.addFor(a, 'tabs')
+        f.addFor(a, 'model.tabs')
 
         let aClasses = `{
-            'text-white' : item.active === true,
-            'bg-blue-700' : item.active  && model.tabcolor === 'blue',
-            'bg-green-700' : item.active && model.tabcolor === 'green',
-            'bg-red-700' : item.active && model.tabcolor === 'red',
-            'bg-orange-700' : item.active && model.tabcolor === 'orange',
-            'bg-light-700' : item.active && model.tabcolor === 'light',
-            'bg-dark' : item.active && model.tabcolor === 'dark',
-            'text-blue-700' : !item.active  && model.tabcolor === 'blue',
-            'text-green-700' : !item.active && model.tabcolor === 'green',
-            'text-red-700' : !item.active && model.tabcolor === 'red',
-            'text-orange-700' : !item.active && model.tabcolor === 'orange',
-            'text-light' : !item.active && model.tabcolor === 'light' || item.active && model.tabcolor === 'dark',
-            'text-dark' : !item.active && model.tabcolor === 'dark' || item.active && model.tabcolor === 'light',
+            'text-white' : active === i,
+            'bg-blue-700' : active === i && model.tabcolor === 'blue',
+            'bg-green-700' : active === i && model.tabcolor === 'green',
+            'bg-red-700' : active === i && model.tabcolor === 'red',
+            'bg-orange-700' : active === i && model.tabcolor === 'orange',
+            'bg-light-700' : active === i && model.tabcolor === 'light',
+            'bg-dark' : active === i && model.tabcolor === 'dark',
+            'text-blue-700' : active !== i  && model.tabcolor === 'blue',
+            'text-green-700' : active !== i && model.tabcolor === 'green',
+            'text-red-700' : active !== i && model.tabcolor === 'red',
+            'text-orange-700' : active !== i && model.tabcolor === 'orange',
+            'text-light' : active !== i && model.tabcolor === 'light' || active === i && model.tabcolor === 'dark',
+            'text-dark' : active !== i && model.tabcolor === 'dark' || active === i && model.tabcolor === 'light',
         }`
 
     	f.bindAttribute( a, 'class', aClasses, false)
     	f.bindAttribute( a, 'id', '`tab-control-${_uid}${parseInt(i)+1}`')
     	f.bindAttribute( a, 'aria-controls', '`tab${_uid}${parseInt(i)+1}`')
-    	f.bindAttribute( a, 'aria-selected', 'item.active')
+    	f.bindAttribute( a, 'aria-selected', 'active === i')
     	f.bindEvent( a, 'click', 'toggleActive(i)')
         f.mapRichField( a, "item.title")
 
     	let tabPanel = $.find('[role="tabpanel"]').first()
-    	f.addFor( tabPanel, 'tabs')
+    	f.addFor( tabPanel, 'model.tabs')
     	f.bindAttribute(tabPanel, 'id', '`tab${_uid}${parseInt(i)+1}`')
         f.bindAttribute(tabPanel, 'aria-labelledby', '`tab-control-${_uid}${parseInt(i)+1}`')
-    	f.bindAttribute(tabPanel, 'class', "item.active ? 'block opacity-100' : 'hidden'", false)
+    	f.bindAttribute(tabPanel, 'class', "active === i ? 'block opacity-100' : 'hidden'", false)
         f.mapRichField(tabPanel, "item.text")
 
         f.addElse($);
