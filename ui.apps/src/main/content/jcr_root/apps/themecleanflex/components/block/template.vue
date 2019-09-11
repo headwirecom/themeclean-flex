@@ -8,7 +8,7 @@
     v-bind:style="`position:${'absolute'};pointer-events:${'none'};z-index:${'-1'};`">
       <iframe class="w-full h-full" v-bind:src="videoSource"></iframe>
     </div>
-    <div class="flex" v-bind:class="{
+    <div class="flex min-h-1" v-bind:class="{
             'container mx-auto' : model.blockwidth === 'default',
             'w-full max-w-3xl mx-auto' : model.blockwidth === 'article'
         }">
