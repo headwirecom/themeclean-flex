@@ -221,7 +221,7 @@
       "type": "input",
       "inputType": "text",
       "placeholder": "extraclasses",
-      "label": "Add classes",
+      "label": "Additonal Classes",
       "model": "extraclasses"
     },
     {

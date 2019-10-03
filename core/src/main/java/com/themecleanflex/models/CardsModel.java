@@ -223,7 +223,7 @@ import javax.inject.Named;
             "extraclasses": {
               "type": "string",
               "x-source": "inject",
-              "x-form-label": "Add classes",
+              "x-form-label": "Additonal Classes",
               "x-form-type": "text"
             },
             "htmlelement": {
@@ -527,7 +527,7 @@ public class CardsModel extends AbstractComponent {
 	@Inject
 	private String anchorname;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Add classes","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Additonal Classes","x-form-type":"text"} */
 	@Inject
 	private String extraclasses;
 
@@ -675,7 +675,7 @@ public class CardsModel extends AbstractComponent {
 		return anchorname;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Add classes","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Additonal Classes","x-form-type":"text"} */
 	public String getExtraclasses() {
 		return extraclasses;
 	}
