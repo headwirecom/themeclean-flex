@@ -218,6 +218,13 @@
       "model": "anchorname"
     },
     {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "extraclasses",
+      "label": "Add classes",
+      "model": "extraclasses"
+    },
+    {
       "type": "material-select",
       "values": [
         {

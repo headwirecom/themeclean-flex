@@ -10,6 +10,12 @@
           "x-form-label": "Anchor Name",
           "x-form-type": "text"
         },
+        "extraclasses": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Additonal Classes",
+          "x-form-type": "text"
+        },
         "htmlelement": {
           "type": "string",
           "x-source": "inject",

@@ -1,6 +1,6 @@
 <template>
   <component class="w-full px-5 flex flex-col justify-center" ref="section"
-  v-bind:class="[classes, colors, model.component]" v-bind:style="[styles, sticky]"
+  v-bind:class="[classes, colors, model.component, model.extraclasses]" v-bind:style="[styles, sticky]"
   v-bind:data-per-path="model.path" v-bind:is="model.htmlelement || &quot;div&quot;"
   v-bind:id="model.anchorname">
     <div class="embed-responsive embed-responsive-16by9 w-full h-full top-0 left-0"
