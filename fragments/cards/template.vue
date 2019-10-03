@@ -39,9 +39,9 @@
             'p-3': model.showcard === 'true'
         }">
             <div>
-              <h1 class="text-lg my-3" v-if="model.showtitle == 'true'" v-html="item.title"
-              v-bind:style="`color:${item.color};`"></h1>
-              <p class="my-3" v-if="model.showtext == 'true'" v-html="item.text"></p>
+              <h2 class="text-lg my-3" v-if="model.showtitle == 'true'" v-html="item.title"
+              v-bind:style="`color:${item.color};`"></h2>
+              <div class="my-3" v-if="model.showtext == 'true'" v-html="item.text"></div>
             </div>
             <a class="btn self-center my-3" v-if="showbutton(item)" v-bind:href="$helper.pathToUrl(item.buttonlink)"
             v-bind:class="{

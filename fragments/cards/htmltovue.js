@@ -53,13 +53,13 @@ module.exports = {
         f.addIf($.find('v-lazy-image').first(), 'item.image')
 
         //Title
-        f.addIf($.find('h1').first(), 'model.showtitle == \'true\'')
-        f.mapRichField($.find('h1').first(), "item.title")
-        f.addStyle($.find('h1').first(), 'color', 'item.color')
+        f.addIf($.find('h2').first(), 'model.showtitle == \'true\'')
+        f.mapRichField($.find('h2').first(), "item.title")
+        f.addStyle($.find('h2').first(), 'color', 'item.color')
 
         //Text
-        f.addIf($.find('p').first(), 'model.showtext == \'true\'')
-        f.mapRichField($.find('p').first(), "item.text")
+        f.addIf($.find('h2 + div').first(), 'model.showtext == \'true\'')
+        f.mapRichField($.find('h2 + div').first(), "item.text")
 
         //Button
         let aClasses = `{
