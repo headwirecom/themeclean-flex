@@ -35,6 +35,13 @@
       "model": "anchorname"
     },
     {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "extraclasses",
+      "label": "Additonal Classes",
+      "model": "extraclasses"
+    },
+    {
       "type": "material-select",
       "values": [
         {

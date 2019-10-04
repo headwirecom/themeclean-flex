@@ -154,6 +154,12 @@ import javax.inject.Named;
               "x-form-label": "Anchor Name",
               "x-form-type": "text"
             },
+            "extraclasses": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Additonal Classes",
+              "x-form-type": "text"
+            },
             "htmlelement": {
               "type": "string",
               "x-source": "inject",
@@ -457,6 +463,10 @@ public class FooterModel extends AbstractComponent {
 	@Inject
 	private String anchorname;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Additonal Classes","x-form-type":"text"} */
+	@Inject
+	private String extraclasses;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */
 	@Inject
 	@Default(values ="section")
@@ -604,6 +614,11 @@ public class FooterModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	public String getAnchorname() {
 		return anchorname;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Additonal Classes","x-form-type":"text"} */
+	public String getExtraclasses() {
+		return extraclasses;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */
