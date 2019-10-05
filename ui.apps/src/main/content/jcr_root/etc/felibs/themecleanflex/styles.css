@@ -229,4 +229,15 @@ p {
   @apply pointer-events-auto;
 }
 
+/* footer */
+[class$="components-footer"] ul {
+  @apply list-none p-0 text-sm font-medium;
+}
+[class$="components-footer"] ul li {
+  @apply mb-2;
+}
+[class$="components-footer"] p {
+  @apply text-sm font-medium;
+}
+
 /* purgecss end ignore */
