@@ -111,22 +111,22 @@ p {
 
 /* Themes */ 
 .theme-dark {
-  @apply text-gray-100 bg-black;
+  @apply text-gray-200 bg-gray-900;
 }
 .theme-light {
-  @apply text-black bg-gray-100;
+  @apply text-gray-800 bg-gray-100;
 }
 .bg-dark {
-  @apply bg-black;
+  @apply bg-gray-900;
 }
 .bg-light {
-  @apply bg-white;
+  @apply bg-gray-100;
 }
 .text-dark {
-  @apply text-black;
+  @apply text-gray-800;
 }
 .text-light {
-  @apply text-white;
+  @apply text-gray-200;
 }
 
 /* Drop Shadow Helpers */
