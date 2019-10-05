@@ -15,25 +15,27 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/header"
             backgroundtype="color"
-            bgcolor="#eeeeee"
+            bgcolor="#ffffff"
             bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
             bottompadding="0"
             buttonsize="default"
             collapsed="false"
             colorscheme="light"
             elevation="1"
-            logo="/content/assets/themecleanflex/samples/peregrine-logo.svg"
-            logosize="60"
+            logo="/content/assets/themecleanflex/samples/sample-logo.png"
+            logosize="35"
             logourl="http://www.peregrine-cms.com"
-            logoalttext="Peregrine CMS Logo"
+            logoalttext="PathSoft Logo"
             toppadding="0">
             <links jcr:primaryType="nt:unstructured">
-            <links0 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="Services"/>
-            <links1 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="About Us"/>
+            <links0 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="About Us"/>
+            <links1 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="Services"/>
             <links2 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="Contact Us"/>
+            <links3 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="Pricing"/>
+            <links4 jcr:primaryType="nt:unstructured" link="/content/sites/themeclean" text="News"/>
             </links>
             <buttons jcr:primaryType="nt:unstructured">
-            <buttons0 jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="Try It Now" buttoncolor="primary"/>
+            <buttons0 jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="Sign Up" buttoncolor="primary"/>
             </buttons>
         </n1f964177-2026-4697-80ce-7ea78fa1b3e2>
         <n9f934ff9-79f2-46cb-8f81-cbd26702fdf3
@@ -47,19 +49,20 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/footer"
             backgroundtype="color"
-            bgcolor="#eeeeee"
+            bgcolor="#ffffff"
             bottompadding="0"
-            colorscheme="light"
-            copyright="Copyright 2017 Peregrine - All Rights Reserved"
-            logo="/content/assets/themecleanflex/samples/peregrine-logo.svg"
-            logosize="60"
+            colorscheme="dark"
+            copyright="&amp;copy; 2019 PathSoft&amp;mdash;All rights reserved"
+            logo="/content/assets/themecleanflex/samples/sample-logo.png"
+            logosize="35"
             logourl="http://www.peregrine-cms.com"
             showlogo="true"
             toppadding="30">
             <columns jcr:primaryType="nt:unstructured">
             <columns0 jcr:primaryType="nt:unstructured" title="" text=""/>
-            <columns1 jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p>email@email.com&lt;br>1-800-888-8888&lt;/p>"/>
-            <columns2 jcr:primaryType="nt:unstructured" title="Location" text="&lt;p>1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p>"/>
+            <columns1 jcr:primaryType="nt:unstructured" title="Menu" text="&lt;ul>&lt;li>About us&lt;/li>&lt;li>Services&lt;/li>&lt;li>Pricing&lt;/li>&lt;li>Blog&lt;/li>&lt;li>Contact Us&lt;br>&lt;/li>&lt;/ul>"/>
+            <columns2 jcr:primaryType="nt:unstructured" title="What we offer" text="&lt;ul>&lt;li>DB Management&lt;/li>&lt;li>IOS/MacOs&lt;/li>&lt;li>Android Apps&lt;/li>&lt;li>Windows Apps&lt;/li>&lt;li>UX &amp; UI&lt;br>&lt;/li>&lt;/ul>"/>
+            <columns3 jcr:primaryType="nt:unstructured" title="Our contacts" text="&lt;ul>&lt;li>301 S Irving Blvd, &lt;br>Los Angeles, CA 90020&lt;/li>&lt;li>+1 323-913-4688, +1 323-888-4554&lt;/li>&lt;li>mail@example.com&lt;/li>&lt;/ul>"/>
             </columns>
             <icons jcr:primaryType="nt:unstructured">
             <icons0 jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="fontAwesome:fa fa-facebook:" iconalttext="Facebook"/>
