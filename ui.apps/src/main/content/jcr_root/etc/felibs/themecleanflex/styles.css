@@ -128,6 +128,12 @@ p {
 .text-light {
   @apply text-gray-200;
 }
+.theme-dark a:not(.btn) {
+  @apply text-gray-200;
+}
+.theme-light a:not(.btn) {
+  @apply text-gray-800;
+}
 
 /* Drop Shadow Helpers */
 .elevation-1 {
@@ -158,7 +164,7 @@ p {
 
 /* Buttons */
 .btn {
-  @apply font-bold py-2 px-4 rounded no-underline;
+  @apply text-sm font-medium py-2 px-4 rounded no-underline;
   transition: background-color 0.2s ease;
 }
 .btn:focus {
@@ -175,40 +181,40 @@ p {
   @apply py-2 px-2 text-sm
 }
 .btn-blue {
-  @apply bg-blue-700 text-white;
+  @apply bg-blue-600 text-white;
 }
 .btn-blue:hover {
-  @apply bg-blue-800;
+  @apply bg-blue-700;
 }
 .btn-green {
-  @apply bg-green-700 text-white;
+  @apply bg-green-600 text-white;
 }
 .btn-green:hover {
-  @apply bg-green-800;
+  @apply bg-green-700;
 }
 .btn-red {
-  @apply bg-red-700 text-white;
+  @apply bg-red-600 text-white;
 }
 .btn-red:hover {
-  @apply bg-red-800;
+  @apply bg-red-700;
 }
 .btn-orange {
-  @apply bg-orange-700 text-white;
+  @apply bg-orange-600 text-white;
 }
 .btn-orange:hover {
-  @apply bg-orange-800;
+  @apply bg-orange-700;
 }
 .btn-white {
-  @apply bg-white text-black;
+  @apply bg-gray-200 text-gray-800;
 }
 .btn-white:hover {
-  @apply bg-black text-white;
+  @apply bg-gray-300;
 }
 .btn-black {
-  @apply bg-black text-white;
+  @apply bg-gray-800 text-gray-200;
 }
 .btn-black:hover {
-  @apply bg-gray-800;
+  @apply bg-gray-900;
 }
 
 .media-sizeable {
@@ -227,6 +233,11 @@ p {
 
 .VueCarousel-dot-container {
   @apply pointer-events-auto;
+}
+
+/* header */
+[class$="components-header"] a {
+  @apply text-sm font-medium;
 }
 
 /* footer */
