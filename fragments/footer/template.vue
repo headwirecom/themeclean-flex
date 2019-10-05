@@ -9,7 +9,7 @@
         </a>
         <div class="footer-col flex-1 lg:mx-4" v-for="(item,i) in model.columns"
         :key="i">
-          <h1 class="text-xl my-2" v-if="item.title !== ''">{{item.title}}</h1>
+          <h2 class="text-lg font-bold my-2" v-if="item.title !== ''">{{item.title}}</h2>
           <div v-if="item.text !== ''" v-html="item.text"></div>
         </div>
       </div>

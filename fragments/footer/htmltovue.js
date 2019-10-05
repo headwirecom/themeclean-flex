@@ -12,7 +12,7 @@ module.exports = {
 
 		//Columns
 		let col = $.find('.footer-col').first()
-		let coltitle = col.find('h1').first()
+		let coltitle = col.find('h2').first()
 		let colcontent = col.find('div').first()
 		f.addFor( col, "model.columns")
 		f.addIf( coltitle, "item.title !== ''")
