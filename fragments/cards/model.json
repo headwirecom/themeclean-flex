@@ -43,6 +43,38 @@
           "x-form-visible": "model.showcard == 'true' and model.customcardcolor == 'true'",
           "x-default": "#ffffff"
         },
+        "cardborder": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Show Card Border",
+          "x-form-type": "materialswitch",
+          "x-default": "true"
+        },
+        "roundedcorners": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Rounded Corners",
+          "x-form-type": "materialselect",
+          "x-default": "none",
+          "properties":{
+            "none": {
+              "x-form-name": "none",
+              "x-form-value": "none"
+            },
+            "small": {
+              "x-form-name": "small",
+              "x-form-value": "small"
+            },
+            "medium": {
+              "x-form-name": "medium",
+              "x-form-value": "medium"
+            },
+            "large": {
+              "x-form-name": "large",
+              "x-form-value": "large"
+            }
+          }
+        },
         "cardsperrow": {
           "type": "string",
           "x-source": "inject",

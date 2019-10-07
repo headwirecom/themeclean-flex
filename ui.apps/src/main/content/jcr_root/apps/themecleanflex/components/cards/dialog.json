@@ -60,6 +60,40 @@
       "visible": "model.showcard == 'true' and model.customcardcolor == 'true'"
     },
     {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "cardborder",
+      "label": "Show Card Border",
+      "model": "cardborder"
+    },
+    {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "none",
+          "value": "none"
+        },
+        {
+          "name": "small",
+          "value": "small"
+        },
+        {
+          "name": "medium",
+          "value": "medium"
+        },
+        {
+          "name": "large",
+          "value": "large"
+        }
+      ],
+      "placeholder": "roundedcorners",
+      "label": "Rounded Corners",
+      "model": "roundedcorners"
+    },
+    {
       "type": "material-range",
       "placeholder": "cardsperrow",
       "label": "Cards Per Row",

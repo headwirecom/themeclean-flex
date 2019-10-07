@@ -29,10 +29,14 @@ module.exports = {
 
         //Card
         let cardClasses = `{
-            'bg-dark': model.customcardcolor !== 'true' && model.colorscheme === 'light',
-            'bg-light': model.customcardcolor !== 'true' &&  model.colorscheme === 'dark',
-            'text-dark': (model.showcard === 'false' && model.colorscheme === 'light') || (model.showcard === 'true' && model.colorscheme === 'dark'),
-            'text-light': (model.showcard === 'false' && model.colorscheme === 'dark') || (model.showcard === 'true' && model.colorscheme === 'light'),
+            'bg-white': model.showcard === 'true' && model.customcardcolor !== 'true' && model.colorscheme === 'light',
+            'bg-gray-800': model.showcard === 'true' && model.customcardcolor !== 'true' &&  model.colorscheme === 'dark',
+            'border border-solid border-gray-300': (model.showcard === 'true' && model.customcardcolor !== 'true' && model.colorscheme === 'light') && model.cardborder === 'true',
+            'border border-solid border-gray-900': (model.showcard === 'true' && model.customcardcolor !== 'true' && model.colorscheme === 'dark') && model.cardborder === 'true',
+            'rounded-none': model.roundedcorners == 'none',
+            'rounded-sm': model.roundedcorners == 'small',
+            'rounded': model.roundedcorners == 'medium',
+            'rounded-lg': model.roundedcorners == 'large'
         }`
 
         f.addFor($.find('div.card').first(), 'model.cards')

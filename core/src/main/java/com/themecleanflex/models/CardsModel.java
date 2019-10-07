@@ -60,6 +60,38 @@ import javax.inject.Named;
           "x-form-visible": "model.showcard == 'true' and model.customcardcolor == 'true'",
           "x-default": "#ffffff"
         },
+        "cardborder": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Show Card Border",
+          "x-form-type": "materialswitch",
+          "x-default": "true"
+        },
+        "roundedcorners": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Rounded Corners",
+          "x-form-type": "materialselect",
+          "x-default": "none",
+          "properties": {
+            "none": {
+              "x-form-name": "none",
+              "x-form-value": "none"
+            },
+            "small": {
+              "x-form-name": "small",
+              "x-form-value": "small"
+            },
+            "medium": {
+              "x-form-name": "medium",
+              "x-form-value": "medium"
+            },
+            "large": {
+              "x-form-name": "large",
+              "x-form-value": "large"
+            }
+          }
+        },
         "cardsperrow": {
           "type": "string",
           "x-source": "inject",
@@ -504,6 +536,16 @@ public class CardsModel extends AbstractComponent {
 	@Default(values ="#ffffff")
 	private String cardcolor;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Border","x-form-type":"materialswitch","x-default":"true"} */
+	@Inject
+	@Default(values ="true")
+	private String cardborder;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Rounded Corners","x-form-type":"materialselect","x-default":"none","properties":{"none":{"x-form-name":"none","x-form-value":"none"},"small":{"x-form-name":"small","x-form-value":"small"},"medium":{"x-form-name":"medium","x-form-value":"medium"},"large":{"x-form-name":"large","x-form-value":"large"}}} */
+	@Inject
+	@Default(values ="none")
+	private String roundedcorners;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row","x-form-type":"materialrange","x-default":3,"x-form-min":1,"x-form-max":6} */
 	@Inject
 	@Default(values ="3")
@@ -648,6 +690,16 @@ public class CardsModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Card Color","x-form-type":"color","x-form-visible":"model.showcard == 'true' and model.customcardcolor == 'true'","x-default":"#ffffff"} */
 	public String getCardcolor() {
 		return cardcolor;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Border","x-form-type":"materialswitch","x-default":"true"} */
+	public String getCardborder() {
+		return cardborder;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Rounded Corners","x-form-type":"materialselect","x-default":"none","properties":{"none":{"x-form-name":"none","x-form-value":"none"},"small":{"x-form-name":"small","x-form-value":"small"},"medium":{"x-form-name":"medium","x-form-value":"medium"},"large":{"x-form-name":"large","x-form-value":"large"}}} */
+	public String getRoundedcorners() {
+		return roundedcorners;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row","x-form-type":"materialrange","x-default":3,"x-form-min":1,"x-form-max":6} */

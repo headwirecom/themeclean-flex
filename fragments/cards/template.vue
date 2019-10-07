@@ -23,12 +23,16 @@
             'w-1/5': model.cardsperrowmobile == 5,
             'w-1/6': model.cardsperrowmobile == 6,
         }" v-for="(item,i) in model.cards" :key="i">
-        <div class="flex flex-col h-full" v-bind:style="`background-color:${model.customcardcolor === 'true' &amp;&amp; model.showcard === 'true' ? model.cardcolor: ''};`"
+        <div class="flex flex-col h-full overflow-hidden" v-bind:style="`background-color:${model.customcardcolor === 'true' &amp;&amp; model.showcard === 'true' ? model.cardcolor: ''};`"
         v-bind:class="{
-            'bg-dark': model.customcardcolor !== 'true' &amp;&amp; model.colorscheme === 'light',
-            'bg-light': model.customcardcolor !== 'true' &amp;&amp;  model.colorscheme === 'dark',
-            'text-dark': (model.showcard === 'false' &amp;&amp; model.colorscheme === 'light') || (model.showcard === 'true' &amp;&amp; model.colorscheme === 'dark'),
-            'text-light': (model.showcard === 'false' &amp;&amp; model.colorscheme === 'dark') || (model.showcard === 'true' &amp;&amp; model.colorscheme === 'light'),
+            'bg-white': model.showcard === 'true' &amp;&amp; model.customcardcolor !== 'true' &amp;&amp; model.colorscheme === 'light',
+            'bg-gray-800': model.showcard === 'true' &amp;&amp; model.customcardcolor !== 'true' &amp;&amp;  model.colorscheme === 'dark',
+            'border border-solid border-gray-300': (model.showcard === 'true' &amp;&amp; model.customcardcolor !== 'true' &amp;&amp; model.colorscheme === 'light') &amp;&amp; model.cardborder === 'true',
+            'border border-solid border-gray-900': (model.showcard === 'true' &amp;&amp; model.customcardcolor !== 'true' &amp;&amp; model.colorscheme === 'dark') &amp;&amp; model.cardborder === 'true',
+            'rounded-none': model.roundedcorners == 'none',
+            'rounded-sm': model.roundedcorners == 'small',
+            'rounded': model.roundedcorners == 'medium',
+            'rounded-lg': model.roundedcorners == 'large'
         }">
           <div class="self-center" v-bind:style="{width: item.imagewidth + &quot;%&quot;}">
             <v-lazy-image v-bind:class="model.showcard == 'true' ? 'card-img pb-1' : 'card-img pb-3'"
