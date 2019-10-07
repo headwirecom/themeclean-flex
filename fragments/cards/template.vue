@@ -35,7 +35,7 @@
             'rounded-lg': model.roundedcorners == 'large'
         }">
           <div class="self-center" v-bind:style="{width: item.imagewidth + &quot;%&quot;}">
-            <v-lazy-image v-bind:class="model.showcard == 'true' ? 'card-img pb-1' : 'card-img pb-3'"
+            <v-lazy-image v-bind:class="model.showcard == 'true' ? 'card-img mb-1 w-full' : 'card-img mb-3 w-full'"
             v-bind:src="$helper.pathToUrl(item.image)" v-bind:alt="item.imagealttext"
             v-if="item.image"></v-lazy-image>
           </div>

@@ -51,7 +51,7 @@ module.exports = {
         f.bindAttribute($.find('div.card>div>div').eq(0), 'style', '{width: item.imagewidth + "%"}')
         //Image
         f.replace($.find('img'), '<v-lazy-image></v-lazy-image>')
-        f.bindAttribute($.find('v-lazy-image').first(), 'class', "model.showcard == 'true' ? 'card-img pb-1' : 'card-img pb-3'")
+        f.bindAttribute($.find('v-lazy-image').first(), 'class', "model.showcard == 'true' ? 'card-img mb-1 w-full' : 'card-img mb-3 w-full'")
         f.bindAttribute($.find('v-lazy-image').first(), 'src', f.pathToUrl('item.image'))
         f.bindAttribute($.find('v-lazy-image').first(), 'alt', 'item.imagealttext')
         f.addIf($.find('v-lazy-image').first(), 'item.image')
