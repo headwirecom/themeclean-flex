@@ -15,7 +15,7 @@
         templatePath="/content/templates/themecleanflex">
         <n9f934ff9-79f2-46cb-8f81-cbd26702fdf3 jcr:primaryType="nt:unstructured">
             <text   jcr:primaryType="nt:unstructured" htmlelement="section" sling:resourceType="themecleanflex/components/richtext" 
-                    text="&lt;h1 style=&quot;text-align: center; &quot;>404 - Sorry, the requested page was not found&lt;/h1>" bottompadding="156" toppadding="156" videosrc=""/>
+                    text="&lt;h1 style=&quot;text-align: center; &quot;>404 - Sorry, the requested page was not found&lt;/h1>" bottompadding="156" toppadding="156" videosrc="">
             </text>
         </n9f934ff9-79f2-46cb-8f81-cbd26702fdf3>
     </jcr:content>
