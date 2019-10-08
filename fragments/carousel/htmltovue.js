@@ -3,8 +3,8 @@ module.exports = {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
 
-        f.addStyle( $.find('div'), 'height', 'model.carouselheight', 'vh')
-        f.addStyle( $.find('div'), 'maxHeight', 'model.carouselheight', 'vh')
+        f.addStyle( $.find('div').first(), 'height', 'model.carouselheight', 'vh')
+        f.addStyle( $.find('div').first(), 'maxHeight', 'model.carouselheight', 'vh')
 
         let carousel = $;
         f.bindAttribute(carousel, "autoplay", "model.autoplay === 'true'")
@@ -30,10 +30,16 @@ module.exports = {
         f.bindAttribute(image, "alt", "item.alt")
         f.bindAttribute(image, "class", "item.imagefit === 'cover' ? 'object-cover' : 'object-contain'", false)
 
+        let captionClasses = `{
+            'pb-12': model.indicators === 'true',
+            'with-bg': model.captionbg === 'true' && (model.colorscheme === 'light' || model.colorscheme === 'dark')
+        }`
+
         let figcaption = $.find('figcaption').first()
-        f.addIf(figcaption, "item.text")
-        f.mapRichField(figcaption, "item.text")
-        f.bindAttribute( figcaption, 'class', "{'bg-gray-700': model.captionbg === 'true', 'pb-12': model.indicators === 'true'}", false)
+        let figcaptionContent = $.find('figcaption > .container > div').first()
+        f.addIf(figcaptionContent, "item.text")
+        f.mapRichField(figcaptionContent, "item.text")
+        f.bindAttribute( figcaption, 'class', captionClasses, false)
 
         f.addElse($);
         $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
