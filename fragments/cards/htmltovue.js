@@ -75,7 +75,10 @@ module.exports = {
             'btn-red': item.buttoncolor === 'danger',
             'btn-orange': item.buttoncolor === 'warning',
             'btn-white': item.buttoncolor === 'light',
-            'btn-black': item.buttoncolor === 'dark'
+            'btn-black': item.buttoncolor === 'dark',
+            'self-start': item.buttonalign === 'left',
+            'self-center': item.buttonalign === 'center',
+            'self-end': item.buttonalign === 'right'
         }`
 
         let a = $.find('a.btn')

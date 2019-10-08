@@ -238,6 +238,26 @@
           "placeholder": "buttonsize",
           "label": "Button Size",
           "model": "buttonsize"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "Left",
+              "value": "left"
+            },
+            {
+              "name": "Center",
+              "value": "center"
+            },
+            {
+              "name": "Right",
+              "value": "right"
+            }
+          ],
+          "placeholder": "buttonalign",
+          "label": "Button Alignment",
+          "model": "buttonalign"
         }
       ],
       "placeholder": "cards",

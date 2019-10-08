@@ -221,6 +221,27 @@
                   "x-form-value": "small"
                 }
               }
+            },
+            "buttonalign": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Button Alignment",
+              "x-form-type": "materialselect",
+              "x-default": "center",
+              "properties":{
+                "left": {
+                  "x-form-name": "Left",
+                  "x-form-value": "left"
+                },
+                "center": {
+                  "x-form-name": "Center",
+                  "x-form-value": "center"
+                },
+                "right": {
+                  "x-form-name": "Right",
+                  "x-form-value": "right"
+                }
+              }
             }
           }
         },
