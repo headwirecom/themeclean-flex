@@ -47,7 +47,7 @@
               v-bind:style="`color:${item.color};`"></h2>
               <div class="my-3" v-if="model.showtext == 'true'" v-html="item.text"></div>
             </div>
-            <a class="btn self-center my-3" v-if="showbutton(item)" v-bind:href="$helper.pathToUrl(item.buttonlink)"
+            <a class="btn self-end my-3" v-if="showbutton(item)" v-bind:href="$helper.pathToUrl(item.buttonlink)"
             v-bind:class="{
             'btn-lg': item.buttonsize === 'large',
             'btn-sm': item.buttonsize === 'small',

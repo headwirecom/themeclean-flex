@@ -80,7 +80,7 @@
           "x-source": "inject",
           "x-form-label": "Cards Per Row",
           "x-form-type": "materialrange",
-          "x-default": 3,
+          "x-default": 4,
           "x-form-min": 1,
           "x-form-max": 6
         },

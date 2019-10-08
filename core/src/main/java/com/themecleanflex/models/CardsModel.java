@@ -97,7 +97,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Cards Per Row",
           "x-form-type": "materialrange",
-          "x-default": 3,
+          "x-default": 4,
           "x-form-min": 1,
           "x-form-max": 6
         },
@@ -546,9 +546,9 @@ public class CardsModel extends AbstractComponent {
 	@Default(values ="none")
 	private String roundedcorners;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row","x-form-type":"materialrange","x-default":3,"x-form-min":1,"x-form-max":6} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row","x-form-type":"materialrange","x-default":4,"x-form-min":1,"x-form-max":6} */
 	@Inject
-	@Default(values ="3")
+	@Default(values ="4")
 	private String cardsperrow;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row (Tablet)","x-form-type":"materialrange","x-default":2,"x-form-min":1,"x-form-max":6} */
@@ -702,7 +702,7 @@ public class CardsModel extends AbstractComponent {
 		return roundedcorners;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row","x-form-type":"materialrange","x-default":3,"x-form-min":1,"x-form-max":6} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row","x-form-type":"materialrange","x-default":4,"x-form-min":1,"x-form-max":6} */
 	public String getCardsperrow() {
 		return cardsperrow;
 	}

@@ -9,8 +9,10 @@
     "showtitle": "true",
     "showcard": "true",
     "toppadding": "20",
-    "customcardcolor": "true",
-    "cardcolor": "#eeeeee",
+    "customcardcolor": "false",
+    "colorscheme": "light",
+    "roundedcorners": "large",
+    "cardcolor": "#ffffff",
     "cards": [
       {
         "buttonlink": "/content/sites/themecleanflex",
@@ -39,6 +41,15 @@
         "imagealttext": "Messy pile of rope",
         "text": "Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis.",
         "title": "Card Three"
+      },{
+        "buttonlink": "/content/sites/themecleanflex",
+        "buttontext": "View",
+        "buttoncolor": "primary",
+        "buttonsize": "default",
+        "image": "/content/assets/themecleanflex/samples/chain-close-up-daylight-1170601.jpg",
+        "imagealttext": "Tying a sailor knot",
+        "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.",
+        "title": "Card Four"
       }
     ]
   }
