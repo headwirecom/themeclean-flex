@@ -112,6 +112,44 @@
       "visible": "model.showmedia == 'true'"
     },
     {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "cardborder",
+      "label": "Show Card Border",
+      "model": "cardborder"
+    },
+    {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "none",
+          "value": "none"
+        },
+        {
+          "name": "small",
+          "value": "small"
+        },
+        {
+          "name": "medium",
+          "value": "medium"
+        },
+        {
+          "name": "large",
+          "value": "large"
+        },
+        {
+          "name": "full",
+          "value": "full"
+        }
+      ],
+      "placeholder": "roundedcorners",
+      "label": "Rounded Corners",
+      "model": "roundedcorners"
+    },
+    {
       "type": "collection",
       "multifield": true,
       "fieldLabel": [

@@ -46,14 +46,50 @@
           "x-form-visible": "model.showmedia == 'true'",
           "x-default": "before",
           "properties": {
-		    "type1": {
-		      "x-form-name": "Before Content",
-		      "x-form-value": "before"
-		    },"type2": {
-		      "x-form-name": "After Content",
-		      "x-form-value": "after"
-		    }
-  		  }
+    		    "type1": {
+    		      "x-form-name": "Before Content",
+    		      "x-form-value": "before"
+    		    },"type2": {
+    		      "x-form-name": "After Content",
+    		      "x-form-value": "after"
+    		    }
+  		    }
+        },
+        "cardborder": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Show Card Border",
+          "x-form-type": "materialswitch",
+          "x-default": "true"
+        },
+        "roundedcorners": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Rounded Corners",
+          "x-form-type": "materialselect",
+          "x-default": "none",
+          "properties":{
+            "none": {
+              "x-form-name": "none",
+              "x-form-value": "none"
+            },
+            "small": {
+              "x-form-name": "small",
+              "x-form-value": "small"
+            },
+            "medium": {
+              "x-form-name": "medium",
+              "x-form-value": "medium"
+            },
+            "large": {
+              "x-form-name": "large",
+              "x-form-value": "large"
+            },
+            "full": {
+              "x-form-name": "full",
+              "x-form-value": "full"
+            }
+          }
         },
         "accordiontoggle": {
           "type": "string",

@@ -134,6 +134,42 @@ import javax.inject.Named;
             }
           }
         },
+        "cardborder": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Show Card Border",
+          "x-form-type": "materialswitch",
+          "x-default": "true"
+        },
+        "roundedcorners": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Rounded Corners",
+          "x-form-type": "materialselect",
+          "x-default": "none",
+          "properties": {
+            "none": {
+              "x-form-name": "none",
+              "x-form-value": "none"
+            },
+            "small": {
+              "x-form-name": "small",
+              "x-form-value": "small"
+            },
+            "medium": {
+              "x-form-name": "medium",
+              "x-form-value": "medium"
+            },
+            "large": {
+              "x-form-name": "large",
+              "x-form-value": "large"
+            },
+            "full": {
+              "x-form-name": "full",
+              "x-form-value": "full"
+            }
+          }
+        },
         "accordiontoggle": {
           "type": "string",
           "x-source": "inject",
@@ -469,6 +505,16 @@ public class AccordionModel extends AbstractComponent {
 	@Default(values ="before")
 	private String mediaposition;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Border","x-form-type":"materialswitch","x-default":"true"} */
+	@Inject
+	@Default(values ="true")
+	private String cardborder;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Rounded Corners","x-form-type":"materialselect","x-default":"none","properties":{"none":{"x-form-name":"none","x-form-value":"none"},"small":{"x-form-name":"small","x-form-value":"small"},"medium":{"x-form-name":"medium","x-form-value":"medium"},"large":{"x-form-name":"large","x-form-value":"large"},"full":{"x-form-name":"full","x-form-value":"full"}}} */
+	@Inject
+	@Default(values ="none")
+	private String roundedcorners;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Accordion/Toggle","x-form-type":"collection","properties":{"title":{"type":"string","x-source":"inject","x-form-label":"Title","x-form-type":"text"},"text":{"type":"string","x-source":"inject","x-form-label":"Text","x-form-type":"texteditor"}}} */
 	@Inject
 	private List<IComponent> accordiontoggle;
@@ -618,6 +664,16 @@ public class AccordionModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Media Position","x-form-type":"materialradio","x-form-visible":"model.showmedia == 'true'","x-default":"before","properties":{"type1":{"x-form-name":"Before Content","x-form-value":"before"},"type2":{"x-form-name":"After Content","x-form-value":"after"}}} */
 	public String getMediaposition() {
 		return mediaposition;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Border","x-form-type":"materialswitch","x-default":"true"} */
+	public String getCardborder() {
+		return cardborder;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Rounded Corners","x-form-type":"materialselect","x-default":"none","properties":{"none":{"x-form-name":"none","x-form-value":"none"},"small":{"x-form-name":"small","x-form-value":"small"},"medium":{"x-form-name":"medium","x-form-value":"medium"},"large":{"x-form-name":"large","x-form-value":"large"},"full":{"x-form-name":"full","x-form-value":"full"}}} */
+	public String getRoundedcorners() {
+		return roundedcorners;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Accordion/Toggle","x-form-type":"collection","properties":{"title":{"type":"string","x-source":"inject","x-form-label":"Title","x-form-type":"text"},"text":{"type":"string","x-source":"inject","x-form-label":"Text","x-form-type":"texteditor"}}} */
