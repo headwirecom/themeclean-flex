@@ -1,5 +1,5 @@
 {
-  "title": "Footer - Dark",
+  "title": "Footer - light",
   "group": "Chrome",
   "model": {
     "htmlelement": "footer",
@@ -7,7 +7,7 @@
     "bgcolor": "#eeeeee",
     "bottompadding": "0",
     "toppadding": "30",
-    "colorscheme": "dark",
+    "colorscheme": "light",
     "showlogo": "true",
     "logo": "/content/assets/themecleanflex/samples/peregrine-logo.svg",
     "logourl": "http://www.peregrine-cms.com",

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Navigation">
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Multi Level Navigation - Example">
   <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
-    <sample jcr:primaryType="nt:unstructured" title="Navigation" group="Features">
+    <sample jcr:primaryType="nt:unstructured" title="Multi Level Navigation - Example" group="Chrome">
       <jcr:content jcr:primaryType="nt:unstructured" bottompadding="0" toppadding="0" rootpage="/content/sites/themecleanflex" justifyitems="end"/>
     </sample>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Navigation (Empty)" group="Blank">
+    <sample-blank jcr:primaryType="nt:unstructured" title="Multi Level Navigation" group="Chrome">
       <jcr:content jcr:primaryType="nt:unstructured"/>
     </sample-blank>
   </jcr:content>

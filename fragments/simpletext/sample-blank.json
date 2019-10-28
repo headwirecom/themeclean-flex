@@ -1,6 +1,6 @@
 {
-  "title": "Simple Text (Empty)",
-  "group": "Blank",
+  "title": "Text",
+  "group": "Text Components",
   "model": {
     "text": ""
   }

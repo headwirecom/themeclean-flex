@@ -1,6 +1,6 @@
 {
-  "title": "Cards (Empty)",
-  "group": "Blank",
+  "title": "Cards",
+  "group": "Features",
   "model": {
     "showtitle": "true",
     "showtext" : "true",
