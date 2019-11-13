@@ -1,0 +1,27 @@
+{
+  "title": "Carousel - Owl",
+  "group": "Features",
+  "model" : {
+    "blockwidth": "article",
+    "captionbg": "true",
+    "colorscheme": "none",
+    "indicators": "false",
+    "autoplay": "true",
+    "carouselheight": 10,
+    "toppadding": 10,
+    "wrap": "true",
+    "itemsperpage": 3,
+    "bottompadding": 10,
+    "slides": [
+      {
+        "imagepath": "/content/assets/themecleanflex/icons/google.svg"
+      },{
+        "imagepath": "/content/assets/themecleanflex/icons/facebook.svg"
+      },{
+        "imagepath": "/content/assets/themecleanflex/icons/linkedin.svg"
+      },{
+        "imagepath": "/content/assets/themecleanflex/icons/pinterest.svg"
+      }
+    ]
+  }
+}

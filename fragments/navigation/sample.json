@@ -1,6 +1,6 @@
 {
-  "title": "Navigation",
-  "group": "Features",
+  "title": "Multilevel Navigation - Example",
+  "group": "Chrome",
   "model": {
     "bottompadding": "0",
     "toppadding": "0",

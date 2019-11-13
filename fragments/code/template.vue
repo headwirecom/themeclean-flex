@@ -28,12 +28,12 @@
           }
         },
         mounted: function() {
-          if(Prism) {
+          if(window.Prism) {
             Prism.highlightAllUnder(this.$el)
           }
         },
         updated: function() {
-          if(Prism) {
+          if(window.Prism) {
             Prism.highlightAllUnder(this.$el)
           }
         }

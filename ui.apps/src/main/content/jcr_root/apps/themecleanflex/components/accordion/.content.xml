@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Accordion">
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Accordion - Light">
   <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
-    <sample jcr:primaryType="nt:unstructured" title="Accordion" group="Features">
+    <sample jcr:primaryType="nt:unstructured" title="Accordion - Light" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false">
         <accordiontoggle jcr:primaryType="nt:unstructured">
           <accordiontoggle0 jcr:primaryType="nt:unstructured" text="&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p>" title="Why accordion?"/>
@@ -10,7 +10,7 @@
         </accordiontoggle>
       </jcr:content>
     </sample>
-    <sample-accordiondark jcr:primaryType="nt:unstructured" title="Accordion Dark" group="Features">
+    <sample-accordiondark jcr:primaryType="nt:unstructured" title="Accordion - Dark" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured" showtitle="true" title="Peregrine Accordion Dark Theme" backgroundtype="color" colorscheme="dark" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/heel_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" toggletype="accordion">
         <accordiontoggle jcr:primaryType="nt:unstructured">
           <accordiontoggle0 jcr:primaryType="nt:unstructured" text="&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p>" title="Learn More"/>
@@ -18,7 +18,7 @@
         </accordiontoggle>
       </jcr:content>
     </sample-accordiondark>
-    <sample-accordionmedia jcr:primaryType="nt:unstructured" title="Accordion With Media" group="Features">
+    <sample-accordionmedia jcr:primaryType="nt:unstructured" title="Accordion - With Media" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/heel_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" showmedia="true" blockwidth="article" toggletype="accordion">
         <accordiontoggle jcr:primaryType="nt:unstructured">
           <accordiontoggle0 jcr:primaryType="nt:unstructured" text="&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p>" title="Learn More"/>
@@ -26,7 +26,7 @@
         </accordiontoggle>
       </jcr:content>
     </sample-accordionmedia>
-    <sample-bg jcr:primaryType="nt:unstructured" title="Accordion with Background image" group="Features">
+    <sample-bg jcr:primaryType="nt:unstructured" title="Accordion - Background Image" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured" showtitle="true" title="Peregrine Accordion" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" overlay="true" overlaycolor="#000000" overlayopacity="25" bottompadding="150" toppadding="150" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false">
         <accordiontoggle jcr:primaryType="nt:unstructured">
           <accordiontoggle0 jcr:primaryType="nt:unstructured" text="&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p>" title="Why accordion?"/>
@@ -35,7 +35,7 @@
         </accordiontoggle>
       </jcr:content>
     </sample-bg>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Accordion (Empty)" group="Blank">
+    <sample-blank jcr:primaryType="nt:unstructured" title="Accordion" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured">
         <tabs jcr:primaryType="nt:unstructured"/>
       </jcr:content>
@@ -58,7 +58,7 @@
         </accordiontoggle>
       </jcr:content>
     </sample-toggle>
-    <sample-togglemedia jcr:primaryType="nt:unstructured" title="Toggle With Media" group="Features">
+    <sample-togglemedia jcr:primaryType="nt:unstructured" title="Toggle  - With Media" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/assets/themecleanflex/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle">
         <accordiontoggle jcr:primaryType="nt:unstructured">
           <accordiontoggle0 jcr:primaryType="nt:unstructured" text="&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p>" title="Learn More"/>

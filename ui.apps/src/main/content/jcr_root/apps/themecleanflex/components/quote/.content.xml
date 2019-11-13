@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Quote">
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Quote - Basic">
   <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
-    <sample jcr:primaryType="nt:unstructured" title="Quote" group="Text Components">
+    <sample jcr:primaryType="nt:unstructured" title="Quote - Basic" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>&quot;Thats one small step for a man, one giant leap for mankind.&quot;&lt;/p>&lt;p>-&lt;i>Neil Armstrong&lt;/i>&lt;/p>" blockquote="false" blockwidth="article" toppadding="30" bottompadding="30"/>
     </sample>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Quote (Empty)" group="Blank">
+    <sample-blank jcr:primaryType="nt:unstructured" title="Quote" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured"/>
     </sample-blank>
-    <sample-blockquote jcr:primaryType="nt:unstructured" title="Block Quote" group="Text Components">
+    <sample-blockquote jcr:primaryType="nt:unstructured" title="Quote - Block" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="&lt;p>If you think you can do a thing or think you cant do a thing, youre right. &lt;/p>&lt;/i>- Henry Ford&lt;/i>" blockquote="true" blockwidth="article" toppadding="30" bottompadding="30"/>
     </sample-blockquote>
-    <sample-largequote jcr:primaryType="nt:unstructured" title="Quote Large" group="Text Components">
+    <sample-largequote jcr:primaryType="nt:unstructured" title="Quote  - Block Large" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="&lt;h2>&lt;em>That's one small step for a man, one giant leap for mankind.&lt;br>&lt;/em>&lt;em>-Neil Armstrong&lt;/em>&lt;/h2>" blockquote="true" blockwidth="article" toppadding="30" bottompadding="30"/>
     </sample-largequote>
     <sample-rte jcr:primaryType="nt:unstructured" title="Quote With All RTE Styles" group=".hidden">

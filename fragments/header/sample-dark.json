@@ -1,5 +1,5 @@
 {
-  "title": "Header Dark",
+  "title": "Navigation Header - Dark",
   "group": "Chrome",
   "model": {
     "htmlelement": "header",

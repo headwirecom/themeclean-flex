@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Code">
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Code - Example">
   <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
-    <sample jcr:primaryType="nt:unstructured" title="Code" group="Text Components">
+    <sample jcr:primaryType="nt:unstructured" title="Code - Example" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="var a = {};" language="javascript"/>
     </sample>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Code (Empty)" group="Blank">
+    <sample-blank jcr:primaryType="nt:unstructured" title="Code" group="Text Components">
       <jcr:content jcr:primaryType="nt:unstructured" text="" language=""/>
     </sample-blank>
   </jcr:content>

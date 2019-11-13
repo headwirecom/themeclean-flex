@@ -1,6 +1,6 @@
 {
-  "title": "Accordion (Empty)",
-  "group": "Blank",
+  "title": "Accordion",
+  "group": "Features",
   "model": {
     "tabs": [
     ]

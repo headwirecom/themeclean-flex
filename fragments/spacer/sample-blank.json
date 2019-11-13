@@ -1,6 +1,6 @@
 {
   "title": "Spacer (Empty)",
-  "group": "Blank",
+  "group": ".hidden",
   "model": {
     "height": "20"
   }

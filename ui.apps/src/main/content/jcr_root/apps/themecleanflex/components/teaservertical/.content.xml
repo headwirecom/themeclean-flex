@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Teaser Vertical">
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Teaser Vertical - Example">
   <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
-    <sample jcr:primaryType="nt:unstructured" title="Teaser Vertical" group="Features">
+    <sample jcr:primaryType="nt:unstructured" title="Teaser Vertical - Example" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" backgroundtype="gradient" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p>Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p>" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default">
         <buttons jcr:primaryType="nt:unstructured">
           <buttons0 jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass=""/>
@@ -9,10 +9,10 @@
         </buttons>
       </jcr:content>
     </sample>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Teaser Vertical (Empty)" group="Blank">
+    <sample-blank jcr:primaryType="nt:unstructured" title="Teaser Vertical" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured"/>
     </sample-blank>
-    <sample-mediateaser jcr:primaryType="nt:unstructured" title="Teaser with Media" group="Features">
+    <sample-mediateaser jcr:primaryType="nt:unstructured" title="Teaser Vertical - Media" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured" showtitle="true" showsubtitle="true" showtext="true" showbutton="true" fullheight="false" backgroundtype="gradient" bgcolor="#ffffff" gradient="true" color2="#c0c0c0" bottompadding="30" toppadding="30" text="&lt;p>Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p>" subtitle="Molestiae alias et inventore voluptas" title="Peregrine blocks" buttonsize="default" showmedia="true" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" mediatitle="Bird's eye view of the beach" mediawidth="50" mediaposition="after">
         <buttons jcr:primaryType="nt:unstructured">
           <buttons0 jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass=""/>
@@ -28,7 +28,7 @@
         </buttons>
       </jcr:content>
     </sample-rte>
-    <sample-teaserfull jcr:primaryType="nt:unstructured" title="Teaser Primary" group="Features">
+    <sample-teaserfull jcr:primaryType="nt:unstructured" title="Teaser Vertical - Full Height" group="Features">
       <jcr:content jcr:primaryType="nt:unstructured" showtitle="true" showsubtitle="true" showbutton="true" isprimary="true" fullheight="true" custombackground="true" backgroundtype="image" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" overlay="true" overlaycolor="#ffffff" overlayopacity="70" bottompadding="30" toppadding="30" text="&lt;p>Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p>" subtitle="Molestiae alias et inventore voluptas" buttonsize="large" title="Themeclean Flex Blocks">
         <buttons jcr:primaryType="nt:unstructured">
           <buttons0 jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="See More" buttoncolor="primary" iconclass=""/>
