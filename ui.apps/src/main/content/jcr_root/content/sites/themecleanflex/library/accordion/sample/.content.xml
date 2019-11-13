@@ -45,7 +45,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
         </title1><accordion5
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" colorscheme="dark" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c2
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -61,7 +61,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
         </title6><accordion10
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" colorscheme="light" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c7
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -77,7 +77,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
         </title11><accordion15
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" colorscheme="light" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c12
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -93,7 +93,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
         </title16><accordion20
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" colorscheme="" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c17
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -109,7 +109,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
         </title21><accordion25
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#ff80c0" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" colorscheme="" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c22
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -125,7 +125,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
         </title26><accordion30
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" colorscheme="dark" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c27
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -141,7 +141,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
         </title31><accordion35
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" colorscheme="dark" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c32
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -157,7 +157,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
         </title36><accordion40
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" colorscheme="light" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c37
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -173,7 +173,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
         </title41><accordion45
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" colorscheme="light" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c42
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -189,7 +189,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
         </title46><accordion50
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" colorscheme="" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c47
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -205,7 +205,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
         </title51><accordion55
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" colorscheme="" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c52
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -221,7 +221,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
         </title56><accordion60
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="image" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c57
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -237,7 +237,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
         </title61><accordion65
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="image" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c62
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -253,7 +253,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
         </title66><accordion70
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="image" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c67
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -269,7 +269,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
         </title71><accordion75
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="image" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c72
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -285,7 +285,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
         </title76><accordion80
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="image" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c77
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -301,7 +301,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
         </title81><accordion85
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="image" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c82
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -317,7 +317,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
         </title86><accordion90
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="false" colorscheme="dark" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c87
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -333,7 +333,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
         </title91><accordion95
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="false" colorscheme="dark" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c92
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -349,7 +349,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
         </title96><accordion100
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="false" colorscheme="light" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c97
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -365,7 +365,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
         </title101><accordion105
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="false" colorscheme="light" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c102
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -381,7 +381,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
         </title106><accordion110
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="false" colorscheme="" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c107
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -397,7 +397,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
         </title111><accordion115
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="false" colorscheme="" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c112
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -413,7 +413,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
         </title116><accordion120
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="video" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c117
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -429,7 +429,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
         </title121><accordion125
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="video" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c122
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -445,7 +445,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
         </title126><accordion130
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="video" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c127
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -461,7 +461,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
         </title131><accordion135
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="video" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c132
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -477,7 +477,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
         </title136><accordion140
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="video" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c137
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
@@ -493,7 +493,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Accordion Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Accordion - Light Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
         </title141><accordion145
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="video" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false" custombackground="true" bgsize="cover" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="true"><accordiontoggle jcr:primaryType="nt:unstructured"><c142
         jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">

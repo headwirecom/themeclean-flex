@@ -45,7 +45,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
         </title1><header6
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#ff80c0" colorscheme="dark" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c2
@@ -65,7 +65,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
         </title7><header12
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c8
@@ -85,7 +85,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
         </title13><header18
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c14
@@ -105,7 +105,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
         </title19><header24
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#ff80c0" colorscheme="" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c20
@@ -125,7 +125,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
         </title25><header30
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#ff80c0" colorscheme="" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c26
@@ -145,7 +145,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
         </title31><header36
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="gradient" bgcolor="#ff8040" colorscheme="dark" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" color2="#0080ff" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c32
@@ -165,7 +165,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
         </title37><header42
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="gradient" bgcolor="#ff8040" colorscheme="dark" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" color2="#0080ff" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c38
@@ -185,7 +185,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
         </title43><header48
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="gradient" bgcolor="#ff8040" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" color2="#0080ff" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c44
@@ -205,7 +205,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
         </title49><header54
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="gradient" bgcolor="#ff8040" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" color2="#0080ff" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c50
@@ -225,7 +225,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
         </title55><header60
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="gradient" bgcolor="#ff8040" colorscheme="" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" color2="#0080ff" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c56
@@ -245,7 +245,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
         </title61><header66
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="gradient" bgcolor="#ff8040" colorscheme="" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" color2="#0080ff" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c62
@@ -265,7 +265,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
         </title67><header72
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="image" bgcolor="#eeeeee" colorscheme="dark" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c68
@@ -285,7 +285,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
         </title73><header78
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="image" bgcolor="#eeeeee" colorscheme="dark" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c74
@@ -305,7 +305,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
         </title79><header84
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="image" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c80
@@ -325,7 +325,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
         </title85><header90
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="image" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c86
@@ -345,7 +345,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
         </title91><header96
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="image" bgcolor="#eeeeee" colorscheme="" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c92
@@ -365,7 +365,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
         </title97><header102
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="image" bgcolor="#eeeeee" colorscheme="" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" bgimage="/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c98
@@ -385,7 +385,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
         </title103><header108
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="dark" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="false" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c104
@@ -405,7 +405,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
         </title109><header114
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="dark" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="false" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c110
@@ -425,7 +425,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
         </title115><header120
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="false" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c116
@@ -445,7 +445,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
         </title121><header126
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="false" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c122
@@ -465,7 +465,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
         </title127><header132
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="false" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c128
@@ -485,7 +485,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
         </title133><header138
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="false" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c134
@@ -505,7 +505,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
         </title139><header144
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="video" bgcolor="#eeeeee" colorscheme="dark" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c140
@@ -525,7 +525,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
         </title145><header150
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="video" bgcolor="#eeeeee" colorscheme="dark" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c146
@@ -545,7 +545,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
         </title151><header156
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="video" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c152
@@ -565,7 +565,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
         </title157><header162
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="video" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c158
@@ -585,7 +585,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
         </title163><header168
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="video" bgcolor="#eeeeee" colorscheme="" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" fullheight="false"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c164
@@ -605,7 +605,7 @@
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Header Dark Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            text="&lt;h2&gt;Navigation Header - Dark Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
         </title169><header174
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="video" bgcolor="#eeeeee" colorscheme="" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light" custombackground="true" bgsize="cover" fullheight="true"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c170
