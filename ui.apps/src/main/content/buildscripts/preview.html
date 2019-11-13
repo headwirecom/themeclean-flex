@@ -1,0 +1,93 @@
+<html>
+<head>
+  <link rel="stylesheet" href="src/main/content/jcr_root/etc/felibs/themecleanflex/css/build.css"
+    type="text/css">
+  <script>
+    var $peregrineApp = { isAuthorMode: function () { return false; } };
+    var sampleData = @@DATA@@;
+  </script>
+</head>
+
+<body>
+  <div id="peregrine-app">
+      <span>
+          <themecleanflex-components-container v-bind:model="model" />
+      </span>
+  </div>
+
+  <script src="node_modules/vue/dist/vue.min.js"></script>
+
+  <script src="target/classes/etc/felibs/themecleanflex/dependencies/intersection-observer.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/dependencies/v-lazy-image.min.js"></script>
+  
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsContainer.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsBlock.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsMedia.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsMediavisible.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsTextlinks.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsMenubuttons.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsSocialicons.js"></script>
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponentsPagelistnested.js"></script>
+
+  <script src="target/classes/etc/felibs/themecleanflex/js/themecleanflexComponents@@NAME@@.js"></script>
+
+  <script>
+
+var helpers = {
+      isEmpty: function(field) {
+          if(field === undefined || field === null || field === '' || field === '<p><br></p>' || field.length === 0 || field === false) {
+              return true
+          }
+          return false
+      },
+      areAllEmpty: function areAllEmpty() {
+          var arguments$1 = arguments;
+
+          for(var i = 0; i < arguments.length; i++) {
+              var ret = helpers.isEmpty(arguments$1[i]);
+              if(ret === false) { return false }
+          }
+          return true
+      },
+      pathToUrl: function pathToUrl(path) {
+          if( path[0] === '#') { return path }
+          var absoluteUrl = new RegExp('^(?:[a-z]+:)?//', 'i');   //Matches absolute URLs
+          var file = new RegExp(/\.\w+$/, 'i');                    //Matches URL ending with a file extension
+          if( absoluteUrl.test(path) === false ) {
+              return file.test(path) ? path : (path + ".html")
+          }
+          else { return path }
+      }
+  };
+
+  var helper = {
+      install: function install(vue) {
+          vue.prototype.$helper = helpers;
+      }
+  };
+
+    Vue.use(window.VLazyImage.VLazyImagePlugin);
+    Vue.use(helper);
+    Vue.component('themecleanflex-components-container', cmpThemecleanflexComponentsContainer);
+    Vue.component('themecleanflex-components-block', cmpThemecleanflexComponentsBlock);
+    Vue.component('themecleanflex-components-media', cmpThemecleanflexComponentsMedia);
+    Vue.component('themecleanflex-components-mediavisible', cmpThemecleanflexComponentsMediavisible);
+    Vue.component('themecleanflex-components-textlinks', cmpThemecleanflexComponentsTextlinks);
+    Vue.component('themecleanflex-components-menubuttons', cmpThemecleanflexComponentsMenubuttons);
+    Vue.component('themecleanflex-components-socialicons', cmpThemecleanflexComponentsSocialicons);
+    Vue.component('themecleanflex-components-pagelistnested', cmpThemecleanflexComponentsPagelistnested);
+
+    Vue.component('themecleanflex-components-@@name@@', cmpThemecleanflexComponents@@NAME@@);
+    sampleData.model.component= 'themecleanflex-components-@@name@@';
+    sampleData.model.path= '/jcr:content/sample';
+    var app = new Vue({
+      el: '#peregrine-app',
+      data: {
+        model: { children: [sampleData.model] }
+      }
+    })
+  </script>
+
+</body>
+
+</html>
