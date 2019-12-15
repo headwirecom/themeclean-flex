@@ -14,4 +14,5 @@
         template="/content/templates/themecleanflex/base page"
         templatePath="/content/templates/themecleanflex">
     </jcr:content>
+    <index/>
 </jcr:root>

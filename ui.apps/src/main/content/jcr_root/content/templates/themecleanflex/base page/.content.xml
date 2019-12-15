@@ -38,7 +38,7 @@
             <buttons0 jcr:primaryType="nt:unstructured" buttonlink="/content/sites/themeclean" buttontext="Sign Up" buttoncolor="primary"/>
             </buttons>
         </n1f964177-2026-4697-80ce-7ea78fa1b3e2>
-        <n9f934ff9-79f2-46cb-8f81-cbd26702fdf3
+        <main
             jcr:lastModified="{Date}2019-05-07T19:31:58.383Z"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
