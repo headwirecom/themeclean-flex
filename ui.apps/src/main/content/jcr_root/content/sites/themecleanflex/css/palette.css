@@ -1,0 +1,35 @@
+/* takes loaded vars and styles the page ONLY USE VARS HERE! */
+#peregrine-app {
+  background-color: var(--bg);
+  color: var(--text-primary-color)
+}
+
+#peregrine-app * {
+  border-color: var(--border-primary-color);
+}
+
+#peregrine-app .btn {
+  color: var(--btn-text-color);
+}
+
+#peregrine-app .btn.btn-primary {
+  background-color: var(--btn-primary-bg);
+}
+
+#peregrine-app .btn.btn-secondary {
+  color: var(--btn-secondary-color);
+  background-color: var(--btn-secondary-bg);
+  border-width: var(--btn-secondary-border-width);
+}
+
+#peregrine-app .btn.btn-success {
+  background-color: var(--btn-success-bg);
+}
+
+#peregrine-app .btn.btn-danger {
+  background-color: var(--btn-danger-bg);
+}
+
+#peregrine-app .btn.btn-warning {
+  background-color: var(--btn-warning-bg);
+}

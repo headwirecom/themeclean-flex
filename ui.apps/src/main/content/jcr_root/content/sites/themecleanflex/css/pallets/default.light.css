@@ -1,55 +1,29 @@
 /* default light palette */
 
 :root {
-  --bg-color: var(--color-gray-100);
+  --bg: var(--color-gray-100);
 
-  --text-color-primary: var(--color-gray-800);
-  --text-color-dark: #343a40;
 
-  --link-color-primary: #007bff;
+  --text-primary-color: var(--color-gray-800);
 
-  --btn-bg-color-primary: var(--color-blue-600);
-  --btn-bg-color-secondary: var(--color-gray-200);
-  --btn-bg-color-success: var(--color-green-600);
-  --btn-bg-color-danger: var(--color-red-600);
-  --btn-bg-color-warning: var(--color-orange-600);
+
+  --link-primary-color: #007bff;
+
 
   --btn-text-color: #ffffff;
 
-  --border-color: var(--color-gray-300);
-}
+  --btn-secondary-bg: var(--color-gray-200);
+  --btn-secondary-color: #343a40;
+  --btn-secondary-border-width: 1px;
 
-#peregrine-app {
-  background-color: var(--bg-color);
-  color: var(--text-color-primary)
-}
+  --btn-primary-bg: var(--color-blue-600);
 
-#peregrine-app * {
-  border-color: var(--border-color);
-}
+  --btn-success-bg: var(--color-green-600);
 
-#peregrine-app .btn {
-  color: var(--btn-text-color);
-}
+  --btn-danger-bg: var(--color-red-600);
 
-#peregrine-app .btn.btn-primary {
-  background-color: var(--btn-bg-color-primary);
-}
+  --btn-warning-bg: var(--color-orange-600);
 
-#peregrine-app .btn.btn-secondary {
-  color: var(--text-color-dark);
-  background-color: var(--btn-bg-color-secondary);
-  border-width: 1px;
-}
 
-#peregrine-app .btn.btn-success {
-  background-color: var(--btn-bg-color-success);
-}
-
-#peregrine-app .btn.btn-danger {
-  background-color: var(--btn-bg-color-danger);
-}
-
-#peregrine-app .btn.btn-warning {
-  background-color: var(--btn-bg-color-warning);
+  --border-primary-color: var(--color-gray-300);
 }
