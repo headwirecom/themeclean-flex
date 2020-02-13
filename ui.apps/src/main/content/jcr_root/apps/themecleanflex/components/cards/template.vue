@@ -51,13 +51,11 @@
             v-bind:class="{
             'btn-lg': item.buttonsize === 'large',
             'btn-sm': item.buttonsize === 'small',
-            'btn-blue': item.buttoncolor === 'primary',
-            'btn-white border border-blue': item.buttoncolor === 'secondary',
-            'btn-green': item.buttoncolor === 'success',
-            'btn-red': item.buttoncolor === 'danger',
-            'btn-orange': item.buttoncolor === 'warning',
-            'btn-white': item.buttoncolor === 'light',
-            'btn-black': item.buttoncolor === 'dark',
+            'btn-primary': item.buttoncolor === 'primary',
+            'btn-secondary': item.buttoncolor === 'secondary',
+            'btn-success': item.buttoncolor === 'success',
+            'btn-danger': item.buttoncolor === 'danger',
+            'btn-warning': item.buttoncolor === 'warning',
             'self-start': item.buttonalign === 'left',
             'self-center': item.buttonalign === 'center',
             'self-end': item.buttonalign === 'right'

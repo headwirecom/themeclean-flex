@@ -190,14 +190,6 @@
                 "info": {
                   "x-form-name": "Info",
                   "x-form-value": "info"
-                },
-                "light": {
-                  "x-form-name": "Light",
-                  "x-form-value": "light"
-                },
-                "dark": {
-                  "x-form-name": "Dark",
-                  "x-form-value": "dark"
                 }
               }
             },
