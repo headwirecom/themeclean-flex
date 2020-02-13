@@ -25,8 +25,8 @@
         v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
-            'btn-blue': item.buttoncolor === 'primary',
-            'btn-white border border-blue': item.buttoncolor === 'secondary',
+            'btn-primary': item.buttoncolor === 'primary',
+            'btn-secondary': item.buttoncolor === 'secondary',
             'btn-green': item.buttoncolor === 'success',
             'btn-red': item.buttoncolor === 'danger',
             'btn-orange': item.buttoncolor === 'warning',
