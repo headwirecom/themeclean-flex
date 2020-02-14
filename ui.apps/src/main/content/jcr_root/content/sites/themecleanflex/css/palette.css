@@ -1,7 +1,5 @@
 /* takes loaded vars and styles the page ONLY USE VARS HERE! */
-#peregrine-app,
-#peregrine-app .theme-light,
-#peregrine-app .theme-dark {
+#peregrine-app {
   background-color: var(--bg-primary-color);
   color: var(--text-primary-color);
 }
@@ -33,9 +31,7 @@
   background-color: var(--btn-warning-bg);
 }
 
-#peregrine-app a:not(.btn),
-#peregrine-app .theme-light a:not(.btn),
-#peregrine-app .theme-dark a:not(.btn) {
+#peregrine-app a:not(.btn) {
   color: var(--text-secondary-color);
 }
 
