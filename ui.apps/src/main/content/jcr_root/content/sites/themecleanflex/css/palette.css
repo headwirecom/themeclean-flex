@@ -1,11 +1,9 @@
 /* takes loaded vars and styles the page ONLY USE VARS HERE! */
-#peregrine-app {
-  background-color: var(--bg);
-  color: var(--text-primary-color)
-}
-
-#peregrine-app * {
-  border-color: var(--border-primary-color);
+#peregrine-app,
+#peregrine-app .theme-light,
+#peregrine-app .theme-dark {
+  background-color: var(--bg-primary-color);
+  color: var(--text-primary-color);
 }
 
 #peregrine-app .btn {
@@ -20,6 +18,7 @@
   color: var(--btn-secondary-color);
   background-color: var(--btn-secondary-bg);
   border-width: var(--btn-secondary-border-width);
+  border-color: var(--btn-secondary-boder-color)
 }
 
 #peregrine-app .btn.btn-success {
@@ -32,4 +31,14 @@
 
 #peregrine-app .btn.btn-warning {
   background-color: var(--btn-warning-bg);
+}
+
+#peregrine-app a:not(.btn),
+#peregrine-app .theme-light a:not(.btn),
+#peregrine-app .theme-dark a:not(.btn) {
+  color: var(--text-secondary-color);
+}
+
+#peregrine-app .card > .flex-col {
+  background-color: var(--bg-secondary-color)
 }

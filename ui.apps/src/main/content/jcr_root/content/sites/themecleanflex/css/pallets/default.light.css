@@ -1,10 +1,12 @@
 /* default light palette */
 
 :root {
-  --bg: var(--color-gray-100);
+  --bg-primary-color: var(--color-gray-100);
+  --bg-secondary-color: #ffffff;
 
 
   --text-primary-color: var(--color-gray-800);
+  --text-secondary-color: var(--color-gray-600);
 
 
   --link-primary-color: #007bff;
@@ -15,6 +17,7 @@
   --btn-secondary-bg: var(--color-gray-200);
   --btn-secondary-color: #343a40;
   --btn-secondary-border-width: 1px;
+  --btn-secondary-boder-color: var(--color-gray-300);
 
   --btn-primary-bg: var(--color-blue-600);
 
@@ -23,7 +26,4 @@
   --btn-danger-bg: var(--color-red-600);
 
   --btn-warning-bg: var(--color-orange-600);
-
-
-  --border-primary-color: var(--color-gray-300);
 }
