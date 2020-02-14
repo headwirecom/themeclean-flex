@@ -9,6 +9,9 @@
   --text-secondary-color: var(--color-gray-400);
 
 
+  --border-primary-color: var(--color-gray-900);
+
+
   --link-primary-color: var(--color-blue-700);
 
 
@@ -26,4 +29,23 @@
   --btn-danger-bg: var(--color-red-600);
 
   --btn-warning-bg: var(--color-orange-600);
+
+
+  --figcaption-primary-bg: rgba(0, 0, 0, .5);
+
+
+  --note-note-bg: var(--color-blue-600);
+  --note-note-border-color: var(--color-blue-900);
+
+  --note-tip-bg: var(--color-green-600);
+  --note-tip-border-color: var(--color-green-900);
+
+  --note-warning-bg: var(--color-orange-600);
+  --note-warning-border-color: var(--color-orange-900);
+
+  --note-important-bg: var(--color-red-600);
+  --note-important-border-color: var(--color-red-900);
+
+  --note-caution-bg: var(--color-yellow-600);
+  --note-caution-border-color: var(--color-yellow-900);
 }

@@ -1,6 +1,11 @@
-/* takes loaded vars and styles the page ONLY USE VARS HERE! */
+/* takes loaded vars and styles the page ONLY USE VARS FOR COLORS HERE! */
 #peregrine-app {
   background-color: var(--bg-primary-color);
+  color: var(--text-primary-color);
+}
+
+#peregrine-app * {
+  border-color: var(--border-primary-color);
   color: var(--text-primary-color);
 }
 
@@ -36,5 +41,52 @@
 }
 
 #peregrine-app .card > .flex-col {
-  background-color: var(--bg-secondary-color)
+  background-color: var(--bg-secondary-color);
+}
+
+#peregrine-app .themecleanflex-components-accordion .flex.w-full.mx-auto {
+  background-color: var(--bg-secondary-color);
+}
+
+#peregrine-app .accordion-container {
+  border-width: 1px;
+  border-style: solid;
+}
+
+#peregrine-app .accordion-container > div {
+  border-bottom-width: 1px;
+  border-style: solid;
+}
+
+#peregrine-app svg {
+  fill: var(--text-primary-color)
+}
+
+#peregrine-app .themecleanflex-components-carousel figcaption {
+  background-color: var(--figcaption-primary-bg);
+}
+
+#peregrine-app .note-note {
+  background-color: var(--note-note-bg);
+  border-color: var(--note-note-border-color);
+}
+
+#peregrine-app .note-tip {
+  background-color: var(--note-tip-bg);
+  border-color: var(--note-tip-border-color);
+}
+
+#peregrine-app .note-warning {
+  background-color: var(--note-warning-bg);
+  border-color: var(--note-warning-border-color);
+}
+
+#peregrine-app .note-important {
+  background-color: var(--note-important-bg);
+  border-color: var(--note-important-border-color);
+}
+
+#peregrine-app .note-caution {
+  background-color: var(--note-caution-bg);
+  border-color: var(--note-caution-border-color);
 }
