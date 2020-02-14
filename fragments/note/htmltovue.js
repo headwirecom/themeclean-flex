@@ -6,11 +6,11 @@ module.exports = {
         f.mapRichField( $.find('div'), 'model.text');
 
         let styles = `{
-            'bg-blue-200 border-blue-500': model.notetype === "note",
-            'bg-green-200 border-green-500': model.notetype === "tip",
-            'bg-orange-200 border-orange-500': model.notetype === "warning",
-            'bg-red-200 border-red-500': model.notetype === "important",
-            'bg-yellow-200 border-yellow-500': model.notetype === "caution"
+            'note-note': model.notetype === "note",
+            'note-tip': model.notetype === "tip",
+            'note-warning': model.notetype === "warning",
+            'note-important': model.notetype === "important",
+            'note-caution': model.notetype === "caution"
         }`;
 
         f.bindAttribute($, 'class', styles, false);
