@@ -1,6 +1,6 @@
 /* default dark palette */
 
-:root {
+#peregrine-app {
   --bg-primary-color: #ffffff;
   --bg-secondary-color: #365a8b;
 
