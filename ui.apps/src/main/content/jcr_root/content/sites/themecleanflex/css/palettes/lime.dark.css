@@ -1,6 +1,6 @@
 /* lime dark palette */
 
-:root {
+#peregrine-app {
   --bg-primary-color: var(--color-green-900);
   --bg-secondary-color: var(--color-green-800);
 
@@ -48,4 +48,54 @@
 
   --note-caution-bg: var(--color-yellow-600);
   --note-caution-border-color: var(--color-yellow-900);
+}
+
+#peregrine-app .theme-light {
+  --bg-primary-color: var(--color-green-300);
+  --bg-secondary-color: var(--color-green-200);
+
+
+  --text-primary-color: var(--color-gray-800);
+  --text-secondary-color: var(--color-gray-600);
+
+
+  --border-primary-color: var(--color-green-300);
+
+
+  --link-primary-color: #007bff;
+
+
+  --btn-text-color: #ffffff;
+
+  --btn-secondary-bg: var(--color-gray-200);
+  --btn-secondary-color: #343a40;
+  --btn-secondary-border-width: 1px;
+  --btn-secondary-boder-color: var(--color-gray-300);
+
+  --btn-primary-bg: var(--color-blue-600);
+
+  --btn-success-bg: var(--color-green-600);
+
+  --btn-danger-bg: var(--color-red-600);
+
+  --btn-warning-bg: var(--color-orange-600);
+
+
+  --figcaption-primary-bg: rgba(142, 253, 142, 0.3);
+
+
+  --note-note-bg: var(--color-blue-200);
+  --note-note-border-color: var(--color-blue-500);
+
+  --note-tip-bg: var(--color-green-200);
+  --note-tip-border-color: var(--color-green-500);
+
+  --note-warning-bg: var(--color-orange-200);
+  --note-warning-border-color: var(--color-orange-500);
+
+  --note-important-bg: var(--color-red-200);
+  --note-important-border-color: var(--color-red-500);
+
+  --note-caution-bg: var(--color-yellow-200);
+  --note-caution-border-color: var(--color-yellow-500);
 }
