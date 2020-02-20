@@ -1,0 +1,23 @@
+/* ocean palette */
+
+#peregrine-app {
+  --bg-primary-color: #ffffff;
+  --bg-secondary-color: #365a8b;
+
+  --text-primary-color: #555555;
+  --text-secondary-color: #ffffff;
+  --text-tertiary-color: #777777;
+
+  --border-primary-color: #ffffff;
+  --border-secondary-color: #2d98ce;
+
+  --figcaption-primary-bg: rgba(0, 0, 0, .5);
+}
+
+#peregrine-app .theme-light {
+  /* LIGHT definition to overwrite #peregrine-app vars */
+}
+
+#peregrine-app .theme-dark {
+  /* DARK definition to overwrite #peregrine-app vars */
+}

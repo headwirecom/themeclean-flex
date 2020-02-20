@@ -1,4 +1,5 @@
 /* takes loaded vars and styles the page ONLY USE VARS FOR COLORS HERE! */
+
 #peregrine-app {
   background-color: var(--bg-primary-color);
   color: var(--text-primary-color);
@@ -72,30 +73,35 @@
 
 #peregrine-app .note-note,
 #peregrine-app .note-note * {
+  color: var(--note-text-color);
   background-color: var(--note-note-bg);
   border-color: var(--note-note-border-color);
 }
 
 #peregrine-app .note-tip,
 #peregrine-app .note-tip * {
+  color: var(--note-text-color);
   background-color: var(--note-tip-bg);
   border-color: var(--note-tip-border-color);
 }
 
 #peregrine-app .note-warning,
 #peregrine-app .note-warning * {
+  color: var(--note-text-color);
   background-color: var(--note-warning-bg);
   border-color: var(--note-warning-border-color);
 }
 
 #peregrine-app .note-important,
 #peregrine-app .note-important * {
+  color: var(--note-text-color);
   background-color: var(--note-important-bg);
   border-color: var(--note-important-border-color);
 }
 
 #peregrine-app .note-caution,
 #peregrine-app .note-caution * {
+  color: var(--note-text-color);
   background-color: var(--note-caution-bg);
   border-color: var(--note-caution-border-color);
 }

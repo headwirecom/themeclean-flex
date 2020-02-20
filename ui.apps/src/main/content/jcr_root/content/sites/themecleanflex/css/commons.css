@@ -1,38 +1,18 @@
-/* default light palette */
-
-#peregrine-app {
-  --bg-primary-color: var(--color-gray-100);
+/* Colors */
+:root {
+  --bg-primary-color: #ffffff;
   --bg-secondary-color: #ffffff;
 
+  --text-primary-color: #000000;
+  --text-secondary-color: #000000;
 
-  --text-primary-color: var(--color-gray-800);
-  --text-secondary-color: var(--color-gray-600);
-
-
-  --border-primary-color: var(--color-gray-300);
-
+  --border-primary-color: #808080;
 
   --link-primary-color: #007bff;
 
+  --figcaption-primary-bg: rgba(255, 255, 255, 0);
 
-  --btn-text-color: #ffffff;
-
-  --btn-secondary-bg: var(--color-gray-200);
-  --btn-secondary-color: #343a40;
-  --btn-secondary-border-width: 1px;
-  --btn-secondary-boder-color: var(--color-gray-300);
-
-  --btn-primary-bg: var(--color-blue-600);
-
-  --btn-success-bg: var(--color-green-600);
-
-  --btn-danger-bg: var(--color-red-600);
-
-  --btn-warning-bg: var(--color-orange-600);
-
-
-  --figcaption-primary-bg: rgba(255, 255, 255, .6);
-
+  --note-text-color: #ffffff;
 
   --note-note-bg: var(--color-blue-200);
   --note-note-border-color: var(--color-blue-500);
@@ -48,24 +28,6 @@
 
   --note-caution-bg: var(--color-yellow-200);
   --note-caution-border-color: var(--color-yellow-500);
-}
-
-#peregrine-app .theme-dark {
-  --bg-primary-color: var(--color-gray-900);
-  --bg-secondary-color: var(--color-gray-800);
-
-
-  --text-primary-color: var(--color-gray-200);
-  --text-secondary-color: var(--color-gray-400);
-
-
-  --border-primary-color: var(--color-gray-900);
-
-
-  --link-primary-color: var(--color-blue-700);
-
-
-  --btn-text-color: #ffffff;
 
   --btn-secondary-bg: var(--color-gray-200);
   --btn-secondary-color: var(--color-gray-800);
@@ -80,10 +42,10 @@
 
   --btn-warning-bg: var(--color-orange-600);
 
+  --btn-text-color: #ffffff;
+}
 
-  --figcaption-primary-bg: rgba(0, 0, 0, .5);
-
-
+:root .theme-dark {
   --note-note-bg: var(--color-blue-600);
   --note-note-border-color: var(--color-blue-900);
 
