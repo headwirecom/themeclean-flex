@@ -13,7 +13,7 @@
 
   --border-primary-color: var(--color-gray-300);
 
-  --link-primary-color: #007bff;
+  --link-primary-color: var(--text-primary-color);
 
   --figcaption-primary-bg: rgba(255, 255, 255, .6);
 }
@@ -27,7 +27,7 @@
 
   --border-primary-color: var(--color-gray-900);
 
-  --link-primary-color: var(--color-blue-700);
+  --link-primary-color: var(--text-primary-color);
 
   --figcaption-primary-bg: rgba(0, 0, 0, .5);
 }

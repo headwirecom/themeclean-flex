@@ -5,16 +5,32 @@
   color: var(--text-primary-color);
 }
 
-#peregrine-app * {
+#peregrine-app .theme-light,
+#peregrine-app .theme-dark {
+  background-color: var(--bg-primary-color);
+}
+
+#peregrine-app *:not(hr) {
   border-color: var(--border-primary-color);
   color: var(--text-primary-color);
 }
 
+#peregrine-app a:not(.btn),
+#peregrine-app a:not(.btn) * {
+  color: var(--link-primary-color);
+}
+
+#peregrine-app a:not(.btn):hover,
+#peregrine-app a:not(.btn) *:hover {
+  color: var(--link-primary-color-hover);
+}
+
 #peregrine-app .btn {
-  color: var(--btn-text-color);
+  color: var(--btn-color);
 }
 
 #peregrine-app .btn.btn-primary {
+  color: var(--btn-primary-color);
   background-color: var(--btn-primary-bg);
 }
 
@@ -30,40 +46,43 @@
 
 #peregrine-app .btn.btn-success {
   background-color: var(--btn-success-bg) !important;
+  color: var(--btn-primary-color);
 }
 
 #peregrine-app .btn.btn-danger {
   background-color: var(--btn-danger-bg) !important;
+  color: var(--btn-primary-color);
 }
 
 #peregrine-app .btn.btn-warning {
   background-color: var(--btn-warning-bg) !important;
+  color: var(--btn-primary-color);
 }
 
-#peregrine-app a:not(.btn) {
-  color: var(--text-secondary-color);
+#peregrine-app .btn.btn-orange {
+  color: var(--btn-primary-color)
 }
 
-#peregrine-app .card > .flex-col {
+#peregrine-app .theme-light .card > .flex-col,
+#peregrine-app .theme-dark .card > .flex-col {
   background-color: var(--bg-secondary-color);
 }
 
-#peregrine-app .accordion-container {
+#peregrine-app .theme-light .accordion-container,
+#peregrine-app .theme-dark .accordion-container {
+  background-color: var(--bg-secondary-color);
   border-width: 1px;
   border-style: solid;
-  background-color: var(--bg-secondary-color);
 }
 
-#peregrine-app .accordion-container > div {
+#peregrine-app .theme-light .accordion-container > div,
+#peregrine-app .theme-dark .accordion-container > div {
   background-color: var(--bg-secondary-color) !important;
-}
-
-#peregrine-app .accordion-container > div {
   border-bottom-width: 1px;
   border-style: solid;
 }
 
-#peregrine-app svg {
+#peregrine-app svg:not(.fill-current) {
   fill: var(--text-primary-color)
 }
 
@@ -104,4 +123,19 @@
   color: var(--note-text-color);
   background-color: var(--note-caution-bg);
   border-color: var(--note-caution-border-color);
+}
+
+#peregrine-app .themecleanflex-components-navigation a,
+#peregrine-app .themecleanflex-components-navigation a * {
+  color: var(--text-primary-color);
+}
+
+#peregrine-app .themecleanflex-components-navigation a:hover,
+#peregrine-app .themecleanflex-components-navigation a:hover {
+  color: var(--bg-primary-color);
+}
+
+#peregrine-app .themecleanflex-components-tabs a[aria-selected="true"],
+#peregrine-app .themecleanflex-components-tabs a[aria-selected="true"] * {
+  color: var(--btn-primary-color);
 }
