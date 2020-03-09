@@ -1,0 +1,33 @@
+/* lime palette */
+
+#peregrine-app {
+  /* NONE definitions to overwrite :root vars */
+}
+
+#peregrine-app .theme-dark{
+  --bg-primary-color: var(--color-green-900);
+  --bg-secondary-color: var(--color-green-800);
+
+  --text-primary-color: var(--color-gray-200);
+  --text-secondary-color: var(--color-gray-400);
+
+  --border-primary-color: var(--color-green-700);
+
+  --link-primary-color: var(--color-blue-700);
+
+  --figcaption-primary-bg: rgba(0, 128, 0, .5);
+}
+
+#peregrine-app .theme-light {
+  --bg-primary-color: var(--color-green-300);
+  --bg-secondary-color: var(--color-green-200);
+
+  --text-primary-color: var(--color-gray-800);
+  --text-secondary-color: var(--color-gray-600);
+
+  --border-primary-color: var(--color-green-300);
+
+  --link-primary-color: #007bff;
+
+  --figcaption-primary-bg: rgba(142, 253, 142, 0.3);
+}

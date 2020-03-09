@@ -205,14 +205,6 @@
             {
               "name": "Info",
               "value": "info"
-            },
-            {
-              "name": "Light",
-              "value": "light"
-            },
-            {
-              "name": "Dark",
-              "value": "dark"
             }
           ],
           "placeholder": "buttoncolor",

@@ -6,26 +6,22 @@
       <a class="btn" v-bind:href="$helper.pathToUrl(model.previous)" v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
-            'btn-blue': model.buttoncolor === 'primary',
-            'btn-white border border-blue': model.buttoncolor === 'secondary',
+            'btn-primary': model.buttoncolor === 'primary',
+            'btn-secondary': model.buttoncolor === 'secondary',
             'btn-green': model.buttoncolor === 'success',
             'btn-red': model.buttoncolor === 'danger',
             'btn-orange': model.buttoncolor === 'warning',
-            'btn-white': model.buttoncolor === 'light',
-            'btn-black': model.buttoncolor === 'dark',
             'disabled': model.previous === 'unknown',
         }">{{model.prevlabel}}</a>
       <a class="btn" v-bind:href="$helper.pathToUrl(model.next)"
       v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
-            'btn-blue': model.buttoncolor === 'primary',
-            'btn-white border border-blue': model.buttoncolor === 'secondary',
+            'btn-primary': model.buttoncolor === 'primary',
+            'btn-secondary': model.buttoncolor === 'secondary',
             'btn-green': model.buttoncolor === 'success',
             'btn-red': model.buttoncolor === 'danger',
             'btn-orange': model.buttoncolor === 'warning',
-            'btn-white': model.buttoncolor === 'light',
-            'btn-black': model.buttoncolor === 'dark',
             'disabled': model.next === 'unknown',
         }">{{model.nextlabel}}</a>
     </div>

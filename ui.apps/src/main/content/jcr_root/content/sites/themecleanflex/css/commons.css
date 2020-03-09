@@ -1,0 +1,66 @@
+/* Colors */
+:root {
+  --bg-primary-color: #ffffff;
+  --bg-secondary-color: #ffffff;
+
+  --text-primary-color: #000000;
+  --text-secondary-color: #000000;
+
+  --border-primary-color: #808080;
+
+  --link-primary-color: var(--color-blue-700);
+  --link-primary-color-hover: var(--color-blue-800);;
+
+  --figcaption-primary-bg: rgba(255, 255, 255, 0);
+
+  --note-text-color: #000000;
+
+  --note-note-bg: var(--color-blue-200);
+  --note-note-border-color: var(--color-blue-500);
+
+  --note-tip-bg: var(--color-green-200);
+  --note-tip-border-color: var(--color-green-500);
+
+  --note-warning-bg: var(--color-orange-200);
+  --note-warning-border-color: var(--color-orange-500);
+
+  --note-important-bg: var(--color-red-200);
+  --note-important-border-color: var(--color-red-500);
+
+  --note-caution-bg: var(--color-yellow-200);
+  --note-caution-border-color: var(--color-yellow-500);
+
+  --btn-color: var(--color-blue-700);
+  --btn-primary-color: #ffffff;
+  --btn-secondary-bg: var(--color-gray-200);
+  --btn-secondary-color: var(--color-gray-800);
+  --btn-secondary-border-width: 1px;
+  --btn-secondary-boder-color: var(--color-gray-300);
+
+  --btn-primary-bg: var(--color-blue-600);
+
+  --btn-success-bg: var(--color-green-600);
+
+  --btn-danger-bg: var(--color-red-600);
+
+  --btn-warning-bg: var(--color-orange-600);
+}
+
+:root .theme-dark {
+  --note-text-color: #ffffff;
+
+  --note-note-bg: var(--color-blue-600);
+  --note-note-border-color: var(--color-blue-900);
+
+  --note-tip-bg: var(--color-green-600);
+  --note-tip-border-color: var(--color-green-900);
+
+  --note-warning-bg: var(--color-orange-600);
+  --note-warning-border-color: var(--color-orange-900);
+
+  --note-important-bg: var(--color-red-600);
+  --note-important-border-color: var(--color-red-900);
+
+  --note-caution-bg: var(--color-yellow-600);
+  --note-caution-border-color: var(--color-yellow-900);
+}

@@ -56,6 +56,7 @@
             logo="/content/assets/themecleanflex/samples/sample-logo.png"
             logosize="35"
             logourl="http://www.peregrine-cms.com"
+            logoalttext="PathSoft Logo"
             showlogo="true"
             toppadding="30">
             <columns jcr:primaryType="nt:unstructured">

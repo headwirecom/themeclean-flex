@@ -4,7 +4,7 @@
     v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
-            'btn-blue': item.buttoncolor === 'primary',
+            'btn-primary': item.buttoncolor === 'primary',
             'text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white': item.buttoncolor === 'secondary',
             'btn-green': item.buttoncolor === 'success',
             'btn-red': item.buttoncolor === 'danger',

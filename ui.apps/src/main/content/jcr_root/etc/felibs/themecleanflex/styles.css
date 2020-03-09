@@ -1,4 +1,3 @@
-@import './colors.css';
 @import './custom.css';
 @tailwind base;
 @tailwind components;
@@ -107,32 +106,6 @@ p {
 /* Custom Utilities */
 .transform-rotate-90 {
   transform: rotate(90deg);
-}
-
-/* Themes */ 
-.theme-dark {
-  @apply text-gray-200 bg-gray-900;
-}
-.theme-light {
-  @apply text-gray-800 bg-gray-100;
-}
-.bg-dark {
-  @apply bg-gray-900;
-}
-.bg-light {
-  @apply bg-gray-100;
-}
-.text-dark {
-  @apply text-gray-800;
-}
-.text-light {
-  @apply text-gray-200;
-}
-.theme-dark a:not(.btn) {
-  @apply text-gray-200;
-}
-.theme-light a:not(.btn) {
-  @apply text-gray-800;
 }
 
 /* Drop Shadow Helpers */
@@ -248,12 +221,6 @@ p {
   padding-left: 0;
   padding-right: 0;
 }
-[class$="components-carousel"].theme-light figcaption.with-bg {
-  background-color: rgba(255,255,255,.6)
-}
-[class$="components-carousel"].theme-dark figcaption.with-bg {
-  background-color: rgba(0,0,0,.5)
-}
 .VueCarousel-pagination {
   @apply absolute bottom-0 mb-4 pointer-events-none;
 }
@@ -262,12 +229,6 @@ p {
 }
 
 /* accordion */
-[class$="components-accordion"].theme-light svg {
-  fill: var(--color-gray-800);
-}
-[class$="components-accordion"].theme-dark svg {
-  fill: var(--color-gray-200);
-}
 [class$="components-accordion"] .img-wrapper.rounded-none img {
   border-radius: 0; 
 }
