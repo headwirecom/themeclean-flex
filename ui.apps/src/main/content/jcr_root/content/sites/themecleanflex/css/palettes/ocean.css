@@ -1,23 +1,33 @@
 /* ocean palette */
 
 #peregrine-app {
-  --bg-primary-color: #ffffff;
-  --bg-secondary-color: #365a8b;
+  /* NONE definitions to overwrite :root vars */
+}
 
-  --text-primary-color: #555555;
-  --text-secondary-color: #ffffff;
-  --text-tertiary-color: #777777;
+#peregrine-app .theme-dark{
+  --bg-primary-color: var(--color-blue-900);
+  --bg-secondary-color: var(--color-blue-800);
 
-  --border-primary-color: #ffffff;
-  --border-secondary-color: #2d98ce;
+  --text-primary-color: var(--color-gray-200);
+  --text-secondary-color: var(--color-gray-400);
 
-  --figcaption-primary-bg: rgba(0, 0, 0, .5);
+  --border-primary-color: var(--color-blue-700);
+
+  --link-primary-color: var(--color-yellow-700);
+
+  --figcaption-primary-bg: rgba(0, 3, 128, 0.5);
 }
 
 #peregrine-app .theme-light {
-  /* LIGHT definition to overwrite #peregrine-app vars */
-}
+  --bg-primary-color: var(--color-blue-300);
+  --bg-secondary-color: var(--color-blue-200);
 
-#peregrine-app .theme-dark {
-  /* DARK definition to overwrite #peregrine-app vars */
+  --text-primary-color: var(--color-blue-800);
+  --text-secondary-color: var(--color-gray-800);
+
+  --border-primary-color: var(--color-blue-300);
+
+  --link-primary-color: var(--color-yellow-300);
+
+  --figcaption-primary-bg: rgba(0, 3, 128, 0.3);
 }
