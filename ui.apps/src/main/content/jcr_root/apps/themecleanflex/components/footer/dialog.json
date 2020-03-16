@@ -12,7 +12,7 @@
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/assets",
+      "browserRoot": "/content/themecleanflex/assets",
       "placeholder": "logo",
       "label": "Logo",
       "model": "logo",
@@ -28,7 +28,7 @@
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/sites",
+      "browserRoot": "/content/themecleanflex/pages",
       "placeholder": "logourl",
       "label": "Logo Url",
       "model": "logourl",
@@ -120,7 +120,7 @@
         },
         {
           "type": "pathbrowser",
-          "browserRoot": "/content/sites",
+          "browserRoot": "/content/themecleanflex/pages",
           "placeholder": "url",
           "label": "Icon Url",
           "model": "url"
@@ -244,7 +244,7 @@
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/assets",
+      "browserRoot": "/content/themecleanflex/assets",
       "placeholder": "bgvideo",
       "label": "Background Video",
       "model": "bgvideo",
@@ -252,7 +252,7 @@
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/assets",
+      "browserRoot": "/content/themecleanflex/assets",
       "placeholder": "bgimage",
       "label": "Background Image",
       "model": "bgimage",

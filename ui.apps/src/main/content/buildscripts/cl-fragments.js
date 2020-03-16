@@ -35,9 +35,9 @@ module.exports = {
         jcr:title="${name}"
         description="${name} themecleanflex component library"
         brand="themecleanflex"
-        template="/content/templates/themecleanflex"
+        template="/content/themecleanflex/templates"
             ><clheader
-            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/sites/themecleanflex/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/themecleanflex/pages/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
     <links jcr:primaryType="nt:unstructured"></links>
     <buttons jcr:primaryType="nt:unstructured"></buttons>
             </clheader>`;
@@ -46,7 +46,7 @@ module.exports = {
     footer() {
         return `
         <clfooter
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/assets/themecleanflex/samples/peregrine-logo.svg" logourl="/content/sites/themecleanflex/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logourl="/content/themecleanflex/pages/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">
         <c3
         jcr:primaryType="nt:unstructured" title="" text="">
@@ -109,7 +109,7 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
         </clbreadcrumb>`;
-        // return this.text('<p><a href="/content/sites/themecleanflex/library.html">component library home</a></p>');
+        // return this.text('<p><a href="/content/themecleanflex/pages/library.html">component library home</a></p>');
     },
 
     pager() {
@@ -125,7 +125,7 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
         </pager${idx++}>`;
-        // return this.text('<p><a href="/content/sites/themecleanflex/library.html">component library home</a></p>');
+        // return this.text('<p><a href="/content/themecleanflex/pages/library.html">component library home</a></p>');
     },
 
     intro(md) {

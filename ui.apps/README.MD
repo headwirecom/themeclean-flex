@@ -8,13 +8,13 @@ To generate the samples, run the following command from this directory:
 
 `npm run build:componentlibrary`
 
-This will recreate the content structure under **ui.apps/src/main/content/jcr_root/content/sites/themecleanflex/library**.
+This will recreate the content structure under **ui.apps/src/main/content/jcr_root/content/themecleanflex/pages/library**.
 
 To install the themeclean-flex components and sample content, run:
 
 `mvn clean install -PautoInstallPackage`
 
-The samples can be viewed on your peregrine instance at /content/sites/themecleanflex/library.html.
+The samples can be viewed on your peregrine instance at /content/themecleanflex/pages/library.html.
 
 ## Comparison Screenshots
 

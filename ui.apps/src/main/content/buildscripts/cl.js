@@ -114,7 +114,7 @@ function buildIndexPage(target, pages) {
     out.close();
 }
 
-function forEachComponent(target = 'src/main/content/jcr_root/content/sites/themecleanflex/library', root = '../fragments/') {
+function forEachComponent(target = 'src/main/content/jcr_root/content/themecleanflex/pages/library', root = '../fragments/') {
     const pages = [];
     const components = fs.readdirSync(root);
     const variations = compvars.getVariations();

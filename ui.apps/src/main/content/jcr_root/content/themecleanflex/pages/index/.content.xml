@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
+    jcr:lastModified="{Date}2019-05-06T21:14:05.790Z"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="per:Page">
+    <jcr:content
+        jcr:lastModified="{Date}2019-05-06T21:15:41.195Z"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="index"
+        sling:resourceType="themecleanflex/components/page"
+        description="sample root page of the site"
+        name="index"
+        template="/content/themecleanflex/templates/base page"
+        templatePath="/content/themecleanflex/templates">
+    </jcr:content>
+    <index/>
+</jcr:root>

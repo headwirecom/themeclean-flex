@@ -43,7 +43,7 @@
         },
         {
           "type": "pathbrowser",
-          "browserRoot": "/content/sites",
+          "browserRoot": "/content/themecleanflex/pages",
           "placeholder": "url",
           "label": "Icon Url",
           "model": "url"
