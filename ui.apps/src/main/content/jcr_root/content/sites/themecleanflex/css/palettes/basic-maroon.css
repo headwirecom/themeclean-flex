@@ -1,0 +1,42 @@
+/* balance-color palette */
+
+#peregrine-app {
+    /* NONE definitions to overwrite :root vars */
+
+
+  }
+  
+  #peregrine-app .theme-light {
+    --bg-primary-color: #dad6d6;
+    --bg-secondary-color: #f5f5f5;
+  
+    --text-primary-color:#722525;
+    --text-secondary-color: #0A0A0A;
+  
+    --border-primary-color: #dad6d6;
+  
+    --link-primary-color: #722525;
+
+    --btn-primary-bg: #722525;
+    --btn-primary-color: #ffffff;
+  
+    --figcaption-primary-bg: #ffffff99;
+  }
+  
+  #peregrine-app .theme-dark {
+    --bg-primary-color: #b9b7b7;
+    --bg-secondary-color: #404040;
+  
+    --text-primary-color: #580000;
+    --text-secondary-color: #ffffff;
+  
+    --border-primary-color: #b9b7b7;
+  
+    --link-primary-color: #580000;
+
+    --btn-primary-bg: #580000;
+    --btn-primary-color: #ffffff;
+  
+    --figcaption-primary-bg: #00000080;
+  }
+  
