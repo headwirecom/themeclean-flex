@@ -25,7 +25,7 @@
   
   #peregrine-app .theme-dark {
     --bg-primary-color: #232d42;
-    --bg-secondary-color: #ff4741;
+    --bg-secondary-color: #c1322d;
   
     --text-primary-color: #eaf4f4;
     --text-secondary-color: #ffffff;
@@ -34,8 +34,8 @@
   
     --link-primary-color: #eaf4f4;
 
-    --btn-primary-bg: #ffffff;
-    --btn-primary-color: #232d42;
+    --btn-primary-bg: #c1322d;
+    --btn-primary-color: #ffffff;
   
     --figcaption-primary-bg: #00000080;
   }

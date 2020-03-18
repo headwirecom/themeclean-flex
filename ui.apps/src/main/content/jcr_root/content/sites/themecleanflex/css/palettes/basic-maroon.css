@@ -13,7 +13,7 @@
     --text-primary-color:#722525;
     --text-secondary-color: #0A0A0A;
   
-    --border-primary-color: #dad6d6;
+    --border-primary-color: var(--color-gray-300);
   
     --link-primary-color: #722525;
 
@@ -24,17 +24,17 @@
   }
   
   #peregrine-app .theme-dark {
-    --bg-primary-color: #b9b7b7;
-    --bg-secondary-color: #404040;
+    --bg-primary-color: #5e5e5e;
+    --bg-secondary-color: #2d2d2d;
   
-    --text-primary-color: #580000;
-    --text-secondary-color: #ffffff;
+    --text-primary-color: #ffffff;
+    --text-secondary-color: #810202;
   
-    --border-primary-color: #b9b7b7;
+    --border-primary-color: var(--color-gray-100);
   
-    --link-primary-color: #580000;
+    --link-primary-color: #dadada;
 
-    --btn-primary-bg: #580000;
+    --btn-primary-bg: #810202;
     --btn-primary-color: #ffffff;
   
     --figcaption-primary-bg: #00000080;
