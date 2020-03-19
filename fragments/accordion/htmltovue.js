@@ -5,9 +5,7 @@ module.exports = {
 
         //Header
     	f.addIf($.find('h2').first(), 'model.showtitle == \'true\'')
-        let title = $.find('h2').first()
-        f.mapRichField(title, "model.title")
-        f.bindPath(title)
+        f.mapInlinedRichField($.find('h2').first(), "model.title")
 
         //Content Container
         let containerClasses = `{
@@ -60,8 +58,7 @@ module.exports = {
         //Accordion Item Title Bar
         let a = $.find('a').first()
         f.bindEvent( a, 'click', "toggleItem(i)")
-        let itemTitle = a.find('h3')
-        f.mapRichField( itemTitle, "item.title")
+        f.mapRichField( a.find('h3'), "item.title")
 
         //Accordion Item Body
         let cardContent = $.find('div.card-content > div').first()

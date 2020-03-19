@@ -3,9 +3,7 @@ module.exports = {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
 
-        let richtext = $.find('div').eq(1)
-        f.mapRichField(richtext, 'model.text')
-        f.bindPath(richtext)
+        f.mapInlinedRichField($.find('div').eq(1), 'model.text')
 
         //Content Container
         let containerClasses = `{
