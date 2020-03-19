@@ -86,7 +86,7 @@
   fill: var(--text-primary-color)
 }
 
-#peregrine-app .themecleanflex-components-carousel figcaption {
+#peregrine-app [class$="-components-carousel"] figcaption {
   background-color: var(--figcaption-primary-bg);
 }
 
