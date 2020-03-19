@@ -5,7 +5,9 @@ module.exports = {
 
         //Header
     	f.addIf($.find('h2').first(), 'model.showtitle == \'true\'')
-        f.mapRichField($.find('h2').first(), "model.title")
+        let title = $.find('h2').first()
+        f.mapRichField(title, "model.title")
+        f.bindPath(title)
 
         //Content Container
         let containerClasses = `{
@@ -52,17 +54,19 @@ module.exports = {
         //Accordion Container
         let accordionContainer = $.find('div:nth-child(1)').eq(1)
         f.addFor(accordionContainer, 'model.accordiontoggle')
-        f.bindAttribute( accordionContainer, 'id', "`accordion${_uid}${parseInt(i)+1}`")
+        f.bindAttribute( accordionContainer, 'id', "`accordion${_uid}${parseInt(i) + 1}`")
         f.bindAttribute( accordionContainer, 'class', accordionContainerClasses, false)
 
         //Accordion Item Title Bar
         let a = $.find('a').first()
         f.bindEvent( a, 'click', "toggleItem(i)")
-        f.mapRichField( a.find('h3'), "item.title")
+        let itemTitle = a.find('h3')
+        f.mapRichField( itemTitle, "item.title")
 
-        //Acocordion Item Body
-        f.mapRichField($.find('div.card-content > div').first(), "item.text")
-        f.bindAttribute($.find('div.card-content > div').first(), 'ref', "`cardContent${i}`")
+        //Accordion Item Body
+        let cardContent = $.find('div.card-content > div').first()
+        f.mapRichField(cardContent, "item.text")
+        f.bindAttribute(cardContent, 'ref', "`cardContent${i}`")
         f.addStyle($.find('div.card-content').first(), 'height', "active[i] ? heights[i] + 'px' : '0px'")
         f.addStyle($.find('svg').first(), 'transform', "active[i] ? 'rotate(180deg)': 'rotate(0)'")
 
