@@ -15,8 +15,7 @@
       </div>
       <hr class="border-b">
       <div class="flex items-center flex-wrap justify-between">
-        <p class="my-3" v-html="model.copyright" data-per-inline-edit="model.copyright"
-        v-bind:data-per-path="model.path"></p>
+        <p class="my-3" v-html="model.copyright"></p>
         <themecleanflex-components-socialicons v-bind:model="model"></themecleanflex-components-socialicons>
       </div>
     </div>
