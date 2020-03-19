@@ -3,7 +3,7 @@ module.exports = {
     	f.wrap($, 'themecleanflex-components-block');
         f.bindAttribute($.parent(),'model','model');
 
-        f.mapRichField( $.find('div'), 'model.text');
+        f.mapInlineRichField( $.find('div'), 'model.text');
 
         let styles = `{
             'note-note': model.notetype === "note",

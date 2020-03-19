@@ -7,7 +7,8 @@
             'note-important': model.notetype === &quot;important&quot;,
             'note-caution': model.notetype === &quot;caution&quot;
         }">
-      <div class="text-black" v-html="model.text"></div>
+      <div class="text-black" v-html="model.text" data-per-inline-edit="model.text"
+      v-bind:data-per-path="model.path"></div>
     </div>
   </themecleanflex-components-block>
 </template>
