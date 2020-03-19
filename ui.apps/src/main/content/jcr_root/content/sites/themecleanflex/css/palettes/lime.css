@@ -11,7 +11,7 @@
   --text-primary-color: var(--color-gray-200);
   --text-secondary-color: var(--color-gray-400);
 
-  --border-primary-color: var(--color-green-700);
+  --border-primary-color: #cfc3c3;
 
   --link-primary-color: #ffffff;
   --link-primary-color-hover: var(--color-green-200);
@@ -29,9 +29,9 @@
   --text-primary-color: #000000;
   --text-secondary-color: var(--color-gray-600);
 
-  --border-primary-color: var(--color-green-300);
+  --border-primary-color: #6a6b69;
 
-  --btn-primary-bg: #6a6b69e7;
+  --btn-primary-bg: #6a6b69;
   --btn-primary-color: #ffffff;
 
   --link-primary-color: #000000;
