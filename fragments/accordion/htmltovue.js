@@ -5,7 +5,7 @@ module.exports = {
 
         //Header
     	f.addIf($.find('h2').first(), 'model.showtitle == \'true\'')
-        f.mapInlinedRichField($.find('h2').first(), "model.title")
+        f.mapInlineRichField($.find('h2').first(), "model.title")
 
         //Content Container
         let containerClasses = `{
