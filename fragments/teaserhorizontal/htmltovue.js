@@ -26,7 +26,7 @@ module.exports = {
         f.addIf($.find('p').first(), "model.showtext === 'true'")
         f.mapRichField($.find('h1').first(), "model.title")
         f.mapRichField($.find('h2').first(), "model.subtitle")
-        f.mapRichField($.find('p').first(), "model.text")
+        f.mapInlineRichField($.find('p').first(), "model.text")
         
         //Buttons
         let buttonsDiv = $.find('div').eq(1)

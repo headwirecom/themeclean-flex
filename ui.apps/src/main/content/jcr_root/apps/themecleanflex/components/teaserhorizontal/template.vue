@@ -14,7 +14,8 @@
         }" v-bind:style="`flex-basis:${model.textwidth}%;`">
         <h1 v-if="model.showtitle === 'true'" v-html="model.title"></h1>
         <h2 v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h2>
-        <p v-if="model.showtext === 'true'" v-html="model.text"></p>
+        <p v-if="model.showtext === 'true'" v-html="model.text"
+        data-per-inline-edit="model.text" v-bind:data-per-path="model.path"></p>
       </div>
       <div class="flex flex-wrap justify-center" v-if="model.showbutton == 'true'"
       v-bind:class="{
