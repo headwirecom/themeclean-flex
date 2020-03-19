@@ -2,7 +2,7 @@ module.exports = {
     convert: function($, f) {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
-        f.mapRichField( $, 'model.text')
+        f.mapInlineRichField( $, 'model.text')
 
         const quoteClasses = `[
             {'border-l-8': model.blockquote === 'true'},
