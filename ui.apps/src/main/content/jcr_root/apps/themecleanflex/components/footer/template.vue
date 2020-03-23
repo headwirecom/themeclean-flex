@@ -7,10 +7,11 @@
           <img class="mb-3" v-bind:src="$helper.pathToUrl(model.logo)" v-bind:alt="model.logoalttext"
           v-bind:style="`height:${parseInt(model.logosize)}px;`">
         </a>
-        <div class="footer-col flex-1 lg:mx-4" v-for="(item,i) in model.columns"
+        <div class="footer-col flex-1 lg:mx-4" v-for="(item, i) in model.columns"
         :key="i">
           <h2 class="text-lg font-bold my-2" v-if="item.title !== ''">{{item.title}}</h2>
-          <div v-if="item.text !== ''" v-html="item.text"></div>
+          <div v-if="item.text !== ''" v-html="item.text"
+          v-bind:data-per-path="model.path" v-bind:data-per-inline-edit="`model.columns.${i}.text`"></div>
         </div>
       </div>
       <hr class="border-b">

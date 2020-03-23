@@ -47,12 +47,12 @@ module.exports = {
     	f.bindEvent( a, 'click', 'toggleActive(i)')
         f.mapRichField( a, "item.title")
 
-    	let tabPanel = $.find('[role="tabpanel"]').first()
-    	f.addFor( tabPanel, 'model.tabs')
+    	const tabPanel = $.find('[role="tabpanel"]').first()
+    	f.addFor(tabPanel, 'model.tabs')
     	f.bindAttribute(tabPanel, 'id', '`tab${_uid}${parseInt(i)+1}`')
         f.bindAttribute(tabPanel, 'aria-labelledby', '`tab-control-${_uid}${parseInt(i)+1}`')
     	f.bindAttribute(tabPanel, 'class', "active === i ? 'block opacity-100' : 'hidden'", false)
-        f.mapRichField(tabPanel, "item.text")
+        f.mapInlineRichField(tabPanel, 'model.tabs', 'text')
 
         f.addElse($);
         $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')

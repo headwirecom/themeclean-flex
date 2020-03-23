@@ -62,8 +62,9 @@ module.exports = {
         f.addStyle($.find('h2').first(), 'color', 'item.color')
 
         //Text
-        f.addIf($.find('h2 + div').first(), 'model.showtext == \'true\'')
-        f.mapRichField($.find('h2 + div').first(), "item.text")
+        const text = $.find('h2 + div').first()
+        f.addIf(text, 'model.showtext == \'true\'')
+        f.mapInlineRichField(text, 'model.cards', 'text')
 
         //Button
         let aClasses = `{

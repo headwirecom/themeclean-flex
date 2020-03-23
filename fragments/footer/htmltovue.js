@@ -11,14 +11,14 @@ module.exports = {
 		f.addStyle($.find('img').first(), 'height', 'parseInt(model.logosize)', 'px')
 
 		//Columns
-		let col = $.find('.footer-col').first()
-		let coltitle = col.find('h2').first()
-		let colcontent = col.find('div').first()
-		f.addFor( col, "model.columns")
-		f.addIf( coltitle, "item.title !== ''")
-		f.mapField( coltitle, "item.title")
-		f.addIf( colcontent, "item.text !== ''")
-		f.mapRichField( colcontent, "item.text")
+		const col = $.find('.footer-col').first()
+		const coltitle = col.find('h2').first()
+		const colcontent = col.find('div').first()
+		f.addFor(col, "model.columns")
+		f.addIf(coltitle, "item.title !== ''")
+		f.mapField(coltitle, "item.title")
+		f.addIf(colcontent, "item.text !== ''")
+		f.mapInlineRichField(colcontent, "model.columns", "text")
 
 		//Copyright
 		f.mapRichField($.find('p').eq(0), "model.copyright")

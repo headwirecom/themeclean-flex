@@ -20,7 +20,7 @@
         <div class="py-3 flex flex-col mx-3 lg:flex-grow">
           <!-- Tab Nav -->
           <div class="flex flex-wrap justify-center  pb-3" role="tablist">
-            <a class="mx-2 no-underline p-3 cursor-pointer" role="tab" v-for="(item,i) in model.tabs"
+            <a class="mx-2 no-underline p-3 cursor-pointer" role="tab" v-for="(item, i) in model.tabs"
             :key="i" v-bind:class="{
             'text-white' : active === i,
             'bg-blue-700' : active === i &amp;&amp; model.tabcolor === 'blue',
@@ -41,9 +41,9 @@
           <!-- Tab Content -->
           <div class="relative">
             <div class="w-full py-3 opacity-0 transition-opacity" role="tabpanel"
-            v-for="(item,i) in model.tabs" :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`"
+            v-for="(item, i) in model.tabs" :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`"
             v-bind:aria-labelledby="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:class="active === i ? 'block opacity-100' : 'hidden'"
-            v-html="item.text"></div>
+            v-html="item.text" v-bind:data-per-path="model.path" v-bind:data-per-inline-edit="`model.tabs.${i}.text`"></div>
           </div>
         </div>
       </div>
