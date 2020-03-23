@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root
+  xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
   xmlns:jcr="http://www.jcp.org/jcr/1.0"
   jcr:primaryType="per:Page"
-  jcr:title="themecleanflex"
-  jcr:description="themecleanflex Objects Root"/>
+  jcr:title="themecleanflex root object"
+  jcr:description="themecleanflex Objects Root">
+
+  <jcr:content
+    jcr:primaryType="per:PageContent"
+    sling:resourceType="themecleanflex/components/page"
+    jcr:title="themecleanflex root object"
+    brand="themecleanflex"
+    template="/content/themecleanflex/templates"/>
+
+</jcr:root>

@@ -4,13 +4,14 @@
   xmlns:jcr="http://www.jcp.org/jcr/1.0"
   xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
   jcr:primaryType="per:Page"
-  jcr:title="themecleanflex"
+  jcr:title="themecleanflex root page"
   jcr:description="themecleanflex Pages Root">
 
   <jcr:content
     jcr:primaryType="per:PageContent"
     sling:resourceType="themecleanflex/components/page"
-    jcr:title="themecleanflex" brand="themecleanflex"
+    jcr:title="themecleanflex root page"
+    brand="themecleanflex"
     template="/content/themecleanflex/templates">
 
     <replacements jcr:primaryType="nt:unstructured">
