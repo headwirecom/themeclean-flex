@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
+    jcr:lastModified="{Date}2019-05-06T21:14:05.790Z"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="per:Page">
+    <jcr:content
+        jcr:lastModified="{Date}2019-05-06T21:15:41.195Z"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="404 error"
+        sling:resourceType="themecleanflex/components/page"
+        description="404 error"
+        name="404"
+        template="/content/themecleanflex/templates/base page"
+        templatePath="/content/themecleanflex/templates">
+        <n9f934ff9-79f2-46cb-8f81-cbd26702fdf3 jcr:primaryType="nt:unstructured">
+            <text   jcr:primaryType="nt:unstructured" htmlelement="section" sling:resourceType="themecleanflex/components/richtext" 
+                    text="&lt;h1 style=&quot;text-align: center; &quot;>404 - Sorry, the requested page was not found&lt;/h1>" bottompadding="156" toppadding="156" videosrc="">
+            </text>
+        </n9f934ff9-79f2-46cb-8f81-cbd26702fdf3>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+            jcr:primaryType="per:Page"
+            jcr:title="tf-cl | breadcrumb"
+            jcr:description="breadcrumb themecleanflex component library"
+>
+    <jcr:content
+        jcr:primaryType="per:PageContent"
+        sling:resourceType="themecleanflex/components/page"
+        jcr:title="breadcrumb"
+        description="breadcrumb themecleanflex component library"
+        brand="themecleanflex"
+        template="/content/themecleanflex/templates"
+            ><clheader
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/themecleanflex/pages/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
+    <links jcr:primaryType="nt:unstructured"></links>
+    <buttons jcr:primaryType="nt:unstructured"></buttons>
+            </clheader><clbreadcrumb
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
+        <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        </clbreadcrumb><pager0
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager0><container4
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/container"
+            htmlelement="main">
+            
+        <intro1 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            bottompadding="25"
+            toppadding="25"
+            htmlelement="banner"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h1 id=&quot;breadcrumb&quot;&gt;Breadcrumb&lt;/h1&gt;
+&lt;p&gt;The breadcrumb component displays the current route in the site with links to quickly navigate back up to parent pages.&lt;/p&gt;
+">
+        </intro1>
+        <title2 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Breadcrumb (Chrome)&lt;/h2&gt;">
+        </title2><breadcrumb3
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="3" linkcolor="primary"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
+<bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        </breadcrumb3>
+        </container4><pager5
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager5>
+        <clfooter
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logourl="/content/themecleanflex/pages/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
+        <columns jcr:primaryType="nt:unstructured">
+        <c3
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c3><c4
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
+        </c4><c5
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c5></columns>
+<icons jcr:primaryType="nt:unstructured"></icons>
+        </clfooter>        
+        </jcr:content></jcr:root>

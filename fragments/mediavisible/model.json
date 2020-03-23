@@ -33,7 +33,7 @@
           "x-form-label": "Image Source",
           "x-form-visible": "model.mediatype == 'image' and model.showmedia == 'true'",
           "x-form-type": "pathbrowser",
-          "x-form-browserRoot": "/content/assets",
+          "x-form-browserRoot": "/content/themecleanflex/assets",
           "x-default": ""
         },
         "videosrc": {
@@ -42,7 +42,7 @@
           "x-form-label": "Video Source",
           "x-form-visible": "model.mediatype == 'video' and model.showmedia == 'true'",
           "x-form-type": "pathbrowser",
-          "x-form-browserRoot": "/content/assets",
+          "x-form-browserRoot": "/content/themecleanflex/assets",
           "x-default": ""
         },
         "mediatitle": {

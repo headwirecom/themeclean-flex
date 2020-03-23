@@ -8,7 +8,7 @@
       <jcr:content jcr:primaryType="nt:unstructured"/>
     </sample-blank>
     <sample-image jcr:primaryType="nt:unstructured" title="Media - Image" group="Features">
-      <jcr:content jcr:primaryType="nt:unstructured" mediatype="image" imagesrc="/content/assets/themecleanflex/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color"/>
+      <jcr:content jcr:primaryType="nt:unstructured" mediatype="image" imagesrc="/content/themecleanflex/assets/samples/sailing-lake_large.jpg" mediatitle="Sailboat on a lake" toppadding="30" bottompadding="30" backgroundtype="color"/>
     </sample-image>
   </jcr:content>
 </jcr:root>

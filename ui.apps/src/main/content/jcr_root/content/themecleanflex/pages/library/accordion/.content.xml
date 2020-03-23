@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+            jcr:primaryType="per:Page"
+            jcr:title="tf-cl | accordion"
+            jcr:description="accordion themecleanflex component library"
+>
+    <jcr:content
+        jcr:primaryType="per:PageContent"
+        sling:resourceType="themecleanflex/components/page"
+        jcr:title="accordion"
+        description="accordion themecleanflex component library"
+        brand="themecleanflex"
+        template="/content/themecleanflex/templates"
+            ><clheader
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/themecleanflex/pages/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
+    <links jcr:primaryType="nt:unstructured"></links>
+    <buttons jcr:primaryType="nt:unstructured"></buttons>
+            </clheader><clbreadcrumb
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
+        <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        </clbreadcrumb><pager0
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager0><container38
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/container"
+            htmlelement="main">
+            
+        <intro1 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            bottompadding="25"
+            toppadding="25"
+            htmlelement="banner"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h1 id=&quot;toggleaccordion&quot;&gt;Toggle/Accordion&lt;/h1&gt;
+&lt;p&gt;Contains a list of items that expand when clicked on allowing you to hide content that is not immediately relevant to the user.&lt;/p&gt;
+">
+        </intro1>
+        <title2 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Accordion - Dark (Features)&lt;/h2&gt;">
+        </title2><accordion5
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion Dark Theme" backgroundtype="color" colorscheme="dark" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" imagesrc="/content/themecleanflex/assets/samples/heel_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" toggletype="accordion"><accordiontoggle jcr:primaryType="nt:unstructured"><c3
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
+        </c3><c4
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c4></accordiontoggle>
+        </accordion5><title6 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Accordion - With Media (Features)&lt;/h2&gt;">
+        </title6><accordion9
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" imagesrc="/content/themecleanflex/assets/samples/heel_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" showmedia="true" blockwidth="article" toggletype="accordion"><accordiontoggle jcr:primaryType="nt:unstructured"><c7
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
+        </c7><c8
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c8></accordiontoggle>
+        </accordion9><title10 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Accordion - Background Image (Features)&lt;/h2&gt;">
+        </title10><accordion14
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" overlay="true" overlaycolor="#000000" overlayopacity="25" bottompadding="150" toppadding="150" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c11
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
+        </c11><c12
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="How to accordion?">
+        </c12><c13
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;" title="Join accordion">
+        </c13></accordiontoggle>
+        </accordion14><title15 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Accordion (Features)&lt;/h2&gt;">
+        </title15><accordion16
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion"><tabs jcr:primaryType="nt:unstructured"></tabs>
+        </accordion16><title17 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Accordion With Full RTE (.hidden)&lt;/h2&gt;">
+        </title17><accordion21
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion With Full RTE" backgroundtype="color" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c18
+        jcr:primaryType="nt:unstructured" text="&lt;h1&gt;Left (Default) Alignment Test&lt;/h1&gt;&lt;h2&gt;Header h2&lt;/h2&gt;&lt;h3&gt;Header h3&lt;/h3&gt;&lt;h4&gt;Header h4&lt;/h4&gt;&lt;p&gt;Text:&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: center; &quot;&gt;Center Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: center; &quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: center; &quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: center; &quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: center; &quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: center; &quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: center; &quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: right; &quot;&gt;Right Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: right; &quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: right; &quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: right; &quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: right; &quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: right; &quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: right; &quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: justify;&quot;&gt;Justified Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: justify;&quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: justify;&quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: justify;&quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;another line&lt;/p&gt;" title="Big RTE Test Chunk">
+        </c18><c19
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="How to accordion?">
+        </c19><c20
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;" title="Join accordion">
+        </c20></accordiontoggle>
+        </accordion21><title22 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Toggle (Features)&lt;/h2&gt;">
+        </title22><accordion26
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" toggletype="toggle" showmedia="false" mediawidth="33" blockwidth="article"><accordiontoggle jcr:primaryType="nt:unstructured"><c23
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
+        </c23><c24
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="How to accordion?">
+        </c24><c25
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;" title="Join accordion">
+        </c25></accordiontoggle>
+        </accordion26><title27 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Toggle  - With Media (Features)&lt;/h2&gt;">
+        </title27><accordion30
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Toggle" backgroundtype="color" bgcolor="#ffffff" color2="#ffffff" fullheight="false" bottompadding="30" toppadding="30" mediatype="image" mediaposition="after" imagesrc="/content/themecleanflex/assets/samples/oldboat_small.jpg" mediatitle="Old Ship sailing into sunset" mediawidth="33" blockwidth="article" showmedia="true" toggletype="toggle"><accordiontoggle jcr:primaryType="nt:unstructured"><c28
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Learn More">
+        </c28><c29
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="Contact Us">
+        </c29></accordiontoggle>
+        </accordion30><title31 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Accordion - Light (Features)&lt;/h2&gt;">
+        </title31><accordion35
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion" showtitle="true" title="Peregrine Accordion" backgroundtype="color" bgcolor="#f1f1f1" color2="#ffffff" bottompadding="30" toppadding="30" showmedia="false" mediawidth="33" blockwidth="article" accordionortoggle="false"><accordiontoggle jcr:primaryType="nt:unstructured"><c32
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s&lt;/p&gt;" title="Why accordion?">
+        </c32><c33
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting&lt;/p&gt;" title="How to accordion?">
+        </c33><c34
+        jcr:primaryType="nt:unstructured" text="&lt;p&gt;remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;" title="Join accordion">
+        </c34></accordiontoggle>
+        </accordion35><title36 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Accordion no default values (Empty)&lt;/h2&gt;">
+        </title36><accordion37
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/accordion"><tabs jcr:primaryType="nt:unstructured"></tabs>
+        </accordion37>
+        </container38><pager39
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager39>
+        <clfooter
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logourl="/content/themecleanflex/pages/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
+        <columns jcr:primaryType="nt:unstructured">
+        <c3
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c3><c4
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
+        </c4><c5
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c5></columns>
+<icons jcr:primaryType="nt:unstructured"></icons>
+        </clfooter>        
+        </jcr:content></jcr:root>
