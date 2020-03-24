@@ -11,7 +11,7 @@
         :key="i">
           <h2 class="text-lg font-bold my-2" v-if="item.title !== ''">{{item.title}}</h2>
           <div v-if="item.text !== ''" v-html="item.text"
-          v-bind:data-per-path="model.path" v-bind:data-per-inline-edit="`model.columns.${i}.text`"></div>
+          v-bind:data-per-inline-property="`model.columns.${i}.text`" data-per-inline-is-rich="true"></div>
         </div>
       </div>
       <hr class="border-b">

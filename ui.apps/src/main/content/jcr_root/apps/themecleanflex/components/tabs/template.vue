@@ -43,7 +43,8 @@
             <div class="w-full py-3 opacity-0 transition-opacity" role="tabpanel"
             v-for="(item, i) in model.tabs" :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`"
             v-bind:aria-labelledby="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:class="active === i ? 'block opacity-100' : 'hidden'"
-            v-html="item.text" v-bind:data-per-path="model.path" v-bind:data-per-inline-edit="`model.tabs.${i}.text`"></div>
+            v-html="item.text" v-bind:data-per-inline-property="`model.tabs.${i}.text`"
+            data-per-inline-is-rich="true"></div>
           </div>
         </div>
       </div>

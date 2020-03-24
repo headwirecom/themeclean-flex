@@ -23,7 +23,7 @@
           <h1 v-if="model.showtitle === 'true'" v-html="model.title"></h1>
           <h2 v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h2>
           <p v-if="model.showtext === 'true'" v-html="model.text"
-          data-per-inline-edit="model.text" v-bind:data-per-path="model.path"></p>
+          data-per-inline-property="model.text" data-per-inline-is-rich="true"></p>
         </div>
         <div class="flex flex-wrap p-0 -mx-2" v-if="model.showbutton == 'true'"
         v-bind:class="{
@@ -31,7 +31,7 @@
             'justify-center': model.alignbuttons === 'center',
             'justify-end': model.alignbuttons === 'end'
         }">
-          <a class="btn m-2" v-for="(item,i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
+          <a class="btn m-2" v-for="(item, i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
           v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',

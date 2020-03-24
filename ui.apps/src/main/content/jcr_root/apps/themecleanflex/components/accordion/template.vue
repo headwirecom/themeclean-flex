@@ -3,7 +3,7 @@
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full" v-else>
       <h2 class="text-xl text-center pb-4" v-if="model.showtitle == 'true'"
-      v-html="model.title" data-per-inline-edit="model.title" v-bind:data-per-path="model.path"></h2>
+      v-html="model.title" data-per-inline-property="model.title" data-per-inline-is-rich="false"></h2>
       <div class="flex flex-col -mx-3 flex-grow" v-bind:class="{
             'lg:flex-row': model.mediaposition === 'before',
             'lg:flex-row-reverse': model.mediaposition === 'after'
@@ -30,7 +30,7 @@
             'rounded-lg': model.roundedcorners == 'large',
             'rounded-full': model.roundedcorners == 'full'
         }">
-          <div v-for="(item,i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}${parseInt(i) + 1}`"
+          <div v-for="(item, i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}${parseInt(i) + 1}`"
           v-bind:class="{
             'border-b border-solid border-gray-300': model.colorscheme === 'light' &amp;&amp; model.cardborder === 'true',
             'border-b border-solid border-gray-900': model.colorscheme === 'dark' &amp;&amp; model.cardborder === 'true'
