@@ -13,21 +13,29 @@
 
   --border-primary-color: var(--color-blue-700);
 
-  --link-primary-color: var(--color-yellow-700);
+  --link-primary-color: #ffffff;
+  --link-primary-color-hover: #8cc5fa;
 
-  --figcaption-primary-bg: rgba(0, 3, 128, 0.5);
+  --btn-primary-bg: #8cc5fa;
+  --btn-primary-color: #000000;
+
+  
+  --figcaption-primary-bg: #00038080;
 }
 
 #peregrine-app .theme-light {
-  --bg-primary-color: var(--color-blue-300);
+  --bg-primary-color: #caf5ff;
   --bg-secondary-color: var(--color-blue-200);
 
-  --text-primary-color: var(--color-blue-800);
+  --text-primary-color: #2b3e7c;
   --text-secondary-color: var(--color-gray-800);
 
   --border-primary-color: var(--color-blue-300);
 
-  --link-primary-color: var(--color-yellow-300);
+  --link-primary-color: #2b3e7c;
 
-  --figcaption-primary-bg: rgba(0, 3, 128, 0.3);
+  --btn-primary-bg: #2b3e7c;
+  --btn-primary-color: #ffffff;
+
+  --figcaption-primary-bg: #0003804d;
 }
