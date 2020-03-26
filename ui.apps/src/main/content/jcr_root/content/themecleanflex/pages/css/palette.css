@@ -86,7 +86,7 @@
   fill: var(--text-primary-color)
 }
 
-#peregrine-app .themecleanflex-components-carousel figcaption {
+#peregrine-app [class$="-components-carousel"] figcaption {
   background-color: var(--figcaption-primary-bg);
 }
 
@@ -125,17 +125,19 @@
   border-color: var(--note-caution-border-color);
 }
 
-#peregrine-app .themecleanflex-components-navigation a,
-#peregrine-app .themecleanflex-components-navigation a * {
+#peregrine-app [class$="-components-navigation"] a,
+#peregrine-app [class$="-components-navigation"] a * {
   color: var(--text-primary-color);
 }
 
-#peregrine-app .themecleanflex-components-navigation a:hover,
-#peregrine-app .themecleanflex-components-navigation a:hover {
+#peregrine-app [class$="-components-navigation"] a:hover,
+#peregrine-app [class$="-components-navigation"] a:hover {
   color: var(--bg-primary-color);
+  background-color: var(--text-primary-color);
 }
 
-#peregrine-app .themecleanflex-components-tabs a[aria-selected="true"],
-#peregrine-app .themecleanflex-components-tabs a[aria-selected="true"] * {
+#peregrine-app [class$="-components-tabs"] a[aria-selected="true"],
+#peregrine-app [class$="-components-tabs"] a[aria-selected="true"] * {
   color: var(--btn-primary-color);
+  background-color: var(--btn-primary-bg);
 }
