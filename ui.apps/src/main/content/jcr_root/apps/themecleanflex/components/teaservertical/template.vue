@@ -20,8 +20,10 @@
             'self-center': model.aligncontent === 'center',
             'self-end': model.aligncontent === 'right'
         }" v-bind:style="`width:${model.textwidth}%;`">
-          <h1 v-if="model.showtitle === 'true'" v-html="model.title"></h1>
-          <h2 v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h2>
+          <h1 v-if="model.showtitle === 'true'" v-html="model.title" data-per-inline-property="model.title"
+          data-per-inline-is-rich="false"></h1>
+          <h2 v-if="model.showsubtitle === 'true'" v-html="model.subtitle"
+          data-per-inline-property="model.subtitle"></h2>
           <p v-if="model.showtext === 'true'" v-html="model.text"
           data-per-inline-property="model.text" data-per-inline-is-rich="true"></p>
         </div>
@@ -42,7 +44,8 @@
             'btn-orange': item.buttoncolor === 'warning',
             'btn-white': item.buttoncolor === 'light',
             'btn-black': item.buttoncolor === 'dark'
-        }" v-html="item.buttontext" v-bind:style="`backgroundColor:${item.buttoncolor};borderColor:${item.buttoncolor};`"></a>
+        }" v-html="item.buttontext" v-bind:data-per-inline-property="`model.buttons.${i}.buttontext`"
+          data-per-inline-is-rich="false" v-bind:style="`backgroundColor:${item.buttoncolor};borderColor:${item.buttoncolor};`"></a>
         </div>
       </div>
     </div>
