@@ -58,7 +58,7 @@ module.exports = {
 
         //Title
         f.addIf($.find('h2').first(), 'model.showtitle == \'true\'')
-        f.mapRichField($.find('h2').first(), "item.title")
+        f.mapInlineRichField($.find('h2').first(), "model.cards", "title")
         f.addStyle($.find('h2').first(), 'color', 'item.color')
 
         //Text
@@ -85,7 +85,7 @@ module.exports = {
         f.addIf( a, 'showbutton(item)')
         f.bindAttribute( a, 'href', f.pathToUrl('item.buttonlink'))
         f.bindAttribute( a, 'class', aClasses, false)
-        f.mapRichField( a, "item.buttontext")
+        f.mapInlineRichField( a, "model.cards", "buttontext")
 
         f.addElse($);
         $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')

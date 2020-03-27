@@ -44,6 +44,7 @@
         }">
             <div>
               <h2 class="text-lg my-3" v-if="model.showtitle == 'true'" v-html="item.title"
+              v-bind:data-per-inline-property="`model.cards.${i}.title`" data-per-inline-is-rich="false"
               v-bind:style="`color:${item.color};`"></h2>
               <div class="my-3" v-if="model.showtext == 'true'" v-html="item.text"
               v-bind:data-per-inline-property="`model.cards.${i}.text`" data-per-inline-is-rich="true"></div>
@@ -60,7 +61,8 @@
             'self-start': item.buttonalign === 'left',
             'self-center': item.buttonalign === 'center',
             'self-end': item.buttonalign === 'right'
-        }" v-html="item.buttontext"></a>
+        }" v-html="item.buttontext" v-bind:data-per-inline-property="`model.cards.${i}.buttontext`"
+            data-per-inline-is-rich="false"></a>
           </div>
         </div>
       </div>
