@@ -1,6 +1,6 @@
 module.exports = {
     convert: function($, f) {
-
+        f.bindPath($)
         //Button
         let aClasses = `{
             'btn-lg': model.buttonsize === 'large',
@@ -18,6 +18,6 @@ module.exports = {
     	f.addFor( a, 'model.buttons')
         f.bindAttribute( a, 'href', f.pathToUrl('item.buttonlink'))
         f.bindAttribute( a, 'class', aClasses, false)
-        f.mapRichField( a, "item.buttontext")
+        f.mapInlineRichField( a, 'model.buttons', "buttontext")
     }
 }
