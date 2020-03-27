@@ -37,7 +37,8 @@
         }">
             <a class="flex justify-between items-center p-3 cursor-pointer no-underline"
             v-on:click="toggleItem(i)">
-              <h3 class="text-lg" v-html="item.title"></h3>
+              <h3 class="text-lg" v-html="item.title" v-bind:data-per-inline-property="`model.accordiontoggle.${i}.title`"
+              data-per-inline-is-rich="false"></h3>
               <svg width="16" height="16" viewBox="0 0 16 16" v-bind:style="`transform:${active[i] ? 'rotate(180deg)': 'rotate(0)'};`">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"
                 />
@@ -45,7 +46,7 @@
             </a>
             <div class="card-content overflow-hidden transition-height" role="tabpanel"
             v-bind:style="`height:${active[i] ? heights[i] + 'px' : '0px'};`">
-              <div class="p-3" v-html="item.text" v-bind:ref="`cardContent${i}`"></div>
+              <div class="p-3" v-html="model.accordiontoggle" v-bind:ref="`cardContent${i}`"></div>
             </div>
           </div>
         </div>

@@ -58,11 +58,11 @@ module.exports = {
         //Accordion Item Title Bar
         let a = $.find('a').first()
         f.bindEvent( a, 'click', "toggleItem(i)")
-        f.mapRichField( a.find('h3'), "item.title")
+		f.mapInlineRichField(a.find('h3'), "model.accordiontoggle", "title")
 
         //Accordion Item Body
         let cardContent = $.find('div.card-content > div').first()
-        f.mapRichField(cardContent, "item.text")
+        f.mapRichField(cardContent, "model.accordiontoggle", "text")
         f.bindAttribute(cardContent, 'ref', "`cardContent${i}`")
         f.addStyle($.find('div.card-content').first(), 'height', "active[i] ? heights[i] + 'px' : '0px'")
         f.addStyle($.find('svg').first(), 'transform', "active[i] ? 'rotate(180deg)': 'rotate(0)'")
