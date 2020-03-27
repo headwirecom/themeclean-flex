@@ -33,11 +33,11 @@ module.exports = {
         let a1 =$.find('a').eq(0)
         let a2 =$.find('a').eq(1)
 
-        f.mapField( a1, 'model.prevlabel')
+        f.mapInlineRichField( a1, 'model.prevlabel')
         f.bindAttribute(a1, 'href', f.pathToUrl('model.previous'))
         f.bindAttribute( a1, 'class', a1Classes, false)
         
-        f.mapField(a2, 'model.nextlabel')
+        f.mapInlineRichField(a2, 'model.nextlabel')
         f.bindAttribute(a2, 'href', f.pathToUrl('model.next'))
         f.bindAttribute( a2, 'class', a2Classes, false)
 
