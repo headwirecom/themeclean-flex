@@ -17,9 +17,9 @@ module.exports = {
 
         f.bindAttribute($.find('div.flex > div').first(), 'style', "{'flex':`0 0 ${model.mediawidth}%`}")
     	f.addIf($.find('h1').first(), 'model.showtitle == \'true\' && model.title')
-        f.mapRichField($.find('h1').first(), "model.title")
+        f.mapInlineRichField($.find('h1').first(), "model.title")
         f.addIf($.find('h2').first(), 'model.showsubtitle == \'true\' && model.subtitle')
-        f.mapRichField($.find('h2').first(), "model.subtitle")
+        f.mapInlineRichField($.find('h2').first(), "model.subtitle")
 
         let a = $.find('a').first()
         f.addFor(a, 'model.tabs')
@@ -45,7 +45,7 @@ module.exports = {
     	f.bindAttribute( a, 'aria-controls', '`tab${_uid}${parseInt(i)+1}`')
     	f.bindAttribute( a, 'aria-selected', 'active === i')
     	f.bindEvent( a, 'click', 'toggleActive(i)')
-        f.mapRichField( a, "item.title")
+        f.mapInlineRichField( a, 'model.tabs', "title")
 
     	const tabPanel = $.find('[role="tabpanel"]').first()
     	f.addFor(tabPanel, 'model.tabs')
