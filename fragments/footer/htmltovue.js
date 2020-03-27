@@ -16,12 +16,12 @@ module.exports = {
 		const colcontent = col.find('div').first()
 		f.addFor(col, "model.columns")
 		f.addIf(coltitle, "item.title !== ''")
-		f.mapField(coltitle, "item.title")
+		f.mapInlineRichField(coltitle, "model.columns", "title")
 		f.addIf(colcontent, "item.text !== ''")
 		f.mapInlineRichField(colcontent, "model.columns", "text")
 
 		//Copyright
-		f.mapRichField($.find('p').eq(0), "model.copyright")
+		f.mapInlineRichField($.find('p').eq(0), "model.copyright")
 
 		f.addElse($);
 		$.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
