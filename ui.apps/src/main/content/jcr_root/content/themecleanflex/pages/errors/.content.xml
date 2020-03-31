@@ -6,7 +6,7 @@
     <jcr:content
         jcr:lastModified="{Date}2019-05-06T21:15:41.195Z"
         jcr:lastModifiedBy="admin"
-        jcr:primaryType="nt:unstructured"
+        jcr:primaryType="per:PageContent"
         jcr:title="errors"
         sling:resourceType="themecleanflex/components/page"
         description="errors"
