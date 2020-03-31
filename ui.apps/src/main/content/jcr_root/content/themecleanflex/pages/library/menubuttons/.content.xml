@@ -61,11 +61,11 @@
             text="&lt;h2&gt;Menu Buttons (.hidden)&lt;/h2&gt;">
         </title2><menubuttons6
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"><buttons jcr:primaryType="nt:unstructured"><c3
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themeclean/pages" buttontext="Try It Now" buttoncolor="primary">
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
         </c3><c4
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themeclean/pages" buttontext="Click Here!" buttoncolor="primary">
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
         </c4><c5
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themeclean/pages" buttontext="Enter" buttoncolor="warning">
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
         </c5></buttons>
         </menubuttons6>
         </container7><pager8

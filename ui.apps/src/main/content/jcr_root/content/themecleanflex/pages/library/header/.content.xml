@@ -72,14 +72,14 @@
         </title4><header9
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="dark" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="light"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c5
-        jcr:primaryType="nt:unstructured" link="/content/themeclean/pages" text="Services">
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services">
         </c5><c6
-        jcr:primaryType="nt:unstructured" link="/content/themeclean/pages" text="About Us">
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us">
         </c6><c7
-        jcr:primaryType="nt:unstructured" link="/content/themeclean/pages" text="Contact Us">
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us">
         </c7></links>
 <buttons jcr:primaryType="nt:unstructured"><c8
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themeclean/pages" buttontext="Try It Now" buttoncolor="primary">
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
         </c8></buttons>
         </header9><title10 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
@@ -92,14 +92,14 @@
         </title10><header15
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="http://www.peregrine-cms.com" logosize="60" buttonsize="default" linkcolor="dark"><elevation jcr:primaryType="nt:unstructured"></elevation>
 <links jcr:primaryType="nt:unstructured"><c11
-        jcr:primaryType="nt:unstructured" link="/content/themeclean/pages" text="Services">
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services">
         </c11><c12
-        jcr:primaryType="nt:unstructured" link="/content/themeclean/pages" text="About Us">
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us">
         </c12><c13
-        jcr:primaryType="nt:unstructured" link="/content/themeclean/pages" text="Contact Us">
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us">
         </c13></links>
 <buttons jcr:primaryType="nt:unstructured"><c14
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themeclean/pages" buttontext="Try It Now" buttoncolor="primary">
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
         </c14></buttons>
         </header15><title16 jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 

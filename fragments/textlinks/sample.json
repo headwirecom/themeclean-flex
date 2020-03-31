@@ -4,15 +4,15 @@
   "model": {
     "links": [
       {
-        "link": "/content/themeclean/pages",
+        "link": "/content/themecleanflex/pages",
         "text": "Services",
         "color": "dark"
       },{
-        "link": "/content/themeclean/pages",
+        "link": "/content/themecleanflex/pages",
         "text": "About Us",
         "color": "dark"
       },{
-        "link": "/content/themeclean/pages",
+        "link": "/content/themecleanflex/pages",
         "text": "Contact Us",
         "color": "dark"
       }

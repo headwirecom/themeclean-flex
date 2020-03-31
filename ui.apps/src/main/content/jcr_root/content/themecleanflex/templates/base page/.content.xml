@@ -34,14 +34,14 @@
       logoalttext="PathSoft Logo"
       toppadding="0">
       <links jcr:primaryType="nt:unstructured">
-        <links0 jcr:primaryType="nt:unstructured" link="/content/themeclean/pages" text="About Us"/>
-        <links1 jcr:primaryType="nt:unstructured" link="/content/themeclean/pages" text="Services"/>
-        <links2 jcr:primaryType="nt:unstructured" link="/content/themeclean/pages" text="Contact Us"/>
-        <links3 jcr:primaryType="nt:unstructured" link="/content/themeclean/pages" text="Pricing"/>
-        <links4 jcr:primaryType="nt:unstructured" link="/content/themeclean/pages" text="News"/>
+        <links0 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us"/>
+        <links1 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services"/>
+        <links2 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us"/>
+        <links3 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Pricing"/>
+        <links4 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="News"/>
       </links>
       <buttons jcr:primaryType="nt:unstructured">
-        <buttons0 jcr:primaryType="nt:unstructured" buttonlink="/content/themeclean/pages" buttontext="Sign Up" buttoncolor="primary"/>
+        <buttons0 jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Sign Up" buttoncolor="primary"/>
       </buttons>
     </n1f964177-2026-4697-80ce-7ea78fa1b3e2>
 

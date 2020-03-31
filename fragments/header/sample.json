@@ -18,20 +18,20 @@
     "buttonsize": "default",
     "links": [
       {
-        "link": "/content/themeclean/pages",
+        "link": "/content/themecleanflex/pages",
         "text": "Services"
       },{
-        "link": "/content/themeclean/pages",
+        "link": "/content/themecleanflex/pages",
         "text": "About Us"
       },{
-        "link": "/content/themeclean/pages",
+        "link": "/content/themecleanflex/pages",
         "text": "Contact Us"
       }
     ],
     "linkcolor": "dark",
     "buttons": [
       {
-        "buttonlink": "/content/themeclean/pages",
+        "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "Try It Now",
         "buttoncolor": "primary"
       }

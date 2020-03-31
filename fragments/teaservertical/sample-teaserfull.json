@@ -21,12 +21,12 @@
     "title": "Themeclean Flex Blocks",
     "buttons": [
       {
-        "buttonlink": "/content/themeclean/pages",
+        "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "See More",
         "buttoncolor": "primary",
         "iconclass": ""
       },{
-        "buttonlink": "/content/themeclean/pages",
+        "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "About Us",
         "buttoncolor": "primary",
         "iconclass": ""

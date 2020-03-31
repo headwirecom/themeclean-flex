@@ -4,17 +4,17 @@
   "model": {
     "buttons": [
       {
-        "buttonlink": "/content/themeclean/pages",
+        "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "Try It Now",
         "buttoncolor": "primary"
       },
       {
-        "buttonlink": "/content/themeclean/pages",
+        "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "Click Here!",
         "buttoncolor": "primary"
       },
       {
-        "buttonlink": "/content/themeclean/pages",
+        "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "Enter",
         "buttoncolor": "warning"
       }
