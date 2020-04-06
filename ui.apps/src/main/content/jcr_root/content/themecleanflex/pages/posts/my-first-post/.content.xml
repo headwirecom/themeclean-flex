@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
+    jcr:lastModified="{Date}2020-04-06T13:24:37.391-07:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="per:Page">
+    <jcr:content
+        jcr:lastModified="{Date}2020-04-06T13:24:37.391-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="per:PageContent"
+        jcr:title="my first blog post"
+        sling:resourceType="themecleanflex/components/page"
+        ogImage=""
+        ogImageAlt=""
+        ogTitle=""
+        ogType="website"
+        ogUrl=""
+        skeletonPagePath=""
+        template="/content/themecleanflex/templates/base page/blogpost"
+        templatePath="/content/themecleanflex/templates/base page/blogpost"
+        title="my first blog post"
+        useDescription="true"
+        useTitle="true">
+        <main jcr:primaryType="nt:unstructured">
+            <n23f0a767-808a-4da1-bcf3-e9ad00c86a08 jcr:primaryType="nt:unstructured">
+                <n0f7fa77c-4835-401b-9d2b-0829fd395ad6 jcr:primaryType="nt:unstructured">
+                    <nbf674ae2-eb1d-4b7b-bafc-a6f382f797a8
+                        jcr:lastModified="{Date}2020-04-06T13:20:16.596-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="themecleanflex/components/simpletext"
+                        bgcolor="#ffffff"
+                        bgsize="cover"
+                        bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
+                        bgxposition="50"
+                        bgyposition="50"
+                        blockwidth="default"
+                        color2="#c0c0c0"
+                        colorscheme=""
+                        custombackground="false"
+                        element="h1"
+                        fullheight="false"
+                        htmlelement="section"
+                        overlaycolor="#ffffff"
+                        overlayopacity="50"
+                        text="The quest to build faster Websites"/>
+                    <n7e5883b0-2a3d-4818-a3b1-e63a9d27c04c
+                        jcr:lastModified="{Date}2020-04-06T13:09:55.331-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="themecleanflex/components/tags"
+                        bgcolor="#ffffff"
+                        bgsize="cover"
+                        bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
+                        bgxposition="50"
+                        bgyposition="50"
+                        blockwidth="default"
+                        bottompadding="3"
+                        color2="#c0c0c0"
+                        colorscheme=""
+                        custombackground="false"
+                        fullheight="false"
+                        htmlelement="section"
+                        overlaycolor="#ffffff"
+                        overlayopacity="50"
+                        tagcolor="blue"
+                        toppadding="3"/>
+                    <n438b1c0d-b858-44b2-8ffb-dfddde9fa5c9
+                        jcr:lastModified="{Date}2020-04-06T13:00:54.799-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="themecleanflex/components/richtext"
+                        text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>"/>
+                    <n71778df0-6507-4820-af2e-70b5af9ca192
+                        jcr:lastModified="{Date}2020-04-06T13:23:30.555-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="themecleanflex/components/richtext"
+                        bgcolor="#ffffff"
+                        bgsize="cover"
+                        bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
+                        bgxposition="50"
+                        bgyposition="50"
+                        blockwidth="default"
+                        bottompadding="3"
+                        color2="#c0c0c0"
+                        colorscheme=""
+                        custombackground="false"
+                        fullheight="false"
+                        htmlelement="section"
+                        imagesrc="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg"
+                        mediaposition="before"
+                        mediatitle="Bird's eye view of the beach"
+                        mediatype="image"
+                        mediawidth="37"
+                        overlaycolor="#ffffff"
+                        overlayopacity="50"
+                        showmedia="true"
+                        text="&lt;p>Today's web frontend frameworks allow us to render pages on the device instead of the server. Leveraging client side rendering allows us to transfer only the content when a client clicks from one page to another resulting in a faster page transition and offloading a vast amount of work that is traditionally done on the server to the web browser.&lt;/p>"
+                        toppadding="12"
+                        videosrc=""/>
+                    <n29b8b1df-0f1f-4708-bb10-365d28a58163
+                        jcr:lastModified="{Date}2020-04-06T13:24:14.469-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="themecleanflex/components/quote"
+                        bgcolor="#ffffff"
+                        bgsize="cover"
+                        bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
+                        bgxposition="50"
+                        bgyposition="50"
+                        blockquote="false"
+                        blockwidth="article"
+                        bottompadding="7"
+                        color2="#c0c0c0"
+                        colorscheme=""
+                        custombackground="false"
+                        fullheight="false"
+                        htmlelement="section"
+                        overlaycolor="#ffffff"
+                        overlayopacity="50"
+                        text="&lt;p>If you think you can do a thing or think you cant do a thing, you're right. &lt;/p>- Henry Ford"
+                        toppadding="11"/>
+                    <n6ea2aad0-f131-4a6d-8fa9-74f43b85cbbd
+                        jcr:lastModified="{Date}2020-04-06T13:24:37.390-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="themecleanflex/components/richtext"
+                        text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>"/>
+                </n0f7fa77c-4835-401b-9d2b-0829fd395ad6>
+            </n23f0a767-808a-4da1-bcf3-e9ad00c86a08>
+        </main>
+        <tags jcr:primaryType="nt:unstructured">
+            <web
+                jcr:lastModified="{Date}2020-04-06T13:10:52.369-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                name="web"
+                path="/content/themecleanflex/pages/posts/my-first-post/jcr:content/tags/web"
+                value="/content/themecleanflex/objects/tags/web"/>
+            <pwa
+                jcr:lastModified="{Date}2020-04-06T13:10:52.369-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                name="pwa"
+                path="/content/themecleanflex/pages/posts/my-first-post/jcr:content/tags/pwa"
+                value="/content/themecleanflex/objects/tags/pwa"/>
+        </tags>
+    </jcr:content>
+</jcr:root>

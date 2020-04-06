@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
+    jcr:lastModified="{Date}2020-04-06T13:03:03.425-07:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="per:Page">
+    <jcr:content
+        jcr:lastModified="{Date}2020-04-06T13:03:03.425-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="per:PageContent"
+        jcr:title="undefined"
+        sling:resourceType="themecleanflex/components/page"
+        name="posts"
+        skeletonPagePath=""
+        template="/content/themecleanflex/templates/base page"
+        templatePath="/content/themecleanflex/templates/base page"
+        title="posts">
+        <main jcr:primaryType="nt:unstructured">
+            <nf23cced4-b79a-48bd-970c-500022b14691
+                jcr:lastModified="{Date}2020-04-06T13:03:03.425-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="themecleanflex/components/pagelist"
+                bgcolor="#ffffff"
+                bgsize="cover"
+                bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
+                bgxposition="50"
+                bgyposition="50"
+                blockwidth="default"
+                color2="#c0c0c0"
+                colorscheme=""
+                custombackground="false"
+                fullheight="false"
+                htmlelement="section"
+                levels="1"
+                overlaycolor="#ffffff"
+                overlayopacity="50"
+                rootpage="/content/themecleanflex/pages/posts"
+                rootPageLink="not adaptable"
+                rootPageTitle="not adaptable"/>
+        </main>
+    </jcr:content>
+    <my-first-post/>
+</jcr:root>
