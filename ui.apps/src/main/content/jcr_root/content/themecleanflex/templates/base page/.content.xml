@@ -1,87 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root
-  xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-  xmlns:jcr="http://www.jcp.org/jcr/1.0"
-  xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-  xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
-  jcr:lastModified="{Date}2019-05-07T19:31:58.383Z"
-  jcr:lastModifiedBy="admin"
-  jcr:primaryType="per:Page">
-
-  <jcr:content
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
     jcr:lastModified="{Date}2019-05-07T19:31:58.383Z"
     jcr:lastModifiedBy="admin"
-    jcr:primaryType="per:PageContent"
-    jcr:title="base page"
-    sling:resourceType="themecleanflex/components/page">
-
-    <n1f964177-2026-4697-80ce-7ea78fa1b3e2
-      jcr:lastModified="{Date}2019-05-07T19:31:46.415Z"
-      jcr:lastModifiedBy="admin"
-      jcr:primaryType="nt:unstructured"
-      sling:resourceType="themecleanflex/components/header"
-      backgroundtype="color"
-      bgcolor="#ffffff"
-      bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
-      bottompadding="0"
-      buttonsize="default"
-      collapsed="false"
-      colorscheme="light"
-      elevation="1"
-      logo="/content/themecleanflex/assets/samples/sample-logo.png"
-      logosize="35"
-      logourl="http://www.peregrine-cms.com"
-      logoalttext="PathSoft Logo"
-      toppadding="0">
-      <links jcr:primaryType="nt:unstructured">
-        <links0 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us"/>
-        <links1 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services"/>
-        <links2 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us"/>
-        <links3 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Pricing"/>
-        <links4 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="News"/>
-      </links>
-      <buttons jcr:primaryType="nt:unstructured">
-        <buttons0 jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Sign Up" buttoncolor="primary"/>
-      </buttons>
-    </n1f964177-2026-4697-80ce-7ea78fa1b3e2>
-
-    <main
-      jcr:lastModified="{Date}2019-05-07T19:31:58.383Z"
-      jcr:lastModifiedBy="admin"
-      jcr:primaryType="nt:unstructured"
-      sling:resourceType="themecleanflex/components/container"/>
-
-    <nbeb05b9b-3df4-4d4a-a770-a2d7357912db
-      jcr:lastModified="{Date}2019-05-07T19:31:52.198Z"
-      jcr:lastModifiedBy="admin"
-      jcr:primaryType="nt:unstructured"
-      sling:resourceType="themecleanflex/components/footer"
-      backgroundtype="color"
-      bgcolor="#ffffff"
-      bottompadding="0"
-      colorscheme="dark"
-      copyright="&amp;copy; 2019 PathSoft&amp;mdash;All rights reserved"
-      logo="/content/themecleanflex/assets/samples/sample-logo.png"
-      logosize="35"
-      logourl="http://www.peregrine-cms.com"
-      logoalttext="PathSoft Logo"
-      showlogo="true"
-      toppadding="30">
-      <columns jcr:primaryType="nt:unstructured">
-        <columns0 jcr:primaryType="nt:unstructured" title="" text=""/>
-        <columns1 jcr:primaryType="nt:unstructured" title="Menu" text="&lt;ul>&lt;li>About us&lt;/li>&lt;li>Services&lt;/li>&lt;li>Pricing&lt;/li>&lt;li>Blog&lt;/li>&lt;li>Contact Us&lt;br>&lt;/li>&lt;/ul>"/>
-        <columns2 jcr:primaryType="nt:unstructured" title="What we offer" text="&lt;ul>&lt;li>DB Management&lt;/li>&lt;li>IOS/MacOs&lt;/li>&lt;li>Android Apps&lt;/li>&lt;li>Windows Apps&lt;/li>&lt;li>UX &amp; UI&lt;br>&lt;/li>&lt;/ul>"/>
-        <columns3 jcr:primaryType="nt:unstructured" title="Our contacts" text="&lt;ul>&lt;li>301 S Irving Blvd, &lt;br>Los Angeles, CA 90020&lt;/li>&lt;li>+1 323-913-4688, +1 323-888-4554&lt;/li>&lt;li>mail@example.com&lt;/li>&lt;/ul>"/>
-      </columns>
-      <icons jcr:primaryType="nt:unstructured">
-        <icons0 jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="fontAwesome:fa fa-facebook:" iconalttext="Facebook"/>
-        <icons1 jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="fontAwesome:fa fa-twitter:" iconalttext="Twitter"/>
-        <icons2 jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="fontAwesome:fa fa-instagram:" iconalttext="Instagram"/>
-        <icons3 jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="fontAwesome:fa fa-pinterest-p:" iconalttext="Pinterest"/>
-        <icons4 jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="fontAwesome:fa fa-youtube-play:" iconalttext="Youtube"/>
-      </icons>
-    </nbeb05b9b-3df4-4d4a-a770-a2d7357912db>
-
-  </jcr:content>
-
+    jcr:primaryType="per:Page">
+    <jcr:content
+        jcr:lastModified="{Date}2019-05-07T19:31:58.383Z"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="per:PageContent"
+        jcr:title="base page"
+        sling:resourceType="themecleanflex/components/page">
+        <n1f964177-2026-4697-80ce-7ea78fa1b3e2
+            jcr:lastModified="{Date}2019-05-07T19:31:46.415Z"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/header"
+            backgroundtype="color"
+            bgcolor="#ffffff"
+            bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
+            bottompadding="0"
+            buttonsize="default"
+            collapsed="false"
+            colorscheme="light"
+            elevation="1"
+            logo="/content/themecleanflex/assets/samples/sample-logo.png"
+            logoalttext="PathSoft Logo"
+            logosize="35"
+            logourl="http://www.peregrine-cms.com"
+            toppadding="0">
+            <links jcr:primaryType="nt:unstructured">
+                <links0
+                    jcr:primaryType="nt:unstructured"
+                    link="/content/themecleanflex/pages"
+                    text="About Us"/>
+                <links1
+                    jcr:primaryType="nt:unstructured"
+                    link="/content/themecleanflex/pages"
+                    text="Services"/>
+                <links2
+                    jcr:primaryType="nt:unstructured"
+                    link="/content/themecleanflex/pages"
+                    text="Contact Us"/>
+                <links3
+                    jcr:primaryType="nt:unstructured"
+                    link="/content/themecleanflex/pages"
+                    text="Pricing"/>
+                <links4
+                    jcr:primaryType="nt:unstructured"
+                    link="/content/themecleanflex/pages"
+                    text="News"/>
+            </links>
+            <buttons jcr:primaryType="nt:unstructured">
+                <buttons0
+                    jcr:primaryType="nt:unstructured"
+                    buttoncolor="primary"
+                    buttonlink="/content/themecleanflex/pages"
+                    buttontext="Sign Up"/>
+            </buttons>
+        </n1f964177-2026-4697-80ce-7ea78fa1b3e2>
+        <main
+            jcr:lastModified="{Date}2019-05-07T19:31:58.383Z"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/container"/>
+        <nbeb05b9b-3df4-4d4a-a770-a2d7357912db
+            jcr:lastModified="{Date}2019-05-07T19:31:52.198Z"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/footer"
+            backgroundtype="color"
+            bgcolor="#ffffff"
+            bottompadding="0"
+            colorscheme="dark"
+            copyright="&amp;copy; 2019 PathSoft&amp;mdash;All rights reserved"
+            logo="/content/themecleanflex/assets/samples/sample-logo.png"
+            logoalttext="PathSoft Logo"
+            logosize="35"
+            logourl="http://www.peregrine-cms.com"
+            showlogo="true"
+            toppadding="30">
+            <columns jcr:primaryType="nt:unstructured">
+                <columns0
+                    jcr:primaryType="nt:unstructured"
+                    text=""
+                    title=""/>
+                <columns1
+                    jcr:primaryType="nt:unstructured"
+                    text="&lt;ul>&lt;li>About us&lt;/li>&lt;li>Services&lt;/li>&lt;li>Pricing&lt;/li>&lt;li>Blog&lt;/li>&lt;li>Contact Us&lt;br>&lt;/li>&lt;/ul>"
+                    title="Menu"/>
+                <columns2
+                    jcr:primaryType="nt:unstructured"
+                    text="&lt;ul>&lt;li>DB Management&lt;/li>&lt;li>IOS/MacOs&lt;/li>&lt;li>Android Apps&lt;/li>&lt;li>Windows Apps&lt;/li>&lt;li>UX &amp; UI&lt;br>&lt;/li>&lt;/ul>"
+                    title="What we offer"/>
+                <columns3
+                    jcr:primaryType="nt:unstructured"
+                    text="&lt;ul>&lt;li>301 S Irving Blvd, &lt;br>Los Angeles, CA 90020&lt;/li>&lt;li>+1 323-913-4688, +1 323-888-4554&lt;/li>&lt;li>mail@example.com&lt;/li>&lt;/ul>"
+                    title="Our contacts"/>
+            </columns>
+            <icons jcr:primaryType="nt:unstructured">
+                <icons0
+                    jcr:primaryType="nt:unstructured"
+                    icon="fontAwesome:fa fa-facebook:"
+                    iconalttext="Facebook"
+                    url="https://www.facebook.com/"/>
+                <icons1
+                    jcr:primaryType="nt:unstructured"
+                    icon="fontAwesome:fa fa-twitter:"
+                    iconalttext="Twitter"
+                    url="https://twitter.com/"/>
+                <icons2
+                    jcr:primaryType="nt:unstructured"
+                    icon="fontAwesome:fa fa-instagram:"
+                    iconalttext="Instagram"
+                    url="https://www.instagram.com/"/>
+                <icons3
+                    jcr:primaryType="nt:unstructured"
+                    icon="fontAwesome:fa fa-pinterest-p:"
+                    iconalttext="Pinterest"
+                    url="https://www.pinterest.com/"/>
+                <icons4
+                    jcr:primaryType="nt:unstructured"
+                    icon="fontAwesome:fa fa-youtube-play:"
+                    iconalttext="Youtube"
+                    url="https://www.youtube.com/"/>
+            </icons>
+        </nbeb05b9b-3df4-4d4a-a770-a2d7357912db>
+    </jcr:content>
+    <blogpost/>
 </jcr:root>
