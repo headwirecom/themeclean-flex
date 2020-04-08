@@ -18,6 +18,16 @@
       "model": "includeroot"
     },
     {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "excludesitemapexcludes",
+      "label": "Exclude pages Excluded in Sitemap",
+      "model": "excludesitemapexcludes"
+    },
+    {
       "type": "input",
       "inputType": "number",
       "placeholder": "levels",

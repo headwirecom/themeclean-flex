@@ -12,7 +12,8 @@
         description="errors"
         name="errors"
         template="/content/themecleanflex/templates/base page"
-        templatePath="/content/themecleanflex/templates">
+        templatePath="/content/themecleanflex/templates"
+        excludeFromSitemap="{Boolean}true">
         <n9f934ff9-79f2-46cb-8f81-cbd26702fdf3 jcr:primaryType="nt:unstructured">
             <text   jcr:primaryType="nt:unstructured" htmlelement="section" sling:resourceType="themecleanflex/components/richtext" 
                     text="&lt;h1 style=&quot;text-align: center; &quot;>error pages&lt;/h1>" bottompadding="156" toppadding="156" videosrc="">
