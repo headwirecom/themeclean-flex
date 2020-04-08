@@ -15,6 +15,7 @@ import org.apache.sling.models.annotations.Model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
 /*
     //GEN[:DATA
     {
@@ -34,6 +35,13 @@ import org.slf4j.LoggerFactory;
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Include Root",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
+        "excludesitemapexcludes": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Exclude pages Excluded in Sitemap",
           "x-form-type": "materialswitch",
           "x-form-default": false
         },
@@ -323,6 +331,10 @@ public class PagelistModel extends AbstractComponent {
 	@Inject
 	private String includeroot;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	@Inject
+	private String excludesitemapexcludes;
+
 	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
 	@Inject
 	private String levels;
@@ -432,6 +444,11 @@ public class PagelistModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Include Root","x-form-type":"materialswitch","x-form-default":false} */
 	public String getIncluderoot() {
 		return includeroot;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	public String getExcludesitemapexcludes() {
+		return excludesitemapexcludes;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
@@ -545,6 +562,10 @@ public class PagelistModel extends AbstractComponent {
 		return levels == null ? "1" : levels;
 	}
 
+  public String getExcludeSitemapExcludes() {
+		return  excludesitemapexcludes == null ? "false" : excludesitemapexcludes;
+  }
+
 	public String getRootPageTitle() {
 		PerPageManager ppm = getResource().getResourceResolver().adaptTo(PerPageManager.class);
 		PerPage page = ppm.getPage(getRootpage());
@@ -564,11 +585,14 @@ public class PagelistModel extends AbstractComponent {
 		String rootPage = getRootpage();
 		if (rootPage != null) {
 			int levels = Integer.parseInt(getLevels());
+      boolean excludeSitemap = Boolean.parseBoolean(getExcludeSitemapExcludes());
 			PerPageManager ppm = getResource().getResourceResolver().adaptTo(PerPageManager.class);
 			PerPage page = ppm.getPage(getRootpage());
 			if (page != null) {
 				for (PerPage child : page.listChildren()) {
-					if (!child.getPath().equals(page.getPath())) {
+					if ( !(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false))
+							&& (!child.getPath().equals(page.getPath()))
+						) {
 						childPages.add(new Page(child, levels));
 					}
 				}
