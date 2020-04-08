@@ -12,7 +12,8 @@
         description="sample root page of the site"
         name="index"
         template="/content/themecleanflex/templates/base page"
-        templatePath="/content/themecleanflex/templates">
+        templatePath="/content/themecleanflex/templates"
+        excludeFromSitemap="{Boolean}true">
     </jcr:content>
     <index/>
 </jcr:root>
