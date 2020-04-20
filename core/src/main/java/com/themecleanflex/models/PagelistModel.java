@@ -696,6 +696,7 @@ public class PagelistModel extends AbstractComponent {
 
   public List<ReferencedContent> getReferences() {
     List<ReferencedContent> ret = new ArrayList<>();
+    if(references == null) return ret;
     for (IComponent ref : references) {
       Resource res = ref.getResource();
       ValueMap vm = res.adaptTo(ValueMap.class);
@@ -703,7 +704,7 @@ public class PagelistModel extends AbstractComponent {
       String contentField = vm.get("contentfield", String.class) != null ? vm.get("contentfield", String.class) : "text";
       String cssClass = vm.get("cssclass", String.class);
       String tagName = vm.get("htmlelement", String.class);
-      if(contentName != null) {
+      if(contentName != null && tagName != null) {
         Resource content = findResourceWithName(page.getContentResource(), contentName);
         if(content != null) {
           ValueMap props = content.adaptTo(ValueMap.class);
