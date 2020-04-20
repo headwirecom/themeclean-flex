@@ -37,6 +37,47 @@
       "min": 1
     },
     {
+      "type": "collection",
+      "multifield": true,
+      "fieldLabel": [
+        "contentname",
+        "value"
+      ],
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "contentname",
+          "label": "Content Name",
+          "model": "contentname"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "contentfield",
+          "label": "Content Field",
+          "model": "contentfield"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "htmlelement",
+          "label": "HTML Element",
+          "model": "htmlelement"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "cssclass",
+          "label": "CSS Classes",
+          "model": "cssclass"
+        }
+      ],
+      "placeholder": "references",
+      "label": "References",
+      "model": "references"
+    },
+    {
       "type": "input",
       "inputType": "text",
       "placeholder": "anchorname",
@@ -273,6 +314,13 @@
       "visible": "model.fullheight != 'true'",
       "min": 0,
       "max": 300
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "contentname",
+      "label": "Content Name",
+      "model": "contentname"
     }
   ]
 }

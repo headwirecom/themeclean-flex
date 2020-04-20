@@ -233,6 +233,12 @@
           "x-form-min": 0,
           "x-form-max": 300,
           "x-form-visible": "model.fullheight != 'true'"
+        },
+        "contentname": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Content Name",
+          "x-form-type": "text"
         }
       }
     }
