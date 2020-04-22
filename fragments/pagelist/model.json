@@ -18,6 +18,13 @@
           "x-form-type": "materialswitch",
           "x-form-default": false
         },
+        "excludesitemapexcludes": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Exclude pages Excluded in Sitemap",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
         "levels": {
           "type": "string",
           "x-source": "inject",
@@ -25,6 +32,39 @@
           "x-form-label": "Levels",
           "x-form-default": 1,
           "x-form-min": 1
+        },
+        "references": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "References",
+          "x-form-fieldLabel": "contentname",
+          "x-form-type": "collection",
+          "properties": {
+            "contentname": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Content Name",
+              "x-form-type": "text"
+            },
+            "contentfield": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Content Field",
+              "x-form-type": "text"
+            },
+            "htmlelement": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "HTML Element",
+              "x-form-type": "text"
+            },
+            "cssclass": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "CSS Classes",
+              "x-form-type": "text"
+            }
+          }
         },
         "bgref": {
           "x-form-type": "reference",

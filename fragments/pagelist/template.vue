@@ -5,21 +5,25 @@
       <ul class="root" v-if="model.includeroot === 'true'">
         <li class="root">
           <a v-bind:href="$helper.pathToUrl(model.rootPageLink)">{{model.rootPageTitle}}</a>
+          <div v-for="ref in child.references" v-bind:is="ref.htmlElement"
+          v-bind:class="ref.cssClass" v-html="ref.value" v-bind:key="ref.key"></div>
           <ul class="ml-2">
-            <li class="children ml-2" v-for="(child,i) in model.childrenPages" :key="i">
+            <li class="children ml-2" v-for="(child, i) in model.childrenPages" :key="i">
               <a v-bind:href="$helper.pathToUrl(child.path)">{{child.title}}</a>
-              <themecleanflex-components-pagelistnested v-bind:model="child"
-              v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"></themecleanflex-components-pagelistnested>
+              <div v-for="ref in child.references" v-bind:is="ref.htmlElement"
+              v-bind:class="ref.cssClass" v-html="ref.value" v-bind:key="ref.key"></div>
+              <themecleanflex-components-pagelistnested v-bind:model="child" v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"></themecleanflex-components-pagelistnested>
             </li>
           </ul>
         </li>
       </ul>
       <ul class="noroot" v-else>
-        <li class="childrennoroot ml-2" v-for="(child,i) in model.childrenPages"
+        <li class="childrennoroot ml-2" v-for="(child, i) in model.childrenPages"
         :key="i">
           <a v-bind:href="$helper.pathToUrl(child.path)">{{child.title}}</a>
-          <themecleanflex-components-pagelistnested v-bind:model="child"
-          v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"></themecleanflex-components-pagelistnested>
+          <div v-for="ref in child.references" v-bind:is="ref.htmlElement"
+          v-bind:class="ref.cssClass" v-html="ref.value" v-bind:key="ref.key"></div>
+          <themecleanflex-components-pagelistnested v-bind:model="child" v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"></themecleanflex-components-pagelistnested>
         </li>
       </ul>
     </div>
