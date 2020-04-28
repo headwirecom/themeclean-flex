@@ -11,7 +11,6 @@
     jcr:primaryType="per:PageContent"
     sling:resourceType="themecleanflex/components/page"
     jcr:title="themecleanflex root page"
-    brand="themecleanflex"
     template="/content/themecleanflex/templates">
 
     <replacements jcr:primaryType="nt:unstructured">
