@@ -69,3 +69,6 @@ manullay:
 3. Remove the package from /etc/packages including the snapshots if they are still there
 4. Rmove the Bundle using the OSGi Console (/system/console/bundles)
 
+## License
+
+Apache-2.0
