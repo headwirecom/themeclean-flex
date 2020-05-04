@@ -24,9 +24,9 @@ module.exports = {
     	f.addIf($.find('h1').first(), "model.showtitle === 'true'")
         f.addIf($.find('h2').first(), "model.showsubtitle === 'true'")
         f.addIf($.find('p').first(), "model.showtext === 'true'")
-        f.mapRichField($.find('h1').first(), "model.title")
-        f.mapRichField($.find('h2').first(), "model.subtitle")
-        f.mapRichField($.find('p').first(), "model.text")
+        f.mapInlineRichField($.find('h1').first(), "model.title")
+        f.mapInlineRichField($.find('h2').first(), "model.subtitle")
+        f.mapInlineRichField($.find('p').first(), "model.text")
         
         //Buttons
         let buttonsDiv = $.find('div').eq(1)
@@ -52,7 +52,7 @@ module.exports = {
         f.addFor( link, 'model.buttons')
         f.bindAttribute( link, 'href', f.pathToUrl('item.buttonlink'))
         f.bindAttribute( link, 'class', aClasses, false)
-        f.mapRichField( link, "item.buttontext")
+        f.mapInlineRichField( link, 'model.buttons', "buttontext")
         f.addStyle( link, 'backgroundColor', 'item.buttoncolor')
         f.addStyle( link, 'borderColor', 'item.buttoncolor')
 

@@ -58,12 +58,13 @@ module.exports = {
 
         //Title
         f.addIf($.find('h2').first(), 'model.showtitle == \'true\'')
-        f.mapRichField($.find('h2').first(), "item.title")
+        f.mapInlineRichField($.find('h2').first(), "model.cards", "title")
         f.addStyle($.find('h2').first(), 'color', 'item.color')
 
         //Text
-        f.addIf($.find('h2 + div').first(), 'model.showtext == \'true\'')
-        f.mapRichField($.find('h2 + div').first(), "item.text")
+        const text = $.find('h2 + div').first()
+        f.addIf(text, 'model.showtext == \'true\'')
+        f.mapInlineRichField(text, 'model.cards', 'text')
 
         //Button
         let aClasses = `{
@@ -84,7 +85,7 @@ module.exports = {
         f.addIf( a, 'showbutton(item)')
         f.bindAttribute( a, 'href', f.pathToUrl('item.buttonlink'))
         f.bindAttribute( a, 'class', aClasses, false)
-        f.mapRichField( a, "item.buttontext")
+        f.mapInlineRichField( a, "model.cards", "buttontext")
 
         f.addElse($);
         $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')

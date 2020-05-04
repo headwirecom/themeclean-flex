@@ -17,9 +17,9 @@ module.exports = {
 
         f.bindAttribute($.find('div.flex > div').first(), 'style', "{'flex':`0 0 ${model.mediawidth}%`}")
     	f.addIf($.find('h1').first(), 'model.showtitle == \'true\' && model.title')
-        f.mapRichField($.find('h1').first(), "model.title")
+        f.mapInlineRichField($.find('h1').first(), "model.title")
         f.addIf($.find('h2').first(), 'model.showsubtitle == \'true\' && model.subtitle')
-        f.mapRichField($.find('h2').first(), "model.subtitle")
+        f.mapInlineRichField($.find('h2').first(), "model.subtitle")
 
         let a = $.find('a').first()
         f.addFor(a, 'model.tabs')
@@ -45,14 +45,14 @@ module.exports = {
     	f.bindAttribute( a, 'aria-controls', '`tab${_uid}${parseInt(i)+1}`')
     	f.bindAttribute( a, 'aria-selected', 'active === i')
     	f.bindEvent( a, 'click', 'toggleActive(i)')
-        f.mapRichField( a, "item.title")
+        f.mapInlineRichField( a, 'model.tabs', "title")
 
-    	let tabPanel = $.find('[role="tabpanel"]').first()
-    	f.addFor( tabPanel, 'model.tabs')
+    	const tabPanel = $.find('[role="tabpanel"]').first()
+    	f.addFor(tabPanel, 'model.tabs')
     	f.bindAttribute(tabPanel, 'id', '`tab${_uid}${parseInt(i)+1}`')
         f.bindAttribute(tabPanel, 'aria-labelledby', '`tab-control-${_uid}${parseInt(i)+1}`')
     	f.bindAttribute(tabPanel, 'class', "active === i ? 'block opacity-100' : 'hidden'", false)
-        f.mapRichField(tabPanel, "item.text")
+        f.mapInlineRichField(tabPanel, 'model.tabs', 'text')
 
         f.addElse($);
         $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')

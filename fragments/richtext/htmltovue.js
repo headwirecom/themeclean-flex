@@ -2,14 +2,15 @@ module.exports = {
     convert: function($, f) {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
-        f.mapRichField( $.find('div').eq(1), 'model.text')
+
+        f.mapInlineRichField($.find('div').eq(1), 'model.text')
 
         //Content Container
         let containerClasses = `{
             'md:flex-row': model.mediaposition === 'before',
             'md:flex-row-reverse': model.mediaposition === 'after'
         }`
-        f.bindAttribute(  $,  'class', containerClasses, false)
+        f.bindAttribute( $, 'class', containerClasses, false)
 
         //Media
         let mediaDiv  = $.find('.img-wrapper').first()

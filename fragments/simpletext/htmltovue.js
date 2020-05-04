@@ -3,7 +3,7 @@ module.exports = {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
         f.bindAttribute($ ,'is','model.element')
-        f.mapField( $, 'model.text')
+        f.mapInlineRichField( $, 'model.text')
 
         let classes = `{
             'text-4xl font-semibold': model.element === \'h1\',

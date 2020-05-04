@@ -1,8 +1,9 @@
 module.exports = {
     convert: function($, f) {
+    	f.bindPath($)
     	f.addFor($.find('li').first(), 'model.links')
         f.bindAttribute($.find('a').first(), 'href', f.pathToUrl('item.link'))
-        f.mapRichField($.find('a').first(), "item.text")
+        f.mapInlineRichField($.find('a').first(), 'model.links', "text")
 
         let aClasses = `{
             'text-blue-700': model.linkcolor === 'primary',
