@@ -10,15 +10,15 @@
         <div class="footer-col flex-1 lg:mx-4" v-for="(item, i) in model.columns"
         :key="i">
           <h2 class="text-lg font-bold my-2" v-if="item.title !== ''"
-          v-html="item.title" v-bind:data-per-inline-property="`model.columns.${i}.title`"
+          v-html="item.title" v-bind:data-per-inline="`model.columns.${i}.title`"
           data-per-inline-is-rich="false"></h2>
-          <div v-if="item.text !== ''" v-html="item.text" v-bind:data-per-inline-property="`model.columns.${i}.text`"
+          <div v-if="item.text !== ''" v-html="item.text" v-bind:data-per-inline="`model.columns.${i}.text`"
           data-per-inline-is-rich="true"></div>
         </div>
       </div>
       <hr class="border-b">
       <div class="flex items-center flex-wrap justify-between">
-        <p class="my-3" v-html="model.copyright" data-per-inline-property="model.copyright"
+        <p class="my-3" v-html="model.copyright" data-per-inline="model.copyright"
         data-per-inline-is-rich="false"></p>
         <themecleanflex-components-socialicons v-bind:model="model"></themecleanflex-components-socialicons>
       </div>

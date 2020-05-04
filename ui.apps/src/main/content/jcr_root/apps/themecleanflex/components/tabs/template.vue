@@ -4,9 +4,9 @@
     <div class="w-full" v-else>
       <div>
         <h1 class="text-center pb-4" v-if="model.showtitle == 'true' &amp;&amp; model.title"
-        v-html="model.title" data-per-inline-property="model.title" data-per-inline-is-rich="false"></h1>
+        v-html="model.title" data-per-inline="model.title" data-per-inline-is-rich="false"></h1>
         <h2 class="text-center pb-4" v-if="model.showsubtitle == 'true' &amp;&amp; model.subtitle"
-        v-html="model.subtitle" data-per-inline-property="model.subtitle"></h2>
+        v-html="model.subtitle" data-per-inline="model.subtitle"></h2>
       </div>
       <div class="flex flex-col -mx-3" v-bind:class="{
             'lg:flex-row': model.mediaposition === 'before',
@@ -37,14 +37,14 @@
             'text-dark' : active !== i &amp;&amp; model.tabcolor === 'dark' || active === i &amp;&amp; model.tabcolor === 'light',
         }" v-bind:id="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:aria-controls="`tab${_uid}${parseInt(i)+1}`"
             v-bind:aria-selected="active === i" v-on:click="toggleActive(i)" v-html="item.title"
-            v-bind:data-per-inline-property="`model.tabs.${i}.title`" data-per-inline-is-rich="false"></a>
+            v-bind:data-per-inline="`model.tabs.${i}.title`" data-per-inline-is-rich="false"></a>
           </div>
           <!-- Tab Content -->
           <div class="relative">
             <div class="w-full py-3 opacity-0 transition-opacity" role="tabpanel"
             v-for="(item, i) in model.tabs" :key="i" v-bind:id="`tab${_uid}${parseInt(i)+1}`"
             v-bind:aria-labelledby="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:class="active === i ? 'block opacity-100' : 'hidden'"
-            v-html="item.text" v-bind:data-per-inline-property="`model.tabs.${i}.text`"
+            v-html="item.text" v-bind:data-per-inline="`model.tabs.${i}.text`"
             data-per-inline-is-rich="true"></div>
           </div>
         </div>

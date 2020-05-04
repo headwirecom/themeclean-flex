@@ -44,10 +44,10 @@
         }">
             <div>
               <h2 class="text-lg my-3" v-if="model.showtitle == 'true'" v-html="item.title"
-              v-bind:data-per-inline-property="`model.cards.${i}.title`" data-per-inline-is-rich="false"
+              v-bind:data-per-inline="`model.cards.${i}.title`" data-per-inline-is-rich="false"
               v-bind:style="`color:${item.color};`"></h2>
               <div class="my-3" v-if="model.showtext == 'true'" v-html="item.text"
-              v-bind:data-per-inline-property="`model.cards.${i}.text`" data-per-inline-is-rich="true"></div>
+              v-bind:data-per-inline="`model.cards.${i}.text`" data-per-inline-is-rich="true"></div>
             </div>
             <a class="btn my-3" v-if="showbutton(item)" v-bind:href="$helper.pathToUrl(item.buttonlink)"
             v-bind:class="{
@@ -61,7 +61,7 @@
             'self-start': item.buttonalign === 'left',
             'self-center': item.buttonalign === 'center',
             'self-end': item.buttonalign === 'right'
-        }" v-html="item.buttontext" v-bind:data-per-inline-property="`model.cards.${i}.buttontext`"
+        }" v-html="item.buttontext" v-bind:data-per-inline="`model.cards.${i}.buttontext`"
             data-per-inline-is-rich="false"></a>
           </div>
         </div>

@@ -3,7 +3,7 @@
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <pre class="overflow-x-auto" v-bind:class="'language-'+model.language+ ((model.classes) ? ' '+model.classes : '')"
     v-else><code v-bind:class="'language-'+model.language" v-html="code"
-      data-per-inline-property="code"></code>
+      data-per-inline="code"></code>
     </pre>
   </themecleanflex-components-block>
 </template>

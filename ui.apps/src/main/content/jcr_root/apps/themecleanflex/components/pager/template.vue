@@ -3,7 +3,7 @@
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full flex justify-between"
     v-else>
-      <a class="btn" v-html="model.prevlabel" data-per-inline-property="model.prevlabel"
+      <a class="btn" v-html="model.prevlabel" data-per-inline="model.prevlabel"
       data-per-inline-is-rich="false" v-bind:href="$helper.pathToUrl(model.previous)"
       v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
@@ -17,7 +17,7 @@
             'btn-black': model.buttoncolor === 'dark',
             'disabled': model.previous === 'unknown',
         }"></a>
-      <a class="btn" v-html="model.nextlabel" data-per-inline-property="model.nextlabel"
+      <a class="btn" v-html="model.nextlabel" data-per-inline="model.nextlabel"
       data-per-inline-is-rich="false" v-bind:href="$helper.pathToUrl(model.next)"
       v-bind:class="{
             'btn-lg': model.buttonsize === 'large',

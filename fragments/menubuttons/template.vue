@@ -11,7 +11,7 @@
             'btn-orange': item.buttoncolor === 'warning',
             'btn-white': item.buttoncolor === 'light',
             'btn-black': item.buttoncolor === 'dark'
-        }" v-html="item.buttontext" v-bind:data-per-inline-property="`model.buttons.${i}.buttontext`"
+        }" v-html="item.buttontext" v-bind:data-per-inline="`model.buttons.${i}.buttontext`"
     data-per-inline-is-rich="false"></a>
   </div>
 </template>

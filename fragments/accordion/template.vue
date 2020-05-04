@@ -3,7 +3,7 @@
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full" v-else>
       <h2 class="text-xl text-center pb-4" v-if="model.showtitle == 'true'"
-      v-html="model.title" data-per-inline-property="model.title" data-per-inline-is-rich="false"></h2>
+      v-html="model.title" data-per-inline="model.title" data-per-inline-is-rich="false"></h2>
       <div class="flex flex-col -mx-3 flex-grow" v-bind:class="{
             'lg:flex-row': model.mediaposition === 'before',
             'lg:flex-row-reverse': model.mediaposition === 'after'
@@ -37,7 +37,7 @@
         }">
             <a class="flex justify-between items-center p-3 cursor-pointer no-underline"
             v-on:click="toggleItem(i)">
-              <h3 class="text-lg" v-html="item.title" v-bind:data-per-inline-property="`model.accordiontoggle.${i}.title`"
+              <h3 class="text-lg" v-html="item.title" v-bind:data-per-inline="`model.accordiontoggle.${i}.title`"
               data-per-inline-is-rich="false"></h3>
               <svg width="16" height="16" viewBox="0 0 16 16" v-bind:style="`transform:${active[i] ? 'rotate(180deg)': 'rotate(0)'};`">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"

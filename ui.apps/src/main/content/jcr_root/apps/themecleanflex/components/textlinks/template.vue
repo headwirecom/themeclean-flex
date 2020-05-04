@@ -2,7 +2,7 @@
   <ul class="list-none flex flex-col items-center md:flex-row p-0" v-bind:data-per-path="model.path">
     <li class="m-2" v-for="(item, i) in model.links" :key="i">
       <a class="no-underline p-3 hover:underline" v-bind:href="$helper.pathToUrl(item.link)"
-      v-html="item.text" v-bind:data-per-inline-property="`model.links.${i}.text`"
+      v-html="item.text" v-bind:data-per-inline="`model.links.${i}.text`"
       data-per-inline-is-rich="false" v-bind:class="{
             'text-blue-700': model.linkcolor === 'primary',
             'text-green-700 hover:text-green-600': model.linkcolor === 'success',
