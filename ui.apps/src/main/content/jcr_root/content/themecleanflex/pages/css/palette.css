@@ -27,6 +27,18 @@
 
 #peregrine-app .btn {
   color: var(--btn-color);
+  background-color: var(--btn-bg);
+}
+
+#peregrine-app .btn:focus {
+  color: var(--btn-focus-color);
+  background-color: var(--btn-focus-bg);
+  box-shadow: 0 0 0 3px var(--btn-focus-border-color);
+}
+
+#peregrine-app .btn:hover {
+  color: var(--btn-hover-color);
+  background: var(--btn-hover-color);
 }
 
 #peregrine-app .btn.btn-primary {
@@ -34,14 +46,34 @@
   background-color: var(--btn-primary-bg);
 }
 
-#peregrine-app .btn.btn-secondary {
-  border-width: var(--btn-secondary-border-width) !important;
+#peregrine-app .btn.btn-primary:focus {
+  color: var(--btn-primary-focus-color);
+  background-color: var(--btn-primary-focus-bg);
+  box-shadow: 0 0 0 3px var(--btn-primary-focus-border-color);
+}
+
+#peregrine-app .btn.btn-primary:hover {
+  color: var(--btn-primary-hover-color, var(--btn-hover-color, #ffffff));
+  background-color: var(--btn-primary-hover-bg);
 }
 
 #peregrine-app .btn.btn-secondary {
-  color: var(--btn-secondary-color) !important;
-  background-color: var(--btn-secondary-bg) !important;
-  border-color: var(--btn-secondary-boder-color) !important;
+  color: var(--btn-secondary-color);
+  background-color: var(--btn-secondary-bg);
+  border-color: var(--btn-secondary-border-color);
+  border-width: var(--btn-secondary-border-width);
+}
+
+#peregrine-app .btn.btn-secondary:focus {
+  color: var(--btn-secondary-focus-color);
+  background-color: var(--btn-secondary-focus-bg);
+  box-shadow: 0 0 0 3px var(--btn-secondary-focus-border-color);
+  border-color: transparent;
+}
+
+#peregrine-app .btn.btn-secondary:hover {
+  color: var(--btn-secondary-hover-color);
+  background-color: var(--btn-secondary-hover-bg);
 }
 
 #peregrine-app .btn.btn-success {
