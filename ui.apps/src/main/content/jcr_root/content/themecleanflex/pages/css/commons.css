@@ -30,14 +30,32 @@
   --note-caution-bg: var(--color-yellow-200);
   --note-caution-border-color: var(--color-yellow-500);
 
-  --btn-color: var(--color-blue-700);
+  --btn-color: #ffffff;
+  --btn-bg: var(--color-blue-700);
+  --btn-hover-bg: var(--color-blue-800);
+  --btn-hover-color: #ffffff;
+  --btn-focus-color: #ffffff;
+  --btn-focus-bg: var(--color-blue-800);
+  --btn-focus-border-color: var(--color-blue-900);
+
   --btn-primary-color: #ffffff;
+  --btn-primary-bg: var(--color-blue-600);
+  --btn-primary-hover-bg: var(--color-blue-800);
+  --btn-primary-hover-color: #ffffff;
+  --btn-primary-focus-color: var(--btn-primary-color);
+  --btn-primary-focus-bg: var(--btn-focus-bg);
+  --btn-primary-focus-border-color: var(--btn-focus-border-color);
+
   --btn-secondary-bg: var(--color-gray-200);
   --btn-secondary-color: var(--color-gray-800);
   --btn-secondary-border-width: 1px;
-  --btn-secondary-boder-color: var(--color-gray-300);
-
-  --btn-primary-bg: var(--color-blue-600);
+  --btn-secondary-border-color: var(--color-gray-300);
+  --btn-secondary-border-width: 1px;
+  --btn-secondary-hover-bg: var(--color-blue-800);
+  --btn-secondary-hover-color: #ffffff;
+  --btn-secondary-focus-color: var(--btn-primary-color);
+  --btn-secondary-focus-bg: var(--btn-focus-bg);
+  --btn-secondary-focus-border-color: var(--btn-focus-border-color);
 
   --btn-success-bg: var(--color-green-600);
 
