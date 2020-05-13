@@ -11,7 +11,7 @@
     sling:resourceType="themecleanflex/components/page"
     jcr:title="themecleanflex root template"
     brand="themecleanflex"
-    siteCSS="[/content/themecleanflex/pages/css/palettes/default.css,/content/themecleanflex/pages/css/palette.css,/content/themecleanflex/pages/css/commons.css,/etc/felibs/themecleanflex.css,/content/themecleanflex/pages/css/custom.css,https://fonts.googleapis.com/css?family=Montserrat:300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C900%2C900i&amp;amp;display=swap]"
+    siteCSS="[/content/themecleanflex/pages/css/palettes/default.css,/content/themecleanflex/pages/css/palette.css,/content/themecleanflex/pages/css/commons.css,/etc/felibs/themecleanflex.css,/content/themecleanflex/pages/css/custom.css,https://fonts.googleapis.com/css2?family=Inter%3Awght%40300%3B400%3B500%3B600%3B700%3B900%26display%3Dswap]"
     prefetchDNS="[https://www.youtube.com,https://s.ytimg.com,https://www.google.com,https://fonts.gstatic.com,https://www.youtube-nocookie.com]"/>
 
 </jcr:root>
