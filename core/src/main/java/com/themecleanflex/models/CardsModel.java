@@ -488,6 +488,12 @@ import org.apache.sling.models.annotations.Model;
               "x-form-min": 0,
               "x-form-max": 300,
               "x-form-visible": "model.fullheight != 'true'"
+            },
+            "contentname": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Content Name",
+              "x-form-type": "text"
             }
           }
         }
@@ -668,6 +674,10 @@ public class CardsModel extends AbstractComponent {
 	@Inject
 	private String bottompadding;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Content Name","x-form-type":"text"} */
+	@Inject
+	private String contentname;
+
 
 //GEN]
 
@@ -830,6 +840,11 @@ public class CardsModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Bottom Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":300,"x-form-visible":"model.fullheight != 'true'"} */
 	public String getBottompadding() {
 		return bottompadding;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Content Name","x-form-type":"text"} */
+	public String getContentname() {
+		return contentname;
 	}
 
 
