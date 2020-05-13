@@ -1,4 +1,4 @@
-Thanks for contributing to Peregrine CMS!
+<!-- Thanks for contributing to Peregrine CMS! -->
 
 **What does this implement/fix? Explain your changes.**
 
@@ -14,5 +14,4 @@ Thanks for contributing to Peregrine CMS!
 
 **Where has this been tested?**
 
-*Brower (version):* …
-
+*Browser (version):* …
