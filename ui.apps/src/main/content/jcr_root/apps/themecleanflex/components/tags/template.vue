@@ -12,7 +12,7 @@
             'bg-red-600': model.tagcolor === &quot;red&quot;,
             'bg-yellow-600': model.tagcolor === &quot;yellow&quot;
         }" v-bind:href="model.pagelink ? model.pagelink + '.html' + item.value : false"
-      v-bind:is="model.pagelink ? &quot;a&quot;:&quot;div&quot;">{{item.value}}</component>
+      v-bind:is="model.pagelink ? &quot;a&quot;:&quot;div&quot;">{{item.value ? item.value : item.name}}</component>
     </div>
   </themecleanflex-components-block>
 </template>
