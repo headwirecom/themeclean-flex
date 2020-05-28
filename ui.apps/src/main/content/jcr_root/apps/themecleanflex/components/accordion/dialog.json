@@ -63,7 +63,7 @@
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/assets",
+      "browserRoot": "/content/themecleanflex/assets",
       "placeholder": "imagesrc",
       "label": "Image Source",
       "model": "imagesrc",
@@ -71,7 +71,7 @@
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/assets",
+      "browserRoot": "/content/themecleanflex/assets",
       "placeholder": "videosrc",
       "label": "Video Source",
       "model": "videosrc",
@@ -283,7 +283,7 @@
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/assets",
+      "browserRoot": "/content/themecleanflex/assets",
       "placeholder": "bgvideo",
       "label": "Background Video",
       "model": "bgvideo",
@@ -291,7 +291,7 @@
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/assets",
+      "browserRoot": "/content/themecleanflex/assets",
       "placeholder": "bgimage",
       "label": "Background Image",
       "model": "bgimage",

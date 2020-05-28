@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+            jcr:primaryType="per:Page"
+            jcr:title="tf-cl | cardssample"
+            jcr:description="cardssample themecleanflex component library"
+>
+    <jcr:content
+        jcr:primaryType="per:PageContent"
+        sling:resourceType="themecleanflex/components/page"
+        jcr:title="cardssample"
+        description="cardssample themecleanflex component library"
+        brand="themecleanflex"
+        template="/content/themecleanflex/templates"
+            ><clheader
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/themecleanflex/pages/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
+    <links jcr:primaryType="nt:unstructured"></links>
+    <buttons jcr:primaryType="nt:unstructured"></buttons>
+            </clheader><clbreadcrumb
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
+        <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        </clbreadcrumb><pager0
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager0><container175
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/container"
+            htmlelement="main">
+            [object Object]<title1 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title1><cards6
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ff80c0" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="dark" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="color" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c2
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c2><c3
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c3><c4
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c4><c5
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c5></cards>
+        </cards6><title7 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title7><cards12
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ff80c0" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="light" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="color" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c8
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c8><c9
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c9><c10
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c10><c11
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c11></cards>
+        </cards12><title13 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title13><cards18
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ff80c0" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="light" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="color" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c14
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c14><c15
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c15><c16
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c16><c17
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c17></cards>
+        </cards18><title19 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title19><cards24
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ff80c0" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="color" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c20
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c20><c21
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c21><c22
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c22><c23
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c23></cards>
+        </cards24><title25 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title25><cards30
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ff80c0" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="color" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c26
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c26><c27
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c27><c28
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c28><c29
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c29></cards>
+        </cards30><title31 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title31><cards36
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ff8040" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="dark" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="gradient" color2="#0080ff" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c32
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c32><c33
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c33><c34
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c34><c35
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c35></cards>
+        </cards36><title37 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title37><cards42
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ff8040" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="dark" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="gradient" color2="#0080ff" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c38
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c38><c39
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c39><c40
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c40><c41
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c41></cards>
+        </cards42><title43 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title43><cards48
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ff8040" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="light" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="gradient" color2="#0080ff" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c44
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c44><c45
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c45><c46
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c46><c47
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c47></cards>
+        </cards48><title49 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title49><cards54
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ff8040" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="light" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="gradient" color2="#0080ff" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c50
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c50><c51
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c51><c52
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c52><c53
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c53></cards>
+        </cards54><title55 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title55><cards60
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ff8040" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="gradient" color2="#0080ff" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c56
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c56><c57
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c57><c58
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c58><c59
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c59></cards>
+        </cards60><title61 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title61><cards66
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ff8040" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="gradient" color2="#0080ff" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c62
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c62><c63
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c63><c64
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c64><c65
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c65></cards>
+        </cards66><title67 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title67><cards72
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="dark" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c68
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c68><c69
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c69><c70
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c70><c71
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c71></cards>
+        </cards72><title73 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title73><cards78
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="dark" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c74
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c74><c75
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c75><c76
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c76><c77
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c77></cards>
+        </cards78><title79 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title79><cards84
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="light" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c80
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c80><c81
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c81><c82
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c82><c83
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c83></cards>
+        </cards84><title85 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title85><cards90
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="light" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c86
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c86><c87
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c87><c88
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c88><c89
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c89></cards>
+        </cards90><title91 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title91><cards96
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c92
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c92><c93
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c93><c94
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c94><c95
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c95></cards>
+        </cards96><title97 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title97><cards102
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c98
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c98><c99
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c99><c100
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c100><c101
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c101></cards>
+        </cards102><title103 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title103><cards108
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="dark" roundedcorners="large" cardcolor="#ffffff" custombackground="false" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c104
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c104><c105
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c105><c106
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c106><c107
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c107></cards>
+        </cards108><title109 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title109><cards114
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="dark" roundedcorners="large" cardcolor="#ffffff" custombackground="false" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c110
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c110><c111
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c111><c112
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c112><c113
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c113></cards>
+        </cards114><title115 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title115><cards120
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="light" roundedcorners="large" cardcolor="#ffffff" custombackground="false" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c116
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c116><c117
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c117><c118
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c118><c119
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c119></cards>
+        </cards120><title121 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title121><cards126
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="light" roundedcorners="large" cardcolor="#ffffff" custombackground="false" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c122
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c122><c123
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c123><c124
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c124><c125
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c125></cards>
+        </cards126><title127 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title127><cards132
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="" roundedcorners="large" cardcolor="#ffffff" custombackground="false" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c128
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c128><c129
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c129><c130
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c130><c131
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c131></cards>
+        </cards132><title133 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title133><cards138
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="" roundedcorners="large" cardcolor="#ffffff" custombackground="false" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c134
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c134><c135
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c135><c136
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c136><c137
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c137></cards>
+        </cards138><title139 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title139><cards144
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="dark" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c140
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c140><c141
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c141><c142
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c142><c143
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c143></cards>
+        </cards144><title145 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title145><cards150
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="dark" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c146
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c146><c147
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c147><c148
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c148><c149
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c149></cards>
+        </cards150><title151 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title151><cards156
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="light" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c152
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c152><c153
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c153><c154
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c154><c155
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c155></cards>
+        </cards156><title157 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title157><cards162
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="light" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c158
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c158><c159
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c159><c160
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c160><c161
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c161></cards>
+        </cards162><title163 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title163><cards168
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="false"><cards jcr:primaryType="nt:unstructured"><c164
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c164><c165
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c165><c166
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c166><c167
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c167></cards>
+        </cards168><title169 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Cards - Example Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title169><cards174
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/cards" bgcolor="#ffffff" bottompadding="20" showbutton="true" showtext="true" showtitle="true" showcard="true" toppadding="20" customcardcolor="false" colorscheme="" roundedcorners="large" cardcolor="#ffffff" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" fullheight="true"><cards jcr:primaryType="nt:unstructured"><c170
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/organized-small.jpg" imagealttext="Organized rope hanging on a winch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor." title="Card One">
+        </c170><c171
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/boat-rope-hanging-knot_small.jpg" imagealttext="Several sets of rope" text="Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis." title="Card Two">
+        </c171><c172
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/close-up-cordage.jpg" imagealttext="Messy pile of rope" text="Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis." title="Card Three">
+        </c172><c173
+        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="View" buttoncolor="primary" buttonsize="default" buttonalign="center" image="/content/themecleanflex/assets/samples/chain-close-up-daylight-1170601.jpg" imagealttext="Tying a sailor knot" text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." title="Card Four">
+        </c173></cards>
+        </cards174>
+        </container175><pager176
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager176>
+        <clfooter
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logourl="/content/themecleanflex/pages/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
+        <columns jcr:primaryType="nt:unstructured">
+        <c3
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c3><c4
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
+        </c4><c5
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c5></columns>
+<icons jcr:primaryType="nt:unstructured"></icons>
+        </clfooter>        
+        </jcr:content></jcr:root>

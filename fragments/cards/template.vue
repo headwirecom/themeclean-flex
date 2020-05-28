@@ -1,7 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
-    <div class="flex flex-wrap -mx-3"
+    <div class="flex flex-wrap -mx-3 w-full"
     v-else>
       <div class="card my-3 px-0 md:px-3" v-bind:class="{
             'lg:w-full': model.cardsperrow == 1,
@@ -22,7 +22,7 @@
             'w-1/4': model.cardsperrowmobile == 4,
             'w-1/5': model.cardsperrowmobile == 5,
             'w-1/6': model.cardsperrowmobile == 6,
-        }" v-for="(item,i) in model.cards" :key="i">
+        }" v-for="(item, i) in model.cards" :key="i">
         <div class="flex flex-col h-full overflow-hidden" v-bind:style="`background-color:${model.customcardcolor === 'true' &amp;&amp; model.showcard === 'true' ? model.cardcolor: ''};`"
         v-bind:class="{
             'bg-white': model.showcard === 'true' &amp;&amp; model.customcardcolor !== 'true' &amp;&amp; model.colorscheme === 'light',

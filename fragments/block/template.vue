@@ -106,7 +106,10 @@
 
                 case 'image':
                   const overlay = this.model.overlay === 'true' ? `${this.overlayStyle()},` : '' 
-                  return overlay + `url("${this.model.bgimage}")`
+                  if(this.model.bgimage) {
+                    return overlay + `url("${this.model.bgimage}")`
+                  } 
+                  return overlay
 
                 case 'gradient':
                   return `linear-gradient(to right,${this.model.bgcolor},${this.model.color2})`

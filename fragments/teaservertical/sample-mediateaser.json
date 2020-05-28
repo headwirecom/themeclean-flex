@@ -19,12 +19,12 @@
     "buttonsize": "default",
     "buttons": [
       {
-        "buttonlink": "/content/sites/themeclean",
+        "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "See More",
         "buttoncolor": "primary",
         "iconclass": ""
       },{
-        "buttonlink": "/content/sites/themeclean",
+        "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "About Us",
         "buttoncolor": "primary",
         "iconclass": ""
@@ -32,7 +32,7 @@
     ],
     "showmedia": "true",
     "mediatype": "image",
-    "imagesrc": "/content/assets/themecleanflex/samples/beach-bird-s-eye-view-daytime-1249586.jpg",
+    "imagesrc": "/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg",
     "mediatitle": "Bird's eye view of the beach",
     "mediawidth": "50",
     "mediaposition": "after"

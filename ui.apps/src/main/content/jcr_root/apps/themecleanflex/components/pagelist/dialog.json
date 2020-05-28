@@ -2,7 +2,7 @@
   "fields": [
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/sites",
+      "browserRoot": "/content/themecleanflex/pages",
       "placeholder": "rootpage",
       "label": "Root Page",
       "model": "rootpage"
@@ -18,6 +18,16 @@
       "model": "includeroot"
     },
     {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "excludesitemapexcludes",
+      "label": "Exclude pages Excluded in Sitemap",
+      "model": "excludesitemapexcludes"
+    },
+    {
       "type": "input",
       "inputType": "number",
       "placeholder": "levels",
@@ -25,6 +35,47 @@
       "model": "levels",
       "default": 1,
       "min": 1
+    },
+    {
+      "type": "collection",
+      "multifield": true,
+      "fieldLabel": [
+        "contentname",
+        "value"
+      ],
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "contentname",
+          "label": "Content Name",
+          "model": "contentname"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "contentfield",
+          "label": "Content Field",
+          "model": "contentfield"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "htmlelement",
+          "label": "HTML Element",
+          "model": "htmlelement"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "cssclass",
+          "label": "CSS Classes",
+          "model": "cssclass"
+        }
+      ],
+      "placeholder": "references",
+      "label": "References",
+      "model": "references"
     },
     {
       "type": "input",
@@ -133,7 +184,7 @@
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/assets",
+      "browserRoot": "/content/themecleanflex/assets",
       "placeholder": "bgvideo",
       "label": "Background Video",
       "model": "bgvideo",
@@ -141,7 +192,7 @@
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/assets",
+      "browserRoot": "/content/themecleanflex/assets",
       "placeholder": "bgimage",
       "label": "Background Image",
       "model": "bgimage",
@@ -263,6 +314,13 @@
       "visible": "model.fullheight != 'true'",
       "min": 0,
       "max": 300
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "contentname",
+      "label": "Content Name",
+      "model": "contentname"
     }
   ]
 }

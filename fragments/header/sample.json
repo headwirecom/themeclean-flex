@@ -11,27 +11,27 @@
     "bottompadding": "10",
     "bgvideo": "https://www.youtube.com/embed/Ju86mknumYM",
     "collapsed": "false",
-    "logo": "/content/assets/themecleanflex/samples/peregrine-logo.svg",
+    "logo": "/content/themecleanflex/assets/samples/peregrine-logo.svg",
     "logoalttext": "Peregrine CMS Logo",
     "logourl": "http://www.peregrine-cms.com",
     "logosize": "60",
     "buttonsize": "default",
     "links": [
       {
-        "link": "/content/sites/themeclean",
+        "link": "/content/themecleanflex/pages",
         "text": "Services"
       },{
-        "link": "/content/sites/themeclean",
+        "link": "/content/themecleanflex/pages",
         "text": "About Us"
       },{
-        "link": "/content/sites/themeclean",
+        "link": "/content/themecleanflex/pages",
         "text": "Contact Us"
       }
     ],
     "linkcolor": "dark",
     "buttons": [
       {
-        "buttonlink": "/content/sites/themeclean",
+        "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "Try It Now",
         "buttoncolor": "primary"
       }

@@ -146,7 +146,7 @@
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/assets",
+      "browserRoot": "/content/themecleanflex/assets",
       "placeholder": "bgvideo",
       "label": "Background Video",
       "model": "bgvideo",
@@ -154,7 +154,7 @@
     },
     {
       "type": "pathbrowser",
-      "browserRoot": "/content/assets",
+      "browserRoot": "/content/themecleanflex/assets",
       "placeholder": "bgimage",
       "label": "Background Image",
       "model": "bgimage",
@@ -276,6 +276,13 @@
       "visible": "model.fullheight != 'true'",
       "min": 0,
       "max": 300
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "contentname",
+      "label": "Content Name",
+      "model": "contentname"
     }
   ]
 }

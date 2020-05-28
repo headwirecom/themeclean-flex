@@ -14,11 +14,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:styles && node ./src/main/content/buildscripts/buildvue.js themecleanflex",
+    "build": "node node/node_modules/npm run build:styles && node ./src/main/content/buildscripts/buildvue.js themecleanflex",
     "build:componentlibrary": "node ./src/main/content/buildscripts/cl.js",
     "build:styles": "postcss -c ./postcss.config.js -o ./src/main/content/jcr_root/etc/felibs/themecleanflex/css/build.css ./src/main/content/jcr_root/etc/felibs/themecleanflex/styles.css",
     "build:iconsprites": "node ./src/main/content/buildscripts/buildicons.js",
-    "build:screenshots": "cross-var node src/main/content/buildscripts/validatepage.js http://$npm_package_config_host:$npm_package_config_port/content/sites/themecleanflex /library.html"
+    "build:screenshots": "cross-var node src/main/content/buildscripts/validatepage.js http://$npm_package_config_host:$npm_package_config_port/content/themecleanflex/pages /library.html"
   },
   "author": "",
   "license": "Apache-2.0",

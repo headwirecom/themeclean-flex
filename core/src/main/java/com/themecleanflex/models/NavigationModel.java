@@ -4,6 +4,9 @@ import com.peregrine.adaption.PerPage;
 import com.peregrine.adaption.PerPageManager;
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
+import java.util.ArrayList;
+import java.util.List;
+import javax.inject.Inject;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
@@ -11,10 +14,6 @@ import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import javax.inject.Inject;
-import java.util.ArrayList;
-import java.util.List;
 
 /*
     //GEN[:DATA
@@ -29,7 +28,7 @@ import java.util.List;
           "x-source": "inject",
           "x-form-type": "pathbrowser",
           "x-form-label": "Root Page",
-          "x-form-browserRoot": "/content/sites"
+          "x-form-browserRoot": "/content/themecleanflex/pages"
         },
         "justifyitems": {
           "type": "string",
@@ -166,7 +165,7 @@ import java.util.List;
               "x-form-type": "pathbrowser",
               "x-form-visible": "model.backgroundtype == 'video' and model.custombackground == 'true'",
               "x-default": "https://www.youtube.com/embed/Ju86mknumYM",
-              "x-form-browserRoot": "/content/assets"
+              "x-form-browserRoot": "/content/themecleanflex/assets"
             },
             "bgimage": {
               "type": "string",
@@ -174,7 +173,7 @@ import java.util.List;
               "x-form-label": "Background Image",
               "x-form-type": "pathbrowser",
               "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
-              "x-form-browserRoot": "/content/assets"
+              "x-form-browserRoot": "/content/themecleanflex/assets"
             },
             "bgxposition": {
               "type": "string",
@@ -322,7 +321,7 @@ public class NavigationModel extends AbstractComponent {
     public NavigationModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/sites"} */
+    	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
 	@Inject
 	private String rootpage;
 
@@ -358,12 +357,12 @@ public class NavigationModel extends AbstractComponent {
 	@Inject
 	private String backgroundtype;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Background Video","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'video' and model.custombackground == 'true'","x-default":"https://www.youtube.com/embed/Ju86mknumYM","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Video","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'video' and model.custombackground == 'true'","x-default":"https://www.youtube.com/embed/Ju86mknumYM","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	@Inject
 	@Default(values ="https://www.youtube.com/embed/Ju86mknumYM")
 	private String bgvideo;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Background Image","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Image","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	@Inject
 	private String bgimage;
 
@@ -428,7 +427,7 @@ public class NavigationModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/sites"} */
+    	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
 	public String getRootpage() {
 		return rootpage;
 	}
@@ -468,12 +467,12 @@ public class NavigationModel extends AbstractComponent {
 		return backgroundtype;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Background Video","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'video' and model.custombackground == 'true'","x-default":"https://www.youtube.com/embed/Ju86mknumYM","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Video","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'video' and model.custombackground == 'true'","x-default":"https://www.youtube.com/embed/Ju86mknumYM","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	public String getBgvideo() {
 		return bgvideo;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Background Image","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Image","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	public String getBgimage() {
 		return bgimage;
 	}

@@ -110,7 +110,7 @@
           "x-form-type": "pathbrowser",
           "x-form-visible": "model.backgroundtype == 'video' and model.custombackground == 'true'",
           "x-default": "https://www.youtube.com/embed/Ju86mknumYM",
-          "x-form-browserRoot": "/content/assets"
+          "x-form-browserRoot": "/content/themecleanflex/assets"
         },
         "bgimage": {
           "type": "string",
@@ -118,7 +118,7 @@
           "x-form-label": "Background Image",
           "x-form-type": "pathbrowser",
           "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
-          "x-form-browserRoot": "/content/assets"
+          "x-form-browserRoot": "/content/themecleanflex/assets"
         },
         "bgxposition": {
           "type": "string",
@@ -233,6 +233,12 @@
           "x-form-min": 0,
           "x-form-max": 300,
           "x-form-visible": "model.fullheight != 'true'"
+        },
+        "contentname": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Content Name",
+          "x-form-type": "text"
         }
       }
     }

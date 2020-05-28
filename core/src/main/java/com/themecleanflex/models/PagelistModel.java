@@ -4,7 +4,13 @@ import com.peregrine.adaption.PerPage;
 import com.peregrine.adaption.PerPageManager;
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
+import java.util.ArrayList;
+import java.util.List;
+import javax.inject.Inject;
+import javax.swing.text.html.parser.TagElement;
+
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
@@ -12,10 +18,7 @@ import org.apache.sling.models.annotations.Model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.inject.Inject;
-import java.util.ArrayList;
-import java.util.List;
-
+import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
 /*
     //GEN[:DATA
     {
@@ -29,12 +32,19 @@ import java.util.List;
           "x-source": "inject",
           "x-form-type": "pathbrowser",
           "x-form-label": "Root Page",
-          "x-form-browserRoot": "/content/sites"
+          "x-form-browserRoot": "/content/themecleanflex/pages"
         },
         "includeroot": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Include Root",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
+        "excludesitemapexcludes": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Exclude pages Excluded in Sitemap",
           "x-form-type": "materialswitch",
           "x-form-default": false
         },
@@ -45,6 +55,39 @@ import java.util.List;
           "x-form-label": "Levels",
           "x-form-default": 1,
           "x-form-min": 1
+        },
+        "references": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "References",
+          "x-form-fieldLabel": "contentname",
+          "x-form-type": "collection",
+          "properties": {
+            "contentname": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Content Name",
+              "x-form-type": "text"
+            },
+            "contentfield": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Content Field",
+              "x-form-type": "text"
+            },
+            "htmlelement": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "HTML Element",
+              "x-form-type": "text"
+            },
+            "cssclass": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "CSS Classes",
+              "x-form-type": "text"
+            }
+          }
         },
         "bgref": {
           "x-form-type": "reference",
@@ -160,7 +203,7 @@ import java.util.List;
               "x-form-type": "pathbrowser",
               "x-form-visible": "model.backgroundtype == 'video' and model.custombackground == 'true'",
               "x-default": "https://www.youtube.com/embed/Ju86mknumYM",
-              "x-form-browserRoot": "/content/assets"
+              "x-form-browserRoot": "/content/themecleanflex/assets"
             },
             "bgimage": {
               "type": "string",
@@ -168,7 +211,7 @@ import java.util.List;
               "x-form-label": "Background Image",
               "x-form-type": "pathbrowser",
               "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
-              "x-form-browserRoot": "/content/assets"
+              "x-form-browserRoot": "/content/themecleanflex/assets"
             },
             "bgxposition": {
               "type": "string",
@@ -283,6 +326,12 @@ import java.util.List;
               "x-form-min": 0,
               "x-form-max": 300,
               "x-form-visible": "model.fullheight != 'true'"
+            },
+            "contentname": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Content Name",
+              "x-form-type": "text"
             }
           }
         }
@@ -316,7 +365,7 @@ public class PagelistModel extends AbstractComponent {
     public PagelistModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/sites"} */
+    	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
 	@Inject
 	private String rootpage;
 
@@ -324,9 +373,17 @@ public class PagelistModel extends AbstractComponent {
 	@Inject
 	private String includeroot;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	@Inject
+	private String excludesitemapexcludes;
+
 	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
 	@Inject
 	private String levels;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"References","x-form-fieldLabel":"contentname","x-form-type":"collection","properties":{"contentname":{"type":"string","x-source":"inject","x-form-label":"Content Name","x-form-type":"text"},"contentfield":{"type":"string","x-source":"inject","x-form-label":"Content Field","x-form-type":"text"},"htmlelement":{"type":"string","x-source":"inject","x-form-label":"HTML Element","x-form-type":"text"},"cssclass":{"type":"string","x-source":"inject","x-form-label":"CSS Classes","x-form-type":"text"}}} */
+	@Inject
+	private List<IComponent> references;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
@@ -355,12 +412,12 @@ public class PagelistModel extends AbstractComponent {
 	@Inject
 	private String backgroundtype;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Background Video","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'video' and model.custombackground == 'true'","x-default":"https://www.youtube.com/embed/Ju86mknumYM","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Video","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'video' and model.custombackground == 'true'","x-default":"https://www.youtube.com/embed/Ju86mknumYM","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	@Inject
 	@Default(values ="https://www.youtube.com/embed/Ju86mknumYM")
 	private String bgvideo;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Background Image","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Image","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	@Inject
 	private String bgimage;
 
@@ -421,11 +478,15 @@ public class PagelistModel extends AbstractComponent {
 	@Inject
 	private String bottompadding;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Content Name","x-form-type":"text"} */
+	@Inject
+	private String contentname;
+
 
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/sites"} */
+    	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
 	public String getRootpage() {
 		return rootpage;
 	}
@@ -433,6 +494,16 @@ public class PagelistModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Include Root","x-form-type":"materialswitch","x-form-default":false} */
 	public String getIncluderoot() {
 		return includeroot;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	public String getExcludesitemapexcludes() {
+		return excludesitemapexcludes;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"References","x-form-fieldLabel":"contentname","x-form-type":"collection","properties":{"contentname":{"type":"string","x-source":"inject","x-form-label":"Content Name","x-form-type":"text"},"contentfield":{"type":"string","x-source":"inject","x-form-label":"Content Field","x-form-type":"text"},"htmlelement":{"type":"string","x-source":"inject","x-form-label":"HTML Element","x-form-type":"text"},"cssclass":{"type":"string","x-source":"inject","x-form-label":"CSS Classes","x-form-type":"text"}}} */
+	public List<IComponent> getReferences() {
+		return references;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
@@ -465,12 +536,12 @@ public class PagelistModel extends AbstractComponent {
 		return backgroundtype;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Background Video","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'video' and model.custombackground == 'true'","x-default":"https://www.youtube.com/embed/Ju86mknumYM","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Video","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'video' and model.custombackground == 'true'","x-default":"https://www.youtube.com/embed/Ju86mknumYM","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	public String getBgvideo() {
 		return bgvideo;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Background Image","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Background Image","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	public String getBgimage() {
 		return bgimage;
 	}
@@ -535,6 +606,11 @@ public class PagelistModel extends AbstractComponent {
 		return bottompadding;
 	}
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Content Name","x-form-type":"text"} */
+	public String getContentname() {
+		return contentname;
+	}
+
 
 //GEN]
 
@@ -545,6 +621,10 @@ public class PagelistModel extends AbstractComponent {
 	public String getLevels() {
 		return levels == null ? "1" : levels;
 	}
+
+  public String getExcludeSitemapExcludes() {
+		return  excludesitemapexcludes == null ? "false" : excludesitemapexcludes;
+  }
 
 	public String getRootPageTitle() {
 		PerPageManager ppm = getResource().getResourceResolver().adaptTo(PerPageManager.class);
@@ -565,12 +645,15 @@ public class PagelistModel extends AbstractComponent {
 		String rootPage = getRootpage();
 		if (rootPage != null) {
 			int levels = Integer.parseInt(getLevels());
+      boolean excludeSitemap = Boolean.parseBoolean(getExcludeSitemapExcludes());
 			PerPageManager ppm = getResource().getResourceResolver().adaptTo(PerPageManager.class);
 			PerPage page = ppm.getPage(getRootpage());
 			if (page != null) {
 				for (PerPage child : page.listChildren()) {
-					if (!child.getPath().equals(page.getPath())) {
-						childPages.add(new Page(child, levels));
+					if ( !(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false))
+							&& (!child.getPath().equals(page.getPath()))
+						) {
+						childPages.add(new Page(child, levels, getReferences()));
 					}
 				}
 			}
@@ -582,17 +665,24 @@ public class PagelistModel extends AbstractComponent {
 
 	private PerPage page;
 	private int levels;
+  private List<IComponent> references;
 
-	public Page(PerPage page) {
+	// public Page(PerPage page) {
+	// 	this.page = page;
+	// }
+
+	// public Page(PerPage page, int levels) {
+	// 	this.page = page;
+	// 	this.levels = levels;
+	// }
+
+	public Page(PerPage page, int levels, List<IComponent> references) {
 		this.page = page;
-	}
+    this.levels = levels;
+    this.references = references;
+  }
 
-	public Page(PerPage page, int levels) {
-		this.page = page;
-		this.levels = levels;
-	}
-
-	public String getTitle() {
+  public String getTitle() {
 		return page.getTitle();
 	}
 
@@ -604,23 +694,98 @@ public class PagelistModel extends AbstractComponent {
 		return levels;
 	}
 
-	public Boolean getHasChildren() {
+  public List<ReferencedContent> getReferences() {
+    List<ReferencedContent> ret = new ArrayList<>();
+    if(references == null) return ret;
+    for (IComponent ref : references) {
+      Resource res = ref.getResource();
+      ValueMap vm = res.adaptTo(ValueMap.class);
+      String contentName = vm.get("contentname", String.class);
+      String contentField = vm.get("contentfield", String.class) != null ? vm.get("contentfield", String.class) : "text";
+      String cssClass = vm.get("cssclass", String.class);
+      String tagName = vm.get("htmlelement", String.class);
+      if(contentName != null && tagName != null) {
+        Resource content = findResourceWithName(page.getContentResource(), contentName);
+        if(content != null) {
+          ValueMap props = content.adaptTo(ValueMap.class);
+          String value = props.get(contentField, String.class); 
+          ret.add(new ReferencedContent(contentField, value, tagName, cssClass, content.getPath()));
+        }
+      }
+    }
+    return ret;
+  }
+
+	private Resource findResourceWithName(Resource resource, String contentName) {
+    ValueMap vm = resource.adaptTo(ValueMap.class);
+    String contentname = vm.get("contentname", String.class);
+    if(contentName.equals(contentname)) {
+      return resource;
+    }
+    for (Resource child : resource.getChildren()) {
+      Resource ret = findResourceWithName(child, contentName);
+      if(ret != null) {
+        return ret;
+      }
+    }
+    return null;
+  }
+
+  public Boolean getHasChildren() {
 		return levels <= 1 ? false : true;
 	}
 
 	public List<Page> getChildrenPages() {
 		List<Page> childPages = new ArrayList<Page>();
-		System.out.println();
 		if(page != null) {
 			for (PerPage child: page.listChildren()) {
-				if(!child.getPath().equals(page.getPath())) {
-					childPages.add(new Page(child, levels-1));
+				if(levels > 0 && !child.getPath().equals(page.getPath())) {
+					childPages.add(new Page(child, levels-1, references));
 				}
 			}
 		}
 		return childPages;
 	}
 }
+
+class ReferencedContent {
+
+  private String path;
+  private String contentField;
+  private String value;
+  private String htmlElement;
+  private String cssClass;
+
+  public ReferencedContent(String contentField, String value, String htmlElement, String cssClass, String path) {
+    this.path = path;
+    this.contentField = contentField;
+    this.value = value;
+    this.htmlElement = htmlElement;
+    this.cssClass = cssClass;
+  }
+
+  public String getKey() {
+    return path + '.' + contentField;
+  }
+
+  public String getContentField() {
+    return contentField;
+  }
+
+  public String getValue() {
+    return value;
+  }
+
+  public String getHtmlElement() {
+    return htmlElement;
+  }
+
+  public String getCssClass() {
+    return cssClass;
+  }
+
+}
+
     //GEN]
 
 }

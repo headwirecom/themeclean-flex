@@ -4,7 +4,7 @@
   "model": {
     "bottompadding": "0",
     "toppadding": "0",
-    "rootpage": "/content/sites/themecleanflex",
+    "rootpage": "/content/themecleanflex/pages",
     "justifyitems": "end"
   }
 }

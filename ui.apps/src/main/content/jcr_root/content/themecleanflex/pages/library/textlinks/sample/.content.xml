@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+            jcr:primaryType="per:Page"
+            jcr:title="tf-cl | textlinkssample"
+            jcr:description="textlinkssample themecleanflex component library"
+>
+    <jcr:content
+        jcr:primaryType="per:PageContent"
+        sling:resourceType="themecleanflex/components/page"
+        jcr:title="textlinkssample"
+        description="textlinkssample themecleanflex component library"
+        brand="themecleanflex"
+        template="/content/themecleanflex/templates"
+            ><clheader
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/themecleanflex/pages/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
+    <links jcr:primaryType="nt:unstructured"></links>
+    <buttons jcr:primaryType="nt:unstructured"></buttons>
+            </clheader><clbreadcrumb
+        colorscheme="light"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
+        <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        </clbreadcrumb><pager0
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager0><container146
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/container"
+            htmlelement="main">
+            [object Object]<title1 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title1><textlinks5
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="dark" fullheight="true"><links jcr:primaryType="nt:unstructured"><c2
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c2><c3
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c3><c4
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c4></links>
+        </textlinks5><title6 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title6><textlinks10
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light" fullheight="false"><links jcr:primaryType="nt:unstructured"><c7
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c7><c8
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c8><c9
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c9></links>
+        </textlinks10><title11 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title11><textlinks15
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light" fullheight="true"><links jcr:primaryType="nt:unstructured"><c12
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c12><c13
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c13><c14
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c14></links>
+        </textlinks15><title16 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title16><textlinks20
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="" fullheight="false"><links jcr:primaryType="nt:unstructured"><c17
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c17><c18
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c18><c19
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c19></links>
+        </textlinks20><title21 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title21><textlinks25
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="" fullheight="true"><links jcr:primaryType="nt:unstructured"><c22
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c22><c23
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c23><c24
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c24></links>
+        </textlinks25><title26 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title26><textlinks30
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="dark" fullheight="false"><links jcr:primaryType="nt:unstructured"><c27
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c27><c28
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c28><c29
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c29></links>
+        </textlinks30><title31 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title31><textlinks35
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="dark" fullheight="true"><links jcr:primaryType="nt:unstructured"><c32
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c32><c33
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c33><c34
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c34></links>
+        </textlinks35><title36 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title36><textlinks40
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="light" fullheight="false"><links jcr:primaryType="nt:unstructured"><c37
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c37><c38
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c38><c39
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c39></links>
+        </textlinks40><title41 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title41><textlinks45
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="light" fullheight="true"><links jcr:primaryType="nt:unstructured"><c42
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c42><c43
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c43><c44
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c44></links>
+        </textlinks45><title46 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title46><textlinks50
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="" fullheight="false"><links jcr:primaryType="nt:unstructured"><c47
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c47><c48
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c48><c49
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c49></links>
+        </textlinks50><title51 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title51><textlinks55
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="" fullheight="true"><links jcr:primaryType="nt:unstructured"><c52
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c52><c53
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c53><c54
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c54></links>
+        </textlinks55><title56 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title56><textlinks60
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="false"><links jcr:primaryType="nt:unstructured"><c57
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c57><c58
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c58><c59
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c59></links>
+        </textlinks60><title61 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title61><textlinks65
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="true"><links jcr:primaryType="nt:unstructured"><c62
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c62><c63
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c63><c64
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c64></links>
+        </textlinks65><title66 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title66><textlinks70
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="false"><links jcr:primaryType="nt:unstructured"><c67
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c67><c68
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c68><c69
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c69></links>
+        </textlinks70><title71 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title71><textlinks75
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="true"><links jcr:primaryType="nt:unstructured"><c72
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c72><c73
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c73><c74
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c74></links>
+        </textlinks75><title76 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title76><textlinks80
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="false"><links jcr:primaryType="nt:unstructured"><c77
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c77><c78
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c78><c79
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c79></links>
+        </textlinks80><title81 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title81><textlinks85
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="true"><links jcr:primaryType="nt:unstructured"><c82
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c82><c83
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c83><c84
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c84></links>
+        </textlinks85><title86 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title86><textlinks90
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="false" colorscheme="dark" fullheight="false"><links jcr:primaryType="nt:unstructured"><c87
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c87><c88
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c88><c89
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c89></links>
+        </textlinks90><title91 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title91><textlinks95
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="false" colorscheme="dark" fullheight="true"><links jcr:primaryType="nt:unstructured"><c92
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c92><c93
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c93><c94
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c94></links>
+        </textlinks95><title96 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title96><textlinks100
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="false" colorscheme="light" fullheight="false"><links jcr:primaryType="nt:unstructured"><c97
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c97><c98
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c98><c99
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c99></links>
+        </textlinks100><title101 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title101><textlinks105
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="false" colorscheme="light" fullheight="true"><links jcr:primaryType="nt:unstructured"><c102
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c102><c103
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c103><c104
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c104></links>
+        </textlinks105><title106 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title106><textlinks110
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="false" colorscheme="" fullheight="false"><links jcr:primaryType="nt:unstructured"><c107
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c107><c108
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c108><c109
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c109></links>
+        </textlinks110><title111 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title111><textlinks115
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="false" colorscheme="" fullheight="true"><links jcr:primaryType="nt:unstructured"><c112
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c112><c113
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c113><c114
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c114></links>
+        </textlinks115><title116 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title116><textlinks120
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="false"><links jcr:primaryType="nt:unstructured"><c117
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c117><c118
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c118><c119
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c119></links>
+        </textlinks120><title121 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title121><textlinks125
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="true"><links jcr:primaryType="nt:unstructured"><c122
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c122><c123
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c123><c124
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c124></links>
+        </textlinks125><title126 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title126><textlinks130
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="false"><links jcr:primaryType="nt:unstructured"><c127
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c127><c128
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c128><c129
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c129></links>
+        </textlinks130><title131 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title131><textlinks135
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="true"><links jcr:primaryType="nt:unstructured"><c132
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c132><c133
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c133><c134
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c134></links>
+        </textlinks135><title136 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+        </title136><textlinks140
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="false"><links jcr:primaryType="nt:unstructured"><c137
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c137><c138
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c138><c139
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c139></links>
+        </textlinks140><title141 jcr:primaryType="nt:unstructured" 
+            sling:resourceType="themecleanflex/components/richtext" 
+            toppadding="25"
+            bottompadding="25"
+            custombackground="true"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            text="&lt;h2&gt;Text Links Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+        </title141><textlinks145
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/textlinks" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="true"><links jcr:primaryType="nt:unstructured"><c142
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark">
+        </c142><c143
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark">
+        </c143><c144
+        jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark">
+        </c144></links>
+        </textlinks145>
+        </container146><pager147
+        colorscheme="light"
+        toppadding="30"
+        bottompadding="30"
+        custombackground="false"
+        backgroundtype="color"
+        bgcolor="#eeeeee"
+        htmlelement="nav"
+        prevlabel="&lt; previous"
+        nextlabel="next &gt;"
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager147>
+        <clfooter
+        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logourl="/content/themecleanflex/pages/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
+        <columns jcr:primaryType="nt:unstructured">
+        <c3
+        jcr:primaryType="nt:unstructured" title="" text="">
+        </c3><c4
+        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
+        </c4><c5
+        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+        </c5></columns>
+<icons jcr:primaryType="nt:unstructured"></icons>
+        </clfooter>        
+        </jcr:content></jcr:root>

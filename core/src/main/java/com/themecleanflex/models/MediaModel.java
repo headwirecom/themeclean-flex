@@ -2,16 +2,12 @@ package com.themecleanflex.models;
 
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
-import com.peregrine.nodetypes.models.Container;
+import javax.inject.Inject;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
-import java.util.List;
-
-import javax.inject.Inject;
-import javax.inject.Named;
 
 /*
     //GEN[:DATA
@@ -78,7 +74,7 @@ import javax.inject.Named;
           "x-form-label": "Image Source",
           "x-form-visible": "model.mediatype == 'image'",
           "x-form-type": "pathbrowser",
-          "x-form-browserRoot": "/content/assets"
+          "x-form-browserRoot": "/content/themecleanflex/assets"
         },
         "videosrc": {
           "type": "string",
@@ -86,7 +82,7 @@ import javax.inject.Named;
           "x-form-label": "Video Source",
           "x-form-visible": "model.mediatype == 'video'",
           "x-form-type": "pathbrowser",
-          "x-form-browserRoot": "/content/assets"
+          "x-form-browserRoot": "/content/themecleanflex/assets"
         },
         "mediatitle": {
           "type": "string",
@@ -152,11 +148,11 @@ public class MediaModel extends AbstractComponent {
 	@Default(values ="#000000")
 	private String mediaiconcolor;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	@Inject
 	private String imagesrc;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	@Inject
 	private String videosrc;
 
@@ -193,12 +189,12 @@ public class MediaModel extends AbstractComponent {
 		return mediaiconcolor;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	public String getImagesrc() {
 		return imagesrc;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	public String getVideosrc() {
 		return videosrc;
 	}

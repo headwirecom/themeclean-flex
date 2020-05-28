@@ -14,7 +14,7 @@ var SVGSpriter = require('svg-sprite'),
     })
 
 var basePath = path.resolve('./src/main/content/jcr_root');
-var iconPath = basePath + '/content/assets/themecleanflex/icons';
+var iconPath = basePath + '/content/themecleanflex/assets/icons';
 
 // Find SVG files recursively via `glob`
 glob.glob('**/*.svg', { cwd: iconPath }, function (err, files) {

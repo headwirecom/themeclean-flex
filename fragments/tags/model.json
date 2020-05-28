@@ -44,7 +44,7 @@
           "x-source": "inject",
           "x-form-label": "Tag Link Base Path",
           "x-form-type": "pathbrowser",
-          "x-form-browserRoot": "/content/sites"
+          "x-form-browserRoot": "/content/themecleanflex/pages"
         },
         "bgref": {
           "$ref": "fragments/block/model.json#/definitions/Block",
