@@ -15,5 +15,7 @@ module.exports = {
         }`
 
         f.bindAttribute($.find('a').first(), 'class', aClasses, false)
+
+        f.bindEvent( $.find('a').first(), 'click', 'toggle');
     }
 }

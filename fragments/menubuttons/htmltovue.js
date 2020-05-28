@@ -14,10 +14,12 @@ module.exports = {
             'btn-black': item.buttoncolor === 'dark'
         }`
 
-        let a = $.find('a')
-    	f.addFor( a, 'model.buttons')
-        f.bindAttribute( a, 'href', f.pathToUrl('item.buttonlink'))
-        f.bindAttribute( a, 'class', aClasses, false)
-        f.mapRichField( a, "item.buttontext")
+        let a = $.find('a');
+    	f.addFor( a, 'model.buttons');
+        f.bindAttribute( a, 'href', f.pathToUrl('item.buttonlink'));
+        f.bindAttribute( a, 'class', aClasses, false);
+        f.bindEvent( a, 'click', 'toggle');
+        f.mapRichField( a, "item.buttontext");
+
     }
 }

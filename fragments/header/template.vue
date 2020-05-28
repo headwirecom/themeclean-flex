@@ -21,9 +21,9 @@
       <div v-bind:style="`height:${menuActive ? menuHeight + 'px' : '0px'};`"
       v-bind:class="{'invisible': !menuActive}">
         <div ref="autoHeight" class="p-4 flex flex-col md:flex-row justify-end">
-          <themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>
+          <themecleanflex-components-textlinks v-bind:model="model" @togglemenu="toggleMenu"></themecleanflex-components-textlinks>
           <themecleanflex-components-menubuttons
-          v-bind:model="model"></themecleanflex-components-menubuttons>
+          v-bind:model="model" @togglemenu="toggleMenu"></themecleanflex-components-menubuttons>
         </div>
       </div>
     </nav>
