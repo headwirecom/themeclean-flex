@@ -1,6 +1,6 @@
 <template>
   <ul class="list-none flex flex-col items-center md:flex-row p-0">
-    <li class="m-2" v-for="(item,i) in model.links" :key="i">
+    <li class="m-2" v-for="(item,i) in model.links" :key="i" v-on:click="toggle">
       <a class="no-underline p-3 hover:underline" v-bind:href="$helper.pathToUrl(item.link)"
       v-html="item.text" v-bind:class="{
             'text-blue-700': model.linkcolor === 'primary',
@@ -14,15 +14,21 @@
     </li>
   </ul>
 </template>
-
 <script>
     export default {
-        props: ['model'],
+        props: {
+          model: Object, 
+          toggleMenu: Function
+        },
         computed: {
           activeClass (url) {
             return {'font-bold': this.$data.path === url}
           }
+        },
+        methods: {
+          toggle: function() {
+            this.$emit('toggleMenu');
+          }
         }
     }
 </script>
-

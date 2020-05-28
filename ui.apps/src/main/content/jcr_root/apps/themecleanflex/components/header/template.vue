@@ -21,15 +21,14 @@
       <div v-bind:style="`height:${menuActive ? menuHeight + 'px' : '0px'};`"
       v-bind:class="{'invisible': !menuActive}">
         <div ref="autoHeight" class="p-4 flex flex-col md:flex-row justify-end">
-          <themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>
+          <themecleanflex-components-textlinks v-bind:model="model" @toggleMenu="toggleMenu"></themecleanflex-components-textlinks>
           <themecleanflex-components-menubuttons
-          v-bind:model="model"></themecleanflex-components-menubuttons>
+          v-bind:model="model" v-on:click="toggleMenu"></themecleanflex-components-menubuttons>
         </div>
       </div>
     </nav>
   </themecleanflex-components-block>
 </template>
-
 <script>
     export default {
         props: ['model'],
