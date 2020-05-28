@@ -19,7 +19,7 @@
     export default {
         props: {
           model: Object, 
-          toggleMenu: Function
+          tog: Function
         },
         computed: {
           activeClass (url) {
@@ -28,7 +28,8 @@
         },
         methods: {
           toggle: function() {
-            this.$emit('toggleMenu');
+            console.log('toggled')
+            this.$emit('tog');
           }
         }
     }

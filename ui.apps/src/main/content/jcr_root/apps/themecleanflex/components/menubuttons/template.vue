@@ -18,11 +18,11 @@
     export default {
         props: {
           model: Object, 
-          toggleMenu: Function
+          tog: Function
         },
         methods: {
           toggle: function() {
-            this.$emit('toggleMenu');
+            this.$emit('tog');
           }
         }
     }
