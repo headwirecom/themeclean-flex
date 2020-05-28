@@ -13,7 +13,7 @@ module.exports = {
 
         let link = $.find('component');
         f.addFor(link, 'tags')
-        f.mapField(link, 'item.name')
+        f.mapField(link, 'item.value ? item.value : item.name')
         f.bindAttribute(link, 'class', styles, false);
         f.bindAttribute(link, 'href', 'model.pagelink ? model.pagelink + \'.html\' + item.value : false');
         f.bindAttribute(link, 'is', 'model.pagelink ? "a":"div"');
