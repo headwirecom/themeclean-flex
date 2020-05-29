@@ -49,7 +49,6 @@
           this.menuHeight = this.$refs.autoHeight.clientHeight;
 
           window.addEventListener('pageRendered', (e) => {
-              console.log('this is inside of the eevent handler', e);
               this.toggleMenu();
           }, false);
         },
