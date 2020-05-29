@@ -10,7 +10,7 @@
             'text-white hover:text-white': model.linkcolor === 'light',
             'text-gray-800 hover:text-black': model.linkcolor === 'dark',
             'font-bold' : $data.path === $helper.pathToUrl(item.link)
-        }" v-on:click="toggle"></a>
+        }"></a>
     </li>
   </ul>
 </template>
@@ -18,18 +18,11 @@
 <script>
     export default {
         props: {
-          model: Object, 
-          tog: Function
+          model: Object
         },
         computed: {
           activeClass (url) {
             return {'font-bold': this.$data.path === url}
-          }
-        },
-        methods: {
-          toggle: function() {
-            console.log('toggled')
-            this.$emit('tog');
           }
         }
     }

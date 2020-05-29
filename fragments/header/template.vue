@@ -21,9 +21,9 @@
       <div v-bind:style="`height:${menuActive ? menuHeight + 'px' : '0px'};`"
       v-bind:class="{'invisible': !menuActive}">
         <div ref="autoHeight" class="p-4 flex flex-col md:flex-row justify-end">
-          <themecleanflex-components-textlinks v-bind:model="model" @tog="toggleMenu"></themecleanflex-components-textlinks>
+          <themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>
           <themecleanflex-components-menubuttons
-          v-bind:model="model" @tog="toggleMenu"></themecleanflex-components-menubuttons>
+          v-bind:model="model"></themecleanflex-components-menubuttons>
         </div>
       </div>
     </nav>
@@ -35,7 +35,7 @@
         props: ['model'],
         data: function() {
           return {
-            menuActive: false,
+            menuActive: true,
             menuHeight: 0
           }
         },
@@ -47,12 +47,16 @@
         },
         mounted: function() {
           this.menuHeight = this.$refs.autoHeight.clientHeight;
+          window.addEventListener('pageRendered', (e) => {
+              this.toggleMenu();
+          }, false);
         },
         computed: {
         	isEditAndEmpty() {
                 if(!$peregrineApp.isAuthorMode()) return false
                 return this.$helper.areAllEmpty(this.model.logo, this.model.links,  this.model.buttons)
             }
+          
         },
         methods: {
           resizeHandler: function(e) {

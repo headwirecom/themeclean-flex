@@ -11,19 +11,13 @@
             'btn-orange': item.buttoncolor === 'warning',
             'btn-white': item.buttoncolor === 'light',
             'btn-black': item.buttoncolor === 'dark'
-        }" v-on:click="toggle" v-html="item.buttontext"></a>
+        }" v-html="item.buttontext"></a>
   </div>
 </template>
 <script>
     export default {
         props: {
-          model: Object, 
-          tog: Function
-        },
-        methods: {
-          toggle: function() {
-            this.$emit('tog');
-          }
+          model: Object
         }
     }
 </script>

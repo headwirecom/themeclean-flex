@@ -24,8 +24,8 @@ module.exports = {
         f.addStyle( $.find('nav>div:nth-child(2)'), 'height', "menuActive ? menuHeight + 'px' : '0px'")
         f.bindAttribute( $.find('nav>div:nth-child(2)'), 'class', "{'invisible': !menuActive}")
 
-    	f.replace( $.find('nav>div:last-of-type>div>div:nth-child(1)'), '<themecleanflex-components-textlinks v-bind:model="model" @tog="toggleMenu"></themecleanflex-components-textlinks>')
-        f.replace( $.find('nav>div:last-of-type>div>div:nth-child(2)'), '<themecleanflex-components-menubuttons v-bind:model="model" @tog="toggleMenu"></themecleanflex-components-menubuttons>')
+    	f.replace( $.find('nav>div:last-of-type>div>div:nth-child(1)'), '<themecleanflex-components-textlinks v-bind:model="model"></themecleanflex-components-textlinks>')
+        f.replace( $.find('nav>div:last-of-type>div>div:nth-child(2)'), '<themecleanflex-components-menubuttons v-bind:model="model"></themecleanflex-components-menubuttons>')
         
         f.addElse($);
         $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')

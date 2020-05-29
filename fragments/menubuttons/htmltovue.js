@@ -18,7 +18,6 @@ module.exports = {
     	f.addFor( a, 'model.buttons');
         f.bindAttribute( a, 'href', f.pathToUrl('item.buttonlink'));
         f.bindAttribute( a, 'class', aClasses, false);
-        f.bindEvent( a, 'click', 'toggle');
         f.mapRichField( a, "item.buttontext");
 
     }
