@@ -1,0 +1,21 @@
+{
+  "definitions": {
+    "Form": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "data": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Form Definition (JSON)",
+          "x-form-rows": 20,
+          "x-form-type": "textarea"
+        },
+        "bgref": {
+          "$ref": "fragments/block/model.json#/definitions/Block",
+          "x-form-type": "reference"
+        }
+      }
+    }
+  }
+}
