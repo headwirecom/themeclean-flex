@@ -35,7 +35,7 @@
         props: ['model'],
         data: function() {
           return {
-            menuActive: false,
+            menuActive: true,
             menuHeight: 0
           }
         },
@@ -47,6 +47,9 @@
         },
         mounted: function() {
           this.menuHeight = this.$refs.autoHeight.clientHeight;
+          window.addEventListener('pageRendered', (e) => {
+              this.toggleMenu();
+          }, false);
         },
         computed: {
         	isEditAndEmpty() {
