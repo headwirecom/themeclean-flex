@@ -7,6 +7,7 @@ module.exports = {
         let containerClasses = `{
             'md:flex-row-reverse': model.buttonside === 'left',
             'md:flex-row': model.buttonside === 'right',
+            'enlarge-text': model.isprimary === 'true'
         }`
         f.bindAttribute( $, 'class', containerClasses ,false)
 
@@ -14,8 +15,7 @@ module.exports = {
         let textClasses = `{
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
-            'text-right': model.aligncontent === 'right',
-            'text-3xl': model.isprimary === 'true'
+            'text-right': model.aligncontent === 'right'
         }`
         let textDiv = $.find('div').eq(0)
         f.bindAttribute( textDiv, 'class', textClasses,false)
