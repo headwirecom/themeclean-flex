@@ -25,6 +25,12 @@
   color: var(--link-primary-color-hover);
 }
 
+#peregrine-app a:focus {
+  box-shadow: 0 0 0 3px var(--focus-border-color);
+  outline: 2px solid transparent; /* Windows High Contrast Mode */
+  outline-offset: 1px;
+}
+
 #peregrine-app .btn {
   color: var(--btn-color);
   background-color: var(--btn-bg);
@@ -34,6 +40,7 @@
   color: var(--btn-focus-color);
   background-color: var(--btn-focus-bg);
   box-shadow: 0 0 0 3px var(--btn-focus-border-color);
+  outline: 2px solid transparent; /* Windows High Contrast Mode */
 }
 
 #peregrine-app .btn:hover {
@@ -119,7 +126,7 @@
 }
 
 #peregrine-app [class$="-components-carousel"] figcaption {
-  background-color: var(--figcaption-primary-bg);
+  background-color: var(--figcaption-primary-bg, rgba(255, 255, 255, 0));
 }
 
 #peregrine-app .note-note,
