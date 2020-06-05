@@ -5,12 +5,12 @@
     v-bind:class="{
             'md:flex-row-reverse': model.buttonside === 'left',
             'md:flex-row': model.buttonside === 'right',
+            'enlarge-text': model.isprimary === 'true'
         }" v-else>
       <div class v-bind:class="{
             'text-left': model.aligncontent === 'left',
             'text-center': model.aligncontent === 'center',
-            'text-right': model.aligncontent === 'right',
-            'text-3xl': model.isprimary === 'true'
+            'text-right': model.aligncontent === 'right'
         }" v-bind:style="`flex-basis:${model.textwidth}%;`">
         <h1 v-if="model.showtitle === 'true'" v-html="model.title"></h1>
         <h2 v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h2>
@@ -21,7 +21,7 @@
             'md:justify-end': model.buttonside === 'right',
             'md:justify-start': model.buttonside === 'left',
         }">
-        <a class="btn m-2" v-for="(item,i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
+        <a class="btn m-2" v-for="(item, i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
         v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
