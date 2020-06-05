@@ -1,5 +1,5 @@
 /* Colors */
-:root {
+#peregrine-app {
   --bg-primary-color: #ffffff;
   --bg-secondary-color: #ffffff;
 
@@ -30,19 +30,21 @@
   --note-caution-bg: var(--color-yellow-200);
   --note-caution-border-color: var(--color-yellow-500);
 
+  --focus-border-color: var(--color-blue-900);
+
   --btn-color: #ffffff;
   --btn-bg: var(--color-blue-700);
   --btn-hover-bg: var(--color-blue-800);
   --btn-hover-color: #ffffff;
   --btn-focus-color: #ffffff;
   --btn-focus-bg: var(--color-blue-800);
-  --btn-focus-border-color: var(--color-blue-900);
+  --btn-focus-border-color: var(--focus-border-color);
 
-  --btn-primary-color: #ffffff;
-  --btn-primary-bg: var(--color-blue-600);
-  --btn-primary-hover-bg: var(--color-blue-800);
-  --btn-primary-hover-color: #ffffff;
-  --btn-primary-focus-color: var(--btn-primary-color);
+  --btn-primary-color: var(--btn-color);
+  --btn-primary-bg: var(--btn-bg);
+  --btn-primary-hover-bg: var(--btn-hover-bg);
+  --btn-primary-hover-color: var(--btn-hover-color);
+  --btn-primary-focus-color: var(--btn-focus-color);
   --btn-primary-focus-bg: var(--btn-focus-bg);
   --btn-primary-focus-border-color: var(--btn-focus-border-color);
 
@@ -64,7 +66,7 @@
   --btn-warning-bg: var(--color-orange-600);
 }
 
-:root .theme-dark {
+#peregrine-app .theme-dark {
   --note-text-color: #ffffff;
 
   --note-note-bg: var(--color-blue-600);
