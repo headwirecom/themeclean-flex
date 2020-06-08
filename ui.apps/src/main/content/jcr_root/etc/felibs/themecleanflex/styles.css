@@ -12,68 +12,62 @@ html {
   @apply font-sans text-base;
 }
 
-.enlarge-text h1 {
-  @apply text-5xl font-semibold;
-}
-.enlarge-text h2 {
-  @apply text-4xl font-semibold;
-}
-.enlarge-text h3 {
-  @apply text-3xl font-semibold;
-}
-.enlarge-text h4 {
-  @apply text-2xl font-semibold;
-}
-.enlarge-text h5 {
-  @apply text-xl font-semibold;
-}
-.enlarge-text h6 {
-  @apply text-xl;
-}
-.enlarge-text p {
-  @apply text-lg;
+.enlarge-text h1,
+.enlarge-text .text-6xl {
+  @apply text-6xl font-extrabold;
+  line-height: var(--line-height-6);
+  letter-spacing: -0.02em;
 }
 
+h1,
+.enlarge-text h2,
 .enlarge-text .text-5xl {
-  @apply text-6xl font-semibold;
+  @apply text-5xl font-extrabold;
+  line-height: var(--line-height-5);
+  letter-spacing: -0.02em;
 }
+
+h2,
+.enlarge-text h3,
 .enlarge-text .text-4xl {
-  @apply text-5xl font-semibold;
+  @apply text-4xl font-bold;
+  line-height: var(--line-height-4);
+  letter-spacing: -0.04em;
 }
+
+h3,
+.enlarge-text h4,
+.enlarge-text .text-3xl {
+  @apply text-3xl font-bold;
+  line-height: var(--line-height-3);
+  letter-spacing: -0.02em;
+}
+
+h4,
+.enlarge-text h5,
 .enlarge-text .text-2xl {
-  @apply text-4xl font-semibold;
+  @apply text-2xl font-bold;
+  line-height: var(--line-height-2);
+  letter-spacing: -0.02em;
 }
-.enlarge-text .text-2xl {
-  @apply text-3xl font-semibold;
-}
+
+h5,
+.enlarge-text h6,
 .enlarge-text .text-xl {
-  @apply text-2xl font-semibold;
-}
-.enlarge-text .text-lg {
-  @apply text-xl;
+  @apply text-xl font-bold;
+  line-height: var(--line-height-1);
 }
 
-
-h1 {
-  @apply text-4xl font-semibold;
-}
-h2 {
-  @apply text-3xl font-semibold;
-}
-h3 {
-  @apply text-2xl font-semibold;
-}
-h4 {
-  @apply text-xl font-semibold;
-}
-h5 {
-  @apply text-lg font-semibold;
-}
-h6 {
+h6,
+.enlarge-text p,
+.enlarge-text .text-lg  {
   @apply text-lg;
+  line-height: var(--line-height-1);
 }
 
-
+h6 {
+  @apply font-bold;
+}
 
 a {
   @apply underline text-blue-700;
