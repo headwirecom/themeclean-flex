@@ -48,8 +48,8 @@
     "puppeteer": "^1.19.0",
     "purgecss": "^1.2.0",
     "rollup-plugin-node-resolve": "^4.2.3",
-    "tailwindcss": "^1.0.1",
-    "tailwindcss-aspect-ratio": "^1.0.3",
+    "tailwindcss": "^1.4.6",
+    "tailwindcss-aspect-ratio": "^3.0.0",
     "tailwindcss-transitions": "^1.0.4",
     "vue-carousel": "^0.18.0"
   }
