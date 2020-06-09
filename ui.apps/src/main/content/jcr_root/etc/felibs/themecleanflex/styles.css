@@ -17,6 +17,7 @@ html {
   @apply text-6xl font-extrabold;
   line-height: var(--line-height-6);
   letter-spacing: -0.02em;
+  margin-top: var(--spacing-24);
 }
 
 h1,
@@ -25,6 +26,7 @@ h1,
   @apply text-5xl font-extrabold;
   line-height: var(--line-height-5);
   letter-spacing: -0.02em;
+  margin-top: var(--spacing-20);
 }
 
 h2,
@@ -33,6 +35,7 @@ h2,
   @apply text-4xl font-bold;
   line-height: var(--line-height-4);
   letter-spacing: -0.04em;
+  margin-top: var(--spacing-16);
 }
 
 h3,
@@ -41,6 +44,7 @@ h3,
   @apply text-3xl font-bold;
   line-height: var(--line-height-3);
   letter-spacing: -0.02em;
+  margin-top: var(--spacing-12);
 }
 
 h4,
@@ -49,6 +53,7 @@ h4,
   @apply text-2xl font-bold;
   line-height: var(--line-height-2);
   letter-spacing: -0.02em;
+  margin-top: var(--spacing-10);
 }
 
 h5,
@@ -56,17 +61,49 @@ h5,
 .enlarge-text .text-xl {
   @apply text-xl font-bold;
   line-height: var(--line-height-1);
+  margin-top: var(--spacing-8);
 }
 
-h6,
-.enlarge-text p,
-.enlarge-text .text-lg  {
+h6 {
   @apply text-lg;
   line-height: var(--line-height-1);
+  margin-top: var(--spacing-8);
+  margin-bottom: 0;
+}
+
+.enlarge-text p,
+.enlarge-text .text-lg {
+  @apply text-xl;
+  line-height: var(--line-height-2);
 }
 
 h6 {
   @apply font-bold;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: var(--spacing-6);
+  margin-bottom: var(--spacing-6);
+}
+
+
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+  margin-bottom: 0;
 }
 
 a {
@@ -86,6 +123,7 @@ ol {
 
 p {
   @apply my-3;
+  line-height: var(--line-height-1);
 }
 
 .color-inherit {

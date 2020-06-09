@@ -18,6 +18,24 @@
   --line-height-4: 2.5rem;
   --line-height-5: 3.25rem;
   --line-height-6: 4.25rem;
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+  --spacing-32: 8rem;
+  --spacing-40: 10rem;
+  --spacing-48: 12rem;
+  --spacing-56: 14rem;
+  --spacing-64: 16rem;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -810,35 +828,35 @@ video {
 }
 
 .m-1 {
-  margin: 0.25rem;
+  margin: var(--spacing-1);
 }
 
 .m-2 {
-  margin: 0.5rem;
+  margin: var(--spacing-2);
 }
 
 .-m-1 {
-  margin: -0.25rem;
+  margin: calc(var(--spacing-1) * -1);
 }
 
 .my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
 }
 
 .mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: var(--spacing-2);
+  margin-right: var(--spacing-2);
 }
 
 .my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: var(--spacing-3);
+  margin-bottom: var(--spacing-3);
 }
 
 .mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+  margin-left: var(--spacing-3);
+  margin-right: var(--spacing-3);
 }
 
 .mx-auto {
@@ -847,33 +865,33 @@ video {
 }
 
 .-mx-2 {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+  margin-left: calc(var(--spacing-2) * -1);
+  margin-right: calc(var(--spacing-2) * -1);
 }
 
 .-mx-3 {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
+  margin-left: calc(var(--spacing-3) * -1);
+  margin-right: calc(var(--spacing-3) * -1);
 }
 
 .mb-1 {
-  margin-bottom: 0.25rem;
+  margin-bottom: var(--spacing-1);
 }
 
 .mr-2 {
-  margin-right: 0.5rem;
+  margin-right: var(--spacing-2);
 }
 
 .ml-2 {
-  margin-left: 0.5rem;
+  margin-left: var(--spacing-2);
 }
 
 .mb-3 {
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--spacing-3);
 }
 
 .mr-4 {
-  margin-right: 1rem;
+  margin-right: var(--spacing-4);
 }
 
 .max-w-3xl {
@@ -917,65 +935,65 @@ video {
 }
 
 .p-0 {
-  padding: 0;
+  padding: var(--spacing-0);
 }
 
 .p-3 {
-  padding: 0.75rem;
+  padding: var(--spacing-3);
 }
 
 .p-4 {
-  padding: 1rem;
+  padding: var(--spacing-4);
 }
 
 .p-5 {
-  padding: 1.25rem;
+  padding: var(--spacing-5);
 }
 
 .p-6 {
-  padding: 1.5rem;
+  padding: var(--spacing-6);
 }
 
 .px-0 {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: var(--spacing-0);
+  padding-right: var(--spacing-0);
 }
 
 .py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: var(--spacing-1);
+  padding-bottom: var(--spacing-1);
 }
 
 .py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: var(--spacing-2);
+  padding-bottom: var(--spacing-2);
 }
 
 .py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: var(--spacing-3);
+  padding-bottom: var(--spacing-3);
 }
 
 .px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: var(--spacing-4);
+  padding-right: var(--spacing-4);
 }
 
 .px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: var(--spacing-5);
+  padding-right: var(--spacing-5);
 }
 
 .pb-3 {
-  padding-bottom: 0.75rem;
+  padding-bottom: var(--spacing-3);
 }
 
 .pb-4 {
-  padding-bottom: 1rem;
+  padding-bottom: var(--spacing-4);
 }
 
 .pb-12 {
-  padding-bottom: 3rem;
+  padding-bottom: var(--spacing-12);
 }
 
 .fixed {
@@ -1260,6 +1278,7 @@ html {
   font-weight: 800;
   line-height: var(--line-height-6);
   letter-spacing: -0.02em;
+  margin-top: var(--spacing-24);
 }
 
 h1,
@@ -1269,6 +1288,7 @@ h1,
   font-weight: 800;
   line-height: var(--line-height-5);
   letter-spacing: -0.02em;
+  margin-top: var(--spacing-20);
 }
 
 h2,
@@ -1278,6 +1298,7 @@ h2,
   font-weight: 700;
   line-height: var(--line-height-4);
   letter-spacing: -0.04em;
+  margin-top: var(--spacing-16);
 }
 
 h3,
@@ -1287,6 +1308,7 @@ h3,
   font-weight: 700;
   line-height: var(--line-height-3);
   letter-spacing: -0.02em;
+  margin-top: var(--spacing-12);
 }
 
 h4,
@@ -1296,6 +1318,7 @@ h4,
   font-weight: 700;
   line-height: var(--line-height-2);
   letter-spacing: -0.02em;
+  margin-top: var(--spacing-10);
 }
 
 h5,
@@ -1304,17 +1327,47 @@ h5,
   font-size: var(--font-size-xl);
   font-weight: 700;
   line-height: var(--line-height-1);
+  margin-top: var(--spacing-8);
 }
 
-h6,
-.enlarge-text p,
-.enlarge-text .text-lg  {
+h6 {
   font-size: var(--font-size-lg);
   line-height: var(--line-height-1);
+  margin-top: var(--spacing-8);
+  margin-bottom: 0;
+}
+
+.enlarge-text p,
+.enlarge-text .text-lg {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-2);
 }
 
 h6 {
   font-weight: 700;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: var(--spacing-6);
+  margin-bottom: var(--spacing-6);
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+  margin-bottom: 0;
 }
 
 a {
@@ -1328,23 +1381,24 @@ a:hover {
 
 ul {
   list-style-type: disc;
-  padding-left: 1.25rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin: 0;
+  padding-left: var(--spacing-5);
+  padding-top: var(--spacing-2);
+  padding-bottom: var(--spacing-2);
+  margin: var(--spacing-0);
 }
 
 ol {
   list-style-type: decimal;
-  padding-left: 1.25rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin: 0;
+  padding-left: var(--spacing-5);
+  padding-top: var(--spacing-2);
+  padding-bottom: var(--spacing-2);
+  margin: var(--spacing-0);
 }
 
 p {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: var(--spacing-3);
+  margin-bottom: var(--spacing-3);
+  line-height: var(--line-height-1);
 }
 
 .color-inherit {
@@ -1353,7 +1407,7 @@ p {
 
 .pipe-after:after {
   content: "|";
-  margin-left: 0.5rem;
+  margin-left: var(--spacing-2);
 }
 
 /* Custom Utilities */
@@ -1399,10 +1453,10 @@ p {
 .btn {
   font-size: var(--font-size-sm);
   font-weight: 500;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: var(--spacing-2);
+  padding-bottom: var(--spacing-2);
+  padding-left: var(--spacing-4);
+  padding-right: var(--spacing-4);
   border-radius: 0.25rem;
   text-decoration: none;
   transition: background-color 0.2s ease;
@@ -1420,18 +1474,18 @@ p {
 }
 
 .btn-lg {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
+  padding-left: var(--spacing-5);
+  padding-right: var(--spacing-5);
   font-size: var(--font-size-lg)
 }
 
 .btn-sm {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-top: var(--spacing-2);
+  padding-bottom: var(--spacing-2);
+  padding-left: var(--spacing-2);
+  padding-right: var(--spacing-2);
   font-size: var(--font-size-sm)
 }
 
@@ -1518,13 +1572,13 @@ p {
 
 [class$="components-footer"] ul {
   list-style-type: none;
-  padding: 0;
+  padding: var(--spacing-0);
   font-size: var(--font-size-sm);
   font-weight: 500;
 }
 
 [class$="components-footer"] ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-2);
 }
 
 [class$="components-footer"] p {
@@ -1542,7 +1596,7 @@ p {
 .VueCarousel-pagination {
   position: absolute;
   bottom: 0;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-4);
   pointer-events: none;
 }
 
@@ -1577,13 +1631,13 @@ p {
 @media (min-width: 640px) {
 
   .sm\:mx-3 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+    margin-left: var(--spacing-3);
+    margin-right: var(--spacing-3);
   }
 
   .sm\:px-0 {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: var(--spacing-0);
+    padding-right: var(--spacing-0);
   }
 
   .sm\:w-auto {
@@ -1734,17 +1788,17 @@ p {
   }
 
   .md\:-mx-3 {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
+    margin-left: calc(var(--spacing-3) * -1);
+    margin-right: calc(var(--spacing-3) * -1);
   }
 
   .md\:mb-0 {
-    margin-bottom: 0;
+    margin-bottom: var(--spacing-0);
   }
 
   .md\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding-left: var(--spacing-3);
+    padding-right: var(--spacing-3);
   }
 
   .md\:w-auto {
@@ -1879,8 +1933,8 @@ p {
   }
 
   .lg\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: var(--spacing-4);
+    margin-right: var(--spacing-4);
   }
 
   .lg\:w-auto {
