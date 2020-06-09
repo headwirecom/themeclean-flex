@@ -1,41 +1,108 @@
 /* default palette */
 
-#peregrine-app {
-  /* NONE definitions to overwrite :root vars */
+#peregrine-app,
+#peregrine-app .theme-light {
+  --color-accent-1-100: #F9F5F4;
+  --color-accent-1-200: #F5E1D7;
+  --color-accent-1-300: #F9977D;
+  --color-accent-1-400: #FD6B43;
+  --color-accent-1-500: #ff3e08;
+  --color-accent-1-600: #D13405;
+  --color-accent-1-700: #A42A04;
+  --color-accent-1-800: #761F03;
+  --color-accent-1-900: #491402;
+
+  --color-accent-2-200: var(--color-gray-200);
+  --color-accent-2-300: var(--color-gray-300);
+
+  --color-accent-3-800: #191919;
+  --color-accent-3-900: #000000;
+
+  --link-primary-color: var(--color-accent-1-500);
+  --link-primary-color-hover: var(--color-accent-1-800);
+
+  --focus-border-color: var(--color-accent-1-500);
+
+  --btn-color: #ffffff;
+  --btn-bg: var(--color-accent-3-900);
+  --btn-hover-color: #ffffff;
+  --btn-hover-bg: var(--color-accent-3-800);
+  --btn-focus-color: #ffffff;
+  --btn-focus-bg: var(--color-accent-3-800);
+  --btn-focus-border-color: var(--color-accent-1-300);
+
+  --btn-secondary-color: var(--color-accent-3-900);
+  --btn-secondary-bg: #ffffff;
+  --btn-secondary-border-width: 1px;
+  --btn-secondary-border-color: var(--color-accent-3-900);
+  --btn-secondary-hover-color: var(--btn-secondary-color);
+  --btn-secondary-hover-bg: #dddcdc;
+  --btn-secondary-focus-color: #ffffff;
+  --btn-secondary-focus-bg: var(--color-accent-3-800);
+
+  --text-primary-color: rgba(0,0,0,0.87);
+  --text-secondary-color: rgba(0,0,0,0.6);
 }
 
 #peregrine-app .theme-light {
-  --bg-primary-color: var(--color-gray-100);
-  --bg-secondary-color: #ffffff;
+  --bg-primary-color: #f2f2f2;
+  --bg-secondary-color: var(--color-accent-1-200);
 
-  --text-primary-color: var(--color-gray-800);
-  --text-secondary-color: var(--color-gray-600);
+  --btn-secondary-color: var(--color-accent-1-900);
+  --btn-secondary-bg: var(--bg-secondary-color);
+  --btn-secondary-border-width: 0;
+  --btn-secondary-hover-color: var(--btn-secondary-color);
+  --btn-secondary-hover-bg: var(--color-accent-1-300);
+  --btn-secondary-focus-color: var(--btn-secondary-color);
+  --btn-secondary-focus-bg: var(--color-accent-1-300);
 
   --border-primary-color: var(--color-gray-300);
 
   --link-primary-color: var(--text-primary-color);
   --link-primary-color-hover: #000000;
 
-  --btn-primary-bg: #585858;
-  --btn-primary-color: #ffffff;
-
   --figcaption-primary-bg: #ffffff99;
 }
 
 #peregrine-app .theme-dark {
-  --bg-primary-color: var(--color-gray-900);
-  --bg-secondary-color: var(--color-gray-800);
+  --bg-primary-color: var(--color-accent-3-900);
+  --bg-secondary-color: var(--color-accent-3-800);
 
-  --text-primary-color: var(--color-gray-200);
-  --text-secondary-color: var(--color-gray-400);
+  --text-primary-color: #ffffff;
+  --text-secondary-color: rgba(255,255,255,0.6);
 
   --border-primary-color: var(--color-gray-100);
 
-  --link-primary-color: var(--text-primary-color);
-  --link-primary-color-hover: #ffffff;
+  --btn-focus-border-color: #ffffff;
 
-  --btn-primary-bg: #e4e4e4;
-  --btn-primary-color: #000000;
+  --btn-color: var(--color-accent-3-900);
+  --btn-bg: #ffffff;
+  --btn-hover-color: #ffffff;
+  --btn-hover-bg: var(--color-accent-3-800);
+  --btn-focus-color: var(--color-accent-3-800);
+  --btn-focus-bg: #e4e4e4;
+  --btn-focus-border-color: var(--color-accent-1-500);
+
+  --btn-primary-color: var(--btn-color);
+  --btn-primary-bg: var(--btn-bg);
+  --btn-primary-hover-color: var(--btn-hover-color);
+  --btn-primary-hover-bg: var(--btn-hover-bg);
+  --btn-primary-focus-color: var(--btn-focus-color);
+  --btn-primary-focus-bg: var(--btn-focus-bg);
+  --btn-primary-focus-border-color: var(--btn-focus-border-color);
+
+  --btn-secondary-bg: var(--color-accent-3-900);
+  --btn-secondary-color: #ffffff;
+  --btn-secondary-border-width: 1px;
+  --btn-secondary-border-color: #ffffff;
+  --btn-secondary-hover-color: #ffffff;
+  --btn-secondary-hover-bg: var(--color-accent-3-800);
+  --btn-secondary-focus-color: #ffffff;
+  --btn-secondary-focus-bg: var(--color-accent-3-800);
+
+/*   --link-primary-color: var(--text-primary-color);
+  --link-primary-color-hover: #ffffff; */
+ 
 
   --figcaption-primary-bg: #00000080;
 }
