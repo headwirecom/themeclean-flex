@@ -3,6 +3,12 @@ module.exports = {
   important: false,
   separator: ':',
   theme: {
+    aspectRatio: {
+      'square': [1, 1],
+      '16/9': [16, 9],
+      '4/3': [4, 3],
+      '21/9': [21, 9],
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -395,6 +401,7 @@ module.exports = {
     alignContent: ['responsive'],
     alignItems: ['responsive'],
     alignSelf: ['responsive'],
+    aspectRatio: ['responsive'],
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
     backgroundColor: ['responsive', 'hover', 'focus'],
@@ -459,14 +466,7 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [
-    require('tailwindcss-aspect-ratio')({
-      ratios: {
-        'square': [1, 1],
-        '16/9': [16, 9],
-        '4/3': [4, 3],
-        '21/9': [21, 9],
-      }
-    }),
+    require('tailwindcss-aspect-ratio'),
     require('tailwindcss-transitions')({
       variants: ['responsive'],
       properties: {
