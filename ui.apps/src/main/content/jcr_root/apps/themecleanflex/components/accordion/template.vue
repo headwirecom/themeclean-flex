@@ -30,14 +30,14 @@
             'rounded-lg': model.roundedcorners == 'large',
             'rounded-full': model.roundedcorners == 'full'
         }">
-          <div v-for="(item,i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`"
+          <div v-for="(item, i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`"
           v-bind:class="{
             'border-b border-solid border-gray-300': model.colorscheme === 'light' &amp;&amp; model.cardborder === 'true',
             'border-b border-solid border-gray-900': model.colorscheme === 'dark' &amp;&amp; model.cardborder === 'true'
         }">
             <a class="flex justify-between items-center p-3 cursor-pointer no-underline"
             v-on:click="toggleItem(i)">
-              <h3 class="text-lg" v-html="item.title"></h3>
+              <h3 class="text-lg m-0" v-html="item.title"></h3>
               <svg width="16" height="16" viewBox="0 0 16 16" v-bind:style="`transform:${active[i] ? 'rotate(180deg)': 'rotate(0)'};`">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"
                 />
