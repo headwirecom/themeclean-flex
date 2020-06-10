@@ -827,6 +827,10 @@ video {
   list-style-type: none;
 }
 
+.m-0 {
+  margin: var(--spacing-0);
+}
+
 .m-1 {
   margin: var(--spacing-1);
 }
@@ -1272,7 +1276,7 @@ html {
   font-size: var(--font-size-base);
 }
 
-.enlarge-text h1,
+.enlarge-text h1:not([class]),
 .enlarge-text .text-6xl {
   font-size: var(--font-size-6xl);
   font-weight: 800;
@@ -1281,8 +1285,8 @@ html {
   margin-top: var(--spacing-24);
 }
 
-h1,
-.enlarge-text h2,
+h1:not([class]),
+.enlarge-text h2:not([class]),
 .enlarge-text .text-5xl {
   font-size: var(--font-size-5xl);
   font-weight: 800;
@@ -1291,8 +1295,8 @@ h1,
   margin-top: var(--spacing-20);
 }
 
-h2,
-.enlarge-text h3,
+h2:not([class]),
+.enlarge-text h3:not([class]),
 .enlarge-text .text-4xl {
   font-size: var(--font-size-4xl);
   font-weight: 700;
@@ -1301,8 +1305,8 @@ h2,
   margin-top: var(--spacing-16);
 }
 
-h3,
-.enlarge-text h4,
+h3:not([class]),
+.enlarge-text h4:not([class]),
 .enlarge-text .text-3xl {
   font-size: var(--font-size-3xl);
   font-weight: 700;
@@ -1311,8 +1315,8 @@ h3,
   margin-top: var(--spacing-12);
 }
 
-h4,
-.enlarge-text h5,
+h4:not([class]),
+.enlarge-text h5:not([class]),
 .enlarge-text .text-2xl {
   font-size: var(--font-size-2xl);
   font-weight: 700;
@@ -1321,8 +1325,8 @@ h4,
   margin-top: var(--spacing-10);
 }
 
-h5,
-.enlarge-text h6,
+h5:not([class]),
+.enlarge-text h6:not([class]),
 .enlarge-text .text-xl {
   font-size: var(--font-size-xl);
   font-weight: 700;
@@ -1330,7 +1334,7 @@ h5,
   margin-top: var(--spacing-8);
 }
 
-h6 {
+h6:not([class]) {
   font-size: var(--font-size-lg);
   line-height: var(--line-height-1);
   margin-top: var(--spacing-8);
@@ -1347,26 +1351,26 @@ h6 {
   font-weight: 700;
 }
 
-h1, h2, h3, h4, h5 {
+h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]) {
   margin-top: var(--spacing-6);
   margin-bottom: var(--spacing-6);
 }
 
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child,
-h6:first-child {
+h1:not([class]):first-child,
+h2:not([class]):first-child,
+h3:not([class]):first-child,
+h4:not([class]):first-child,
+h5:not([class]):first-child,
+h6:not([class]):first-child {
   margin-top: 0;
 }
 
-h1:last-child,
-h2:last-child,
-h3:last-child,
-h4:last-child,
-h5:last-child,
-h6:last-child {
+h1:not([class]):last-child,
+h2:not([class]):last-child,
+h3:not([class]):last-child,
+h4:not([class]):last-child,
+h5:not([class]):last-child,
+h6:not([class]):last-child {
   margin-bottom: 0;
 }
 
