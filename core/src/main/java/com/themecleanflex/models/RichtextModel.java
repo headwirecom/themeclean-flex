@@ -21,8 +21,7 @@ import org.apache.sling.models.annotations.Model;
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Text",
-          "x-form-type": "texteditor",
-          "x-form-group": "inline"
+          "x-form-type": "texteditor"
         },
         "mediaref": {
           "x-form-type": "reference",
@@ -412,7 +411,7 @@ public class RichtextModel extends AbstractComponent {
     public RichtextModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Text","x-form-type":"texteditor","x-form-group":"inline"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Text","x-form-type":"texteditor"} */
 	@Inject
 	private String text;
 
@@ -549,7 +548,7 @@ public class RichtextModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Text","x-form-type":"texteditor","x-form-group":"inline"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Text","x-form-type":"texteditor"} */
 	public String getText() {
 		return text;
 	}

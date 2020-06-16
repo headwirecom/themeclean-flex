@@ -8,8 +8,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Text",
-          "x-form-type": "texteditor",
-          "x-form-group": "inline"
+          "x-form-type": "texteditor"
         },
         "mediaref": {
           "x-form-type": "reference",

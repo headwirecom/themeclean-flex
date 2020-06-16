@@ -1,19 +1,6 @@
 {
   "groups": [
     {
-      "legend": "inline",
-      "fields": [
-        {
-          "type": "texteditor",
-          "rows": 10,
-          "placeholder": "text",
-          "label": "Text",
-          "model": "text",
-          "x_form_group": "inline"
-        }
-      ]
-    },
-    {
       "legend": "media",
       "fields": [
         {
@@ -382,6 +369,15 @@
           "x_form_group": "layout"
         }
       ]
+    }
+  ],
+  "fields": [
+    {
+      "type": "texteditor",
+      "rows": 10,
+      "placeholder": "text",
+      "label": "Text",
+      "model": "text"
     }
   ]
 }
