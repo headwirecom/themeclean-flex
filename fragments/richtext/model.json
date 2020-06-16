@@ -8,11 +8,13 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Text",
-          "x-form-type": "texteditor"
+          "x-form-type": "texteditor",
+          "x-form-group": "inline"
         },
         "mediaref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/mediavisible/model.json#/definitions/Mediavisible"
+          "x-form-type": "reference",
+        	"$ref": "fragments/mediavisible/model.json#/definitions/Mediavisible",
+          "x-form-group": "media"
         },
         "mediaposition": {
           "type": "string",
@@ -20,6 +22,7 @@
           "x-form-label": "Media Position",
           "x-form-type": "materialradio",
           "x-form-visible": "model.showmedia == 'true'",
+          "x-form-group": "media",
           "x-default": "before",
           "properties": {
 		    "type1": {

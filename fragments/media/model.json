@@ -9,6 +9,7 @@
           "x-source": "inject",
           "x-form-label": "Media type",
           "x-form-type": "materialradio",
+          "x-form-group": "media",
           "properties": {
             "image": {
               "x-form-name": "Image",
@@ -26,6 +27,7 @@
           "x-form-label": "Image Source",
           "x-form-visible": "model.mediatype == 'image'",
           "x-form-type": "pathbrowser",
+          "x-form-group": "media",
           "x-form-browserRoot": "/content/themecleanflex/assets",
           "x-default": ""
         },
@@ -35,6 +37,7 @@
           "x-form-label": "Video Source",
           "x-form-visible": "model.mediatype == 'video'",
           "x-form-type": "pathbrowser",
+          "x-form-group": "media",
           "x-form-browserRoot": "/content/themecleanflex/assets",
           "x-default": ""
         },
@@ -43,6 +46,7 @@
           "x-source": "inject",
           "x-form-label": "Media Alt Text/Title",
           "x-form-visible": "model.mediatype == 'image' or model.mediatype == 'video'",
+          "x-form-group": "media",
           "x-form-type": "text"
         },
         "mediawidth": {
@@ -50,6 +54,7 @@
           "x-source": "inject",
           "x-form-label": "Width",
           "x-form-type": "materialrange",
+          "x-form-group": "media",
           "x-default": 100,
           "x-form-min": 10,
           "x-form-max": 100
