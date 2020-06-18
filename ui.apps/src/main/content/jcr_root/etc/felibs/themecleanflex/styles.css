@@ -165,6 +165,16 @@ p {
   z-index: 10;
 }
 
+/* Background */
+
+.bg-primary {
+  background-color: var(--bg-primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary-color);
+}
+
 /* Buttons */
 .btn {
   @apply text-sm font-medium py-2 px-4 rounded no-underline;
@@ -274,5 +284,6 @@ p {
 [class$="components-accordion"] .img-wrapper.rounded-full img {
   border-radius: 9999px;
 }
+
 
 /* purgecss end ignore */

@@ -11,8 +11,7 @@
         description="component library themecleanflex component library"
         brand="themecleanflex"
         template="/content/themecleanflex/templates"
-        excludeFromSitemap="{Boolean}true">
-        <clheader
+            ><clheader
             jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/themecleanflex/pages/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
     <links jcr:primaryType="nt:unstructured"></links>
     <buttons jcr:primaryType="nt:unstructured"></buttons>

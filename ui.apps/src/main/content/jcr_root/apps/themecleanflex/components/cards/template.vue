@@ -25,29 +25,27 @@
         }" v-for="(item, i) in model.cards" :key="i">
         <div class="flex flex-col h-full overflow-hidden" v-bind:style="`background-color:${model.customcardcolor === 'true' &amp;&amp; model.showcard === 'true' ? model.cardcolor: ''};`"
         v-bind:class="{
-            'bg-white': model.showcard === 'true' &amp;&amp; model.customcardcolor !== 'true' &amp;&amp; model.colorscheme === 'light',
-            'bg-gray-800': model.showcard === 'true' &amp;&amp; model.customcardcolor !== 'true' &amp;&amp;  model.colorscheme === 'dark',
-            'border border-solid border-gray-300': (model.showcard === 'true' &amp;&amp; model.customcardcolor !== 'true' &amp;&amp; model.colorscheme === 'light') &amp;&amp; model.cardborder === 'true',
-            'border border-solid border-gray-900': (model.showcard === 'true' &amp;&amp; model.customcardcolor !== 'true' &amp;&amp; model.colorscheme === 'dark') &amp;&amp; model.cardborder === 'true',
+            'bg-secondary': model.showcard === 'true' &amp;&amp; model.customcardcolor !== 'true',
+            'border border-solid': (model.customcardcolor !== 'true') &amp;&amp; model.cardborder === 'true',
             'rounded-none': model.roundedcorners == 'none',
             'rounded-sm': model.roundedcorners == 'small',
             'rounded': model.roundedcorners == 'medium',
             'rounded-lg': model.roundedcorners == 'large'
         }">
           <div class="self-center" v-bind:style="{width: item.imagewidth + &quot;%&quot;}">
-            <v-lazy-image v-bind:class="model.showcard == 'true' ? 'card-img mb-1 w-full' : 'card-img mb-3 w-full'"
+            <v-lazy-image v-bind:class="model.showcard === 'true' ||  model.cardborder === 'true' ? 'card-img w-full' : 'card-img mb-3 w-full'"
             v-bind:src="$helper.pathToUrl(item.image)" v-bind:alt="item.imagealttext"
             v-if="item.image"></v-lazy-image>
           </div>
           <div class="flex flex-grow flex-col justify-between p-0" v-bind:class="{
-            'p-3': model.showcard === 'true'
+            'p-6': model.showcard === 'true' || model.cardborder === 'true'
         }">
             <div>
-              <h2 class="text-lg my-3" v-if="model.showtitle == 'true'" v-html="item.title"
+              <h2 class="text-lg mb-3" v-if="model.showtitle == 'true'" v-html="item.title"
               v-bind:style="`color:${item.color};`"></h2>
               <div class="my-3" v-if="model.showtext == 'true'" v-html="item.text"></div>
             </div>
-            <a class="btn my-3" v-if="showbutton(item)" v-bind:href="$helper.pathToUrl(item.buttonlink)"
+            <a class="btn mt-3" v-if="showbutton(item)" v-bind:href="$helper.pathToUrl(item.buttonlink)"
             v-bind:class="{
             'btn-lg': item.buttonsize === 'large',
             'btn-sm': item.buttonsize === 'small',
@@ -58,7 +56,8 @@
             'btn-warning': item.buttoncolor === 'warning',
             'self-start': item.buttonalign === 'left',
             'self-center': item.buttonalign === 'center',
-            'self-end': item.buttonalign === 'right'
+            'self-end': item.buttonalign === 'right',
+            'my-3': model.cardborder !== 'true' &amp;&amp; model.showcard !== 'true'
         }" v-html="item.buttontext"></a>
           </div>
         </div>

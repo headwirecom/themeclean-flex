@@ -102,11 +102,6 @@
   color: var(--btn-primary-color)
 }
 
-#peregrine-app .theme-light .card > .flex-col,
-#peregrine-app .theme-dark .card > .flex-col {
-  background-color: var(--bg-secondary-color);
-}
-
 #peregrine-app .theme-light .accordion-container,
 #peregrine-app .theme-dark .accordion-container {
   background-color: var(--bg-secondary-color);

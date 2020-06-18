@@ -29,10 +29,8 @@ module.exports = {
 
         //Card
         let cardClasses = `{
-            'bg-white': model.showcard === 'true' && model.customcardcolor !== 'true' && model.colorscheme === 'light',
-            'bg-gray-800': model.showcard === 'true' && model.customcardcolor !== 'true' &&  model.colorscheme === 'dark',
-            'border border-solid border-gray-300': (model.showcard === 'true' && model.customcardcolor !== 'true' && model.colorscheme === 'light') && model.cardborder === 'true',
-            'border border-solid border-gray-900': (model.showcard === 'true' && model.customcardcolor !== 'true' && model.colorscheme === 'dark') && model.cardborder === 'true',
+            'bg-secondary': model.showcard === 'true' && model.customcardcolor !== 'true',
+            'border border-solid': (model.customcardcolor !== 'true') && model.cardborder === 'true',
             'rounded-none': model.roundedcorners == 'none',
             'rounded-sm': model.roundedcorners == 'small',
             'rounded': model.roundedcorners == 'medium',
@@ -44,14 +42,14 @@ module.exports = {
         f.bindAttribute($.find('div.card > div').first(), 'class', cardClasses, false)
 
         let cardBodyClasses = `{
-            'p-3': model.showcard === 'true'
+            'p-6': model.showcard === 'true' || model.cardborder === 'true'
         }`
         f.bindAttribute($.find('div.card>div>div').eq(1), 'class', cardBodyClasses, false)
 
         f.bindAttribute($.find('div.card>div>div').eq(0), 'style', '{width: item.imagewidth + "%"}')
         //Image
         f.replace($.find('img'), '<v-lazy-image></v-lazy-image>')
-        f.bindAttribute($.find('v-lazy-image').first(), 'class', "model.showcard == 'true' ? 'card-img mb-1 w-full' : 'card-img mb-3 w-full'")
+        f.bindAttribute($.find('v-lazy-image').first(), 'class', "model.showcard === 'true' ||  model.cardborder === 'true' ? 'card-img w-full' : 'card-img mb-3 w-full'")
         f.bindAttribute($.find('v-lazy-image').first(), 'src', f.pathToUrl('item.image'))
         f.bindAttribute($.find('v-lazy-image').first(), 'alt', 'item.imagealttext')
         f.addIf($.find('v-lazy-image').first(), 'item.image')
@@ -76,7 +74,8 @@ module.exports = {
             'btn-warning': item.buttoncolor === 'warning',
             'self-start': item.buttonalign === 'left',
             'self-center': item.buttonalign === 'center',
-            'self-end': item.buttonalign === 'right'
+            'self-end': item.buttonalign === 'right',
+            'my-3': model.cardborder !== 'true' && model.showcard !== 'true'
         }`
 
         let a = $.find('a.btn')
