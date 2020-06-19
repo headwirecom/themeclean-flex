@@ -13,7 +13,7 @@ html {
 }
 
 .enlarge-text h1:not([class]),
-.enlarge-text .text-6xl {
+.text-6xl {
   @apply text-6xl font-extrabold;
   line-height: var(--line-height-6);
   letter-spacing: -0.02em;
@@ -22,45 +22,65 @@ html {
 
 h1:not([class]),
 .enlarge-text h2:not([class]),
-.enlarge-text .text-5xl {
+.text-5xl {
   @apply text-5xl font-extrabold;
   line-height: var(--line-height-5);
   letter-spacing: -0.02em;
+}
+
+h1:not([class]),
+.enlarge-text h2:not([class]) {
   margin-top: var(--spacing-20);
 }
 
 h2:not([class]),
 .enlarge-text h3:not([class]),
-.enlarge-text .text-4xl {
+.text-4xl {
   @apply text-4xl font-bold;
   line-height: var(--line-height-4);
   letter-spacing: -0.04em;
+}
+
+h2:not([class]),
+.enlarge-text h3:not([class]) {
   margin-top: var(--spacing-16);
 }
 
 h3:not([class]),
 .enlarge-text h4:not([class]),
-.enlarge-text .text-3xl {
+.text-3xl {
   @apply text-3xl font-bold;
   line-height: var(--line-height-3);
   letter-spacing: -0.02em;
+}
+
+h3:not([class]),
+.enlarge-text h4:not([class]) {
   margin-top: var(--spacing-12);
 }
 
 h4:not([class]),
 .enlarge-text h5:not([class]),
-.enlarge-text .text-2xl {
+.text-2xl {
   @apply text-2xl font-bold;
   line-height: var(--line-height-2);
   letter-spacing: -0.02em;
+}
+
+h4:not([class]),
+.enlarge-text h5:not([class]) {
   margin-top: var(--spacing-10);
 }
 
 h5:not([class]),
 .enlarge-text h6:not([class]),
-.enlarge-text .text-xl {
+.text-xl {
   @apply text-xl font-bold;
   line-height: var(--line-height-1);
+}
+
+h5:not([class]),
+.enlarge-text h6:not([class]) {
   margin-top: var(--spacing-8);
 }
 
