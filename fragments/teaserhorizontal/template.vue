@@ -12,17 +12,19 @@
             'text-center': model.aligncontent === 'center',
             'text-right': model.aligncontent === 'right'
         }" v-bind:style="`flex-basis:${model.textwidth}%;`">
-        <h1 v-if="model.showtitle === 'true'" v-html="model.title"></h1>
-        <h2 v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h2>
-        <p v-if="model.showtext === 'true'" v-html="model.text"></p>
+        <h1 v-if="model.showtitle === 'true'" v-html="model.title" data-per-inline="model.title"></h1>
+        <h2 v-if="model.showsubtitle === 'true'" v-html="model.subtitle"
+        data-per-inline="model.subtitle"></h2>
+        <p v-if="model.showtext === 'true'" v-html="model.text"
+        data-per-inline="model.text"></p>
       </div>
       <div class="flex flex-wrap justify-center" v-if="model.showbutton == 'true'"
       v-bind:class="{
             'md:justify-end': model.buttonside === 'right',
             'md:justify-start': model.buttonside === 'left',
         }">
-        <a class="btn m-2" v-for="(item, i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
-        v-bind:class="{
+        <a class="btn m-2" v-for="(item, i) in model.buttons" :key="item.path || i"
+        v-bind:href="$helper.pathToUrl(item.buttonlink)" v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
             'btn-primary': item.buttoncolor === 'primary',
@@ -32,7 +34,8 @@
             'btn-orange': item.buttoncolor === 'warning',
             'btn-white': item.buttoncolor === 'light',
             'btn-black': item.buttoncolor === 'dark'
-        }" v-html="item.buttontext" v-bind:style="`backgroundColor:${item.buttoncolor};borderColor:${item.buttoncolor};`"></a>
+        }" v-html="item.buttontext" data-per-inline="item.buttontext"
+        v-bind:style="`backgroundColor:${item.buttoncolor};borderColor:${item.buttoncolor};`"></a>
       </div>
     </div>
   </themecleanflex-components-block>

@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-end items-center md:flex-row flex-col">
-    <a class="btn m-2" v-for="(item,i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
-    v-bind:class="{
+    <a class="btn m-2" v-for="(item, i) in model.buttons" :key="item.path || i"
+    v-bind:href="$helper.pathToUrl(item.buttonlink)" v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
             'btn-primary': item.buttoncolor === 'primary',
@@ -11,7 +11,7 @@
             'btn-orange': item.buttoncolor === 'warning',
             'btn-white': item.buttoncolor === 'light',
             'btn-black': item.buttoncolor === 'dark'
-        }" v-html="item.buttontext"></a>
+        }" v-html="item.buttontext" data-per-inline="item.buttontext"></a>
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
   <ul class="list-none flex flex-col items-center md:flex-row p-0">
-    <li class="m-2" v-for="(item,i) in model.links" :key="i">
+    <li class="m-2" v-for="(item, i) in model.links" :key="item.path || i">
       <a class="no-underline p-3 hover:underline" v-bind:href="$helper.pathToUrl(item.link)"
-      v-html="item.text" v-bind:class="{
+      v-html="item.text" data-per-inline="item.text" v-bind:class="{
             'text-blue-700': model.linkcolor === 'primary',
             'text-green-700 hover:text-green-600': model.linkcolor === 'success',
             'text-red-700 hover:text-red-600': model.linkcolor === 'danger',
