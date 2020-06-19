@@ -41,7 +41,7 @@
             'p-6': model.showcard === 'true' || model.cardborder === 'true'
         }">
             <div>
-              <h2 class="text-lg mb-3" v-if="model.showtitle == 'true'" v-html="item.title"
+              <h2 class="text-xl mb-3" v-if="model.showtitle == 'true'" v-html="item.title"
               v-bind:style="`color:${item.color};`"></h2>
               <div class="my-3" v-if="model.showtext == 'true'" v-html="item.text"></div>
             </div>
