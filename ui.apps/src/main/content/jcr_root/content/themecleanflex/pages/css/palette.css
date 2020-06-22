@@ -45,7 +45,7 @@
 
 #peregrine-app .btn:hover {
   color: var(--btn-hover-color);
-  background: var(--btn-hover-color);
+  background-color: var(--btn-hover-bg);
 }
 
 #peregrine-app .btn.btn-primary {
