@@ -12,11 +12,22 @@
             'text-center': model.aligncontent === 'center',
             'text-right': model.aligncontent === 'right'
         }" v-bind:style="`flex-basis:${model.textwidth}%;`">
-        <h1 v-if="model.showtitle === 'true'" v-html="model.title"></h1>
-        <h2 v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h2>
-        <p v-if="model.showtext === 'true'" v-html="model.text"></p>
+        <h1 class="text-5xl mt-0" v-if="model.showtitle === 'true'"
+        v-bind:class="{
+            'mb-6': model.isprimary === 'true',
+            'mb-3': model.isprimary !== 'true'
+        }" v-html="model.title"></h1>
+        <p class="teaser-subtitle text-3xl font-normal" v-if="model.showsubtitle === 'true'"
+        v-bind:class="{
+            'mb-6': model.isprimary === 'true' &amp;&amp; model.showtitle === 'false',
+            'my-6': model.isprimary === 'true' &amp;&amp; model.showtitle === 'true',
+            'mb-3': model.isprimary !== 'true' &amp;&amp; model.showtitle === 'false',
+            'my-3': model.isprimary !== 'true' &amp;&amp; model.showtitle === 'true'
+        }" v-html="model.subtitle"></p>
+        <div class="teaser-text" v-if="model.showtext === 'true'"
+        v-html="model.text"></div>
       </div>
-      <div class="flex flex-wrap justify-center" v-if="model.showbutton == 'true'"
+      <div class="teaser-actions flex flex-wrap justify-center" v-if="model.showbutton === 'true'"
       v-bind:class="{
             'md:justify-end': model.buttonside === 'right',
             'md:justify-start': model.buttonside === 'left',

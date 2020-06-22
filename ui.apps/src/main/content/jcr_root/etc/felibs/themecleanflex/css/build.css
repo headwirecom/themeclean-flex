@@ -787,6 +787,10 @@ video {
   flex-grow: 1;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -821,6 +825,10 @@ video {
 
 .text-4xl {
   font-size: var(--font-size-4xl);
+}
+
+.text-5xl {
+  font-size: var(--font-size-5xl);
 }
 
 .list-none {
@@ -863,6 +871,11 @@ video {
   margin-right: var(--spacing-3);
 }
 
+.my-6 {
+  margin-top: var(--spacing-6);
+  margin-bottom: var(--spacing-6);
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -876,6 +889,10 @@ video {
 .-mx-3 {
   margin-left: calc(var(--spacing-3) * -1);
   margin-right: calc(var(--spacing-3) * -1);
+}
+
+.mt-0 {
+  margin-top: var(--spacing-0);
 }
 
 .mb-1 {
@@ -900,6 +917,10 @@ video {
 
 .mr-4 {
   margin-right: var(--spacing-4);
+}
+
+.mb-6 {
+  margin-bottom: var(--spacing-6);
 }
 
 .max-w-3xl {
@@ -1281,11 +1302,17 @@ html {
 }
 
 .enlarge-text h1:not([class]),
+.enlarge-text .text-5xl,
 .text-6xl {
   font-size: var(--font-size-6xl);
   font-weight: 800;
   line-height: var(--line-height-6);
   letter-spacing: -0.02em;
+}
+
+.enlarge-text h1:not([class]),
+.enlarge-text .text-5xl:not([class*=my-]):not([class*=mt-]),
+.text-6xl {
   margin-top: var(--spacing-24);
 }
 
@@ -1365,7 +1392,7 @@ h6:not([class]) {
   margin-bottom: 0;
 }
 
-.enlarge-text p,
+.enlarge-text p:not([class*=text-]),
 .enlarge-text .text-lg {
   font-size: var(--font-size-xl);
   line-height: var(--line-height-2);
@@ -1396,6 +1423,15 @@ h4:not([class]):last-child,
 h5:not([class]):last-child,
 h6:not([class]):last-child {
   margin-bottom: 0;
+}
+
+.text-xl.font-normal,
+.text-2xl.font-normal,
+.text-3xl.font-normal,
+.text-4xl.font-normal,
+.text-5xl.font-normal,
+.text-6xl.font-normal {
+  font-weight: 400;
 }
 
 a {

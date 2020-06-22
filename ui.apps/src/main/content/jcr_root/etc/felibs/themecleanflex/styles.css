@@ -13,10 +13,16 @@ html {
 }
 
 .enlarge-text h1:not([class]),
+.enlarge-text .text-5xl,
 .text-6xl {
   @apply text-6xl font-extrabold;
   line-height: var(--line-height-6);
   letter-spacing: -0.02em;
+}
+
+.enlarge-text h1:not([class]),
+.enlarge-text .text-5xl:not([class*=my-]):not([class*=mt-]),
+.text-6xl {
   margin-top: var(--spacing-24);
 }
 
@@ -53,6 +59,8 @@ h3:not([class]),
   line-height: var(--line-height-3);
   letter-spacing: -0.02em;
 }
+
+
 
 h3:not([class]),
 .enlarge-text h4:not([class]) {
@@ -91,7 +99,7 @@ h6:not([class]) {
   margin-bottom: 0;
 }
 
-.enlarge-text p,
+.enlarge-text p:not([class*=text-]),
 .enlarge-text .text-lg {
   @apply text-xl;
   line-height: var(--line-height-2);
@@ -122,6 +130,15 @@ h4:not([class]):last-child,
 h5:not([class]):last-child,
 h6:not([class]):last-child {
   margin-bottom: 0;
+}
+
+.text-xl.font-normal,
+.text-2xl.font-normal,
+.text-3xl.font-normal,
+.text-4xl.font-normal,
+.text-5xl.font-normal,
+.text-6xl.font-normal {
+  font-weight: 400;
 }
 
 a {
