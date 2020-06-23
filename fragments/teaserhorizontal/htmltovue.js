@@ -19,17 +19,36 @@ module.exports = {
         }`
         let textDiv = $.find('div').eq(0)
         f.bindAttribute( textDiv, 'class', textClasses,false)
-        f.addStyle( textDiv, 'flex-basis', 'model.textwidth', '%')
+        f.addStyle(textDiv, 'flex-basis', 'model.textwidth', '%')
         
-    	f.addIf($.find('h1').first(), "model.showtitle === 'true'")
-        f.addIf($.find('h2').first(), "model.showsubtitle === 'true'")
-        f.addIf($.find('p').first(), "model.showtext === 'true'")
-        f.mapRichField($.find('h1').first(), "model.title")
-        f.mapRichField($.find('h2').first(), "model.subtitle")
-        f.mapRichField($.find('p').first(), "model.text")
+        let title = $.find('h1').first()
+        let titleClasses = `{
+            'mb-6': model.isprimary === 'true',
+            'mb-3': model.isprimary !== 'true'
+        }`
+        
+        f.addIf(title, "model.showtitle === 'true'")
+        f.bindAttribute(title, 'class', titleClasses, false)
+        f.mapRichField(title, "model.title")
+
+        let subTitle = $.find('.teaser-subtitle').first()
+        let subTitleClasses = `{
+            'mb-6': model.isprimary === 'true' && model.showtitle === 'false',
+            'my-6': model.isprimary === 'true' && model.showtitle === 'true',
+            'mb-3': model.isprimary !== 'true' && model.showtitle === 'false',
+            'my-3': model.isprimary !== 'true' && model.showtitle === 'true'
+        }`
+        
+        f.addIf(subTitle, "model.showsubtitle === 'true'")
+        f.bindAttribute(subTitle, 'class', subTitleClasses, false)
+        f.mapRichField($.find('.teaser-subtitle').first(), "model.subtitle")
+
+        let teaserText = $.find('.teaser-text').first()
+        f.addIf(teaserText, "model.showtext === 'true'")       
+        f.mapRichField(teaserText, "model.text")
         
         //Buttons
-        let buttonsDiv = $.find('div').eq(1)
+        let buttonsDiv = $.find('.teaser-actions').first();
         let link = buttonsDiv.find('a')
         let buttonsClasses = `{
             'md:justify-end': model.buttonside === 'right',
@@ -47,7 +66,7 @@ module.exports = {
             'btn-white': item.buttoncolor === 'light',
             'btn-black': item.buttoncolor === 'dark'
         }`
-        f.addIf( buttonsDiv, 'model.showbutton == \'true\'')
+        f.addIf( buttonsDiv, "model.showbutton === 'true'")
         f.bindAttribute( buttonsDiv, 'class', buttonsClasses,false)
         f.addFor( link, 'model.buttons')
         f.bindAttribute( link, 'href', f.pathToUrl('item.buttonlink'))

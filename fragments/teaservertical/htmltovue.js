@@ -29,18 +29,36 @@ module.exports = {
 
         let textDiv = $.find('div>div>div').first()
         f.bindAttribute( textDiv, 'class', textClasses, false)
-        f.addStyle( textDiv, 'width', 'model.textwidth', '%')
+        f.addStyle(textDiv, 'width', 'model.textwidth', '%')
+        
+        let title = $.find('h1').first()
+        let titleClasses = `{
+            'mb-6': model.isprimary === 'true',
+            'mb-3': model.isprimary !== 'true'
+        }`
 
-        f.addIf($.find('h1').first(), "model.showtitle === 'true'")
-        f.addIf($.find('h2').first(), "model.showsubtitle === 'true'")
+        f.addIf(title, "model.showtitle === 'true'")
+        f.bindAttribute(title, 'class', titleClasses, false)
+        f.mapRichField(title, "model.title")
 
-        f.addIf($.find('p').first(), "model.showtext === 'true'")
-        f.mapRichField($.find('h1').first(), "model.title")
-        f.mapRichField($.find('h2').first(), "model.subtitle")
-        f.mapRichField($.find('p').first(), "model.text")
+        let subTitle = $.find('.teaser-subtitle').first()
+        let subTitleClasses = `{
+            'mb-6': model.isprimary === 'true' && model.showtitle === 'false',
+            'my-6': model.isprimary === 'true' && model.showtitle === 'true',
+            'mb-3': model.isprimary !== 'true' && model.showtitle === 'false',
+            'my-3': model.isprimary !== 'true' && model.showtitle === 'true'
+        }`
+        
+        f.addIf(subTitle, "model.showsubtitle === 'true'")
+        f.bindAttribute(subTitle, 'class', subTitleClasses, false)
+        f.mapRichField(subTitle, "model.subtitle")
+
+        let teaserText = $.find('.teaser-text').first()
+        f.addIf(teaserText, "model.showtext === 'true'")       
+        f.mapRichField(teaserText, "model.text")
 
         //Buttons
-        let buttonsDiv = $.find('.flex-wrap').first()
+        let buttonsDiv = $.find('.teaser-actions').first()
         let link = buttonsDiv.find('a').first()
         let buttonsClasses = `{
             'justify-start': model.alignbuttons === 'start',
@@ -66,7 +84,7 @@ module.exports = {
         f.addStyle( link, 'backgroundColor', 'item.buttoncolor')
         f.addStyle( link, 'borderColor', 'item.buttoncolor')
 
-        f.addIf( buttonsDiv, 'model.showbutton == \'true\'')
+        f.addIf( buttonsDiv, "model.showbutton == 'true'")
         f.bindAttribute( buttonsDiv, 'class', buttonsClasses, false)
 
         f.addElse($)

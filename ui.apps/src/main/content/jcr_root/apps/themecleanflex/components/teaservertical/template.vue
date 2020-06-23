@@ -20,17 +20,28 @@
             'self-center': model.aligncontent === 'center',
             'self-end': model.aligncontent === 'right'
         }" v-bind:style="`width:${model.textwidth}%;`">
-          <h1 v-if="model.showtitle === 'true'" v-html="model.title"></h1>
-          <h2 v-if="model.showsubtitle === 'true'" v-html="model.subtitle"></h2>
-          <p v-if="model.showtext === 'true'" v-html="model.text"></p>
+          <h1 class="text-5xl mt-0" v-if="model.showtitle === 'true'"
+          v-bind:class="{
+            'mb-6': model.isprimary === 'true',
+            'mb-3': model.isprimary !== 'true'
+        }" v-html="model.title"></h1>
+          <p class="teaser-subtitle text-3xl font-normal" v-if="model.showsubtitle === 'true'"
+          v-bind:class="{
+            'mb-6': model.isprimary === 'true' &amp;&amp; model.showtitle === 'false',
+            'my-6': model.isprimary === 'true' &amp;&amp; model.showtitle === 'true',
+            'mb-3': model.isprimary !== 'true' &amp;&amp; model.showtitle === 'false',
+            'my-3': model.isprimary !== 'true' &amp;&amp; model.showtitle === 'true'
+        }" v-html="model.subtitle"></p>
+          <div class="teaser-text" v-if="model.showtext === 'true'"
+          v-html="model.text"></div>
         </div>
-        <div class="flex flex-wrap p-0 -mx-2" v-if="model.showbutton == 'true'"
+        <div class="teaser-actions flex flex-wrap p-0 -mx-2" v-if="model.showbutton == 'true'"
         v-bind:class="{
             'justify-start': model.alignbuttons === 'start',
             'justify-center': model.alignbuttons === 'center',
             'justify-end': model.alignbuttons === 'end'
         }">
-          <a class="btn m-2" v-for="(item,i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
+          <a class="btn m-2" v-for="(item, i) in model.buttons" :key="i" v-bind:href="$helper.pathToUrl(item.buttonlink)"
           v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
