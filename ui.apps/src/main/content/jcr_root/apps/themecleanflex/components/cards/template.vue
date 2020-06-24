@@ -22,7 +22,7 @@
             'w-1/4': model.cardsperrowmobile == 4,
             'w-1/5': model.cardsperrowmobile == 5,
             'w-1/6': model.cardsperrowmobile == 6,
-        }" v-for="(item, i) in model.cards" :key="i">
+        }" v-for="(item, i) in model.cards" :key="item.path || i">
         <div class="flex flex-col h-full overflow-hidden" v-bind:style="`background-color:${model.customcardcolor === 'true' &amp;&amp; model.showcard === 'true' ? model.cardcolor: ''};`"
         v-bind:class="{
             'bg-secondary': model.showcard === 'true' &amp;&amp; model.customcardcolor !== 'true',
@@ -42,8 +42,9 @@
         }">
             <div>
               <h2 class="text-xl mb-3" v-if="model.showtitle == 'true'" v-html="item.title"
-              v-bind:style="`color:${item.color};`"></h2>
-              <div v-if="model.showtext == 'true'" v-html="item.text"></div>
+              data-per-inline="item.title" v-bind:style="`color:${item.color};`"></h2>
+              <div v-if="model.showtext == 'true'" v-html="item.text"
+              data-per-inline="item.text"></div>
             </div>
             <a class="btn mt-3" v-if="showbutton(item)" v-bind:href="$helper.pathToUrl(item.buttonlink)"
             v-bind:class="{
@@ -58,7 +59,7 @@
             'self-center': item.buttonalign === 'center',
             'self-end': item.buttonalign === 'right',
             'my-3': model.cardborder !== 'true' &amp;&amp; model.showcard !== 'true'
-        }" v-html="item.buttontext"></a>
+        }" v-html="item.buttontext" data-per-inline="item.buttontext"></a>
           </div>
         </div>
       </div>

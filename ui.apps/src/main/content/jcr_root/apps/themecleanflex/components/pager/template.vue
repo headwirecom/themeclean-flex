@@ -3,17 +3,7 @@
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full flex justify-between"
     v-else>
-      <a class="btn" v-bind:href="$helper.pathToUrl(model.previous)" v-bind:class="{
-            'btn-lg': model.buttonsize === 'large',
-            'btn-sm': model.buttonsize === 'small',
-            'btn-primary': model.buttoncolor === 'primary',
-            'btn-secondary': model.buttoncolor === 'secondary',
-            'btn-green': model.buttoncolor === 'success',
-            'btn-red': model.buttoncolor === 'danger',
-            'btn-orange': model.buttoncolor === 'warning',
-            'disabled': model.previous === 'unknown',
-        }">{{model.prevlabel}}</a>
-      <a class="btn" v-bind:href="$helper.pathToUrl(model.next)"
+      <a class="btn" data-per-inline="model.prevlabel" v-bind:href="$helper.pathToUrl(model.previous)"
       v-bind:class="{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
@@ -22,6 +12,21 @@
             'btn-green': model.buttoncolor === 'success',
             'btn-red': model.buttoncolor === 'danger',
             'btn-orange': model.buttoncolor === 'warning',
+            'btn-white': model.buttoncolor === 'light',
+            'btn-black': model.buttoncolor === 'dark',
+            'disabled': model.previous === 'unknown',
+        }">{{model.prevlabel}}</a>
+      <a class="btn" data-per-inline="model.nextlabel"
+      v-bind:href="$helper.pathToUrl(model.next)" v-bind:class="{
+            'btn-lg': model.buttonsize === 'large',
+            'btn-sm': model.buttonsize === 'small',
+            'btn-primary': model.buttoncolor === 'primary',
+            'btn-secondary': model.buttoncolor === 'secondary',
+            'btn-green': model.buttoncolor === 'success',
+            'btn-red': model.buttoncolor === 'danger',
+            'btn-orange': model.buttoncolor === 'warning',
+            'btn-white': model.buttoncolor === 'light',
+            'btn-black': model.buttoncolor === 'dark',
             'disabled': model.next === 'unknown',
         }">{{model.nextlabel}}</a>
     </div>

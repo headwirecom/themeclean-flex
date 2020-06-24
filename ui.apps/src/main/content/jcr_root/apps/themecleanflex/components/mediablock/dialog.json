@@ -285,6 +285,13 @@
       "visible": "model.fullheight != 'true'",
       "min": 0,
       "max": 300
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "contentname",
+      "label": "Content Name",
+      "model": "contentname"
     }
   ]
 }

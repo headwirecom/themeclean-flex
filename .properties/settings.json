@@ -1,3 +1,4 @@
 {
-  "appname": "themecleanflex"
+  "appname": "themecleanflex",
+  "hatchTargets": [ "vue", "htl" ] 
 }
