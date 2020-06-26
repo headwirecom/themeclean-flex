@@ -43,6 +43,9 @@
   --btn-secondary-focus-color: #ffffff;
   --btn-secondary-focus-bg: var(--color-accent-3-800);
 
+  --btn-light-bg: var(--color-accent-1-200);
+  --btn-dark-bg: var(--color-accent-1-600);
+
   --text-primary-color: rgba(0,0,0,0.87);
   --text-secondary-color: rgba(0,0,0,0.6);
 }

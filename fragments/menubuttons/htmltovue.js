@@ -10,8 +10,8 @@ module.exports = {
             'btn-success': item.buttoncolor === 'success',
             'btn-danger': item.buttoncolor === 'danger',
             'btn-warning': item.buttoncolor === 'warning',
-            'btn-white': item.buttoncolor === 'light',
-            'btn-black': item.buttoncolor === 'dark'
+            'btn-light': item.buttoncolor === 'light',
+            'btn-dark': item.buttoncolor === 'dark'
         }`
 
         let a = $.find('a')

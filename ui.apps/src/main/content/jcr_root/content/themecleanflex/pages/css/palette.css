@@ -98,8 +98,14 @@
   color: var(--btn-primary-color);
 }
 
-#peregrine-app .btn.btn-orange {
-  color: var(--btn-primary-color)
+#peregrine-app .btn.btn-light {
+  background-color: var(--btn-light-bg) !important;
+  color: var(--link-primary-color);
+}
+
+#peregrine-app .btn.btn-dark {
+  background-color: var(--btn-dark-bg) !important;
+  color: var(--btn-primary-color);
 }
 
 #peregrine-app .theme-light .accordion-container,
