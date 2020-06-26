@@ -38,7 +38,7 @@
             'btn-sm': model.buttonsize === 'small',
             'btn-primary': item.buttoncolor === 'primary',
             'btn-secondary': item.buttoncolor === 'secondary',
-            'btn-green': item.buttoncolor === 'success',
+            'btn-success': item.buttoncolor === 'success',
             'btn-red': item.buttoncolor === 'danger',
             'btn-orange': item.buttoncolor === 'warning',
             'btn-white': item.buttoncolor === 'light',

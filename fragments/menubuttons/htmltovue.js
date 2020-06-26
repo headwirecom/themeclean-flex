@@ -7,7 +7,7 @@ module.exports = {
             'btn-sm': model.buttonsize === 'small',
             'btn-primary': item.buttoncolor === 'primary',
             'text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white': item.buttoncolor === 'secondary',
-            'btn-green': item.buttoncolor === 'success',
+            'btn-success': item.buttoncolor === 'success',
             'btn-red': item.buttoncolor === 'danger',
             'btn-orange': item.buttoncolor === 'warning',
             'btn-white': item.buttoncolor === 'light',
