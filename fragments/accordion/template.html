@@ -8,16 +8,16 @@
 		</div>
 
 		<div class="accordion-container px-0 sm:mx-3 flex-grow overflow-hidden">
-			<div>
+			<div class="border-b">
 
-				<a class="flex justify-between items-center p-3 cursor-pointer no-underline">
-					<h3 class="text-lg m-0">
-						Toggle Title
-					</h3>
-					<svg width="16" height="16" viewBox="0 0 16 16">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"/>
-					</svg>
-				</a>
+				<h3 class="accordion-item-header">
+					<button type="button" class="accordion-toggle-button font-bold m-0 flex justify-between items-center p-3 cursor-pointer w-full">
+						<span>Toggle Title</span>
+						<svg width="16" height="16" viewBox="0 0 16 16" focusable="false">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"/>
+						</svg>
+					</button>
+				</h3>
 
 				<div class="card-content overflow-hidden transition-height" role="tabpanel">
 					<div class="p-3">

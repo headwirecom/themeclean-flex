@@ -56,9 +56,11 @@ module.exports = {
         f.bindAttribute( accordionContainer, 'class', accordionContainerClasses, false)
 
         //Accordion Item Title Bar
-        let a = $.find('a').first()
-        f.bindEvent( a, 'click', "toggleItem(i)")
-        f.mapRichField( a.find('h3'), "item.title")
+        let toggle = $.find('.accordion-toggle-button').first()
+        let toggleText = toggle.find('span');
+        f.bindEvent(toggle, 'click', "toggleItem(i)")
+        f.bindAttribute(toggle, 'aria-expanded', "active[i] ? 'true' : 'false'")
+        f.mapRichField(toggleText, "item.title")
 
         //Acocordion Item Body
         f.mapRichField($.find('div.card-content > div').first(), "item.text")
