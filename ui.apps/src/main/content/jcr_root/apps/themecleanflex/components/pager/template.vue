@@ -10,7 +10,7 @@
             'btn-secondary': model.buttoncolor === 'secondary',
             'btn-success': model.buttoncolor === 'success',
             'btn-danger': model.buttoncolor === 'danger',
-            'btn-orange': model.buttoncolor === 'warning',
+            'btn-warning': model.buttoncolor === 'warning',
             'disabled': model.previous === 'unknown',
         }">{{model.prevlabel}}</a>
       <a class="btn" v-bind:href="$helper.pathToUrl(model.next)"
@@ -21,7 +21,7 @@
             'btn-secondary': model.buttoncolor === 'secondary',
             'btn-success': model.buttoncolor === 'success',
             'btn-danger': model.buttoncolor === 'danger',
-            'btn-orange': model.buttoncolor === 'warning',
+            'btn-warning': model.buttoncolor === 'warning',
             'disabled': model.next === 'unknown',
         }">{{model.nextlabel}}</a>
     </div>

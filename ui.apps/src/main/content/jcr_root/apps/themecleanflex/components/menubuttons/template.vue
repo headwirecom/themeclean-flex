@@ -8,7 +8,7 @@
             'text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white': item.buttoncolor === 'secondary',
             'btn-success': item.buttoncolor === 'success',
             'btn-danger': item.buttoncolor === 'danger',
-            'btn-orange': item.buttoncolor === 'warning',
+            'btn-warning': item.buttoncolor === 'warning',
             'btn-white': item.buttoncolor === 'light',
             'btn-black': item.buttoncolor === 'dark'
         }" v-html="item.buttontext"></a>

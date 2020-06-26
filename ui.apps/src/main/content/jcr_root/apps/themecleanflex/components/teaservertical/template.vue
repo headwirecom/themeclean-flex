@@ -49,7 +49,7 @@
             'btn-secondary': item.buttoncolor === 'secondary',
             'btn-success': item.buttoncolor === 'success',
             'btn-danger': item.buttoncolor === 'danger',
-            'btn-orange': item.buttoncolor === 'warning',
+            'btn-warning': item.buttoncolor === 'warning',
             'btn-white': item.buttoncolor === 'light',
             'btn-black': item.buttoncolor === 'dark'
         }" v-html="item.buttontext" v-bind:style="`backgroundColor:${item.buttoncolor};borderColor:${item.buttoncolor};`"></a>
