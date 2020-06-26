@@ -104,7 +104,7 @@
 
 #peregrine-app .theme-light .accordion-container,
 #peregrine-app .theme-dark .accordion-container {
-  background-color: var(--bg-secondary-color);
+  background-color: var(--bg-primary-color);
 }
 
 #peregrine-app .accordion-toggle-button {

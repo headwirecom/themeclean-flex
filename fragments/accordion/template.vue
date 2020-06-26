@@ -30,17 +30,19 @@
             'rounded-lg': model.roundedcorners == 'large',
             'rounded-full': model.roundedcorners == 'full'
         }">
-          <div class="border-b" v-for="(item, i) in model.accordiontoggle" :key="i"
-          v-bind:id="`accordion${_uid}${parseInt(i)+1}`" v-bind:class="{
+          <div class="accordion-item border-b transition-colors duration-200 ease-in-out"
+          v-for="(item, i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`"
+          v-bind:class="{
             'border-b border-solid border-gray-300': model.colorscheme === 'light' &amp;&amp; model.cardborder === 'true',
-            'border-b border-solid border-gray-900': model.colorscheme === 'dark' &amp;&amp; model.cardborder === 'true'
+            'border-b border-solid border-gray-900': model.colorscheme === 'dark' &amp;&amp; model.cardborder === 'true',
+            'bg-secondary': active[i]
         }">
             <h3 class="accordion-item-header">
               <button type="button" class="accordion-toggle-button font-bold m-0 flex justify-between items-center p-3 cursor-pointer w-full"
               v-on:click="toggleItem(i)" v-bind:aria-expanded="active[i] ? 'true' : 'false'">
                 <span v-html="item.title"></span>
                 <svg width="16" height="16" viewBox="0 0 16 16" focusable="false"
-                v-bind:style="`transform:${active[i] ? 'rotate(180deg)': 'rotate(0)'};`">
+                class="transition-transform duration-150 ease-in-out" v-bind:style="`transform:${active[i] ? 'rotate(180deg)': 'rotate(0)'};`">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"
                   />
                 </svg>

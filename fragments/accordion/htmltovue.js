@@ -46,14 +46,15 @@ module.exports = {
 
         let accordionContainerClasses = `{
             'border-b border-solid border-gray-300': model.colorscheme === 'light' && model.cardborder === 'true',
-            'border-b border-solid border-gray-900': model.colorscheme === 'dark' && model.cardborder === 'true'
+            'border-b border-solid border-gray-900': model.colorscheme === 'dark' && model.cardborder === 'true',
+            'bg-secondary': active[i]
         }`
 
         //Accordion Container
         let accordionContainer = $.find('div:nth-child(1)').eq(1)
         f.addFor(accordionContainer, 'model.accordiontoggle')
         f.bindAttribute( accordionContainer, 'id', "`accordion${_uid}${parseInt(i)+1}`")
-        f.bindAttribute( accordionContainer, 'class', accordionContainerClasses, false)
+        f.bindAttribute(accordionContainer, 'class', accordionContainerClasses, false)
 
         //Accordion Item Title Bar
         let toggle = $.find('.accordion-toggle-button').first()

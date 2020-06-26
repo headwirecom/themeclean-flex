@@ -153,7 +153,11 @@ module.exports = {
       '56': 'var(--spacing-56)',
       '64': 'var(--spacing-64)',
     },
-    backgroundColor: theme => theme('colors'),
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      primary: 'var(--bg-primary-color)',
+      secondary: 'var(--bg-secondary-color)'
+    }),
     backgroundPosition: {
       bottom: 'bottom',
       center: 'center',
