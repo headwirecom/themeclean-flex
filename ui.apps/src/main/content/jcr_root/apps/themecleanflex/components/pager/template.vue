@@ -9,7 +9,7 @@
             'btn-primary': model.buttoncolor === 'primary',
             'btn-secondary': model.buttoncolor === 'secondary',
             'btn-success': model.buttoncolor === 'success',
-            'btn-red': model.buttoncolor === 'danger',
+            'btn-danger': model.buttoncolor === 'danger',
             'btn-orange': model.buttoncolor === 'warning',
             'disabled': model.previous === 'unknown',
         }">{{model.prevlabel}}</a>
@@ -20,7 +20,7 @@
             'btn-primary': model.buttoncolor === 'primary',
             'btn-secondary': model.buttoncolor === 'secondary',
             'btn-success': model.buttoncolor === 'success',
-            'btn-red': model.buttoncolor === 'danger',
+            'btn-danger': model.buttoncolor === 'danger',
             'btn-orange': model.buttoncolor === 'warning',
             'disabled': model.next === 'unknown',
         }">{{model.nextlabel}}</a>
