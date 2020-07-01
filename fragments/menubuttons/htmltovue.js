@@ -7,11 +7,11 @@ module.exports = {
             'btn-sm': model.buttonsize === 'small',
             'btn-primary': item.buttoncolor === 'primary',
             'text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white': item.buttoncolor === 'secondary',
-            'btn-green': item.buttoncolor === 'success',
-            'btn-red': item.buttoncolor === 'danger',
-            'btn-orange': item.buttoncolor === 'warning',
-            'btn-white': item.buttoncolor === 'light',
-            'btn-black': item.buttoncolor === 'dark'
+            'btn-success': item.buttoncolor === 'success',
+            'btn-danger': item.buttoncolor === 'danger',
+            'btn-warning': item.buttoncolor === 'warning',
+            'btn-light': item.buttoncolor === 'light',
+            'btn-dark': item.buttoncolor === 'dark'
         }`
 
         let a = $.find('a')
