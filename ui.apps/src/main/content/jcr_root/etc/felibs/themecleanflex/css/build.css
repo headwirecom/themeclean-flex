@@ -617,6 +617,10 @@ video {
   background-color: var(--color-blue-700);
 }
 
+.bg-secondary {
+  background-color: var(--bg-secondary-color);
+}
+
 .hover\:bg-black:hover {
   --bg-opacity: 1;
   background-color: #000;
@@ -1276,8 +1280,28 @@ video {
   z-index: 10;
 }
 
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
+}
+
 .transition-opacity {
   transition-property: opacity;
+}
+
+.transition-transform {
+  transition-property: transform;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-150 {
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .aspect-ratio-16\/9 {
