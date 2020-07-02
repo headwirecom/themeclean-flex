@@ -66,8 +66,10 @@
   --btn-warning-bg: var(--color-orange-600);
 
   --btn-light-bg: var(--color-blue-100);
+  --btn-light-color: var(--link-primary-color);
 
   --btn-dark-bg: black;
+  --btn-dark-color: var(--btn-primary-color);
 }
 
 #peregrine-app .theme-dark {

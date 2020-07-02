@@ -62,7 +62,7 @@
 #peregrine-app .btn.btn-primary:hover {
   color: var(--btn-primary-hover-color, var(--btn-hover-color, #ffffff));
   background: var(--btn-primary-hover-bg);
-  background-color: var(--btn-primary-hover-bg);
+  border-color: var(--btn-primary-hover-border-color);
 }
 
 #peregrine-app .btn.btn-secondary {
@@ -82,7 +82,7 @@
 #peregrine-app .btn.btn-secondary:hover {
   color: var(--btn-secondary-hover-color);
   background: var(--btn-secondary-hover-bg);
-  background-color: var(--btn-secondary-hover-bg);
+  border-color: var(--btn-secondary-hover-border-color);
 }
 
 #peregrine-app .btn.btn-success {

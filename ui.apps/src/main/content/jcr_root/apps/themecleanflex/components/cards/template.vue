@@ -25,6 +25,7 @@
         }" v-for="(item, i) in model.cards" :key="i">
         <div class="flex flex-col h-full overflow-hidden" v-bind:style="`background-color:${model.customcardcolor === 'true' &amp;&amp; model.showcard === 'true' ? model.cardcolor: ''};`"
         v-bind:class="{
+            'card--bg': model.showcard === 'true' || model.customcardcolor === 'true',
             'bg-secondary': model.showcard === 'true' &amp;&amp; model.customcardcolor !== 'true',
             'border border-solid': (model.customcardcolor !== 'true') &amp;&amp; model.cardborder === 'true',
             'rounded-none': model.roundedcorners == 'none',

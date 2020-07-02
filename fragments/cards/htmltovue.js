@@ -29,6 +29,7 @@ module.exports = {
 
         //Card
         let cardClasses = `{
+            'card--bg': model.showcard === 'true' || model.customcardcolor === 'true',
             'bg-secondary': model.showcard === 'true' && model.customcardcolor !== 'true',
             'border border-solid': (model.customcardcolor !== 'true') && model.cardborder === 'true',
             'rounded-none': model.roundedcorners == 'none',

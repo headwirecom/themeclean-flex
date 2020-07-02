@@ -618,7 +618,7 @@ video {
 }
 
 .bg-secondary {
-  background-color: var(--bg-secondary-color);
+  background-color: var(--bg-secondary);
 }
 
 .hover\:bg-black:hover {
@@ -1539,11 +1539,11 @@ p {
 /* Background */
 
 .bg-primary {
-  background-color: var(--bg-primary-color);
+  background: var(--bg-primary);
 }
 
 .bg-secondary {
-  background-color: var(--bg-secondary-color);
+  background: var(--bg-secondary);
 }
 
 /* Buttons */
@@ -1557,7 +1557,9 @@ p {
   padding-right: var(--spacing-4);
   border-radius: 0.25rem;
   text-decoration: none;
-  transition: background-color 0.2s ease;
+  transition-property: background, background-color, color, border-color;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:focus {
