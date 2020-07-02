@@ -155,8 +155,8 @@ module.exports = {
     },
     backgroundColor: theme => ({
       ...theme('colors'),
-      primary: 'var(--bg-primary-color)',
-      secondary: 'var(--bg-secondary-color)'
+      primary: 'var(--bg-primary)',
+      secondary: 'var(--bg-secondary)'
     }),
     backgroundPosition: {
       bottom: 'bottom',

@@ -17,8 +17,8 @@
   --color-accent-3-800: #191919;
   --color-accent-3-900: #000000;
 
-  --bg-primary-color: var(--color-accent-2-100);
-  --bg-secondary-color: var(--color-accent-2-200);
+  --bg-primary: var(--color-accent-2-100);
+  --bg-secondary: var(--color-accent-2-200);
   --border-primary-color: rgba(66, 67, 68, 0.2);
 
   --link-primary-color: var(--color-accent-1-500);
@@ -51,11 +51,11 @@
 }
 
 #peregrine-app .theme-light {
-  --bg-primary-color: var(--color-accent-2-200);
-  --bg-secondary-color: var(--color-accent-2-100);
+  --bg-primary: var(--color-accent-2-200);
+  --bg-secondary: var(--color-accent-2-100);
   
   --btn-secondary-color: var(--color-accent-1-900);
-  --btn-secondary-bg: var(--bg-secondary-color);
+  --btn-secondary-bg: var(--bg-secondary);
   --btn-secondary-border-width: 0;
   --btn-secondary-hover-color: var(--btn-secondary-color);
   --btn-secondary-hover-bg: var(--color-accent-1-300);
@@ -69,8 +69,8 @@
 }
 
 #peregrine-app .theme-dark {
-  --bg-primary-color: var(--color-accent-3-900);
-  --bg-secondary-color: var(--color-accent-3-800);
+  --bg-primary: var(--color-accent-3-900);
+  --bg-secondary: var(--color-accent-3-800);
   --border-primary-color: rgba(255, 255, 255, 0.2);
 
   --text-primary-color: #ffffff;

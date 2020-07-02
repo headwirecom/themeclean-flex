@@ -1,7 +1,7 @@
 /* Colors */
 #peregrine-app {
-  --bg-primary-color: #ffffff;
-  --bg-secondary-color: #ffffff;
+  --bg-primary: #ffffff;
+  --bg-secondary: #ffffff;
 
   --text-primary-color: #000000;
   --text-secondary-color: #000000;
