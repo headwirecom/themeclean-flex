@@ -104,16 +104,22 @@
 
 #peregrine-app .theme-light .accordion-container,
 #peregrine-app .theme-dark .accordion-container {
-  background-color: var(--bg-secondary-color);
-  border-width: 1px;
-  border-style: solid;
+  background-color: var(--bg-primary-color);
 }
 
-#peregrine-app .theme-light .accordion-container > div,
-#peregrine-app .theme-dark .accordion-container > div {
-  background-color: var(--bg-secondary-color) !important;
-  border-bottom-width: 1px;
-  border-style: solid;
+#peregrine-app .accordion-toggle-button {
+  font-family: inherit;
+  -webkit-appearance: none;
+  border: 0;
+  background-color: none;
+}
+
+#peregrine-app .accordion-toggle-button:focus {
+  outline: 0;
+}
+
+#peregrine-app .accordion-toggle-button:focus svg {
+  fill: var(--btn-focus-border-color, blue);
 }
 
 #peregrine-app svg:not(.fill-current) {
