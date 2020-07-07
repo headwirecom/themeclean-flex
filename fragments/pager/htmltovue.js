@@ -9,11 +9,11 @@ module.exports = {
             'btn-sm': model.buttonsize === 'small',
             'btn-primary': model.buttoncolor === 'primary',
             'btn-secondary': model.buttoncolor === 'secondary',
-            'btn-green': model.buttoncolor === 'success',
-            'btn-red': model.buttoncolor === 'danger',
-            'btn-orange': model.buttoncolor === 'warning',
-            'btn-white': model.buttoncolor === 'light',
-            'btn-black': model.buttoncolor === 'dark',
+            'btn-success': model.buttoncolor === 'success',
+            'btn-danger': model.buttoncolor === 'danger',
+            'btn-warning': model.buttoncolor === 'warning',
+            'btn-light': model.buttoncolor === 'light',
+            'btn-dark': model.buttoncolor === 'dark',
             'disabled': model.previous === 'unknown',
         }`
 
@@ -22,11 +22,11 @@ module.exports = {
             'btn-sm': model.buttonsize === 'small',
             'btn-primary': model.buttoncolor === 'primary',
             'btn-secondary': model.buttoncolor === 'secondary',
-            'btn-green': model.buttoncolor === 'success',
-            'btn-red': model.buttoncolor === 'danger',
-            'btn-orange': model.buttoncolor === 'warning',
-            'btn-white': model.buttoncolor === 'light',
-            'btn-black': model.buttoncolor === 'dark',
+            'btn-success': model.buttoncolor === 'success',
+            'btn-danger': model.buttoncolor === 'danger',
+            'btn-warning': model.buttoncolor === 'warning',
+            'btn-light': model.buttoncolor === 'light',
+            'btn-dark': model.buttoncolor === 'dark',
             'disabled': model.next === 'unknown',
         }`
         

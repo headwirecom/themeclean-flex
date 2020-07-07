@@ -60,10 +60,19 @@
   --btn-secondary-focus-border-color: var(--btn-focus-border-color);
 
   --btn-success-bg: var(--color-green-600);
+  --btn-success-hover-bg: var(--color-green-800);
 
   --btn-danger-bg: var(--color-red-600);
+  --btn-danger-hover-bg: var(--color-red-800);
 
   --btn-warning-bg: var(--color-orange-600);
+  --btn-warning-hover-bg: var(--color-orange-800);
+
+  --btn-light-bg: var(--color-blue-100);
+  --btn-light-hover-bg: var(--color-blue-300);
+
+  --btn-dark-bg: black;
+  --btn-dark-hover-bg: var(--color-gray-900);
 }
 
 #peregrine-app .theme-dark {
