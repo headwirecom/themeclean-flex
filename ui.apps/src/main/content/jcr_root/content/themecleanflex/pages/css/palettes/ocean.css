@@ -60,24 +60,8 @@
 #peregrine-app .theme-light {
   --bg-primary: var(--color-accent-1-50);
   --bg-secondary: var(--ocean-gradient-1);
-}
 
-#peregrine-app .themecleanflex-components-cards.theme-light .card--bg {
-  --text-primary-color: rgba(255,255,255,0.87);
-  --text-secondary-color: rgba(255,255,255,0.6);
-}
-
-#peregrine-app .themecleanflex-components-cards.theme-dark .card--bg {
-  --text-primary-color: rgba(0,0,0,0.87);
-  --text-secondary-color: rgba(0,0,0,0.6);
-}
-
-#peregrine-app .theme-dark {
-  --bg-primary: var(--ocean-gradient-1);
-  --bg-secondary: #ffffff;
-
-  --text-primary-color: rgba(255,255,255,0.87);
-  --text-secondary-color: rgba(255,255,255,0.6);
+  --border-primary-color: rgba(0,0,0,0.1);
 }
 
 #peregrine-app .theme-dark,
@@ -108,4 +92,38 @@
   --btn-secondary-focus-color: var(--btn-secondary-hover-color);
   --btn-secondary-focus-bg: var(--btn-secondary-hover-bg);
   --btn-secondary-focus-border-color: var(--btn-focus-border-color);
-} 
+}
+
+#peregrine-app .theme-dark {
+  --bg-primary: var(--ocean-gradient-1);
+  --bg-secondary: #ffffff;
+
+  --border-primary-color: rgba(255,255,255,0.6);
+
+  --text-primary-color: rgba(255,255,255,0.87);
+  --text-secondary-color: rgba(255,255,255,0.6);
+}
+
+/* Individual overwrites */
+
+#peregrine-app .themecleanflex-components-cards.theme-light .card--bg {
+  --text-primary-color: rgba(255,255,255,0.87);
+  --text-secondary-color: rgba(255,255,255,0.6);
+}
+
+#peregrine-app .themecleanflex-components-cards.theme-dark .card--bg,
+#peregrine-app .themecleanflex-components-accordion.theme-dark .accordion-container .bg-secondary {
+   /* Apply black text colour because otherwise it would render white on white */
+  --text-primary-color: rgba(0,0,0,0.87);
+  --text-secondary-color: rgba(0,0,0,0.6);
+}
+
+#peregrine-app .themecleanflex-components-accordion.theme-light .accordion-container .bg-secondary {
+   /* Reduce strong visual noise by removing the default primary background colour */
+  --bg-secondary: rgba(255,255,255,0.6);
+}
+
+#peregrine-app .theme-light .accordion-container.accordion-container,
+#peregrine-app .theme-dark .accordion-container.accordion-container {
+  background: transparent;
+}
