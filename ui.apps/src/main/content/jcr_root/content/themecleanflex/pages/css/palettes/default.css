@@ -44,7 +44,11 @@
   --btn-secondary-focus-bg: var(--color-accent-3-800);
 
   --btn-light-bg: var(--color-accent-1-200);
+  --btn-light-hover-bg: var(--color-accent-1-300);
+  --btn-light-hover-color: var(--color-accent-1-900);
+
   --btn-dark-bg: var(--color-accent-1-600);
+  --btn-dark-hover-bg: var(--color-accent-1-700);
 
   --text-primary-color: rgba(0,0,0,0.87);
   --text-secondary-color: rgba(0,0,0,0.6);
