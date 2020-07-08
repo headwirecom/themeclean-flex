@@ -15,9 +15,6 @@
   --color-accent-2-100: #ffffff;
   --color-accent-2-200: #f2f2f2;
 
-  --color-accent-3-800: #191919;
-  --color-accent-3-900: #000000;
-
   --ocean-gradient-1: linear-gradient(-10deg, var(--color-accent-1-600) 0%, transparent 100%) var(--color-accent-1-300);
   --ocean-gradient-1-hover: linear-gradient(-10deg, var(--color-accent-1-600) 0%, transparent 100%) var(--color-accent-1-600);
 
@@ -104,6 +101,8 @@
   --text-secondary-color: rgba(255,255,255,0.6);
 
   --link-primary-color: #ffffff;
+  --link-primary-color-hover: var(--color-accent-1-50);
+  --focus-border-color: var(--color-accent-1-100);
 }
 
 /* Individual overwrites */
