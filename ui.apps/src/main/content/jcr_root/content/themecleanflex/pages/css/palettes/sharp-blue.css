@@ -5,8 +5,8 @@
   }
   
   #peregrine-app .theme-light {
-    --bg-primary-color: #d7dfdd;
-    --bg-secondary-color: #f5f5f5;
+    --bg-primary: #d7dfdd;
+    --bg-secondary: #f5f5f5;
   
     --text-primary-color:#0e0b16;
     --text-secondary-color: #4711f6;
@@ -23,8 +23,8 @@
   }
   
   #peregrine-app .theme-dark {
-    --bg-primary-color: #0e0b16;
-    --bg-secondary-color: #00003c;
+    --bg-primary: #0e0b16;
+    --bg-secondary: #00003c;
   
     --text-primary-color: #d7dfdd;
     --text-secondary-color: #4711f6;
