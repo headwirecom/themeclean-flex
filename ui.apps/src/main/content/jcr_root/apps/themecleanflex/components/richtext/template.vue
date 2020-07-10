@@ -12,7 +12,7 @@
       </div>
       <!-- <div class="flex-grow md:px-3" v-html="model.text" data-per-inline="model.text"
       data-per-inline-is-rich="true"></div> -->
-      <div class="flex-grow md:px-3" v-html="model.text" data-per-inline="model.text" v-bind:data-per-path="model.path"></div>
+      <div class="flex-grow md:px-3" v-html="model.text" data-per-inline="model.text"></div>
     </div>
   </themecleanflex-components-block>
 </template>
