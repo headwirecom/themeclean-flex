@@ -39,7 +39,11 @@
     "vue-template-compiler": "^2.5.22"
   },
   "devDependencies": {
+    "@analytics/google-analytics": "^0.4.0",
+    "@analytics/perfumejs": "^0.2.0",
     "@fullhuman/postcss-purgecss": "^1.1.0",
+    "analytics": "^0.5.3",
+    "perfume.js": "^5.1.0",
     "pixelmatch": "^5.0.2",
     "pngjs": "^3.4.0",
     "postcss": "^7.0.14",
