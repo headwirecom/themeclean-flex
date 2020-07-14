@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
+    jcr:lastModified="{Date}2020-07-13T12:16:50.935-07:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="per:Page">
+    <jcr:content
+        jcr:lastModified="{Date}2020-07-13T12:16:50.935-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="per:PageContent"
+        jcr:title="skeleton-pages"
+        sling:resourceType="themecleanflex/components/page"
+        excludeFromSitemap="true"
+        name="skeleton-pages"
+        skeletonPagePath=""
+        template="/content/themecleanflex/templates/blank"
+        templatePath="/content/themecleanflex/templates/blank"
+        title="skeleton-pages">
+        <n1db9b055-6e50-467a-8eef-ea0d1e521659
+            jcr:lastModified="{Date}2020-07-13T12:15:27.555-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/richtext"
+            bgcolor="#ffffff"
+            bgsize="cover"
+            bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
+            bgxposition="50"
+            bgyposition="50"
+            blockwidth="default"
+            color2="#c0c0c0"
+            colorscheme=""
+            custombackground="false"
+            fullheight="false"
+            htmlelement="section"
+            imagesrc=""
+            mediaposition="before"
+            mediawidth="50"
+            overlaycolor="#ffffff"
+            overlayopacity="50"
+            text="&lt;p>The child pages of this page serve as skeleton pages (stubs). When you create a new page you can either select to create from a template or select to create from a skeleton page. A skeleton page is a template with initial content on the page that can be modified.&amp;nbsp;&lt;/p>&lt;p>Your website currently has the following skeleton pages:&lt;/p>"
+            videosrc=""/>
+        <n22d0be97-31de-4ca3-9521-2ad144e612dd
+            jcr:lastModified="{Date}2020-07-13T12:15:52.036-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="themecleanflex/components/pagelist"
+            bgcolor="#ffffff"
+            bgsize="cover"
+            bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
+            bgxposition="50"
+            bgyposition="50"
+            blockwidth="default"
+            color2="#c0c0c0"
+            colorscheme=""
+            custombackground="false"
+            excludeSitemapExcludes="false"
+            fullheight="false"
+            htmlelement="section"
+            levels="1"
+            overlaycolor="#ffffff"
+            overlayopacity="50"
+            rootpage="/content/themecleanflex/pages/skeleton-pages"
+            rootPageLink="not adaptable"
+            rootPageTitle="not adaptable"/>
+    </jcr:content>
+    <team/>
+    <about-us/>
+    <sitemap/>
+    <article/>
+    <author/>
+</jcr:root>

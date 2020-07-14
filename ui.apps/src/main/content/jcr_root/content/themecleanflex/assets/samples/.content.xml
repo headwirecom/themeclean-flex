@@ -2,6 +2,7 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
   jcr:primaryType="sling:OrderedFolder"
   jcr:title="samples"
+  doNotCopy="{Boolean}true"
   jcr:description="samples">
     <aerial-sailboat.jpg />
     <anchored.jpg />

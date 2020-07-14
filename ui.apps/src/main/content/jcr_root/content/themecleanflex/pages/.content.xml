@@ -51,5 +51,12 @@
       text="&lt;p&gt;This page has been left blank intentionally - it serves as the root container of the website.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Please edit the child page called index to change the root page.&lt;/p&gt;"/>
 
   </jcr:content>
+  <skeleton-pages/>
+  <css/>
+  <errors/>
+  <index/>
+  <articles/>
+  <authors/>
+  <sitemap/>
 
 </jcr:root>
