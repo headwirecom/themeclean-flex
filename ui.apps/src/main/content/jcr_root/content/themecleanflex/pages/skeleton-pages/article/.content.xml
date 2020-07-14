@@ -25,6 +25,7 @@
                         backgroundtype="gradient"
                         bgcolor="#ffffff"
                         bottompadding="30"
+                        contentname="heading"
                         buttonsize="default"
                         color2="#c0c0c0"
                         fullheight="false"
@@ -76,6 +77,7 @@
                             mediawidth="50"
                             overlaycolor="#ffffff"
                             overlayopacity="50"
+                            contentname="byline"
                             text="&lt;p>July-16-2020, Nicole Ford&lt;/p>"
                             videosrc=""/>
                         <n9e03ed29-eef6-42ac-8465-7f9d2ca0092a
