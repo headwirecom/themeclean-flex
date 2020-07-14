@@ -27,6 +27,7 @@ module.exports = {
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
             jcr:primaryType="per:Page"
             jcr:title="tf-cl | ${name}"
+            doNotCopy="{Boolean}true"
             jcr:description="${name} themecleanflex component library"
 >
     <jcr:content
@@ -34,6 +35,7 @@ module.exports = {
         sling:resourceType="themecleanflex/components/page"
         jcr:title="${name}"
         description="${name} themecleanflex component library"
+        excludeFromSitemap="true"
         brand="themecleanflex"
         template="/content/themecleanflex/templates"
             ><clheader
