@@ -91,7 +91,7 @@
 }
 
 #peregrine-app .btn.btn-success:hover {
-  background-color: var(--btn-success-hover-bg) !important;
+  background: var(--btn-success-hover-bg) !important;
   color: var(--btn-success-hover-color, var(--btn-primary-color));
 }
 
@@ -101,37 +101,37 @@
 }
 
 #peregrine-app .btn.btn-danger:hover {
-  background-color: var(--btn-danger-hover-bg) !important;
+  background: var(--btn-danger-hover-bg) !important;
   color: var(--btn-danger-hover-color, var(--btn-primary-color));
 }
 
 #peregrine-app .btn.btn-warning {
-  background-color: var(--btn-warning-bg) !important;
+  background: var(--btn-warning-bg) !important;
   color: var(--btn-warning-color, var(--btn-primary-color));
 }
 
 #peregrine-app .btn.btn-warning:hover {
-  background-color: var(--btn-warning-hover-bg) !important;
+  background: var(--btn-warning-hover-bg) !important;
   color: var(--btn-warning-hover-color, var(--btn-primary-color));
 }
 
 #peregrine-app .btn.btn-light {
-  background-color: var(--btn-light-bg) !important;
+  background: var(--btn-light-bg) !important;
   color: var(--btn-light-color);
 }
 
 #peregrine-app .btn.btn-light:hover {
-  background-color: var(--btn-light-hover-bg) !important;
+  background: var(--btn-light-hover-bg) !important;
   color: var(--btn-light-hover-color, var(--link-primary-color));
 }
 
 #peregrine-app .btn.btn-dark {
-  background-color: var(--btn-dark-bg) !important;
+  background: var(--btn-dark-bg) !important;
   color: var(--btn-dark-color);
 }
 
 #peregrine-app .btn.btn-dark:hover {
-  background-color: var(--btn-dark-hover-bg) !important;
+  background: var(--btn-dark-hover-bg) !important;
   color: var(--btn-dark-hover-color, var(--btn-primary-color));
 }
 
@@ -144,7 +144,7 @@
   font-family: inherit;
   -webkit-appearance: none;
   border: 0;
-  background-color: none;
+  background: none;
 }
 
 #peregrine-app .accordion-toggle-button:focus {
