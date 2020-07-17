@@ -6,7 +6,7 @@
     v-bind:autoplayHoverPause="model.pause === 'true'" v-bind:centerMode="true"
     v-bind:loop="model.wrap === 'true'" v-bind:autoplayTimeout="model.interval * 1000"
     v-bind:perPage="model.itemsperpage" v-else>
-      <slide v-for="(item,i) in model.slides" :key="i">
+      <slide v-for="(item, i) in model.slides" :key="item.path || i">
         <div class="relative overflow-hidden flex flex-col justify-center" v-bind:style="`height:${model.carouselheight}vh;maxHeight:${model.carouselheight}vh;`">
           <a class="absolute inset-0 z-10" v-if="item.slidelink" v-bind:href="item.slidelink"></a>
           <v-lazy-image class="absolute top-0 w-full h-full object-center" v-if="item.imagepath"
@@ -18,7 +18,7 @@
         }">
             <div class="container">
               <div class="px-4 sm:px-0 sm:w-full md:w-4/5 lg:w-1/2" v-if="item.text"
-              v-html="item.text"></div>
+              v-html="item.text" v-bind:data-per-inline="`model.slides.${i}.text`"></div>
             </div>
           </figcaption>
         </div>

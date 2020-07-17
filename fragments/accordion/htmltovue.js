@@ -5,7 +5,7 @@ module.exports = {
 
         //Header
     	f.addIf($.find('h2').first(), 'model.showtitle == \'true\'')
-        f.mapRichField($.find('h2').first(), "model.title")
+        f.mapField($.find('h2').first(), "model.title")
 
         //Content Container
         let containerClasses = `{
@@ -61,10 +61,10 @@ module.exports = {
         let toggleText = toggle.find('span');
         f.bindEvent(toggle, 'click', "toggleItem(i)")
         f.bindAttribute(toggle, 'aria-expanded', "active[i] ? 'true' : 'false'")
-        f.mapRichField(toggleText, "item.title")
+        f.mapField(toggleText, "item.title", "model.accordiontoggle", "title")
 
         //Acocordion Item Body
-        f.mapRichField($.find('div.card-content > div').first(), "item.text")
+        f.mapRichField($.find('div.card-content > div').first(), "item.text", "model.accordiontoggle", "text")
         f.bindAttribute($.find('div.card-content > div').first(), 'ref', "`cardContent${i}`")
         f.addStyle($.find('div.card-content').first(), 'height', "active[i] ? heights[i] + 'px' : '0px'")
         f.addStyle($.find('svg').first(), 'transform', "active[i] ? 'rotate(180deg)': 'rotate(0)'")

@@ -39,7 +39,7 @@ module.exports = {
 
         f.addIf(title, "model.showtitle === 'true'")
         f.bindAttribute(title, 'class', titleClasses, false)
-        f.mapRichField(title, "model.title")
+        f.mapField(title, "model.title")
 
         let subTitle = $.find('.teaser-subtitle').first()
         let subTitleClasses = `{
@@ -51,7 +51,7 @@ module.exports = {
         
         f.addIf(subTitle, "model.showsubtitle === 'true'")
         f.bindAttribute(subTitle, 'class', subTitleClasses, false)
-        f.mapRichField(subTitle, "model.subtitle")
+        f.mapField(subTitle, "model.subtitle")
 
         let teaserText = $.find('.teaser-text').first()
         f.addIf(teaserText, "model.showtext === 'true'")       
@@ -80,7 +80,7 @@ module.exports = {
         f.addFor( link, 'model.buttons')
         f.bindAttribute( link, 'href', f.pathToUrl('item.buttonlink'))
         f.bindAttribute( link, 'class', aClasses, false)
-        f.mapRichField( link, "item.buttontext")
+        f.mapField( link, "item.buttontext", 'model.buttons', 'buttontext')
         f.addStyle( link, 'backgroundColor', 'item.buttoncolor')
         f.addStyle( link, 'borderColor', 'item.buttoncolor')
 

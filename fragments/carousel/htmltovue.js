@@ -37,8 +37,8 @@ module.exports = {
 
         let figcaption = $.find('figcaption').first()
         let figcaptionContent = $.find('figcaption > .container > div').first()
-        f.addIf(figcaptionContent, "item.text")
-        f.mapRichField(figcaptionContent, "item.text")
+        f.addIf(figcaptionContent, "item.text", "model.slides", "text")
+        f.mapRichField(figcaptionContent, "item.text", "model.slides", "text")
         f.bindAttribute( figcaption, 'class', captionClasses, false)
 
         f.addElse($);

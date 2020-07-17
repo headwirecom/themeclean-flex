@@ -12,11 +12,16 @@
             [`w-${model.mobilecolspan}/12 flex-grow-0`]: model.mobilewidth === 'custom' &amp;&amp; model.mobilecolspan &lt; 12,
             [`${model.component}`]: model.component
         }">
-    <pagerendervue-components-placeholder v-bind:model="{ path: model.path, component: model.component, location: 'before' }"></pagerendervue-components-placeholder>
-    <template v-for="child in model.children">
-      <component v-bind:is="child.component" v-bind:model="child"></component>
-    </template>
-    <pagerendervue-components-placeholder v-bind:model="{ path: model.path, component: model.component, location: 'after' }"></pagerendervue-components-placeholder>
+    <pagerendervue-components-placeholder v-if="(model.fromTemplate &amp;&amp; model.children.length &gt; 0 &amp;&amp; model.children[0].fromTemplate) ? false: model.children.length &gt; 0"
+    v-bind:model="{ path: model.path, component: model.component, location: 'before' }"></pagerendervue-components-placeholder>
+    <pagerendervue-components-placeholder
+    v-if="model.children.length === 0" v-bind:model="{ path: model.path, component: model.component + ': drop component here', location: 'into' }"
+    class="per-drop-target-empty"></pagerendervue-components-placeholder>
+      <template v-for="child in model.children">
+        <component v-bind:is="child.component" v-bind:model="child"></component>
+      </template>
+      <pagerendervue-components-placeholder v-if="(model.fromTemplate &amp;&amp; model.children.length &gt; 0 &amp;&amp; model.children[0].fromTemplate) ? false: model.children.length &gt; 0"
+      v-bind:model="{ path: model.path, component: model.component, location: 'after' }"></pagerendervue-components-placeholder>
   </component>
 </template>
 
