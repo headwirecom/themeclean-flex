@@ -25,7 +25,7 @@
             'my-3': model.isprimary !== 'true' &amp;&amp; model.showtitle === 'true'
         }" data-per-inline="model.subtitle">{{model.subtitle}}</p>
         <div class="teaser-text" v-if="model.showtext === 'true'"
-        v-html="model.text" data-per-inline="model.text"></div>
+        v-html="model.text" v-bind:data-per-inline="`model.text`"></div>
       </div>
       <div class="teaser-actions flex flex-wrap justify-center" v-if="model.showbutton === 'true'"
       v-bind:class="{

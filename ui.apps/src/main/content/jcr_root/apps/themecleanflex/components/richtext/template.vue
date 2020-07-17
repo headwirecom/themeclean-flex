@@ -10,7 +10,7 @@
       v-bind:style="{flex:`0 0 ${model.mediawidth}%`}">
         <themecleanflex-components-media :model="model"></themecleanflex-components-media>
       </div>
-      <div class="flex-grow md:px-3" v-html="model.text" data-per-inline="model.text"></div>
+      <div class="flex-grow md:px-3" v-html="model.text" v-bind:data-per-inline="`model.text`"></div>
     </div>
   </themecleanflex-components-block>
 </template>
