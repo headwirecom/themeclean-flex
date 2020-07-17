@@ -15,7 +15,7 @@ module.exports = {
         f.addFor( rootItem, 'model.childrenPages', 'child' );
 
         let rootLink = $.find('a');
-        f.mapField(rootLink, 'child.title');
+        f.mapField(rootLink, 'child.title', "model.childrenPages", "title");
         f.bindAttribute(rootLink, 'href', 'child.childrenPages.length > 0 ? false : child.path');
         f.bindAttribute(rootLink, 'class', "model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'",false);
         

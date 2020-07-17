@@ -16,12 +16,12 @@ module.exports = {
 		let colcontent = col.find('div').first()
 		f.addFor( col, "model.columns")
 		f.addIf( coltitle, "item.title !== ''")
-		f.mapField( coltitle, "item.title")
+		f.mapField( coltitle, "item.title", "model.clolumns", "title")
 		f.addIf( colcontent, "item.text !== ''")
-		f.mapRichField( colcontent, "item.text")
+		f.mapRichField( colcontent, "item.text", "model.clolumns", "text")
 
 		//Copyright
-		f.mapRichField($.find('p').eq(0), "model.copyright")
+		f.mapField($.find('p').eq(0), "model.copyright")
 
 
 		f.addElse($);
