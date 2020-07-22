@@ -8,15 +8,23 @@
             'justify-end': model.justifyitems === 'end'
         }" v-else>
       <div class="flex flex-col dropdown-container" v-for="(child, i) in model.childrenPages"
+<<<<<<< HEAD
       :key="child.path || i">
+=======
+      :key="item.path || i">
+>>>>>>> develop
         <a class="p-3 no-underline" v-bind:data-per-inline="`model.childrenPages.${i}.title`"
         v-bind:href="child.childrenPages.length &gt; 0 ? false : child.path" v-bind:class="model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'">{{child.title}}</a>
         <div class="self-stretch" v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0">
           <div class="flex flex-col dropdown-list" v-bind:class="model.colorscheme === 'dark' ? 'theme-dark': 'theme-light'">
             <a class="p-3 no-underline" v-bind:data-per-inline="`model.childrenPages.${i}.title`"
             v-bind:href="subchild.path" v-bind:class="model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'"
+<<<<<<< HEAD
             v-for="(subchild, i) in child.childrenPages" :key="subchild.path || i"
             data-per-inline="subchild.title">{{subchild.title}}</a>
+=======
+            v-for="(subchild, i) in child.childrenPages" :key="item.path || i" data-per-inline="subchild.title">{{subchild.title}}</a>
+>>>>>>> develop
           </div>
         </div>
       </div>

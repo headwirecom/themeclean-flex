@@ -6,8 +6,13 @@
       <pagerendervue-components-placeholder
       v-if="model.children.length === 0" v-bind:model="{ path: model.path, component: model.component + ': drop component here', location: 'into' }"
       class="per-drop-target-empty"></pagerendervue-components-placeholder>
+<<<<<<< HEAD
         <template v-for="(child, i) in model.children">
           <component v-bind:key="child.path || i" v-bind:is="child.component" v-bind:model="child"></component>
+=======
+        <template v-for="child in model.children">
+          <component v-bind:is="child.component" v-bind:model="child"></component>
+>>>>>>> develop
         </template>
         <pagerendervue-components-placeholder v-if="(model.fromTemplate &amp;&amp; model.children.length &gt; 0 &amp;&amp; model.children[0].fromTemplate) ? false: model.children.length &gt; 0"
         v-bind:model="{ path: model.path, component: model.component, location: 'after' }"></pagerendervue-components-placeholder>

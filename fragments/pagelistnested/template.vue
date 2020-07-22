@@ -1,6 +1,10 @@
 <template>
   <ul>
+<<<<<<< HEAD
     <li class="children" v-for="(child, i) in model.childrenPages" :key="child.path || i">
+=======
+    <li class="children" v-for="(child, i) in model.childrenPages" :key="item.path || i">
+>>>>>>> develop
       <a v-bind:href="$helper.pathToUrl(child.path)" data-per-inline="child.title">{{child.title}}</a>
       <div v-for="ref in child.references" v-bind:is="ref.htmlElement"
       v-bind:class="ref.cssClass" v-html="ref.value" v-bind:key="ref.key"></div>
