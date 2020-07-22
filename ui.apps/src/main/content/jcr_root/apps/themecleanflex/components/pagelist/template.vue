@@ -8,7 +8,7 @@
           <div v-for="ref in child.references" v-bind:is="ref.htmlElement"
           v-bind:class="ref.cssClass" v-html="ref.value" v-bind:key="ref.key"></div>
           <ul class="ml-2">
-            <li class="children ml-2" v-for="(child, i) in model.childrenPages" :key="item.path || i">
+            <li class="children ml-2" v-for="(child, i) in model.childrenPages" :key="child.path || i">
               <a v-bind:href="$helper.pathToUrl(child.path)" data-per-inline="child.title">{{child.title}}</a>
               <div v-for="ref in child.references" v-bind:is="ref.htmlElement"
               v-bind:class="ref.cssClass" v-html="ref.value" v-bind:key="ref.key"></div>
@@ -19,7 +19,7 @@
       </ul>
       <ul class="noroot" v-else>
         <li class="childrennoroot ml-2" v-for="(child, i) in model.childrenPages"
-        :key="item.path || i">
+        :key="child.path || i">
           <a v-bind:href="$helper.pathToUrl(child.path)" data-per-inline="child.title">{{child.title}}</a>
           <div v-for="ref in child.references" v-bind:is="ref.htmlElement"
           v-bind:class="ref.cssClass" v-html="ref.value" v-bind:key="ref.key"></div>
