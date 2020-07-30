@@ -13,8 +13,7 @@
         name="skeleton-pages"
         skeletonPagePath=""
         template="/content/themecleanflex/templates/blank"
-        templatePath="/content/themecleanflex/templates/blank"
-        title="skeleton-pages">
+        templatePath="/content/themecleanflex/templates/blank">
         <n1db9b055-6e50-467a-8eef-ea0d1e521659
             jcr:lastModified="{Date}2020-07-13T12:15:27.555-07:00"
             jcr:lastModifiedBy="admin"

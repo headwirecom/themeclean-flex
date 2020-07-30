@@ -9,7 +9,7 @@
         jcr:primaryType="per:PageContent"
         jcr:title="author"
         sling:resourceType="themecleanflex/components/page"
-        name="author"
+        name="Author"
         ogImage=""
         ogImageAlt=""
         ogTitle=""
@@ -18,7 +18,6 @@
         skeletonPagePath="/content/themecleanflex/pages/skeleton-pages/article"
         template="/content/themecleanflex/templates/footer/header-footer/article"
         templatePath=""
-        title="author"
         useDescription="{Boolean}true"
         useTitle="{Boolean}true">
         <nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b jcr:primaryType="nt:unstructured">

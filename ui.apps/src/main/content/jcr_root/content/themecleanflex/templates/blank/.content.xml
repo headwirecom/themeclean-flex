@@ -7,6 +7,6 @@
         jcr:lastModified="{Date}2020-07-13T10:37:43.991-07:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="per:PageContent"
-        jcr:title="blank"
+        jcr:title="Blank"
         sling:resourceType="themecleanflex/components/page"/>
 </jcr:root>

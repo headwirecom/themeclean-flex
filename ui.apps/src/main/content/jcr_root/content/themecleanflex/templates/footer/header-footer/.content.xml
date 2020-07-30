@@ -7,7 +7,7 @@
         jcr:lastModified="{Date}2020-07-14T06:58:31.113-07:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="per:PageContent"
-        jcr:title="header-footer"
+        jcr:title="Header and Footer"
         sling:resourceType="themecleanflex/components/page">
         <nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b jcr:primaryType="nt:unstructured">
             <n367dd855-3df0-4630-a362-8dbaa5d2e3bc

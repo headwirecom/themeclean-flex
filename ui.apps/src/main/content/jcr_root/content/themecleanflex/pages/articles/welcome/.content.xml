@@ -7,7 +7,7 @@
         jcr:lastModified="{Date}2020-07-13T14:35:39.479-07:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="per:PageContent"
-        jcr:title="welcome"
+        jcr:title="Welcome"
         sling:resourceType="themecleanflex/components/page"
         name="welcome"
         ogImage=""
@@ -18,7 +18,6 @@
         skeletonPagePath="/content/themecleanflex/pages/skeleton-pages/article"
         template="/content/themecleanflex/templates/footer/header-footer/article"
         templatePath=""
-        title="welcome"
         useDescription="{Boolean}true"
         useTitle="{Boolean}true">
         <nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b jcr:primaryType="nt:unstructured">
@@ -126,12 +125,12 @@
                 </n6ae7522f-5162-430b-82af-302ab57a3908>
             </n764b8eef-0b83-434a-94dd-c03d6da81778>
         </nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b>
-        <tags jcr:primaryType="nt:unstructured">
+        <!-- <tags jcr:primaryType="nt:unstructured">
             <blog_x0020_article
                 jcr:lastModified="{Date}2020-07-13T13:28:50.794-07:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 value="/content/themecleanflex/objects/tags/blog article"/>
-        </tags>
+        </tags> -->
     </jcr:content>
 </jcr:root>

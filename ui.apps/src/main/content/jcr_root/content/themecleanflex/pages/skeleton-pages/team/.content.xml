@@ -7,13 +7,12 @@
         jcr:lastModified="{Date}2020-07-13T12:49:47.470-07:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="per:PageContent"
-        jcr:title="team"
+        jcr:title="Team"
         sling:resourceType="themecleanflex/components/page"
         name="team"
         skeletonPagePath=""
         template="/content/themecleanflex/templates/footer/header-footer"
-        templatePath="/content/themecleanflex/templates/footer/header-footer"
-        title="team">
+        templatePath="/content/themecleanflex/templates/footer/header-footer">
         <nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b jcr:primaryType="nt:unstructured">
             <n764b8eef-0b83-434a-94dd-c03d6da81778 jcr:primaryType="nt:unstructured">
                 <na3b84b89-a1a5-4a88-9010-0e5e8976e4e3

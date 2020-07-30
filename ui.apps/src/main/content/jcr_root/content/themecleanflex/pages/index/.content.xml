@@ -7,7 +7,7 @@
         jcr:lastModified="{Date}2020-07-14T05:44:40.591-07:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="per:PageContent"
-        jcr:title="home"
+        jcr:title="Home"
         sling:resourceType="themecleanflex/components/page"
         description="sample root page of the site"
         name="index"

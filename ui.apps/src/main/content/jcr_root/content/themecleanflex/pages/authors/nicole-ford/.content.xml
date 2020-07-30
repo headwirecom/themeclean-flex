@@ -18,7 +18,6 @@
         skeletonPagePath="/content/themecleanflex/pages/skeleton-pages/author"
         template="/content/themecleanflex/templates/footer/header-footer/article"
         templatePath=""
-        title="nicole ford"
         useDescription="true"
         useTitle="true">
         <nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b jcr:primaryType="nt:unstructured">

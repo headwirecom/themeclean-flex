@@ -7,13 +7,12 @@
         jcr:lastModified="{Date}2020-07-13T15:10:32.048-07:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="per:PageContent"
-        jcr:title="articles"
+        jcr:title="Articles"
         sling:resourceType="themecleanflex/components/page"
         name="articles"
         skeletonPagePath=""
         template="/content/themecleanflex/templates/footer/header-footer"
-        templatePath="/content/themecleanflex/templates/footer/header-footer"
-        title="articles">
+        templatePath="/content/themecleanflex/templates/footer/header-footer">
         <nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b jcr:primaryType="nt:unstructured">
             <n764b8eef-0b83-434a-94dd-c03d6da81778 jcr:primaryType="nt:unstructured">
                 <nde275831-3d90-4955-98e2-5bacd59cb2a9
