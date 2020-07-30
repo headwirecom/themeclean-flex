@@ -61,9 +61,8 @@
             rootPageLink="not adaptable"
             rootPageTitle="not adaptable"/>
     </jcr:content>
-    <team/>
-    <about-us/>
-    <sitemap/>
     <article/>
     <author/>
+    <about-us/>
+    <team/>
 </jcr:root>
