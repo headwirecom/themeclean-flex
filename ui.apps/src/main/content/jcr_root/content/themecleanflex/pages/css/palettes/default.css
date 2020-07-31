@@ -1,15 +1,16 @@
 /* default palette */
 
 #peregrine-app {
-  --color-accent-1-100: #F9F5F4;
-  --color-accent-1-200: #F5E1D7;
-  --color-accent-1-300: #F9977D;
-  --color-accent-1-400: #FD6B43;
-  --color-accent-1-500: #ff3e08;
-  --color-accent-1-600: #D13405;
-  --color-accent-1-700: #A42A04;
-  --color-accent-1-800: #761F03;
-  --color-accent-1-900: #491402;
+  --color-accent-1-900: #000653;
+  --color-accent-1-800: #001477;
+  --color-accent-1-700: #00289B;
+  --color-accent-1-600: #0042BF;
+  --color-accent-1-500: #054CC6;
+  --color-accent-1-400: #186DDB;
+  --color-accent-1-300: #237EE5;
+  --color-accent-1-200: #5198EC;
+  --color-accent-1-100: #81B4F2;
+  --color-accent-1-50: #E8F2FF;
 
   --color-accent-2-100: #ffffff;
   --color-accent-2-200: #f2f2f2;
@@ -76,6 +77,9 @@
   --bg-primary: var(--color-accent-3-900);
   --bg-secondary: var(--color-accent-3-800);
   --border-primary-color: rgba(255, 255, 255, 0.2);
+
+  --link-primary-color: var(--color-accent-1-200);
+  --link-primary-color-hover: var(--color-accent-1-100);
 
   --text-primary-color: #ffffff;
   --text-secondary-color: rgba(255,255,255,0.6);
