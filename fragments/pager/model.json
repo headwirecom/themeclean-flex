@@ -78,6 +78,21 @@
           "x-form-label": "Next Label",
           "x-form-type": "text"
         },
+        "excludesitemapexcludes": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Exclude pages Excluded in Sitemap",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
+        "levels": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "number",
+          "x-form-label": "Levels",
+          "x-form-default": 1,
+          "x-form-min": 1
+        },
         "bgref": {
             "x-form-type": "reference",
             "$ref": "fragments/block/model.json#/definitions/Block"
