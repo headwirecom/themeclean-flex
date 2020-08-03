@@ -96,6 +96,21 @@ import org.slf4j.LoggerFactory;
           "x-form-label": "Next Label",
           "x-form-type": "text"
         },
+        "excludesitemapexcludes": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Exclude pages Excluded in Sitemap",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
+        "levels": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "number",
+          "x-form-label": "Levels",
+          "x-form-default": 1,
+          "x-form-min": 1
+        },
         "bgref": {
           "x-form-type": "reference",
           "type": "object",
@@ -392,6 +407,14 @@ public class PagerModel extends AbstractComponent {
 	@Inject
 	private String nextlabel;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	@Inject
+	private String excludesitemapexcludes;
+
+	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
+	@Inject
+	private String levels;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
 	private String anchorname;
@@ -511,6 +534,16 @@ public class PagerModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text"} */
 	public String getNextlabel() {
 		return nextlabel;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	public String getExcludesitemapexcludes() {
+		return excludesitemapexcludes;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
+	public String getLevels() {
+		return levels;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
