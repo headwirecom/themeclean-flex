@@ -13,7 +13,7 @@ import org.apache.sling.models.annotations.Model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
 /*
     //GEN[:DATA
     {
@@ -694,8 +694,8 @@ public class PagerModel extends AbstractComponent {
 		PerPage prev = page.getPrevious();
 		if(Boolean.parseBoolean(getExcludeSitemapExcludes())) {
 			while(prev != null) {
-				if(prev.getContentProperty(PerPage.EXCLUDE_FROM_SITEMAP, false)) {
-					prev = prev.getPrev()
+				if(prev.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
+					prev = prev.getPrevious();
 				}
 			}
 		}
@@ -715,7 +715,7 @@ public class PagerModel extends AbstractComponent {
 		PerPage next = page.getNext();
 		if(Boolean.parseBoolean(getExcludeSitemapExcludes())) {
 			while(next != null) {
-				if(next.getContentProperty(PerPage.EXCLUDE_FROM_SITEMAP, false)) {
+				if(next.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
 					next = next.getNext();
 				}
 			}
