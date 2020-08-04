@@ -80,6 +80,16 @@
       "textOff": "no",
       "valueOn": "true",
       "valueOff": "false",
+      "placeholder": "disableprevious",
+      "label": "Disable the previous button",
+      "model": "disableprevious"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
       "placeholder": "excludesitemapexcludes",
       "label": "Exclude pages Excluded in Sitemap",
       "model": "excludesitemapexcludes"
@@ -90,18 +100,10 @@
       "textOff": "no",
       "valueOn": "true",
       "valueOff": "false",
-      "placeholder": "disableprevious",
-      "label": "Disable the previous button",
-      "model": "disableprevious"
-    },
-    {
-      "type": "input",
-      "inputType": "number",
-      "placeholder": "levels",
-      "label": "Levels",
-      "model": "levels",
-      "default": 1,
-      "min": 1
+      "placeholder": "restrictsiblings",
+      "label": "Restrict prev/next to only siblings",
+      "model": "restrictsiblings",
+      "default": true
     },
     {
       "type": "input",

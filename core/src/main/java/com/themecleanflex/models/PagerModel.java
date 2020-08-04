@@ -96,13 +96,6 @@ import org.slf4j.LoggerFactory;
           "x-form-label": "Next Label",
           "x-form-type": "text"
         },
-        "excludesitemapexcludes": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Exclude pages Excluded in Sitemap",
-          "x-form-type": "materialswitch",
-          "x-form-default": false
-        },
         "disableprevious": {
           "type": "string",
           "x-source": "inject",
@@ -110,13 +103,19 @@ import org.slf4j.LoggerFactory;
           "x-form-type": "materialswitch",
           "x-form-default": false
         },
-        "levels": {
+        "excludesitemapexcludes": {
           "type": "string",
           "x-source": "inject",
-          "x-form-type": "number",
-          "x-form-label": "Levels",
-          "x-form-default": 1,
-          "x-form-min": 1
+          "x-form-label": "Exclude pages Excluded in Sitemap",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
+        "restrictsiblings": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Restrict prev/next to only siblings",
+          "x-form-type": "materialswitch",
+          "x-form-default": true
         },
         "bgref": {
           "x-form-type": "reference",
@@ -414,17 +413,17 @@ public class PagerModel extends AbstractComponent {
 	@Inject
 	private String nextlabel;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
-	@Inject
-	private String excludesitemapexcludes;
-
 	/* {"type":"string","x-source":"inject","x-form-label":"Disable the previous button","x-form-type":"materialswitch","x-form-default":false} */
 	@Inject
 	private String disableprevious;
 
-	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
 	@Inject
-	private String levels;
+	private String excludesitemapexcludes;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Restrict prev/next to only siblings","x-form-type":"materialswitch","x-form-default":true} */
+	@Inject
+	private String restrictsiblings;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
@@ -547,19 +546,19 @@ public class PagerModel extends AbstractComponent {
 		return nextlabel;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
-	public String getExcludesitemapexcludes() {
-		return excludesitemapexcludes;
-	}
-
 	/* {"type":"string","x-source":"inject","x-form-label":"Disable the previous button","x-form-type":"materialswitch","x-form-default":false} */
 	public String getDisableprevious() {
 		return disableprevious;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
-	public String getLevels() {
-		return levels;
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	public String getExcludesitemapexcludes() {
+		return excludesitemapexcludes;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Restrict prev/next to only siblings","x-form-type":"materialswitch","x-form-default":true} */
+	public String getRestrictsiblings() {
+		return restrictsiblings;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
@@ -672,6 +671,14 @@ public class PagerModel extends AbstractComponent {
 
     //GEN[:CUSTOMGETTERS
     //GEN]
+	public String getExcludeSitemapExcludes() {
+		return  excludesitemapexcludes == null ? "false" : excludesitemapexcludes;
+	}
+
+	public String getDisablePrevious() {
+		return disableprevious == null ? "false" : disableprevious;
+	}
+
     public String getPrevious() {
       Resource res = getCurrentPage(getRootResource());
       LOG.debug("resource: {}",res);
@@ -688,6 +695,9 @@ public class PagerModel extends AbstractComponent {
       PerPage page = res.adaptTo(PerPage.class);
       if(page == null) return "not adaptable";
       PerPage next = page.getNext();
+      if(Boolean.parseBoolean(getExcludeSitemapExcludes())) {
+
+	  }
       return next != null ? next.getPath(): "unknown";
     }
     
