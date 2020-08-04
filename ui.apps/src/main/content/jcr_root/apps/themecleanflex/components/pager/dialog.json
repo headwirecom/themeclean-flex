@@ -1,6 +1,13 @@
 {
   "fields": [
     {
+      "type": "pathbrowser",
+      "browserRoot": "/content/themecleanflex/pages",
+      "placeholder": "rootpage",
+      "label": "Root Page",
+      "model": "rootpage"
+    },
+    {
       "type": "material-select",
       "values": [
         {
@@ -95,16 +102,6 @@
       "placeholder": "excludesitemapexcludes",
       "label": "Exclude pages Excluded in Sitemap",
       "model": "excludesitemapexcludes"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "restrictsiblings",
-      "label": "Restrict prev/next to only siblings",
-      "model": "restrictsiblings"
     },
     {
       "type": "input",

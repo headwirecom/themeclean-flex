@@ -4,6 +4,13 @@
       "type": "object",
       "x-type": "component",
       "properties": {
+        "rootpage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "pathbrowser",
+          "x-form-label": "Root Page",
+          "x-form-browserRoot": "/content/themecleanflex/pages"
+        },
         "buttonsize": {
           "type": "string",
           "x-source": "inject",
@@ -91,13 +98,6 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Exclude pages Excluded in Sitemap",
-          "x-form-type": "materialswitch",
-          "x-form-default": false
-        },
-        "restrictsiblings": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Restrict prev/next to only siblings",
           "x-form-type": "materialswitch",
           "x-form-default": false
         },
