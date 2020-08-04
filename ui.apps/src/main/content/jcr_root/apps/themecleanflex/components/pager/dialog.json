@@ -104,8 +104,7 @@
       "valueOff": "false",
       "placeholder": "restrictsiblings",
       "label": "Restrict prev/next to only siblings",
-      "model": "restrictsiblings",
-      "default": true
+      "model": "restrictsiblings"
     },
     {
       "type": "input",

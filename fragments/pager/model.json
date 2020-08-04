@@ -99,7 +99,7 @@
           "x-source": "inject",
           "x-form-label": "Restrict prev/next to only siblings",
           "x-form-type": "materialswitch",
-          "x-form-default": true
+          "x-form-default": false
         },
         "bgref": {
             "x-form-type": "reference",

@@ -117,7 +117,7 @@ import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
           "x-source": "inject",
           "x-form-label": "Restrict prev/next to only siblings",
           "x-form-type": "materialswitch",
-          "x-form-default": true
+          "x-form-default": false
         },
         "bgref": {
           "x-form-type": "reference",
@@ -423,7 +423,7 @@ public class PagerModel extends AbstractComponent {
 	@Inject
 	private String excludesitemapexcludes;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Restrict prev/next to only siblings","x-form-type":"materialswitch","x-form-default":true} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Restrict prev/next to only siblings","x-form-type":"materialswitch","x-form-default":false} */
 	@Inject
 	private String restrictsiblings;
 
@@ -558,7 +558,7 @@ public class PagerModel extends AbstractComponent {
 		return excludesitemapexcludes;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Restrict prev/next to only siblings","x-form-type":"materialswitch","x-form-default":true} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Restrict prev/next to only siblings","x-form-type":"materialswitch","x-form-default":false} */
 	public String getRestrictsiblings() {
 		return restrictsiblings;
 	}
@@ -682,7 +682,7 @@ public class PagerModel extends AbstractComponent {
 	}
 
 	public String getRestrictSiblings() {
-		return restrictsiblings == null ? "true" : restrictsiblings;
+		return restrictsiblings == null ? "false" : restrictsiblings;
 	}
 
     public String getPrevious() {
