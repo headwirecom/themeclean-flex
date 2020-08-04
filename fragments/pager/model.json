@@ -85,6 +85,13 @@
           "x-form-type": "materialswitch",
           "x-form-default": false
         },
+        "disableprevious": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Disable the previous button",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
         "levels": {
           "type": "string",
           "x-source": "inject",

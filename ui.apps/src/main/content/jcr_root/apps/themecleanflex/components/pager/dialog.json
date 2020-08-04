@@ -85,6 +85,16 @@
       "model": "excludesitemapexcludes"
     },
     {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "disableprevious",
+      "label": "Disable the previous button",
+      "model": "disableprevious"
+    },
+    {
       "type": "input",
       "inputType": "number",
       "placeholder": "levels",

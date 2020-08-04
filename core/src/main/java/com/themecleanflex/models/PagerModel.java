@@ -103,6 +103,13 @@ import org.slf4j.LoggerFactory;
           "x-form-type": "materialswitch",
           "x-form-default": false
         },
+        "disableprevious": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Disable the previous button",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
         "levels": {
           "type": "string",
           "x-source": "inject",
@@ -411,6 +418,10 @@ public class PagerModel extends AbstractComponent {
 	@Inject
 	private String excludesitemapexcludes;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Disable the previous button","x-form-type":"materialswitch","x-form-default":false} */
+	@Inject
+	private String disableprevious;
+
 	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
 	@Inject
 	private String levels;
@@ -539,6 +550,11 @@ public class PagerModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
 	public String getExcludesitemapexcludes() {
 		return excludesitemapexcludes;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Disable the previous button","x-form-type":"materialswitch","x-form-default":false} */
+	public String getDisableprevious() {
+		return disableprevious;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
