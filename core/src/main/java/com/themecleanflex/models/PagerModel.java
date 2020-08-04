@@ -88,13 +88,15 @@ import org.slf4j.LoggerFactory;
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Previous Label",
-          "x-form-type": "text"
+          "x-form-type": "text",
+          "x-form-default": "Previous"
         },
         "nextlabel": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Next Label",
-          "x-form-type": "text"
+          "x-form-type": "text",
+          "x-form-default": "Next"
         },
         "disableprevious": {
           "type": "string",
@@ -390,7 +392,7 @@ import org.slf4j.LoggerFactory;
 //GEN]
 public class PagerModel extends AbstractComponent {
 
-  private static final Logger LOG = LoggerFactory.getLogger(PagerModel.class);
+  	private static final Logger LOG = LoggerFactory.getLogger(PagerModel.class);
 
     public PagerModel(Resource r) { super(r); }
 
@@ -405,11 +407,11 @@ public class PagerModel extends AbstractComponent {
 	@Default(values ="primary")
 	private String buttoncolor;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text","x-form-default":"Previous"} */
 	@Inject
 	private String prevlabel;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text","x-form-default":"Next"} */
 	@Inject
 	private String nextlabel;
 
@@ -536,12 +538,12 @@ public class PagerModel extends AbstractComponent {
 		return buttoncolor;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text","x-form-default":"Previous"} */
 	public String getPrevlabel() {
 		return prevlabel;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text","x-form-default":"Next"} */
 	public String getNextlabel() {
 		return nextlabel;
 	}
@@ -679,26 +681,51 @@ public class PagerModel extends AbstractComponent {
 		return disableprevious == null ? "false" : disableprevious;
 	}
 
+	public String getRestrictSiblings() {
+		return restrictsiblings == null ? "true" : restrictsiblings;
+	}
+
     public String getPrevious() {
-      Resource res = getCurrentPage(getRootResource());
-      LOG.debug("resource: {}",res);
-      if(res == null) res = getCurrentPage(getResource());
-      PerPage page = res.adaptTo(PerPage.class);
-      if(page == null) return "not adaptable";
-      PerPage prev = page.getPrevious();
-      return prev != null ? prev.getPath(): "unknown";
+		Resource res = getCurrentPage(getRootResource());
+		//LOG.debug("resource: {}",res);
+		if(res == null) res = getCurrentPage(getResource());
+		PerPage page = res.adaptTo(PerPage.class);
+		if(page == null) return "not adaptable";
+		PerPage prev = page.getPrevious();
+		if(Boolean.parseBoolean(getExcludeSitemapExcludes())) {
+			while(prev != null) {
+				if(prev.getContentProperty(PerPage.EXCLUDE_FROM_SITEMAP, false)) {
+					prev = prev.getPrev()
+				}
+			}
+		}
+		if(Boolean.parseBoolean(getRestrictSiblings())) {
+			if(prev != null && !page.getParent().getPath().equals(prev.getParent().getPath())) {
+				prev = null;
+			}
+		}
+		return prev != null ? prev.getPath(): "unknown";
     }
 
     public String getNext() {
-      Resource res = getCurrentPage(getRootResource());
-      if(res == null) res = getCurrentPage(getResource());
-      PerPage page = res.adaptTo(PerPage.class);
-      if(page == null) return "not adaptable";
-      PerPage next = page.getNext();
-      if(Boolean.parseBoolean(getExcludeSitemapExcludes())) {
-
-	  }
-      return next != null ? next.getPath(): "unknown";
+		Resource res = getCurrentPage(getRootResource());
+		if(res == null) res = getCurrentPage(getResource());
+		PerPage page = res.adaptTo(PerPage.class);
+		if(page == null) return "not adaptable";
+		PerPage next = page.getNext();
+		if(Boolean.parseBoolean(getExcludeSitemapExcludes())) {
+			while(next != null) {
+				if(next.getContentProperty(PerPage.EXCLUDE_FROM_SITEMAP, false)) {
+					next = next.getNext();
+				}
+			}
+		}
+		if(Boolean.parseBoolean(getRestrictSiblings())) {
+			if(next != null && !page.getParent().getPath().equals(next.getParent().getPath())) {
+				next = null;
+			}
+		}
+		return next != null ? next.getPath(): "unknown";
     }
     
     private Resource getCurrentPage(Resource resource) {

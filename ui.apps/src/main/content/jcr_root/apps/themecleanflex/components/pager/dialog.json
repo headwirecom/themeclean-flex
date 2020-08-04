@@ -65,14 +65,16 @@
       "inputType": "text",
       "placeholder": "prevlabel",
       "label": "Previous Label",
-      "model": "prevlabel"
+      "model": "prevlabel",
+      "default": "Previous"
     },
     {
       "type": "input",
       "inputType": "text",
       "placeholder": "nextlabel",
       "label": "Next Label",
-      "model": "nextlabel"
+      "model": "nextlabel",
+      "default": "Next"
     },
     {
       "type": "materialswitch",

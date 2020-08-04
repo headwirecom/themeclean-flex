@@ -70,13 +70,15 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Previous Label",
-          "x-form-type": "text"
+          "x-form-type": "text",
+          "x-form-default": "Previous"
         },
         "nextlabel": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Next Label",
-          "x-form-type": "text"
+          "x-form-type": "text",
+          "x-form-default": "Next"
         },
         "disableprevious": {
           "type": "string",
