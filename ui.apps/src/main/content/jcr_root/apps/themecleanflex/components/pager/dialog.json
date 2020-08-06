@@ -8,6 +8,16 @@
       "model": "rootpage"
     },
     {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "includeroot",
+      "label": "Include Root",
+      "model": "includeroot"
+    },
+    {
       "type": "material-select",
       "values": [
         {

@@ -29,6 +29,13 @@ import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
           "x-form-label": "Root Page",
           "x-form-browserRoot": "/content/themecleanflex/pages"
         },
+        "includeroot": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Include Root",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
         "buttonsize": {
           "type": "string",
           "x-source": "inject",
@@ -401,6 +408,10 @@ public class PagerModel extends AbstractComponent {
 	@Inject
 	private String rootpage;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Include Root","x-form-type":"materialswitch","x-form-default":false} */
+	@Inject
+	private String includeroot;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
 	@Inject
 	@Default(values ="default")
@@ -531,6 +542,11 @@ public class PagerModel extends AbstractComponent {
     	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
 	public String getRootpage() {
 		return rootpage;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Include Root","x-form-type":"materialswitch","x-form-default":false} */
+	public String getIncluderoot() {
+		return includeroot;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
@@ -682,7 +698,15 @@ public class PagerModel extends AbstractComponent {
 	}
 
 	public String getRootPage() {
-		return rootpage == null ? "" : rootpage;
+		if(rootpage == null)
+			return "";
+		if(rootpage.endsWith("/"))
+			return rootpage.substring(0,rootpage.length()-1);
+		return rootpage;
+	}
+
+	public String getIncludeRoot() {
+		return includeroot == null ? "false" : includeroot;
 	}
 
     public String getPrevious() {
@@ -702,6 +726,12 @@ public class PagerModel extends AbstractComponent {
 		}
 		if(prev != null && !prev.getPath().startsWith(getRootPage())) {
 			prev = null;
+		}
+		if(prev != null && !Boolean.parseBoolean(getIncludeRoot())) {
+			// include root is false, so make sure path isn't equal to root page
+			if(prev.getPath().equals(getRootPage())) {
+				prev = null;
+			}
 		}
 		return prev != null ? prev.getPath(): "unknown";
     }
