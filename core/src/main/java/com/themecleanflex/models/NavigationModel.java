@@ -15,6 +15,8 @@ import org.apache.sling.models.annotations.Model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
+
 /*
     //GEN[:DATA
     {
@@ -29,6 +31,13 @@ import org.slf4j.LoggerFactory;
           "x-form-type": "pathbrowser",
           "x-form-label": "Root Page",
           "x-form-browserRoot": "/content/themecleanflex/pages"
+        },
+        "excludesitemapexcludes": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Exclude pages Excluded in Sitemap",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
         },
         "justifyitems": {
           "type": "string",
@@ -331,6 +340,10 @@ public class NavigationModel extends AbstractComponent {
 	@Inject
 	private String rootpage;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	@Inject
+	private String excludesitemapexcludes;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Navigation Alignment","x-form-type":"materialradio","x-default":"end","properties":{"start":{"x-form-name":"Start","x-form-value":"start"},"center":{"x-form-name":"Center","x-form-value":"center"},"end":{"x-form-name":"End","x-form-value":"end"}}} */
 	@Inject
 	@Default(values ="end")
@@ -440,6 +453,11 @@ public class NavigationModel extends AbstractComponent {
     	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
 	public String getRootpage() {
 		return rootpage;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	public String getExcludesitemapexcludes() {
+		return excludesitemapexcludes;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Navigation Alignment","x-form-type":"materialradio","x-default":"end","properties":{"start":{"x-form-name":"Start","x-form-value":"start"},"center":{"x-form-name":"Center","x-form-value":"center"},"end":{"x-form-name":"End","x-form-value":"end"}}} */
@@ -563,6 +581,10 @@ public class NavigationModel extends AbstractComponent {
 		return "2";
 	}
 
+	public String getExcludeSitemapExcludes() {
+		return excludesitemapexcludes == null ? "false" : excludesitemapexcludes;
+	}
+
 	public String getRootPageTitle() {
 		PerPageManager ppm = getResource().getResourceResolver().adaptTo(PerPageManager.class);
 		PerPage page = ppm.getPage(getRootpage());
@@ -578,6 +600,7 @@ public class NavigationModel extends AbstractComponent {
 	}
 
 	public List<Page> getChildrenPages() {
+		boolean excludeSitemap = Boolean.parseBoolean(getExcludeSitemapExcludes());
 		List<Page> childPages = new ArrayList<Page>();
 		String rootPage = getRootpage();
 		if (rootPage != null) {
@@ -586,8 +609,11 @@ public class NavigationModel extends AbstractComponent {
 			PerPage page = ppm.getPage(getRootpage());
 			if (page != null) {
 				for (PerPage child : page.listChildren()) {
+					if(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
+						continue;
+					}
 					if (!child.getPath().equals(page.getPath())) {
-						childPages.add(new Page(child, levels));
+						childPages.add(new Page(child, levels, excludeSitemap));
 					}
 				}
 			}
@@ -599,14 +625,12 @@ public class NavigationModel extends AbstractComponent {
 
 	private PerPage page;
 	private int levels;
+	private boolean excludeSitemap;
 
-	public Page(PerPage page) {
-		this.page = page;
-	}
-
-	public Page(PerPage page, int levels) {
+	public Page(PerPage page, int levels, boolean excludeSitemap) {
 		this.page = page;
 		this.levels = levels;
+		this.excludeSitemap = excludeSitemap;
 	}
 
 	public String getTitle() {
@@ -630,8 +654,11 @@ public class NavigationModel extends AbstractComponent {
 		System.out.println();
 		if(page != null) {
 			for (PerPage child: page.listChildren()) {
+				if(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
+					continue;
+				}
 				if(!child.getPath().equals(page.getPath())) {
-					childPages.add(new Page(child, levels-1));
+					childPages.add(new Page(child, levels-1, excludeSitemap));
 				}
 			}
 		}
