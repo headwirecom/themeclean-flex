@@ -14,7 +14,7 @@
             'btn-warning': model.buttoncolor === 'warning',
             'btn-light': model.buttoncolor === 'light',
             'btn-dark': model.buttoncolor === 'dark',
-            'disabled': model.previous === 'unknown',
+            'invisible': model.previous === 'unknown',
         }">{{model.prevlabel}}</a>
       <a class="btn" data-per-inline="model.nextlabel"
       v-bind:href="$helper.pathToUrl(model.next)" v-bind:class="{
@@ -27,7 +27,7 @@
             'btn-warning': model.buttoncolor === 'warning',
             'btn-light': model.buttoncolor === 'light',
             'btn-dark': model.buttoncolor === 'dark',
-            'disabled': model.next === 'unknown',
+            'invisible': model.next === 'unknown',
         }">{{model.nextlabel}}</a>
     </div>
   </themecleanflex-components-block>
