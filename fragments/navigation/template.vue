@@ -45,11 +45,11 @@
 </script>
 
 <style>
-  .dropdown-list {
+  .flex.dropdown-list {
     display: none;
     position: fixed;
   }
-  .dropdown-container:hover .dropdown-list, .dropdown-container:focus-within .dropdown-list {
+  .flex.dropdown-container:hover .flex.dropdown-list, .flex.dropdown-container:focus-within .flex.dropdown-list {
     display: flex;
   }
   
