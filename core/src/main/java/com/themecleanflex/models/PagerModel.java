@@ -13,7 +13,7 @@ import org.apache.sling.models.annotations.Model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+import com.peregrine.commons.util.PerConstants;
 /*
     //GEN[:DATA
     {
@@ -22,6 +22,20 @@ import org.slf4j.LoggerFactory;
       "type": "object",
       "x-type": "component",
       "properties": {
+        "rootpage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "pathbrowser",
+          "x-form-label": "Root Page",
+          "x-form-browserRoot": "/content/themecleanflex/pages"
+        },
+        "includeroot": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Include Root",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
         "buttonsize": {
           "type": "string",
           "x-source": "inject",
@@ -88,13 +102,29 @@ import org.slf4j.LoggerFactory;
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Previous Label",
-          "x-form-type": "text"
+          "x-form-type": "text",
+          "x-form-default": "Previous"
         },
         "nextlabel": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Next Label",
-          "x-form-type": "text"
+          "x-form-type": "text",
+          "x-form-default": "Next"
+        },
+        "disableprevious": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Disable the previous button",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
+        "excludesitemapexcludes": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Exclude pages Excluded in Sitemap",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
         },
         "bgref": {
           "x-form-type": "reference",
@@ -369,12 +399,20 @@ import org.slf4j.LoggerFactory;
 //GEN]
 public class PagerModel extends AbstractComponent {
 
-  private static final Logger LOG = LoggerFactory.getLogger(PagerModel.class);
+  	private static final Logger LOG = LoggerFactory.getLogger(PagerModel.class);
 
     public PagerModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
+    	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	@Inject
+	private String rootpage;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Include Root","x-form-type":"materialswitch","x-form-default":false} */
+	@Inject
+	private String includeroot;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
 	@Inject
 	@Default(values ="default")
 	private String buttonsize;
@@ -384,13 +422,21 @@ public class PagerModel extends AbstractComponent {
 	@Default(values ="primary")
 	private String buttoncolor;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text","x-form-default":"Previous"} */
 	@Inject
 	private String prevlabel;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text","x-form-default":"Next"} */
 	@Inject
 	private String nextlabel;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Disable the previous button","x-form-type":"materialswitch","x-form-default":false} */
+	@Inject
+	private String disableprevious;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	@Inject
+	private String excludesitemapexcludes;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
@@ -493,7 +539,17 @@ public class PagerModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
+    	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	public String getRootpage() {
+		return rootpage;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Include Root","x-form-type":"materialswitch","x-form-default":false} */
+	public String getIncluderoot() {
+		return includeroot;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
 	public String getButtonsize() {
 		return buttonsize;
 	}
@@ -503,14 +559,24 @@ public class PagerModel extends AbstractComponent {
 		return buttoncolor;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text","x-form-default":"Previous"} */
 	public String getPrevlabel() {
 		return prevlabel;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text","x-form-default":"Next"} */
 	public String getNextlabel() {
 		return nextlabel;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Disable the previous button","x-form-type":"materialswitch","x-form-default":false} */
+	public String getDisableprevious() {
+		return disableprevious;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	public String getExcludesitemapexcludes() {
+		return excludesitemapexcludes;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
@@ -623,23 +689,68 @@ public class PagerModel extends AbstractComponent {
 
     //GEN[:CUSTOMGETTERS
     //GEN]
+	public String getExcludeSitemapExcludes() {
+		return  excludesitemapexcludes == null ? "false" : excludesitemapexcludes;
+	}
+
+	public String getDisablePrevious() {
+		return disableprevious == null ? "false" : disableprevious;
+	}
+
+	public String getRootPage() {
+		if(rootpage == null)
+			return "";
+		if(rootpage.endsWith("/"))
+			return rootpage.substring(0,rootpage.length()-1);
+		return rootpage;
+	}
+
+	public String getIncludeRoot() {
+		return includeroot == null ? "false" : includeroot;
+	}
+
     public String getPrevious() {
-      Resource res = getCurrentPage(getRootResource());
-      LOG.debug("resource: {}",res);
-      if(res == null) res = getCurrentPage(getResource());
-      PerPage page = res.adaptTo(PerPage.class);
-      if(page == null) return "not adaptable";
-      PerPage prev = page.getPrevious();
-      return prev != null ? prev.getPath(): "unknown";
+		if(Boolean.parseBoolean(getDisablePrevious())) {
+			return "unknown";
+		}
+		Resource res = getCurrentPage(getRootResource());
+		//LOG.debug("resource: {}",res);
+		if(res == null) res = getCurrentPage(getResource());
+		PerPage page = res.adaptTo(PerPage.class);
+		if(page == null) return "not adaptable";
+		PerPage prev = page.getPrevious();
+		if(Boolean.parseBoolean(getExcludeSitemapExcludes())) {
+			while(prev != null && prev.getContentProperty(PerConstants.EXCLUDE_FROM_SITEMAP, false)) {
+				prev = prev.getPrevious();
+			}
+		}
+		if(prev != null && !prev.getPath().startsWith(getRootPage())) {
+			prev = null;
+		}
+		if(prev != null && !Boolean.parseBoolean(getIncludeRoot())) {
+			// include root is false, so make sure path isn't equal to root page
+			if(prev.getPath().equals(getRootPage())) {
+				prev = null;
+			}
+		}
+		return prev != null ? prev.getPath(): "unknown";
     }
 
     public String getNext() {
-      Resource res = getCurrentPage(getRootResource());
-      if(res == null) res = getCurrentPage(getResource());
-      PerPage page = res.adaptTo(PerPage.class);
-      if(page == null) return "not adaptable";
-      PerPage next = page.getNext();
-      return next != null ? next.getPath(): "unknown";
+		Resource res = getCurrentPage(getRootResource());
+		if(res == null) res = getCurrentPage(getResource());
+		PerPage page = res.adaptTo(PerPage.class);
+		if(page == null) return "not adaptable";
+		PerPage next = page.getNext();
+		if(Boolean.parseBoolean(getExcludeSitemapExcludes())) {
+			while(next != null && next.getContentProperty(PerConstants.EXCLUDE_FROM_SITEMAP, false)) {
+				next = next.getNext();
+			}
+		}
+		if(next != null && !next.getPath().startsWith(getRootPage())) {
+			next = null;
+		}
+		return next != null ? next.getPath(): "unknown";
     }
     
     private Resource getCurrentPage(Resource resource) {

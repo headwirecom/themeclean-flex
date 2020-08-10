@@ -1,6 +1,23 @@
 {
   "fields": [
     {
+      "type": "pathbrowser",
+      "browserRoot": "/content/themecleanflex/pages",
+      "placeholder": "rootpage",
+      "label": "Root Page",
+      "model": "rootpage"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "includeroot",
+      "label": "Include Root",
+      "model": "includeroot"
+    },
+    {
       "type": "material-select",
       "values": [
         {
@@ -65,14 +82,36 @@
       "inputType": "text",
       "placeholder": "prevlabel",
       "label": "Previous Label",
-      "model": "prevlabel"
+      "model": "prevlabel",
+      "default": "Previous"
     },
     {
       "type": "input",
       "inputType": "text",
       "placeholder": "nextlabel",
       "label": "Next Label",
-      "model": "nextlabel"
+      "model": "nextlabel",
+      "default": "Next"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "disableprevious",
+      "label": "Disable the previous button",
+      "model": "disableprevious"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "excludesitemapexcludes",
+      "label": "Exclude pages Excluded in Sitemap",
+      "model": "excludesitemapexcludes"
     },
     {
       "type": "input",
