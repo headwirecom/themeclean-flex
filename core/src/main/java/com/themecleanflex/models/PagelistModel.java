@@ -626,34 +626,44 @@ public class PagelistModel extends AbstractComponent {
 		return  excludesitemapexcludes == null ? "false" : excludesitemapexcludes;
   }
 
+  	public String getRootPage() {
+		if(rootpage == null) {
+			PerPage currentPage =  getResource().adaptTo(PerPage.class);
+			if(currentPage != null) {
+				return currentPage.getPath();
+			}
+		}
+		return rootpage;
+	}
+
 	public String getRootPageTitle() {
 		PerPageManager ppm = getResource().getResourceResolver().adaptTo(PerPageManager.class);
-		PerPage page = ppm.getPage(getRootpage());
+		PerPage page = ppm.getPage(getRootPage());
         if(page == null) return "not adaptable";
         return page != null ? page.getTitle(): "";
 	}
 
 	public String getRootPageLink() {
 		PerPageManager ppm = getResource().getResourceResolver().adaptTo(PerPageManager.class);
-		PerPage page = ppm.getPage(getRootpage());
+		PerPage page = ppm.getPage(getRootPage());
         if(page == null) return "not adaptable";
         return page != null ? page.getPath(): "";
 	}
 
 	public List<Page> getChildrenPages() {
 		List<Page> childPages = new ArrayList<Page>();
-		String rootPage = getRootpage();
+		String rootPage = getRootPage();
 		if (rootPage != null) {
 			int levels = Integer.parseInt(getLevels());
       boolean excludeSitemap = Boolean.parseBoolean(getExcludeSitemapExcludes());
 			PerPageManager ppm = getResource().getResourceResolver().adaptTo(PerPageManager.class);
-			PerPage page = ppm.getPage(getRootpage());
+			PerPage page = ppm.getPage(getRootPage());
 			if (page != null) {
 				for (PerPage child : page.listChildren()) {
 					if ( !(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false))
 							&& (!child.getPath().equals(page.getPath()))
 						) {
-						childPages.add(new Page(child, levels, getReferences()));
+						childPages.add(new Page(child, levels, getReferences(), excludeSitemap));
 					}
 				}
 			}
@@ -666,6 +676,7 @@ public class PagelistModel extends AbstractComponent {
 	private PerPage page;
 	private int levels;
   private List<IComponent> references;
+    private boolean excludeSitemap;
 
 	// public Page(PerPage page) {
 	// 	this.page = page;
@@ -676,10 +687,11 @@ public class PagelistModel extends AbstractComponent {
 	// 	this.levels = levels;
 	// }
 
-	public Page(PerPage page, int levels, List<IComponent> references) {
+	public Page(PerPage page, int levels, List<IComponent> references, boolean excludeSitemap) {
 		this.page = page;
     this.levels = levels;
     this.references = references;
+    this.excludeSitemap = excludeSitemap;
   }
 
   public String getTitle() {
@@ -739,8 +751,11 @@ public class PagelistModel extends AbstractComponent {
 		List<Page> childPages = new ArrayList<Page>();
 		if(page != null) {
 			for (PerPage child: page.listChildren()) {
+				if(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
+					continue;
+				}
 				if(levels > 0 && !child.getPath().equals(page.getPath())) {
-					childPages.add(new Page(child, levels-1, references));
+					childPages.add(new Page(child, levels-1, references, excludeSitemap));
 				}
 			}
 		}
