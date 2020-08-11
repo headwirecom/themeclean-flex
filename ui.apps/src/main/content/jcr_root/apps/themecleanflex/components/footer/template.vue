@@ -10,9 +10,9 @@
         <div class="footer-col flex-1 lg:mx-4" v-for="(item, i) in model.columns"
         :key="item.path || i">
           <h2 class="text-lg font-bold my-2" v-if="item.title !== ''"
-          v-bind:data-per-inline="`model.clolumns.${i}.title`">{{item.title}}</h2>
+          v-bind:data-per-inline="`model.columns.${i}.title`">{{item.title}}</h2>
           <div v-if="item.text !== ''" v-html="item.text"
-          v-bind:data-per-inline="`model.clolumns.${i}.text`"></div>
+          v-bind:data-per-inline="`model.columns.${i}.text`"></div>
         </div>
       </div>
       <hr class="border-b">
