@@ -8,7 +8,7 @@
           v-bind:style="`height:${parseInt(model.logosize)}px;`">
         </a>
         <div class="footer-col flex-1 lg:mx-4" v-for="(item, i) in model.columns"
-        :key="item.path || i">
+        :key="i">
           <h2 class="text-lg font-bold my-2" v-if="item.title !== ''"
           v-bind:data-per-inline="`model.columns.${i}.title`">{{item.title}}</h2>
           <div v-if="item.text !== ''" v-html="item.text"
@@ -17,7 +17,7 @@
       </div>
       <hr class="border-b">
       <div class="flex items-center flex-wrap justify-between">
-        <p class="my-3" data-per-inline="model.copyright">{{model.copyright}}</p>
+        <p class="my-3" v-bind:data-per-inline="`model.copyright`">{{model.copyright}}</p>
         <themecleanflex-components-socialicons v-bind:model="model"></themecleanflex-components-socialicons>
       </div>
     </div>
