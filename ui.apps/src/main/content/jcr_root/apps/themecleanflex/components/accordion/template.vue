@@ -2,8 +2,7 @@
   <themecleanflex-components-block v-bind:model="model">
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full" v-else>
-      <h2 class="text-xl text-center pb-4" v-if="model.showtitle == 'true'"
-      data-per-inline="model.title">{{model.title}}</h2>
+      <h2 class="text-xl text-center pb-4" v-if="model.showtitle == 'true'">{{model.title}}</h2>
       <div class="flex -mx-3 flex-grow" v-bind:class="{
             'flex-col': model.mediaposition === 'before',
             'flex-col-reverse': model.mediaposition === 'after',
@@ -33,7 +32,7 @@
             'rounded-full': model.roundedcorners == 'full'
         }">
           <div class="accordion-item border-b transition-colors duration-200 ease-in-out"
-          v-for="(item, i) in model.accordiontoggle" :key="item.path || i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`"
+          v-for="(item, i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`"
           v-bind:class="{
             'border-b border-solid border-gray-300': model.colorscheme === 'light' &amp;&amp; model.cardborder === 'true',
             'border-b border-solid border-gray-900': model.colorscheme === 'dark' &amp;&amp; model.cardborder === 'true',

@@ -9,6 +9,8 @@ module.exports = {
 
         //Content Container
         let containerClasses = `{
+            'flex-col': model.mediaposition === 'before',
+            'flex-col-reverse': model.mediaposition === 'after',
             'lg:flex-row': model.mediaposition === 'before',
             'lg:flex-row-reverse': model.mediaposition === 'after'
         }`
@@ -62,9 +64,11 @@ module.exports = {
         f.bindEvent(toggle, 'click', "toggleItem(i)")
         f.bindAttribute(toggle, 'aria-expanded', "active[i] ? 'true' : 'false'")
         f.mapField(toggleText, "item.title", "model.accordiontoggle", "title")
+        f.bindAttribute(toggleText, "data-per-inline", "`model.accordiontoggle.${i}.title`")
 
         //Acocordion Item Body
         f.mapRichField($.find('div.card-content > div').first(), "item.text", "model.accordiontoggle", "text")
+        f.bindAttribute($.find('div.card-content > div').first(), 'data-per-inline', "`model.accordiontoggle.${i}.text`")
         f.bindAttribute($.find('div.card-content > div').first(), 'ref', "`cardContent${i}`")
         f.addStyle($.find('div.card-content').first(), 'height', "active[i] ? heights[i] + 'px' : '0px'")
         f.addStyle($.find('svg').first(), 'transform', "active[i] ? 'rotate(180deg)': 'rotate(0)'")
