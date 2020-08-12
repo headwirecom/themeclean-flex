@@ -18,7 +18,6 @@ module.exports = {
         f.mapField(rootLink, 'child.title', "model.childrenPages", "title");
         f.bindAttribute(rootLink, 'href', "child.childrenPages.length > 0 ? false : child.path +'.html'");
         f.bindAttribute(rootLink, 'class', "model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'",false);
-        f.bindAttribute(rootLink, "data-per-inline", "`model.childrenPages.${i}.title`")
         
         let nested = $.find('div').eq(1);
         f.addIf(nested, 'child.hasChildren && child.childrenPages && child.childrenPages.length > 0')
