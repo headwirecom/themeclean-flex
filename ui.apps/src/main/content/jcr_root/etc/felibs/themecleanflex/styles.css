@@ -277,11 +277,20 @@ p {
     flex-shrink: 0 !important;
   }
 }
-
+@media (min-width: 768px) {
+  .md\:overflow-unset {
+    overflow: unset;
+  }
+}
 
 /* header */
 [class$="components-header"] a {
   @apply text-sm font-medium;
+}
+
+/* navigation */
+[class$="components-navigation"] {
+  overflow: unset !important;
 }
 
 /* footer */
