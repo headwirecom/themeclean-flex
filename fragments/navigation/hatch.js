@@ -23,7 +23,7 @@ module.exports = {
         f.bindAttribute(allLinks, 'class', "model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'",false);
 
         let nested = $.find('div').eq(0);
-        f.bindAttribute( nested, 'class', `{ 'flex' : menuActive, 'hidden md:flex' : !menuActive, 'bg-secondary': active[i] }`, false);
+        f.bindAttribute( nested, 'class', `{ 'flex' : menuActive, 'hidden md:flex' : !menuActive, 'bg-secondary': active[i], 'md:bg-primary' : active[i] }`, false);
 
         let nestedArrow = $.find('svg').eq(0);
         f.addIf(nestedArrow, 'child.hasChildren && child.childrenPages && child.childrenPages.length > 0')

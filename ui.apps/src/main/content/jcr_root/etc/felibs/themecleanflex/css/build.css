@@ -1871,6 +1871,10 @@ p {
 
 @media (min-width: 768px) {
 
+  .md\:bg-primary {
+    background-color: var(--bg-primary);
+  }
+
   .md\:flex {
     display: flex;
   }

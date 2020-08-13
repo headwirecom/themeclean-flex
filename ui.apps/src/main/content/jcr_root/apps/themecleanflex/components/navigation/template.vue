@@ -10,7 +10,7 @@
       <div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90 self-end m-3"
       style="width:24px;" v-on:click="toggleMenu">|||</div>
       <div class="flex flex-col dropdown-container" v-for="(child, i) in model.childrenPages"
-      :key="child.path || i" v-bind:class="{ 'flex' : menuActive, 'hidden md:flex' : !menuActive, 'bg-secondary': active[i] }">
+      :key="child.path || i" v-bind:class="{ 'flex' : menuActive, 'hidden md:flex' : !menuActive, 'bg-secondary': active[i], 'md:bg-primary' : active[i] }">
         <div class="flex justify-between md:justify-start items-center md:items-start">
           <a class="p-3 no-underline flex-grow" v-bind:aria-expanded="`active[i] ? 'true' : 'false'`"
           v-bind:data-per-inline="`model.childrenPages.${i}.title`" v-bind:href="child.path +'.html'"
