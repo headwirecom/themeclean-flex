@@ -60,6 +60,32 @@ import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
             }
           }
         },
+        "levelsdeep": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Levels Deep",
+          "x-form-type": "materialrange",
+          "x-default": 1,
+          "x-form-min": 1,
+          "x-form-max": 5
+        },
+        "mobiletoggletype": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Collapse Style for mobile",
+          "x-form-type": "materialradio",
+          "x-default": "toggle",
+          "properties": {
+            "toggle": {
+              "x-form-name": "Toggle",
+              "x-form-value": "toggle"
+            },
+            "accordion": {
+              "x-form-name": "Accordion",
+              "x-form-value": "accordion"
+            }
+          }
+        },
         "bgref": {
           "x-form-type": "reference",
           "type": "object",
@@ -349,6 +375,16 @@ public class NavigationModel extends AbstractComponent {
 	@Default(values ="end")
 	private String justifyitems;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Levels Deep","x-form-type":"materialrange","x-default":1,"x-form-min":1,"x-form-max":5} */
+	@Inject
+	@Default(values ="1")
+	private String levelsdeep;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Collapse Style for mobile","x-form-type":"materialradio","x-default":"toggle","properties":{"toggle":{"x-form-name":"Toggle","x-form-value":"toggle"},"accordion":{"x-form-name":"Accordion","x-form-value":"accordion"}}} */
+	@Inject
+	@Default(values ="toggle")
+	private String mobiletoggletype;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
 	private String anchorname;
@@ -463,6 +499,16 @@ public class NavigationModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Navigation Alignment","x-form-type":"materialradio","x-default":"end","properties":{"start":{"x-form-name":"Start","x-form-value":"start"},"center":{"x-form-name":"Center","x-form-value":"center"},"end":{"x-form-name":"End","x-form-value":"end"}}} */
 	public String getJustifyitems() {
 		return justifyitems;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Levels Deep","x-form-type":"materialrange","x-default":1,"x-form-min":1,"x-form-max":5} */
+	public String getLevelsdeep() {
+		return levelsdeep;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Collapse Style for mobile","x-form-type":"materialradio","x-default":"toggle","properties":{"toggle":{"x-form-name":"Toggle","x-form-value":"toggle"},"accordion":{"x-form-name":"Accordion","x-form-value":"accordion"}}} */
+	public String getMobiletoggletype() {
+		return mobiletoggletype;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */

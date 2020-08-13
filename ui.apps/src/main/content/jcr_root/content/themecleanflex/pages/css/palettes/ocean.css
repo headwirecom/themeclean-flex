@@ -136,3 +136,7 @@
 #peregrine-app .theme-dark[class$="-components-navigation"] a:hover{
   color: var(--color-accent-1-700);
 }
+
+#peregrine-app .theme-dark[class$="-components-navigation"] .bg-secondary {
+  --bg-secondary: rgba(255,255,255,0.6);
+}

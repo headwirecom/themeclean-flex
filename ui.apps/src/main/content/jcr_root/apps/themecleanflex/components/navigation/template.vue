@@ -12,8 +12,8 @@
       <div class="flex flex-col dropdown-container" v-for="(child, i) in model.childrenPages"
       :key="child.path || i" v-bind:class="{ 'flex' : menuActive, 'hidden md:flex' : !menuActive, 'bg-secondary': active[i] }">
         <div class="flex justify-between md:justify-start items-center md:items-start">
-          <a class="p-3 no-underline" v-bind:aria-expanded="`active[i] ? 'true' : 'false'`"
-          v-bind:data-per-inline="`model.childrenPages.${i}.title`" v-bind:href="child.childrenPages.length &gt; 0 ? false : child.path +'.html'"
+          <a class="p-3 no-underline flex-grow" v-bind:aria-expanded="`active[i] ? 'true' : 'false'`"
+          v-bind:data-per-inline="`model.childrenPages.${i}.title`" v-bind:href="child.path +'.html'"
           v-bind:class="model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'">{{child.title}}</a>
           <svg width="16" height="16" viewBox="0 0 16 16" focusable="false"
           class="block md:hidden transition-transform duration-150 ease-in-out m-3 cursor-pointer"
@@ -73,14 +73,15 @@
               });
             },
             toggleItem(i) {
-              // if (this.model.toggletype === 'accordion') {
-              //   this.active.forEach( (active,j) => {
-              //     Vue.set(this.active, j, j === i ? !this.active[j] : false);
-              //   })
-              // } else {
+              if (this.model.mobiletoggletype === 'accordion') {
+                this.active.forEach( (active,j) => {
+                  Vue.set(this.active, j, j === i ? !this.active[j] : false);
+                  Vue.set(this.heights, i, this.$refs[`tabContent${i}`][0].clientHeight);
+                })
+              } else {
                 Vue.set(this.active, i, !this.active[i])
                 Vue.set(this.heights, i, this.$refs[`tabContent${i}`][0].clientHeight);
-              // }
+              }
             },
             toggleMenu: function(){
               this.menuActive = !this.menuActive
