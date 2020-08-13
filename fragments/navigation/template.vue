@@ -7,14 +7,16 @@
             'justify-center': model.justifyitems === 'center',
             'justify-end': model.justifyitems === 'end'
         }" v-else>
+      <div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90 self-end m-3"
+      style="width:24px;" v-on:click="toggleMenu">|||</div>
       <div class="flex flex-col dropdown-container" v-for="(child, i) in model.childrenPages"
-      :key="child.path || i" v-bind:class="{ 'bg-secondary': active[i] }">
+      :key="child.path || i" v-bind:class="{ 'flex' : menuActive, 'hidden md:flex' : !menuActive, 'bg-secondary': active[i] }">
         <div class="flex justify-between md:justify-start items-center md:items-start">
           <a class="p-3 no-underline" v-bind:aria-expanded="`active[i] ? 'true' : 'false'`"
           v-bind:data-per-inline="`model.childrenPages.${i}.title`" v-bind:href="child.childrenPages.length &gt; 0 ? false : child.path +'.html'"
           v-bind:class="model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'">{{child.title}}</a>
           <svg width="16" height="16" viewBox="0 0 16 16" focusable="false"
-          class="block md:hidden transition-transform duration-150 ease-in-out m-3"
+          class="block md:hidden transition-transform duration-150 ease-in-out m-3 cursor-pointer"
           v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"
           v-on:click="toggleItem(i)" v-bind:style="`transform:${active[i] ? 'rotate(180deg)': 'rotate(0)'};`">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"
@@ -41,6 +43,7 @@
         data: function() {
           const numElements = this.model.childrenPages ? this.model.childrenPages.length : 0;
           return {
+            menuActive: false,
             active: new Array(numElements).fill(false),
             heights: new Array(numElements).fill(0),
           }
@@ -53,6 +56,11 @@
         },
         mounted: function() {
           this.setHeights();
+          window.addEventListener('pageRendered', (e) => {
+            if (this.menuActive) {
+              this.toggleMenu();
+            }
+          }, false);
         },
         methods: {
             beforeSave(data) {
@@ -61,8 +69,8 @@
             },
             setHeights: function() {
               this.heights.forEach( (item,i) => {
-                Vue.set(this.heights, i, this.$refs[`tabContent${i}`][0].clientHeight )}
-              );
+                Vue.set(this.heights, i, this.$refs[`tabContent${i}`][0].clientHeight )
+              });
             },
             toggleItem(i) {
               // if (this.model.toggletype === 'accordion') {
@@ -71,7 +79,11 @@
               //   })
               // } else {
                 Vue.set(this.active, i, !this.active[i])
+                Vue.set(this.heights, i, this.$refs[`tabContent${i}`][0].clientHeight);
               // }
+            },
+            toggleMenu: function(){
+              this.menuActive = !this.menuActive
             }
         },
         

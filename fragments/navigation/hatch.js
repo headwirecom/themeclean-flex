@@ -21,9 +21,9 @@ module.exports = {
         f.mapField(allLinks, 'child.title', "model.childrenPages", "title");
         f.bindAttribute(allLinks, 'href', "child.childrenPages.length > 0 ? false : child.path +'.html'");
         f.bindAttribute(allLinks, 'class', "model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'",false);
-        
+
         let nested = $.find('div').eq(0);
-        f.bindAttribute( nested, 'class', `{ 'bg-secondary': active[i] }`, false);
+        f.bindAttribute( nested, 'class', `{ 'flex' : menuActive, 'hidden md:flex' : !menuActive, 'bg-secondary': active[i] }`, false);
 
         let nestedArrow = $.find('svg').eq(0);
         f.addIf(nestedArrow, 'child.hasChildren && child.childrenPages && child.childrenPages.length > 0')
@@ -44,5 +44,6 @@ module.exports = {
 
         f.addElse($);
         $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">{{isEditAndEmpty}}</div>')
+        $.prepend('<div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90 self-end m-3" style="width:24px;" v-on:click="toggleMenu">|||</div>')
     }
 }
