@@ -11,6 +11,20 @@
           "x-form-type": "textarea",
           "x-form-max": "16000"
         },
+        "successpage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "pathbrowser",
+          "x-form-label": "Submit Success Page",
+          "x-form-browserRoot": "/content/themecleanflex/pages"
+        },
+        "failmessage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Failure Message",
+          "x-form-type": "text",
+          "x-form-default": "Error processing form"
+        },
         "bgref": {
           "$ref": "fragments/block/model.json#/definitions/Block",
           "x-form-type": "reference"
