@@ -2,7 +2,7 @@ module.exports = {
     convert: function($, f) {
     	f.addFor($.find('li').first(), 'model.links')
         f.bindAttribute($.find('a').first(), 'href', f.pathToUrl('item.link'))
-        f.mapField($.find('a').first(), "item.text", "model.links", "text")
+        f.mapField($.find('a').first(), "item.text", "model.links", "text", false)
 
         let aClasses = `{
             'text-blue-700': model.linkcolor === 'primary',

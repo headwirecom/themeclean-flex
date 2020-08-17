@@ -19,13 +19,13 @@ module.exports = {
         let anchor = $.find('a')
         f.addIf( anchor, "i + 1 < model.links.length" )
         f.bindAttribute( anchor, 'href', "item.link + '.html'")
-        f.mapField( anchor, "item.text")
+        f.mapField( anchor, "item.text", false)
 
         f.bindAttribute(anchor, 'class', aClasses, false)
 
         let spanInner = span.find('span')
         f.addIf( spanInner, "i+1 === model.links.length" )
-        f.mapField( spanInner, "item.text")
+        f.mapField( spanInner, "item.text", false)
 
         f.addElse($);
         $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
