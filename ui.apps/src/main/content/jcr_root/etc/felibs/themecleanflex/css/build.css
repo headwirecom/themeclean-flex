@@ -621,16 +621,6 @@ video {
   background-color: var(--bg-secondary);
 }
 
-.hover\:bg-black:hover {
-  --bg-opacity: 1;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, var(--bg-opacity));
-}
-
-.hover\:bg-gray-200:hover {
-  background-color: var(--color-gray-200);
-}
-
 .hover\:bg-blue-700:hover {
   background-color: var(--color-blue-700);
 }
@@ -757,10 +747,6 @@ video {
 
 .self-center {
   align-self: center;
-}
-
-.self-stretch {
-  align-self: stretch;
 }
 
 .justify-start {
@@ -1100,10 +1086,6 @@ video {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
-.text-gray-200 {
-  color: var(--color-gray-200);
-}
-
 .text-gray-800 {
   color: var(--color-gray-800);
 }
@@ -1134,10 +1116,6 @@ video {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
-}
-
-.hover\:text-gray-200:hover {
-  color: var(--color-gray-200);
 }
 
 .hover\:text-red-600:hover {
@@ -1282,6 +1260,17 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.transform {
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
 }
 
 .transition-colors {

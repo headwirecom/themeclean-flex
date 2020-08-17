@@ -1,0 +1,10 @@
+{
+    "definitions": {
+      "Navigationnested": {
+        "type": "object",
+        "x-type": "component",
+        "properties": {
+        }
+      }
+    }
+  }
