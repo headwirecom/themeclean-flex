@@ -631,10 +631,9 @@ public class NavigationModel extends AbstractComponent {
 			PerPage page = ppm.getPage(getRootpage());
 			if (page != null) {
 				for (PerPage child : page.listChildren()) {
-					if(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
-						continue;
-					}
-					if (!child.getPath().equals(page.getPath())) {
+          if ( !(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false))
+							&& (!child.getPath().equals(page.getPath()))
+						) {
 						childPages.add(new Page(child, levels, excludeSitemap));
 					}
 				}
@@ -678,7 +677,7 @@ public class NavigationModel extends AbstractComponent {
 				if(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
 					continue;
 				}
-				if(!child.getPath().equals(page.getPath())) {
+				if(levels > 0 && !child.getPath().equals(page.getPath())) {
 					childPages.add(new Page(child, levels-1, excludeSitemap));
 				}
 			}

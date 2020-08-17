@@ -48,6 +48,10 @@
           }, false);
         },
         methods: {
+            beforeSave(data) {
+                delete data.childrenPages
+                return data
+            },
             toggleItem(i, e) {
               let parentItem, item;
               if (e.target.nodeName.toLowerCase() === 'svg') {
