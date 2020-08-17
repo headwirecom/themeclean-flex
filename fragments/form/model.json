@@ -11,12 +11,19 @@
           "x-form-type": "textarea",
           "x-form-max": "16000"
         },
-        "successpage": {
+        "endpointurl": {
           "type": "string",
           "x-source": "inject",
-          "x-form-type": "pathbrowser",
-          "x-form-label": "Submit Success Page",
-          "x-form-browserRoot": "/content/themecleanflex/pages"
+          "x-form-label": "Form submit endpoint URL",
+          "x-form-type": "text",
+          "x-form-default": ""
+        },
+        "submitfunction": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Javascript function to call on submit",
+          "x-form-type": "text",
+          "x-form-default": "onSubmit"
         },
         "failmessage": {
           "type": "string",
@@ -24,6 +31,13 @@
           "x-form-label": "Failure Message",
           "x-form-type": "text",
           "x-form-default": "Error processing form"
+        },
+        "successpage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "pathbrowser",
+          "x-form-label": "Submit Success Page",
+          "x-form-browserRoot": "/content/themecleanflex/pages"
         },
         "bgref": {
           "$ref": "fragments/block/model.json#/definitions/Block",

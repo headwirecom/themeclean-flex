@@ -1,7 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div v-bind:data-per-path="model.path">
-      <form>
+      <form v-on:submit="defaultSubmit">
         <vue-form-generator v-bind:model="formModel" v-bind:schema="schema" v-bind:options="formOptions"></vue-form-generator>
         <input type="submit">
       </form>
@@ -27,6 +27,10 @@ export default {
         } catch( error ) {
           return { fields: [] } 
         }
+      },
+      defaultSubmit() {
+        alert("test")
+        return false
       }
     }
   }

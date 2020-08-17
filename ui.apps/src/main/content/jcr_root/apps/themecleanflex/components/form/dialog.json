@@ -9,11 +9,19 @@
       "model": "schema"
     },
     {
-      "type": "pathbrowser",
-      "browserRoot": "/content/themecleanflex/pages",
-      "placeholder": "successpage",
-      "label": "Submit Success Page",
-      "model": "successpage"
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "endpointurl",
+      "label": "Form submit endpoint URL",
+      "model": "endpointurl"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "submitfunction",
+      "label": "Javascript function to call on submit",
+      "model": "submitfunction",
+      "default": "onSubmit"
     },
     {
       "type": "input",
@@ -22,6 +30,13 @@
       "label": "Failure Message",
       "model": "failmessage",
       "default": "Error processing form"
+    },
+    {
+      "type": "pathbrowser",
+      "browserRoot": "/content/themecleanflex/pages",
+      "placeholder": "successpage",
+      "label": "Submit Success Page",
+      "model": "successpage"
     },
     {
       "type": "input",

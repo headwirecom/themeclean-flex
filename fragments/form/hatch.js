@@ -5,6 +5,10 @@ module.exports = {
 
         const el = $.find('div').first()
         f.replace(el, '<vue-form-generator></vue-form-generator>')
+
+        const formEl = $.find('form')
+        f.bindEvent(formEl,'submit','defaultSubmit')
+        //f.bindAttribute(formEl,'@submit','defaultSubmit')
         
         const form = $.find('vue-form-generator').first()
         f.bindAttribute(form,'model','formModel')

@@ -28,12 +28,19 @@ import javax.inject.Named;
           "x-form-type": "textarea",
           "x-form-max": "16000"
         },
-        "successpage": {
+        "endpointurl": {
           "type": "string",
           "x-source": "inject",
-          "x-form-type": "pathbrowser",
-          "x-form-label": "Submit Success Page",
-          "x-form-browserRoot": "/content/themecleanflex/pages"
+          "x-form-label": "Form submit endpoint URL",
+          "x-form-type": "text",
+          "x-form-default": ""
+        },
+        "submitfunction": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Javascript function to call on submit",
+          "x-form-type": "text",
+          "x-form-default": "onSubmit"
         },
         "failmessage": {
           "type": "string",
@@ -41,6 +48,13 @@ import javax.inject.Named;
           "x-form-label": "Failure Message",
           "x-form-type": "text",
           "x-form-default": "Error processing form"
+        },
+        "successpage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "pathbrowser",
+          "x-form-label": "Submit Success Page",
+          "x-form-browserRoot": "/content/themecleanflex/pages"
         },
         "bgref": {
           "x-form-type": "reference",
@@ -322,13 +336,21 @@ public class FormModel extends AbstractComponent {
 	@Inject
 	private String schema;
 
-	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Submit Success Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-form-default":""} */
 	@Inject
-	private String successpage;
+	private String endpointurl;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-type":"text","x-form-default":"onSubmit"} */
+	@Inject
+	private String submitfunction;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-form-default":"Error processing form"} */
 	@Inject
 	private String failmessage;
+
+	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Submit Success Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	@Inject
+	private String successpage;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
@@ -436,14 +458,24 @@ public class FormModel extends AbstractComponent {
 		return schema;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Submit Success Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
-	public String getSuccesspage() {
-		return successpage;
+	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-form-default":""} */
+	public String getEndpointurl() {
+		return endpointurl;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-type":"text","x-form-default":"onSubmit"} */
+	public String getSubmitfunction() {
+		return submitfunction;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-form-default":"Error processing form"} */
 	public String getFailmessage() {
 		return failmessage;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Submit Success Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	public String getSuccesspage() {
+		return successpage;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
