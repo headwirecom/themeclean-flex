@@ -28,6 +28,20 @@ import javax.inject.Named;
           "x-form-type": "textarea",
           "x-form-max": "16000"
         },
+        "successpage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "pathbrowser",
+          "x-form-label": "Submit Success Page",
+          "x-form-browserRoot": "/content/themecleanflex/pages"
+        },
+        "failmessage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Failure Message",
+          "x-form-type": "text",
+          "x-form-default": "Error processing form"
+        },
         "bgref": {
           "x-form-type": "reference",
           "type": "object",
@@ -308,6 +322,14 @@ public class FormModel extends AbstractComponent {
 	@Inject
 	private String schema;
 
+	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Submit Success Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	@Inject
+	private String successpage;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-form-default":"Error processing form"} */
+	@Inject
+	private String failmessage;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
 	private String anchorname;
@@ -412,6 +434,16 @@ public class FormModel extends AbstractComponent {
     	/* {"type":"string","x-source":"inject","x-form-label":"Form Model","x-form-type":"textarea","x-form-max":"16000"} */
 	public String getSchema() {
 		return schema;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Submit Success Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	public String getSuccesspage() {
+		return successpage;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-form-default":"Error processing form"} */
+	public String getFailmessage() {
+		return failmessage;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
