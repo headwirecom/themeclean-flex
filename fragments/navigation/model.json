@@ -37,31 +37,13 @@
             }
           }
         },
-        "levelsdeep": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Levels Deep",
-          "x-form-type": "materialrange",
-          "x-default": 1,
-          "x-form-min": 1,
-          "x-form-max": 5 
-        },
-        "mobiletoggletype": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Collapse Style for mobile",
-          "x-form-type": "materialradio",
-          "x-default": "toggle",
-          "properties": {
-            "toggle": {
-              "x-form-name": "Toggle",
-              "x-form-value": "toggle"
-            },
-            "accordion": {
-              "x-form-name": "Accordion",
-              "x-form-value": "accordion"
-            }
-          }
+        "levels": {
+          "type":"string",
+          "x-source":"inject",
+          "x-form-type":"number",
+          "x-form-label":"Levels",
+          "x-form-default":1,
+          "x-form-min":1
         },
         "bgref": {
           "x-form-type": "reference",

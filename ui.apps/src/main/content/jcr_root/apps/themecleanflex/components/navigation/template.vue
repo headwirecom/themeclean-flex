@@ -9,30 +9,25 @@
         }" v-else>
       <div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90 self-end m-3"
       style="width:24px;" v-on:click="toggleMenu">|||</div>
-      <div class="flex flex-col dropdown-container" v-for="(child, i) in model.childrenPages"
-      :key="child.path || i" v-bind:class="{ 'flex' : menuActive, 'hidden md:flex' : !menuActive, 'bg-secondary': active[i], 'md:bg-primary' : active[i] }">
-        <div class="flex justify-between md:justify-start items-center md:items-start">
-          <a class="p-3 no-underline flex-grow" v-bind:aria-expanded="`active[i] ? 'true' : 'false'`"
-          v-bind:data-per-inline="`model.childrenPages.${i}.title`" v-bind:href="child.path +'.html'"
-          v-bind:class="model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'">{{child.title}}</a>
-          <svg width="16" height="16" viewBox="0 0 16 16" focusable="false"
-          class="block md:hidden transition-transform duration-150 ease-in-out m-3 cursor-pointer"
-          v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"
-          v-on:click="toggleItem(i)" v-bind:style="`transform:${active[i] ? 'rotate(180deg)': 'rotate(0)'};`">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"
-            />
-          </svg>
-        </div>
-        <div class="self-stretch relative transition-height duration-200 ease-in-out overflow-hidden md:overflow-unset"
-        v-bind:style="`height:${active[i] ? heights[i] + 'px' : '0px'};`">
-          <div class="flex flex-col dropdown-list relative md:absolute" v-bind:ref="`tabContent${i}`">
-            <a class="p-3 no-underline" v-bind:data-per-inline="`model.childrenPages.${i}.title`"
-            v-bind:href="subchild.path + '.html'" v-bind:class="model.colorscheme === 'dark' ? 'text-gray-200 hover:bg-gray-200 hover:text-black' : 'text-black hover:bg-black hover:text-gray-200'"
-            v-for="(subchild, i) in child.childrenPages" :key="subchild.path || i"
-            data-per-inline="subchild.title">{{subchild.title}}</a>
+      <ul class="flex flex-col md:flex-row" v-bind:class="{ 'flex' : menuActive, 'hidden md:flex' : !menuActive }"
+      v-bind:style="`list-style-type: none;padding: 0px;`">
+        <li class="children ml-2 relative dropdown-container" v-for="(child, i) in model.childrenPages"
+        :key="child.path || i">
+          <div class="flex justify-between md:justify-start items-center md:items-start">
+            <a class="p-3 no-underline flex-grow" v-bind:href="$helper.pathToUrl(child.path)"
+            data-per-inline="child.title">{{child.title}}</a>
+            <svg width="16" height="16" viewBox="0 0 16 16" focusable="false"
+            class="block md:hidden transition-transform duration-150 ease-in-out m-3 cursor-pointer"
+            v-bind:style="`transform:rotate(180deg);`" v-on:click="(e) =&gt; { toggleItem(i, e) }"
+            v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"
+              />
+            </svg>
           </div>
-        </div>
-      </div>
+          <themecleanflex-components-navigationnested v-bind:model="child" style="list-style-type: none;padding: 0px;"
+          v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"></themecleanflex-components-navigationnested>
+        </li>
+      </ul>
     </nav>
   </themecleanflex-components-block>
 </template>
@@ -41,21 +36,11 @@
     export default {
         props: ['model'],
         data: function() {
-          const numElements = this.model.childrenPages ? this.model.childrenPages.length : 0;
           return {
             menuActive: false,
-            active: new Array(numElements).fill(false),
-            heights: new Array(numElements).fill(0),
           }
         },
-        created() {
-          addEventListener("resize", this.setHeights);
-        },
-        destroyed() {
-          removeEventListener("resize", this.setHeights);
-        },
         mounted: function() {
-          this.setHeights();
           window.addEventListener('pageRendered', (e) => {
             if (this.menuActive) {
               this.toggleMenu();
@@ -63,24 +48,28 @@
           }, false);
         },
         methods: {
-            beforeSave(data) {
-                delete data.childrenPages
-                return data
-            },
-            setHeights: function() {
-              this.heights.forEach( (item,i) => {
-                Vue.set(this.heights, i, this.$refs[`tabContent${i}`][0].clientHeight )
-              });
-            },
-            toggleItem(i) {
-              if (this.model.mobiletoggletype === 'accordion') {
-                this.active.forEach( (active,j) => {
-                  Vue.set(this.active, j, j === i ? !this.active[j] : false);
-                  Vue.set(this.heights, i, this.$refs[`tabContent${i}`][0].clientHeight);
-                })
+            toggleItem(i, e) {
+              let parentItem, item;
+              if (e.target.nodeName.toLowerCase() === 'svg') {
+                parentItem = e.path[2];
+                item = e.path[0];
+              }
+              if (e.target.nodeName.toLowerCase() === 'path') {
+                parentItem = e.path[3];
+                item = e.path[1];
+              }
+              if(parentItem.querySelector('ul').classList.contains('hidden')) {
+                item.style.transform = "rotate(0deg)";
+                parentItem.classList.add('bg-secondary')
+                parentItem.classList.add('md:bg-primary')
+                parentItem.querySelector('ul').classList.remove('hidden');
+                parentItem.querySelector('ul').classList.remove('md:flex');
               } else {
-                Vue.set(this.active, i, !this.active[i])
-                Vue.set(this.heights, i, this.$refs[`tabContent${i}`][0].clientHeight);
+                item.style.transform = "rotate(180deg)";
+                parentItem.classList.remove('bg-secondary')
+                parentItem.classList.remove('md:bg-primary')
+                parentItem.querySelector('ul').classList.add('hidden');
+                parentItem.querySelector('ul').classList.add('md:flex');
               }
             },
             toggleMenu: function(){
@@ -104,9 +93,8 @@
   .flex.dropdown-list {
     display: none;
   }
-  .flex.dropdown-container:hover .flex.dropdown-list, .flex.dropdown-container:focus-within .flex.dropdown-list {
+  .relative.dropdown-container:hover > .flex.dropdown-list, .relative.dropdown-container:focus-within > .flex.dropdown-list {
     display: flex;
   }
 }
 </style>
-

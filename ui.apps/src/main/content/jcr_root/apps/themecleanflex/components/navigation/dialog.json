@@ -38,28 +38,13 @@
       "model": "justifyitems"
     },
     {
-      "type": "material-range",
-      "placeholder": "levelsdeep",
-      "label": "Levels Deep",
-      "model": "levelsdeep",
-      "min": 1,
-      "max": 5
-    },
-    {
-      "type": "material-radios",
-      "values": [
-        {
-          "name": "Toggle",
-          "value": "toggle"
-        },
-        {
-          "name": "Accordion",
-          "value": "accordion"
-        }
-      ],
-      "placeholder": "mobiletoggletype",
-      "label": "Collapse Style for mobile",
-      "model": "mobiletoggletype"
+      "type": "input",
+      "inputType": "number",
+      "placeholder": "levels",
+      "label": "Levels",
+      "model": "levels",
+      "default": 1,
+      "min": 1
     },
     {
       "type": "input",
