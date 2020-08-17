@@ -60,14 +60,13 @@ import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
             }
           }
         },
-        "levelsdeep": {
+        "levels": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Levels Deep",
-          "x-form-type": "materialrange",
-          "x-default": 1,
-          "x-form-min": 1,
-          "x-form-max": 5
+          "x-form-type": "number",
+          "x-form-label": "Levels",
+          "x-form-default": 1,
+          "x-form-min": 1
         },
         "mobiletoggletype": {
           "type": "string",
@@ -375,10 +374,9 @@ public class NavigationModel extends AbstractComponent {
 	@Default(values ="end")
 	private String justifyitems;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Levels Deep","x-form-type":"materialrange","x-default":1,"x-form-min":1,"x-form-max":5} */
+	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
 	@Inject
-	@Default(values ="1")
-	private String levelsdeep;
+	private String levels;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Collapse Style for mobile","x-form-type":"materialradio","x-default":"toggle","properties":{"toggle":{"x-form-name":"Toggle","x-form-value":"toggle"},"accordion":{"x-form-name":"Accordion","x-form-value":"accordion"}}} */
 	@Inject
@@ -501,11 +499,6 @@ public class NavigationModel extends AbstractComponent {
 		return justifyitems;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Levels Deep","x-form-type":"materialrange","x-default":1,"x-form-min":1,"x-form-max":5} */
-	public String getLevelsdeep() {
-		return levelsdeep;
-	}
-
 	/* {"type":"string","x-source":"inject","x-form-label":"Collapse Style for mobile","x-form-type":"materialradio","x-default":"toggle","properties":{"toggle":{"x-form-name":"Toggle","x-form-value":"toggle"},"accordion":{"x-form-name":"Accordion","x-form-value":"accordion"}}} */
 	public String getMobiletoggletype() {
 		return mobiletoggletype;
@@ -624,13 +617,23 @@ public class NavigationModel extends AbstractComponent {
 
 	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
 	public String getLevels() {
-		return "2";
+		return levels == null ? "1" : levels;
 	}
 
 	public String getExcludeSitemapExcludes() {
 		return excludesitemapexcludes == null ? "false" : excludesitemapexcludes;
 	}
 
+  public String getRootPage() {
+		if(rootpage == null) {
+			PerPage currentPage =  getResource().adaptTo(PerPage.class);
+			if(currentPage != null) {
+				return currentPage.getPath();
+			}
+		}
+		return rootpage;
+  }
+  
 	public String getRootPageTitle() {
 		PerPageManager ppm = getResource().getResourceResolver().adaptTo(PerPageManager.class);
 		PerPage page = ppm.getPage(getRootpage());
@@ -697,7 +700,6 @@ public class NavigationModel extends AbstractComponent {
 
 	public List<Page> getChildrenPages() {
 		List<Page> childPages = new ArrayList<Page>();
-		System.out.println();
 		if(page != null) {
 			for (PerPage child: page.listChildren()) {
 				if(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
