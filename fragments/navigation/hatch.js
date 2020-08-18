@@ -28,6 +28,13 @@ module.exports = {
 
         f.addElse($);
         $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">{{isEditAndEmpty}}</div>')
-        $.prepend('<div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90 self-end m-3" style="width:24px;" v-on:click="toggleMenu">|||</div>')
+
+        let self = `{
+            'self-start': model.justifyitems === 'start',
+            'self-end': model.justifyitems === 'end'
+        }`
+
+        let hamburger = `<div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90 m-3" v-bind:class="${self}" style="width:24px;" v-on:click="toggleMenu">|||</div>`
+        $.prepend(hamburger)
     }
 }

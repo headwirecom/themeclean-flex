@@ -7,8 +7,11 @@
             'justify-center': model.justifyitems === 'center',
             'justify-end': model.justifyitems === 'end'
         }" v-else>
-      <div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90 self-end m-3"
-      style="width:24px;" v-on:click="toggleMenu">|||</div>
+      <div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90 m-3"
+      v-bind:class="{
+            'self-start': model.justifyitems === 'start',
+            'self-end': model.justifyitems === 'end'
+        }" style="width:24px;" v-on:click="toggleMenu">|||</div>
       <ul class="flex flex-col md:flex-row" v-bind:class="{ 'flex' : menuActive, 'hidden md:flex' : !menuActive }"
       v-bind:style="`list-style-type: none;padding: 0px;`">
         <li class="children ml-2 relative dropdown-container" v-for="(child, i) in model.childrenPages"
@@ -66,14 +69,14 @@
                 item.style.transform = "rotate(0deg)";
                 parentItem.classList.add('bg-secondary')
                 parentItem.classList.add('md:bg-primary')
+                parentItem.querySelector('div a').classList.add('active');
                 parentItem.querySelector('ul').classList.remove('hidden');
-                parentItem.querySelector('ul').classList.remove('md:flex');
               } else {
                 item.style.transform = "rotate(180deg)";
                 parentItem.classList.remove('bg-secondary')
                 parentItem.classList.remove('md:bg-primary')
+                parentItem.querySelector('div a').classList.remove('active');
                 parentItem.querySelector('ul').classList.add('hidden');
-                parentItem.querySelector('ul').classList.add('md:flex');
               }
             },
             toggleMenu: function(){
@@ -94,10 +97,10 @@
 
 <style>
 @media (min-width: 768px) {
-  .flex.dropdown-list {
+  .hidden.dropdown-list {
     display: none;
   }
-  .relative.dropdown-container:hover > .flex.dropdown-list, .relative.dropdown-container:focus-within > .flex.dropdown-list {
+  .relative.dropdown-container:hover > .hidden.dropdown-list, .relative.dropdown-container:focus-within > .hidden.dropdown-list {
     display: flex;
   }
 }
