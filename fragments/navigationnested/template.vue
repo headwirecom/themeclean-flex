@@ -1,6 +1,6 @@
 <template>
-  <ul class="flex flex-col dropdown-list md:absolute" v-bind:style="`list-style-type: none;padding: 0px;display:${active[i] ? 'flex' : 'none'};`">
-    <li class="children relative dropdown-container" v-for="(child, i) in model.childrenPages"
+  <ul class="flex-col dropdown-list md:absolute hidden" v-bind:style="`list-style-type: none;padding: 0px;`">
+    <li class="ml-2 md:ml-0 children relative dropdown-container" v-for="(child, i) in model.childrenPages"
     :key="child.path || i">
       <div class="flex justify-between md:justify-start items-center md:items-start">
         <a class="p-3 no-underline flex-grow" v-bind:href="$helper.pathToUrl(child.path)"
@@ -38,14 +38,14 @@
                 item.style.transform = "rotate(0deg)";
                 parentItem.classList.add('bg-secondary')
                 parentItem.classList.add('md:bg-primary')
+                parentItem.querySelector('div a').classList.add('active');
                 parentItem.querySelector('ul').classList.remove('hidden');
-                parentItem.querySelector('ul').classList.remove('md:flex');
               } else {
                 item.style.transform = "rotate(180deg)";
                 parentItem.classList.remove('bg-secondary')
                 parentItem.classList.remove('md:bg-primary')
+                parentItem.querySelector('div a').classList.remove('active');
                 parentItem.querySelector('ul').classList.add('hidden');
-                parentItem.querySelector('ul').classList.add('md:flex');
               }
             },
         },
@@ -55,10 +55,10 @@
 
 <style>
 @media (min-width: 768px) {
-  .flex.dropdown-list {
+  .hidden.dropdown-list {
     display: none;
   }
-  .relative.dropdown-container:hover > .flex.dropdown-list, .relative.dropdown-container:focus-within > .flex.dropdown-list {
+  .relative.dropdown-container:hover > .hidden.dropdown-list, .relative.dropdown-container:focus-within > .hidden.dropdown-list {
     display: flex;
   }
 }

@@ -202,7 +202,16 @@
 #peregrine-app [class$="-components-navigation"] a * {
   color: var(--text-primary-color);
 }
-
+#peregrine-app [class$="-components-navigation"] a.active,
+#peregrine-app [class$="-components-navigation"] a.active * {
+  color: var(--text-secondary-color);
+}
+@media( min-width: 768px ) {
+  #peregrine-app [class$="-components-navigation"] a.active,
+  #peregrine-app [class$="-components-navigation"] a.active * {
+    color: var(--text-primary-color);
+  }
+}
 #peregrine-app [class$="-components-navigation"] a:hover,
 #peregrine-app [class$="-components-navigation"] a:hover {
   color: var(--bg-primary);

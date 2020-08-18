@@ -1,6 +1,6 @@
 module.exports = {
     convert: function($, f) {
-        f.bindAttribute($, 'style', "`list-style-type: none;padding: 0px;display:${active[i] ? 'flex' : 'none'};`", false)
+        f.bindAttribute($, 'style', "`list-style-type: none;padding: 0px;`", false)
         f.addFor($.find('li.children').first(), 'model.childrenPages', 'child')
         f.bindAttribute($.find('li.children a').first(),'href',f.pathToUrl('child.path'))
         f.mapField($.find('li.children a').first(),'child.title')
