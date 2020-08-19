@@ -38,7 +38,7 @@ import javax.inject.Named;
         "submitfunction": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Javascript function to call on submit",
+          "x-form-label": "Javascript function to call on submit. Must accept (model, formdata)",
           "x-form-type": "text",
           "x-default": "defaultSubmit"
         },
@@ -341,7 +341,7 @@ public class FormModel extends AbstractComponent {
 	@Default(values ="")
 	private String endpointurl;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-type":"text","x-default":"defaultSubmit"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit. Must accept (model, formdata)","x-form-type":"text","x-default":"defaultSubmit"} */
 	@Inject
 	@Default(values ="defaultSubmit")
 	private String submitfunction;
@@ -466,7 +466,7 @@ public class FormModel extends AbstractComponent {
 		return endpointurl;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-type":"text","x-default":"defaultSubmit"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit. Must accept (model, formdata)","x-form-type":"text","x-default":"defaultSubmit"} */
 	public String getSubmitfunction() {
 		return submitfunction;
 	}

@@ -19,7 +19,7 @@
       "type": "input",
       "inputType": "text",
       "placeholder": "submitfunction",
-      "label": "Javascript function to call on submit",
+      "label": "Javascript function to call on submit. Must accept (model, formdata)",
       "model": "submitfunction"
     },
     {

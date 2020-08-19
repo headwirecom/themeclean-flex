@@ -27,6 +27,14 @@ export default {
     methods: {
       defaultSubmit(e) {
         e.preventDefault()
+        if(this.model.submitfunction != 'defaultSubmit') {
+          alert('handling '+this.model.submitfunction)
+          if(window[this.model.submitfunction]) {
+            alert('function found')
+          }
+          //eval('this.' + this.model.submitfunction + '(e)')
+          return
+        }
         let curr = this;
         axios.post(this.model.endpointurl, {
             form: this.formModel
