@@ -12,12 +12,12 @@
             'self-start': model.justifyitems === 'start',
             'self-end': model.justifyitems === 'end'
         }" style="width:24px;" v-on:click="toggleMenu">|||</div>
-      <ul class="flex flex-col md:flex-row" v-bind:class="{ 'flex' : menuActive, 'hidden md:flex' : !menuActive }"
+      <ul class="flex flex-col md:flex-row md:flex-wrap" v-bind:class="{ 'flex' : menuActive, 'hidden md:flex' : !menuActive }"
       v-bind:style="`list-style-type: none;padding: 0px;`">
         <li class="children ml-2 relative dropdown-container" v-for="(child, i) in model.childrenPages"
         :key="child.path || i">
           <div class="flex justify-between md:justify-start items-center md:items-start">
-            <a class="p-3 no-underline flex-grow" v-bind:href="$helper.pathToUrl(child.path)"
+            <a class="p-3 no-underline flex-grow cursor-pointer" v-bind:href="$helper.pathToUrl(child.path)"
             data-per-inline="child.title">{{child.title}}</a>
             <svg width="16" height="16" viewBox="0 0 16 16" focusable="false"
             class="block md:hidden transition-transform duration-150 ease-in-out m-3 cursor-pointer"
@@ -49,6 +49,22 @@
               this.toggleMenu();
             }
           }, false);
+
+          //Links on the right side of screen will have their nested lists pop out to the left, instead of right
+          let parentDimensions = this.$el.querySelector(".md\\:flex-wrap").getBoundingClientRect();
+          let children = this.$el.querySelectorAll(".md\\:flex-wrap > li");
+          for (let i = 0; i < children.length; i++) {
+            let childDimensions = children[i].getBoundingClientRect();
+            if (childDimensions.x > ((parentDimensions.width/2) + parentDimensions.x)) {
+              let nested = children[i].querySelectorAll(`ul`);
+              for (let j = 0; j < nested.length; j++) {
+                if (nested[j].style.top === "0px" ) {
+                  nested[j].style.right = "100%";
+                  nested[j].style.left = "";
+                }
+              }
+            }
+          }
         },
         methods: {
             beforeSave(data) {
@@ -71,12 +87,14 @@
                 parentItem.classList.add('md:bg-primary')
                 parentItem.querySelector('div a').classList.add('active');
                 parentItem.querySelector('ul').classList.remove('hidden');
+                parentItem.querySelector('ul').classList.add('md:hidden');
               } else {
                 item.style.transform = "rotate(180deg)";
                 parentItem.classList.remove('bg-secondary')
                 parentItem.classList.remove('md:bg-primary')
                 parentItem.querySelector('div a').classList.remove('active');
                 parentItem.querySelector('ul').classList.add('hidden');
+                parentItem.querySelector('ul').classList.remove('md:hidden');
               }
             },
             toggleMenu: function(){
@@ -101,6 +119,9 @@
     display: none;
   }
   .relative.dropdown-container:hover > .hidden.dropdown-list, .relative.dropdown-container:focus-within > .hidden.dropdown-list {
+    display: flex;
+  }
+  .relative.dropdown-container:hover > .md\:hidden.dropdown-list, .relative.dropdown-container:focus-within > .md\hidden.dropdown-list {
     display: flex;
   }
 }

@@ -149,9 +149,14 @@
     --border-primary-color: var(--color-accent-1-700);
   }
 
-  #peregrine-app .theme-dark[class$="-components-navigation"] a.active,
   #peregrine-app .theme-dark[class$="-components-navigation"] a:hover{
     color: var(--color-accent-1-700);
+  }
+
+  @media( max-width: 768px ) {
+    #peregrine-app .theme-dark[class$="-components-navigation"] a.active {
+      color: var(--color-accent-1-700);
+    }
   }
 
   #peregrine-app .theme-dark[class$="-components-navigation"] .bg-secondary {

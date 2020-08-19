@@ -1,9 +1,9 @@
 <template>
-  <ul class="flex-col dropdown-list md:absolute hidden" v-bind:style="`list-style-type: none;padding: 0px;`">
+  <ul class="flex-col dropdown-list md:absolute hidden z-10" v-bind:style="`list-style-type: none;padding: 0px;`">
     <li class="ml-2 md:ml-0 children relative dropdown-container" v-for="(child, i) in model.childrenPages"
     :key="child.path || i">
       <div class="flex justify-between md:justify-start items-center md:items-start">
-        <a class="p-3 no-underline flex-grow" v-bind:href="$helper.pathToUrl(child.path)"
+        <a class="p-3 no-underline flex-grow cursor-pointer" v-bind:href="$helper.pathToUrl(child.path)"
         data-per-inline="child.title">{{child.title}}</a>
         <svg width="16" height="16" viewBox="0 0 16 16" focusable="false"
         class="block md:hidden transition-transform duration-150 ease-in-out m-3 cursor-pointer"
@@ -13,8 +13,8 @@
           />
         </svg>
       </div>
-      <themecleanflex-components-navigationnested v-bind:model="child" style="top:0; left: 100%;list-style-type: none; padding: 0px"
-      v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"></themecleanflex-components-navigationnested>
+      <themecleanflex-components-navigationnested v-bind:model="child" class="z-10"
+      style="top:0; left: 100%;list-style-type: none; padding: 0px" v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"></themecleanflex-components-navigationnested>
     </li>
   </ul>
 </template>
@@ -23,6 +23,9 @@
 <script>
     export default {
         props: ['model'],
+        mounted() {
+            console.log(this);
+        },
         methods: {
             toggleItem(i, e) {
               let parentItem, item;
@@ -40,12 +43,14 @@
                 parentItem.classList.add('md:bg-primary')
                 parentItem.querySelector('div a').classList.add('active');
                 parentItem.querySelector('ul').classList.remove('hidden');
+                parentItem.querySelector('ul').classList.add('md:hidden');
               } else {
                 item.style.transform = "rotate(180deg)";
                 parentItem.classList.remove('bg-secondary')
                 parentItem.classList.remove('md:bg-primary')
                 parentItem.querySelector('div a').classList.remove('active');
                 parentItem.querySelector('ul').classList.add('hidden');
+                parentItem.querySelector('ul').classList.remove('md:hidden');
               }
             },
         },
