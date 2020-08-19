@@ -1,6 +1,9 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div v-bind:data-per-path="model.path">
+      <div id="formFailure">
+        <p data-per-inline="failureText">{{failureText}}</p>
+      </div>
       <form v-on:submit="defaultSubmit">
         <vue-form-generator v-bind:model="formModel" v-bind:schema="schema" v-bind:options="formOptions"></vue-form-generator>
         <input type="submit">
@@ -17,7 +20,8 @@ export default {
         formModel: {},
         formOptions: {
           validateAfterChange: true
-        }
+        },
+        failureText: ''
       }
     },
     methods: {
@@ -31,7 +35,7 @@ export default {
             $peregrineApp.loadContent(curr.model.successpage)
         })
         .catch(function (error) {
-            alert(error)
+            curr.failureText = curr.model.failmessage
         });
         return false
       }
