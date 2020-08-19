@@ -20,16 +20,14 @@
       "inputType": "text",
       "placeholder": "submitfunction",
       "label": "Javascript function to call on submit",
-      "model": "submitfunction",
-      "default": "onSubmit"
+      "model": "submitfunction"
     },
     {
       "type": "input",
       "inputType": "text",
       "placeholder": "failmessage",
       "label": "Failure Message",
-      "model": "failmessage",
-      "default": "Error processing form"
+      "model": "failmessage"
     },
     {
       "type": "pathbrowser",

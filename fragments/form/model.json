@@ -16,21 +16,21 @@
           "x-source": "inject",
           "x-form-label": "Form submit endpoint URL",
           "x-form-type": "text",
-          "x-form-default": ""
+          "x-default": ""
         },
         "submitfunction": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Javascript function to call on submit",
           "x-form-type": "text",
-          "x-form-default": "onSubmit"
+          "x-default": "defaultSubmit"
         },
         "failmessage": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Failure Message",
           "x-form-type": "text",
-          "x-form-default": "Error processing form"
+          "x-default": "Error processing form"
         },
         "successpage": {
           "type": "string",

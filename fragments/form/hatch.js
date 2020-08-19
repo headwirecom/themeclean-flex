@@ -8,6 +8,8 @@ module.exports = {
 
         const formEl = $.find('form')
         f.bindEvent(formEl,'submit','defaultSubmit')
+        //f.bindAttribute(formEl,'action','model.endpointurl')
+        //f.bindAttribute(formEl,'')
         //f.bindAttribute(formEl,'@submit','defaultSubmit')
         
         const form = $.find('vue-form-generator').first()

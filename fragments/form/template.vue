@@ -16,8 +16,24 @@ export default {
       return {
         formModel: {},
         formOptions: {
-          validateAfterChange: true              
+          validateAfterChange: true
         }
+      }
+    },
+    methods: {
+      defaultSubmit(e) {
+        e.preventDefault()
+        let curr = this;
+        axios.post(this.model.endpointurl, {
+            form: this.formModel
+        })
+        .then(function (response) {
+            $peregrineApp.loadContent(curr.model.successpage)
+        })
+        .catch(function (error) {
+            alert(error)
+        });
+        return false
       }
     },
     computed: {
@@ -27,10 +43,6 @@ export default {
         } catch( error ) {
           return { fields: [] } 
         }
-      },
-      defaultSubmit() {
-        alert("test")
-        return false
       }
     }
   }

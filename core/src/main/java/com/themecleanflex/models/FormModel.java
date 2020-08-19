@@ -33,21 +33,21 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Form submit endpoint URL",
           "x-form-type": "text",
-          "x-form-default": ""
+          "x-default": ""
         },
         "submitfunction": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Javascript function to call on submit",
           "x-form-type": "text",
-          "x-form-default": "onSubmit"
+          "x-default": "defaultSubmit"
         },
         "failmessage": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Failure Message",
           "x-form-type": "text",
-          "x-form-default": "Error processing form"
+          "x-default": "Error processing form"
         },
         "successpage": {
           "type": "string",
@@ -336,16 +336,19 @@ public class FormModel extends AbstractComponent {
 	@Inject
 	private String schema;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-form-default":""} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-default":""} */
 	@Inject
+	@Default(values ="")
 	private String endpointurl;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-type":"text","x-form-default":"onSubmit"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-type":"text","x-default":"defaultSubmit"} */
 	@Inject
+	@Default(values ="defaultSubmit")
 	private String submitfunction;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-form-default":"Error processing form"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-default":"Error processing form"} */
 	@Inject
+	@Default(values ="Error processing form")
 	private String failmessage;
 
 	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Submit Success Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
@@ -458,17 +461,17 @@ public class FormModel extends AbstractComponent {
 		return schema;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-form-default":""} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-default":""} */
 	public String getEndpointurl() {
 		return endpointurl;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-type":"text","x-form-default":"onSubmit"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-type":"text","x-default":"defaultSubmit"} */
 	public String getSubmitfunction() {
 		return submitfunction;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-form-default":"Error processing form"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-default":"Error processing form"} */
 	public String getFailmessage() {
 		return failmessage;
 	}
