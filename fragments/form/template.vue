@@ -3,8 +3,9 @@
     <div v-bind:data-per-path="model.path">
       <div>
         <p data-per-inline="failureText">{{failureText}}</p>
+        <p data-per-inline="schemaError">{{schemaError}}</p>
       </div>
-      <form v-on:submit.prevent="onSubmit">
+      <form v-on:submit.prevent.stop="onSubmit">
         <vue-form-generator v-bind:model="formModel" v-bind:schema="schema" v-bind:options="formOptions"></vue-form-generator>
         <input type="submit">
       </form>
@@ -68,6 +69,14 @@ export default {
         } catch( error ) {
           return { fields: [] } 
         }
+      },
+      schemaError() {
+        try {
+          JSON.parse(this.model.schema)
+        } catch( error ) {
+          return 'Error parsing form model: ' + error
+        }
+        return ''
       }
     }
   }
