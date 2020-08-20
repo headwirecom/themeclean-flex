@@ -28,11 +28,11 @@ export default {
       defaultSubmit(e) {
         e.preventDefault()
         if(this.model.submitfunction != 'defaultSubmit') {
-          alert('handling '+this.model.submitfunction)
           if(window[this.model.submitfunction]) {
-            alert('function found')
+            window[this.model.submitfunction](this.model,this.formModel)
+          } else {
+            alert(this.model.submitfunction + ' not found')
           }
-          //eval('this.' + this.model.submitfunction + '(e)')
           return
         }
         let curr = this;
