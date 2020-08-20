@@ -26,7 +26,6 @@ export default {
     },
     methods: {
       onSubmit(e) {
-        e.preventDefault()
         if(this.model.submitfunction != 'onSubmit' && this.model.submitfunction != '') {
           const objs = this.model.submitfunction.split('.')
           let parent = window
@@ -35,9 +34,7 @@ export default {
             if(i == objs.length-1) {
               try {
                 const result = parent[objs[i]](this.model,this.formModel)
-                if(result === true) {
-                  return true
-                } else if(result === false) {
+                if(result === false) {
                   this.failureText = this.model.failmessage
                 }
               } catch(err) {
@@ -62,7 +59,6 @@ export default {
         .catch( (error) => {
             this.failureText = this.model.failmessage
         })
-        return false
       }
     },
     computed: {
