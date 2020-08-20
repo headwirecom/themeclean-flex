@@ -9,7 +9,7 @@
           "x-source": "inject",
           "x-form-label": "Form Model",
           "x-form-type": "textarea",
-          "x-form-hint": "JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields'>vue form generator fields documentation</a>",
+          "x-form-hint": "JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields' target='_blank'>vue form generator fields documentation</a>",
           "x-form-max": "16000"
         },
         "endpointurl": {

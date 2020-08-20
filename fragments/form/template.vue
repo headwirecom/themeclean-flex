@@ -2,8 +2,8 @@
   <themecleanflex-components-block v-bind:model="model">
     <div v-bind:data-per-path="model.path">
       <div>
-        <p data-per-inline="failureText">{{failureText}}</p>
-        <p data-per-inline="schemaError">{{schemaError}}</p>
+        <p>{{failureText}}</p>
+        <p>{{schemaError}}</p>
       </div>
       <form v-on:submit.prevent.stop="onSubmit">
         <vue-form-generator v-bind:model="formModel" v-bind:schema="schema" v-bind:options="formOptions"></vue-form-generator>

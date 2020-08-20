@@ -7,7 +7,7 @@
       "placeholder": "schema",
       "label": "Form Model",
       "model": "schema",
-      "hint": "JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields'>vue form generator fields documentation</a>"
+      "hint": "JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields' target='_blank'>vue form generator fields documentation</a>"
     },
     {
       "type": "input",

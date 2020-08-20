@@ -26,7 +26,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Form Model",
           "x-form-type": "textarea",
-          "x-form-hint": "JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields'>vue form generator fields documentation</a>",
+          "x-form-hint": "JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields' target='_blank'>vue form generator fields documentation</a>",
           "x-form-max": "16000"
         },
         "endpointurl": {
@@ -334,7 +334,7 @@ public class FormModel extends AbstractComponent {
     public FormModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form Model","x-form-type":"textarea","x-form-hint":"JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields'>vue form generator fields documentation</a>","x-form-max":"16000"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Form Model","x-form-type":"textarea","x-form-hint":"JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields' target='_blank'>vue form generator fields documentation</a>","x-form-max":"16000"} */
 	@Inject
 	private String schema;
 
@@ -458,7 +458,7 @@ public class FormModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form Model","x-form-type":"textarea","x-form-hint":"JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields'>vue form generator fields documentation</a>","x-form-max":"16000"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Form Model","x-form-type":"textarea","x-form-hint":"JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields' target='_blank'>vue form generator fields documentation</a>","x-form-max":"16000"} */
 	public String getSchema() {
 		return schema;
 	}
