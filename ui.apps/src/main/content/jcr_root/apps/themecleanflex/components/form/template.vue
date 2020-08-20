@@ -4,7 +4,7 @@
       <div>
         <p data-per-inline="failureText">{{failureText}}</p>
       </div>
-      <form v-on:submit="onSubmit">
+      <form v-on:submit.prevent="onSubmit">
         <vue-form-generator v-bind:model="formModel" v-bind:schema="schema" v-bind:options="formOptions"></vue-form-generator>
         <input type="submit">
       </form>
@@ -28,27 +28,29 @@ export default {
       onSubmit(e) {
         e.preventDefault()
         if(this.model.submitfunction != 'onSubmit' && this.model.submitfunction != '') {
-          if(window[this.model.submitfunction]) {
-            window[this.model.submitfunction](this.model,this.formModel)
-          } else {
-            const objs = this.model.submitfunction.split('.')
-            let parent = window
-            let i = 0
-            let found = false
-            while(!found && i < objs.length-1 && parent[objs[i]]) {
-              parent = parent[objs[i]]
-              if( i+1 == objs.length-1 && parent[objs[i+1]] ) {
-                found = true
-              } else {
-                i++
+          const objs = this.model.submitfunction.split('.')
+          let parent = window
+          let i = 0
+          while(i < objs.length && parent[objs[i]]) {
+            if(i == objs.length-1) {
+              try {
+                const result = parent[objs[i]](this.model,this.formModel)
+                if(result === true) {
+                  return true
+                } else if(result === false) {
+                  this.failureText = this.model.failmessage
+                }
+              } catch(err) {
+                console.error(err)
+                this.failureText = this.model.failmessage
               }
+              return
             }
-            if(found) {
-              parent[objs[objs.length-1]](this.model,this.formModel)
-            } else {
-              console.log(this.model.submitfunction + ' not found')
-            }
+            parent = parent[objs[i]]
+            i++
           }
+          console.log('window.' + this.model.submitfunction + ' not found')
+          this.failureText = this.model.failmessage
           return
         }
         let curr = this

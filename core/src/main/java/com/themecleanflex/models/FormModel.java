@@ -26,6 +26,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Form Model",
           "x-form-type": "textarea",
+          "x-form-hint": "JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields'>vue form generator fields documentation</a>",
           "x-form-max": "16000"
         },
         "endpointurl": {
@@ -38,7 +39,8 @@ import javax.inject.Named;
         "submitfunction": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Javascript function to call on submit. Must accept (model, formdata)",
+          "x-form-label": "Javascript function to call on submit",
+          "x-form-hint": "Function must accept (model, formdata)",
           "x-form-type": "text",
           "x-default": "onSubmit"
         },
@@ -332,7 +334,7 @@ public class FormModel extends AbstractComponent {
     public FormModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form Model","x-form-type":"textarea","x-form-max":"16000"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Form Model","x-form-type":"textarea","x-form-hint":"JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields'>vue form generator fields documentation</a>","x-form-max":"16000"} */
 	@Inject
 	private String schema;
 
@@ -341,7 +343,7 @@ public class FormModel extends AbstractComponent {
 	@Default(values ="")
 	private String endpointurl;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit. Must accept (model, formdata)","x-form-type":"text","x-default":"onSubmit"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-hint":"Function must accept (model, formdata)","x-form-type":"text","x-default":"onSubmit"} */
 	@Inject
 	@Default(values ="onSubmit")
 	private String submitfunction;
@@ -456,7 +458,7 @@ public class FormModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form Model","x-form-type":"textarea","x-form-max":"16000"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Form Model","x-form-type":"textarea","x-form-hint":"JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields'>vue form generator fields documentation</a>","x-form-max":"16000"} */
 	public String getSchema() {
 		return schema;
 	}
@@ -466,7 +468,7 @@ public class FormModel extends AbstractComponent {
 		return endpointurl;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit. Must accept (model, formdata)","x-form-type":"text","x-default":"onSubmit"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-hint":"Function must accept (model, formdata)","x-form-type":"text","x-default":"onSubmit"} */
 	public String getSubmitfunction() {
 		return submitfunction;
 	}

@@ -6,7 +6,8 @@
       "max": "16000",
       "placeholder": "schema",
       "label": "Form Model",
-      "model": "schema"
+      "model": "schema",
+      "hint": "JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields'>vue form generator fields documentation</a>"
     },
     {
       "type": "input",
@@ -19,8 +20,9 @@
       "type": "input",
       "inputType": "text",
       "placeholder": "submitfunction",
-      "label": "Javascript function to call on submit. Must accept (model, formdata)",
-      "model": "submitfunction"
+      "label": "Javascript function to call on submit",
+      "model": "submitfunction",
+      "hint": "Function must accept (model, formdata)"
     },
     {
       "type": "input",

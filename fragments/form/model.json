@@ -9,6 +9,7 @@
           "x-source": "inject",
           "x-form-label": "Form Model",
           "x-form-type": "textarea",
+          "x-form-hint": "JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields'>vue form generator fields documentation</a>",
           "x-form-max": "16000"
         },
         "endpointurl": {
@@ -21,7 +22,8 @@
         "submitfunction": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Javascript function to call on submit. Must accept (model, formdata)",
+          "x-form-label": "Javascript function to call on submit",
+          "x-form-hint": "Function must accept (model, formdata)",
           "x-form-type": "text",
           "x-default": "onSubmit"
         },
