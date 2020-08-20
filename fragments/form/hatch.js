@@ -4,9 +4,9 @@ module.exports = {
         f.bindAttribute($.parent(),'model','model')
 
         const failureP = $.find('p').eq(0)
-        f.mapField(failureP,'failureText')
+        f.mapField(failureP,'failureText',false)
         const schemaErrorP = $.find('p').eq(1)
-        f.mapField(schemaErrorP,'schemaError')
+        f.mapField(schemaErrorP,'schemaError',false)
 
         const div2 = $.find('div').eq(1)
         f.replace(div2, '<vue-form-generator></vue-form-generator>')
