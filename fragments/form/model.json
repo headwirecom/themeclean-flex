@@ -23,7 +23,7 @@
           "x-source": "inject",
           "x-form-label": "Javascript function to call on submit. Must accept (model, formdata)",
           "x-form-type": "text",
-          "x-default": "defaultSubmit"
+          "x-default": "onSubmit"
         },
         "failmessage": {
           "type": "string",

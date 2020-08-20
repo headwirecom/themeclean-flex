@@ -40,7 +40,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Javascript function to call on submit. Must accept (model, formdata)",
           "x-form-type": "text",
-          "x-default": "defaultSubmit"
+          "x-default": "onSubmit"
         },
         "failmessage": {
           "type": "string",
@@ -341,9 +341,9 @@ public class FormModel extends AbstractComponent {
 	@Default(values ="")
 	private String endpointurl;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit. Must accept (model, formdata)","x-form-type":"text","x-default":"defaultSubmit"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit. Must accept (model, formdata)","x-form-type":"text","x-default":"onSubmit"} */
 	@Inject
-	@Default(values ="defaultSubmit")
+	@Default(values ="onSubmit")
 	private String submitfunction;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-default":"Error processing form"} */
@@ -466,7 +466,7 @@ public class FormModel extends AbstractComponent {
 		return endpointurl;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit. Must accept (model, formdata)","x-form-type":"text","x-default":"defaultSubmit"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit. Must accept (model, formdata)","x-form-type":"text","x-default":"onSubmit"} */
 	public String getSubmitfunction() {
 		return submitfunction;
 	}

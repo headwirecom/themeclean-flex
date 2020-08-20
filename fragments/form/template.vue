@@ -1,10 +1,10 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div v-bind:data-per-path="model.path">
-      <div id="formFailure">
+      <div>
         <p data-per-inline="failureText">{{failureText}}</p>
       </div>
-      <form v-on:submit="defaultSubmit">
+      <form v-on:submit="onSubmit">
         <vue-form-generator v-bind:model="formModel" v-bind:schema="schema" v-bind:options="formOptions"></vue-form-generator>
         <input type="submit">
       </form>
@@ -25,9 +25,9 @@ export default {
       }
     },
     methods: {
-      defaultSubmit(e) {
+      onSubmit(e) {
         e.preventDefault()
-        if(this.model.submitfunction != 'defaultSubmit' && this.model.submitfunction != '') {
+        if(this.model.submitfunction != 'onSubmit' && this.model.submitfunction != '') {
           if(window[this.model.submitfunction]) {
             window[this.model.submitfunction](this.model,this.formModel)
           } else {
@@ -46,7 +46,7 @@ export default {
             if(found) {
               parent[objs[objs.length-1]](this.model,this.formModel)
             } else {
-              alert(this.model.submitfunction + ' not found')
+              console.log(this.model.submitfunction + ' not found')
             }
           }
           return
