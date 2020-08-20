@@ -1,0 +1,28 @@
+{
+  "definitions": {
+    "Datalist": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "endpointurl": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Form submit endpoint URL",
+          "x-form-type": "text",
+          "x-default": ""
+        },
+        "loadFunction": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Javascript function to call to load data",
+          "x-form-hint": "Function must accept (name)",
+          "x-form-type": "text"
+        },
+        "bgref": {
+          "$ref": "fragments/block/model.json#/definitions/Block",
+          "x-form-type": "reference"
+        }
+      }
+    }
+  }
+}
