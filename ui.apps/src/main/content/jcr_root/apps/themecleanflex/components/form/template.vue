@@ -27,31 +27,31 @@ export default {
     methods: {
       defaultSubmit(e) {
         e.preventDefault()
-        if(this.model.submitfunction != 'defaultSubmit') {
+        if(this.model.submitfunction != 'defaultSubmit' && this.model.submitfunction != '') {
           if(window[this.model.submitfunction]) {
             window[this.model.submitfunction](this.model,this.formModel)
           } else {
             const objs = this.model.submitfunction.split('.')
-            let notFound = false
             let parent = window
-            var i
-            for( i=0; i<objs.length-1; i++) {
-              if(!parent[objs[i]]) {
-                notFound = true
-                break
-              }
+            let i = 0
+            let found = false
+            while(!found && i < objs.length-1 && parent[objs[i]]) {
               parent = parent[objs[i]]
+              if( i+1 == objs.length-1 && parent[objs[i+1]] ) {
+                found = true
+              } else {
+                i++
+              }
             }
-            if(notFound) {
-              alert(this.model.submitfunction + ' not found')
-            }
-            else {
+            if(found) {
               parent[objs[objs.length-1]](this.model,this.formModel)
+            } else {
+              alert(this.model.submitfunction + ' not found')
             }
           }
           return
         }
-        let curr = this;
+        let curr = this
         axios.post(this.model.endpointurl, {
             form: this.formModel
         })
@@ -60,7 +60,7 @@ export default {
         })
         .catch(function (error) {
             curr.failureText = curr.model.failmessage
-        });
+        })
         return false
       }
     },
