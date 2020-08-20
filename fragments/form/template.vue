@@ -53,15 +53,14 @@ export default {
           this.failureText = this.model.failmessage
           return
         }
-        let curr = this
         axios.post(this.model.endpointurl, {
             form: this.formModel
         })
-        .then(function (response) {
-            $peregrineApp.loadContent(curr.model.successpage)
+        .then( (response) => {
+            $peregrineApp.loadContent(this.model.successpage)
         })
-        .catch(function (error) {
-            curr.failureText = curr.model.failmessage
+        .catch( (error) => {
+            this.failureText = this.model.failmessage
         })
         return false
       }
