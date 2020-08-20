@@ -31,7 +31,23 @@ export default {
           if(window[this.model.submitfunction]) {
             window[this.model.submitfunction](this.model,this.formModel)
           } else {
-            alert(this.model.submitfunction + ' not found')
+            const objs = this.model.submitfunction.split('.')
+            let notFound = false
+            let parent = window
+            var i
+            for( i=0; i<objs.length-1; i++) {
+              if(!parent[objs[i]]) {
+                notFound = true
+                break
+              }
+              parent = parent[objs[i]]
+            }
+            if(notFound) {
+              alert(this.model.submitfunction + ' not found')
+            }
+            else {
+              parent[objs[objs.length-1]](this.model,this.formModel)
+            }
           }
           return
         }
