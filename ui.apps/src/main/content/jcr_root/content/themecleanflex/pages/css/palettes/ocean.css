@@ -137,9 +137,20 @@
   color: var(--color-accent-1-700);
 }
 
-@media( max-width: 768px ) {
+#peregrine-app .theme-light[class$="-components-navigation"] a:hover{
+  background: var(--bg-secondary);
+}
+
+@media( max-width: 1024px ) {
+  #peregrine-app .theme-dark[class$="-components-navigation"] a.active + svg,
   #peregrine-app .theme-dark[class$="-components-navigation"] a.active {
+    fill: var(--color-accent-1-700);
     color: var(--color-accent-1-700);
+  }
+  #peregrine-app .theme-light[class$="-components-navigation"] a.active + svg,
+  #peregrine-app .theme-light[class$="-components-navigation"] a.active{
+    fill: var(--color-accent-2-100);
+    color: var(--color-accent-2-100);
   }
 }
 

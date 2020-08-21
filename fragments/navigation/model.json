@@ -45,6 +45,37 @@
           "x-form-default":1,
           "x-form-min":1
         },
+        "mobiledropdownbg": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Transparent mobile dropdown background",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
+        "showmobilemenuontablet": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Show Mobile menu on iPad/tablets",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
+        "toggletype": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Collapse Style",
+          "x-form-type": "materialradio",
+          "x-default": "accordion",
+          "properties": {
+            "toggle": {
+              "x-form-name": "Toggle",
+              "x-form-value": "toggle"
+            },
+            "accordion": {
+              "x-form-name": "Accordion",
+              "x-form-value": "accordion"
+            }
+          }
+        },
         "bgref": {
           "x-form-type": "reference",
         	"$ref": "fragments/block/model.json#/definitions/Block"

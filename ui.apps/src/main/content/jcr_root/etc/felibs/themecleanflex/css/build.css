@@ -929,6 +929,10 @@ video {
   min-height: 100vh;
 }
 
+.min-w-16px {
+  min-width: 16px;
+}
+
 .object-contain {
   object-fit: contain;
 }
@@ -1273,6 +1277,18 @@ video {
   transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
 }
 
+.rotate-0 {
+  --transform-rotate: 0;
+}
+
+.rotate-90 {
+  --transform-rotate: 90deg;
+}
+
+.rotate-180 {
+  --transform-rotate: 180deg;
+}
+
 .transition-colors {
   transition-property: background-color, border-color, color, fill, stroke;
 }
@@ -1495,6 +1511,10 @@ p {
 
 .transform-rotate-90 {
   transform: rotate(90deg);
+}
+
+.transform-rotate-270 {
+  transform: rotate(270deg);
 }
 
 /* Drop Shadow Helpers */
@@ -1860,8 +1880,8 @@ p {
 
 @media (min-width: 768px) {
 
-  .md\:bg-primary {
-    background-color: var(--bg-primary);
+  .md\:border {
+    border-width: 1px;
   }
 
   .md\:flex {
@@ -1882,10 +1902,6 @@ p {
 
   .md\:flex-wrap {
     flex-wrap: wrap;
-  }
-
-  .md\:items-start {
-    align-items: flex-start;
   }
 
   .md\:justify-start {
@@ -2041,12 +2057,32 @@ p {
 
 @media (min-width: 1024px) {
 
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
 
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .lg\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:flex-grow-0 {
@@ -2060,6 +2096,14 @@ p {
   .lg\:mx-4 {
     margin-left: var(--spacing-4);
     margin-right: var(--spacing-4);
+  }
+
+  .lg\:ml-0 {
+    margin-left: var(--spacing-0);
+  }
+
+  .lg\:absolute {
+    position: absolute;
   }
 
   .lg\:w-auto {

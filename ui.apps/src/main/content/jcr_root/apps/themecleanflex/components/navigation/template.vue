@@ -1,34 +1,40 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="p-5" v-if="isEditAndEmpty">{{isEditAndEmpty}}</div>
-    <nav class="flex md:flex-row flex-col z-10 w-full"
-    v-bind:class="{
+    <nav class="flex flex-col z-10 w-full" v-bind:class="{
             'justify-start': model.justifyitems === 'start',
             'justify-center': model.justifyitems === 'center',
-            'justify-end': model.justifyitems === 'end'
+            'justify-end': model.justifyitems === 'end',
+            'md:flex-row': !model.showmobilemenuontablet,
+            'lg:flex-row': model.showmobilemenuontablet
         }" v-else>
-      <div class="font-bold text-xl cursor-pointer block md:hidden transform-rotate-90 m-3"
+      <div class="font-bold text-xl cursor-pointer block transform-rotate-90 m-3"
       v-bind:class="{
             'self-start': model.justifyitems === 'start',
-            'self-end': model.justifyitems === 'end'
+            'self-end': model.justifyitems === 'end',
+            'md:hidden': !model.showmobilemenuontablet,
+            'lg:hidden': model.showmobilemenuontablet
         }" style="width:24px;" v-on:click="toggleMenu">|||</div>
-      <ul class="flex flex-col md:flex-row md:flex-wrap" v-bind:class="{ 'flex' : menuActive, 'hidden md:flex' : !menuActive }"
-      v-bind:style="`list-style-type: none;padding: 0px;`">
+      <ul class="flex flex-col" v-bind:class="{ 'flex' : menuActive, 'hidden md:flex' : ( !menuActive &amp;&amp; !model.showmobilemenuontablet ), 'hidden lg:flex' : ( !menuActive &amp;&amp; model.showmobilemenuontablet ), 'md:flex-row md:flex-wrap': !model.showmobilemenuontablet, 'lg:flex-row lg:flex-wrap': model.showmobilemenuontablet}"
+      v-bind:style="`list-style-type: none;padding: 0px;`" v-bind:ref="`parent`">
         <li class="children ml-2 relative dropdown-container" v-for="(child, i) in model.childrenPages"
-        :key="child.path || i">
-          <div class="flex justify-between md:justify-start items-center md:items-start">
+        :key="child.path || i" v-bind:ref="`directChildren`" v-bind:class="`${active[i] ? 'active' : ''}`">
+          <div class="flex justify-between lg:justify-start items-center lg:items-start"
+          v-bind:class="`${active[i] ? 'bg-secondary' : ''}`">
             <a class="p-3 no-underline flex-grow cursor-pointer" v-bind:href="$helper.pathToUrl(child.path)"
-            data-per-inline="child.title">{{child.title}}</a>
+            v-bind:class="`${active[i] ? 'active' : ''}`" data-per-inline="child.title">{{child.title}}</a>
             <svg width="16" height="16" viewBox="0 0 16 16" focusable="false"
-            class="block md:hidden transition-transform duration-150 ease-in-out m-3 cursor-pointer"
-            v-bind:style="`transform:rotate(180deg);`" v-on:click="(e) =&gt; { toggleItem(i, e) }"
-            v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0">
+            class="block lg:hidden transition-transform duration-150 ease-in-out m-3 md:ml-0 cursor-pointer min-w-16px"
+            v-bind:style="`${active[i] ? 'transform:rotate(180deg);' : 'transform:rotate(0deg);'}`"
+            v-on:click="(e) =&gt; { toggleItem(i, e, active); }" v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"
               />
             </svg>
           </div>
-          <themecleanflex-components-navigationnested v-bind:model="child" style="list-style-type: none;padding: 0px;"
-          v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"></themecleanflex-components-navigationnested>
+          <themecleanflex-components-navigationnested v-bind:model="child" v-bind:parentmodel="model"
+          style="list-style-type: none;padding: 0px;" v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"
+          v-bind:class="`${active[i] ? 'lg:hidden' : 'hidden'}`"
+          v-bind:toggleitem="toggleItem"></themecleanflex-components-navigationnested>
         </li>
       </ul>
     </nav>
@@ -39,7 +45,9 @@
     export default {
         props: ['model'],
         data: function() {
+          const numElements = this.model.childrenPages ? this.model.childrenPages.length : 0;
           return {
+            active: new Array(numElements).fill(false),
             menuActive: false,
           }
         },
@@ -51,8 +59,8 @@
           }, false);
 
           //Links on the right side of screen will have their nested lists pop out to the left, instead of right
-          let parentDimensions = this.$el.querySelector(".md\\:flex-wrap").getBoundingClientRect();
-          let children = this.$el.querySelectorAll(".md\\:flex-wrap > li");
+          let parentDimensions = this.$refs.parent.getBoundingClientRect();
+          let children = this.$refs.directChildren;
           for (let i = 0; i < children.length; i++) {
             let childDimensions = children[i].getBoundingClientRect();
             if (childDimensions.x > ((parentDimensions.width/2) + parentDimensions.x)) {
@@ -71,30 +79,25 @@
                 delete data.childrenPages
                 return data
             },
-            toggleItem(i, e) {
-              let parentItem, item;
-              if (e.target.nodeName.toLowerCase() === 'svg') {
-                parentItem = e.path[2];
-                item = e.path[0];
+            toggleItem(i, e, active) {
+              let tabletMenu, toggle;
+              if (this.model.showmobilemenuontablet != undefined) {
+                tabletMenu = this.model.showmobilemenuontablet
+              } else if (this.parentmodel && this.parentmodel.showmobilemenuontablet != undefined) {
+                tabletMenu = this.showmobilemenuontablet
               }
-              if (e.target.nodeName.toLowerCase() === 'path') {
-                parentItem = e.path[3];
-                item = e.path[1];
+              if (this.model.toggletype != undefined) {
+                toggle = this.model.toggletype
+              } else if (this.parentmodel && this.parentmodel.toggletype != undefined) {
+                toggle = this.parentmodel.toggletype
               }
-              if(parentItem.querySelector('ul').classList.contains('hidden')) {
-                item.style.transform = "rotate(0deg)";
-                parentItem.classList.add('bg-secondary')
-                parentItem.classList.add('md:bg-primary')
-                parentItem.querySelector('div a').classList.add('active');
-                parentItem.querySelector('ul').classList.remove('hidden');
-                parentItem.querySelector('ul').classList.add('md:hidden');
-              } else {
-                item.style.transform = "rotate(180deg)";
-                parentItem.classList.remove('bg-secondary')
-                parentItem.classList.remove('md:bg-primary')
-                parentItem.querySelector('div a').classList.remove('active');
-                parentItem.querySelector('ul').classList.add('hidden');
-                parentItem.querySelector('ul').classList.remove('md:hidden');
+              if (toggle === 'toggle' && ( window.innerWidth < 768 || (tabletMenu && window.innerWidth < 1024) ) ) {
+                Vue.set(active, i, !active[i])
+              }
+              else {
+                active.forEach( (a,j) => {
+                  Vue.set(active, j, j === i ? !active[j] : false);
+                })
               }
             },
             toggleMenu: function(){
@@ -114,14 +117,19 @@
 </script>
 
 <style>
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .hidden.dropdown-list {
     display: none;
   }
-  .relative.dropdown-container:hover > .hidden.dropdown-list, .relative.dropdown-container:focus-within > .hidden.dropdown-list {
+  .relative.dropdown-container:hover > .lg\:hidden.dropdown-list, 
+  .relative.dropdown-container:hover > .hidden.dropdown-list,
+  .relative.dropdown-container:focus-within > .lg\hidden.dropdown-list,
+  .relative.dropdown-container:focus-within > .hidden.dropdown-list {
     display: flex;
   }
-  .relative.dropdown-container:hover > .md\:hidden.dropdown-list, .relative.dropdown-container:focus-within > .md\hidden.dropdown-list {
+}
+@media (max-width: 1023px) {
+  .relative.dropdown-container.active > ul.dropdown-list {
     display: flex;
   }
 }
