@@ -33,7 +33,7 @@
             'rounded-full': model.roundedcorners == 'full'
         }">
           <div class="accordion-item border-b transition-colors duration-200 ease-in-out"
-          v-for="(item, i) in model.accordiontoggle" :key="i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`"
+          v-for="(item, i) in model.accordiontoggle" :key="item.path || i" v-bind:id="`accordion${_uid}${parseInt(i)+1}`"
           v-bind:class="{
             'border-b border-solid border-gray-300': model.colorscheme === 'light' &amp;&amp; model.cardborder === 'true',
             'border-b border-solid border-gray-900': model.colorscheme === 'dark' &amp;&amp; model.cardborder === 'true',
