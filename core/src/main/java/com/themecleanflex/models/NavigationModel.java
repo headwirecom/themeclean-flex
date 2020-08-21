@@ -68,6 +68,37 @@ import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
           "x-form-default": 1,
           "x-form-min": 1
         },
+        "mobiledropdownbg": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Transparent mobile dropdown background",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
+        "showmobilemenuontablet": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Show Mobile menu on iPad/tablets",
+          "x-form-type": "materialswitch",
+          "x-form-default": false
+        },
+        "toggletype": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Collapse Style",
+          "x-form-type": "materialradio",
+          "x-default": "accordion",
+          "properties": {
+            "toggle": {
+              "x-form-name": "Toggle",
+              "x-form-value": "toggle"
+            },
+            "accordion": {
+              "x-form-name": "Accordion",
+              "x-form-value": "accordion"
+            }
+          }
+        },
         "bgref": {
           "x-form-type": "reference",
           "type": "object",
@@ -361,6 +392,19 @@ public class NavigationModel extends AbstractComponent {
 	@Inject
 	private String levels;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Transparent mobile dropdown background","x-form-type":"materialswitch","x-form-default":false} */
+	@Inject
+	private String mobiledropdownbg;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Mobile menu on iPad/tablets","x-form-type":"materialswitch","x-form-default":false} */
+	@Inject
+	private String showmobilemenuontablet;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Collapse Style","x-form-type":"materialradio","x-default":"accordion","properties":{"toggle":{"x-form-name":"Toggle","x-form-value":"toggle"},"accordion":{"x-form-name":"Accordion","x-form-value":"accordion"}}} */
+	@Inject
+	@Default(values ="accordion")
+	private String toggletype;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
 	private String anchorname;
@@ -475,6 +519,21 @@ public class NavigationModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Navigation Alignment","x-form-type":"materialradio","x-default":"end","properties":{"start":{"x-form-name":"Start","x-form-value":"start"},"center":{"x-form-name":"Center","x-form-value":"center"},"end":{"x-form-name":"End","x-form-value":"end"}}} */
 	public String getJustifyitems() {
 		return justifyitems;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Transparent mobile dropdown background","x-form-type":"materialswitch","x-form-default":false} */
+	public String getMobiledropdownbg() {
+		return mobiledropdownbg;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Mobile menu on iPad/tablets","x-form-type":"materialswitch","x-form-default":false} */
+	public String getShowmobilemenuontablet() {
+		return showmobilemenuontablet;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Collapse Style","x-form-type":"materialradio","x-default":"accordion","properties":{"toggle":{"x-form-name":"Toggle","x-form-value":"toggle"},"accordion":{"x-form-name":"Accordion","x-form-value":"accordion"}}} */
+	public String getToggletype() {
+		return toggletype;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
