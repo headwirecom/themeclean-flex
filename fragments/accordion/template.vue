@@ -3,7 +3,7 @@
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full" v-else>
       <h2 class="text-xl text-center pb-4" v-if="model.showtitle == 'true'"
-      v-bind:data-per-inline="`model.title`">{{model.title}}</h2>
+      data-per-inline="model.title">{{model.title}}</h2>
       <div class="flex -mx-3 flex-grow" v-bind:class="{
             'flex-col': model.mediaposition === 'before',
             'flex-col-reverse': model.mediaposition === 'after',

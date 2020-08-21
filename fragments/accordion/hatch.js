@@ -6,7 +6,6 @@ module.exports = {
         //Header
     	f.addIf($.find('h2').first(), 'model.showtitle == \'true\'')
         f.mapField($.find('h2').first(), "model.title")
-        f.bindAttribute($.find('h2').first(), "data-per-inline", "`model.title`")
 
         //Content Container
         let containerClasses = `{
