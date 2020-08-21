@@ -34,7 +34,7 @@
           <themecleanflex-components-navigationnested v-bind:model="child" v-bind:parentmodel="model"
           style="list-style-type: none;padding: 0px;" v-if="child.hasChildren &amp;&amp; child.childrenPages &amp;&amp; child.childrenPages.length &gt; 0"
           v-bind:class="`${active[i] ? 'lg:hidden' : 'hidden'}`"
-          v-bind:toggleitem="toggleItem"></themecleanflex-components-navigationnested>
+          v-bind:toggleitem="toggleItem" v-bind:nestedliststyle="nestedListStyle[i]"></themecleanflex-components-navigationnested>
         </li>
       </ul>
     </nav>
@@ -49,6 +49,7 @@
           return {
             active: new Array(numElements).fill(false),
             menuActive: false,
+            nestedListStyle: new Array(numElements).fill("")
           }
         },
         mounted: function() {
@@ -63,16 +64,12 @@
           let children = this.$refs.directChildren;
           for (let i = 0; i < children.length; i++) {
             let childDimensions = children[i].getBoundingClientRect();
-            if (childDimensions.x > ((parentDimensions.width/2) + parentDimensions.x)) {
-              let nested = children[i].querySelectorAll(`ul`);
-              for (let j = 0; j < nested.length; j++) {
-                if (nested[j].style.top === "0px" ) {
-                  nested[j].style.right = "100%";
-                  nested[j].style.left = "";
-                }
-              }
-            }
+            if (childDimensions.x > ((parentDimensions.width/2) + parentDimensions.x)) 
+              this.nestedListStyle[i] = "right"
+            else
+              this.nestedListStyle[i] = "left"
           }
+          this.$forceUpdate();
         },
         methods: {
             beforeSave(data) {
@@ -125,11 +122,6 @@
   .relative.dropdown-container:hover > .hidden.dropdown-list,
   .relative.dropdown-container:focus-within > .lg\hidden.dropdown-list,
   .relative.dropdown-container:focus-within > .hidden.dropdown-list {
-    display: flex;
-  }
-}
-@media (max-width: 1023px) {
-  .relative.dropdown-container.active > ul.dropdown-list {
     display: flex;
   }
 }

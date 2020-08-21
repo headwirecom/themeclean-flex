@@ -29,6 +29,7 @@ module.exports = {
         f.addIf($.find('li.children themecleanflex-components-navigationnested').first(), 'child.hasChildren && child.childrenPages && child.childrenPages.length > 0');
         f.bindAttribute($.find('li.children themecleanflex-components-navigationnested').first(), 'class', "`${active[i] ? 'lg:hidden' : 'hidden'}`", false)
         f.bindAttribute($.find('li.children themecleanflex-components-navigationnested').first(), 'toggleitem', "toggleItem")
+        f.bindAttribute($.find('li.children themecleanflex-components-navigationnested').first(), 'nestedliststyle', "nestedListStyle[i]")
 
         let nestedArrow = $.find('svg');
         f.bindAttribute(nestedArrow, "style", "`${active[i] ? 'transform:rotate(180deg);' : 'transform:rotate(0deg);'}`")

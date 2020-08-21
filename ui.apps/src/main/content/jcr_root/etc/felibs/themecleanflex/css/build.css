@@ -709,6 +709,14 @@ video {
   display: none;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1052,6 +1060,14 @@ video {
 
 .left-0 {
   left: 0;
+}
+
+.right-100 {
+  right: 100%;
+}
+
+.left-100 {
+  left: 100%;
 }
 
 .resize {
@@ -1925,6 +1941,10 @@ p {
     margin-right: calc(var(--spacing-3) * -1);
   }
 
+  .md\:mr-0 {
+    margin-right: var(--spacing-0);
+  }
+
   .md\:mb-0 {
     margin-bottom: var(--spacing-0);
   }
@@ -2104,6 +2124,10 @@ p {
 
   .lg\:absolute {
     position: absolute;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:w-auto {

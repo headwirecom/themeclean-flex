@@ -215,7 +215,7 @@
   #peregrine-app [class$="-components-navigation"] a.active * {
     color: var(--text-primary-color);
   }
-  #peregrine-app [class$="-components-navigation"] .bg-secondary {
+  #peregrine-app [class$="-components-navigation"] .flex.bg-secondary {
     background: var(--bg-primary);
   }
 }
