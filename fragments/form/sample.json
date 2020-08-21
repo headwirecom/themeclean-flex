@@ -2,6 +2,6 @@
   "title": "Form",
   "group": "Features",
   "model": {
-    "schema": "{}"
+    "schema": "{\n\"fields\": [\n  {\n    \"type\": \"input\",\n    \"inputType\": \"text\",\n    \"label\": \"Name\",\n    \"model\": \"name\",\n    \"id\": \"user_name\",\n    \"placeholder\": \"Your name\",\n    \"featured\": true,\n    \"required\": true\n  }\n]}"
   }
 }
