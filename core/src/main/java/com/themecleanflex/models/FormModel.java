@@ -51,6 +51,52 @@ import javax.inject.Named;
           "x-form-type": "text",
           "x-default": "Submit"
         },
+        "submitsize": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Submit button size",
+          "x-form-type": "materialselect",
+          "x-default": "normal",
+          "properties": {
+            "section": {
+              "x-form-name": "normal",
+              "x-form-value": "normal"
+            },
+            "sm": {
+              "x-form-name": "sm",
+              "x-form-value": "sm"
+            },
+            "lg": {
+              "x-form-name": "lg",
+              "x-form-value": "lg"
+            },
+            "full": {
+              "x-form-name": "full width",
+              "x-form-value": "full"
+            }
+          }
+        },
+        "submitalignment": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Submit button alignment",
+          "x-form-type": "materialselect",
+          "x-default": "start",
+          "properties": {
+            "start": {
+              "x-form-name": "start",
+              "x-form-value": "start"
+            },
+            "center": {
+              "x-form-name": "center",
+              "x-form-value": "center"
+            },
+            "end": {
+              "x-form-name": "end",
+              "x-form-value": "end"
+            }
+          }
+        },
         "failmessage": {
           "type": "string",
           "x-source": "inject",
@@ -360,6 +406,16 @@ public class FormModel extends AbstractComponent {
 	@Default(values ="Submit")
 	private String submittext;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit button size","x-form-type":"materialselect","x-default":"normal","properties":{"section":{"x-form-name":"normal","x-form-value":"normal"},"sm":{"x-form-name":"sm","x-form-value":"sm"},"lg":{"x-form-name":"lg","x-form-value":"lg"},"full":{"x-form-name":"full width","x-form-value":"full"}}} */
+	@Inject
+	@Default(values ="normal")
+	private String submitsize;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit button alignment","x-form-type":"materialselect","x-default":"start","properties":{"start":{"x-form-name":"start","x-form-value":"start"},"center":{"x-form-name":"center","x-form-value":"center"},"end":{"x-form-name":"end","x-form-value":"end"}}} */
+	@Inject
+	@Default(values ="start")
+	private String submitalignment;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-default":"Error processing form"} */
 	@Inject
 	@Default(values ="Error processing form")
@@ -488,6 +544,16 @@ public class FormModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Submit Button Text","x-form-type":"text","x-default":"Submit"} */
 	public String getSubmittext() {
 		return submittext;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit button size","x-form-type":"materialselect","x-default":"normal","properties":{"section":{"x-form-name":"normal","x-form-value":"normal"},"sm":{"x-form-name":"sm","x-form-value":"sm"},"lg":{"x-form-name":"lg","x-form-value":"lg"},"full":{"x-form-name":"full width","x-form-value":"full"}}} */
+	public String getSubmitsize() {
+		return submitsize;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit button alignment","x-form-type":"materialselect","x-default":"start","properties":{"start":{"x-form-name":"start","x-form-value":"start"},"center":{"x-form-name":"center","x-form-value":"center"},"end":{"x-form-name":"end","x-form-value":"end"}}} */
+	public String getSubmitalignment() {
+		return submitalignment;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-default":"Error processing form"} */

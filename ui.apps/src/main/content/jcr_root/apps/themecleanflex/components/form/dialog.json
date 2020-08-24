@@ -32,6 +32,50 @@
       "model": "submittext"
     },
     {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "normal",
+          "value": "normal"
+        },
+        {
+          "name": "sm",
+          "value": "sm"
+        },
+        {
+          "name": "lg",
+          "value": "lg"
+        },
+        {
+          "name": "full width",
+          "value": "full"
+        }
+      ],
+      "placeholder": "submitsize",
+      "label": "Submit button size",
+      "model": "submitsize"
+    },
+    {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "start",
+          "value": "start"
+        },
+        {
+          "name": "center",
+          "value": "center"
+        },
+        {
+          "name": "end",
+          "value": "end"
+        }
+      ],
+      "placeholder": "submitalignment",
+      "label": "Submit button alignment",
+      "model": "submitalignment"
+    },
+    {
       "type": "input",
       "inputType": "text",
       "placeholder": "failmessage",

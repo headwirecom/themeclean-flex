@@ -34,6 +34,52 @@
           "x-form-type": "text",
           "x-default": "Submit"
         },
+        "submitsize": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Submit button size",
+          "x-form-type": "materialselect",
+          "x-default": "normal",
+          "properties":{
+            "section": {
+              "x-form-name": "normal",
+              "x-form-value": "normal"
+            },
+            "sm": {
+              "x-form-name": "sm",
+              "x-form-value": "sm"
+            },
+            "lg": {
+              "x-form-name": "lg",
+              "x-form-value": "lg"
+            },
+            "full": {
+              "x-form-name": "full width",
+              "x-form-value": "full"
+            }
+          }
+        },
+        "submitalignment": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Submit button alignment",
+          "x-form-type": "materialselect",
+          "x-default": "start",
+          "properties":{
+            "start": {
+              "x-form-name": "start",
+              "x-form-value": "start"
+            },
+            "center": {
+              "x-form-name": "center",
+              "x-form-value": "center"
+            },
+            "end": {
+              "x-form-name": "end",
+              "x-form-value": "end"
+            }
+          }
+        },
         "failmessage": {
           "type": "string",
           "x-source": "inject",

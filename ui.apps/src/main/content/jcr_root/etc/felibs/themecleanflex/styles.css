@@ -336,4 +336,38 @@ p {
   align-items: center;
 }
 
+[class$="components-form"] .normal-button input[type="submit"]{
+  width: min-content;
+}
+[class$="components-form"] .lg-button input[type="submit"]{
+  width: min-content;
+  @apply py-4 px-5 text-lg
+}
+[class$="components-form"] .sm-button input[type="submit"]{
+  width: min-content;
+  @apply py-2 px-2 text-sm
+}
+[class$="components-form"] .full-button input[type="submit"]{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+[class$="components-form"] .justify-button-start{
+  align-items: flex-start;
+}
+[class$="components-form"] .justify-button-start .field-submit > div{
+  justify-content: flex-start;
+}
+[class$="components-form"] .justify-button-center{
+  align-items: center;
+}
+[class$="components-form"] .justify-button-center .field-submit > div{
+  justify-content: center;
+}
+[class$="components-form"] .justify-button-end{
+  align-items: flex-end;
+}
+[class$="components-form"] .justify-button-end .field-submit > div{
+  justify-content: flex-end;
+}
 /* purgecss end ignore */
