@@ -42,7 +42,14 @@ import javax.inject.Named;
           "x-form-label": "Javascript function to call on submit",
           "x-form-hint": "Function must accept (model, formdata)",
           "x-form-type": "text",
-          "x-default": "onSubmit"
+          "x-default": ""
+        },
+        "submittext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Submit Button Text",
+          "x-form-type": "text",
+          "x-default": "Submit"
         },
         "failmessage": {
           "type": "string",
@@ -343,10 +350,15 @@ public class FormModel extends AbstractComponent {
 	@Default(values ="")
 	private String endpointurl;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-hint":"Function must accept (model, formdata)","x-form-type":"text","x-default":"onSubmit"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-hint":"Function must accept (model, formdata)","x-form-type":"text","x-default":""} */
 	@Inject
-	@Default(values ="onSubmit")
+	@Default(values ="")
 	private String submitfunction;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit Button Text","x-form-type":"text","x-default":"Submit"} */
+	@Inject
+	@Default(values ="Submit")
+	private String submittext;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-default":"Error processing form"} */
 	@Inject
@@ -468,9 +480,14 @@ public class FormModel extends AbstractComponent {
 		return endpointurl;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-hint":"Function must accept (model, formdata)","x-form-type":"text","x-default":"onSubmit"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-hint":"Function must accept (model, formdata)","x-form-type":"text","x-default":""} */
 	public String getSubmitfunction() {
 		return submitfunction;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit Button Text","x-form-type":"text","x-default":"Submit"} */
+	public String getSubmittext() {
+		return submittext;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-default":"Error processing form"} */

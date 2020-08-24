@@ -13,6 +13,9 @@ module.exports = {
         const messageContainer = $.find('div').eq(0);
         f.addIf(messageContainer, "( failureText || schemaError )");
 
+        const submit = $.find('input').first()
+        f.bindAttribute(submit,'value','model.submittext')
+
         const div2 = $.find('div').eq(1)
         f.replace(div2, '<vue-form-generator></vue-form-generator>')
 
