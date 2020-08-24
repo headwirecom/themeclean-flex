@@ -1,13 +1,19 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div v-bind:data-per-path="model.path">
-      <div>
-        <p>{{failureText}}</p>
-        <p>{{schemaError}}</p>
+    <div class="w-full" v-bind:data-per-path="model.path">
+      <div class="text-black p-2 rounded-r mt-4 border-l-4 shadow-md note-important"
+      v-bind:class="{
+            'hidden': (!failureText &amp;&amp; !schemaError),
+            'block': ( failureText || schemaError ),
+            'bg-red-200': model.colorscheme !== 'dark',
+            'bg-red-700': model.colorscheme === 'dark',
+        }">
+        <p class="ml-2" data-per-inline="failureText">{{failureText}}</p>
+        <p class="ml-2" data-per-inline="schemaError">{{schemaError}}</p>
       </div>
-      <form v-on:submit.prevent.stop="onSubmit">
+      <form class="w-full" v-on:submit.prevent.stop="onSubmit">
         <vue-form-generator v-bind:model="formModel" v-bind:schema="schema" v-bind:options="formOptions"></vue-form-generator>
-        <input type="submit">
+        <input class="btn m-4 mt-0" type="submit">
       </form>
     </div>
   </themecleanflex-components-block>

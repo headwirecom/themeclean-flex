@@ -132,3 +132,8 @@
 #peregrine-app .themecleanflex-components-quote {
   --border-primary-color: var(--color-accent-1-700);
 }
+
+#peregrine-app .theme-dark[class$="-components-form"] input,
+#peregrine-app .theme-dark[class$="-components-form"] textarea {
+  color: rgba(0,0,0,0.6);
+}
