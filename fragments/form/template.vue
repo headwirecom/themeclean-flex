@@ -1,19 +1,15 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="w-full" v-bind:data-per-path="model.path">
-      <div class="text-black p-2 rounded-r mt-4 border-l-4 shadow-md note-important"
-      v-bind:class="{
-            'hidden': (!failureText &amp;&amp; !schemaError),
-            'block': ( failureText || schemaError ),
-            'bg-red-200': model.colorscheme !== 'dark',
-            'bg-red-700': model.colorscheme === 'dark',
-        }">
-        <p class="ml-2" data-per-inline="failureText">{{failureText}}</p>
-        <p class="ml-2" data-per-inline="schemaError">{{schemaError}}</p>
-      </div>
+      <transition name="fade">
+        <div class="text-black p-2 rounded-r mt-4 border-l-4 shadow-md note-important"
+        v-if="( failureText || schemaError )">
+          <p class="ml-2" data-per-inline="failureText" v-if="failureText">{{failureText}}</p>
+          <p class="ml-2" data-per-inline="schemaError" v-if="schemaError">{{schemaError}}</p>
+        </div>
+      </transition>
       <form class="w-full" v-on:submit.prevent.stop="onSubmit">
         <vue-form-generator v-bind:model="formModel" v-bind:schema="schema" v-bind:options="formOptions"></vue-form-generator>
-        <input class="btn m-4 mt-0" type="submit">
       </form>
     </div>
   </themecleanflex-components-block>
@@ -42,11 +38,17 @@ export default {
               try {
                 const result = parent[objs[i]](this.model,this.formModel)
                 if(result === false) {
-                  this.failureText = this.model.failmessage
+                  Vue.set(this, 'failureText', this.model.failmessage);
+                  setTimeout(() => {
+                    Vue.set(this, 'failureText', '');
+                  }, 1500)
                 }
               } catch(err) {
                 console.error(err)
-                this.failureText = this.model.failmessage
+                Vue.set(this, 'failureText', this.model.failmessage);
+                setTimeout(() => {
+                  Vue.set(this, 'failureText', '');
+                }, 1500)
               }
               return
             }
@@ -54,7 +56,10 @@ export default {
             i++
           }
           console.log('window.' + this.model.submitfunction + ' not found')
-          this.failureText = this.model.failmessage
+          Vue.set(this, 'failureText', this.model.failmessage);
+          setTimeout(() => {
+            Vue.set(this, 'failureText', '');
+          }, 1500)
           return
         }
         axios.post(this.model.endpointurl, {
@@ -64,7 +69,10 @@ export default {
             $peregrineApp.loadContent(this.model.successpage)
         })
         .catch( (error) => {
-            this.failureText = this.model.failmessage
+          Vue.set(this, 'failureText', this.model.failmessage);
+          setTimeout(() => {
+            Vue.set(this, 'failureText', '');
+          }, 1500)
         })
       }
     },

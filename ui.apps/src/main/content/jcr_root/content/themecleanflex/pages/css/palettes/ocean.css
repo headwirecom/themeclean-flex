@@ -134,6 +134,9 @@
 }
 
 #peregrine-app .theme-dark[class$="-components-form"] input,
-#peregrine-app .theme-dark[class$="-components-form"] textarea {
-  color: rgba(0,0,0,0.6);
+#peregrine-app .theme-dark[class$="-components-form"] textarea,
+#peregrine-app .theme-dark[class$="-components-form"] .form-control,
+#peregrine-app .theme-dark[class$="-components-form"] .form-control *{
+  --text-primary-color: rgba(0,0,0,0.87);
+  --text-secondary-color: rgba(0,0,0,0.6);
 }

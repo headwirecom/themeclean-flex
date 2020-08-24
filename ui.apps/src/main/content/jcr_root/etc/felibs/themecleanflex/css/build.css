@@ -581,10 +581,6 @@ video {
   background-color: var(--color-gray-800);
 }
 
-.bg-red-200 {
-  background-color: var(--color-red-200);
-}
-
 .bg-red-600 {
   background-color: var(--color-red-600);
 }
@@ -858,10 +854,6 @@ video {
 
 .m-2 {
   margin: var(--spacing-2);
-}
-
-.m-4 {
-  margin: var(--spacing-4);
 }
 
 .-m-1 {
@@ -1301,6 +1293,10 @@ video {
   z-index: 10;
 }
 
+.transition {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+
 .transition-colors {
   transition-property: background-color, border-color, color, fill, stroke;
 }
@@ -1682,6 +1678,14 @@ p {
   }
 }
 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
 /* header */
 
 [class$="components-header"] a {
@@ -1745,6 +1749,13 @@ p {
 
 [class$="components-accordion"] .img-wrapper.rounded-full img {
   border-radius: 9999px;
+}
+
+/* form */
+
+[class$="components-form"] .field-checkbox {
+  display: flex;
+  align-items: center;
 }
 
 /* purgecss end ignore */

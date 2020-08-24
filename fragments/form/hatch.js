@@ -5,17 +5,13 @@ module.exports = {
 
         const failureP = $.find('p').eq(0)
         f.mapField(failureP,'failureText',false)
+        f.addIf(failureP, "failureText");
         const schemaErrorP = $.find('p').eq(1)
         f.mapField(schemaErrorP,'schemaError',false)
+        f.addIf(schemaErrorP, "schemaError");
 
         const messageContainer = $.find('div').eq(0);
-        const messageClasses = `{
-            'hidden': (!failureText && !schemaError),
-            'block': ( failureText || schemaError ),
-            'bg-red-200': model.colorscheme !== 'dark',
-            'bg-red-700': model.colorscheme === 'dark',
-        }`
-        f.bindAttribute(messageContainer, 'class', messageClasses, false)
+        f.addIf(messageContainer, "( failureText || schemaError )");
 
         const div2 = $.find('div').eq(1)
         f.replace(div2, '<vue-form-generator></vue-form-generator>')

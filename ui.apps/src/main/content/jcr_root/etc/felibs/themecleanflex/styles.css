@@ -278,6 +278,12 @@ p {
   }
 }
 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 
 /* header */
 [class$="components-header"] a {
@@ -324,5 +330,10 @@ p {
   border-radius: 9999px;
 }
 
+/* form */
+[class$="components-form"] .field-checkbox {
+  display: flex;
+  align-items: center;
+}
 
 /* purgecss end ignore */

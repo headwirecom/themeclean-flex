@@ -214,3 +214,20 @@
   color: var(--btn-primary-color);
   background-color: var(--btn-primary-bg);
 }
+
+#peregrine-app [class$="-components-form"] input[type="submit"]{
+  color: var(--btn-color)  !important;
+  background: var(--btn-bg) !important;
+}
+
+#peregrine-app [class$="-components-form"] input[type="submit"]:focus {
+  color: var(--btn-focus-color) !important;
+  background: var(--btn-focus-bg) !important;
+  box-shadow: 0 0 0 3px var(--btn-focus-border-color) !important;
+  outline: 2px solid transparent !important; /* Windows High Contrast Mode */
+}
+
+#peregrine-app [class$="-components-form"] input[type="submit"]:hover {
+  color: var(--btn-hover-color) !important;
+  background: var(--btn-hover-bg) !important;
+}
