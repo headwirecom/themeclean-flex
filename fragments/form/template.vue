@@ -8,12 +8,12 @@
             'bg-red-200': model.colorscheme !== 'dark',
             'bg-red-700': model.colorscheme === 'dark',
         }">
-        <p class="ml-2" data-per-inline="failureText">{{failureText}}</p>
-        <p class="ml-2" data-per-inline="schemaError">{{schemaError}}</p>
+        <p class="ml-2">{{failureText}}</p>
+        <p class="ml-2">{{schemaError}}</p>
       </div>
       <form class="w-full" v-on:submit.prevent.stop="onSubmit">
         <vue-form-generator v-bind:model="formModel" v-bind:schema="schema" v-bind:options="formOptions"></vue-form-generator>
-        <input class="btn m-4 mt-0" type="submit">
+        <input class="btn m-4 mt-0" type="submit" v-bind:value="model.submittext">
       </form>
     </div>
   </themecleanflex-components-block>

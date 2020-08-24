@@ -25,7 +25,14 @@
           "x-form-label": "Javascript function to call on submit",
           "x-form-hint": "Function must accept (model, formdata)",
           "x-form-type": "text",
-          "x-default": "onSubmit"
+          "x-default": ""
+        },
+        "submittext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Submit Button Text",
+          "x-form-type": "text",
+          "x-default": "Submit"
         },
         "failmessage": {
           "type": "string",

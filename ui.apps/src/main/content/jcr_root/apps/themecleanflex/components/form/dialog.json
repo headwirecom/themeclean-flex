@@ -27,6 +27,13 @@
     {
       "type": "input",
       "inputType": "text",
+      "placeholder": "submittext",
+      "label": "Submit Button Text",
+      "model": "submittext"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
       "placeholder": "failmessage",
       "label": "Failure Message",
       "model": "failmessage"

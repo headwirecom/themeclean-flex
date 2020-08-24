@@ -17,6 +17,9 @@ module.exports = {
         }`
         f.bindAttribute(messageContainer, 'class', messageClasses, false)
 
+        const submit = $.find('input').first()
+        f.bindAttribute(submit,'value','model.submittext')
+
         const div2 = $.find('div').eq(1)
         f.replace(div2, '<vue-form-generator></vue-form-generator>')
 
