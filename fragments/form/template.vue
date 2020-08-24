@@ -10,6 +10,7 @@
       </transition>
       <form class="w-full" v-on:submit.prevent.stop="onSubmit">
         <vue-form-generator v-bind:model="formModel" v-bind:schema="schema" v-bind:options="formOptions"></vue-form-generator>
+        <input class="btn m-4 mt-0" type="submit" v-bind:value="model.submittext">
       </form>
     </div>
   </themecleanflex-components-block>

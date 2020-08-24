@@ -856,6 +856,10 @@ video {
   margin: var(--spacing-2);
 }
 
+.m-4 {
+  margin: var(--spacing-4);
+}
+
 .-m-1 {
   margin: calc(var(--spacing-1) * -1);
 }
