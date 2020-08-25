@@ -35,7 +35,7 @@ module.exports = {
         f.bindEvent(formEl,'submit.prevent.stop','onSubmit')
         
         const form = $.find('vue-form-generator').first()
-        f.bindAttribute(form,'class','w-full', false)
+        f.bindAttribute(form,'class','`w-full`', false)
         f.bindAttribute(form,'model','formModel')
         f.bindAttribute(form,'schema','schema')
         f.bindAttribute(form,'options','formOptions')

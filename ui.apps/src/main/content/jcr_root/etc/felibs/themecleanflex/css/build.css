@@ -1341,7 +1341,9 @@ video {
 
 /* Base Overrides */
 
-html {
+html,
+textarea,
+select {
   font-family: var(--font-sans);
   font-size: var(--font-size-base);
 }

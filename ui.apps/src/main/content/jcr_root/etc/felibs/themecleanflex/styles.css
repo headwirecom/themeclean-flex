@@ -8,7 +8,9 @@
 
 /* Base Overrides */
 
-html {
+html,
+textarea,
+select {
   @apply font-sans text-base;
 }
 
