@@ -22,8 +22,8 @@ module.exports = {
             'justify-button-center': model.submitalignment === 'center',
             'justify-button-end': model.submitalignment === 'end',
             'normal-button': model.submitsize === 'normal',
-            'sm-button': model.submitsize === 'sm',
-            'lg-button': model.submitsize === 'lg',
+            'sm-button': model.submitsize === 'small',
+            'lg-button': model.submitsize === 'large',
             'full-button': model.submitsize === 'full',
         }`
         f.bindAttribute(formContainer, 'class', formContainerClasses, false);

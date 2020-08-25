@@ -62,13 +62,13 @@ import javax.inject.Named;
               "x-form-name": "normal",
               "x-form-value": "normal"
             },
-            "sm": {
-              "x-form-name": "sm",
-              "x-form-value": "sm"
+            "small": {
+              "x-form-name": "small",
+              "x-form-value": "small"
             },
-            "lg": {
-              "x-form-name": "lg",
-              "x-form-value": "lg"
+            "large": {
+              "x-form-name": "large",
+              "x-form-value": "large"
             },
             "full": {
               "x-form-name": "full width",
@@ -406,7 +406,7 @@ public class FormModel extends AbstractComponent {
 	@Default(values ="Submit")
 	private String submittext;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Submit button size","x-form-type":"materialselect","x-default":"normal","properties":{"section":{"x-form-name":"normal","x-form-value":"normal"},"sm":{"x-form-name":"sm","x-form-value":"sm"},"lg":{"x-form-name":"lg","x-form-value":"lg"},"full":{"x-form-name":"full width","x-form-value":"full"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit button size","x-form-type":"materialselect","x-default":"normal","properties":{"section":{"x-form-name":"normal","x-form-value":"normal"},"small":{"x-form-name":"small","x-form-value":"small"},"large":{"x-form-name":"large","x-form-value":"large"},"full":{"x-form-name":"full width","x-form-value":"full"}}} */
 	@Inject
 	@Default(values ="normal")
 	private String submitsize;
@@ -546,7 +546,7 @@ public class FormModel extends AbstractComponent {
 		return submittext;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Submit button size","x-form-type":"materialselect","x-default":"normal","properties":{"section":{"x-form-name":"normal","x-form-value":"normal"},"sm":{"x-form-name":"sm","x-form-value":"sm"},"lg":{"x-form-name":"lg","x-form-value":"lg"},"full":{"x-form-name":"full width","x-form-value":"full"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit button size","x-form-type":"materialselect","x-default":"normal","properties":{"section":{"x-form-name":"normal","x-form-value":"normal"},"small":{"x-form-name":"small","x-form-value":"small"},"large":{"x-form-name":"large","x-form-value":"large"},"full":{"x-form-name":"full width","x-form-value":"full"}}} */
 	public String getSubmitsize() {
 		return submitsize;
 	}
