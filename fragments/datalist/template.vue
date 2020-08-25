@@ -1,6 +1,21 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div data-per-inline="storageData">{{storageData}}</div>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th data-per-inline="storageData">{{storageData}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Column item</td>
+            <td>Column item</td>
+          </tr>
+        </tbody>
+        <caption></caption>
+      </table>
+    </div>
   </themecleanflex-components-block>
 </template>
 
