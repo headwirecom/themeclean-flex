@@ -856,10 +856,6 @@ video {
   margin: var(--spacing-2);
 }
 
-.m-4 {
-  margin: var(--spacing-4);
-}
-
 .-m-1 {
   margin: calc(var(--spacing-1) * -1);
 }
@@ -934,6 +930,10 @@ video {
 
 .mr-4 {
   margin-right: var(--spacing-4);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-4);
 }
 
 .mb-6 {
@@ -1759,9 +1759,29 @@ p {
 
 /* form */
 
+[class$="components-form"] fieldset{
+  padding: 0;
+  margin: 0;
+}
+
+[class$="components-form"] legend {
+  font-size: 20px;
+}
+
+.vue-form-generator .field-label span {
+  margin-left: 0;
+}
+
+.vue-form-generator .field-checkbox input {
+  margin-right: 5px;
+  margin-left: 1px;
+}
+
 [class$="components-form"] .field-checkbox {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 [class$="components-form"] .normal-button input[type="submit"]{

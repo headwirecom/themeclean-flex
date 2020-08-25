@@ -13,13 +13,13 @@
             'justify-button-center': model.submitalignment === 'center',
             'justify-button-end': model.submitalignment === 'end',
             'normal-button': model.submitsize === 'normal',
-            'sm-button': model.submitsize === 'sm',
-            'lg-button': model.submitsize === 'lg',
+            'sm-button': model.submitsize === 'small',
+            'lg-button': model.submitsize === 'large',
             'full-button': model.submitsize === 'full',
         }" v-on:submit.prevent.stop="onSubmit">
         <vue-form-generator v-bind:class="`w-full`" v-bind:model="formModel" v-bind:schema="schema"
         v-bind:options="formOptions"></vue-form-generator>
-        <input class="btn m-4 mt-0" type="submit" v-bind:value="model.submittext">
+        <input class="btn mb-4" type="submit" v-bind:value="model.submittext">
       </form>
     </div>
   </themecleanflex-components-block>
