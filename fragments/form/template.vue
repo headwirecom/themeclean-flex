@@ -4,8 +4,8 @@
       <transition name="fade">
         <div class="text-black p-2 rounded-r mt-4 border-l-4 shadow-md note-important"
         v-if="( failureText || schemaError )">
-          <p class="ml-2" data-per-inline="failureText" v-if="failureText">{{failureText}}</p>
-          <p class="ml-2" data-per-inline="schemaError" v-if="schemaError">{{schemaError}}</p>
+          <p class="ml-2" v-if="failureText">{{failureText}}</p>
+          <p class="ml-2" v-if="schemaError">{{schemaError}}</p>
         </div>
       </transition>
       <form class="w-full flex flex-col" v-bind:class="{
