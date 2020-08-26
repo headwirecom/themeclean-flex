@@ -467,6 +467,10 @@ button,
   cursor: pointer;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 h1,
 h2,
 h3,
@@ -718,6 +722,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .hidden {
@@ -1295,6 +1303,14 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.rotate-0 {
+  --transform-rotate: 0;
+}
+
+.rotate-180 {
+  --transform-rotate: 180deg;
 }
 
 .transition {
