@@ -34,7 +34,7 @@ import com.peregrine.commons.util.PerConstants;
           "x-source": "inject",
           "x-form-label": "Include Root",
           "x-form-type": "materialswitch",
-          "x-form-default": false
+          "x-default": false
         },
         "buttonsize": {
           "type": "string",
@@ -103,28 +103,28 @@ import com.peregrine.commons.util.PerConstants;
           "x-source": "inject",
           "x-form-label": "Previous Label",
           "x-form-type": "text",
-          "x-form-default": "Previous"
+          "x-default": "Previous"
         },
         "nextlabel": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Next Label",
           "x-form-type": "text",
-          "x-form-default": "Next"
+          "x-default": "Next"
         },
         "disableprevious": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Disable the previous button",
           "x-form-type": "materialswitch",
-          "x-form-default": false
+          "x-default": false
         },
         "excludesitemapexcludes": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Exclude pages Excluded in Sitemap",
           "x-form-type": "materialswitch",
-          "x-form-default": false
+          "x-default": false
         },
         "bgref": {
           "x-form-type": "reference",
@@ -408,7 +408,7 @@ public class PagerModel extends AbstractComponent {
 	@Inject
 	private String rootpage;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Include Root","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Include Root","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String includeroot;
 
@@ -422,19 +422,21 @@ public class PagerModel extends AbstractComponent {
 	@Default(values ="primary")
 	private String buttoncolor;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text","x-form-default":"Previous"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text","x-default":"Previous"} */
 	@Inject
+	@Default(values ="Previous")
 	private String prevlabel;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text","x-form-default":"Next"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text","x-default":"Next"} */
 	@Inject
+	@Default(values ="Next")
 	private String nextlabel;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Disable the previous button","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Disable the previous button","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String disableprevious;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String excludesitemapexcludes;
 
@@ -544,7 +546,7 @@ public class PagerModel extends AbstractComponent {
 		return rootpage;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Include Root","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Include Root","x-form-type":"materialswitch","x-default":false} */
 	public String getIncluderoot() {
 		return includeroot;
 	}
@@ -559,22 +561,22 @@ public class PagerModel extends AbstractComponent {
 		return buttoncolor;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text","x-form-default":"Previous"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text","x-default":"Previous"} */
 	public String getPrevlabel() {
 		return prevlabel;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text","x-form-default":"Next"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text","x-default":"Next"} */
 	public String getNextlabel() {
 		return nextlabel;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Disable the previous button","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Disable the previous button","x-form-type":"materialswitch","x-default":false} */
 	public String getDisableprevious() {
 		return disableprevious;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-default":false} */
 	public String getExcludesitemapexcludes() {
 		return excludesitemapexcludes;
 	}
