@@ -16,6 +16,93 @@
       "hint": "Function must accept (name)"
     },
     {
+      "type": "collection",
+      "multifield": true,
+      "fieldLabel": [
+        "title",
+        "value"
+      ],
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "value",
+          "label": "Data Value",
+          "model": "value"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "header",
+          "label": "Column Header",
+          "model": "header"
+        }
+      ],
+      "placeholder": "columns",
+      "label": "Table Configuration",
+      "model": "columns"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "makesortable",
+      "label": "Make Table Sortable",
+      "model": "makesortable"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "stripedrows",
+      "label": "Striped Rows",
+      "model": "stripedrows"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "fixedheader",
+      "label": "Fixed Header",
+      "model": "fixedheader"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "densetable",
+      "label": "Dense Table",
+      "model": "densetable"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "scrollabletable",
+      "label": "Scrollable Table",
+      "model": "scrollabletable"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "cellborders",
+      "label": "Add borders around individual cells",
+      "model": "cellborders"
+    },
+    {
       "type": "input",
       "inputType": "text",
       "placeholder": "anchorname",

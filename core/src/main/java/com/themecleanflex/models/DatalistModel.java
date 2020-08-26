@@ -35,6 +35,69 @@ import javax.inject.Named;
           "x-form-hint": "Function must accept (name)",
           "x-form-type": "text"
         },
+        "columns": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Table Configuration",
+          "x-form-fieldLabel": "title",
+          "x-form-type": "collection",
+          "properties": {
+            "value": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Data Value",
+              "x-form-type": "text"
+            },
+            "header": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Column Header",
+              "x-form-type": "text"
+            }
+          }
+        },
+        "makesortable": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Make Table Sortable",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "stripedrows": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Striped Rows",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "fixedheader": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Fixed Header",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "densetable": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Dense Table",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "scrollabletable": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Scrollable Table",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "cellborders": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Add borders around individual cells",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
         "bgref": {
           "x-form-type": "reference",
           "type": "object",
@@ -320,6 +383,34 @@ public class DatalistModel extends AbstractComponent {
 	@Inject
 	private String loadFunction;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"title","x-form-type":"collection","properties":{"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"}}} */
+	@Inject
+	private List<IComponent> columns;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Make Table Sortable","x-form-type":"materialswitch","x-default":false} */
+	@Inject
+	private String makesortable;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Striped Rows","x-form-type":"materialswitch","x-default":false} */
+	@Inject
+	private String stripedrows;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Fixed Header","x-form-type":"materialswitch","x-default":false} */
+	@Inject
+	private String fixedheader;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Dense Table","x-form-type":"materialswitch","x-default":false} */
+	@Inject
+	private String densetable;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Scrollable Table","x-form-type":"materialswitch","x-default":false} */
+	@Inject
+	private String scrollabletable;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false} */
+	@Inject
+	private String cellborders;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
 	private String anchorname;
@@ -429,6 +520,41 @@ public class DatalistModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (name)","x-form-type":"text"} */
 	public String getLoadFunction() {
 		return loadFunction;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"title","x-form-type":"collection","properties":{"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"}}} */
+	public List<IComponent> getColumns() {
+		return columns;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Make Table Sortable","x-form-type":"materialswitch","x-default":false} */
+	public String getMakesortable() {
+		return makesortable;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Striped Rows","x-form-type":"materialswitch","x-default":false} */
+	public String getStripedrows() {
+		return stripedrows;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Fixed Header","x-form-type":"materialswitch","x-default":false} */
+	public String getFixedheader() {
+		return fixedheader;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Dense Table","x-form-type":"materialswitch","x-default":false} */
+	public String getDensetable() {
+		return densetable;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Scrollable Table","x-form-type":"materialswitch","x-default":false} */
+	public String getScrollabletable() {
+		return scrollabletable;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false} */
+	public String getCellborders() {
+		return cellborders;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
