@@ -22,7 +22,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Table Configuration",
-          "x-form-fieldLabel": "title",
+          "x-form-fieldLabel": "header",
           "x-form-type": "collection",
           "properties": {
 

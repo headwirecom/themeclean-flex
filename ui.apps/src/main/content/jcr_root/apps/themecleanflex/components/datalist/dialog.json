@@ -19,7 +19,7 @@
       "type": "collection",
       "multifield": true,
       "fieldLabel": [
-        "title",
+        "header",
         "value"
       ],
       "fields": [
