@@ -43,7 +43,6 @@
       "placeholder": "levels",
       "label": "Levels",
       "model": "levels",
-      "default": 1,
       "min": 1
     },
     {

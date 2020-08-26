@@ -37,7 +37,7 @@ import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
           "x-source": "inject",
           "x-form-label": "Exclude pages Excluded in Sitemap",
           "x-form-type": "materialswitch",
-          "x-form-default": false
+          "x-default": false
         },
         "justifyitems": {
           "type": "string",
@@ -65,7 +65,7 @@ import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
           "x-source": "inject",
           "x-form-type": "number",
           "x-form-label": "Levels",
-          "x-form-default": 1,
+          "x-default": 1,
           "x-form-min": 1
         },
         "mobiledropdownbg": {
@@ -73,14 +73,14 @@ import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
           "x-source": "inject",
           "x-form-label": "Transparent mobile dropdown background",
           "x-form-type": "materialswitch",
-          "x-form-default": false
+          "x-default": false
         },
         "showmobilemenuontablet": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Show Mobile menu on iPad/tablets",
           "x-form-type": "materialswitch",
-          "x-form-default": false
+          "x-default": false
         },
         "toggletype": {
           "type": "string",
@@ -379,7 +379,7 @@ public class NavigationModel extends AbstractComponent {
 	@Inject
 	private String rootpage;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String excludesitemapexcludes;
 
@@ -388,15 +388,16 @@ public class NavigationModel extends AbstractComponent {
 	@Default(values ="end")
 	private String justifyitems;
 
-	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
+	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-default":1,"x-form-min":1} */
 	@Inject
+	@Default(values ="1")
 	private String levels;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Transparent mobile dropdown background","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Transparent mobile dropdown background","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String mobiledropdownbg;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Mobile menu on iPad/tablets","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Mobile menu on iPad/tablets","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String showmobilemenuontablet;
 
@@ -511,7 +512,7 @@ public class NavigationModel extends AbstractComponent {
 		return rootpage;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-default":false} */
 	public String getExcludesitemapexcludes() {
 		return excludesitemapexcludes;
 	}
@@ -521,12 +522,12 @@ public class NavigationModel extends AbstractComponent {
 		return justifyitems;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Transparent mobile dropdown background","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Transparent mobile dropdown background","x-form-type":"materialswitch","x-default":false} */
 	public String getMobiledropdownbg() {
 		return mobiledropdownbg;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Mobile menu on iPad/tablets","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Mobile menu on iPad/tablets","x-form-type":"materialswitch","x-default":false} */
 	public String getShowmobilemenuontablet() {
 		return showmobilemenuontablet;
 	}
