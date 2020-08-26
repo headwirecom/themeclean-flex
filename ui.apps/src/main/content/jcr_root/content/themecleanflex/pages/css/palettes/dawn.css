@@ -148,3 +148,7 @@
   #peregrine-app [class$='components-quote'] {
     --border-primary-color: var(--color-accent-1-700);
   }
+
+  #peregrine-app .theme-dark[class$="-components-navigation"] a:hover{
+    color: var(--color-accent-1-700);
+  }
