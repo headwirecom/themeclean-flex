@@ -9,6 +9,8 @@ module.exports = {
 
         //Content Container
         let containerClasses = `{
+            'flex-col': model.mediaposition === 'before',
+            'flex-col-reverse': model.mediaposition === 'after',
             'lg:flex-row': model.mediaposition === 'before',
             'lg:flex-row-reverse': model.mediaposition === 'after'
         }`

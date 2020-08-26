@@ -4,8 +4,7 @@
     <div class="flex flex-wrap" v-else>
       <span v-for="(item, i) in model.links" :key="item.path || i" v-bind:class="{'font-bold': i === model.links.length - 1}">
         <a class="pipe-after no-underline mr-2" v-if="i + 1 &lt; model.links.length"
-        v-bind:href="item.link + '.html'" data-per-inline="item.text"
-        v-bind:class="{
+        v-bind:href="item.link + '.html'" v-bind:class="{
             'text-blue-700': model.linkcolor === 'primary',
             'text-green-700': model.linkcolor === 'success',
             'text-red-700': model.linkcolor === 'danger',
@@ -13,8 +12,7 @@
             'text-white': model.linkcolor === 'light',
             'text-black': model.linkcolor === 'dark'
         }">{{item.text}}</a>
-        <span class="mr-2" v-if="i+1 === model.links.length"
-        data-per-inline="item.text">{{item.text}}</span>
+        <span class="mr-2" v-if="i+1 === model.links.length">{{item.text}}</span>
       </span>
     </div>
   </themecleanflex-components-block>

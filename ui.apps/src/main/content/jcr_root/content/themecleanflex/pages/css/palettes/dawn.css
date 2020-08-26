@@ -107,13 +107,13 @@
   
   /* Individual overwrites */
   
-  #peregrine-app .themecleanflex-components-cards.theme-light .card--bg {
+  #peregrine-app [class$='components-cards'].theme-light .card--bg {
     --text-primary-color: rgba(255,255,255,0.87);
     --text-secondary-color: rgba(255,255,255,0.6);
   }
   
-  #peregrine-app .themecleanflex-components-cards.theme-dark .card--bg,
-  #peregrine-app .themecleanflex-components-accordion.theme-dark .accordion-container .bg-secondary {
+  #peregrine-app [class$='components-cards'].theme-dark .card--bg,
+  #peregrine-app [class$='components-accordion'].theme-dark .accordion-container .bg-secondary {
      /* Apply black text colour because otherwise it would render white on white */
     --text-primary-color: rgba(0,0,0,0.87);
     --text-secondary-color: rgba(0,0,0,0.6);
@@ -135,7 +135,7 @@
     --btn-primary-focus-border-color: var(--btn-focus-border-color);
   }
   
-  #peregrine-app .themecleanflex-components-accordion.theme-light .accordion-container .bg-secondary {
+  #peregrine-app [class$='components-accordion'].theme-light .accordion-container .bg-secondary {
      /* Reduce strong visual noise by removing the default primary background colour */
     --bg-secondary: rgba(255,255,255,0.6);
   }
@@ -145,7 +145,7 @@
     background: transparent;
   }
   
-  #peregrine-app .themecleanflex-components-quote {
+  #peregrine-app [class$='components-quote'] {
     --border-primary-color: var(--color-accent-1-700);
   }
 
