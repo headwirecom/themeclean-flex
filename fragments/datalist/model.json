@@ -25,17 +25,16 @@
           "x-form-fieldLabel": "header",
           "x-form-type": "collection",
           "properties": {
-
-            "value": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Data Value",
-              "x-form-type": "text"
-            },
             "header": {
               "type": "string",
               "x-source": "inject",
               "x-form-label": "Column Header",
+              "x-form-type": "text"
+            },
+            "value": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Data Value",
               "x-form-type": "text"
             }
           }

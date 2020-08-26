@@ -42,16 +42,16 @@ import javax.inject.Named;
           "x-form-fieldLabel": "header",
           "x-form-type": "collection",
           "properties": {
-            "value": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Data Value",
-              "x-form-type": "text"
-            },
             "header": {
               "type": "string",
               "x-source": "inject",
               "x-form-label": "Column Header",
+              "x-form-type": "text"
+            },
+            "value": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Data Value",
               "x-form-type": "text"
             }
           }
@@ -383,7 +383,7 @@ public class DatalistModel extends AbstractComponent {
 	@Inject
 	private String loadFunction;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"}}} */
 	@Inject
 	private List<IComponent> columns;
 
@@ -522,7 +522,7 @@ public class DatalistModel extends AbstractComponent {
 		return loadFunction;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"}}} */
 	public List<IComponent> getColumns() {
 		return columns;
 	}

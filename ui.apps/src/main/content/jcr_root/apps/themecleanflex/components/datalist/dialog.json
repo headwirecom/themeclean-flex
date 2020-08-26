@@ -26,16 +26,16 @@
         {
           "type": "input",
           "inputType": "text",
-          "placeholder": "value",
-          "label": "Data Value",
-          "model": "value"
+          "placeholder": "header",
+          "label": "Column Header",
+          "model": "header"
         },
         {
           "type": "input",
           "inputType": "text",
-          "placeholder": "header",
-          "label": "Column Header",
-          "model": "header"
+          "placeholder": "value",
+          "label": "Data Value",
+          "model": "value"
         }
       ],
       "placeholder": "columns",
