@@ -118,6 +118,37 @@
       "textOff": "no",
       "valueOn": "true",
       "valueOff": "false",
+      "placeholder": "pagination",
+      "label": "Table pagination",
+      "model": "pagination"
+    },
+    {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "left",
+          "value": "left"
+        },
+        {
+          "name": "center",
+          "value": "center"
+        },
+        {
+          "name": "right",
+          "value": "right"
+        }
+      ],
+      "placeholder": "paginationalignment",
+      "label": "Pagination alignment",
+      "model": "paginationalignment",
+      "visible": "model.pagination == 'true'"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
       "placeholder": "caption",
       "label": "Table caption",
       "model": "caption"

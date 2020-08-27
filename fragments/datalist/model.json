@@ -92,6 +92,35 @@
           "x-form-type": "materialswitch",
           "x-default": false
         },
+        "pagination": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Table pagination",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "paginationalignment": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Pagination alignment",
+          "x-form-type": "materialselect",
+          "x-default": "left",
+          "x-form-visible": "model.pagination == 'true'",
+          "properties":{
+            "left": {
+              "x-form-name": "left",
+              "x-form-value": "left"
+            },
+            "center": {
+              "x-form-name": "center",
+              "x-form-value": "center"
+            },
+            "right": {
+              "x-form-name": "right",
+              "x-form-value": "right"
+            }
+          }
+        },
         "caption": {
           "type": "string",
           "x-source": "inject",

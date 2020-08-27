@@ -156,7 +156,8 @@ module.exports = {
     backgroundColor: theme => ({
       ...theme('colors'),
       primary: 'var(--bg-primary)',
-      secondary: 'var(--bg-secondary)'
+      secondary: 'var(--bg-secondary)',
+      transparent: 'transparent',
     }),
     backgroundPosition: {
       bottom: 'bottom',
@@ -390,6 +391,7 @@ module.exports = {
       '11/12': '91.66667%',
       full: '100%',
       screen: '100vw',
+      '24': '24px',
     }),
     zIndex: {
       auto: 'auto',

@@ -8,7 +8,7 @@
         <thead>
           <tr>
             <th v-for="(col, i) in model.columns" :key="col.path || i" v-bind:class="{
-            'p-3': model.densetable === 'false' || !model.densetable,
+            'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true',
             'sticky': model.stickyheader === 'true',
             'top-0': model.stickyheader === 'true'
@@ -30,19 +30,65 @@
         </thead>
         <tbody>
           <tr v-for="(data, i) in storageData" :key="data.path || i">
-            <td v-bind:class="{
+            <td v-for="(col, i) in model.columns" :key="col.path || i" v-bind:class="{
             'border': model.cellborders === 'true',
-            'p-3': model.densetable === 'false' || !model.densetable,
+            'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true'
-        }" v-for="(col, i) in model.columns" :key="col.path || i">{{data[col.value]}}</td>
+        }">{{data[col.value]}}</td>
           </tr>
         </tbody>
+        <tfoot>
+          <tr>
+            <td>
+              <div class="flex table-pagination" v-bind:class="{
+            'hidden': model.pagination !== 'true',
+            'justify-start': model.paginationalignment === 'left',
+            'justify-center': model.paginationalignment === 'center',
+            'justify-end': model.paginationalignment === 'right',
+        }">
+                <p class="table-pagination-text">Rows per page:</p>
+                <div class="table-pagination-per-page-selector flex">
+                  <select class="bg-transparent" aria-label="rows per page">
+                    <option selected value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="-1">All</option>
+                  </select>
+                </div>
+                <p class="table-pagination-text">1-5 of 13</p>
+                <div class="table-pagination-button-container flex">
+                  <button tabindex="-1" type="button" disabled aria-label="first page">
+                    <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z" />
+                    </svg>
+                  </button>
+                  <button tabindex="-1" type="button" disabled aria-label="previous page">
+                    <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" />
+                    </svg>
+                  </button>
+                  <button tabindex="0" type="button" aria-label="next page">
+                    <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+                    </svg>
+                  </button>
+                  <button tabindex="0" type="button" aria-label="last page">
+                    <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
         <caption v-bind:class="{
             'text-left': model.captionalignment === 'left',
             'text-center': model.captionalignment === 'center',
             'text-right': model.captionalignment === 'right',
-            'p-3': model.densetable === 'false' || !model.densetable,
-            'p-1': model.densetable === 'true'
+            'p-3': model.densetable !== 'true',
+            'p-1': model.densetable === 'true',
+            'hidden': model.caption !== 'true'
         }" v-bind:style="`caption-side:${model.captionplacement};`" data-per-inline="model.captiontext">{{model.captiontext}}</caption>
       </table>
     </div>
