@@ -7,7 +7,7 @@
         "endpointurl": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Form submit endpoint URL",
+          "x-form-label": "URL to load JSON data for table",
           "x-form-type": "text",
           "x-default": ""
         },

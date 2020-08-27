@@ -100,17 +100,34 @@
         props: ['model'],
         data() {
           const numElements = this.model.columns ? this.model.columns.length : 0;
+          let data = []
+          if(!this.model.endpointurl || this.model.endpointurl === '') {
+            data = JSON.parse(localStorage.getItem('list'))
+          }
           return {
             active: new Array(numElements).fill(false),
-            storageData: JSON.parse(localStorage.getItem('list'))
+            storageData: data
           }
         },
         mounted() {
-          // interesting aspect :-) if another tab on the same computer
-          // has the same page open it actually updates
-           window.addEventListener('storage', () => {
-            this.storageData = JSON.parse(localStorage.getItem('list'))
-           });
+          if(this.model.endpointurl && this.model.endpointurl !== '') {
+            // load data from URL
+            axios.get(this.model.endpointurl)
+            .then( (response) => {
+                console.log(response)
+                Vue.set(this, 'storageData', response.data)
+            })
+            .catch( (error) => {
+                console.log(error)
+            })
+          } else {
+            // use local storage if nothing else is configured
+            // interesting aspect :-) if another tab on the same computer
+            // has the same page open it actually updates
+            window.addEventListener('storage', () => {
+              this.storageData = JSON.parse(localStorage.getItem('list'))
+            });
+          }
         },
         methods: {
           toggleSort: function(i) {

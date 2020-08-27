@@ -24,7 +24,7 @@ import javax.inject.Named;
         "endpointurl": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Form submit endpoint URL",
+          "x-form-label": "URL to load JSON data for table",
           "x-form-type": "text",
           "x-default": ""
         },
@@ -468,7 +468,7 @@ public class DatalistModel extends AbstractComponent {
     public DatalistModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-default":""} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"URL to load JSON data for table","x-form-type":"text","x-default":""} */
 	@Inject
 	@Default(values ="")
 	private String endpointurl;
@@ -638,7 +638,7 @@ public class DatalistModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-default":""} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"URL to load JSON data for table","x-form-type":"text","x-default":""} */
 	public String getEndpointurl() {
 		return endpointurl;
 	}

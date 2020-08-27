@@ -25,8 +25,8 @@ module.exports = {
         const heading = $.find('th span').first()
         f.mapField(heading, 'col.header', false)
 
-        let dropdownArrow = $.find('svg').first()
-        let dropdownArrowClasses = `{
+        const dropdownArrow = $.find('svg').first()
+        const dropdownArrowClasses = `{
             'rotate-0': active,
             'rotate-180': !active,
             'hidden': model.makesortable === 'false' || !model.makesortable
