@@ -70,13 +70,6 @@ import javax.inject.Named;
           "x-form-type": "materialswitch",
           "x-default": false
         },
-        "fixedheader": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Fixed Header",
-          "x-form-type": "materialswitch",
-          "x-default": false
-        },
         "densetable": {
           "type": "string",
           "x-source": "inject",
@@ -91,12 +84,84 @@ import javax.inject.Named;
           "x-form-type": "materialswitch",
           "x-default": false
         },
+        "stickyheader": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Sticky Header",
+          "x-form-type": "materialswitch",
+          "x-form-visible": "model.scrollabletable == 'true'",
+          "x-default": false
+        },
+        "tableheight": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Table Height",
+          "x-form-type": "materialrange",
+          "x-form-min": 100,
+          "x-form-max": 500,
+          "x-default": 300,
+          "x-form-visible": "model.scrollabletable == 'true'"
+        },
         "cellborders": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Add borders around individual cells",
           "x-form-type": "materialswitch",
           "x-default": false
+        },
+        "caption": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Table caption",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "captiontext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Caption text",
+          "x-form-type": "text",
+          "x-form-visible": "model.caption == 'true'"
+        },
+        "captionplacement": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Caption placement",
+          "x-form-type": "materialselect",
+          "x-default": "bottom",
+          "x-form-visible": "model.caption == 'true'",
+          "properties": {
+            "top": {
+              "x-form-name": "top",
+              "x-form-value": "top"
+            },
+            "bottom": {
+              "x-form-name": "bottom",
+              "x-form-value": "bottom"
+            }
+          }
+        },
+        "captionalignment": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Caption alignment",
+          "x-form-type": "materialselect",
+          "x-default": "left",
+          "x-form-visible": "model.caption == 'true'",
+          "properties": {
+            "left": {
+              "x-form-name": "left",
+              "x-form-value": "left"
+            },
+            "center": {
+              "x-form-name": "center",
+              "x-form-value": "center"
+            },
+            "right": {
+              "x-form-name": "right",
+              "x-form-value": "right"
+            }
+          }
         },
         "bgref": {
           "x-form-type": "reference",
@@ -395,10 +460,6 @@ public class DatalistModel extends AbstractComponent {
 	@Inject
 	private String stripedrows;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Fixed Header","x-form-type":"materialswitch","x-default":false} */
-	@Inject
-	private String fixedheader;
-
 	/* {"type":"string","x-source":"inject","x-form-label":"Dense Table","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String densetable;
@@ -407,9 +468,36 @@ public class DatalistModel extends AbstractComponent {
 	@Inject
 	private String scrollabletable;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Sticky Header","x-form-type":"materialswitch","x-form-visible":"model.scrollabletable == 'true'","x-default":false} */
+	@Inject
+	private String stickyheader;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Height","x-form-type":"materialrange","x-form-min":100,"x-form-max":500,"x-default":300,"x-form-visible":"model.scrollabletable == 'true'"} */
+	@Inject
+	@Default(values ="300")
+	private String tableheight;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String cellborders;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Table caption","x-form-type":"materialswitch","x-default":false} */
+	@Inject
+	private String caption;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption text","x-form-type":"text","x-form-visible":"model.caption == 'true'"} */
+	@Inject
+	private String captiontext;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption placement","x-form-type":"materialselect","x-default":"bottom","x-form-visible":"model.caption == 'true'","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
+	@Inject
+	@Default(values ="bottom")
+	private String captionplacement;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption alignment","x-form-type":"materialselect","x-default":"left","x-form-visible":"model.caption == 'true'","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}} */
+	@Inject
+	@Default(values ="left")
+	private String captionalignment;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
@@ -537,11 +625,6 @@ public class DatalistModel extends AbstractComponent {
 		return stripedrows;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Fixed Header","x-form-type":"materialswitch","x-default":false} */
-	public String getFixedheader() {
-		return fixedheader;
-	}
-
 	/* {"type":"string","x-source":"inject","x-form-label":"Dense Table","x-form-type":"materialswitch","x-default":false} */
 	public String getDensetable() {
 		return densetable;
@@ -552,9 +635,39 @@ public class DatalistModel extends AbstractComponent {
 		return scrollabletable;
 	}
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Sticky Header","x-form-type":"materialswitch","x-form-visible":"model.scrollabletable == 'true'","x-default":false} */
+	public String getStickyheader() {
+		return stickyheader;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Height","x-form-type":"materialrange","x-form-min":100,"x-form-max":500,"x-default":300,"x-form-visible":"model.scrollabletable == 'true'"} */
+	public String getTableheight() {
+		return tableheight;
+	}
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false} */
 	public String getCellborders() {
 		return cellborders;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Table caption","x-form-type":"materialswitch","x-default":false} */
+	public String getCaption() {
+		return caption;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption text","x-form-type":"text","x-form-visible":"model.caption == 'true'"} */
+	public String getCaptiontext() {
+		return captiontext;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption placement","x-form-type":"materialselect","x-default":"bottom","x-form-visible":"model.caption == 'true'","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
+	public String getCaptionplacement() {
+		return captionplacement;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption alignment","x-form-type":"materialselect","x-default":"left","x-form-visible":"model.caption == 'true'","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}} */
+	public String getCaptionalignment() {
+		return captionalignment;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */

@@ -140,3 +140,15 @@
   --text-primary-color: rgba(0,0,0,0.87);
   --text-secondary-color: rgba(0,0,0,0.6);
 }
+
+#peregrine-app .theme-light[class$="components-datalist"] table th,
+#peregrine-app .theme-light[class$="components-datalist"] table th *,
+#peregrine-app .theme-light[class$="components-datalist"] table.striped td{
+  --bg-secondary: rgba(255,255,255,0.6);
+}
+#peregrine-app .theme-dark[class$="components-datalist"] table th,
+#peregrine-app .theme-dark[class$="components-datalist"] table th *,
+#peregrine-app .theme-dark[class$="components-datalist"] table.striped td{
+  --bg-secondary: #e8f2ff;
+  --text-secondary-color: rgba(0,0,0,0.87);
+}

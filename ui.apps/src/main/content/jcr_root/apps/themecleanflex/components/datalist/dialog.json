@@ -68,16 +68,6 @@
       "textOff": "no",
       "valueOn": "true",
       "valueOff": "false",
-      "placeholder": "fixedheader",
-      "label": "Fixed Header",
-      "model": "fixedheader"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
       "placeholder": "densetable",
       "label": "Dense Table",
       "model": "densetable"
@@ -98,9 +88,85 @@
       "textOff": "no",
       "valueOn": "true",
       "valueOff": "false",
+      "placeholder": "stickyheader",
+      "label": "Sticky Header",
+      "model": "stickyheader",
+      "visible": "model.scrollabletable == 'true'"
+    },
+    {
+      "type": "material-range",
+      "placeholder": "tableheight",
+      "label": "Table Height",
+      "model": "tableheight",
+      "visible": "model.scrollabletable == 'true'",
+      "min": 100,
+      "max": 500
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
       "placeholder": "cellborders",
       "label": "Add borders around individual cells",
       "model": "cellborders"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "caption",
+      "label": "Table caption",
+      "model": "caption"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "captiontext",
+      "label": "Caption text",
+      "model": "captiontext",
+      "visible": "model.caption == 'true'"
+    },
+    {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "top",
+          "value": "top"
+        },
+        {
+          "name": "bottom",
+          "value": "bottom"
+        }
+      ],
+      "placeholder": "captionplacement",
+      "label": "Caption placement",
+      "model": "captionplacement",
+      "visible": "model.caption == 'true'"
+    },
+    {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "left",
+          "value": "left"
+        },
+        {
+          "name": "center",
+          "value": "center"
+        },
+        {
+          "name": "right",
+          "value": "right"
+        }
+      ],
+      "placeholder": "captionalignment",
+      "label": "Caption alignment",
+      "model": "captionalignment",
+      "visible": "model.caption == 'true'"
     },
     {
       "type": "input",

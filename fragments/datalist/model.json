@@ -53,13 +53,6 @@
           "x-form-type": "materialswitch",
           "x-default": false
         },
-        "fixedheader": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Fixed Header",
-          "x-form-type": "materialswitch",
-          "x-default": false
-        },
         "densetable": {
           "type": "string",
           "x-source": "inject",
@@ -74,12 +67,84 @@
           "x-form-type": "materialswitch",
           "x-default": false
         },
+        "stickyheader": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Sticky Header",
+          "x-form-type": "materialswitch",
+          "x-form-visible": "model.scrollabletable == 'true'",
+          "x-default": false
+        },
+        "tableheight": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Table Height",
+          "x-form-type": "materialrange",
+          "x-form-min": 100,
+          "x-form-max": 500,
+          "x-default": 300,
+          "x-form-visible": "model.scrollabletable == 'true'"
+        },
         "cellborders": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Add borders around individual cells",
           "x-form-type": "materialswitch",
           "x-default": false
+        },
+        "caption": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Table caption",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "captiontext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Caption text",
+          "x-form-type": "text",
+          "x-form-visible": "model.caption == 'true'"
+        },
+        "captionplacement": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Caption placement",
+          "x-form-type": "materialselect",
+          "x-default": "bottom",
+          "x-form-visible": "model.caption == 'true'",
+          "properties":{
+            "top": {
+              "x-form-name": "top",
+              "x-form-value": "top"
+            },
+            "bottom": {
+              "x-form-name": "bottom",
+              "x-form-value": "bottom"
+            }
+          }
+        },
+        "captionalignment": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Caption alignment",
+          "x-form-type": "materialselect",
+          "x-default": "left",
+          "x-form-visible": "model.caption == 'true'",
+          "properties":{
+            "left": {
+              "x-form-name": "left",
+              "x-form-value": "left"
+            },
+            "center": {
+              "x-form-name": "center",
+              "x-form-value": "center"
+            },
+            "right": {
+              "x-form-name": "right",
+              "x-form-value": "right"
+            }
+          }
         },
         "bgref": {
           "$ref": "fragments/block/model.json#/definitions/Block",
