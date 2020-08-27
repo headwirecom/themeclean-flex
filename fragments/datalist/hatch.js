@@ -20,8 +20,10 @@ module.exports = {
         // f.bindAttribute(header, 'class', headerClasses, false)
 
 
-        let heading = $.find('th span').first()
-        f.mapField(heading, 'storageData', false)
+        const th = $.find('th').first()
+        f.addFor(th, 'model.columns', 'col')
+        const heading = $.find('th span').first()
+        f.mapField(heading, 'col.header', false)
 
         let dropdownArrow = $.find('svg').first()
         let dropdownArrowClasses = `{
@@ -63,5 +65,12 @@ module.exports = {
         f.bindAttribute(caption, 'class', captionClasses, false)
         f.addStyle(caption, 'caption-side', "model.captionplacement", false);
         f.mapField(caption, 'model.captiontext')
+        
+        const tbody = $.find('tbody').first()
+        const tr = tbody.find('tr').first()
+        const td = tr.find('td').first()
+        f.addFor(tr, 'storageData', 'data')
+        f.addFor(td, 'model.columns', 'col')
+        f.mapField(td, 'data[col.value]', false)
     }
 }

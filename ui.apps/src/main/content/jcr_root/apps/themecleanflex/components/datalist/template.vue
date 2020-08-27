@@ -7,50 +7,34 @@
         }">
         <thead>
           <tr>
-            <th class="flex items-center" v-bind:class="{
+            <th v-for="(col, i) in model.columns" :key="col.path || i" v-bind:class="{
             'p-3': model.densetable === 'false' || !model.densetable,
             'p-1': model.densetable === 'true',
             'sticky': model.stickyheader === 'true',
             'top-0': model.stickyheader === 'true'
         }">
-              <span>{{storageData}}</span>
-              <svg width="16" height="16" viewBox="0 0 16 16"
-              focusable="false" class="transition-transform duration-150 ease-in-out ml-2"
-              v-bind:class="{
+              <div class="flex items-center">
+                <span>{{col.header}}</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" focusable="false"
+                class="transition-transform duration-150 ease-in-out ml-2" v-bind:class="{
             'rotate-0': active,
             'rotate-180': !active,
             'hidden': model.makesortable === 'false' || !model.makesortable
         }" v-on:click="toggleSort(i)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"
-                />
-              </svg>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"
+                  />
+                </svg>
+              </div>
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr v-for="(data, i) in storageData" :key="data.path || i">
             <td v-bind:class="{
             'border': model.cellborders === 'true',
             'p-3': model.densetable === 'false' || !model.densetable,
             'p-1': model.densetable === 'true'
-        }">Column1 item1</td>
-            <td v-bind:class="{
-            'border': model.cellborders === 'true',
-            'p-3': model.densetable === 'false' || !model.densetable,
-            'p-1': model.densetable === 'true'
-        }">Column2 item1</td>
-          </tr>
-          <tr>
-            <td v-bind:class="{
-            'border': model.cellborders === 'true',
-            'p-3': model.densetable === 'false' || !model.densetable,
-            'p-1': model.densetable === 'true'
-        }">Column1 item2</td>
-            <td v-bind:class="{
-            'border': model.cellborders === 'true',
-            'p-3': model.densetable === 'false' || !model.densetable,
-            'p-1': model.densetable === 'true'
-        }">Column2 item2</td>
+        }" v-for="(col, i) in model.columns" :key="col.path || i">{{data[col.value]}}</td>
           </tr>
         </tbody>
         <caption v-bind:class="{
