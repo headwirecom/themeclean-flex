@@ -3,7 +3,10 @@ module.exports = {
         f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
 
-        let heading = $.find('th span').first()
+        const th = $.find('th').first()
+        f.addFor(th, 'model.columns', 'col')
+        const heading = $.find('th span').first()
+        f.mapField(heading, 'col.header', false)
 
         let dropdownArrow = $.find('svg').first()
         let dropdownArrowClasses = `{
@@ -14,6 +17,11 @@ module.exports = {
         f.bindAttribute(dropdownArrow, 'class', dropdownArrowClasses, false)
         f.bindEvent(dropdownArrow, 'click', "toggleSort(i)");
 
-        f.mapField(heading, 'storageData')
+        const tbody = $.find('tbody').first()
+        const tr = tbody.find('tr').first()
+        const td = tr.find('td').first()
+        f.addFor(tr, 'storageData', 'data')
+        f.addFor(td, 'model.columns', 'col')
+        f.mapField(td, 'data[col.value]', false)
     }
 }

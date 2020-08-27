@@ -4,11 +4,10 @@
       <table class="w-full border">
         <thead>
           <tr>
-            <th class="flex">
-              <span data-per-inline="storageData">{{storageData}}</span>
-              <svg width="16" height="16" viewBox="0 0 16 16"
-              focusable="false" class="transition-transform duration-150 ease-in-out"
-              v-bind:class="{
+            <th class="flex" v-for="(col, i) in model.columns" :key="col.path || i">
+              <span>{{col.header}}</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" focusable="false"
+              class="transition-transform duration-150 ease-in-out" v-bind:class="{
             'rotate-0': active,
             'rotate-180': !active,
             'hidden': !model.sortable
@@ -20,13 +19,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Column1 item1</td>
-            <td>Column2 item1</td>
-          </tr>
-          <tr>
-            <td>Column1 item2</td>
-            <td>Column2 item2</td>
+          <tr v-for="(data, i) in storageData" :key="data.path || i">
+            <td v-for="(col, i) in model.columns" :key="col.path || i">{{data[col.value]}}</td>
           </tr>
         </tbody>
         <caption></caption>
