@@ -1,6 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
-    <div class="w-full">
+    <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
+    <div class="w-full" v-else>
       <div class="w-full overflow-x-hidden" v-bind:class="{
             'overflow-y-scroll': model.scrollabletable === 'true',
             'hidden': isMobile,
@@ -117,6 +118,12 @@
             totalItems:  ( this.model.pagination && this.model.paginationoptions.length ) ? this.model.paginationoptions.length : null,
             currentPage: 1,
             isMobile: false
+          }
+        },
+        computed: {
+        	isEditAndEmpty() {
+            if(!$peregrineApp.isAuthorMode()) return false
+            return this.$helper.areAllEmpty( this.model.columns.length < 0 );
           }
         },
         mounted() {

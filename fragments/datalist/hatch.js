@@ -87,5 +87,8 @@ module.exports = {
 
         const select = pagination.find('select');
         select.append('<option value="-1">All</option>')
+
+        f.addElse($);
+        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
     }
 }
