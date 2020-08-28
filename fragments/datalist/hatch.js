@@ -3,8 +3,29 @@ module.exports = {
         f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
 
-        f.bindAttribute($, 'class', `{'overflow-y-scroll': model.scrollabletable === 'true'}`, false)
-        f.addStyle($, 'height', "(model.scrollabletable === 'true') ? model.tableheight + 'px' : 'auto'", false)
+        const desktopContainer = $.find('div').eq(0);
+        const desktopContainerClasses = `{
+            'overflow-y-scroll': model.scrollabletable === 'true',
+            'hidden': isMobile,
+        }`
+        f.bindAttribute(desktopContainer, 'class', desktopContainerClasses, false)
+        f.addStyle(desktopContainer, 'height', "(model.scrollabletable === 'true') ? model.tableheight + 'px' : 'auto'", false)
+        
+        const mobileContainer = $.find('div.mobile-table').eq(0);
+        const mobileContainerClasses = `{
+            'hidden': !isMobile,
+        }`
+        f.bindAttribute(mobileContainer, 'class', mobileContainerClasses, false)
+
+        const mobileTr = mobileContainer.find('tr').first()
+        f.addFor(mobileTr, 'model.columns', 'col')
+
+        const mobileTd = mobileContainer.find('td').first()
+        f.addFor(mobileTd, 'storageData', 'data')
+        f.mapField(mobileTd, 'data[col.value]', false)
+
+        mobileTr.prepend("<td class='mobile-header'>{{col.header}}</td>")
+        f.bindAttribute($.find('.mobile-table td'), 'class', `{ 'border': model.cellborders === 'true', 'p-3': model.densetable !== 'true', 'p-1': model.densetable === 'true'}`, false)
 
         const table = $.find('table')
         const tableClasses = `{
@@ -21,19 +42,7 @@ module.exports = {
             'top-0': model.stickyheader === 'true'
         }`
         f.bindAttribute(th, 'class', thClasses, false)
-
-        const heading = $.find('th span').first()
-        f.mapField(heading, 'col.header', false)
-
-        const dropdownArrow = $.find('svg').first()
-        const dropdownArrowClasses = `{
-            'rotate-0': active,
-            'rotate-180': !active,
-            'hidden': model.makesortable === 'false' || !model.makesortable
-        }`
-        f.bindAttribute(dropdownArrow, 'class', dropdownArrowClasses, false)
-        f.bindEvent(dropdownArrow, 'click', "toggleSort(i)");
-
+        f.mapField(th, 'col.header', false)
 
         const tbody = $.find('tbody').first()
         const tr = tbody.find('tr').first()
@@ -49,17 +58,7 @@ module.exports = {
         }`    
         f.bindAttribute(td, 'class', tdClasses, false)
 
-        const tfoot = $.find('tfoot').first()
-        const pagination = tfoot.find('.table-pagination')
-        const paginationClasses = `{
-            'hidden': model.pagination !== 'true',
-            'justify-start': model.paginationalignment === 'left',
-            'justify-center': model.paginationalignment === 'center',
-            'justify-end': model.paginationalignment === 'right',
-        }`
-        f.bindAttribute(pagination, 'class', paginationClasses, false)
-
-        const caption = $.find('caption').first()
+        const caption = $.find('caption')
         const captionClasses = `{
             'text-left': model.captionalignment === 'left',
             'text-center': model.captionalignment === 'center',
@@ -71,5 +70,22 @@ module.exports = {
         f.bindAttribute(caption, 'class', captionClasses, false)
         f.addStyle(caption, 'caption-side', "model.captionplacement", false);
         f.mapField(caption, 'model.captiontext')
+
+        const pagination = $.find('.table-pagination')
+        const paginationClasses = `{
+            'hidden': model.pagination !== 'true',
+            'justify-start': model.paginationalignment === 'left',
+            'justify-center': model.paginationalignment === 'center',
+            'justify-end': model.paginationalignment === 'right',
+        }`
+        f.bindAttribute(pagination, 'class', paginationClasses, false)
+
+        const options = pagination.find('option');
+        f.addFor(options, 'model.paginationoptions', 'option')
+        f.mapField(options, 'option', false)
+        f.bindAttribute(options, 'value', '`${option}`')
+
+        const select = pagination.find('select');
+        select.append('<option value="-1">All</option>')
     }
 }

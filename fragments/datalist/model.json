@@ -39,13 +39,6 @@
             }
           }
         },
-        "makesortable": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Make Table Sortable",
-          "x-form-type": "materialswitch",
-          "x-default": false
-        },
         "stripedrows": {
           "type": "string",
           "x-source": "inject",
@@ -118,6 +111,22 @@
             "right": {
               "x-form-name": "right",
               "x-form-value": "right"
+            }
+          }
+        },
+        "paginationoptions": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Pagination options",
+          "x-form-type": "collection",
+          "x-form-hint": "Items per page (number)",
+          "x-form-visible": "model.pagination == 'true'",
+          "properties": {
+            "itemsperpage": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Items per page",
+              "x-form-type": "number"
             }
           }
         },

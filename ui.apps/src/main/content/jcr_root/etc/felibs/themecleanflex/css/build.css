@@ -999,6 +999,14 @@ video {
   overflow-x: hidden;
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
 .overflow-y-scroll {
   overflow-y: scroll;
 }
@@ -1326,14 +1334,6 @@ video {
 
 .z-10 {
   z-index: 10;
-}
-
-.rotate-0 {
-  --transform-rotate: 0;
-}
-
-.rotate-180 {
-  --transform-rotate: 180deg;
 }
 
 .transition {

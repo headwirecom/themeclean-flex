@@ -1,62 +1,58 @@
-<div class="w-full overflow-x-hidden">
-    <table class="w-full border">
-        <thead>
-            <tr>
-                <th>
-                    <div class="flex items-center">
-                        <span></span>
-                        <svg width="16" height="16" viewBox="0 0 16 16" focusable="false" class="transition-transform duration-150 ease-in-out ml-2">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"/>
-                        </svg>
-                    </div>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>
-                    <div class="flex table-pagination">
-                        <p class="table-pagination-text">Rows per page:</p>
-                        <div class="table-pagination-per-page-selector flex">
-                            <select class="bg-transparent" aria-label="rows per page">
-                                <option selected="" value="5">5</option>
-                                <option value="10">10</option>
-                                <option value="25">25</option>
-                                <option value="-1">All</option>
-                            </select>
-                        </div>
-                        <p class="table-pagination-text">1-5 of 13</p>
-                        <div class="table-pagination-button-container flex">
-                            <button  tabindex="-1" type="button" disabled="" aria-label="first page">
-                                <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"></path>
-                                </svg>
-                            </button>
-                            <button tabindex="-1" type="button" disabled="" aria-label="previous page">
-                                <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
-                                </svg>
-                            </button>
-                            <button tabindex="0" type="button" aria-label="next page">
-                                <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
-                                </svg>
-                            </button>
-                            <button tabindex="0" type="button" aria-label="last page">
-                                <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-        </tfoot>
-        <caption></caption>
-    </table>
+<div class="w-full">
+    <div class="w-full overflow-x-hidden">
+        <table class="w-full border">
+            <thead>
+                <tr>
+                    <th class="text-left"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+            <caption></caption>
+        </table>
+    </div>
+    <div class="w-full overflow-y-hidden mobile-table overflow-x-scroll">
+        <table class="w-full border">
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+            <caption></caption>
+        </table>
+    </div>
+    <div class="flex table-pagination">
+        <p class="table-pagination-text">Rows per page:</p>
+        <div class="table-pagination-per-page-selector flex">
+            <select class="bg-transparent" aria-label="rows per page">
+                <option></option>
+            </select>
+        </div>
+        <p class="table-pagination-text">1-5 of 13</p>
+        <div class="table-pagination-button-container flex">
+            <button  tabindex="-1" type="button" disabled="" aria-label="first page">
+                <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"></path>
+                </svg>
+            </button>
+            <button tabindex="-1" type="button" disabled="" aria-label="previous page">
+                <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                </svg>
+            </button>
+            <button tabindex="0" type="button" aria-label="next page">
+                <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+                </svg>
+            </button>
+            <button tabindex="0" type="button" aria-label="last page">
+                <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
 </div>

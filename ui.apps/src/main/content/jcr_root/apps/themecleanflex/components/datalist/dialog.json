@@ -48,16 +48,6 @@
       "textOff": "no",
       "valueOn": "true",
       "valueOff": "false",
-      "placeholder": "makesortable",
-      "label": "Make Table Sortable",
-      "model": "makesortable"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
       "placeholder": "stripedrows",
       "label": "Striped Rows",
       "model": "stripedrows"
@@ -142,6 +132,24 @@
       "label": "Pagination alignment",
       "model": "paginationalignment",
       "visible": "model.pagination == 'true'"
+    },
+    {
+      "type": "collection",
+      "multifield": false,
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "number",
+          "placeholder": "itemsperpage",
+          "label": "Items per page",
+          "model": "itemsperpage"
+        }
+      ],
+      "placeholder": "paginationoptions",
+      "label": "Pagination options",
+      "model": "paginationoptions",
+      "visible": "model.pagination == 'true'",
+      "hint": "Items per page (number)"
     },
     {
       "type": "materialswitch",
