@@ -1,0 +1,21 @@
+{
+  "definitions": {
+    "Reference": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "reference": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Reference",
+          "x-form-type": "pathbrowser",
+          "x-form-browserRoot": "/content/themecleanflex/pages"
+        },
+        "bgref": {
+          "x-form-type": "reference",
+          "$ref": "fragments/block/model.json#/definitions/Block"
+        }
+      }
+    }
+  }
+}
