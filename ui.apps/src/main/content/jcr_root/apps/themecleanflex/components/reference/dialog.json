@@ -10,6 +10,13 @@
     {
       "type": "input",
       "inputType": "text",
+      "placeholder": "contentnameref",
+      "label": "Content Name Reference",
+      "model": "contentnameref"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
       "placeholder": "anchorname",
       "label": "Anchor Name",
       "model": "anchorname"

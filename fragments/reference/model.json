@@ -11,6 +11,12 @@
           "x-form-type": "pathbrowser",
           "x-form-browserRoot": "/content/themecleanflex/pages"
         },
+        "contentnameref": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Content Name Reference",
+          "x-form-type": "text"
+        },
         "bgref": {
           "x-form-type": "reference",
           "$ref": "fragments/block/model.json#/definitions/Block"

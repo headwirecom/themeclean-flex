@@ -22,6 +22,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.StringWriter;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -43,6 +44,12 @@ import javax.inject.Named;
           "x-form-label": "Reference",
           "x-form-type": "pathbrowser",
           "x-form-browserRoot": "/content/themecleanflex/pages"
+        },
+        "contentnameref": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Content Name Reference",
+          "x-form-type": "text"
         },
         "bgref": {
           "x-form-type": "reference",
@@ -324,6 +331,10 @@ public class ReferenceModel extends AbstractComponent {
 	@Inject
 	private String reference;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Content Name Reference","x-form-type":"text"} */
+	@Inject
+	private String contentnameref;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
 	private String anchorname;
@@ -428,6 +439,11 @@ public class ReferenceModel extends AbstractComponent {
     	/* {"type":"string","x-source":"inject","x-form-label":"Reference","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"} */
 	public String getReference() {
 		return reference;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Content Name Reference","x-form-type":"text"} */
+	public String getContentnameref() {
+		return contentnameref;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
@@ -554,11 +570,11 @@ public class ReferenceModel extends AbstractComponent {
     }
   
     private String generateReferenceJson() {
-      if(reference == null) {
+      if(reference == null || "".equals(reference)) {
         return null;
       }
       ResourceResolver resourceResolver = getResource().getResourceResolver();
-      Resource referencedResource = resourceResolver.getResource(reference);
+      Resource referencedResource = resourceResolver.getResource(reference+"/jcr:content");
       if(referencedResource == null) {
         LOG.error("Reference '{}' does not resolve to a resource.", reference);
         return null;
@@ -566,11 +582,19 @@ public class ReferenceModel extends AbstractComponent {
       try {
         Map referenceMap = modelFactory.exportModelForResource(referencedResource,
             PerConstants.JACKSON, Map.class, Collections.<String, String>emptyMap());
-        StringWriter writer = new StringWriter();
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.writeValue(writer, referenceMap);
-        writer.close();
-        return writer.toString();
+
+        // TODO: finding the node should happen before the export due to the fact that this
+        // could result in a recursion if we point to content on the same page
+        Map result = findNode(referenceMap, "contentname", getContentnameref());
+        if(result != null) {
+          StringWriter writer = new StringWriter();
+          ObjectMapper mapper = new ObjectMapper();
+          mapper.writeValue(writer, result);
+          writer.close();
+          return writer.toString();
+        } else {
+          return null;
+        }
       } catch (ExportException e) {
         LOG.error("Export failed for resource " + reference, e);
       } catch (MissingExporterException e) {
@@ -580,6 +604,28 @@ public class ReferenceModel extends AbstractComponent {
       }
       return null;
     }
-  
+
+    // find a node with the given key/value pair in our json output
+    private Map findNode(Map map, String name, String value) {
+      for (Object key : map.keySet()) {
+        Object val = map.get(key);
+        if(key.equals(name)) {
+          if(value.equals(val)) {
+            return map;
+          }
+        }
+        if(key.equals("children") && val instanceof ArrayList) {
+          ArrayList children = (ArrayList) val;
+          
+          for (Object child : children) {
+            if(child instanceof Map) {
+              Map ret = findNode((Map) child, name, value);
+              if(ret != null) return ret;
+            }
+          }
+        }
+      }
+      return null;
+    } 
 
   }
