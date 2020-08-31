@@ -176,7 +176,30 @@
           }
         },
         mounted() {
-          if(this.model.endpointurl && this.model.endpointurl !== '') {
+          if(this.model.loadfunction && this.model.loadfunction !== '') {
+            const objs = this.model.loadfunction.split('.')
+            let parent = window
+            let obj = objs.shift()
+            while(obj && parent[obj]) {
+              if(objs.length === 0) {
+                try {
+                  const result = parent[obj](this.model.endpointurl)
+                  if(result === false) {
+                    console.error('Failed to load data from ''+this.model.endpointurl)
+                  }
+                  Vue.set(this, 'storageData', result)
+                } catch(err) {
+                  console.error(err)
+                }
+                return
+              }
+              parent = parent[obj]
+              obj = objs.shift()
+            }
+            console.log('window.' + this.model.loadfunction + ' not found')
+            return
+          }
+          else if(this.model.endpointurl && this.model.endpointurl !== '') {
             // load data from URL
             axios.get(this.model.endpointurl)
             .then( (response) => {
@@ -187,7 +210,8 @@
             .catch( (error) => {
                 console.log(error)
             })
-          } else {
+          }
+          else {
             // use local storage if nothing else is configured
             // interesting aspect :-) if another tab on the same computer
             // has the same page open it actually updates

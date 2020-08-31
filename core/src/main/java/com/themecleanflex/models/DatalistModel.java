@@ -28,7 +28,7 @@ import javax.inject.Named;
           "x-form-type": "text",
           "x-default": ""
         },
-        "loadFunction": {
+        "loadfunction": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Javascript function to call to load data",
@@ -491,7 +491,7 @@ public class DatalistModel extends AbstractComponent {
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (name)","x-form-type":"text"} */
 	@Inject
-	private String loadFunction;
+	private String loadfunction;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"}}} */
 	@Inject
@@ -664,8 +664,8 @@ public class DatalistModel extends AbstractComponent {
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (name)","x-form-type":"text"} */
-	public String getLoadFunction() {
-		return loadFunction;
+	public String getLoadfunction() {
+		return loadfunction;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"}}} */

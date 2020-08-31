@@ -10,9 +10,9 @@
     {
       "type": "input",
       "inputType": "text",
-      "placeholder": "loadFunction",
+      "placeholder": "loadfunction",
       "label": "Javascript function to call to load data",
-      "model": "loadFunction",
+      "model": "loadfunction",
       "hint": "Function must accept (name)"
     },
     {
