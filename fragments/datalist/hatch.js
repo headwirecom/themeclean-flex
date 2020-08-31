@@ -63,8 +63,8 @@ module.exports = {
         const tbody = $.find('tbody').first()
         const tr = tbody.find('tr').first()
         const td = tr.find('td').first()
-        tr.attr('v-for', `(${data}, j) in ${storageData}`)
-        tr.attr(':key', `${data}.path || j`)
+        tr.attr('v-for', `(data, j) in storageData`)
+        tr.attr(':key', `data.path || j`)
 
         f.addFor(td, 'model.columns', 'col')
         f.mapField(td.find('span.item-text'), 'data[col.value]', false)
@@ -101,23 +101,6 @@ module.exports = {
         f.bindAttribute(caption, 'class', captionClasses, false)
         f.addStyle(caption, 'caption-side', "model.captionplacement", false);
         f.mapField(caption, 'model.captiontext')
-
-        const pagination = $.find('.table-pagination')
-        const paginationClasses = `{
-            'hidden': model.pagination !== 'true',
-            'justify-start': model.paginationalignment === 'left',
-            'justify-center': model.paginationalignment === 'center',
-            'justify-end': model.paginationalignment === 'right',
-        }`
-        f.bindAttribute(pagination, 'class', paginationClasses, false)
-
-        const options = pagination.find('option');
-        f.addFor(options, 'model.paginationoptions', 'option')
-        f.mapField(options, 'option', false)
-        f.bindAttribute(options, 'value', '`${option}`')
-
-        const select = pagination.find('select');
-        select.append('<option value="-1">All</option>')
 
         f.addElse($);
         $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')

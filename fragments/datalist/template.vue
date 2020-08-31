@@ -8,7 +8,8 @@
         <div class="selected-text">{{`${active.filter(element =&gt; element === true).length} selected`}}</div>
         <div
         class="selected-actions">
-          <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+          <svg class="w-24 cursor-pointer" focusable="false" viewBox="0 0 24 24"
+          aria-hidden="true">
             <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
             />
           </svg>
@@ -48,7 +49,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(data, i) in storageData" :key="data.path || i">
+          <tr v-for="(data, j) in storageData" :key="data.path || j">
             <td v-for="(col, i) in model.columns" :key="col.path || i" v-bind:class="{
             'border': model.cellborders === 'true',
             'p-3': model.densetable !== 'true',
@@ -106,44 +107,6 @@
         }" v-bind:style="`caption-side:${model.captionplacement};`" data-per-inline="model.captiontext">{{model.captiontext}}</caption>
       </table>
     </div>
-    <div class="flex table-pagination" v-bind:class="{
-            'hidden': model.pagination !== 'true',
-            'justify-start': model.paginationalignment === 'left',
-            'justify-center': model.paginationalignment === 'center',
-            'justify-end': model.paginationalignment === 'right',
-        }">
-      <p class="table-pagination-text">Rows per page:</p>
-      <div class="table-pagination-per-page-selector flex">
-        <select class="bg-transparent" aria-label="rows per page">
-          <option v-for="(option, i) in model.paginationoptions" :key="option.path || i"
-          v-bind:value="`${option}`">{{option}}</option>
-          <option value="-1">All</option>
-        </select>
-      </div>
-      <p class="table-pagination-text">1-5 of 13</p>
-      <div class="table-pagination-button-container flex">
-        <button tabindex="-1" type="button" disabled aria-label="first page">
-          <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z" />
-          </svg>
-        </button>
-        <button tabindex="-1" type="button" disabled aria-label="previous page">
-          <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" />
-          </svg>
-        </button>
-        <button tabindex="0" type="button" aria-label="next page">
-          <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-          </svg>
-        </button>
-        <button tabindex="0" type="button" aria-label="last page">
-          <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z" />
-          </svg>
-        </button>
-      </div>
-    </div>
     </div>
   </themecleanflex-components-block>
 </template>
@@ -163,9 +126,6 @@
           return {
             storageData: data,
             active: new Array(numElements).fill(false),
-            itemsPerPage:  ( this.model.pagination && this.model.paginationoptions.length ) ? this.model.paginationoptions[0] : null,
-            totalItems:  ( this.model.pagination && this.model.paginationoptions.length ) ? this.model.paginationoptions.length : null,
-            currentPage: 1,
             isMobile: false
           }
         },

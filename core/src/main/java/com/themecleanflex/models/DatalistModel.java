@@ -109,51 +109,6 @@ import javax.inject.Named;
           "x-form-type": "materialswitch",
           "x-default": false
         },
-        "pagination": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Table pagination",
-          "x-form-type": "materialswitch",
-          "x-default": false
-        },
-        "paginationalignment": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Pagination alignment",
-          "x-form-type": "materialselect",
-          "x-default": "left",
-          "x-form-visible": "model.pagination == 'true'",
-          "properties": {
-            "left": {
-              "x-form-name": "left",
-              "x-form-value": "left"
-            },
-            "center": {
-              "x-form-name": "center",
-              "x-form-value": "center"
-            },
-            "right": {
-              "x-form-name": "right",
-              "x-form-value": "right"
-            }
-          }
-        },
-        "paginationoptions": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Pagination options",
-          "x-form-type": "collection",
-          "x-form-hint": "Items per page (number)",
-          "x-form-visible": "model.pagination == 'true'",
-          "properties": {
-            "itemsperpage": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Items per page",
-              "x-form-type": "number"
-            }
-          }
-        },
         "caption": {
           "type": "string",
           "x-source": "inject",
@@ -526,19 +481,6 @@ public class DatalistModel extends AbstractComponent {
 	@Inject
 	private String cellborders;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Table pagination","x-form-type":"materialswitch","x-default":false} */
-	@Inject
-	private String pagination;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Pagination alignment","x-form-type":"materialselect","x-default":"left","x-form-visible":"model.pagination == 'true'","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}} */
-	@Inject
-	@Default(values ="left")
-	private String paginationalignment;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Pagination options","x-form-type":"collection","x-form-hint":"Items per page (number)","x-form-visible":"model.pagination == 'true'","properties":{"itemsperpage":{"type":"string","x-source":"inject","x-form-label":"Items per page","x-form-type":"number"}}} */
-	@Inject
-	private String[] paginationoptions;
-
 	/* {"type":"string","x-source":"inject","x-form-label":"Table caption","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String caption;
@@ -706,21 +648,6 @@ public class DatalistModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false} */
 	public String getCellborders() {
 		return cellborders;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Table pagination","x-form-type":"materialswitch","x-default":false} */
-	public String getPagination() {
-		return pagination;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Pagination alignment","x-form-type":"materialselect","x-default":"left","x-form-visible":"model.pagination == 'true'","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}} */
-	public String getPaginationalignment() {
-		return paginationalignment;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Pagination options","x-form-type":"collection","x-form-hint":"Items per page (number)","x-form-visible":"model.pagination == 'true'","properties":{"itemsperpage":{"type":"string","x-source":"inject","x-form-label":"Items per page","x-form-type":"number"}}} */
-	public String[] getPaginationoptions() {
-		return paginationoptions;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Table caption","x-form-type":"materialswitch","x-default":false} */

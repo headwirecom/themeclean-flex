@@ -118,55 +118,6 @@
       "textOff": "no",
       "valueOn": "true",
       "valueOff": "false",
-      "placeholder": "pagination",
-      "label": "Table pagination",
-      "model": "pagination"
-    },
-    {
-      "type": "material-select",
-      "values": [
-        {
-          "name": "left",
-          "value": "left"
-        },
-        {
-          "name": "center",
-          "value": "center"
-        },
-        {
-          "name": "right",
-          "value": "right"
-        }
-      ],
-      "placeholder": "paginationalignment",
-      "label": "Pagination alignment",
-      "model": "paginationalignment",
-      "visible": "model.pagination == 'true'"
-    },
-    {
-      "type": "collection",
-      "multifield": false,
-      "fields": [
-        {
-          "type": "input",
-          "inputType": "number",
-          "placeholder": "itemsperpage",
-          "label": "Items per page",
-          "model": "itemsperpage"
-        }
-      ],
-      "placeholder": "paginationoptions",
-      "label": "Pagination options",
-      "model": "paginationoptions",
-      "visible": "model.pagination == 'true'",
-      "hint": "Items per page (number)"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
       "placeholder": "caption",
       "label": "Table caption",
       "model": "caption"

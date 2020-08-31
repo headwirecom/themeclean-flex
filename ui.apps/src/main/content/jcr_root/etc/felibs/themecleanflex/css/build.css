@@ -174,8 +174,7 @@ img {
  */
 
 button,
-input,
-select {
+input {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
@@ -197,8 +196,7 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 
-button,
-select { /* 1 */
+button { /* 1 */
   text-transform: none;
 }
 
@@ -501,8 +499,7 @@ a {
  */
 
 button,
-input,
-select {
+input {
   padding: 0;
   line-height: inherit;
   color: inherit;
@@ -576,10 +573,6 @@ video {
   .container {
     max-width: 1280px;
   }
-}
-
-.bg-transparent {
-  background-color: transparent;
 }
 
 .bg-white {
