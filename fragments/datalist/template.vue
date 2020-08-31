@@ -185,7 +185,7 @@
                 try {
                   const result = parent[obj](this.model.endpointurl)
                   if(result === false) {
-                    console.error('Failed to load data from ''+this.model.endpointurl)
+                    console.error('Failed to load data from '+this.model.endpointurl)
                   }
                   Vue.set(this, 'storageData', result)
                 } catch(err) {
