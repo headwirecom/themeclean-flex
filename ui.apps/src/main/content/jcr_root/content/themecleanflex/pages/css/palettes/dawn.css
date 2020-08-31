@@ -158,19 +158,25 @@
   }
 
 #peregrine-app [class$="components-datalist"] table th,
-#peregrine-app [class$="components-datalist"] table td.mobile-header  {
+#peregrine-app [class$="components-datalist"] table th *,
+#peregrine-app [class$="components-datalist"] table td.mobile-header,
+#peregrine-app [class$="components-datalist"] table td.mobile-header * {
   --bg-primary: var(--color-accent-1-700);
-  --text-primary-color: rgba(255,255,255,0.6);
+  --text-primary-color: rgba(255,255,255);
 }
-#peregrine-app .theme-light[class$="components-datalist"] table.striped tbody td{
+#peregrine-app .theme-light[class$="components-datalist"] table.striped tbody td,
+#peregrine-app .theme-light[class$="components-datalist"] table.striped tbody td *{
   --bg-secondary: rgba(255,255,255,0.6);
 }
 #peregrine-app .theme-dark[class$="components-datalist"] table th,
-#peregrine-app .theme-dark[class$="components-datalist"] table td.mobile-header  {
+#peregrine-app .theme-dark[class$="components-datalist"] table th *,
+#peregrine-app .theme-dark[class$="components-datalist"] table td.mobile-header,
+#peregrine-app .theme-dark[class$="components-datalist"] table td.mobile-header *  {
   --bg-primary: #fff;
   --text-primary-color: rgba(0,0,0,0.87);
 }
-#peregrine-app .theme-dark[class$="components-datalist"] table.striped tbody td{
+#peregrine-app .theme-dark[class$="components-datalist"] table.striped tbody td,
+#peregrine-app .theme-dark[class$="components-datalist"] table.striped tbody td *{
   --bg-secondary: #f8f8f8;
   --text-secondary-color: rgba(0,0,0,0.87);
 }

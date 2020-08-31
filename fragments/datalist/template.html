@@ -1,15 +1,46 @@
 <div class="w-full">
-
+    <div class="selected w-full flex justify-between p-3">
+        <div class="selected-text">0 Selected</div>
+        <div class="selected-actions">
+            <svg class="w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+            </svg>
+        </div>
+    </div>
     <div class="w-full overflow-x-hidden">
         <table class="w-full border">
             <thead>
                 <tr>
-                    <th class="text-left"></th>
+                    <th class="text-left">
+                        <div class="flex">
+                            <span class="action relative cursor-pointer mr-2">
+                                <input type="checkbox" data-indeterminate="false" value="" class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
+                                <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                                    <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                                </svg>
+                            </span>
+                            <span class="header-text"></span>
+                        </div>
+                        <span class="header-text"></span>
+                    </th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td></td>
+                    <td>
+                        <div class="flex">
+                            <span class="action relative cursor-pointer mr-2">
+                                <input type="checkbox" data-indeterminate="false" value="" class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
+                                <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                                    <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                                </svg>
+                            </span>
+                            <span class="item-text"></span>
+                        </div>
+                        <span class="item-text"></span>
+                    </td>
                 </tr>
             </tbody>
             <caption></caption>

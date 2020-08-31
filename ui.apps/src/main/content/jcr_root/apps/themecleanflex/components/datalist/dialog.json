@@ -98,6 +98,16 @@
       "textOff": "no",
       "valueOn": "true",
       "valueOff": "false",
+      "placeholder": "selectable",
+      "label": "Selectable Table",
+      "model": "selectable"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
       "placeholder": "cellborders",
       "label": "Add borders around individual cells",
       "model": "cellborders"

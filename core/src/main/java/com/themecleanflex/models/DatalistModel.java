@@ -95,6 +95,13 @@ import javax.inject.Named;
           "x-default": 300,
           "x-form-visible": "model.scrollabletable == 'true'"
         },
+        "selectable": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Selectable Table",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
         "cellborders": {
           "type": "string",
           "x-source": "inject",
@@ -511,6 +518,10 @@ public class DatalistModel extends AbstractComponent {
 	@Default(values ="300")
 	private String tableheight;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Selectable Table","x-form-type":"materialswitch","x-default":false} */
+	@Inject
+	private String selectable;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String cellborders;
@@ -685,6 +696,11 @@ public class DatalistModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Table Height","x-form-type":"materialrange","x-form-min":100,"x-form-max":500,"x-default":300,"x-form-visible":"model.scrollabletable == 'true'"} */
 	public String getTableheight() {
 		return tableheight;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Selectable Table","x-form-type":"materialswitch","x-default":false} */
+	public String getSelectable() {
+		return selectable;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false} */

@@ -1220,6 +1220,10 @@ video {
   width: 24px;
 }
 
+.w-48 {
+  width: 48px;
+}
+
 .w-auto {
   width: auto;
 }

@@ -78,6 +78,13 @@
           "x-default": 300,
           "x-form-visible": "model.scrollabletable == 'true'"
         },
+        "selectable": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Selectable Table",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
         "cellborders": {
           "type": "string",
           "x-source": "inject",
