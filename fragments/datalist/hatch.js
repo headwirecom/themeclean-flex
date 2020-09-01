@@ -10,6 +10,8 @@ module.exports = {
         f.bindAttribute(selectedContainer, 'class', selectedContainerClasses, false)
         const selectedText = selectedContainer.find('.selected-text').eq(0)
         f.mapField(selectedText, '`${active.filter(element =&gt; element === true).length} selected`', false)
+        const actionDelete = selectedContainer.find('svg').eq(0)
+        f.bindEvent(actionDelete, 'click', 'deleteAction');
 
         const desktopContainer = $.find('div.overflow-x-hidden').eq(0);
         const desktopContainerClasses = `{
