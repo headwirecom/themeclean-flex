@@ -9,16 +9,17 @@ If a endpoint URL is indicated, then the datalist will do an axios GET request w
 
 The endpoint should return a list of objects.
 ex.
-[{
-    "firstName": "Kyle",
-    "lastName": "Watson"
-},{
-    "firstName": "Shane",
-    "lastName": "Mcgrath"
-},{
-    "firstName": "Ben",
-    "lastName": "Kahn"
-}]
+
+    [{
+        "firstName": "Kyle",
+        "lastName": "Watson"
+    },{
+        "firstName": "Shane",
+        "lastName": "Mcgrath"
+    },{
+        "firstName": "Ben",
+        "lastName": "Kahn"
+    }]
 
 #### Javascript Function to Get Data
 Instead of the default GET endpoint behaviour, the user can configure a custom function to be called instead. This function can be part of any object as long as it can be accessed through the javascript window object.

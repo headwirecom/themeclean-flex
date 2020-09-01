@@ -529,7 +529,8 @@ img,
 svg,
 video,
 canvas,
-iframe {
+iframe,
+object {
   display: block;
   vertical-align: middle;
 }

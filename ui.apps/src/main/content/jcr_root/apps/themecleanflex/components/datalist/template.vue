@@ -197,20 +197,36 @@
             }
           },
           deleteAction: function() {
-            if(this.model.endpointurl && this.model.endpointurl !== '') {
-              // load data from URL
-              axios.post(this.model.endpointurl, {
-                firstName: 'Fred',
-                lastName: 'Flinstone'
-              })
-              .then( (response) => {
-                  console.log(response)
-                  // Vue.set(this, 'storageData', response.data)
-                  // Vue.set(this, 'active', new Array(response.data.length).fill(false))
-              })
-              .catch( (error) => {
-                  console.log(error)
-              })
+            if(this.model.deletefunction && this.model.deletefunction !== '') {
+              const objs = this.model.deletefunction.split('.')
+              let parent = window
+              let obj = objs.shift()
+              while(obj && parent[obj]) {
+                if(objs.length === 0) {
+                  try {
+                    const result = parent[obj](this)
+                    if(result === false) {
+                      console.error('Failed to remove rows')
+                    } else {
+                      Vue.set(this, 'storageData', result)
+                    }
+                  } catch(err) {
+                    console.error(err)
+                  }
+                  return
+                }
+                parent = parent[obj]
+                obj = objs.shift()
+              }
+              console.log('window.' + this.model.deletefunction + ' not found')
+              return
+            }
+            else if(this.model.loadfunction && this.model.loadfunction !== '') {
+              console.error('Data loaded externally, we cannot delete')
+            }
+            else {
+              // data loaded from local storage, find rows and delete them
+              // TODO: Finish local data deleting
             }
           }
         }

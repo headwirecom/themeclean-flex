@@ -13,7 +13,15 @@
       "placeholder": "loadfunction",
       "label": "Javascript function to call to load data",
       "model": "loadfunction",
-      "hint": "Function must accept (name)"
+      "hint": "Function must accept (endpointurl)"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "deletefunction",
+      "label": "Javascript function to call to delete rows",
+      "model": "deletefunction",
+      "hint": "Function must accept vue object"
     },
     {
       "type": "collection",

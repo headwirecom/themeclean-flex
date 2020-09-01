@@ -32,7 +32,14 @@ import javax.inject.Named;
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Javascript function to call to load data",
-          "x-form-hint": "Function must accept (name)",
+          "x-form-hint": "Function must accept (endpointurl)",
+          "x-form-type": "text"
+        },
+        "deletefunction": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Javascript function to call to delete rows",
+          "x-form-hint": "Function must accept vue object",
           "x-form-type": "text"
         },
         "columns": {
@@ -444,9 +451,13 @@ public class DatalistModel extends AbstractComponent {
 	@Default(values ="")
 	private String endpointurl;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (name)","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (endpointurl)","x-form-type":"text"} */
 	@Inject
 	private String loadfunction;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to delete rows","x-form-hint":"Function must accept vue object","x-form-type":"text"} */
+	@Inject
+	private String deletefunction;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"}}} */
 	@Inject
@@ -605,9 +616,14 @@ public class DatalistModel extends AbstractComponent {
 		return endpointurl;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (name)","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (endpointurl)","x-form-type":"text"} */
 	public String getLoadfunction() {
 		return loadfunction;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to delete rows","x-form-hint":"Function must accept vue object","x-form-type":"text"} */
+	public String getDeletefunction() {
+		return deletefunction;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"}}} */

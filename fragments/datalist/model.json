@@ -15,7 +15,14 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Javascript function to call to load data",
-          "x-form-hint": "Function must accept (name)",
+          "x-form-hint": "Function must accept (endpointurl)",
+          "x-form-type": "text"
+        },
+        "deletefunction": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Javascript function to call to delete rows",
+          "x-form-hint": "Function must accept vue object",
           "x-form-type": "text"
         },
         "columns": {
