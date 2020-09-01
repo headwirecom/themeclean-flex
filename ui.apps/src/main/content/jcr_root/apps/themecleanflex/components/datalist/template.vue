@@ -8,7 +8,7 @@
         <div class="selected-text">{{`${active.filter(element =&gt; element === true).length} selected`}}</div>
         <div
         class="selected-actions">
-          <svg class="w-24 cursor-pointer" focusable="false" viewBox="0 0 24 24"
+          <svg class="w-24 cursor-pointer action-btn" focusable="false" viewBox="0 0 24 24"
           aria-hidden="true" v-on:click="deleteAction">
             <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
             />
@@ -197,7 +197,21 @@
             }
           },
           deleteAction: function() {
-            
+            if(this.model.endpointurl && this.model.endpointurl !== '') {
+              // load data from URL
+              axios.post(this.model.endpointurl, {
+                firstName: 'Fred',
+                lastName: 'Flinstone'
+              })
+              .then( (response) => {
+                  console.log(response)
+                  // Vue.set(this, 'storageData', response.data)
+                  // Vue.set(this, 'active', new Array(response.data.length).fill(false))
+              })
+              .catch( (error) => {
+                  console.log(error)
+              })
+            }
           }
         }
     }

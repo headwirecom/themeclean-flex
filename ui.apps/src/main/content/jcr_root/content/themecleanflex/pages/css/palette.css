@@ -250,3 +250,6 @@
   color: var(--text-secondary-color);
   fill: var(--text-secondary-color);
 }
+#peregrine-app [class$="-components-datalist"] .action-btn:hover {
+  fill: var(--text-secondary-color);
+}
