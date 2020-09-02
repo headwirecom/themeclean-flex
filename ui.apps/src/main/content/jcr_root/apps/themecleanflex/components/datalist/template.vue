@@ -55,7 +55,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(data, j) in storageData" :key="data.path || j">
+          <tr v-for="(data, j) in storageData" :key="data.path || j" v-if="rowHasData(data,model.columns)">
             <td class="action-item w-24" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`"
             v-if="model.selectable === 'true'" v-bind:class="{
             'border': model.cellborders === 'true',
@@ -263,9 +263,19 @@
                   newData.splice(i,1)
                 }
               }
-              localStorage.setItem('list',newData)
+              localStorage.setItem('list',JSON.stringify(newData))
               this.loadData(newData)
             }
+          },
+          rowHasData: function(row, columns) {
+            let hasData = false
+            let col
+            for(col in columns) {
+              if( row[columns[col].value] ) {
+                hasData = true
+              }
+            }
+            return hasData
           }
         }
     }

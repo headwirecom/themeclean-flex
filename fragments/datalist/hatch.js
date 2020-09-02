@@ -66,6 +66,7 @@ module.exports = {
         const tdItem = tr.find('td.item').first()
         tr.attr('v-for', `(data, j) in storageData`)
         tr.attr(':key', `data.path || j`)
+        f.addIf(tr, 'rowHasData(data,model.columns)')
 
         f.addFor(tdItem, 'model.columns', 'col')
         f.mapField(tdItem.find('span.item-text'), 'data[col.value]', false)
