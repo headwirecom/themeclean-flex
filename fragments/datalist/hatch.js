@@ -43,53 +43,51 @@ module.exports = {
         }`
         f.bindAttribute(table, 'class', tableClasses, false)
 
-        const th = $.find('th').first()
-        f.addFor(th, 'model.columns', 'col')
-        const thClasses = `{
+        const thText = $.find('th.header-text').first()
+        f.addFor(thText, 'model.columns', 'col')
+        const thTextClasses = `{
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true',
             'sticky': model.stickyheader === 'true',
             'top-0': model.stickyheader === 'true'
         }`
-        f.bindAttribute(th, 'class', thClasses, false)
-        f.mapField(th.find('span.header-text'), 'col.header', false)
+        f.bindAttribute(thText, 'class', thTextClasses, false)
+        f.mapField(thText.find('span'), 'col.header', false)
 
-        const innerHeaderDiv = th.find('div').eq(0);
-        f.addIf(innerHeaderDiv, "model.selectable === 'true' && i === 0")
-
-        f.addIf(th.find('span.header-text').eq(1), "model.selectable !== 'true' || i !== 0" ) ;
-        f.addIf(th.find('.unchecked'), '(!active.every(element => element === true) || active.length === 0)');
-        f.addElse(th.find('.checked'));
-        f.bindEvent(th.find('.action').eq(0), 'click', 'toggleAllRows');
+        const thAction = $.find('th.action-head').first()
+        f.addIf(thAction, "model.selectable === 'true'")
+        f.addIf(thAction.find('.unchecked'), '(!active.every(element => element === true) || active.length === 0)');
+        f.addElse(thAction.find('.checked'));
+        f.bindEvent(thAction.find('.action').eq(0), 'click', 'toggleAllRows');
+        f.bindAttribute(thAction, 'class', thTextClasses, false)
 
         const tbody = $.find('tbody').first()
         const tr = tbody.find('tr').first()
-        const td = tr.find('td').first()
+        const tdItem = tr.find('td.item').first()
         tr.attr('v-for', `(data, j) in storageData`)
         tr.attr(':key', `data.path || j`)
 
-        f.addFor(td, 'model.columns', 'col')
-        f.mapField(td.find('span.item-text'), 'data[col.value]', false)
+        f.addFor(tdItem, 'model.columns', 'col')
+        f.mapField(tdItem.find('span.item-text'), 'data[col.value]', false)
 
         const tdClasses = `{
             'border': model.cellborders === 'true',
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true'
         }`    
-        f.bindAttribute(td, 'class', tdClasses, false)
-        f.addStyle(td, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
+        f.bindAttribute(tdItem, 'class', tdClasses, false)
+        f.addStyle(tdItem, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
 
-        const innerBodyDiv = td.find('div').eq(0);
-        f.addIf(innerBodyDiv, "model.selectable === 'true' && i === 0")
+        f.addStyle(tdItem.find('span.item-text'), 'color',"active[j] ? 'var(--text-secondary-color) !important' : ''");
 
-        f.bindEvent(innerBodyDiv.find('.action').eq(0), 'click', 'toggleRow(j)');
-        f.addStyle(td.find('span.item-text'), 'color',"active[j] ? 'var(--text-secondary-color) !important' : ''");
-
-        f.addIf(td.find('span.item-text').eq(1), "model.selectable !== 'true' || i !== 0" );
-
-        f.addIf(td.find('.unchecked'), '!active[j]');
-        f.addIf(td.find('.checked'), 'active[j]');
-        f.addStyle(td.find('.checked'), 'fill',"active[j] ? 'var(--text-secondary-color) !important' : ''");
+        const tdAction = $.find('td.action-item').first()
+        f.addStyle(tdAction, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
+        f.addIf(tdAction, "model.selectable === 'true'")
+        f.addIf(tdAction.find('.unchecked'), '!active[j]');
+        f.addIf(tdAction.find('.checked'), 'active[j]');
+        f.addStyle(tdAction.find('.checked'), 'fill',"active[j] ? 'var(--text-secondary-color) !important' : ''");
+        f.bindEvent(tdAction.find('.action').eq(0), 'click', 'toggleRow(j)');
+        f.bindAttribute(tdAction, 'class', tdClasses, false)
 
         const caption = $.find('caption')
         const captionClasses = `{

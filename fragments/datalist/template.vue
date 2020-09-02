@@ -24,54 +24,63 @@
         }">
         <thead>
           <tr>
-            <th class="text-left" v-for="(col, i) in model.columns" :key="col.path || i"
+            <th class="action-head w-24" v-if="model.selectable === 'true'"
             v-bind:class="{
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true',
             'sticky': model.stickyheader === 'true',
             'top-0': model.stickyheader === 'true'
         }">
-              <div class="flex" v-if="model.selectable === 'true' &amp;&amp; i === 0">
-                <span class="action relative cursor-pointer mr-2" v-on:click="toggleAllRows">
-                  <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
-                  <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
-                  aria-hidden="true">
-                    <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                    v-if="(!active.every(element =&gt; element === true) || active.length === 0)"
-                    />
-                    <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                    v-else="" />
-                  </svg>
-                </span>
-                <span class="header-text">{{col.header}}</span>
+              <div class="action relative cursor-pointer" v-on:click="toggleAllRows">
+                <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
+                <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
+                aria-hidden="true">
+                  <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  v-if="(!active.every(element =&gt; element === true) || active.length === 0)"
+                  />
+                  <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  v-else="" />
+                </svg>
               </div>
-              <span class="header-text" v-if="model.selectable !== 'true' || i !== 0">{{col.header}}</span>
+            </th>
+            <th class="header-text text-left" v-for="(col, i) in model.columns" :key="col.path || i"
+            v-bind:class="{
+            'p-3': model.densetable !== 'true',
+            'p-1': model.densetable === 'true',
+            'sticky': model.stickyheader === 'true',
+            'top-0': model.stickyheader === 'true'
+        }">
+              <span>{{col.header}}</span>
             </th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="(data, j) in storageData" :key="data.path || j">
-            <td v-for="(col, i) in model.columns" :key="col.path || i" v-bind:class="{
+            <td class="action-item w-24" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`"
+            v-if="model.selectable === 'true'" v-bind:class="{
+            'border': model.cellborders === 'true',
+            'p-3': model.densetable !== 'true',
+            'p-1': model.densetable === 'true'
+        }">
+              <span class="action relative cursor-pointer" v-on:click="toggleRow(j)">
+                <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
+                <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
+                aria-hidden="true">
+                  <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  v-if="!active[j]" />
+                  <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  v-if="active[j]" v-bind:style="`fill:${active[j] ? 'var(--text-secondary-color) !important' : ''};`"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td class="item" v-for="(col, i) in model.columns" :key="col.path || i"
+            v-bind:class="{
             'border': model.cellborders === 'true',
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true'
         }" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`">
-              <div class="flex" v-if="model.selectable === 'true' &amp;&amp; i === 0">
-                <span class="action relative cursor-pointer mr-2" v-on:click="toggleRow(j)">
-                  <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
-                  <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
-                  aria-hidden="true">
-                    <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                    v-if="!active[j]" />
-                    <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                    v-if="active[j]" v-bind:style="`fill:${active[j] ? 'var(--text-secondary-color) !important' : ''};`"
-                    />
-                  </svg>
-                </span>
-                <span class="item-text" v-bind:style="`color:${active[j] ? 'var(--text-secondary-color) !important' : ''};`">{{data[col.value]}}</span>
-              </div>
-              <span class="item-text" v-bind:style="`color:${active[j] ? 'var(--text-secondary-color) !important' : ''};`"
-              v-if="model.selectable !== 'true' || i !== 0">{{data[col.value]}}</span>
+              <span class="item-text" v-bind:style="`color:${active[j] ? 'var(--text-secondary-color) !important' : ''};`">{{data[col.value]}}</span>
             </td>
           </tr>
         </tbody>
