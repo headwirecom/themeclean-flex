@@ -119,7 +119,13 @@
           let numElements = 0;
 
           if(!this.model.endpointurl || this.model.endpointurl === '') {
-            data = JSON.parse(localStorage.getItem('list'))
+            const storage = localStorage.getItem('list')
+            try {
+              data = JSON.parse(storage)
+            }
+            catch(err) {
+              console.error('JSON parsing error loading storage: '+storage)
+            }
             numElements = data ? data.length : 0;
           }
 
@@ -147,7 +153,7 @@
                   if(result === false) {
                     console.error('Failed to load data from '+this.model.endpointurl)
                   }
-                  Vue.set(this, 'storageData', result)
+                  this.loadData(result)
                 } catch(err) {
                   console.error(err)
                 }
@@ -164,8 +170,7 @@
             axios.get(this.model.endpointurl)
             .then( (response) => {
                 console.log(response)
-                Vue.set(this, 'storageData', response.data)
-                Vue.set(this, 'active', new Array(response.data.length).fill(false))
+                this.loadData(response.data)
             })
             .catch( (error) => {
                 console.log(error)
@@ -176,7 +181,7 @@
             // interesting aspect :-) if another tab on the same computer
             // has the same page open it actually updates
             window.addEventListener('storage', () => {
-              this.storageData = JSON.parse(localStorage.getItem('list'))
+              this.loadFromLocalStorage()
             });
           }
           Vue.set(this, 'isMobile', ( window.innerWidth < 768 ) ? true : false)
@@ -195,6 +200,20 @@
                 Vue.set(this.active, i, true)
               });
             }
+          },
+          loadFromLocalStorage: function() {
+            const data = localStorage.getItem('list')
+            try {
+              this.loadData(JSON.parse(data))
+            }
+            catch(err) {
+              console.err('JSON parsing error loading storage: '+data)
+              this.loadData([])
+            }
+          },
+          loadData: function(data) {
+            Vue.set(this, 'storageData', data)
+            Vue.set(this, 'active', new Array(data.length).fill(false))
           },
           deleteAction: function() {
             if(this.model.deletefunction && this.model.deletefunction !== '') {
@@ -222,11 +241,20 @@
               return
             }
             else if(this.model.loadfunction && this.model.loadfunction !== '') {
-              console.error('Data loaded externally, we cannot delete')
+              console.error('Data loaded externally, we cannot delete without a configured delete function')
             }
             else {
-              // data loaded from local storage, find rows and delete them
-              // TODO: Finish local data deleting
+              // data loaded from local storage, find rows and delete them, then reset local storage
+              console.log('deleting rows')
+              let newData = this.storageData
+              for( let i = this.active.length-1; i >= 0; i--) {
+                // iterate from end and delete active rows as we find them
+                if( this.active[i] ) {
+                  newData.splice(i,1)
+                }
+              }
+              localStorage.setItem('list',newData)
+              this.loadData(newData)
             }
           }
         }
