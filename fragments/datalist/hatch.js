@@ -58,8 +58,8 @@ module.exports = {
         f.addIf(innerHeaderDiv, "model.selectable === 'true' && i === 0")
 
         f.addIf(th.find('span.header-text').eq(1), "model.selectable !== 'true' || i !== 0" ) ;
-        f.addIf(th.find('.unchecked'), '!active.every(element => element === true)');
-        f.addIf(th.find('.checked'), 'active.every(element => element === true)');
+        f.addIf(th.find('.unchecked'), '(!active.every(element => element === true) || active.length === 0)');
+        f.addElse(th.find('.checked'));
         f.bindEvent(th.find('.action').eq(0), 'click', 'toggleAllRows');
 
         const tbody = $.find('tbody').first()
