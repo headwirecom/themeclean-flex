@@ -50,7 +50,7 @@ module.exports = {
             'p-1': model.densetable === 'true',
             'sticky': model.stickyheader === 'true',
             'top-0': model.stickyheader === 'true',
-            'text-left':  col && col.textalignment === 'left',
+            'text-left':  (col && col.textalignment === 'left') ||  (col && col.textalignment === ''),
             'text-center': col && col.textalignment === 'center',
             'text-right':  col && col.textalignment === 'right',
         }`
@@ -78,7 +78,7 @@ module.exports = {
             'border': model.cellborders === 'true',
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true',
-            'text-left':  col && col.textalignment === 'left',
+            'text-left':  (col && col.textalignment === 'left') ||  (col && col.textalignment === ''),
             'text-center':  col && col.textalignment === 'center',
             'text-right':  col && col.textalignment === 'right',
         }`    

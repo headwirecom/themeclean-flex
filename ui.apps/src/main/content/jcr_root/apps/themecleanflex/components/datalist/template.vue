@@ -30,7 +30,7 @@
             'p-1': model.densetable === 'true',
             'sticky': model.stickyheader === 'true',
             'top-0': model.stickyheader === 'true',
-            'text-left':  col &amp;&amp; col.textalignment === 'left',
+            'text-left':  (col &amp;&amp; col.textalignment === 'left') ||  (col &amp;&amp; col.textalignment === ''),
             'text-center': col &amp;&amp; col.textalignment === 'center',
             'text-right':  col &amp;&amp; col.textalignment === 'right',
         }">
@@ -52,7 +52,7 @@
             'p-1': model.densetable === 'true',
             'sticky': model.stickyheader === 'true',
             'top-0': model.stickyheader === 'true',
-            'text-left':  col &amp;&amp; col.textalignment === 'left',
+            'text-left':  (col &amp;&amp; col.textalignment === 'left') ||  (col &amp;&amp; col.textalignment === ''),
             'text-center': col &amp;&amp; col.textalignment === 'center',
             'text-right':  col &amp;&amp; col.textalignment === 'right',
         }">
@@ -67,7 +67,7 @@
             'border': model.cellborders === 'true',
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true',
-            'text-left':  col &amp;&amp; col.textalignment === 'left',
+            'text-left':  (col &amp;&amp; col.textalignment === 'left') ||  (col &amp;&amp; col.textalignment === ''),
             'text-center':  col &amp;&amp; col.textalignment === 'center',
             'text-right':  col &amp;&amp; col.textalignment === 'right',
         }">
@@ -88,7 +88,7 @@
             'border': model.cellborders === 'true',
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true',
-            'text-left':  col &amp;&amp; col.textalignment === 'left',
+            'text-left':  (col &amp;&amp; col.textalignment === 'left') ||  (col &amp;&amp; col.textalignment === ''),
             'text-center':  col &amp;&amp; col.textalignment === 'center',
             'text-right':  col &amp;&amp; col.textalignment === 'right',
         }" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`">
