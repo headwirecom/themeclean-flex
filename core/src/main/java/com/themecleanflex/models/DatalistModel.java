@@ -60,6 +60,27 @@ import javax.inject.Named;
               "x-source": "inject",
               "x-form-label": "Data Value",
               "x-form-type": "text"
+            },
+            "textalignment": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Text alignment",
+              "x-form-type": "materialselect",
+              "x-default": "left",
+              "properties": {
+                "left": {
+                  "x-form-name": "left",
+                  "x-form-value": "left"
+                },
+                "center": {
+                  "x-form-name": "center",
+                  "x-form-value": "center"
+                },
+                "right": {
+                  "x-form-name": "right",
+                  "x-form-value": "right"
+                }
+              }
             }
           }
         },
@@ -459,7 +480,7 @@ public class DatalistModel extends AbstractComponent {
 	@Inject
 	private String deletefunction;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"textalignment":{"type":"string","x-source":"inject","x-form-label":"Text alignment","x-form-type":"materialselect","x-default":"left","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}}}} */
 	@Inject
 	private List<IComponent> columns;
 
@@ -626,7 +647,7 @@ public class DatalistModel extends AbstractComponent {
 		return deletefunction;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"textalignment":{"type":"string","x-source":"inject","x-form-label":"Text alignment","x-form-type":"materialselect","x-default":"left","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}}}} */
 	public List<IComponent> getColumns() {
 		return columns;
 	}

@@ -44,6 +44,26 @@
           "placeholder": "value",
           "label": "Data Value",
           "model": "value"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "left",
+              "value": "left"
+            },
+            {
+              "name": "center",
+              "value": "center"
+            },
+            {
+              "name": "right",
+              "value": "right"
+            }
+          ],
+          "placeholder": "textalignment",
+          "label": "Text alignment",
+          "model": "textalignment"
         }
       ],
       "placeholder": "columns",

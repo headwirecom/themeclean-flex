@@ -29,7 +29,10 @@
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true',
             'sticky': model.stickyheader === 'true',
-            'top-0': model.stickyheader === 'true'
+            'top-0': model.stickyheader === 'true',
+            'text-left':  col &amp;&amp; col.textalignment === 'left',
+            'text-center': col &amp;&amp; col.textalignment === 'center',
+            'text-right':  col &amp;&amp; col.textalignment === 'right',
         }">
               <div class="action relative cursor-pointer" v-on:click="toggleAllRows">
                 <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
@@ -43,14 +46,17 @@
                 </svg>
               </div>
             </th>
-            <th class="header-text text-left" v-for="(col, i) in model.columns" :key="col.path || i"
+            <th class="header-item" v-for="(col, i) in model.columns" :key="col.path || i"
             v-bind:class="{
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true',
             'sticky': model.stickyheader === 'true',
-            'top-0': model.stickyheader === 'true'
+            'top-0': model.stickyheader === 'true',
+            'text-left':  col &amp;&amp; col.textalignment === 'left',
+            'text-center': col &amp;&amp; col.textalignment === 'center',
+            'text-right':  col &amp;&amp; col.textalignment === 'right',
         }">
-              <span>{{col.header}}</span>
+              <span class="header-item-text">{{col.header}}</span>
             </th>
           </tr>
         </thead>
@@ -60,7 +66,10 @@
             v-if="model.selectable === 'true'" v-bind:class="{
             'border': model.cellborders === 'true',
             'p-3': model.densetable !== 'true',
-            'p-1': model.densetable === 'true'
+            'p-1': model.densetable === 'true',
+            'text-left':  col &amp;&amp; col.textalignment === 'left',
+            'text-center':  col &amp;&amp; col.textalignment === 'center',
+            'text-right':  col &amp;&amp; col.textalignment === 'right',
         }">
               <span class="action relative cursor-pointer" v-on:click="toggleRow(j)">
                 <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
@@ -78,7 +87,10 @@
             v-bind:class="{
             'border': model.cellborders === 'true',
             'p-3': model.densetable !== 'true',
-            'p-1': model.densetable === 'true'
+            'p-1': model.densetable === 'true',
+            'text-left':  col &amp;&amp; col.textalignment === 'left',
+            'text-center':  col &amp;&amp; col.textalignment === 'center',
+            'text-right':  col &amp;&amp; col.textalignment === 'right',
         }" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`">
               <span class="item-text" v-bind:style="`color:${active[j] ? 'var(--text-secondary-color) !important' : ''};`">{{data[col.value]}}</span>
             </td>

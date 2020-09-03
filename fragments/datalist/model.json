@@ -43,6 +43,27 @@
               "x-source": "inject",
               "x-form-label": "Data Value",
               "x-form-type": "text"
+            },
+            "textalignment": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Text alignment",
+              "x-form-type": "materialselect",
+              "x-default": "left",
+              "properties":{
+                "left": {
+                  "x-form-name": "left",
+                  "x-form-value": "left"
+                },
+                "center": {
+                  "x-form-name": "center",
+                  "x-form-value": "center"
+                },
+                "right": {
+                  "x-form-name": "right",
+                  "x-form-value": "right"
+                }
+              }
             }
           }
         },

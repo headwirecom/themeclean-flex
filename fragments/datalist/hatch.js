@@ -43,13 +43,16 @@ module.exports = {
         }`
         f.bindAttribute(table, 'class', tableClasses, false)
 
-        const thText = $.find('th.header-text').first()
+        const thText = $.find('th.header-item').first()
         f.addFor(thText, 'model.columns', 'col')
         const thTextClasses = `{
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true',
             'sticky': model.stickyheader === 'true',
-            'top-0': model.stickyheader === 'true'
+            'top-0': model.stickyheader === 'true',
+            'text-left':  col && col.textalignment === 'left',
+            'text-center': col && col.textalignment === 'center',
+            'text-right':  col && col.textalignment === 'right',
         }`
         f.bindAttribute(thText, 'class', thTextClasses, false)
         f.mapField(thText.find('span'), 'col.header', false)
@@ -74,13 +77,16 @@ module.exports = {
         const tdClasses = `{
             'border': model.cellborders === 'true',
             'p-3': model.densetable !== 'true',
-            'p-1': model.densetable === 'true'
+            'p-1': model.densetable === 'true',
+            'text-left':  col && col.textalignment === 'left',
+            'text-center':  col && col.textalignment === 'center',
+            'text-right':  col && col.textalignment === 'right',
         }`    
         f.bindAttribute(tdItem, 'class', tdClasses, false)
         f.addStyle(tdItem, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
 
         f.addStyle(tdItem.find('span.item-text'), 'color',"active[j] ? 'var(--text-secondary-color) !important' : ''");
-
+        
         const tdAction = $.find('td.action-item').first()
         f.addStyle(tdAction, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
         f.addIf(tdAction, "model.selectable === 'true'")
