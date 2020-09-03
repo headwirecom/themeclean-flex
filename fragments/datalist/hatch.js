@@ -35,7 +35,16 @@ module.exports = {
         f.mapField(mobileTd, 'data[col.value]', false)
 
         mobileTr.prepend("<td class='mobile-header'>{{col.header}}</td>")
-        f.bindAttribute($.find('.mobile-table td'), 'class', `{ 'border': model.cellborders === 'true', 'p-3': model.densetable !== 'true', 'p-1': model.densetable === 'true'}`, false)
+        
+        const mobileTdClasses = `{
+            'border': model.cellborders === 'true', 
+            'p-3': model.densetable !== 'true', 
+            'p-1': model.densetable === 'true',
+            'align-top':  model.rowalignment === 'top' ||  model.rowalignment === '',
+            'align-center':  model.rowalignment === 'center',
+            'align-bottom':  model.rowalignment === 'bottom'
+        }`
+        f.bindAttribute($.find('.mobile-table td'), 'class', mobileTdClasses, false)
 
         const table = $.find('table')
         const tableClasses = `{
@@ -81,6 +90,9 @@ module.exports = {
             'text-left':  (col && col.textalignment === 'left') ||  (col && col.textalignment === ''),
             'text-center':  col && col.textalignment === 'center',
             'text-right':  col && col.textalignment === 'right',
+            'align-top':  model.rowalignment === 'top' ||  model.rowalignment === '',
+            'align-center':  model.rowalignment === 'center',
+            'align-bottom':  model.rowalignment === 'bottom'
         }`    
         f.bindAttribute(tdItem, 'class', tdClasses, false)
         f.addStyle(tdItem, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")

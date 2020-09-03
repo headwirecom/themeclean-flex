@@ -67,6 +67,27 @@
             }
           }
         },
+        "rowalignment": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Row alignment",
+          "x-form-type": "materialselect",
+          "x-default": "top",
+          "properties":{
+            "top": {
+              "x-form-name": "top",
+              "x-form-value": "top"
+            },
+            "center": {
+              "x-form-name": "center",
+              "x-form-value": "center"
+            },
+            "bottom": {
+              "x-form-name": "bottom",
+              "x-form-value": "bottom"
+            }
+          }
+        },
         "stripedrows": {
           "type": "string",
           "x-source": "inject",

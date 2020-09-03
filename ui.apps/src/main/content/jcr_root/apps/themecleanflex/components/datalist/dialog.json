@@ -71,6 +71,26 @@
       "model": "columns"
     },
     {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "top",
+          "value": "top"
+        },
+        {
+          "name": "center",
+          "value": "center"
+        },
+        {
+          "name": "bottom",
+          "value": "bottom"
+        }
+      ],
+      "placeholder": "rowalignment",
+      "label": "Row alignment",
+      "model": "rowalignment"
+    },
+    {
       "type": "materialswitch",
       "textOn": "yes",
       "textOff": "no",

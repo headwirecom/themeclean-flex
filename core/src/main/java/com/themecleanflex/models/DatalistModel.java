@@ -84,6 +84,27 @@ import javax.inject.Named;
             }
           }
         },
+        "rowalignment": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Row alignment",
+          "x-form-type": "materialselect",
+          "x-default": "top",
+          "properties": {
+            "top": {
+              "x-form-name": "top",
+              "x-form-value": "top"
+            },
+            "center": {
+              "x-form-name": "center",
+              "x-form-value": "center"
+            },
+            "bottom": {
+              "x-form-name": "bottom",
+              "x-form-value": "bottom"
+            }
+          }
+        },
         "stripedrows": {
           "type": "string",
           "x-source": "inject",
@@ -484,6 +505,11 @@ public class DatalistModel extends AbstractComponent {
 	@Inject
 	private List<IComponent> columns;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Row alignment","x-form-type":"materialselect","x-default":"top","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"center":{"x-form-name":"center","x-form-value":"center"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
+	@Inject
+	@Default(values ="top")
+	private String rowalignment;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Striped Rows","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String stripedrows;
@@ -650,6 +676,11 @@ public class DatalistModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"textalignment":{"type":"string","x-source":"inject","x-form-label":"Text alignment","x-form-type":"materialselect","x-default":"left","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}}}} */
 	public List<IComponent> getColumns() {
 		return columns;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Row alignment","x-form-type":"materialselect","x-default":"top","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"center":{"x-form-name":"center","x-form-value":"center"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
+	public String getRowalignment() {
+		return rowalignment;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Striped Rows","x-form-type":"materialswitch","x-default":false} */

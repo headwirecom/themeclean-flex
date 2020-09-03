@@ -70,6 +70,9 @@
             'text-left':  (col &amp;&amp; col.textalignment === 'left') ||  (col &amp;&amp; col.textalignment === ''),
             'text-center':  col &amp;&amp; col.textalignment === 'center',
             'text-right':  col &amp;&amp; col.textalignment === 'right',
+            'align-top':  model.rowalignment === 'top' ||  model.rowalignment === '',
+            'align-center':  model.rowalignment === 'center',
+            'align-bottom':  model.rowalignment === 'bottom'
         }">
               <span class="action relative cursor-pointer" v-on:click="toggleRow(j)">
                 <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
@@ -91,6 +94,9 @@
             'text-left':  (col &amp;&amp; col.textalignment === 'left') ||  (col &amp;&amp; col.textalignment === ''),
             'text-center':  col &amp;&amp; col.textalignment === 'center',
             'text-right':  col &amp;&amp; col.textalignment === 'right',
+            'align-top':  model.rowalignment === 'top' ||  model.rowalignment === '',
+            'align-center':  model.rowalignment === 'center',
+            'align-bottom':  model.rowalignment === 'bottom'
         }" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`">
               <span class="item-text" v-bind:style="`color:${active[j] ? 'var(--text-secondary-color) !important' : ''};`">{{data[col.value]}}</span>
             </td>
@@ -114,9 +120,23 @@
         }">
         <tbody>
           <tr v-for="(col, i) in model.columns" :key="col.path || i">
-            <td class="mobile-header" v-bind:class="{ 'border': model.cellborders === 'true', 'p-3': model.densetable !== 'true', 'p-1': model.densetable === 'true'}">{{col.header}}</td>
+            <td class="mobile-header" v-bind:class="{
+            'border': model.cellborders === 'true', 
+            'p-3': model.densetable !== 'true', 
+            'p-1': model.densetable === 'true',
+            'align-top':  model.rowalignment === 'top' ||  model.rowalignment === '',
+            'align-center':  model.rowalignment === 'center',
+            'align-bottom':  model.rowalignment === 'bottom'
+        }">{{col.header}}</td>
             <td v-for="(data, i) in storageData" :key="data.path || i"
-            v-bind:class="{ 'border': model.cellborders === 'true', 'p-3': model.densetable !== 'true', 'p-1': model.densetable === 'true'}">{{data[col.value]}}</td>
+            v-bind:class="{
+            'border': model.cellborders === 'true', 
+            'p-3': model.densetable !== 'true', 
+            'p-1': model.densetable === 'true',
+            'align-top':  model.rowalignment === 'top' ||  model.rowalignment === '',
+            'align-center':  model.rowalignment === 'center',
+            'align-bottom':  model.rowalignment === 'bottom'
+        }">{{data[col.value]}}</td>
           </tr>
         </tbody>
         <caption v-bind:class="{
