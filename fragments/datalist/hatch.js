@@ -27,14 +27,32 @@ module.exports = {
         }`
         f.bindAttribute(mobileContainer, 'class', mobileContainerClasses, false)
 
-        const mobileTr = mobileContainer.find('tr').first()
-        f.addFor(mobileTr, 'model.columns', 'col')
+        const mobileActionTr = mobileContainer.find('tr.action-row').first()
+        const mobileAction = mobileActionTr.find('td.action-item').eq(0)
+        f.addFor(mobileAction, 'storageData', 'data')
+        f.addIf(mobileAction, 'rowHasData(data,model.columns)')
+        f.addIf(mobileAction.find('.unchecked'), '!active[i]');
+        f.addIf(mobileAction.find('.checked'), 'active[i]');
+        f.addStyle(mobileAction, 'background', "active[i] ? 'var(--color-red-500) !important' : ''")
+        f.addStyle(mobileAction.find('.checked'), 'fill',"active[i] ? 'var(--text-secondary-color) !important' : ''");
+        f.bindEvent(mobileAction.find('.action').eq(0), 'click', 'toggleRow(i)');
 
-        const mobileTd = mobileContainer.find('td').first()
-        f.addFor(mobileTd, 'storageData', 'data')
+        const mobileActionAll = mobileActionTr.find('td.action-item-all').eq(0)
+        f.addIf(mobileActionAll.find('.unchecked'), '(!active.every(element => element === true) || active.length === 0)');
+        f.addElse(mobileActionAll.find('.checked'));
+        f.bindEvent(mobileActionAll.find('.action').eq(0), 'click', 'toggleAllRows');
+
+        const mobileBodyTr = mobileContainer.find('tr.item-row').first()
+        f.addFor(mobileBodyTr, 'model.columns', 'col')
+
+        const mobileTd = mobileBodyTr.find('td').first()
+        mobileTd.attr('v-for', `(data, j) in storageData`)
+        mobileTd.attr(':key', `data.path || j`)
+        f.addIf(mobileTd, 'rowHasData(data,model.columns)')
         f.mapField(mobileTd, 'data[col.value]', false)
+        f.addStyle(mobileTd, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
 
-        mobileTr.prepend("<td class='mobile-header'>{{col.header}}</td>")
+        mobileBodyTr.prepend("<td class='mobile-header'>{{col.header}}</td>")
         
         const mobileTdClasses = `{
             'border': model.cellborders === 'true', 
