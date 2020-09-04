@@ -8,9 +8,14 @@ module.exports = {
             'hidden': active.filter(element => element === true).length === 0,
         }`
         f.bindAttribute(selectedContainer, 'class', selectedContainerClasses, false)
+        const mobileSelectAction = selectedContainer.find('.action').eq(0)
+        f.addIf(mobileSelectAction, '(model.mobiletablestyle === "" || model.mobiletablestyle === "default") && isMobile' )
+        f.bindEvent(mobileSelectAction, 'click', 'toggleAllRows');
+        f.addIf(mobileSelectAction.find('.unchecked'), '(!active.every(element => element === true) || active.length === 0)');
+        f.addElse(mobileSelectAction.find('.checked'));
         const selectedText = selectedContainer.find('.selected-text').eq(0)
         f.mapField(selectedText, '`${active.filter(element =&gt; element === true).length} selected`', false)
-        const actionDelete = selectedContainer.find('svg').eq(0)
+        const actionDelete = selectedContainer.find('.selected-actions svg').eq(0)
         f.bindEvent(actionDelete, 'click', 'deleteAction');
 
         const desktopContainer = $.find('div.overflow-x-hidden').eq(0);
@@ -27,32 +32,69 @@ module.exports = {
         }`
         f.bindAttribute(mobileContainer, 'class', mobileContainerClasses, false)
 
-        const mobileActionTr = mobileContainer.find('tr.action-row').first()
-        const mobileAction = mobileActionTr.find('td.action-item').eq(0)
-        f.addFor(mobileAction, 'storageData', 'data')
-        f.addIf(mobileAction, 'rowHasData(data,model.columns)')
-        f.addIf(mobileAction.find('.unchecked'), '!active[i]');
-        f.addIf(mobileAction.find('.checked'), 'active[i]');
-        f.addStyle(mobileAction, 'background', "active[i] ? 'var(--color-red-500) !important' : ''")
-        f.addStyle(mobileAction.find('.checked'), 'fill',"active[i] ? 'var(--text-secondary-color) !important' : ''");
-        f.bindEvent(mobileAction.find('.action').eq(0), 'click', 'toggleRow(i)');
+        //default mobile style
+        const mobileDefaultBody = mobileContainer.find('tbody').eq(0);
+        f.addIf(mobileDefaultBody, 'model.mobiletablestyle === "" || model.mobiletablestyle === "default"' )
 
-        const mobileActionAll = mobileActionTr.find('td.action-item-all').eq(0)
-        f.addIf(mobileActionAll.find('.unchecked'), '(!active.every(element => element === true) || active.length === 0)');
-        f.addElse(mobileActionAll.find('.checked'));
-        f.bindEvent(mobileActionAll.find('.action').eq(0), 'click', 'toggleAllRows');
+        const mobileDefaultTr =  mobileContainer.find('tr.item-row').eq(0)
+        f.addFor(mobileDefaultTr, 'model.columns', 'col')
+        mobileDefaultTr.attr(':key', `data.path || j`)
+        f.addStyle(mobileDefaultTr, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
 
-        const mobileBodyTr = mobileContainer.find('tr.item-row').first()
-        f.addFor(mobileBodyTr, 'model.columns', 'col')
+        const mobileDefaultAction = mobileDefaultBody.find('td.action-head').eq(0)
+        f.addStyle(mobileDefaultAction, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
+        f.addIf(mobileDefaultAction, 'i === 0')
+        f.addIf(mobileDefaultAction.find('.unchecked'), '!active[j]');
+        f.addIf(mobileDefaultAction.find('.checked'), 'active[j]')
+        f.addStyle(mobileDefaultAction.find('.checked'), 'fill',"active[j] ? 'var(--text-secondary-color) !important' : ''");
+        f.bindEvent(mobileDefaultAction.find('.action').eq(0), 'click', 'toggleRow(j)');
 
-        const mobileTd = mobileBodyTr.find('td').first()
-        mobileTd.attr('v-for', `(data, j) in storageData`)
-        mobileTd.attr(':key', `data.path || j`)
-        f.addIf(mobileTd, 'rowHasData(data,model.columns)')
-        f.mapField(mobileTd, 'data[col.value]', false)
-        f.addStyle(mobileTd, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
+        const mobileDefaultActionSpacer = mobileDefaultBody.find('td.mobile-action-spacer').eq(0)
+        f.addIf(mobileDefaultActionSpacer, 'i !== 0')
+        f.addStyle(mobileDefaultActionSpacer, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
 
-        mobileBodyTr.prepend("<td class='mobile-header'>{{col.header}}</td>")
+        f.mapField(mobileDefaultBody.find('td.mobile-header').eq(0), 'col.header', false)
+        mobileDefaultBody.find('td.mobile-header').eq(0).attr(':key', `col.path || i`)
+        
+        f.mapField(mobileDefaultBody.find('td.mobile-item').eq(0), 'data[col.value]', false)
+        f.addStyle(mobileDefaultBody.find('td.mobile-item').eq(0), 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
+        f.addStyle(mobileDefaultBody.find('td.mobile-item').eq(0), 'color',"active[j] ? 'var(--text-secondary-color) !important' : ''");
+        
+        f.wrap(mobileDefaultTr, 'template')
+
+        const mobileTemplate = mobileDefaultBody.find('template').first();
+        mobileTemplate.attr('v-for', `(data, j) in storageData`)
+        f.addIf(mobileTemplate, 'rowHasData(data,model.columns)')
+
+        //scroll mobile style
+        const scrollMobileBody = mobileContainer.find('tbody').eq(1)
+        f.addElse(scrollMobileBody)
+        const mobileScrollActionTr = scrollMobileBody.find('tr.action-row').eq(0)
+        const mobileScrollAction = scrollMobileBody.find('td.action-item').eq(0)
+        f.addFor(mobileScrollAction, 'storageData', 'data')
+        f.addIf(mobileScrollAction, 'rowHasData(data,model.columns)')
+        f.addIf(mobileScrollAction.find('.unchecked'), '!active[i]');
+        f.addIf(mobileScrollAction.find('.checked'), 'active[i]');
+        f.addStyle(mobileScrollAction, 'background', "active[i] ? 'var(--color-red-500) !important' : ''")
+        f.addStyle(mobileScrollAction.find('.checked'), 'fill',"active[i] ? 'var(--text-secondary-color) !important' : ''");
+        f.bindEvent(mobileScrollAction.find('.action').eq(0), 'click', 'toggleRow(i)');
+
+        const mobileScrollActionAll = mobileScrollActionTr.find('td.action-item-all').eq(0)
+        f.addIf(mobileScrollActionAll.find('.unchecked'), '(!active.every(element => element === true) || active.length === 0)');
+        f.addElse(mobileScrollActionAll.find('.checked'));
+        f.bindEvent(mobileScrollActionAll.find('.action').eq(0), 'click', 'toggleAllRows');
+
+        const mobileScrollBodyTr = scrollMobileBody.find('tr.item-row').first()
+        f.addFor(mobileScrollBodyTr, 'model.columns', 'col')
+
+        const mobileScrollTd = mobileScrollBodyTr.find('td').first()
+        mobileScrollTd.attr('v-for', `(data, j) in storageData`)
+        mobileScrollTd.attr(':key', `data.path || j`)
+        f.addIf(mobileScrollTd, 'rowHasData(data,model.columns)')
+        f.mapField(mobileScrollTd, 'data[col.value]', false)
+        f.addStyle(mobileScrollTd, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
+
+        mobileScrollBodyTr.prepend("<td class='mobile-header'>{{col.header}}</td>")
         
         const mobileTdClasses = `{
             'border': model.cellborders === 'true', 
@@ -64,6 +106,7 @@ module.exports = {
         }`
         f.bindAttribute($.find('.mobile-table td'), 'class', mobileTdClasses, false)
 
+        //desktop
         const table = $.find('table')
         const tableClasses = `{
             'striped': model.stripedrows === 'true'

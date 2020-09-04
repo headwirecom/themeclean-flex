@@ -105,6 +105,23 @@ import javax.inject.Named;
             }
           }
         },
+        "mobiletablestyle": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Mobile table style",
+          "x-form-type": "materialselect",
+          "x-default": "default",
+          "properties": {
+            "default": {
+              "x-form-name": "default",
+              "x-form-value": "default"
+            },
+            "scroll": {
+              "x-form-name": "scroll",
+              "x-form-value": "scroll"
+            }
+          }
+        },
         "stripedrows": {
           "type": "string",
           "x-source": "inject",
@@ -510,6 +527,11 @@ public class DatalistModel extends AbstractComponent {
 	@Default(values ="top")
 	private String rowalignment;
 
+	/* {"type":"string","x-source":"inject","x-form-label":"Mobile table style","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"default","x-form-value":"default"},"scroll":{"x-form-name":"scroll","x-form-value":"scroll"}}} */
+	@Inject
+	@Default(values ="default")
+	private String mobiletablestyle;
+
 	/* {"type":"string","x-source":"inject","x-form-label":"Striped Rows","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String stripedrows;
@@ -681,6 +703,11 @@ public class DatalistModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Row alignment","x-form-type":"materialselect","x-default":"top","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"center":{"x-form-name":"center","x-form-value":"center"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
 	public String getRowalignment() {
 		return rowalignment;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Mobile table style","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"default","x-form-value":"default"},"scroll":{"x-form-name":"scroll","x-form-value":"scroll"}}} */
+	public String getMobiletablestyle() {
+		return mobiletablestyle;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Striped Rows","x-form-type":"materialswitch","x-default":false} */

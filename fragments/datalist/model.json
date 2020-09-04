@@ -88,6 +88,23 @@
             }
           }
         },
+        "mobiletablestyle": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Mobile table style",
+          "x-form-type": "materialselect",
+          "x-default": "default",
+          "properties":{
+            "default": {
+              "x-form-name": "default",
+              "x-form-value": "default"
+            },
+            "scroll": {
+              "x-form-name": "scroll",
+              "x-form-value": "scroll"
+            }
+          }
+        },
         "stripedrows": {
           "type": "string",
           "x-source": "inject",

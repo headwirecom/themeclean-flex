@@ -91,6 +91,22 @@
       "model": "rowalignment"
     },
     {
+      "type": "material-select",
+      "values": [
+        {
+          "name": "default",
+          "value": "default"
+        },
+        {
+          "name": "scroll",
+          "value": "scroll"
+        }
+      ],
+      "placeholder": "mobiletablestyle",
+      "label": "Mobile table style",
+      "model": "mobiletablestyle"
+    },
+    {
       "type": "materialswitch",
       "textOn": "yes",
       "textOff": "no",
