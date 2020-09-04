@@ -17,5 +17,19 @@ $formsapp = {
         } else {
             return JSON.parse(records);
         }
+    },
+
+    delete(data, active, path) {
+        // data loaded from local storage, find rows and delete them, then reset local storage
+        console.log('deleting rows')
+        let newData = data
+        for( let i = active.length-1; i >= 0; i--) {
+            // iterate from end and delete active rows as we find them
+            if( active[i] ) {
+                newData.splice(i,1)
+            }
+        }
+        localStorage.setItem(path,JSON.stringify(newData))
+        return newData
     }
 }

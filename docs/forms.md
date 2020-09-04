@@ -77,7 +77,8 @@ Here is an example form with a single field called name:
 The form will do an ajax POST with the form data to this URL. If the response is successful, it will forward the user to the configured Submit Success Page.
 
 #### Javascript Function to Call on Submit
-Instead of the default POST behaviour, the user can configure a custom function to be called instead. This function can be part of any object as long as it can be accessed through the javascript window object. It will be passed two parameters:
+Instead of the default POST behaviour, the user can configure a custom function to be called instead. This function can be part of any object as long as it can be accessed through the javascript window object. 
+It will be passed two parameters:
 - model - the Vue object model with the component configuration
 - formData - an object containing the form data
 

@@ -62,10 +62,27 @@ ex.
 
 #### Javascript Function to Get Data
 Instead of the default GET endpoint behaviour, the user can configure a custom function to be called instead. This function can be part of any object as long as it can be accessed through the javascript window object.
+This function will be passed one parameter
+- Path - the endpoint URL specified in the configuration
+
+#### Javascript Function to Delete Data
+If the table is selectable, the user can configure a custom function to delete data. If the load function is defined, this function must also be defined for table delete action to work correctly. 
+The function will be passed three parameters:
+- Table Data - the data array currently backing the table
+- Active - a boolean array denoting which rows of the table data array are currently selected
+- Path - the endpoint URL specified in the configuration
+
+This function is expected to return a new data array with the selected rows removed.
 
 #### Table Configuration
 Add columns with any header value with the data value being a property in the objects returned by the endpoint/local storage.
-ex. Column Header: First Name, data value: firstName
+Each column takes three configuration options:
+- Header - The name to be displayed in the column header
+- Data Value - The data in the backing model to display in this column
+- Column Alignment - The horizontal alignment to render text in the cell.
+
+#### Row Alignment
+Defines the default row vertical alignment for the table.
 
 #### Striped Rows
 
