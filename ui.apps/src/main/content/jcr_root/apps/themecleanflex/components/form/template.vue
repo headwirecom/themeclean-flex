@@ -59,9 +59,6 @@ export default {
           }
           console.log('window.' + this.model.submitfunction + ' not found')
           Vue.set(this, 'failureText', this.model.failmessage);
-          setTimeout(() => {
-            Vue.set(this, 'failureText', '');
-          }, 1500)
           return
         }
         axios.post(this.model.endpointurl, {
