@@ -209,6 +209,10 @@
   background-color: var(--text-primary-color);
 }
 
+#peregrine-app [class$="-components-navigation"] .dropdown-list {
+  background: var(--bg-primary);
+}
+
 #peregrine-app [class$="-components-tabs"] a[aria-selected="true"],
 #peregrine-app [class$="-components-tabs"] a[aria-selected="true"] * {
   color: var(--btn-primary-color);

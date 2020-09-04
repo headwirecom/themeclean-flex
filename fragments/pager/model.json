@@ -16,7 +16,7 @@
           "x-source": "inject",
           "x-form-label": "Include Root",
           "x-form-type": "materialswitch",
-          "x-form-default": false
+          "x-default": false
         },
         "buttonsize": {
           "type": "string",
@@ -85,28 +85,28 @@
           "x-source": "inject",
           "x-form-label": "Previous Label",
           "x-form-type": "text",
-          "x-form-default": "Previous"
+          "x-default": "Previous"
         },
         "nextlabel": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Next Label",
           "x-form-type": "text",
-          "x-form-default": "Next"
+          "x-default": "Next"
         },
         "disableprevious": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Disable the previous button",
           "x-form-type": "materialswitch",
-          "x-form-default": false
+          "x-default": false
         },
         "excludesitemapexcludes": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Exclude pages Excluded in Sitemap",
           "x-form-type": "materialswitch",
-          "x-form-default": false
+          "x-default": false
         },
         "bgref": {
             "x-form-type": "reference",

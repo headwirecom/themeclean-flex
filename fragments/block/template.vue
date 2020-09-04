@@ -82,8 +82,8 @@
           styles: function() {
             let styles = {}
 
-            styles.paddingTop = `${this.model.toppadding}px`;
-            styles.paddingBottom = `${this.model.bottompadding}px`;
+            if(this.model.toppadding) styles.paddingTop = `${this.model.toppadding}px`;
+            if(this.model.bottompadding) styles.paddingBottom = `${this.model.bottompadding}px`;
             styles.position = 'relative';
             styles.overflow = 'hidden';
 

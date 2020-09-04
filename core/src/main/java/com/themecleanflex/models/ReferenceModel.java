@@ -1,130 +1,55 @@
 package com.themecleanflex.models;
 
-import com.peregrine.adaption.PerPage;
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.peregrine.commons.util.PerConstants;
+
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
-import javax.inject.Inject;
+import com.peregrine.nodetypes.models.Container;
 import org.apache.sling.api.resource.Resource;
-import org.apache.sling.api.resource.ValueMap;
+import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.factory.ExportException;
+import org.apache.sling.models.factory.MissingExporterException;
+import org.apache.sling.models.factory.ModelFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.peregrine.commons.util.PerConstants;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+
+import javax.inject.Inject;
+import javax.inject.Named;
+
 /*
     //GEN[:DATA
     {
   "definitions": {
-    "Pager": {
+    "Reference": {
       "type": "object",
       "x-type": "component",
       "properties": {
-        "rootpage": {
+        "reference": {
           "type": "string",
           "x-source": "inject",
+          "x-form-label": "Reference",
           "x-form-type": "pathbrowser",
-          "x-form-label": "Root Page",
           "x-form-browserRoot": "/content/themecleanflex/pages"
         },
-        "includeroot": {
+        "contentnameref": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Include Root",
-          "x-form-type": "materialswitch",
-          "x-default": false
-        },
-        "buttonsize": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Button Size",
-          "x-form-type": "materialselect",
-          "x-default": "default",
-          "properties": {
-            "default": {
-              "x-form-name": "Default",
-              "x-form-value": "default"
-            },
-            "large": {
-              "x-form-name": "Large",
-              "x-form-value": "large"
-            },
-            "small": {
-              "x-form-name": "Small",
-              "x-form-value": "small"
-            }
-          }
-        },
-        "buttoncolor": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Button Color",
-          "x-form-type": "materialselect",
-          "x-default": "primary",
-          "properties": {
-            "primary": {
-              "x-form-name": "Primary",
-              "x-form-value": "primary"
-            },
-            "secondary": {
-              "x-form-name": "Secondary",
-              "x-form-value": "secondary"
-            },
-            "success": {
-              "x-form-name": "Success",
-              "x-form-value": "success"
-            },
-            "danger": {
-              "x-form-name": "Danger",
-              "x-form-value": "danger"
-            },
-            "warning": {
-              "x-form-name": "Warning",
-              "x-form-value": "warning"
-            },
-            "info": {
-              "x-form-name": "Info",
-              "x-form-value": "info"
-            },
-            "light": {
-              "x-form-name": "Light",
-              "x-form-value": "light"
-            },
-            "dark": {
-              "x-form-name": "Dark",
-              "x-form-value": "dark"
-            }
-          }
-        },
-        "prevlabel": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Previous Label",
-          "x-form-type": "text",
-          "x-default": "Previous"
-        },
-        "nextlabel": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Next Label",
-          "x-form-type": "text",
-          "x-default": "Next"
-        },
-        "disableprevious": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Disable the previous button",
-          "x-form-type": "materialswitch",
-          "x-default": false
-        },
-        "excludesitemapexcludes": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Exclude pages Excluded in Sitemap",
-          "x-form-type": "materialswitch",
-          "x-default": false
+          "x-form-label": "Content Name Reference",
+          "x-form-type": "text"
         },
         "bgref": {
           "x-form-type": "reference",
@@ -375,10 +300,10 @@ import com.peregrine.commons.util.PerConstants;
       }
     }
   },
-  "name": "Pager",
-  "componentPath": "themecleanflex/components/pager",
+  "name": "Reference",
+  "componentPath": "themecleanflex/components/reference",
   "package": "com.themecleanflex.models",
-  "modelName": "Pager",
+  "modelName": "Reference",
   "classNameParent": "AbstractComponent"
 }
 //GEN]
@@ -387,7 +312,7 @@ import com.peregrine.commons.util.PerConstants;
 //GEN[:DEF
 @Model(
         adaptables = Resource.class,
-        resourceType = "themecleanflex/components/pager",
+        resourceType = "themecleanflex/components/reference",
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
         adapters = IComponent.class
 )
@@ -397,48 +322,18 @@ import com.peregrine.commons.util.PerConstants;
 )
 
 //GEN]
-public class PagerModel extends AbstractComponent {
+public class ReferenceModel extends AbstractComponent {
 
-  	private static final Logger LOG = LoggerFactory.getLogger(PagerModel.class);
-
-    public PagerModel(Resource r) { super(r); }
+    public ReferenceModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Reference","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"} */
 	@Inject
-	private String rootpage;
+	private String reference;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Include Root","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Content Name Reference","x-form-type":"text"} */
 	@Inject
-	private String includeroot;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
-	@Inject
-	@Default(values ="default")
-	private String buttonsize;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"info":{"x-form-name":"Info","x-form-value":"info"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
-	@Inject
-	@Default(values ="primary")
-	private String buttoncolor;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text","x-default":"Previous"} */
-	@Inject
-	@Default(values ="Previous")
-	private String prevlabel;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text","x-default":"Next"} */
-	@Inject
-	@Default(values ="Next")
-	private String nextlabel;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Disable the previous button","x-form-type":"materialswitch","x-default":false} */
-	@Inject
-	private String disableprevious;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-default":false} */
-	@Inject
-	private String excludesitemapexcludes;
+	private String contentnameref;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
@@ -541,44 +436,14 @@ public class PagerModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Root Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
-	public String getRootpage() {
-		return rootpage;
+    	/* {"type":"string","x-source":"inject","x-form-label":"Reference","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	public String getReference() {
+		return reference;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Include Root","x-form-type":"materialswitch","x-default":false} */
-	public String getIncluderoot() {
-		return includeroot;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
-	public String getButtonsize() {
-		return buttonsize;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"info":{"x-form-name":"Info","x-form-value":"info"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
-	public String getButtoncolor() {
-		return buttoncolor;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Previous Label","x-form-type":"text","x-default":"Previous"} */
-	public String getPrevlabel() {
-		return prevlabel;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Next Label","x-form-type":"text","x-default":"Next"} */
-	public String getNextlabel() {
-		return nextlabel;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Disable the previous button","x-form-type":"materialswitch","x-default":false} */
-	public String getDisableprevious() {
-		return disableprevious;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-default":false} */
-	public String getExcludesitemapexcludes() {
-		return excludesitemapexcludes;
+	/* {"type":"string","x-source":"inject","x-form-label":"Content Name Reference","x-form-type":"text"} */
+	public String getContentnameref() {
+		return contentnameref;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
@@ -691,92 +556,76 @@ public class PagerModel extends AbstractComponent {
 
     //GEN[:CUSTOMGETTERS
     //GEN]
-	public String getExcludeSitemapExcludes() {
-		return  excludesitemapexcludes == null ? "false" : excludesitemapexcludes;
-	}
 
-	public String getDisablePrevious() {
-		return disableprevious == null ? "false" : disableprevious;
-	}
+    private static final Logger LOG = LoggerFactory.getLogger(ReferenceModel.class);
 
-	public String getRootPage() {
-		if(rootpage == null)
-			return "";
-		if(rootpage.endsWith("/"))
-			return rootpage.substring(0,rootpage.length()-1);
-		return rootpage;
-	}
-
-	public String getIncludeRoot() {
-		return includeroot == null ? "false" : includeroot;
-	}
-
-    public String getPrevious() {
-		if(Boolean.parseBoolean(getDisablePrevious())) {
-			return "unknown";
-		}
-		Resource res = getCurrentPage(getRootResource());
-		//LOG.debug("resource: {}",res);
-		if(res == null) res = getCurrentPage(getResource());
-		PerPage page = res.adaptTo(PerPage.class);
-		if(page == null) return "not adaptable";
-		PerPage prev = page.getPrevious();
-		if(Boolean.parseBoolean(getExcludeSitemapExcludes())) {
-			while(prev != null && prev.getContentProperty(PerConstants.EXCLUDE_FROM_SITEMAP, false)) {
-				prev = prev.getPrevious();
-			}
-		}
-		if(prev != null && !prev.getPath().startsWith(getRootPage())) {
-			prev = null;
-		}
-		if(prev != null && !Boolean.parseBoolean(getIncludeRoot())) {
-			// include root is false, so make sure path isn't equal to root page
-			if(prev.getPath().equals(getRootPage())) {
-				prev = null;
-			}
-		}
-		return prev != null ? prev.getPath(): "unknown";
+    @Inject
+    private ModelFactory modelFactory;
+  
+    public String referenceJson;
+  
+    public String getReferenceJson() {
+      referenceJson = generateReferenceJson();
+      return  referenceJson;
     }
+  
+    private String generateReferenceJson() {
+      if(reference == null || "".equals(reference)) {
+        return null;
+      }
+      ResourceResolver resourceResolver = getResource().getResourceResolver();
+      Resource referencedResource = resourceResolver.getResource(reference+"/jcr:content");
+      if(referencedResource == null) {
+        LOG.error("Reference '{}' does not resolve to a resource.", reference);
+        return null;
+      }
+      try {
+        Map referenceMap = modelFactory.exportModelForResource(referencedResource,
+            PerConstants.JACKSON, Map.class, Collections.<String, String>emptyMap());
 
-    public String getNext() {
-		Resource res = getCurrentPage(getRootResource());
-		if(res == null) res = getCurrentPage(getResource());
-		PerPage page = res.adaptTo(PerPage.class);
-		if(page == null) return "not adaptable";
-		PerPage next = page.getNext();
-		if(Boolean.parseBoolean(getExcludeSitemapExcludes())) {
-			while(next != null && next.getContentProperty(PerConstants.EXCLUDE_FROM_SITEMAP, false)) {
-				next = next.getNext();
-			}
-		}
-		if(next != null && !next.getPath().startsWith(getRootPage())) {
-			next = null;
-		}
-		return next != null ? next.getPath(): "unknown";
-    }
-    
-    private Resource getCurrentPage(Resource resource) {
-      if(resource == null) { return null; }
-      String resourceType = null;
-      try{
-        
-        ValueMap props = resource.adaptTo(ValueMap.class);
-        resourceType = props.get("jcr:primaryType", "type not found");
-        LOG.debug("resource type is: " + resourceType + "  path is:" + resource.getPath());
-        // we only care about per:page node
-        if("per:Page".equals(resourceType)) {
-          LOG.debug("returned resource type is: " + resourceType + "  path is:" + resource.getPath());
-          return resource;
+        // TODO: finding the node should happen before the export due to the fact that this
+        // could result in a recursion if we point to content on the same page
+        Map result = findNode(referenceMap, "contentname", getContentnameref());
+        if(result != null) {
+          StringWriter writer = new StringWriter();
+          ObjectMapper mapper = new ObjectMapper();
+          mapper.writeValue(writer, result);
+          writer.close();
+          return writer.toString();
+        } else {
+          return null;
         }
-        else {
-          if(resource.getParent() != null) {
-            return getCurrentPage(resource.getParent());
-          }
-        }
-      } catch(Exception e){
-          LOG.error("Exception: " + e);
+      } catch (ExportException e) {
+        LOG.error("Export failed for resource " + reference, e);
+      } catch (MissingExporterException e) {
+        LOG.error("Could not find exporter for resource  " + reference, e);
+      } catch (IOException e) {
+        LOG.error("Failed to write json for resource  " + reference, e);
       }
       return null;
     }
 
-}
+    // find a node with the given key/value pair in our json output
+    private Map findNode(Map map, String name, String value) {
+      for (Object key : map.keySet()) {
+        Object val = map.get(key);
+        if(key.equals(name)) {
+          if(value.equals(val)) {
+            return map;
+          }
+        }
+        if(key.equals("children") && val instanceof ArrayList) {
+          ArrayList children = (ArrayList) val;
+          
+          for (Object child : children) {
+            if(child instanceof Map) {
+              Map ret = findNode((Map) child, name, value);
+              if(ret != null) return ret;
+            }
+          }
+        }
+      }
+      return null;
+    } 
+
+  }

@@ -3,113 +3,16 @@
     {
       "type": "pathbrowser",
       "browserRoot": "/content/themecleanflex/pages",
-      "placeholder": "rootpage",
-      "label": "Root Page",
-      "model": "rootpage"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "includeroot",
-      "label": "Include Root",
-      "model": "includeroot"
-    },
-    {
-      "type": "material-select",
-      "values": [
-        {
-          "name": "Default",
-          "value": "default"
-        },
-        {
-          "name": "Large",
-          "value": "large"
-        },
-        {
-          "name": "Small",
-          "value": "small"
-        }
-      ],
-      "placeholder": "buttonsize",
-      "label": "Button Size",
-      "model": "buttonsize"
-    },
-    {
-      "type": "material-select",
-      "values": [
-        {
-          "name": "Primary",
-          "value": "primary"
-        },
-        {
-          "name": "Secondary",
-          "value": "secondary"
-        },
-        {
-          "name": "Success",
-          "value": "success"
-        },
-        {
-          "name": "Danger",
-          "value": "danger"
-        },
-        {
-          "name": "Warning",
-          "value": "warning"
-        },
-        {
-          "name": "Info",
-          "value": "info"
-        },
-        {
-          "name": "Light",
-          "value": "light"
-        },
-        {
-          "name": "Dark",
-          "value": "dark"
-        }
-      ],
-      "placeholder": "buttoncolor",
-      "label": "Button Color",
-      "model": "buttoncolor"
+      "placeholder": "reference",
+      "label": "Reference",
+      "model": "reference"
     },
     {
       "type": "input",
       "inputType": "text",
-      "placeholder": "prevlabel",
-      "label": "Previous Label",
-      "model": "prevlabel"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "nextlabel",
-      "label": "Next Label",
-      "model": "nextlabel"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "disableprevious",
-      "label": "Disable the previous button",
-      "model": "disableprevious"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "excludesitemapexcludes",
-      "label": "Exclude pages Excluded in Sitemap",
-      "model": "excludesitemapexcludes"
+      "placeholder": "contentnameref",
+      "label": "Content Name Reference",
+      "model": "contentnameref"
     },
     {
       "type": "input",
