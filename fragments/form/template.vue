@@ -47,11 +47,11 @@ export default {
         if(this.model.submitfunction != 'onSubmit' && this.model.submitfunction != '') {
           const objs = this.model.submitfunction.split('.')
           let parent = window
-          let i = 0
-          while(i < objs.length && parent[objs[i]]) {
-            if(i == objs.length-1) {
+          let obj = objs.shift()
+          while(obj && parent[obj]) {
+            if(objs.length === 0) {
               try {
-                const result = parent[objs[i]](this.model,this.formModel)
+                const result = parent[obj](this.model,this.formModel)
                 if(result === false) {
                   Vue.set(this, 'failureText', this.model.failmessage);
                   setTimeout(() => {
@@ -67,8 +67,8 @@ export default {
               }
               return
             }
-            parent = parent[objs[i]]
-            i++
+            parent = parent[obj]
+            obj = objs.shift()
           }
           console.log('window.' + this.model.submitfunction + ' not found')
           Vue.set(this, 'failureText', this.model.failmessage);
@@ -78,10 +78,10 @@ export default {
           return
         }
         axios.post(this.model.endpointurl, {
-            form: this.formModel
+          form: this.formModel
         })
         .then( (response) => {
-            $peregrineApp.loadContent(this.model.successpage)
+          $peregrineApp.loadContent(this.model.successpage)
         })
         .catch( (error) => {
           Vue.set(this, 'failureText', this.model.failmessage);

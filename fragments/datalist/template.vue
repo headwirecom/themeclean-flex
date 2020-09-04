@@ -345,11 +345,11 @@
               // load data from URL
               axios.get(this.model.endpointurl)
               .then( (response) => {
-                  console.log(response)
-                  this.loadData(response.data)
+                console.log(response)
+                this.loadData(response.data)
               })
               .catch( (error) => {
-                  console.log(error)
+                console.log(error)
               })
             }
             else {
