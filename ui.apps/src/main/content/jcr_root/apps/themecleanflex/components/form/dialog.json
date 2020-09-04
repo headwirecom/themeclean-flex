@@ -39,12 +39,12 @@
           "value": "normal"
         },
         {
-          "name": "sm",
-          "value": "sm"
+          "name": "small",
+          "value": "small"
         },
         {
-          "name": "lg",
-          "value": "lg"
+          "name": "large",
+          "value": "large"
         },
         {
           "name": "full width",

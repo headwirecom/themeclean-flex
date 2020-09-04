@@ -856,10 +856,6 @@ video {
   margin: var(--spacing-2);
 }
 
-.m-4 {
-  margin: var(--spacing-4);
-}
-
 .-m-1 {
   margin: calc(var(--spacing-1) * -1);
 }
@@ -934,6 +930,10 @@ video {
 
 .mr-4 {
   margin-right: var(--spacing-4);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-4);
 }
 
 .mb-6 {
@@ -1295,10 +1295,6 @@ video {
 
 .z-10 {
   z-index: 10;
-}
-
-.transition {
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
 }
 
 .transition-colors {
@@ -1684,14 +1680,6 @@ p {
   }
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-
 /* header */
 
 [class$="components-header"] a {
@@ -1759,9 +1747,29 @@ p {
 
 /* form */
 
+[class$="components-form"] fieldset{
+  padding: 0;
+  margin: 0;
+}
+
+[class$="components-form"] legend {
+  font-size: 20px;
+}
+
+.vue-form-generator .field-label span {
+  margin-left: 0;
+}
+
+.vue-form-generator .field-checkbox input {
+  margin-right: 5px;
+  margin-left: 1px;
+}
+
 [class$="components-form"] .field-checkbox {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 [class$="components-form"] .normal-button input[type="submit"]{

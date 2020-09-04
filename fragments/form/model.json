@@ -45,13 +45,13 @@
               "x-form-name": "normal",
               "x-form-value": "normal"
             },
-            "sm": {
-              "x-form-name": "sm",
-              "x-form-value": "sm"
+            "small": {
+              "x-form-name": "small",
+              "x-form-value": "small"
             },
-            "lg": {
-              "x-form-name": "lg",
-              "x-form-value": "lg"
+            "large": {
+              "x-form-name": "large",
+              "x-form-value": "large"
             },
             "full": {
               "x-form-name": "full width",

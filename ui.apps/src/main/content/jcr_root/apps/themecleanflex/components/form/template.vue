@@ -1,25 +1,23 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="w-full" v-bind:data-per-path="model.path">
-      <transition name="fade">
-        <div class="text-black p-2 rounded-r mt-4 border-l-4 shadow-md note-important"
-        v-if="( failureText || schemaError )">
-          <p class="ml-2" v-if="failureText">{{failureText}}</p>
-          <p class="ml-2" v-if="schemaError">{{schemaError}}</p>
-        </div>
-      </transition>
+      <div class="text-black p-2 rounded-r mt-4 border-l-4 shadow-md note-important"
+      v-if="( failureText || schemaError )">
+        <p class="ml-2" v-if="failureText">{{failureText}}</p>
+        <p class="ml-2" v-if="schemaError">{{schemaError}}</p>
+      </div>
       <form class="w-full flex flex-col" v-bind:class="{
             'justify-button-start': model.submitalignment === 'start',
             'justify-button-center': model.submitalignment === 'center',
             'justify-button-end': model.submitalignment === 'end',
             'normal-button': model.submitsize === 'normal',
-            'sm-button': model.submitsize === 'sm',
-            'lg-button': model.submitsize === 'lg',
+            'sm-button': model.submitsize === 'small',
+            'lg-button': model.submitsize === 'large',
             'full-button': model.submitsize === 'full',
         }" v-on:submit.prevent.stop="onSubmit">
         <vue-form-generator v-bind:class="`w-full`" v-bind:model="formModel" v-bind:schema="schema"
         v-bind:options="formOptions"></vue-form-generator>
-        <input class="btn m-4 mt-0" type="submit" v-bind:value="model.submittext">
+        <input class="btn mb-4" type="submit" v-bind:value="model.submittext">
       </form>
     </div>
   </themecleanflex-components-block>
@@ -49,16 +47,10 @@ export default {
                 const result = parent[objs[i]](this.model,this.formModel)
                 if(result === false) {
                   Vue.set(this, 'failureText', this.model.failmessage);
-                  setTimeout(() => {
-                    Vue.set(this, 'failureText', '');
-                  }, 1500)
                 }
               } catch(err) {
                 console.error(err)
                 Vue.set(this, 'failureText', this.model.failmessage);
-                setTimeout(() => {
-                  Vue.set(this, 'failureText', '');
-                }, 1500)
               }
               return
             }
@@ -80,9 +72,6 @@ export default {
         })
         .catch( (error) => {
           Vue.set(this, 'failureText', this.model.failmessage);
-          setTimeout(() => {
-            Vue.set(this, 'failureText', '');
-          }, 1500)
         })
       }
     },
