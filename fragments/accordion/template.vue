@@ -4,7 +4,9 @@
     <div class="w-full" v-else>
       <h2 class="text-xl text-center pb-4" v-if="model.showtitle == 'true'"
       data-per-inline="model.title">{{model.title}}</h2>
-      <div class="flex flex-col -mx-3 flex-grow" v-bind:class="{
+      <div class="flex -mx-3 flex-grow" v-bind:class="{
+            'flex-col': model.mediaposition === 'before',
+            'flex-col-reverse': model.mediaposition === 'after',
             'lg:flex-row': model.mediaposition === 'before',
             'lg:flex-row-reverse': model.mediaposition === 'after'
         }">
