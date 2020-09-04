@@ -376,11 +376,11 @@
               while(obj && parent[obj]) {
                 if(objs.length === 0) {
                   try {
-                    const result = parent[obj](this)
+                    const result = parent[obj](this.storageData,this.active,this.model.endpointurl)
                     if(result === false) {
                       console.error('Failed to remove rows')
                     } else {
-                      Vue.set(this, 'storageData', result)
+                      this.loadData(result)
                     }
                   } catch(err) {
                     console.error(err)

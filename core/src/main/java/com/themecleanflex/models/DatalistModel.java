@@ -39,7 +39,7 @@ import javax.inject.Named;
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Javascript function to call to delete rows",
-          "x-form-hint": "Function must accept vue object",
+          "x-form-hint": "Function must accept (tableData, activeSelections, endpointurl)",
           "x-form-type": "text"
         },
         "columns": {
@@ -514,7 +514,7 @@ public class DatalistModel extends AbstractComponent {
 	@Inject
 	private String loadfunction;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to delete rows","x-form-hint":"Function must accept vue object","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to delete rows","x-form-hint":"Function must accept (tableData, activeSelections, endpointurl)","x-form-type":"text"} */
 	@Inject
 	private String deletefunction;
 
@@ -690,7 +690,7 @@ public class DatalistModel extends AbstractComponent {
 		return loadfunction;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to delete rows","x-form-hint":"Function must accept vue object","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to delete rows","x-form-hint":"Function must accept (tableData, activeSelections, endpointurl)","x-form-type":"text"} */
 	public String getDeletefunction() {
 		return deletefunction;
 	}

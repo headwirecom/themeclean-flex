@@ -22,7 +22,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Javascript function to call to delete rows",
-          "x-form-hint": "Function must accept vue object",
+          "x-form-hint": "Function must accept (tableData, activeSelections, endpointurl)",
           "x-form-type": "text"
         },
         "columns": {
