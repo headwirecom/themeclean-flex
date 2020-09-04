@@ -37,6 +37,11 @@ export default {
         failureText: ''
       }
     },
+    mounted() {
+      window.addEventListener('form-clear', () => {
+        this.formModel = {}
+      });
+    },
     methods: {
       onSubmit(e) {
         if(this.model.submitfunction != 'onSubmit' && this.model.submitfunction != '') {

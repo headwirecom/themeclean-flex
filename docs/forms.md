@@ -52,6 +52,11 @@ Edit the component configuration and update the following:
 
 Now the form will attempt to do an AJAX post to the endpoint URL. If you put an invalid URL, you can see that the failure message will show up when the form attempts to submit. If the submission is successful (the POST request gets a 200 OK HTTP status), then peregrine will forward the user to the configured success page.
 
+### Form Javascript Events
+
+#### form-clear
+The form component has an event listener for the 
+
 ### Form Component Configuration
 
 #### Form Model

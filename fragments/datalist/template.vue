@@ -271,7 +271,8 @@
           let data = []
           let numElements = 0;
 
-          if(!this.model.endpointurl || this.model.endpointurl === '') {
+          if((!this.model.endpointurl || this.model.endpointurl === '') &&
+                (!this.model.loadfunction || this.model.loadfunction === '')) {
             const storage = localStorage.getItem('list')
             try {
               data = JSON.parse(storage)
@@ -295,48 +296,10 @@
           }
         },
         mounted() {
-          if(this.model.loadfunction && this.model.loadfunction !== '') {
-            const objs = this.model.loadfunction.split('.')
-            let parent = window
-            let obj = objs.shift()
-            while(obj && parent[obj]) {
-              if(objs.length === 0) {
-                try {
-                  const result = parent[obj](this.model.endpointurl)
-                  if(result === false) {
-                    console.error('Failed to load data from '+this.model.endpointurl)
-                  }
-                  this.loadData(result)
-                } catch(err) {
-                  console.error(err)
-                }
-                return
-              }
-              parent = parent[obj]
-              obj = objs.shift()
-            }
-            console.log('window.' + this.model.loadfunction + ' not found')
-            return
-          }
-          else if(this.model.endpointurl && this.model.endpointurl !== '') {
-            // load data from URL
-            axios.get(this.model.endpointurl)
-            .then( (response) => {
-                console.log(response)
-                this.loadData(response.data)
-            })
-            .catch( (error) => {
-                console.log(error)
-            })
-          }
-          else {
-            // use local storage if nothing else is configured
-            // interesting aspect :-) if another tab on the same computer
-            // has the same page open it actually updates
-            window.addEventListener('storage', () => {
-              this.loadFromLocalStorage()
-            });
-          }
+          this.loadAction()
+          window.addEventListener('datalist-storage-update', () => {
+            this.loadAction()
+          });
           Vue.set(this, 'isMobile', ( window.innerWidth < 768 ) ? true : false)
         },
         methods: {
@@ -352,6 +315,45 @@
               this.active.forEach((element, i) => {
                 Vue.set(this.active, i, true)
               });
+            }
+          },
+          loadAction: function() {
+            if(this.model.loadfunction && this.model.loadfunction !== '') {
+              const objs = this.model.loadfunction.split('.')
+              let parent = window
+              let obj = objs.shift()
+              while(obj && parent[obj]) {
+                if(objs.length === 0) {
+                  try {
+                    const result = parent[obj](this.model.endpointurl)
+                    if(result === false) {
+                      console.error('Failed to load data from '+this.model.endpointurl)
+                    }
+                    this.loadData(result)
+                  } catch(err) {
+                    console.error(err)
+                  }
+                  return
+                }
+                parent = parent[obj]
+                obj = objs.shift()
+              }
+              console.log('window.' + this.model.loadfunction + ' not found')
+              return
+            }
+            else if(this.model.endpointurl && this.model.endpointurl !== '') {
+              // load data from URL
+              axios.get(this.model.endpointurl)
+              .then( (response) => {
+                  console.log(response)
+                  this.loadData(response.data)
+              })
+              .catch( (error) => {
+                  console.log(error)
+              })
+            }
+            else {
+              this.loadFromLocalStorage()
             }
           },
           loadFromLocalStorage: function() {

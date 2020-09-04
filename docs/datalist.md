@@ -41,6 +41,13 @@ in the *Table Configuration* with the following values:
 Now, if you submit a first and last name through the form and refresh the page, your values should show up in the table.
 If you edit the Datalist component and turn on *Selectable Table* you will get the option to delete rows from the table.
 
+### Datalist Javascript Events
+
+#### datalist-storage-update
+The datalist component has an event listener for the <code>datalist-storage-update</code> event. If this event is fired, it will trigger a reload of the backing data. You can use this event in other javascript functions to force a reload when data has been changed. 
+
+See the **themecleanflex/pages/js/formsapp.js** <code>save()</code> function for an example of this in action.
+
 ### Datalist Component Configuration
 
 #### Datalist Data Retrieval 
