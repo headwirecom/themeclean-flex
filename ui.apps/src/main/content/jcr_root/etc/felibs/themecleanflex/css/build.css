@@ -1297,10 +1297,6 @@ video {
   z-index: 10;
 }
 
-.transition {
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-}
-
 .transition-colors {
   transition-property: background-color, border-color, color, fill, stroke;
 }
@@ -1682,14 +1678,6 @@ p {
   .media-sizeable {
     flex-shrink: 0 !important;
   }
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
 }
 
 /* header */
