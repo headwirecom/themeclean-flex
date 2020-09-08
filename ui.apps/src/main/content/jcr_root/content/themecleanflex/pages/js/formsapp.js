@@ -10,6 +10,7 @@ $formsapp = {
         localStorage.setItem(model.endpointurl, JSON.stringify(records, true, 2));
         window.dispatchEvent(new CustomEvent('datalist-storage-update',{}));
         window.dispatchEvent(new CustomEvent('form-clear',{}));
+        return true
     },
     
     load(path) {

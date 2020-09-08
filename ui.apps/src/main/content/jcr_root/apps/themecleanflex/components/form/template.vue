@@ -53,6 +53,9 @@ export default {
                 if(result === false) {
                   Vue.set(this, 'failureText', this.model.failmessage);
                 }
+                if (result === true && this.model.successpage) {
+                  $peregrineApp.loadContent(this.model.successpage)
+                }
               } catch(err) {
                 console.error(err)
                 Vue.set(this, 'failureText', this.model.failmessage);
