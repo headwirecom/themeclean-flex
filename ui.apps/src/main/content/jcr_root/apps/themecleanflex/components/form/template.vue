@@ -70,7 +70,11 @@ export default {
           form: this.formModel
         })
         .then( (response) => {
-          $peregrineApp.loadContent(this.model.successpage)
+          if (this.model.successpage) {
+            $peregrineApp.loadContent(this.model.successpage)
+          } else {
+            window.dispatchEvent(new CustomEvent('form-clear',{}));
+          }
         })
         .catch( (error) => {
           Vue.set(this, 'failureText', this.model.failmessage);
