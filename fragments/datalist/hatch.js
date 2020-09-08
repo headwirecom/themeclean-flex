@@ -18,7 +18,7 @@ module.exports = {
         const actionDelete = selectedContainer.find('.selected-actions svg').eq(0)
         f.bindEvent(actionDelete, 'click', 'deleteAction');
 
-        const desktopContainer = $.find('div.overflow-x-hidden').eq(0);
+        const desktopContainer = $.find('div.overflow-x-scroll').eq(0);
         const desktopContainerClasses = `{
             'overflow-y-scroll': model.scrollabletable === 'true',
             'hidden': isMobile,

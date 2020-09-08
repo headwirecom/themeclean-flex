@@ -27,7 +27,7 @@
           </svg>
       </div>
     </div>
-    <div class="w-full overflow-x-hidden" v-bind:class="{
+    <div class="w-full overflow-x-scroll" v-bind:class="{
             'overflow-y-scroll': model.scrollabletable === 'true',
             'hidden': isMobile,
         }" v-bind:style="`height:${(model.scrollabletable === 'true') ? model.tableheight + 'px' : 'auto'};`">
