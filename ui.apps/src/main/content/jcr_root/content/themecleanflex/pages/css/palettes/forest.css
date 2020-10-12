@@ -1,0 +1,137 @@
+/* forest palette */
+
+#peregrine-app {
+    --primary-color-1: #8D8741;
+    --primary-color-2: #659DBD;
+    --primary-color-3: #DAAD86;
+    --primary-color-4: #BC986A;
+    --primary-color-5: #FBEEC1;
+
+    --color-accent-1-900: #077cc0;
+    --color-accent-1-800: #2283bb;
+    --color-accent-1-700: #3d8fbe;
+    --color-accent-1-600: #4890b9;
+    --color-accent-1-500: #84aec7;
+    --color-accent-1-400: #94b4c7;
+    --color-accent-1-300: #9bb3c0;
+    --color-accent-1-200: #a8bcc7;
+    --color-accent-1-100: #b6c2c9;
+    --color-accent-1-50: #bcbec0;
+
+    --color-accent-2-100: #8b8216;
+    --color-accent-2-200: #928a2f;
+    --color-accent-2-300: #9c9543;
+    --color-accent-2-400: #9e985b;
+
+    --color-accent-3-800: #c7b39a;
+    --color-accent-3-900: #87663D;
+
+    --color-accent-4-900: #FFFFFF;
+    --color-accent-4-800: #e9e8e8;
+    --color-accent-4-700: #cccccc;
+    --color-accent-4-600: #b9b8b8;
+    --color-accent-4-500: #969595;
+    --color-accent-4-400: #8b8b8b;
+    --color-accent-4-300: #5e5d5d;
+    --color-accent-4-200: #373737;
+    --color-accent-4-100: #1d1d1d;
+    --color-accent-4-000: #000000;
+
+    --color-accent-5-900: #2A3841;
+
+
+    --bg-primary: var(--color-accent-2-100);
+    --bg-secondary: var(--color-accent-2-400);
+    --border-primary-color: rgba(66, 67, 68, 0.2);
+
+    --link-primary-color: var(--color-accent-5-900);
+    --link-primary-color-hover: var(--color-accent-4-500);
+
+    --focus-border-color: var(--color-accent-1-500);
+
+    --btn-color: #FBEEC1;
+    --btn-bg: var(--color-accent-3-900);
+    --btn-hover-color: #FBEEC1;
+    --btn-hover-bg: var(--color-accent-3-800);
+    --btn-focus-color: #FBEEC1;
+    --btn-focus-bg: var(--color-accent-3-800);
+    --btn-focus-border-color: var(--color-accent-1-300);
+
+    --btn-secondary-color: var(--color-accent-3-900);
+    --btn-secondary-bg: #FBEEC1;
+    --btn-secondary-border-width: 1px;
+    --btn-secondary-border-color: var(--color-accent-3-900);
+    --btn-secondary-hover-color: var(--btn-secondary-color);
+    --btn-secondary-hover-bg: #fcde74;
+    --btn-secondary-focus-color: #FBEEC1;
+    --btn-secondary-focus-bg: var(--color-accent-3-800);
+
+    --btn-light-bg: var(--color-accent-1-200);
+    --btn-light-hover-bg: var(--color-accent-1-300);
+    --btn-light-hover-color: var(--color-accent-1-900);
+
+    --btn-dark-bg: var(--color-accent-1-600);
+    --btn-dark-hover-bg: var(--color-accent-1-700);
+
+    --text-primary-color: rgba(0,0,0,0.87);
+    --text-secondary-color: rgba(0,0,0,0.6);
+  }
+
+  #peregrine-app .theme-light {
+    --bg-primary: var(--color-accent-2-200);
+    --bg-secondary: var(--color-accent-2-100);
+
+    --btn-secondary-color: var(--color-accent-1-900);
+    --btn-secondary-bg: var(--bg-secondary);
+    --btn-secondary-border-width: 0;
+    --btn-secondary-hover-color: var(--btn-secondary-color);
+    --btn-secondary-hover-bg: var(--color-accent-1-300);
+    --btn-secondary-focus-color: var(--btn-secondary-color);
+    --btn-secondary-focus-bg: var(--color-accent-1-300);
+
+    --link-primary-color: var(--color-accent-5-900);
+    --link-primary-color-hover: #000000;
+
+    --figcaption-primary-bg: #ffffff99;
+  }
+
+  #peregrine-app .theme-dark {
+    --bg-primary: var(--color-accent-3-900);
+    --bg-secondary: var(--color-accent-3-800);
+    --border-primary-color: rgba(255, 255, 255, 0.2);
+
+    --link-primary-color: var(--color-accent-5-900);
+    --link-primary-color-hover: var(--color-accent-5-900);
+
+    --text-primary-color: #FBEEC1;
+    --text-secondary-color: rgba(255,255,255,0.6);
+
+    --btn-focus-border-color: #FBEEC1;
+
+    --btn-color: var(--color-accent-3-900);
+    --btn-bg: #FBEEC1;
+    --btn-hover-color: #FBEEC1;
+    --btn-hover-bg: var(--color-accent-3-800);
+    --btn-focus-color: var(--color-accent-3-800);
+    --btn-focus-bg: #e4e4e4;
+    --btn-focus-border-color: var(--color-accent-1-500);
+
+    --btn-primary-color: var(--btn-color);
+    --btn-primary-bg: var(--btn-bg);
+    --btn-primary-hover-color: var(--btn-hover-color);
+    --btn-primary-hover-bg: var(--btn-hover-bg);
+    --btn-primary-focus-color: var(--btn-focus-color);
+    --btn-primary-focus-bg: var(--btn-focus-bg);
+    --btn-primary-focus-border-color: var(--btn-focus-border-color);
+
+    --btn-secondary-bg: var(--color-accent-3-900);
+    --btn-secondary-color: #FBEEC1;
+    --btn-secondary-border-width: 1px;
+    --btn-secondary-border-color: #FBEEC1;
+    --btn-secondary-hover-color: #FBEEC1;
+    --btn-secondary-hover-bg: var(--color-accent-3-800);
+    --btn-secondary-focus-color: #FBEEC1;
+    --btn-secondary-focus-bg: var(--color-accent-3-800);
+
+    --figcaption-primary-bg: #00000080;
+  }
