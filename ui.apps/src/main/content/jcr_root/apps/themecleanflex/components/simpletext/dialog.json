@@ -8,6 +8,66 @@
       "model": "text"
     },
     {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "iconcustomcolor",
+      "label": "Custom Icons Color",
+      "model": "iconcustomcolor"
+    },
+    {
+      "type": "input",
+      "inputType": "color",
+      "placeholder": "iconcolor",
+      "label": "Icon Color",
+      "model": "iconcolor",
+      "visible": "model.iconcustomcolor == 'true'"
+    },
+    {
+      "type": "material-range",
+      "placeholder": "iconsize",
+      "label": "Icon Size",
+      "model": "iconsize",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "type": "collection",
+      "multifield": true,
+      "fieldLabel": [
+        "icon",
+        "value"
+      ],
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "icon",
+          "label": "Icon Name",
+          "model": "icon"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/themecleanflex/pages",
+          "placeholder": "url",
+          "label": "Icon Url",
+          "model": "url"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "iconalttext",
+          "label": "Icon Alt Text",
+          "model": "iconalttext"
+        }
+      ],
+      "placeholder": "icons",
+      "label": "Icons",
+      "model": "icons"
+    },
+    {
       "type": "material-select",
       "values": [
         {

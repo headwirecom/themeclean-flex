@@ -2,6 +2,7 @@ package com.themecleanflex.models;
 
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
+import java.util.List;
 import javax.inject.Inject;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
@@ -332,7 +333,25 @@ public class SimpletextModel extends AbstractComponent {
     public SimpletextModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Text","x-form-type":"text"} */
+
+  @Inject
+  private List<IComponent> icons;
+
+  /* {"type":"string","x-source":"inject","x-form-label":"Custom Icons Color","x-form-type":"materialswitch"} */
+	@Inject
+	private String iconcustomcolor;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Icon Color","x-default":"#000000","x-form-visible":"model.iconcustomcolor == 'true'","x-form-type":"color"} */
+	@Inject
+	@Default(values ="#000000")
+	private String iconcolor;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Icon Size","x-form-type":"materialrange","x-default":"25","x-form-min":0,"x-form-max":150} */
+	@Inject
+	@Default(values ="25")
+	private String iconsize;
+
+  /* {"type":"string","x-source":"inject","x-form-label":"Text","x-form-type":"text"} */
 	@Inject
 	private String text;
 
@@ -441,8 +460,27 @@ public class SimpletextModel extends AbstractComponent {
 
 //GEN]
 
-    //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Text","x-form-type":"text"} */
+  public List<IComponent> getIcons() {
+    return icons;
+  }
+
+  /* {"type":"string","x-source":"inject","x-form-label":"Custom Icons Color","x-form-type":"materialswitch"} */
+	public String getIconcustomcolor() {
+		return iconcustomcolor;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Icon Color","x-default":"#000000","x-form-visible":"model.iconcustomcolor == 'true'","x-form-type":"color"} */
+	public String getIconcolor() {
+		return iconcolor;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Icon Size","x-form-type":"materialrange","x-default":"25","x-form-min":0,"x-form-max":150} */
+	public String getIconsize() {
+		return iconsize;
+	}
+
+  //GEN[:GETTERS
+      /* {"type":"string","x-source":"inject","x-form-label":"Text","x-form-type":"text"} */
 	public String getText() {
 		return text;
 	}
