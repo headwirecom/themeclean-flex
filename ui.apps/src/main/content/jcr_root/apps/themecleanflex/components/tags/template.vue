@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" class='component-tags'>
     <div class="p-5" v-if="isEditAndEmpty">There are no tags set for this page</div>
     <div class="w-full flex flex-wrap items-center -mx-2"
     v-else>

@@ -1,5 +1,5 @@
 <template>
-  <ul class="list-none flex flex-col items-center md:flex-row p-0">
+  <ul class="component-textlinks list-none flex flex-col items-center md:flex-row p-0">
     <li class="m-2" v-for="(item, i) in model.links" :key="item.path || i">
       <a class="no-underline p-3 hover:underline" v-bind:href="$helper.pathToUrl(item.link)"
       v-bind:data-per-inline="`model.links.${i}.text`" v-bind:class="{

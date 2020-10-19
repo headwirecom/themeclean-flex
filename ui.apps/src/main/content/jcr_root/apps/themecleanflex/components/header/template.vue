@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" class='component-header'>
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <nav class="w-full" v-else>
       <div class="flex w-full justify-between items-center">

@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" class='component-carousel'>
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <carousel class="w-full" v-bind:autoplay="model.autoplay === 'true'"
     v-bind:navigationEnabled="model.controls === 'true'" v-bind:paginationEnabled="model.indicators === 'true'"

@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" class='component-note'>
     <div class="w-full px-5 py-2 border-l-4 shadow-md" v-bind:class="{
             'note-note': model.notetype === &quot;note&quot;,
             'note-tip': model.notetype === &quot;tip&quot;,

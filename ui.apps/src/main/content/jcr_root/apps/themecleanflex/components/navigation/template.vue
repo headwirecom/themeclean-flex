@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" class='component-navigation'>
     <div class="p-5" v-if="isEditAndEmpty">{{isEditAndEmpty}}</div>
     <nav class="flex md:flex-row flex-col z-10 w-full"
     v-bind:class="{

@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" class='component-breadcrumb'>
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="flex flex-wrap" v-else>
       <span v-for="(item, i) in model.links" :key="item.path || i" v-bind:class="{'font-bold': i === model.links.length - 1}">

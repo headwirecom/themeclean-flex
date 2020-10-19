@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" class='component-footer'>
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full" v-else>
       <div class="flex flex-col lg:flex-row justify-between">

@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" class='component-containerblock'>
     <div class="flex flex-wrap w-full" v-bind:data-per-path="model.path" v-bind:class="model.alignitems">
       <pagerendervue-components-placeholder v-if="(model.fromTemplate &amp;&amp; model.children.length &gt; 0 &amp;&amp; model.children[0].fromTemplate) ? false: model.children.length &gt; 0"
       v-bind:model="{ path: model.path, component: model.component, location: 'before' }"></pagerendervue-components-placeholder>

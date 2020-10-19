@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-end items-center md:flex-row flex-col">
+  <div class="component-menubuttons flex justify-end items-center md:flex-row flex-col">
     <a class="btn m-2" v-for="(item, i) in model.buttons" :key="item.path || i"
     v-bind:href="$helper.pathToUrl(item.buttonlink)" v-bind:class="{
             'btn-lg': model.buttonsize === 'large',

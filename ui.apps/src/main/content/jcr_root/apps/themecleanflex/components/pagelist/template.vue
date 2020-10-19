@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" class='component-pagelist'>
     <div class="p-5" v-if="isEditAndEmpty">{{isEditAndEmpty}}</div>
     <div class="w-full" v-else>
       <ul class="root" v-if="model.includeroot === 'true'">

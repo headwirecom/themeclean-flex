@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" class=component-mediablock>
     <div class="mx-auto" v-bind:style="{flexBasis:`${model.mediawidth}%`}">
       <themecleanflex-components-media v-bind:model="model"></themecleanflex-components-media>
     </div>

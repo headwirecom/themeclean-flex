@@ -1,5 +1,5 @@
 <template>
-  <component class="w-full px-5 flex flex-col justify-center" ref="section"
+  <component class="component-block w-full px-5 flex flex-col justify-center" ref="section"
   v-bind:class="[classes, colors, model.component, model.extraclasses]" v-bind:style="[styles, sticky]"
   v-bind:data-per-path="model.path" v-bind:is="model.htmlelement || &quot;div&quot;"
   v-bind:id="model.anchorname">

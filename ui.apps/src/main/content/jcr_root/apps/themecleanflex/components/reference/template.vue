@@ -1,5 +1,5 @@
 <template>
-  <div v-bind:data-per-path="model.path">
+  <div v-bind:data-per-path="model.path" class='component-reference'>
     <div class="container mx-auto p-5" v-if="isEditAndEmpty">{{isEditAndEmpty}}</div>
     <div class="relative" v-else>
       <div class="absolute inset-0 z-10" v-if="maskReference" v-bind:style="overlayStyle"></div>

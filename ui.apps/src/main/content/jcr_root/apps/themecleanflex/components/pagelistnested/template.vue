@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class='component-pagelistnested'>
     <li class="children" v-for="(child, i) in model.childrenPages" :key="child.path || i">
       <a v-bind:href="$helper.pathToUrl(child.path)">{{child.title}}</a>
       <div v-for="ref in child.references" v-bind:is="ref.htmlElement"

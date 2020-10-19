@@ -1,5 +1,5 @@
 <template>
-    <div v-bind:data-per-path="model.path">
+    <div v-bind:data-per-path="model.path" class='component-page'>
         <pagerendervue-components-placeholder 
             v-if="renderPlaceholder"
             v-bind:model="{ path: model.path, component: model.component, location: 'before' }"></pagerendervue-components-placeholder>

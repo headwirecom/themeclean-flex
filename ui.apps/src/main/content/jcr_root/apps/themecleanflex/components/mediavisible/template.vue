@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="component-mediavisible w-full">
 
     <div v-if="model.mediatype === 'video'" class="embed-responsive embed-responsive-16by9">
       <iframe :title="model.mediatitle" :src="$helper.pathToUrl(model.videosrc)" frameborder="0" allowfullscreen></iframe>

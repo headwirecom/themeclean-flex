@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center -m-1">
+  <div class="component-socialicons flex justify-center -m-1">
     <a class="m-1" v-for="(item, i) in model.icons" :key="item.path || i"
     v-bind:href="$helper.pathToUrl(item.url)" v-bind:title="item.iconalttext"
     v-bind:style="`color:${model.iconcustomcolor === 'true' ? model.iconcolor : false};`">

@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" class='component-spacer'>
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div v-else>
       <div v-bind:style="`height:${model.height}vh;`"></div>

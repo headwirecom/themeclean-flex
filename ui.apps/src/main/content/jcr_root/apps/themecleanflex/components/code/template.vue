@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" class='component-code'>
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <pre class="overflow-x-auto" v-bind:class="'language-'+model.language+ ((model.classes) ? ' '+model.classes : '')"
     v-else><code v-bind:class="'language-'+model.language" v-html="code"></code>

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="component-media w-full">
     <h3 v-if="noMedia" class="w-full text-center">No media content</h3>
     <div v-else-if="model.mediatype === 'video'" class="relative block w-full p-0 overflow-hidden aspect-ratio-16/9">
       <iframe :title="model.mediatitle" class="absolute inset-0 w-full h-full" :src="videoSource" frameborder="0" allowfullscreen></iframe>
