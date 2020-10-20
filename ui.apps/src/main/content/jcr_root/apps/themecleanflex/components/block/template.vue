@@ -1,6 +1,6 @@
 <template>
   <component class="w-full px-5 flex flex-col justify-center" ref="section"
-  v-bind:class="[classes, colors, model.component, model.extraclasses]" v-bind:style="[styles, sticky]"
+  v-bind:class="[classes, colors, model.component, simpleComponentClass, model.extraclasses]" v-bind:style="[styles, sticky]"
   v-bind:data-per-path="model.path" v-bind:is="model.htmlelement || &quot;div&quot;"
   v-bind:id="model.anchorname">
     <div class="embed-responsive embed-responsive-16by9 w-full h-full top-0 left-0"
@@ -52,7 +52,7 @@
           // this.$refs.anchor.style.paddingTop = `${navOffset}px`
 
         },
-        computed: {          
+        computed: {
           videoSource() {
             return this.loadVideo ? this.model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1' : "";
           },
@@ -60,7 +60,13 @@
             let classObject = {}
             classObject['min-h-screen'] = this.model.fullheight == 'true'
             classObject[`elevation-${this.model.elevation}`] = this.model.elevation > 0
-            return classObject      
+
+            return classObject
+          },
+          simpleComponentClass() {
+            const classPieces = this.model.component.split('-')
+            classPieces.splice(0,1)
+            return classPieces.join('-')
           },
           colors: function() {
             let classes = {};

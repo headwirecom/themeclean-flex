@@ -52,7 +52,7 @@
           // this.$refs.anchor.style.paddingTop = `${navOffset}px`
 
         },
-        computed: {          
+        computed: {
           videoSource() {
             return this.loadVideo ? this.model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1' : "";
           },
@@ -60,7 +60,8 @@
             let classObject = {}
             classObject['min-h-screen'] = this.model.fullheight == 'true'
             classObject[`elevation-${this.model.elevation}`] = this.model.elevation > 0
-            return classObject      
+            console.log('1', this.model.extraclasses)
+            return classObject
           },
           colors: function() {
             let classes = {};
