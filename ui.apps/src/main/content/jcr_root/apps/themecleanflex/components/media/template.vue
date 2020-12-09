@@ -5,7 +5,7 @@
       <iframe :title="model.mediatitle" class="absolute inset-0 w-full h-full" :src="videoSource" frameborder="0" allowfullscreen></iframe>
     </div>
     <v-lazy-image v-else-if="model.mediatype === 'image'" class="w-full" :src="$helper.pathToUrl(model.imagesrc)" :alt="model.mediatitle"
-    :src-placeholder="placeholderSrc(model.imagesize)"></v-lazy-image> 
+      :src-placeholder="placeholderSrc(model.imagesize)"></v-lazy-image>
   </div>
 </template>
 

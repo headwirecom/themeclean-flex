@@ -10,7 +10,7 @@ import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 
-import java.awt.*;
+import java.awt.Dimension;
 
 /*
     //GEN[:DATA
