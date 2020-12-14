@@ -3,6 +3,7 @@ package com.themecleanflex.models;
 import com.peregrine.model.api.ImageInfo;
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
+
 import javax.inject.Inject;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
