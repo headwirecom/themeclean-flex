@@ -34,7 +34,7 @@
         return false
       },
       placeholderSrc() {
-        const size = this.model.imagesize
+        const size = this.model.imagesrcSize
         return size ? `data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size.width} ${size.height}"%3E%3C/svg%3E` : null
       }
     }

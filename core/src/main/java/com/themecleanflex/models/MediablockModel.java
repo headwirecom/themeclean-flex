@@ -364,7 +364,7 @@ public class MediablockModel extends AbstractComponent {
 
 	@Inject
 	@ImageInfo(name = "imagesrc")
-	private Dimension imagesize;
+	private Dimension imagesrcSize;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets","x-default":""} */
 	@Inject
@@ -491,8 +491,8 @@ public class MediablockModel extends AbstractComponent {
 		return imagesrc;
 	}
 
-	public Dimension getImagesize() {
-		return imagesize;
+	public Dimension getImagesrcSize() {
+		return imagesrcSize;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets","x-default":""} */
