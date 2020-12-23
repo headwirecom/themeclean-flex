@@ -1,7 +1,9 @@
 package com.themecleanflex.models;
 
+import com.peregrine.model.api.ImageInfo;
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
+
 import java.util.List;
 import javax.inject.Inject;
 import org.apache.sling.api.resource.Resource;
@@ -9,6 +11,8 @@ import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
+
+import java.awt.Dimension;
 
 /*
     //GEN[:DATA
@@ -243,7 +247,8 @@ import org.apache.sling.models.annotations.Model;
               "x-form-visible": "model.mediatype == 'image' and model.showmedia == 'true'",
               "x-form-type": "pathbrowser",
               "x-form-browserRoot": "/content/themecleanflex/assets",
-              "x-default": ""
+              "x-default": "",
+              "x-annotate": "size"
             },
             "videosrc": {
               "type": "string",
@@ -631,10 +636,14 @@ public class TeaserverticalModel extends AbstractComponent {
 	@Inject
 	private String mediatype;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets","x-default":""} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets","x-default":"","x-annotate":"size"} */
 	@Inject
 	@Default(values ="")
 	private String imagesrc;
+
+	@Inject
+	@ImageInfo(name="imagesrc")
+	private Dimension imagesrcSize;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets","x-default":""} */
 	@Inject
@@ -831,9 +840,13 @@ public class TeaserverticalModel extends AbstractComponent {
 		return mediatype;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets","x-default":""} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets","x-default":"","x-annotate":"size"} */
 	public String getImagesrc() {
 		return imagesrc;
+	}
+
+	public Dimension getImagesrcSize() {
+		return imagesrcSize;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Video Source","x-form-visible":"model.mediatype == 'video' and model.showmedia == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets","x-default":""} */
