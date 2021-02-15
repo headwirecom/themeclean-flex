@@ -83,10 +83,10 @@
         <archetype.java.version>11</archetype.java.version>
 
         <!-- dependency versions to use in generated archetypes -->
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.2</junit.version>
         <scrannotations.version>1.9.12</scrannotations.version>
-        <slingapi.version>2.9.0</slingapi.version>
-        <slf4japi.version>1.7.6</slf4japi.version>
+        <slingapi.version>2.23.0</slingapi.version>
+        <slf4japi.version>1.7.30</slf4japi.version>
 
         <!-- define archetype tooling version in a central place -->
         <archetype.version>2.2</archetype.version>
@@ -294,7 +294,7 @@
             <dependency>
                 <groupId>org.osgi</groupId>
                 <artifactId>osgi.annotation</artifactId>
-                <version>6.0.1</version>
+                <version>8.0.0</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -302,20 +302,20 @@
             <dependency>
                 <groupId>org.osgi</groupId>
                 <artifactId>org.osgi.service.component.annotations</artifactId>
-                <version>1.3.0</version>
+                <version>1.4.0</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.osgi</groupId>
                 <artifactId>org.osgi.service.metatype.annotations</artifactId>
-                <version>1.3.0</version>
+                <version>1.4.0</version>
                 <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.osgi</groupId>
                 <artifactId>org.osgi.compendium</artifactId>
-                <version>4.2.0</version>
+                <version>5.0.0</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -323,7 +323,7 @@
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
-                <version>3.1.0</version>
+                <version>4.0.1</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -354,7 +354,7 @@
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
-                <version>3.0.0</version>
+                <version>3.0.2</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -368,25 +368,25 @@
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.settings</artifactId>
-                <version>1.3.8</version>
+                <version>1.4.2</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.commons.osgi</artifactId>
-                <version>2.4.0</version>
+                <version>2.4.2</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.models.api</artifactId>
-                <version>1.3.2</version>
+                <version>1.3.8</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>jackrabbit-api</artifactId>
-                <version>2.11.0</version>
+                <version>2.19.3</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -407,7 +407,7 @@
             <dependency>
                 <groupId>org.jmock</groupId>
                 <artifactId>jmock-junit4</artifactId>
-                <version>2.8.2</version>
+                <version>2.12.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
@@ -420,14 +420,14 @@
             <!-- sling model serialization support -->
             <dependency>
                 <artifactId>jackson-core</artifactId>
-                <version>2.8.7</version>
+                <version>2.12.1</version>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <artifactId>jackson-databind</artifactId>
-                <version>2.8.7</version>
+                <version>2.12.1</version>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <scope>provided</scope>
             </dependency>
