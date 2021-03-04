@@ -218,3 +218,42 @@
   color: var(--btn-primary-color);
   background-color: var(--btn-primary-bg);
 }
+
+#peregrine-app [class$="-components-form"] input[type="submit"]{
+  color: var(--btn-color)  !important;
+  background: var(--btn-bg) !important;
+}
+
+#peregrine-app [class$="-components-form"] input[type="submit"]:focus {
+  color: var(--btn-focus-color) !important;
+  background: var(--btn-focus-bg) !important;
+  box-shadow: 0 0 0 3px var(--btn-focus-border-color) !important;
+  outline: 2px solid transparent !important; /* Windows High Contrast Mode */
+}
+
+#peregrine-app [class$="-components-form"] input[type="submit"]:hover {
+  color: var(--btn-hover-color) !important;
+  background: var(--btn-hover-bg) !important;
+}
+#peregrine-app table thead th,
+#peregrine-app table thead th *,
+#peregrine-app table td.mobile-header,
+#peregrine-app table td.mobile-header *  {
+  background: var(--bg-primary);
+  color: var(--text-primary-color);
+  fill: var(--text-primary-color);
+}
+#peregrine-app table.striped tbody tr:nth-of-type(2n+1) td:not(.mobile-header){
+  background: transparent;
+}
+#peregrine-app table.striped tbody tr:nth-of-type(2n) td:not(.mobile-header){
+  background: var(--bg-secondary);
+}
+#peregrine-app [class$="-components-datalist"].theme-dark table.striped tbody tr:nth-of-type(2n) td:not(.mobile-header),
+#peregrine-app [class$="-components-datalist"].theme-dark table.striped tbody tr:nth-of-type(2n) td:not(.mobile-header) *{
+  color: var(--text-secondary-color);
+  fill: var(--text-secondary-color);
+}
+#peregrine-app [class$="-components-datalist"] .action-btn:hover {
+  fill: var(--text-secondary-color);
+}

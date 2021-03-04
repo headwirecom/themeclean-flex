@@ -467,6 +467,10 @@ button,
   cursor: pointer;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 h1,
 h2,
 h3,
@@ -675,6 +679,11 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-r {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -713,6 +722,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .hidden {
@@ -923,8 +936,16 @@ video {
   margin-bottom: var(--spacing-3);
 }
 
+.mt-4 {
+  margin-top: var(--spacing-4);
+}
+
 .mr-4 {
   margin-right: var(--spacing-4);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-4);
 }
 
 .mb-6 {
@@ -971,8 +992,28 @@ video {
   overflow-x: auto;
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 .p-0 {
   padding: var(--spacing-0);
+}
+
+.p-1 {
+  padding: var(--spacing-1);
+}
+
+.p-2 {
+  padding: var(--spacing-2);
 }
 
 .p-3 {
@@ -1160,12 +1201,28 @@ video {
   text-decoration: underline;
 }
 
+.align-top {
+  vertical-align: top;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
 .visible {
   visibility: visible;
 }
 
 .invisible {
   visibility: hidden;
+}
+
+.w-24 {
+  width: 24px;
+}
+
+.w-48 {
+  width: 48px;
 }
 
 .w-auto {
@@ -1324,7 +1381,9 @@ video {
 
 /* Base Overrides */
 
-html {
+html,
+textarea,
+select {
   font-family: var(--font-sans);
   font-size: var(--font-size-base);
 }
@@ -1728,6 +1787,85 @@ p {
 
 [class$="components-accordion"] .img-wrapper.rounded-full img {
   border-radius: 9999px;
+}
+
+/* form */
+
+[class$="components-form"] fieldset{
+  padding: 0;
+  margin: 0;
+}
+
+[class$="components-form"] legend {
+  font-size: 20px;
+}
+
+.vue-form-generator .field-label span {
+  margin-left: 0;
+}
+
+.vue-form-generator .field-checkbox input {
+  margin-right: 5px;
+  margin-left: 1px;
+}
+
+[class$="components-form"] .field-checkbox {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+[class$="components-form"] .normal-button input[type="submit"]{
+  width: min-content;
+}
+
+[class$="components-form"] .lg-button input[type="submit"]{
+  width: min-content;
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
+  padding-left: var(--spacing-5);
+  padding-right: var(--spacing-5);
+  font-size: var(--font-size-lg)
+}
+
+[class$="components-form"] .sm-button input[type="submit"]{
+  width: min-content;
+  padding-top: var(--spacing-2);
+  padding-bottom: var(--spacing-2);
+  padding-left: var(--spacing-2);
+  padding-right: var(--spacing-2);
+  font-size: var(--font-size-sm)
+}
+
+[class$="components-form"] .full-button input[type="submit"]{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+[class$="components-form"] .justify-button-start{
+  align-items: flex-start;
+}
+
+[class$="components-form"] .justify-button-start .field-submit > div{
+  justify-content: flex-start;
+}
+
+[class$="components-form"] .justify-button-center{
+  align-items: center;
+}
+
+[class$="components-form"] .justify-button-center .field-submit > div{
+  justify-content: center;
+}
+
+[class$="components-form"] .justify-button-end{
+  align-items: flex-end;
+}
+
+[class$="components-form"] .justify-button-end .field-submit > div{
+  justify-content: flex-end;
 }
 
 /* purgecss end ignore */

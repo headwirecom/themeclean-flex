@@ -2,254 +2,230 @@ package com.themecleanflex.models;
 
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
-import java.util.List;
-import javax.inject.Inject;
+import com.peregrine.nodetypes.models.Container;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
+import java.util.List;
+
+import javax.inject.Inject;
+import javax.inject.Named;
 
 /*
     //GEN[:DATA
     {
   "definitions": {
-    "Cards": {
+    "Datalist": {
       "type": "object",
       "x-type": "component",
       "properties": {
-        "showtitle": {
+        "endpointurl": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Show Card Title",
-          "x-form-type": "materialswitch"
+          "x-form-label": "URL to load JSON data for table",
+          "x-form-type": "text",
+          "x-default": ""
         },
-        "showtext": {
+        "loadfunction": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Show Card Text",
-          "x-form-type": "materialswitch"
+          "x-form-label": "Javascript function to call to load data",
+          "x-form-hint": "Function must accept (endpointurl)",
+          "x-form-type": "text"
         },
-        "showbutton": {
+        "deletefunction": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Show Card Button",
-          "x-form-type": "materialswitch"
+          "x-form-label": "Javascript function to call to delete rows",
+          "x-form-hint": "Function must accept (tableData, activeSelections, endpointurl)",
+          "x-form-type": "text"
         },
-        "showcard": {
+        "columns": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Show Card Background",
-          "x-form-type": "materialswitch"
-        },
-        "customcardcolor": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Custom Card Color",
-          "x-form-visible": "model.showcard == 'true'",
-          "x-form-type": "materialswitch"
-        },
-        "cardcolor": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Card Color",
-          "x-form-type": "color",
-          "x-form-visible": "model.showcard == 'true' and model.customcardcolor == 'true'",
-          "x-default": "#ffffff"
-        },
-        "cardborder": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Show Card Border",
-          "x-form-type": "materialswitch",
-          "x-default": "true"
-        },
-        "roundedcorners": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Rounded Corners",
-          "x-form-type": "materialselect",
-          "x-default": "none",
-          "properties": {
-            "none": {
-              "x-form-name": "none",
-              "x-form-value": "none"
-            },
-            "small": {
-              "x-form-name": "small",
-              "x-form-value": "small"
-            },
-            "medium": {
-              "x-form-name": "medium",
-              "x-form-value": "medium"
-            },
-            "large": {
-              "x-form-name": "large",
-              "x-form-value": "large"
-            }
-          }
-        },
-        "cardsperrow": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Cards Per Row",
-          "x-form-type": "materialrange",
-          "x-default": 4,
-          "x-form-min": 1,
-          "x-form-max": 6
-        },
-        "cardsperrowtab": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Cards Per Row (Tablet)",
-          "x-form-type": "materialrange",
-          "x-default": 2,
-          "x-form-min": 1,
-          "x-form-max": 6
-        },
-        "cardsperrowmobile": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Cards Per Row (Mobile)",
-          "x-form-type": "materialrange",
-          "x-default": 1,
-          "x-form-min": 1,
-          "x-form-max": 6
-        },
-        "cards": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Cards",
-          "x-form-fieldLabel": "title",
+          "x-form-label": "Table Configuration",
+          "x-form-fieldLabel": "header",
           "x-form-type": "collection",
-          "x-collection-type": "Card",
           "properties": {
-            "title": {
+            "header": {
               "type": "string",
               "x-source": "inject",
-              "x-form-label": "Card Title",
-              "x-form-visible": "model.showtitle == 'true'",
+              "x-form-label": "Column Header",
               "x-form-type": "text"
             },
-            "text": {
+            "value": {
               "type": "string",
               "x-source": "inject",
-              "x-form-label": "Card Text",
-              "x-form-visible": "model.showtext == 'true'",
-              "x-form-type": "texteditor"
-            },
-            "image": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Card Image",
-              "x-form-type": "pathbrowser",
-              "x-form-browserRoot": "/content/themecleanflex/assets",
-              "x-annotate": "size"
-            },
-            "imagewidth": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Image Width",
-              "x-form-type": "materialrange",
-              "x-default": "100",
-              "x-form-min": "10",
-              "x-form-max": "100"
-            },
-            "imagealttext": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Image Alt Text",
+              "x-form-label": "Data Value",
               "x-form-type": "text"
             },
-            "buttontext": {
+            "textalignment": {
               "type": "string",
               "x-source": "inject",
-              "x-form-label": "Button Text",
-              "x-form-visible": "model.showbutton == 'true'",
-              "x-form-type": "text"
-            },
-            "buttonlink": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Button Link",
-              "x-form-visible": "model.showbutton == 'true'",
-              "x-form-type": "pathbrowser",
-              "x-form-browserRoot": "/content/themecleanflex/pages"
-            },
-            "buttoncolor": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Button Color",
+              "x-form-label": "Text alignment",
               "x-form-type": "materialselect",
-              "x-default": "primary",
-              "properties": {
-                "primary": {
-                  "x-form-name": "Primary",
-                  "x-form-value": "primary"
-                },
-                "secondary": {
-                  "x-form-name": "Secondary",
-                  "x-form-value": "secondary"
-                },
-                "success": {
-                  "x-form-name": "Success",
-                  "x-form-value": "success"
-                },
-                "danger": {
-                  "x-form-name": "Danger",
-                  "x-form-value": "danger"
-                },
-                "warning": {
-                  "x-form-name": "Warning",
-                  "x-form-value": "warning"
-                },
-                "info": {
-                  "x-form-name": "Info",
-                  "x-form-value": "info"
-                }
-              }
-            },
-            "buttonsize": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Button Size",
-              "x-form-type": "materialselect",
-              "x-default": "default",
-              "properties": {
-                "default": {
-                  "x-form-name": "Default",
-                  "x-form-value": "default"
-                },
-                "large": {
-                  "x-form-name": "Large",
-                  "x-form-value": "large"
-                },
-                "small": {
-                  "x-form-name": "Small",
-                  "x-form-value": "small"
-                }
-              }
-            },
-            "buttonalign": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Button Alignment",
-              "x-form-type": "materialselect",
-              "x-default": "center",
+              "x-default": "left",
               "properties": {
                 "left": {
-                  "x-form-name": "Left",
+                  "x-form-name": "left",
                   "x-form-value": "left"
                 },
                 "center": {
-                  "x-form-name": "Center",
+                  "x-form-name": "center",
                   "x-form-value": "center"
                 },
                 "right": {
-                  "x-form-name": "Right",
+                  "x-form-name": "right",
                   "x-form-value": "right"
                 }
               }
+            }
+          }
+        },
+        "rowalignment": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Row alignment",
+          "x-form-type": "materialselect",
+          "x-default": "top",
+          "properties": {
+            "top": {
+              "x-form-name": "top",
+              "x-form-value": "top"
+            },
+            "center": {
+              "x-form-name": "center",
+              "x-form-value": "center"
+            },
+            "bottom": {
+              "x-form-name": "bottom",
+              "x-form-value": "bottom"
+            }
+          }
+        },
+        "mobiletablestyle": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Mobile table style",
+          "x-form-type": "materialselect",
+          "x-default": "default",
+          "properties": {
+            "default": {
+              "x-form-name": "default",
+              "x-form-value": "default"
+            },
+            "scroll": {
+              "x-form-name": "scroll",
+              "x-form-value": "scroll"
+            }
+          }
+        },
+        "stripedrows": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Striped Rows",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "densetable": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Dense Table",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "scrollabletable": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Scrollable Table",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "stickyheader": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Sticky Header",
+          "x-form-type": "materialswitch",
+          "x-form-visible": "model.scrollabletable == 'true'",
+          "x-default": false
+        },
+        "tableheight": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Table Height",
+          "x-form-type": "materialrange",
+          "x-form-min": 100,
+          "x-form-max": 500,
+          "x-default": 300,
+          "x-form-visible": "model.scrollabletable == 'true'"
+        },
+        "selectable": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Selectable Table",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "cellborders": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Add borders around individual cells",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "caption": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Table caption",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "captiontext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Caption text",
+          "x-form-type": "text",
+          "x-form-visible": "model.caption == 'true'"
+        },
+        "captionplacement": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Caption placement",
+          "x-form-type": "materialselect",
+          "x-default": "bottom",
+          "x-form-visible": "model.caption == 'true'",
+          "properties": {
+            "top": {
+              "x-form-name": "top",
+              "x-form-value": "top"
+            },
+            "bottom": {
+              "x-form-name": "bottom",
+              "x-form-value": "bottom"
+            }
+          }
+        },
+        "captionalignment": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Caption alignment",
+          "x-form-type": "materialselect",
+          "x-default": "left",
+          "x-form-visible": "model.caption == 'true'",
+          "properties": {
+            "left": {
+              "x-form-name": "left",
+              "x-form-value": "left"
+            },
+            "center": {
+              "x-form-name": "center",
+              "x-form-value": "center"
+            },
+            "right": {
+              "x-form-name": "right",
+              "x-form-value": "right"
             }
           }
         },
@@ -502,10 +478,10 @@ import org.apache.sling.models.annotations.Model;
       }
     }
   },
-  "name": "Cards",
-  "componentPath": "themecleanflex/components/cards",
+  "name": "Datalist",
+  "componentPath": "themecleanflex/components/datalist",
   "package": "com.themecleanflex.models",
-  "modelName": "Cards",
+  "modelName": "Datalist",
   "classNameParent": "AbstractComponent"
 }
 //GEN]
@@ -514,7 +490,7 @@ import org.apache.sling.models.annotations.Model;
 //GEN[:DEF
 @Model(
         adaptables = Resource.class,
-        resourceType = "themecleanflex/components/cards",
+        resourceType = "themecleanflex/components/datalist",
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
         adapters = IComponent.class
 )
@@ -524,64 +500,84 @@ import org.apache.sling.models.annotations.Model;
 )
 
 //GEN]
-public class CardsModel extends AbstractComponent {
+public class DatalistModel extends AbstractComponent {
 
-    public CardsModel(Resource r) { super(r); }
+    public DatalistModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Title","x-form-type":"materialswitch"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"URL to load JSON data for table","x-form-type":"text","x-default":""} */
 	@Inject
-	private String showtitle;
+	@Default(values ="")
+	private String endpointurl;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Text","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (endpointurl)","x-form-type":"text"} */
 	@Inject
-	private String showtext;
+	private String loadfunction;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Button","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to delete rows","x-form-hint":"Function must accept (tableData, activeSelections, endpointurl)","x-form-type":"text"} */
 	@Inject
-	private String showbutton;
+	private String deletefunction;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Background","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"textalignment":{"type":"string","x-source":"inject","x-form-label":"Text alignment","x-form-type":"materialselect","x-default":"left","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}}}} */
 	@Inject
-	private String showcard;
+	private List<IComponent> columns;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Custom Card Color","x-form-visible":"model.showcard == 'true'","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Row alignment","x-form-type":"materialselect","x-default":"top","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"center":{"x-form-name":"center","x-form-value":"center"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
 	@Inject
-	private String customcardcolor;
+	@Default(values ="top")
+	private String rowalignment;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Card Color","x-form-type":"color","x-form-visible":"model.showcard == 'true' and model.customcardcolor == 'true'","x-default":"#ffffff"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Mobile table style","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"default","x-form-value":"default"},"scroll":{"x-form-name":"scroll","x-form-value":"scroll"}}} */
 	@Inject
-	@Default(values ="#ffffff")
-	private String cardcolor;
+	@Default(values ="default")
+	private String mobiletablestyle;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Border","x-form-type":"materialswitch","x-default":"true"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Striped Rows","x-form-type":"materialswitch","x-default":false} */
 	@Inject
-	@Default(values ="true")
-	private String cardborder;
+	private String stripedrows;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Rounded Corners","x-form-type":"materialselect","x-default":"none","properties":{"none":{"x-form-name":"none","x-form-value":"none"},"small":{"x-form-name":"small","x-form-value":"small"},"medium":{"x-form-name":"medium","x-form-value":"medium"},"large":{"x-form-name":"large","x-form-value":"large"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Dense Table","x-form-type":"materialswitch","x-default":false} */
 	@Inject
-	@Default(values ="none")
-	private String roundedcorners;
+	private String densetable;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row","x-form-type":"materialrange","x-default":4,"x-form-min":1,"x-form-max":6} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Scrollable Table","x-form-type":"materialswitch","x-default":false} */
 	@Inject
-	@Default(values ="4")
-	private String cardsperrow;
+	private String scrollabletable;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row (Tablet)","x-form-type":"materialrange","x-default":2,"x-form-min":1,"x-form-max":6} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Sticky Header","x-form-type":"materialswitch","x-form-visible":"model.scrollabletable == 'true'","x-default":false} */
 	@Inject
-	@Default(values ="2")
-	private String cardsperrowtab;
+	private String stickyheader;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row (Mobile)","x-form-type":"materialrange","x-default":1,"x-form-min":1,"x-form-max":6} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Height","x-form-type":"materialrange","x-form-min":100,"x-form-max":500,"x-default":300,"x-form-visible":"model.scrollabletable == 'true'"} */
 	@Inject
-	@Default(values ="1")
-	private String cardsperrowmobile;
+	@Default(values ="300")
+	private String tableheight;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards","x-form-fieldLabel":"title","x-form-type":"collection","x-collection-type":"Card","properties":{"title":{"type":"string","x-source":"inject","x-form-label":"Card Title","x-form-visible":"model.showtitle == 'true'","x-form-type":"text"},"text":{"type":"string","x-source":"inject","x-form-label":"Card Text","x-form-visible":"model.showtext == 'true'","x-form-type":"texteditor"},"image":{"type":"string","x-source":"inject","x-form-label":"Card Image","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets","x-annotate":"size"},"imagewidth":{"type":"string","x-source":"inject","x-form-label":"Image Width","x-form-type":"materialrange","x-default":"100","x-form-min":"10","x-form-max":"100"},"imagealttext":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"},"buttontext":{"type":"string","x-source":"inject","x-form-label":"Button Text","x-form-visible":"model.showbutton == 'true'","x-form-type":"text"},"buttonlink":{"type":"string","x-source":"inject","x-form-label":"Button Link","x-form-visible":"model.showbutton == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"buttoncolor":{"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"info":{"x-form-name":"Info","x-form-value":"info"}}},"buttonsize":{"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}},"buttonalign":{"type":"string","x-source":"inject","x-form-label":"Button Alignment","x-form-type":"materialselect","x-default":"center","properties":{"left":{"x-form-name":"Left","x-form-value":"left"},"center":{"x-form-name":"Center","x-form-value":"center"},"right":{"x-form-name":"Right","x-form-value":"right"}}}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Selectable Table","x-form-type":"materialswitch","x-default":false} */
 	@Inject
-	private List<CardModel> cards;
+	private String selectable;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false} */
+	@Inject
+	private String cellborders;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Table caption","x-form-type":"materialswitch","x-default":false} */
+	@Inject
+	private String caption;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption text","x-form-type":"text","x-form-visible":"model.caption == 'true'"} */
+	@Inject
+	private String captiontext;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption placement","x-form-type":"materialselect","x-default":"bottom","x-form-visible":"model.caption == 'true'","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
+	@Inject
+	@Default(values ="bottom")
+	private String captionplacement;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption alignment","x-form-type":"materialselect","x-default":"left","x-form-visible":"model.caption == 'true'","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}} */
+	@Inject
+	@Default(values ="left")
+	private String captionalignment;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
@@ -684,64 +680,89 @@ public class CardsModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Title","x-form-type":"materialswitch"} */
-	public String getShowtitle() {
-		return showtitle;
+    	/* {"type":"string","x-source":"inject","x-form-label":"URL to load JSON data for table","x-form-type":"text","x-default":""} */
+	public String getEndpointurl() {
+		return endpointurl;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Text","x-form-type":"materialswitch"} */
-	public String getShowtext() {
-		return showtext;
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (endpointurl)","x-form-type":"text"} */
+	public String getLoadfunction() {
+		return loadfunction;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Button","x-form-type":"materialswitch"} */
-	public String getShowbutton() {
-		return showbutton;
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to delete rows","x-form-hint":"Function must accept (tableData, activeSelections, endpointurl)","x-form-type":"text"} */
+	public String getDeletefunction() {
+		return deletefunction;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Background","x-form-type":"materialswitch"} */
-	public String getShowcard() {
-		return showcard;
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"textalignment":{"type":"string","x-source":"inject","x-form-label":"Text alignment","x-form-type":"materialselect","x-default":"left","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}}}} */
+	public List<IComponent> getColumns() {
+		return columns;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Custom Card Color","x-form-visible":"model.showcard == 'true'","x-form-type":"materialswitch"} */
-	public String getCustomcardcolor() {
-		return customcardcolor;
+	/* {"type":"string","x-source":"inject","x-form-label":"Row alignment","x-form-type":"materialselect","x-default":"top","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"center":{"x-form-name":"center","x-form-value":"center"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
+	public String getRowalignment() {
+		return rowalignment;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Card Color","x-form-type":"color","x-form-visible":"model.showcard == 'true' and model.customcardcolor == 'true'","x-default":"#ffffff"} */
-	public String getCardcolor() {
-		return cardcolor;
+	/* {"type":"string","x-source":"inject","x-form-label":"Mobile table style","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"default","x-form-value":"default"},"scroll":{"x-form-name":"scroll","x-form-value":"scroll"}}} */
+	public String getMobiletablestyle() {
+		return mobiletablestyle;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Show Card Border","x-form-type":"materialswitch","x-default":"true"} */
-	public String getCardborder() {
-		return cardborder;
+	/* {"type":"string","x-source":"inject","x-form-label":"Striped Rows","x-form-type":"materialswitch","x-default":false} */
+	public String getStripedrows() {
+		return stripedrows;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Rounded Corners","x-form-type":"materialselect","x-default":"none","properties":{"none":{"x-form-name":"none","x-form-value":"none"},"small":{"x-form-name":"small","x-form-value":"small"},"medium":{"x-form-name":"medium","x-form-value":"medium"},"large":{"x-form-name":"large","x-form-value":"large"}}} */
-	public String getRoundedcorners() {
-		return roundedcorners;
+	/* {"type":"string","x-source":"inject","x-form-label":"Dense Table","x-form-type":"materialswitch","x-default":false} */
+	public String getDensetable() {
+		return densetable;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row","x-form-type":"materialrange","x-default":4,"x-form-min":1,"x-form-max":6} */
-	public String getCardsperrow() {
-		return cardsperrow;
+	/* {"type":"string","x-source":"inject","x-form-label":"Scrollable Table","x-form-type":"materialswitch","x-default":false} */
+	public String getScrollabletable() {
+		return scrollabletable;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row (Tablet)","x-form-type":"materialrange","x-default":2,"x-form-min":1,"x-form-max":6} */
-	public String getCardsperrowtab() {
-		return cardsperrowtab;
+	/* {"type":"string","x-source":"inject","x-form-label":"Sticky Header","x-form-type":"materialswitch","x-form-visible":"model.scrollabletable == 'true'","x-default":false} */
+	public String getStickyheader() {
+		return stickyheader;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards Per Row (Mobile)","x-form-type":"materialrange","x-default":1,"x-form-min":1,"x-form-max":6} */
-	public String getCardsperrowmobile() {
-		return cardsperrowmobile;
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Height","x-form-type":"materialrange","x-form-min":100,"x-form-max":500,"x-default":300,"x-form-visible":"model.scrollabletable == 'true'"} */
+	public String getTableheight() {
+		return tableheight;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Cards","x-form-fieldLabel":"title","x-form-type":"collection","x-collection-type":"Card","properties":{"title":{"type":"string","x-source":"inject","x-form-label":"Card Title","x-form-visible":"model.showtitle == 'true'","x-form-type":"text"},"text":{"type":"string","x-source":"inject","x-form-label":"Card Text","x-form-visible":"model.showtext == 'true'","x-form-type":"texteditor"},"image":{"type":"string","x-source":"inject","x-form-label":"Card Image","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets","x-annotate":"size"},"imagewidth":{"type":"string","x-source":"inject","x-form-label":"Image Width","x-form-type":"materialrange","x-default":"100","x-form-min":"10","x-form-max":"100"},"imagealttext":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"},"buttontext":{"type":"string","x-source":"inject","x-form-label":"Button Text","x-form-visible":"model.showbutton == 'true'","x-form-type":"text"},"buttonlink":{"type":"string","x-source":"inject","x-form-label":"Button Link","x-form-visible":"model.showbutton == 'true'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"buttoncolor":{"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"info":{"x-form-name":"Info","x-form-value":"info"}}},"buttonsize":{"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}},"buttonalign":{"type":"string","x-source":"inject","x-form-label":"Button Alignment","x-form-type":"materialselect","x-default":"center","properties":{"left":{"x-form-name":"Left","x-form-value":"left"},"center":{"x-form-name":"Center","x-form-value":"center"},"right":{"x-form-name":"Right","x-form-value":"right"}}}}} */
-	public List<CardModel> getCards() {
-		return cards;
+	/* {"type":"string","x-source":"inject","x-form-label":"Selectable Table","x-form-type":"materialswitch","x-default":false} */
+	public String getSelectable() {
+		return selectable;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false} */
+	public String getCellborders() {
+		return cellborders;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Table caption","x-form-type":"materialswitch","x-default":false} */
+	public String getCaption() {
+		return caption;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption text","x-form-type":"text","x-form-visible":"model.caption == 'true'"} */
+	public String getCaptiontext() {
+		return captiontext;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption placement","x-form-type":"materialselect","x-default":"bottom","x-form-visible":"model.caption == 'true'","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
+	public String getCaptionplacement() {
+		return captionplacement;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption alignment","x-form-type":"materialselect","x-default":"left","x-form-visible":"model.caption == 'true'","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}} */
+	public String getCaptionalignment() {
+		return captionalignment;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
