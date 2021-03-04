@@ -586,35 +586,35 @@ public class BreadcrumbModel extends AbstractComponent {
     	
     }
     
-    private List<TextLink> getDeepLinks(Resource resource){
+    private List<TextLink> getDeepLinks(Resource resource) {
+		try {
+			ValueMap props = resource.getValueMap();
+			String resourceType = props.get("jcr:primaryType", "type not found");
+			// we only care about per:page child
+			if (resourceType.equals("per:Page")) {
+				Resource index = resource.getChild("index");
+				if (index == null) {
+					index = resource;
+				}
 
-    	try{
-			    		
-    		ValueMap props = resource.adaptTo(ValueMap.class);
-		    String resourceType = props.get("jcr:primaryType", "type not found");
-		    // we only care about per:page child
-		    if(resourceType.equals("per:Page")){
-          Resource index = resource.getChild("index");
-          if(index != null) {
-            TextLink link = new TextLink(index.getPath(), getPageTitle(index.getPath()));
-            links.add(0,link);
-          } else {
-            TextLink link = new TextLink(resource.getPath(), getPageTitle(resource.getPath()));
-            links.add(0,link);
-          }
-      }
-		    // move on to its parent resource
-		    if(resource.getParent() != null && links.size() < Integer.parseInt(getLevel())) {
-		    	getDeepLinks(resource.getParent());
-		    }
-    	} catch(Exception e){
-    		LOG.error("getDeepLinks error: {}",e);
+				final String path = index.getPath();
+				TextLink link = new TextLink(path, getPageTitle(path));
+				links.add(0, link);
+			}
+			// move on to its parent resource
+			final Resource parent = resource.getParent();
+			if (parent != null && links.size() < Integer.parseInt(getLevel())) {
+				getDeepLinks(parent);
+			}
+		} catch (Exception e) {
+			LOG.error("getDeepLinks error: {}", e);
 		}
-    	if(links.size() >= 2 && links.get(0).getLink().equals(links.get(1).getLink())) {
-        links.remove(0);
-      }
-    return links;
-  }
+
+		if (links.size() >= 2 && links.get(0).getLink().equals(links.get(1).getLink())) {
+			links.remove(0);
+		}
+		return links;
+	}
     	
 	private String getPageTitle(String pageUrl){
 		try{

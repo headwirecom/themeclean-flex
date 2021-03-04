@@ -108,6 +108,7 @@
           "x-form-label": "Cards",
           "x-form-fieldLabel": "title",
           "x-form-type": "collection",
+          "x-collection-type": "Card",
           "properties": {
             "title": {
               "type": "string",
@@ -128,7 +129,8 @@
               "x-source": "inject",
               "x-form-label": "Card Image",
               "x-form-type": "pathbrowser",
-              "x-form-browserRoot": "/content/themecleanflex/assets"
+              "x-form-browserRoot": "/content/themecleanflex/assets",
+              "x-annotate": "size"
             },
             "imagewidth": {
               "type": "string",
