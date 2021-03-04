@@ -7,7 +7,6 @@ import com.peregrine.nodetypes.models.IComponent;
 import java.util.ArrayList;
 import java.util.List;
 import javax.inject.Inject;
-import javax.swing.text.html.parser.TagElement;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
@@ -18,7 +17,7 @@ import org.apache.sling.models.annotations.Model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
+import static com.peregrine.commons.util.PerConstants.EXCLUDE_PAGE_FROM_SITEMAP;
 /*
     //GEN[:DATA
     {
@@ -660,7 +659,7 @@ public class PagelistModel extends AbstractComponent {
 			PerPage page = ppm.getPage(getRootPage());
 			if (page != null) {
 				for (PerPage child : page.listChildren()) {
-					if ( !(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false))
+					if ( !(excludeSitemap && child.getContentProperty(EXCLUDE_PAGE_FROM_SITEMAP, false))
 							&& (!child.getPath().equals(page.getPath()))
 						) {
 						childPages.add(new Page(child, levels, getReferences(), excludeSitemap));
@@ -751,7 +750,7 @@ public class PagelistModel extends AbstractComponent {
 		List<Page> childPages = new ArrayList<Page>();
 		if(page != null) {
 			for (PerPage child: page.listChildren()) {
-				if(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
+				if(excludeSitemap && child.getContentProperty(EXCLUDE_PAGE_FROM_SITEMAP, false)) {
 					continue;
 				}
 				if(levels > 0 && !child.getPath().equals(page.getPath())) {
