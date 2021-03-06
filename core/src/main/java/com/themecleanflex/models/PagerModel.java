@@ -722,7 +722,7 @@ public class PagerModel extends AbstractComponent {
 		if(page == null) return "not adaptable";
 		PerPage prev = page.getPrevious();
 		if(Boolean.parseBoolean(getExcludeSitemapExcludes())) {
-			while(prev != null && prev.getContentProperty(PerConstants.EXCLUDE_PAGE_FROM_SITEMAP, false)) {
+			while(prev != null && prev.getContentProperty(PerConstants.EXCLUDE_FROM_SITEMAP, false)) {
 				prev = prev.getPrevious();
 			}
 		}
@@ -745,7 +745,7 @@ public class PagerModel extends AbstractComponent {
 		if(page == null) return "not adaptable";
 		PerPage next = page.getNext();
 		if(Boolean.parseBoolean(getExcludeSitemapExcludes())) {
-			while(next != null && next.getContentProperty(PerConstants.EXCLUDE_PAGE_FROM_SITEMAP, false)) {
+			while(next != null && next.getContentProperty(PerConstants.EXCLUDE_FROM_SITEMAP, false)) {
 				next = next.getNext();
 			}
 		}

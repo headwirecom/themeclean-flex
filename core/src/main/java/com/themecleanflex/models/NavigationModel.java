@@ -15,7 +15,7 @@ import org.apache.sling.models.annotations.Model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static com.peregrine.commons.util.PerConstants.EXCLUDE_PAGE_FROM_SITEMAP;
+import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
 
 /*
     //GEN[:DATA
@@ -609,7 +609,7 @@ public class NavigationModel extends AbstractComponent {
 			PerPage page = ppm.getPage(getRootpage());
 			if (page != null) {
 				for (PerPage child : page.listChildren()) {
-					if(excludeSitemap && child.getContentProperty(EXCLUDE_PAGE_FROM_SITEMAP, false)) {
+					if(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
 						continue;
 					}
 					if (!child.getPath().equals(page.getPath())) {
@@ -654,7 +654,7 @@ public class NavigationModel extends AbstractComponent {
 		System.out.println();
 		if(page != null) {
 			for (PerPage child: page.listChildren()) {
-				if(excludeSitemap && child.getContentProperty(EXCLUDE_PAGE_FROM_SITEMAP, false)) {
+				if(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
 					continue;
 				}
 				if(!child.getPath().equals(page.getPath())) {
