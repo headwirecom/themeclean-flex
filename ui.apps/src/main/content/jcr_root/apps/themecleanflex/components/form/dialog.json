@@ -5,9 +5,18 @@
       "rows": 10,
       "max": "16000",
       "placeholder": "schema",
-      "label": "Form Model",
+      "label": "Form schema",
       "model": "schema",
-      "hint": "JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields' target='_blank'>vue form generator fields documentation</a>"
+      "hint": "JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>"
+    },
+    {
+      "type": "material-textarea",
+      "rows": 10,
+      "max": "16000",
+      "placeholder": "uischema",
+      "label": "Form uischema (OPTIONAL)",
+      "model": "uischema",
+      "hint": "UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>"
     },
     {
       "type": "input",

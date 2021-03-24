@@ -24,9 +24,17 @@ import javax.inject.Named;
         "schema": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Form Model",
+          "x-form-label": "Form schema",
           "x-form-type": "textarea",
-          "x-form-hint": "JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields' target='_blank'>vue form generator fields documentation</a>",
+          "x-form-hint": "JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>",
+          "x-form-max": "16000"
+        },
+        "uischema": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Form uischema (OPTIONAL)",
+          "x-form-type": "textarea",
+          "x-form-hint": "UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>",
           "x-form-max": "16000"
         },
         "endpointurl": {
@@ -387,9 +395,13 @@ public class FormModel extends AbstractComponent {
     public FormModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form Model","x-form-type":"textarea","x-form-hint":"JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields' target='_blank'>vue form generator fields documentation</a>","x-form-max":"16000"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Form schema","x-form-type":"textarea","x-form-hint":"JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>","x-form-max":"16000"} */
 	@Inject
 	private String schema;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Form uischema (OPTIONAL)","x-form-type":"textarea","x-form-hint":"UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>","x-form-max":"16000"} */
+	@Inject
+	private String uischema;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-default":""} */
 	@Inject
@@ -526,9 +538,14 @@ public class FormModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form Model","x-form-type":"textarea","x-form-hint":"JSON description passed to vue-form-generator, see <a href='https://vue-generators.gitbook.io/vue-generators/fields' target='_blank'>vue form generator fields documentation</a>","x-form-max":"16000"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Form schema","x-form-type":"textarea","x-form-hint":"JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>","x-form-max":"16000"} */
 	public String getSchema() {
 		return schema;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Form uischema (OPTIONAL)","x-form-type":"textarea","x-form-hint":"UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>","x-form-max":"16000"} */
+	public String getUischema() {
+		return uischema;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-default":""} */

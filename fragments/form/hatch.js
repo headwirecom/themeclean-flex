@@ -2,6 +2,7 @@ module.exports = {
     convert: function($, f) {
         f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
+        //f.addIf($.parent(), "isReady");
 
         const failureP = $.find('p').eq(0)
         f.mapField(failureP,'failureText',false)
@@ -29,16 +30,18 @@ module.exports = {
         f.bindAttribute(formContainer, 'class', formContainerClasses, false);
 
         const div2 = $.find('div').eq(1)
-        f.replace(div2, '<vue-form-generator></vue-form-generator>')
+        f.replace(div2, '<json-forms></json-forms>')
 
         const formEl = $.find('form')
         f.bindEvent(formEl,'submit.prevent.stop','onSubmit')
         
-        const form = $.find('vue-form-generator').first()
+        const form = $.find('json-forms').first()
         f.bindAttribute(form,'class','`w-full`', false)
-        f.bindAttribute(form,'model','formModel')
+        f.bindAttribute(form,'data','form')
         f.bindAttribute(form,'schema','schema')
-        f.bindAttribute(form,'options','formOptions')
+        f.bindAttribute(form,'uischema','uischema')
+        f.bindAttribute(form, 'renderers', 'renderers')
+        f.bindEvent(form, 'change', 'onChange')
 
         f.bindPath($)
     }
