@@ -617,7 +617,6 @@
    */
 
   var useJsonFormsRenderer = function useJsonFormsRenderer(props) {
-    console.log('useJsonFormsRenderer:', props)
     var jsonforms = compositionApi.inject('jsonforms');
     var dispatch = compositionApi.inject('dispatch');
 
