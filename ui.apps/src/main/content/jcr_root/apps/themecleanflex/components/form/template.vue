@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model">
+  <themecleanflex-components-block v-bind:model="model" v-if="isReady">
     <div class="w-full" v-bind:data-per-path="model.path">
       <div class="text-black p-2 rounded-r mt-4 border-l-4 shadow-md note-important"
       v-if="( failureText || schemaError )">
@@ -32,24 +32,24 @@ export default {
     return {
       form: {},
       failureText: '',
-      renderers: window.JSONFormsVue2Vanilla.vanillaRenderers
+      renderers: Object.freeze(JSONFormsVue2Vanilla.vanillaRenderers)
     }
   },
   computed: {
     isReady() {
-      const {Vue, VueCompositionAPI, JSONFormsCore, JSONFormsVue2, JSONFormsVue2Vanilla}  = window
+      const {Vue, VueCompositionAPI, JSONFormsCore, JSONFormsVue2, JSONFormsVue2Vanilla} = window
       return Vue && VueCompositionAPI && JSONFormsCore && JSONFormsVue2 && JSONFormsVue2Vanilla
     },
     schema() {
       try {
-        return JSON.parse(this.model.schema.replace(/[\n\r]/g, ''))
+        return JSON.parse(this.model.schema)
       } catch (error) {
         return null
       }
     },
     uischema() {
       try {
-        return JSON.parse(this.model.uischema.replace(/[\n\r]/g, ''))
+        return JSON.parse(this.model.uischema)
       } catch (error) {
         return null
       }
@@ -123,6 +123,20 @@ export default {
           .catch((error) => {
             this.$set(this, 'failureText', this.model.failmessage)
           })
+    }
+  },
+  provide() {
+    const { defaultStyles, mergeStyles } = JSONFormsVue2Vanilla
+    const customStyles = {
+      control: {
+        root: 'flex flex-col mb-4 md:w-1/2',
+        input: 'border py-2 px-3 text-grey-darkest',
+        label: 'mb-2 uppercase font-bold text-lg text-grey-darkest'
+      }
+    }
+
+    return {
+      styles: mergeStyles(defaultStyles, customStyles)
     }
   }
 }

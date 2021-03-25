@@ -924,6 +924,10 @@ video {
   margin-right: var(--spacing-2);
 }
 
+.mb-2 {
+  margin-bottom: var(--spacing-2);
+}
+
 .ml-2 {
   margin-left: var(--spacing-2);
 }
@@ -1050,6 +1054,11 @@ video {
 .py-3 {
   padding-top: var(--spacing-3);
   padding-bottom: var(--spacing-3);
+}
+
+.px-3 {
+  padding-left: var(--spacing-3);
+  padding-right: var(--spacing-3);
 }
 
 .px-4 {
@@ -1191,6 +1200,10 @@ video {
 
 .hover\:text-green-600:hover {
   color: var(--color-green-600);
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .no-underline {

@@ -32,7 +32,7 @@ import javax.inject.Named;
         "uischema": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Form uischema (OPTIONAL)",
+          "x-form-label": "Form uischema",
           "x-form-type": "textarea",
           "x-form-hint": "UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>",
           "x-form-max": "16000"
@@ -399,7 +399,7 @@ public class FormModel extends AbstractComponent {
 	@Inject
 	private String schema;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Form uischema (OPTIONAL)","x-form-type":"textarea","x-form-hint":"UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>","x-form-max":"16000"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Form uischema","x-form-type":"textarea","x-form-hint":"UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>","x-form-max":"16000"} */
 	@Inject
 	private String uischema;
 
@@ -543,7 +543,7 @@ public class FormModel extends AbstractComponent {
 		return schema;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Form uischema (OPTIONAL)","x-form-type":"textarea","x-form-hint":"UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>","x-form-max":"16000"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Form uischema","x-form-type":"textarea","x-form-hint":"UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>","x-form-max":"16000"} */
 	public String getUischema() {
 		return uischema;
 	}
