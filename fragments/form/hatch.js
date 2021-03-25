@@ -34,9 +34,10 @@ module.exports = {
 
         const formEl = $.find('form')
         f.bindEvent(formEl,'submit.prevent.stop','onSubmit')
-        
+
         const form = $.find('json-forms').first()
-        f.bindAttribute(form,'class','`w-full`', false)
+        f.bindAttribute(form,'ref','`jsonForms`')
+        f.bindAttribute(form,'class','`w-full mb-4 md:flex md:flex-wrap md:justify-between`', false)
         f.bindAttribute(form,'data','form')
         f.bindAttribute(form,'schema','schema')
         f.bindAttribute(form,'uischema','uischema')

@@ -575,6 +575,8 @@ video {
   }
 }
 
+@tailwind perflight;
+
 .bg-white {
   --bg-opacity: 1;
   background-color: #fff;
@@ -916,8 +918,16 @@ video {
   margin-top: var(--spacing-0);
 }
 
+.mt-1 {
+  margin-top: var(--spacing-1);
+}
+
 .mb-1 {
   margin-bottom: var(--spacing-1);
+}
+
+.ml-1 {
+  margin-left: var(--spacing-1);
 }
 
 .mr-2 {
@@ -1212,6 +1222,10 @@ video {
 
 .hover\:underline:hover {
   text-decoration: underline;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .align-top {
@@ -1881,6 +1895,10 @@ p {
   justify-content: flex-end;
 }
 
+[class$="components-form"] .error {
+  color: var(--color-red-500) !important;
+}
+
 /* purgecss end ignore */
 
 @media (min-width: 640px) {
@@ -1888,6 +1906,10 @@ p {
   .sm\:mx-3 {
     margin-left: var(--spacing-3);
     margin-right: var(--spacing-3);
+  }
+
+  .sm\:p-2 {
+    padding: var(--spacing-2);
   }
 
   .sm\:px-0 {
@@ -2026,12 +2048,20 @@ p {
     flex-direction: row-reverse;
   }
 
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .md\:justify-start {
     justify-content: flex-start;
   }
 
   .md\:justify-end {
     justify-content: flex-end;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:flex-grow-0 {
@@ -2049,6 +2079,10 @@ p {
 
   .md\:mb-0 {
     margin-bottom: var(--spacing-0);
+  }
+
+  .md\:p-4 {
+    padding: var(--spacing-4);
   }
 
   .md\:px-3 {

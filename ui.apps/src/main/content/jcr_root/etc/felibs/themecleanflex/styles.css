@@ -1,6 +1,7 @@
 @import './custom.css';
 @tailwind base;
 @tailwind components;
+@tailwind perflight;
 @tailwind utilities;
 
 /* purgecss start ignore */
@@ -380,5 +381,8 @@ p {
 }
 [class$="components-form"] .justify-button-end .field-submit > div{
   justify-content: flex-end;
+}
+[class$="components-form"] .error {
+  color: var(--color-red-500) !important;
 }
 /* purgecss end ignore */

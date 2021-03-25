@@ -6,7 +6,7 @@
         <p class="ml-2" v-if="failureText">{{failureText}}</p>
         <p class="ml-2" v-if="schemaError">{{schemaError}}</p>
       </div>
-      <form class="w-full flex flex-col" v-bind:class="{
+      <form class="w-full flex flex-col md:p-4 sm:p-2" v-bind:class="{
             'justify-button-start': model.submitalignment === 'start',
             'justify-button-center': model.submitalignment === 'center',
             'justify-button-end': model.submitalignment === 'end',
@@ -15,8 +15,9 @@
             'lg-button': model.submitsize === 'large',
             'full-button': model.submitsize === 'full',
         }" v-on:submit.prevent.stop="onSubmit">
-        <json-forms v-bind:class="`w-full`" v-bind:data="form" v-bind:schema="schema"
-        v-bind:uischema="uischema" v-bind:renderers="renderers" v-on:change="onChange"></json-forms>
+        <json-forms v-bind:ref="`jsonForms`" v-bind:class="`w-full mb-4 md:flex md:flex-wrap md:justify-between`"
+        v-bind:data="form" v-bind:schema="schema" v-bind:uischema="uischema" v-bind:renderers="renderers"
+        v-on:change="onChange"></json-forms>
         <input class="btn mb-4" type="submit" v-bind:value="model.submittext">
       </form>
     </div>
@@ -78,9 +79,8 @@ export default {
     clearForm() {
       this.form = {}
     },
-    onChange({data, errors}) {
+    onChange({data}) {
       this.form = data
-      this.failureText = errors && errors.length > 0 ? errors : null
     },
     onSubmit(e) {
       if (this.model.submitfunction != 'onSubmit' && this.model.submitfunction != '') {
@@ -128,10 +128,15 @@ export default {
   provide() {
     const { defaultStyles, mergeStyles } = JSONFormsVue2Vanilla
     const customStyles = {
+      verticalLayout:{
+        item: 'flex flex-col mb-4 md:w-1/2',
+      },
       control: {
-        root: 'flex flex-col mb-4 md:w-1/2',
-        input: 'border py-2 px-3 text-grey-darkest',
-        label: 'mb-2 uppercase font-bold text-lg text-grey-darkest'
+        input: 'border py-2 px-3',
+        select: 'border py-2 px-3',
+        option: 'border py-2 px-3',
+        label: 'mb-2 uppercase font-bold text-lg',
+        error: 'flex items-center font-medium tracking-wide text-xs mt-1 ml-1'
       }
     }
 
