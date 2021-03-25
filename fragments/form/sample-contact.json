@@ -1,7 +1,0 @@
-{
-  "title": "Form - Contact",
-  "group": "Features",
-  "model": {
-    "schema": "{\n\"fields\": [\n  {\n    \"type\": \"input\",\n    \"inputType\": \"text\",\n    \"label\": \"First Name\",\n    \"model\": \"first_name\",\n    \"id\": \"first_name\",\n    \"placeholder\": \"First Name\"\n  },{\n    \"type\": \"input\",\n    \"inputType\": \"text\",\n    \"label\": \"Last Name\",\n    \"model\": \"last_name\",\n    \"id\": \"last_name\",\n    \"placeholder\": \"Last Name\"\n  },{\n    \"type\": \"input\",\n    \"inputType\": \"text\",\n    \"label\": \"Email\",\n    \"model\": \"email\",\n    \"id\": \"email\",\n    \"placeholder\": \"Email\",\n    \"featured\": true,\n    \"required\": true\n  },{\n    \"type\": \"textArea\",\n    \"label\": \"Text\",\n    \"model\": \"text\",\n    \"id\": \"text\",\n    \"rows\": 4,\n    \"placeholder\": \"Enter text here\",\n    \"featured\": true,\n    \"required\": true\n  }\n]}"
-  }
-}
