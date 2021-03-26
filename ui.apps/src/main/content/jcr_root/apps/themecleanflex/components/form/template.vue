@@ -29,106 +29,104 @@
 export default {
   props: ['model'],
   data() {
-    console.log('success successpage1', this.model.successpage)
+    console.log('success successpage1', this.model.successpage);
     return {
       form: {},
       failureText: '',
       renderers: Object.freeze(JSONFormsVue2Vanilla.vanillaRenderers)
-    }
+    };
   },
   computed: {
     isReady() {
-      const {Vue, VueCompositionAPI, JSONFormsCore, JSONFormsVue2, JSONFormsVue2Vanilla} = window
-      return Vue && VueCompositionAPI && JSONFormsCore && JSONFormsVue2 && JSONFormsVue2Vanilla
+      const { Vue, VueCompositionAPI, JSONFormsCore, JSONFormsVue2, JSONFormsVue2Vanilla } = window;
+      return Vue && VueCompositionAPI && JSONFormsCore && JSONFormsVue2 && JSONFormsVue2Vanilla;
     },
     schema() {
       try {
-        return JSON.parse(this.model.schema)
+        return JSON.parse(this.model.schema);
       } catch (error) {
-        return null
+        return null;
       }
     },
     uischema() {
       try {
-        return JSON.parse(this.model.uischema)
+        return JSON.parse(this.model.uischema);
       } catch (error) {
-        return null
+        return null;
       }
     },
     schemaError() {
       try {
-        JSON.parse(this.model.schema)
+        JSON.parse(this.model.schema);
       } catch (error) {
-        return 'Error parsing form model: ' + error
+        return 'Error parsing form model: ' + error;
       }
-      return ''
+      return '';
     }
   },
   beforeCreate() {
     if (!Vue.options.components['json-forms']) {
-      Vue.component('json-forms', window.JSONFormsVue2.JsonForms)
+      Vue.component('json-forms', window.JSONFormsVue2.JsonForms);
     }
   },
   mounted() {
-    window.addEventListener('form-clear', this.clearForm)
+    window.addEventListener('form-clear', this.clearForm);
   },
   beforeDestroy() {
-    window.removeEventListener('form-clear', this.clearForm)
+    window.removeEventListener('form-clear', this.clearForm);
   },
   methods: {
     clearForm() {
-      this.form = {}
+      this.form = {};
     },
-    onChange({data}) {
-      this.form = data
+    onChange({ data }) {
+      this.form = data;
     },
     onSubmit(e) {
       if (this.model.submitfunction != 'onSubmit' && this.model.submitfunction != '') {
-        const objs = this.model.submitfunction.split('.')
-        let parent = window
-        let obj = objs.shift()
+        const objs = this.model.submitfunction.split('.');
+        let parent = window;
+        let obj = objs.shift();
         while (obj && parent[obj]) {
           if (objs.length === 0) {
             try {
-              const result = parent[obj](this.model, this.formModel)
+              const result = parent[obj](this.model, this.formModel);
               if (result === false) {
-                this.$set(this, 'failureText', this.model.failmessage)
+                this.$set(this, 'failureText', this.model.failmessage);
               }
               if (result === true && this.model.successpage) {
-                $peregrineApp.loadContent(this.model.successpage)
+                $peregrineApp.loadContent(this.model.successpage);
               }
             } catch (err) {
-              console.error(err)
-              this.$set(this, 'failureText', this.model.failmessage)
+              console.error(err);
+              this.$set(this, 'failureText', this.model.failmessage);
             }
-            return
+            return;
           }
-          parent = parent[obj]
-          obj = objs.shift()
+          parent = parent[obj];
+          obj = objs.shift();
         }
-        console.log('window.' + this.model.submitfunction + ' not found')
-        this.$set(this, 'failureText', this.model.failmessage)
-        return
+        console.log('window.' + this.model.submitfunction + ' not found');
+        this.$set(this, 'failureText', this.model.failmessage);
+        return;
       }
       axios.post(this.model.endpointurl, {
         form: this.formModel
-      })
-          .then((response) => {
-            if (this.model.successpage) {
-              $peregrineApp.loadContent(this.model.successpage)
-            } else {
-              window.dispatchEvent(new CustomEvent('form-clear', {}))
-            }
-          })
-          .catch((error) => {
-            this.$set(this, 'failureText', this.model.failmessage)
-          })
+      }).then(() => {
+        if (this.model.successpage) {
+          $peregrineApp.loadContent(this.model.successpage);
+        } else {
+          window.dispatchEvent(new CustomEvent('form-clear', {}));
+        }
+      }).catch(() => {
+        this.$set(this, 'failureText', this.model.failmessage);
+      });
     }
   },
   provide() {
-    const { defaultStyles, mergeStyles } = JSONFormsVue2Vanilla
+    const { defaultStyles, mergeStyles } = JSONFormsVue2Vanilla;
     const customStyles = {
-      verticalLayout:{
+      verticalLayout: {
         item: 'flex flex-col mb-4 md:w-1/2',
       },
       control: {
@@ -138,12 +136,9 @@ export default {
         label: 'mb-2 uppercase font-bold text-lg',
         error: 'flex items-center font-medium tracking-wide text-xs mt-1 ml-1'
       }
-    }
-
-    return {
-      styles: mergeStyles(defaultStyles, customStyles)
-    }
+    };
+    return { styles: mergeStyles(defaultStyles, customStyles) };
   }
-}
+};
 </script>
 
