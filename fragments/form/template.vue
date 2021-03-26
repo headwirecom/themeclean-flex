@@ -58,7 +58,8 @@ export default {
       } catch (error) {
         return null;
       }
-    }, jsonFormsKey() {
+    },
+    jsonFormsKey() {
       const { sha256 } = window;
       const str = JSON.stringify(this.schema) + JSON.stringify(this.uischema);
       if (sha256 && typeof sha256 === 'function') {
