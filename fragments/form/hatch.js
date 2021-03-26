@@ -29,21 +29,20 @@ module.exports = {
         }`;
     f.bindAttribute(formContainer, 'class', formContainerClasses, false);
 
-    const div2 = $.find('div').eq(1);
+    const div2 = $.find('#json-forms');
     f.replace(div2, '<json-forms></json-forms>');
 
     const formEl = $.find('form');
     f.bindEvent(formEl, 'submit.prevent.stop', 'onSubmit');
 
-    const form = $.find('json-forms').first();
-    f.bindAttribute(form, 'ref', '`jsonForms`');
-    f.bindAttribute(form, 'class',
+    const jsonForms = $.find('json-forms').first();
+    f.bindAttribute(jsonForms, 'class',
         '`w-full mb-4 md:flex md:flex-wrap md:justify-between`', false);
-    f.bindAttribute(form, 'data', 'form');
-    f.bindAttribute(form, 'schema', 'schema');
-    f.bindAttribute(form, 'uischema', 'uischema');
-    f.bindAttribute(form, 'renderers', 'renderers');
-    f.bindEvent(form, 'change', 'onChange');
+    f.bindAttribute(jsonForms, 'data', 'form');
+    f.bindAttribute(jsonForms, 'schema', 'schema');
+    f.bindAttribute(jsonForms, 'uischema', 'uischema');
+    f.bindAttribute(jsonForms, 'renderers', 'renderers');
+    f.bindEvent(jsonForms, 'change', 'onChange');
 
     f.bindPath($);
   }

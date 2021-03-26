@@ -1,5 +1,5 @@
 <template>
-  <themecleanflex-components-block v-bind:model="model" v-if="isReady">
+  <themecleanflex-components-block v-if="isReady" v-bind:model="model">
     <div class="w-full" v-bind:data-per-path="model.path">
       <div class="text-black p-2 rounded-r mt-4 border-l-4 shadow-md note-important"
       v-if="( failureText || schemaError )">
@@ -15,7 +15,7 @@
             'lg-button': model.submitsize === 'large',
             'full-button': model.submitsize === 'full',
         }" v-on:submit.prevent.stop="onSubmit">
-        <json-forms v-bind:ref="`jsonForms`" v-bind:class="`w-full mb-4 md:flex md:flex-wrap md:justify-between`"
+        <json-forms v-bind:class="`w-full mb-4 md:flex md:flex-wrap md:justify-between`"
         v-bind:data="form" v-bind:schema="schema" v-bind:uischema="uischema" v-bind:renderers="renderers"
         v-on:change="onChange"></json-forms>
         <input class="btn mb-4" type="submit" v-bind:value="model.submittext">
@@ -90,7 +90,7 @@ export default {
         while (obj && parent[obj]) {
           if (objs.length === 0) {
             try {
-              const result = parent[obj](this.model, this.formModel);
+              const result = parent[obj](this.model, this.form);
               if (result === false) {
                 this.$set(this, 'failureText', this.model.failmessage);
               }
@@ -111,7 +111,7 @@ export default {
         return;
       }
       axios.post(this.model.endpointurl, {
-        form: this.formModel
+        form: this.form
       }).then(() => {
         if (this.model.successpage) {
           $peregrineApp.loadContent(this.model.successpage);
