@@ -7,7 +7,6 @@ import com.peregrine.nodetypes.models.IComponent;
 import java.util.ArrayList;
 import java.util.List;
 import javax.inject.Inject;
-import javax.swing.text.html.parser.TagElement;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
