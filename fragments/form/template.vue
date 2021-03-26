@@ -2,9 +2,9 @@
   <themecleanflex-components-block v-if="isReady" v-bind:model="model">
     <div class="w-full" v-bind:data-per-path="model.path">
       <div class="text-black p-2 rounded-r mt-4 border-l-4 shadow-md note-important"
-      v-if="( failureText || schemaError )">
-        <p class="ml-2" v-if="failureText">{{failureText}}</p>
-        <p class="ml-2" v-if="schemaError">{{schemaError}}</p>
+           v-if="( failureText || schemaError )">
+        <p class="ml-2" v-if="failureText">{{ failureText }}</p>
+        <p class="ml-2" v-if="schemaError">{{ schemaError }}</p>
       </div>
       <form class="w-full flex flex-col md:p-4 sm:p-2" v-bind:class="{
             'justify-button-start': model.submitalignment === 'start',
@@ -16,8 +16,12 @@
             'full-button': model.submitsize === 'full',
         }" v-on:submit.prevent.stop="onSubmit">
         <json-forms v-bind:class="`w-full mb-4 md:flex md:flex-wrap md:justify-between`"
-        v-bind:data="form" v-bind:schema="schema" v-bind:uischema="uischema" v-bind:renderers="renderers"
-        v-on:change="onChange"></json-forms>
+                    v-bind:key="jsonFormsKey"
+                    v-bind:data="form"
+                    v-bind:schema="schema"
+                    v-bind:uischema="uischema"
+                    v-bind:renderers="renderers"
+                    v-on:change="onChange"></json-forms>
         <input class="btn mb-4" type="submit" v-bind:value="model.submittext">
       </form>
     </div>
@@ -43,7 +47,6 @@ export default {
     },
     schema() {
       try {
-        console.log(this.model.schema)
         return JSON.parse(this.model.schema);
       } catch (error) {
         return null;
@@ -51,10 +54,17 @@ export default {
     },
     uischema() {
       try {
-        console.log(this.model.uischema)
         return JSON.parse(this.model.uischema);
       } catch (error) {
         return null;
+      }
+    }, jsonFormsKey() {
+      const { sha256 } = window;
+      const str = JSON.stringify(this.schema) + JSON.stringify(this.uischema);
+      if (sha256 && typeof sha256 === 'function') {
+        return sha256(str);
+      } else {
+        return str;
       }
     },
     schemaError() {

@@ -38,6 +38,7 @@ module.exports = {
     const jsonForms = $.find('json-forms').first();
     f.bindAttribute(jsonForms, 'class',
         '`w-full mb-4 md:flex md:flex-wrap md:justify-between`', false);
+    f.bindAttribute(jsonForms, 'key', 'jsonFormsKey');
     f.bindAttribute(jsonForms, 'data', 'form');
     f.bindAttribute(jsonForms, 'schema', 'schema');
     f.bindAttribute(jsonForms, 'uischema', 'uischema');

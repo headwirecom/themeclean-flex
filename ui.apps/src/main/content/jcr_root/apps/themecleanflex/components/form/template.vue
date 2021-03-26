@@ -16,8 +16,8 @@
             'full-button': model.submitsize === 'full',
         }" v-on:submit.prevent.stop="onSubmit">
         <json-forms v-bind:class="`w-full mb-4 md:flex md:flex-wrap md:justify-between`"
-        v-bind:data="form" v-bind:schema="schema" v-bind:uischema="uischema" v-bind:renderers="renderers"
-        v-on:change="onChange"></json-forms>
+        v-bind:key="jsonFormsKey" v-bind:data="form" v-bind:schema="schema" v-bind:uischema="uischema"
+        v-bind:renderers="renderers" v-on:change="onChange"></json-forms>
         <input class="btn mb-4" type="submit" v-bind:value="model.submittext">
       </form>
     </div>
@@ -53,6 +53,14 @@ export default {
         return JSON.parse(this.model.uischema);
       } catch (error) {
         return null;
+      }
+    }, jsonFormsKey() {
+      const {sha256} = window
+      const str = JSON.stringify(this.schema) + JSON.stringify(this.uischema)
+      if (sha256 && typeof sha256 === 'function') {
+        return sha256(str)
+      } else {
+        return str
       }
     },
     schemaError() {
