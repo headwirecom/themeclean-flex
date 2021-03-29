@@ -54,7 +54,6 @@ export default {
     },
     uischema() {
       try {
-        console.log(this.model.uischema);
         return JSON.parse(this.model.uischema);
       } catch (error) {
         return null;
@@ -149,6 +148,7 @@ export default {
       control: {
         input: 'border py-2 px-3',
         select: 'border py-2 px-3',
+        textarea: 'border py-2 px-3',
         option: 'border py-2 px-3',
         label: 'mb-2 uppercase font-bold text-lg',
         error: 'flex items-center font-medium tracking-wide text-xs mt-1 ml-1'
