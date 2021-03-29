@@ -37,7 +37,7 @@ import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
           "x-source": "inject",
           "x-form-label": "Exclude pages Excluded in Sitemap",
           "x-form-type": "materialswitch",
-          "x-form-default": false
+          "x-default": false
         },
         "justifyitems": {
           "type": "string",
@@ -57,6 +57,45 @@ import static com.peregrine.commons.util.PerConstants.EXCLUDE_FROM_SITEMAP;
             "end": {
               "x-form-name": "End",
               "x-form-value": "end"
+            }
+          }
+        },
+        "levels": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "number",
+          "x-form-label": "Levels",
+          "x-default": 1,
+          "x-form-min": 1
+        },
+        "mobiledropdownbg": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Transparent mobile dropdown background",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "showmobilemenuontablet": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Show Mobile menu on iPad/tablets",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "toggletype": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Collapse Style",
+          "x-form-type": "materialradio",
+          "x-default": "accordion",
+          "properties": {
+            "toggle": {
+              "x-form-name": "Toggle",
+              "x-form-value": "toggle"
+            },
+            "accordion": {
+              "x-form-name": "Accordion",
+              "x-form-value": "accordion"
             }
           }
         },
@@ -340,7 +379,7 @@ public class NavigationModel extends AbstractComponent {
 	@Inject
 	private String rootpage;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-default":false} */
 	@Inject
 	private String excludesitemapexcludes;
 
@@ -348,6 +387,24 @@ public class NavigationModel extends AbstractComponent {
 	@Inject
 	@Default(values ="end")
 	private String justifyitems;
+
+	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-default":1,"x-form-min":1} */
+	@Inject
+	@Default(values ="1")
+	private String levels;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Transparent mobile dropdown background","x-form-type":"materialswitch","x-default":false} */
+	@Inject
+	private String mobiledropdownbg;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Mobile menu on iPad/tablets","x-form-type":"materialswitch","x-default":false} */
+	@Inject
+	private String showmobilemenuontablet;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Collapse Style","x-form-type":"materialradio","x-default":"accordion","properties":{"toggle":{"x-form-name":"Toggle","x-form-value":"toggle"},"accordion":{"x-form-name":"Accordion","x-form-value":"accordion"}}} */
+	@Inject
+	@Default(values ="accordion")
+	private String toggletype;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
 	@Inject
@@ -455,7 +512,7 @@ public class NavigationModel extends AbstractComponent {
 		return rootpage;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-form-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Exclude pages Excluded in Sitemap","x-form-type":"materialswitch","x-default":false} */
 	public String getExcludesitemapexcludes() {
 		return excludesitemapexcludes;
 	}
@@ -463,6 +520,21 @@ public class NavigationModel extends AbstractComponent {
 	/* {"type":"string","x-source":"inject","x-form-label":"Navigation Alignment","x-form-type":"materialradio","x-default":"end","properties":{"start":{"x-form-name":"Start","x-form-value":"start"},"center":{"x-form-name":"Center","x-form-value":"center"},"end":{"x-form-name":"End","x-form-value":"end"}}} */
 	public String getJustifyitems() {
 		return justifyitems;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Transparent mobile dropdown background","x-form-type":"materialswitch","x-default":false} */
+	public String getMobiledropdownbg() {
+		return mobiledropdownbg;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Show Mobile menu on iPad/tablets","x-form-type":"materialswitch","x-default":false} */
+	public String getShowmobilemenuontablet() {
+		return showmobilemenuontablet;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Collapse Style","x-form-type":"materialradio","x-default":"accordion","properties":{"toggle":{"x-form-name":"Toggle","x-form-value":"toggle"},"accordion":{"x-form-name":"Accordion","x-form-value":"accordion"}}} */
+	public String getToggletype() {
+		return toggletype;
 	}
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-type":"text"} */
@@ -578,13 +650,23 @@ public class NavigationModel extends AbstractComponent {
 
 	/* {"type":"string","x-source":"inject","x-form-type":"number","x-form-label":"Levels","x-form-default":1,"x-form-min":1} */
 	public String getLevels() {
-		return "2";
+		return levels == null ? "1" : levels;
 	}
 
 	public String getExcludeSitemapExcludes() {
 		return excludesitemapexcludes == null ? "false" : excludesitemapexcludes;
 	}
 
+  public String getRootPage() {
+		if(rootpage == null) {
+			PerPage currentPage =  getResource().adaptTo(PerPage.class);
+			if(currentPage != null) {
+				return currentPage.getPath();
+			}
+		}
+		return rootpage;
+  }
+  
 	public String getRootPageTitle() {
 		PerPageManager ppm = getResource().getResourceResolver().adaptTo(PerPageManager.class);
 		PerPage page = ppm.getPage(getRootpage());
@@ -609,10 +691,9 @@ public class NavigationModel extends AbstractComponent {
 			PerPage page = ppm.getPage(getRootpage());
 			if (page != null) {
 				for (PerPage child : page.listChildren()) {
-					if(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
-						continue;
-					}
-					if (!child.getPath().equals(page.getPath())) {
+          if ( !(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false))
+							&& (!child.getPath().equals(page.getPath()))
+						) {
 						childPages.add(new Page(child, levels, excludeSitemap));
 					}
 				}
@@ -651,13 +732,12 @@ public class NavigationModel extends AbstractComponent {
 
 	public List<Page> getChildrenPages() {
 		List<Page> childPages = new ArrayList<Page>();
-		System.out.println();
 		if(page != null) {
 			for (PerPage child: page.listChildren()) {
 				if(excludeSitemap && child.getContentProperty(EXCLUDE_FROM_SITEMAP, false)) {
 					continue;
 				}
-				if(!child.getPath().equals(page.getPath())) {
+				if(levels > 0 && !child.getPath().equals(page.getPath())) {
 					childPages.add(new Page(child, levels-1, excludeSitemap));
 				}
 			}

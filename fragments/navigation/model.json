@@ -16,7 +16,7 @@
           "x-source": "inject",
           "x-form-label": "Exclude pages Excluded in Sitemap",
           "x-form-type": "materialswitch",
-          "x-form-default": false
+          "x-default": false
         },
         "justifyitems": {
           "type": "string",
@@ -34,6 +34,45 @@
             },"end": {
               "x-form-name": "End",
               "x-form-value": "end"
+            }
+          }
+        },
+        "levels": {
+          "type":"string",
+          "x-source":"inject",
+          "x-form-type":"number",
+          "x-form-label":"Levels",
+          "x-default":1,
+          "x-form-min":1
+        },
+        "mobiledropdownbg": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Transparent mobile dropdown background",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "showmobilemenuontablet": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Show Mobile menu on iPad/tablets",
+          "x-form-type": "materialswitch",
+          "x-default": false
+        },
+        "toggletype": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Collapse Style",
+          "x-form-type": "materialradio",
+          "x-default": "accordion",
+          "properties": {
+            "toggle": {
+              "x-form-name": "Toggle",
+              "x-form-value": "toggle"
+            },
+            "accordion": {
+              "x-form-name": "Accordion",
+              "x-form-value": "accordion"
             }
           }
         },

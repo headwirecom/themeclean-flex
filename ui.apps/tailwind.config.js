@@ -265,6 +265,7 @@ module.exports = {
     inset: {
       '0': '0',
       auto: 'auto',
+      '100': '100%'
     },
     letterSpacing: {
       tighter: '-0.05em',
@@ -318,6 +319,7 @@ module.exports = {
     minWidth: {
       '0': '0',
       full: '100%',
+      '16px': '16px'
     },
     objectPosition: {
       bottom: 'bottom',

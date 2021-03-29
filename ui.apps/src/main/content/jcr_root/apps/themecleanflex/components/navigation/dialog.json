@@ -39,6 +39,50 @@
     },
     {
       "type": "input",
+      "inputType": "number",
+      "placeholder": "levels",
+      "label": "Levels",
+      "model": "levels",
+      "min": 1
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "mobiledropdownbg",
+      "label": "Transparent mobile dropdown background",
+      "model": "mobiledropdownbg"
+    },
+    {
+      "type": "materialswitch",
+      "textOn": "yes",
+      "textOff": "no",
+      "valueOn": "true",
+      "valueOff": "false",
+      "placeholder": "showmobilemenuontablet",
+      "label": "Show Mobile menu on iPad/tablets",
+      "model": "showmobilemenuontablet"
+    },
+    {
+      "type": "material-radios",
+      "values": [
+        {
+          "name": "Toggle",
+          "value": "toggle"
+        },
+        {
+          "name": "Accordion",
+          "value": "accordion"
+        }
+      ],
+      "placeholder": "toggletype",
+      "label": "Collapse Style",
+      "model": "toggletype"
+    },
+    {
+      "type": "input",
       "inputType": "text",
       "placeholder": "anchorname",
       "label": "Anchor Name",

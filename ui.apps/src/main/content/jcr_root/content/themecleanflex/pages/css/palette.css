@@ -199,10 +199,26 @@
 }
 
 #peregrine-app [class$="-components-navigation"] a,
-#peregrine-app [class$="-components-navigation"] a * {
+#peregrine-app [class$="-components-navigation"] a *,
+#peregrine-app [class$="-components-navigation"] a.active + svg  {
+  fill: var(--text-primary-color);
   color: var(--text-primary-color);
 }
-
+#peregrine-app [class$="-components-navigation"] a.active,
+#peregrine-app [class$="-components-navigation"] a.active *,
+#peregrine-app [class$="-components-navigation"] a.active + svg {
+  fill: var(--text-secondary-color);
+  color: var(--text-secondary-color);
+}
+@media( min-width: 1024px ) {
+  #peregrine-app [class$="-components-navigation"] a.active,
+  #peregrine-app [class$="-components-navigation"] a.active * {
+    color: var(--text-primary-color);
+  }
+  #peregrine-app [class$="-components-navigation"] .flex.bg-secondary {
+    background: var(--bg-primary);
+  }
+}
 #peregrine-app [class$="-components-navigation"] a:hover,
 #peregrine-app [class$="-components-navigation"] a:hover {
   color: var(--bg-primary);
@@ -211,6 +227,17 @@
 
 #peregrine-app [class$="-components-navigation"] .dropdown-list {
   background: var(--bg-primary);
+}
+
+@media( max-width: 767px ) {
+  #peregrine-app [class$="-components-navigation"] .dropdown-list.md\:hidden.transparent {
+    background: transparent;
+  }
+}
+@media( max-width: 1024px ) {
+  #peregrine-app [class$="-components-navigation"] .dropdown-list.lg\:hidden.transparent {
+    background: transparent;
+  }
 }
 
 #peregrine-app [class$="-components-tabs"] a[aria-selected="true"],

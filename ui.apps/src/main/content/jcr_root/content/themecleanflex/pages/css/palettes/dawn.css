@@ -152,3 +152,24 @@
   #peregrine-app .theme-dark[class$="-components-navigation"] a:hover{
     color: var(--color-accent-1-700);
   }
+
+  #peregrine-app .theme-light[class$="-components-navigation"] a:hover{
+    background: var(--bg-secondary);
+  }
+
+  @media( max-width: 1024px ) {
+    #peregrine-app .theme-dark[class$="-components-navigation"] a.active + svg,
+    #peregrine-app .theme-dark[class$="-components-navigation"] a.active {
+      fill: var(--color-accent-1-700);
+      color: var(--color-accent-1-700);
+    }
+    #peregrine-app .theme-light[class$="-components-navigation"] a.active + svg,
+    #peregrine-app .theme-light[class$="-components-navigation"] a.active{
+      fill: var(--color-accent-2-100);
+      color: var(--color-accent-2-100);
+    }
+  }
+
+  #peregrine-app .theme-dark[class$="-components-navigation"] .bg-secondary {
+    --bg-secondary: rgba(255,255,255,0.6);
+  }

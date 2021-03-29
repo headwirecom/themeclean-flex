@@ -621,16 +621,6 @@ video {
   background-color: var(--bg-secondary);
 }
 
-.hover\:bg-black:hover {
-  --bg-opacity: 1;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, var(--bg-opacity));
-}
-
-.hover\:bg-gray-200:hover {
-  background-color: var(--color-gray-200);
-}
-
 .hover\:bg-blue-700:hover {
   background-color: var(--color-blue-700);
 }
@@ -719,6 +709,14 @@ video {
   display: none;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -761,10 +759,6 @@ video {
 
 .self-center {
   align-self: center;
-}
-
-.self-stretch {
-  align-self: stretch;
 }
 
 .justify-start {
@@ -855,6 +849,10 @@ video {
   margin: var(--spacing-2);
 }
 
+.m-3 {
+  margin: var(--spacing-3);
+}
+
 .-m-1 {
   margin: calc(var(--spacing-1) * -1);
 }
@@ -941,6 +939,10 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-w-16px {
+  min-width: 16px;
 }
 
 .object-contain {
@@ -1064,6 +1066,14 @@ video {
   left: 0;
 }
 
+.right-100 {
+  right: 100%;
+}
+
+.left-100 {
+  left: 100%;
+}
+
 .resize {
   resize: both;
 }
@@ -1100,10 +1110,6 @@ video {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
-.text-gray-200 {
-  color: var(--color-gray-200);
-}
-
 .text-gray-800 {
   color: var(--color-gray-800);
 }
@@ -1134,10 +1140,6 @@ video {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
-}
-
-.hover\:text-gray-200:hover {
-  color: var(--color-gray-200);
 }
 
 .hover\:text-red-600:hover {
@@ -1282,6 +1284,29 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.transform {
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+}
+
+.rotate-0 {
+  --transform-rotate: 0;
+}
+
+.rotate-90 {
+  --transform-rotate: 90deg;
+}
+
+.rotate-180 {
+  --transform-rotate: 180deg;
 }
 
 .transition-colors {
@@ -1508,6 +1533,10 @@ p {
   transform: rotate(90deg);
 }
 
+.transform-rotate-270 {
+  transform: rotate(270deg);
+}
+
 /* Drop Shadow Helpers */
 
 .elevation-1 {
@@ -1665,11 +1694,23 @@ p {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:overflow-unset {
+    overflow: unset;
+  }
+}
+
 /* header */
 
 [class$="components-header"] a {
   font-size: var(--font-size-sm);
   font-weight: 500;
+}
+
+/* navigation */
+
+[class$="components-navigation"] {
+  overflow: unset !important;
 }
 
 /* footer */
@@ -1859,6 +1900,10 @@ p {
 
 @media (min-width: 768px) {
 
+  .md\:border {
+    border-width: 1px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1873,6 +1918,10 @@ p {
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .md\:justify-start {
@@ -1896,13 +1945,25 @@ p {
     margin-right: calc(var(--spacing-3) * -1);
   }
 
+  .md\:mr-0 {
+    margin-right: var(--spacing-0);
+  }
+
   .md\:mb-0 {
     margin-bottom: var(--spacing-0);
+  }
+
+  .md\:ml-0 {
+    margin-left: var(--spacing-0);
   }
 
   .md\:px-3 {
     padding-left: var(--spacing-3);
     padding-right: var(--spacing-3);
+  }
+
+  .md\:absolute {
+    position: absolute;
   }
 
   .md\:w-auto {
@@ -2020,12 +2081,32 @@ p {
 
 @media (min-width: 1024px) {
 
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
 
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .lg\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:flex-grow-0 {
@@ -2039,6 +2120,18 @@ p {
   .lg\:mx-4 {
     margin-left: var(--spacing-4);
     margin-right: var(--spacing-4);
+  }
+
+  .lg\:ml-0 {
+    margin-left: var(--spacing-0);
+  }
+
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:w-auto {
