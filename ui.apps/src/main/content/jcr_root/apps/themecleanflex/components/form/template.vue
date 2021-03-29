@@ -152,6 +152,12 @@ export default {
         option: 'border py-2 px-3',
         label: 'mb-2 uppercase font-bold text-lg',
         error: 'flex items-center font-medium tracking-wide text-xs mt-1 ml-1'
+      },
+      arrayList: {
+        addButton: 'btn',
+        itemMoveUp: 'btn',
+        itemMoveDown: 'btn',
+        itemDelete: 'btn',
       }
     };
     return { styles: mergeStyles(defaultStyles, customStyles) };
