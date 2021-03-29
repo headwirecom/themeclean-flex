@@ -1,13 +1,10 @@
 package com.themecleanflex.models;
 
-import com.fasterxml.jackson.core.JsonGenerationException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peregrine.commons.util.PerConstants;
 
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
-import com.peregrine.nodetypes.models.Container;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Default;
@@ -24,11 +21,11 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 import java.util.Map;
 
 import javax.inject.Inject;
-import javax.inject.Named;
+
+import static java.util.Objects.isNull;
 
 /*
     //GEN[:DATA
@@ -609,14 +606,13 @@ public class ReferenceModel extends AbstractComponent {
     private Map findNode(Map map, String name, String value) {
       for (Object key : map.keySet()) {
         Object val = map.get(key);
-        if(key.equals(name)) {
-          if(value.equals(val)) {
+        if(equals(key, name)) {
+          if(equals(value, val)) {
             return map;
           }
         }
-        if(key.equals("children") && val instanceof ArrayList) {
+        if("children".equals(key) && val instanceof ArrayList) {
           ArrayList children = (ArrayList) val;
-          
           for (Object child : children) {
             if(child instanceof Map) {
               Map ret = findNode((Map) child, name, value);
@@ -626,6 +622,18 @@ public class ReferenceModel extends AbstractComponent {
         }
       }
       return null;
-    } 
+    }
+
+    private static boolean equals(final Object obj, final Object other) {
+	    if (obj == other) {
+		    return true;
+	    }
+
+	    if (isNull(obj) || isNull(other)) {
+		    return false;
+	    }
+
+	    return obj.equals(other);
+    }
 
   }
