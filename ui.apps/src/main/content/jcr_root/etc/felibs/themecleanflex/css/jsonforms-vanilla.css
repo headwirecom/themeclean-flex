@@ -49,6 +49,7 @@
 .array-list-item-toolbar > button {
   user-select: none;
   cursor: pointer;
+  border-color: var(--btn-primary-focus-border-color);
 }
 .array-list-item-toolbar > button:disabled {
   cursor:initial;

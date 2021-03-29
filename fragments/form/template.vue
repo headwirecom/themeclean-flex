@@ -16,8 +16,8 @@
             'full-button': model.submitsize === 'full',
         }" v-on:submit.prevent.stop="onSubmit">
         <json-forms v-bind:class="`w-full mb-4 md:flex md:flex-wrap md:justify-between`"
-        v-bind:key="jsonFormsKey" v-bind:data="form" v-bind:schema="schema" v-bind:uischema="uischema"
-        v-bind:renderers="renderers" v-on:change="onChange"></json-forms>
+        v-bind:ref="`jsonForms`" v-bind:key="jsonFormsKey" v-bind:data="form" v-bind:schema="schema"
+        v-bind:uischema="uischema" v-bind:renderers="renderers" v-on:change="onChange"></json-forms>
         <input class="btn mb-4" type="submit" v-bind:value="model.submittext">
       </form>
     </div>
@@ -27,8 +27,8 @@
 <!--suppress JSUnresolvedVariable, JSUnresolvedFunction -->
 <script>
 const renderers = [
-    ...JSONFormsVue2Vanilla.vanillaRenderers
-]
+  ...JSONFormsVue2Vanilla.vanillaRenderers
+];
 
 export default {
   props: ['model'],
@@ -77,6 +77,17 @@ export default {
       return '';
     }
   },
+  watch: {
+    schema() {
+      this.applyMissingButtonTypeWorkaround();
+    },
+    uischema() {
+      this.applyMissingButtonTypeWorkaround();
+    },
+    form() {
+      this.applyMissingButtonTypeWorkaround();
+    }
+  },
   beforeCreate() {
     if (!Vue.options.components['json-forms']) {
       Vue.component('json-forms', window.JSONFormsVue2.JsonForms);
@@ -96,7 +107,7 @@ export default {
       this.form = data;
     },
     onSubmit(e) {
-      if (this.model.submitfunction != 'onSubmit' && this.model.submitfunction != '') {
+      if (this.model.submitfunction !== 'onSubmit' && this.model.submitfunction !== '') {
         const objs = this.model.submitfunction.split('.');
         let parent = window;
         let obj = objs.shift();
@@ -134,10 +145,19 @@ export default {
       }).catch(() => {
         this.$set(this, 'failureText', this.model.failmessage);
       });
+    },
+    applyMissingButtonTypeWorkaround() {
+      this.$refs.jsonForms.$el
+          .querySelectorAll('button:not([type="button"])')
+          .forEach((button) => {
+            button.setAttribute('type', 'button')
+          })
     }
   },
   provide() {
     const { defaultStyles, mergeStyles } = JSONFormsVue2Vanilla;
+    const formControlStyles = 'border py-2 px-3';
+    const btnStyles = 'focus:outline-none text-sm py-2.5 px-5 rounded-full border'
     const customStyles = {
       verticalLayout: {
         item: 'flex flex-col mb-4 w-full',
@@ -146,18 +166,18 @@ export default {
         item: 'flex flex-col mb-4 md:w-1/2'
       },
       control: {
-        input: 'border py-2 px-3',
-        select: 'border py-2 px-3',
-        textarea: 'border py-2 px-3',
-        option: 'border py-2 px-3',
+        input: formControlStyles,
+        select: formControlStyles,
+        textarea: formControlStyles,
+        option: formControlStyles,
         label: 'mb-2 uppercase font-bold text-lg',
         error: 'flex items-center font-medium tracking-wide text-xs mt-1 ml-1'
       },
       arrayList: {
-        addButton: 'btn',
-        itemMoveUp: 'btn',
-        itemMoveDown: 'btn',
-        itemDelete: 'btn',
+        addButton: btnStyles,
+        itemMoveUp: btnStyles,
+        itemMoveDown: btnStyles,
+        itemDelete: btnStyles,
       }
     };
     return { styles: mergeStyles(defaultStyles, customStyles) };

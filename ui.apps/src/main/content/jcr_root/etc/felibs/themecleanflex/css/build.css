@@ -830,6 +830,10 @@ video {
   height: 100%;
 }
 
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+
 .text-lg {
   font-size: var(--font-size-lg);
 }
@@ -996,6 +1000,10 @@ video {
 
 .opacity-100 {
   opacity: 1;
+}
+
+.focus\:outline-none:focus {
+  outline: 0;
 }
 
 .overflow-hidden {
