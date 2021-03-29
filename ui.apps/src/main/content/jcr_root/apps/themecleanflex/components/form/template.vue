@@ -26,6 +26,10 @@
 
 <!--suppress JSUnresolvedVariable, JSUnresolvedFunction -->
 <script>
+const renderers = [
+    ...JSONFormsVue2Vanilla.vanillaRenderers
+]
+
 export default {
   props: ['model'],
   data() {
@@ -33,7 +37,7 @@ export default {
     return {
       form: {},
       failureText: '',
-      renderers: Object.freeze(JSONFormsVue2Vanilla.vanillaRenderers)
+      renderers: Object.freeze(renderers)
     };
   },
   computed: {
@@ -50,6 +54,7 @@ export default {
     },
     uischema() {
       try {
+        console.log(this.model.uischema);
         return JSON.parse(this.model.uischema);
       } catch (error) {
         return null;
@@ -136,7 +141,10 @@ export default {
     const { defaultStyles, mergeStyles } = JSONFormsVue2Vanilla;
     const customStyles = {
       verticalLayout: {
-        item: 'flex flex-col mb-4 md:w-1/2',
+        item: 'flex flex-col mb-4 w-full',
+      },
+      horizontalLayout: {
+        item: 'flex flex-col mb-4 md:w-1/2'
       },
       control: {
         input: 'border py-2 px-3',
