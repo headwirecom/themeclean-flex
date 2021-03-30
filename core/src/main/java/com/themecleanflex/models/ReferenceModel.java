@@ -3,6 +3,7 @@ package com.themecleanflex.models;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peregrine.commons.util.PerConstants;
 
+import com.peregrine.commons.util.PerUtil;
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
 import org.apache.sling.api.resource.Resource;
@@ -21,11 +22,17 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Optional;
+import java.util.Set;
 
 import javax.inject.Inject;
 
 import static java.util.Objects.isNull;
+
+import static org.apache.commons.lang.StringUtils.contains;
+import static org.apache.commons.lang.StringUtils.isBlank;
 
 /*
     //GEN[:DATA
@@ -567,10 +574,11 @@ public class ReferenceModel extends AbstractComponent {
     }
   
     private String generateReferenceJson() {
-      if(reference == null || "".equals(reference)) {
+      if (isBlank(reference) || createsReferenceLoop(getResource(), new HashSet<>())) {
         return null;
       }
-      ResourceResolver resourceResolver = getResource().getResourceResolver();
+
+	  ResourceResolver resourceResolver = getResource().getResourceResolver();
       Resource referencedResource = resourceResolver.getResource(reference+"/jcr:content");
       if(referencedResource == null) {
         LOG.error("Reference '{}' does not resolve to a resource.", reference);
@@ -602,7 +610,56 @@ public class ReferenceModel extends AbstractComponent {
       return null;
     }
 
-    // find a node with the given key/value pair in our json output
+	private boolean createsReferenceLoop(final Resource resource, final Set<String> forbiddenPaths) {
+    	if (forbiddenPaths.contains(resource.getPath())) {
+    		return true;
+	    }
+
+		forbiddenPaths.addAll(forbiddenReferences(resource.getPath()));
+		if (Optional.of(resource)
+					.filter(r -> r.isResourceType("themecleanflex/components/reference"))
+					.map(Resource::getValueMap)
+					.map(props -> props.get("reference", String.class))
+					.map(resource.getResourceResolver()::getResource)
+					.map(r -> createsReferenceLoop(r, forbiddenPaths))
+					.orElse(false)) {
+			return true;
+		}
+
+    	for (final Resource child : resource.getChildren()) {
+    		if (createsReferenceLoop(child, forbiddenPaths)) {
+    			return true;
+		    }
+	    }
+
+	    return false;
+	}
+
+	private static Set<String> forbiddenReferences(final String path) {
+		final Set<String> result = new HashSet<>();
+		result.add(path);
+		if (!isJcrContentDescendant(path)) {
+			if (PerUtil.isJcrContent(path)) {
+				result.add(PerUtil.getParent(path));
+			}
+
+			return result;
+		}
+
+		String parent = path;
+		do {
+			parent = PerUtil.getParent(parent);
+			result.add(parent);
+		} while (!PerUtil.isJcrContent(parent));
+		result.add(PerUtil.getParent(parent));
+		return result;
+	}
+
+	private static boolean isJcrContentDescendant(final String path) {
+		return contains(path, "/jcr:content/");
+	}
+
+	// find a node with the given key/value pair in our json output
     private Map findNode(Map map, String name, String value) {
       for (Object key : map.keySet()) {
         Object val = map.get(key);
