@@ -8,6 +8,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Anchor Name",
+          "x-form-group": "advanced",
           "x-form-type": "text"
         },
         "colorscheme" : {
@@ -15,6 +16,7 @@
           "x-source": "inject",
           "x-form-label": "Block Color Scheme",
           "x-form-type": "materialradio",
+          "x-form-group": "style",
           "x-default": "",
           "properties": {
             "none": {
@@ -35,6 +37,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Custom Background",
+          "x-form-group": "style",
           "x-form-type": "materialswitch",
           "x-default": "false" 
         },
@@ -42,6 +45,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Background Type",
+          "x-form-group": "style",
           "x-form-type": "materialradio",
           "x-form-visible": "model.custombackground == 'true'",
           "properties": {
@@ -64,6 +68,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Background Video",
+          "x-form-group": "style",
           "x-form-type": "pathbrowser",
           "x-form-visible": "model.backgroundtype == 'video' and model.custombackground == 'true'",
           "x-default": "https://www.youtube.com/embed/Ju86mknumYM",
@@ -73,6 +78,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Background Image",
+          "x-form-group": "style",
           "x-form-type": "pathbrowser",
           "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
           "x-form-browserRoot": "/content/themecleanflex/assets"
@@ -81,6 +87,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Background X Position",
+          "x-form-group": "style",
           "x-form-type": "materialrange",
           "x-form-min": 0,
           "x-form-max": 100,
@@ -91,6 +98,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Background Y Position",
+          "x-form-group": "style",
           "x-form-type": "materialrange",
           "x-form-min": 0,
           "x-form-max": 100,
@@ -101,6 +109,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Background Image Size",
+          "x-form-group": "style",
           "x-form-type": "materialselect",
           "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
           "x-default": "cover",
@@ -123,6 +132,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Overlay",
+          "x-form-group": "style",
           "x-form-type": "materialswitch",
           "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'"
         },
@@ -130,6 +140,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Overlay Color",
+          "x-form-group": "style",
           "x-form-type": "color",
           "x-form-visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'",
           "x-default": "#ffffff"
@@ -138,6 +149,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Overlay opacity",
+          "x-form-group": "style",
           "x-form-type": "materialrange",
           "x-form-min": 0,
           "x-form-max": 100,
@@ -148,6 +160,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Background Color",
+          "x-form-group": "style",
           "x-form-type": "color",
           "x-form-visible": "(model.backgroundtype == 'color' or model.backgroundtype == 'gradient') and model.custombackground == 'true'",
           "x-default": "#ffffff"
@@ -156,6 +169,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Color 2",
+          "x-form-group": "style",
           "x-form-type": "color",
           "x-form-visible": "model.backgroundtype == 'gradient' and model.custombackground == 'true'",
           "x-default": "#c0c0c0"

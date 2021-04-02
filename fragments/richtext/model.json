@@ -2,12 +2,14 @@
   "definitions": {
     "Richtext": {
       "type": "object",
+      "x-form-groups": ["content", "style", "advanced"],
       "x-type": "component",
       "properties": {
         "text": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Text",
+          "x-form-group": "content",
           "x-form-type": "texteditor"
         },
         "mediaref": {
@@ -19,6 +21,7 @@
           "x-source": "inject",
           "x-form-label": "Media Position",
           "x-form-type": "materialradio",
+          "x-form-group": "style",
           "x-form-visible": "model.showmedia == 'true'",
           "x-default": "before",
           "properties": {

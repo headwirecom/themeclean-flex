@@ -2,12 +2,14 @@
   "definitions": {
     "Spacer": {
       "type": "object",
+      "x-form-groups": ["content", "style", "advanced"],
       "x-type": "component",
       "properties": {
         "height": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Height",
+          "x-form-group": "content",
           "x-form-type": "materialrange",
           "x-form-min": 0,
           "x-form-max": 100 

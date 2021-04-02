@@ -2,6 +2,7 @@
     "definitions": {
         "Containerblock": {
             "type": "object",
+            "x-form-groups": ["content", "style", "advanced"],
             "x-type": "container",
             "properties": {
                 "alignitems": {
@@ -9,6 +10,7 @@
                     "x-source": "inject",
                     "x-form-label": "Items Alignment",
                     "x-form-type": "materialselect",
+                    "x-form-group": "content",
                     "x-default": "primary",
                     "properties":{
                         "start": {

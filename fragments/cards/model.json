@@ -2,30 +2,35 @@
   "definitions": {
     "Cards": {
       "type": "object",
+      "x-form-groups": ["content", "style", "advanced"],
       "x-type": "component",
       "properties": {
         "showtitle": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Show Card Title",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "showtext": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Show Card Text",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "showbutton": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Show Card Button",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "showcard": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Show Card Background",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "customcardcolor": {
@@ -33,6 +38,7 @@
           "x-source": "inject",
           "x-form-label": "Custom Card Color",
           "x-form-visible": "model.showcard == 'true'",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "cardcolor": {
@@ -41,6 +47,7 @@
           "x-form-label": "Card Color",
           "x-form-type": "color",
           "x-form-visible": "model.showcard == 'true' and model.customcardcolor == 'true'",
+          "x-form-group": "style",
           "x-default": "#ffffff"
         },
         "cardborder": {
@@ -48,6 +55,7 @@
           "x-source": "inject",
           "x-form-label": "Show Card Border",
           "x-form-type": "materialswitch",
+          "x-form-group": "style",
           "x-default": "true"
         },
         "roundedcorners": {
@@ -55,6 +63,7 @@
           "x-source": "inject",
           "x-form-label": "Rounded Corners",
           "x-form-type": "materialselect",
+          "x-form-group": "style",
           "x-default": "none",
           "properties":{
             "none": {
@@ -80,6 +89,7 @@
           "x-source": "inject",
           "x-form-label": "Cards Per Row",
           "x-form-type": "materialrange",
+          "x-form-group": "style",
           "x-default": 4,
           "x-form-min": 1,
           "x-form-max": 6
@@ -89,6 +99,7 @@
           "x-source": "inject",
           "x-form-label": "Cards Per Row (Tablet)",
           "x-form-type": "materialrange",
+          "x-form-group": "style",
           "x-default": 2,
           "x-form-min": 1,
           "x-form-max": 6
@@ -98,6 +109,7 @@
           "x-source": "inject",
           "x-form-label": "Cards Per Row (Mobile)",
           "x-form-type": "materialrange",
+          "x-form-group": "style",
           "x-default": 1,
           "x-form-min": 1,
           "x-form-max": 6
@@ -107,6 +119,7 @@
           "x-source": "inject",
           "x-form-label": "Cards",
           "x-form-fieldLabel": "title",
+          "x-form-group": "content",
           "x-form-type": "collection",
           "x-collection-type": "Card",
           "properties": {

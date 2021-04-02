@@ -1,87 +1,99 @@
 {
-  "fields": [
+  "groups": [
     {
-      "type": "material-select",
-      "values": [
-        {
-          "name": "Default",
-          "value": "default"
-        },
-        {
-          "name": "Large",
-          "value": "large"
-        },
-        {
-          "name": "Small",
-          "value": "small"
-        }
-      ],
-      "placeholder": "buttonsize",
-      "label": "Button Size",
-      "model": "buttonsize"
-    },
-    {
-      "type": "collection",
-      "multifield": true,
-      "fieldLabel": [
-        "buttontext",
-        "value"
-      ],
+      "legend": "style",
       "fields": [
-        {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "buttontext",
-          "label": "Button Text",
-          "model": "buttontext"
-        },
-        {
-          "type": "pathbrowser",
-          "browserRoot": "/content/themecleanflex/pages",
-          "placeholder": "buttonlink",
-          "label": "Button Link",
-          "model": "buttonlink"
-        },
         {
           "type": "material-select",
           "values": [
             {
-              "name": "Primary",
-              "value": "primary"
+              "name": "Default",
+              "value": "default"
             },
             {
-              "name": "Secondary",
-              "value": "secondary"
+              "name": "Large",
+              "value": "large"
             },
             {
-              "name": "Success",
-              "value": "success"
-            },
-            {
-              "name": "Danger",
-              "value": "danger"
-            },
-            {
-              "name": "Warning",
-              "value": "warning"
-            },
-            {
-              "name": "Light",
-              "value": "light"
-            },
-            {
-              "name": "Dark",
-              "value": "dark"
+              "name": "Small",
+              "value": "small"
             }
           ],
-          "placeholder": "buttoncolor",
-          "label": "Button Color",
-          "model": "buttoncolor"
+          "placeholder": "buttonsize",
+          "label": "Button Size",
+          "model": "buttonsize",
+          "x_form_group": "style"
         }
-      ],
-      "placeholder": "buttons",
-      "label": "Buttons",
-      "model": "buttons"
+      ]
+    },
+    {
+      "legend": "content",
+      "fields": [
+        {
+          "type": "collection",
+          "multifield": true,
+          "fieldLabel": [
+            "buttontext",
+            "value"
+          ],
+          "fields": [
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "buttontext",
+              "label": "Button Text",
+              "model": "buttontext"
+            },
+            {
+              "type": "pathbrowser",
+              "browserRoot": "/content/themecleanflex/pages",
+              "placeholder": "buttonlink",
+              "label": "Button Link",
+              "model": "buttonlink"
+            },
+            {
+              "type": "material-select",
+              "values": [
+                {
+                  "name": "Primary",
+                  "value": "primary"
+                },
+                {
+                  "name": "Secondary",
+                  "value": "secondary"
+                },
+                {
+                  "name": "Success",
+                  "value": "success"
+                },
+                {
+                  "name": "Danger",
+                  "value": "danger"
+                },
+                {
+                  "name": "Warning",
+                  "value": "warning"
+                },
+                {
+                  "name": "Light",
+                  "value": "light"
+                },
+                {
+                  "name": "Dark",
+                  "value": "dark"
+                }
+              ],
+              "placeholder": "buttoncolor",
+              "label": "Button Color",
+              "model": "buttoncolor"
+            }
+          ],
+          "placeholder": "buttons",
+          "label": "Buttons",
+          "model": "buttons",
+          "x_form_group": "content"
+        }
+      ]
     }
   ]
 }
