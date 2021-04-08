@@ -1,173 +1,203 @@
 {
-  "fields": [
+  "groups": [
     {
-      "type": "material-range",
-      "placeholder": "height",
-      "label": "Height",
-      "model": "height",
-      "min": 0,
-      "max": 100
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "anchorname",
-      "label": "Anchor Name",
-      "model": "anchorname"
-    },
-    {
-      "type": "material-radios",
-      "values": [
+      "legend": "content",
+      "fields": [
         {
-          "name": "None",
-          "value": ""
-        },
-        {
-          "name": "Light",
-          "value": "light"
-        },
-        {
-          "name": "Dark",
-          "value": "dark"
+          "type": "material-range",
+          "placeholder": "height",
+          "label": "Height",
+          "model": "height",
+          "min": 0,
+          "max": 100,
+          "x_form_group": "content"
         }
-      ],
-      "placeholder": "colorscheme",
-      "label": "Block Color Scheme",
-      "model": "colorscheme"
+      ]
     },
     {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "custombackground",
-      "label": "Custom Background",
-      "model": "custombackground"
-    },
-    {
-      "type": "material-radios",
-      "values": [
+      "legend": "style",
+      "fields": [
         {
-          "name": "Color",
-          "value": "color"
+          "type": "material-radios",
+          "values": [
+            {
+              "name": "None",
+              "value": ""
+            },
+            {
+              "name": "Light",
+              "value": "light"
+            },
+            {
+              "name": "Dark",
+              "value": "dark"
+            }
+          ],
+          "placeholder": "colorscheme",
+          "label": "Block Color Scheme",
+          "model": "colorscheme",
+          "x_form_group": "style"
         },
         {
-          "name": "Gradient",
-          "value": "gradient"
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "custombackground",
+          "label": "Custom Background",
+          "model": "custombackground",
+          "x_form_group": "style"
         },
         {
-          "name": "Image",
-          "value": "image"
+          "type": "material-radios",
+          "values": [
+            {
+              "name": "Color",
+              "value": "color"
+            },
+            {
+              "name": "Gradient",
+              "value": "gradient"
+            },
+            {
+              "name": "Image",
+              "value": "image"
+            },
+            {
+              "name": "Video",
+              "value": "video"
+            }
+          ],
+          "placeholder": "backgroundtype",
+          "label": "Background Type",
+          "model": "backgroundtype",
+          "visible": "model.custombackground == 'true'",
+          "x_form_group": "style"
         },
         {
-          "name": "Video",
-          "value": "video"
+          "type": "pathbrowser",
+          "browserRoot": "/content/themecleanflex/assets",
+          "placeholder": "bgvideo",
+          "label": "Background Video",
+          "model": "bgvideo",
+          "visible": "model.backgroundtype == 'video' and model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/themecleanflex/assets",
+          "placeholder": "bgimage",
+          "label": "Background Image",
+          "model": "bgimage",
+          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "bgxposition",
+          "label": "Background X Position",
+          "model": "bgxposition",
+          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "min": 0,
+          "max": 100,
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "bgyposition",
+          "label": "Background Y Position",
+          "model": "bgyposition",
+          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "min": 0,
+          "max": 100,
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "cover",
+              "value": "cover"
+            },
+            {
+              "name": "contain",
+              "value": "contain"
+            },
+            {
+              "name": "auto",
+              "value": "auto"
+            }
+          ],
+          "placeholder": "bgsize",
+          "label": "Background Image Size",
+          "model": "bgsize",
+          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "overlay",
+          "label": "Overlay",
+          "model": "overlay",
+          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "input",
+          "inputType": "color",
+          "placeholder": "overlaycolor",
+          "label": "Overlay Color",
+          "model": "overlaycolor",
+          "visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "overlayopacity",
+          "label": "Overlay opacity",
+          "model": "overlayopacity",
+          "visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "min": 0,
+          "max": 100,
+          "x_form_group": "style"
+        },
+        {
+          "type": "input",
+          "inputType": "color",
+          "placeholder": "bgcolor",
+          "label": "Background Color",
+          "model": "bgcolor",
+          "visible": "(model.backgroundtype == 'color' or model.backgroundtype == 'gradient') and model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "input",
+          "inputType": "color",
+          "placeholder": "color2",
+          "label": "Color 2",
+          "model": "color2",
+          "visible": "model.backgroundtype == 'gradient' and model.custombackground == 'true'",
+          "x_form_group": "style"
         }
-      ],
-      "placeholder": "backgroundtype",
-      "label": "Background Type",
-      "model": "backgroundtype",
-      "visible": "model.custombackground == 'true'"
+      ]
     },
     {
-      "type": "pathbrowser",
-      "browserRoot": "/content/themecleanflex/assets",
-      "placeholder": "bgvideo",
-      "label": "Background Video",
-      "model": "bgvideo",
-      "visible": "model.backgroundtype == 'video' and model.custombackground == 'true'"
-    },
-    {
-      "type": "pathbrowser",
-      "browserRoot": "/content/themecleanflex/assets",
-      "placeholder": "bgimage",
-      "label": "Background Image",
-      "model": "bgimage",
-      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'"
-    },
-    {
-      "type": "material-range",
-      "placeholder": "bgxposition",
-      "label": "Background X Position",
-      "model": "bgxposition",
-      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
-      "min": 0,
-      "max": 100
-    },
-    {
-      "type": "material-range",
-      "placeholder": "bgyposition",
-      "label": "Background Y Position",
-      "model": "bgyposition",
-      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
-      "min": 0,
-      "max": 100
-    },
-    {
-      "type": "material-select",
-      "values": [
+      "legend": "advanced",
+      "fields": [
         {
-          "name": "cover",
-          "value": "cover"
-        },
-        {
-          "name": "contain",
-          "value": "contain"
-        },
-        {
-          "name": "auto",
-          "value": "auto"
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "anchorname",
+          "label": "Anchor Name",
+          "model": "anchorname",
+          "x_form_group": "advanced"
         }
-      ],
-      "placeholder": "bgsize",
-      "label": "Background Image Size",
-      "model": "bgsize",
-      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "overlay",
-      "label": "Overlay",
-      "model": "overlay",
-      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'"
-    },
-    {
-      "type": "input",
-      "inputType": "color",
-      "placeholder": "overlaycolor",
-      "label": "Overlay Color",
-      "model": "overlaycolor",
-      "visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'"
-    },
-    {
-      "type": "material-range",
-      "placeholder": "overlayopacity",
-      "label": "Overlay opacity",
-      "model": "overlayopacity",
-      "visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'",
-      "min": 0,
-      "max": 100
-    },
-    {
-      "type": "input",
-      "inputType": "color",
-      "placeholder": "bgcolor",
-      "label": "Background Color",
-      "model": "bgcolor",
-      "visible": "(model.backgroundtype == 'color' or model.backgroundtype == 'gradient') and model.custombackground == 'true'"
-    },
-    {
-      "type": "input",
-      "inputType": "color",
-      "placeholder": "color2",
-      "label": "Color 2",
-      "model": "color2",
-      "visible": "model.backgroundtype == 'gradient' and model.custombackground == 'true'"
+      ]
     }
   ]
 }

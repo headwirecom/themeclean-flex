@@ -5,6 +5,7 @@ import com.peregrine.nodetypes.models.IComponent;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 
 import javax.inject.Inject;
@@ -27,6 +28,7 @@ import java.awt.Dimension;
       "x-source": "inject",
       "x-form-label": "Cards",
       "x-form-fieldLabel": "title",
+      "x-form-group": "content",
       "x-form-type": "collection",
       "x-collection-type": "Card",
       "properties": {
@@ -167,9 +169,15 @@ import java.awt.Dimension;
 //GEN[:DEF
 @Model(
         adaptables = Resource.class,
+        resourceType = "themecleanflex/components/cards/cards",
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
         adapters = IComponent.class
 )
+@Exporter(
+        name = "jackson",
+        extensions = "json"
+)
+
 //GEN]
 public class CardModel extends AbstractComponent {
 

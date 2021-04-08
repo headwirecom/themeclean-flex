@@ -2,18 +2,21 @@
   "definitions": {
     "Reference": {
       "type": "object",
+      "x-form-groups": ["content", "style", "advanced"],
       "x-type": "component",
       "properties": {
         "reference": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Reference",
+          "x-form-group": "content",
           "x-form-type": "pathbrowser",
           "x-form-browserRoot": "/content/themecleanflex/pages"
         },
         "contentnameref": {
           "type": "string",
           "x-source": "inject",
+          "x-form-group": "content",
           "x-form-label": "Content Name Reference",
           "x-form-type": "text"
         },

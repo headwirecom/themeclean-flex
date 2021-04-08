@@ -1,115 +1,127 @@
 {
-  "fields": [
+  "groups": [
     {
-      "type": "material-radios",
-      "values": [
+      "legend": "content",
+      "fields": [
         {
-          "name": "Auto (fill available space)",
-          "value": "auto"
+          "type": "material-radios",
+          "values": [
+            {
+              "name": "Auto (fill available space)",
+              "value": "auto"
+            },
+            {
+              "name": "Custom",
+              "value": "custom"
+            }
+          ],
+          "placeholder": "width",
+          "label": "Container Width",
+          "model": "width",
+          "x_form_group": "content"
         },
         {
-          "name": "Custom",
-          "value": "custom"
+          "type": "material-range",
+          "placeholder": "colspan",
+          "label": "Column Span (12 Columns)",
+          "model": "colspan",
+          "visible": "model.width == 'custom'",
+          "min": 1,
+          "max": 12,
+          "x_form_group": "content"
+        },
+        {
+          "type": "material-radios",
+          "values": [
+            {
+              "name": "Auto (fill available space)",
+              "value": "auto"
+            },
+            {
+              "name": "Custom",
+              "value": "custom"
+            }
+          ],
+          "placeholder": "tabletwidth",
+          "label": "Container Width (Tablet)",
+          "model": "tabletwidth",
+          "x_form_group": "content"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "tabletcolspan",
+          "label": "Column Span (12 Columns)",
+          "model": "tabletcolspan",
+          "visible": "model.tabletwidth == 'custom'",
+          "min": 1,
+          "max": 12,
+          "x_form_group": "content"
+        },
+        {
+          "type": "material-radios",
+          "values": [
+            {
+              "name": "Auto (fill available space)",
+              "value": "auto"
+            },
+            {
+              "name": "Custom",
+              "value": "custom"
+            }
+          ],
+          "placeholder": "mobilewidth",
+          "label": "Container Width (Mobile)",
+          "model": "mobilewidth",
+          "x_form_group": "content"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "mobilecolspan",
+          "label": "Column Span (12 Columns)",
+          "model": "mobilecolspan",
+          "visible": "model.mobilewidth == 'custom'",
+          "min": 1,
+          "max": 12,
+          "x_form_group": "content"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "section",
+              "value": "section"
+            },
+            {
+              "name": "article",
+              "value": "article"
+            },
+            {
+              "name": "main",
+              "value": "main"
+            },
+            {
+              "name": "div",
+              "value": "div"
+            },
+            {
+              "name": "header",
+              "value": "header"
+            },
+            {
+              "name": "nav",
+              "value": "nav"
+            },
+            {
+              "name": "footer",
+              "value": "footer"
+            }
+          ],
+          "placeholder": "htmlelement",
+          "label": "Semantic Element",
+          "model": "htmlelement",
+          "x_form_group": "content"
         }
-      ],
-      "placeholder": "width",
-      "label": "Container Width",
-      "model": "width"
-    },
-    {
-      "type": "material-range",
-      "placeholder": "colspan",
-      "label": "Column Span (12 Columns)",
-      "model": "colspan",
-      "visible": "model.width == 'custom'",
-      "min": 1,
-      "max": 12
-    },
-    {
-      "type": "material-radios",
-      "values": [
-        {
-          "name": "Auto (fill available space)",
-          "value": "auto"
-        },
-        {
-          "name": "Custom",
-          "value": "custom"
-        }
-      ],
-      "placeholder": "tabletwidth",
-      "label": "Container Width (Tablet)",
-      "model": "tabletwidth"
-    },
-    {
-      "type": "material-range",
-      "placeholder": "tabletcolspan",
-      "label": "Column Span (12 Columns)",
-      "model": "tabletcolspan",
-      "visible": "model.tabletwidth == 'custom'",
-      "min": 1,
-      "max": 12
-    },
-    {
-      "type": "material-radios",
-      "values": [
-        {
-          "name": "Auto (fill available space)",
-          "value": "auto"
-        },
-        {
-          "name": "Custom",
-          "value": "custom"
-        }
-      ],
-      "placeholder": "mobilewidth",
-      "label": "Container Width (Mobile)",
-      "model": "mobilewidth"
-    },
-    {
-      "type": "material-range",
-      "placeholder": "mobilecolspan",
-      "label": "Column Span (12 Columns)",
-      "model": "mobilecolspan",
-      "visible": "model.mobilewidth == 'custom'",
-      "min": 1,
-      "max": 12
-    },
-    {
-      "type": "material-select",
-      "values": [
-        {
-          "name": "section",
-          "value": "section"
-        },
-        {
-          "name": "article",
-          "value": "article"
-        },
-        {
-          "name": "main",
-          "value": "main"
-        },
-        {
-          "name": "div",
-          "value": "div"
-        },
-        {
-          "name": "header",
-          "value": "header"
-        },
-        {
-          "name": "nav",
-          "value": "nav"
-        },
-        {
-          "name": "footer",
-          "value": "footer"
-        }
-      ],
-      "placeholder": "htmlelement",
-      "label": "Semantic Element",
-      "model": "htmlelement"
+      ]
     }
   ]
 }

@@ -2,18 +2,21 @@
   "definitions": {
     "Tabs": {
       "type": "object",
+      "x-form-groups": ["content", "style", "advanced"],
       "x-type": "component",
       "properties": {
         "showtitle": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Show Title",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "title": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Title",
+          "x-form-group": "content",
           "x-form-visible": "model.showtitle == 'true'",
           "x-form-type": "text"
         },
@@ -21,12 +24,14 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Show Subtitle",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "subtitle": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Subtitle",
+          "x-form-group": "content",
           "x-form-visible": "model.showsubtitle == 'true'",
           "x-form-rows": 3,
           "x-form-type": "textarea"
@@ -36,6 +41,7 @@
           "x-source": "inject",
           "x-form-label": "Media Position",
           "x-form-type": "materialradio",
+          "x-form-group": "style",
           "x-default": "before",
           "x-form-visible": "model.showmedia == 'true'",
           "properties": {
@@ -57,6 +63,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Tab Color",
+          "x-form-group": "style",
           "x-form-type": "materialselect",
           "x-default": "blue",
           "properties":{
@@ -90,6 +97,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Tabs",
+          "x-form-group": "content",
           "x-form-type": "collection",
           "properties": {
             "title": {
