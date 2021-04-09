@@ -8,6 +8,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Button Size",
+          "x-form-group": "style",
           "x-form-type": "materialselect",
           "x-default": "default",
           "properties":{
@@ -29,6 +30,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Buttons",
+          "x-form-group": "content",
           "x-form-type": "collection",
           "properties": {
             "buttontext": {

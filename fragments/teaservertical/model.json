@@ -3,6 +3,7 @@
     "Teaservertical": {
       "type": "object",
       "x-type": "component",
+      "x-form-groups": ["content", "style", "advanced"],
       "properties": {
         "aligncontent": {
           "type": "string",
@@ -10,6 +11,7 @@
           "x-form-label": "Align Content",
           "x-form-type": "materialradio",
           "x-default": "center",
+          "x-form-group": "style",
           "properties": {
             "left": {
               "x-form-name": "Left",
@@ -28,12 +30,14 @@
           "x-source": "inject",
           "x-form-label": "Enlarge Text",
           "x-form-type": "materialswitch",
+          "x-form-group": "style",
           "x-form-default": "false"
         },
         "showtitle": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Show Title",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "title": {
@@ -41,12 +45,14 @@
           "x-source": "inject",
           "x-form-label": "Title",
           "x-form-visible": "model.showtitle == 'true'",
+          "x-form-group": "content",
           "x-form-type": "text"
         },
         "showsubtitle": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Show Subtitle",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "subtitle": {
@@ -54,6 +60,7 @@
           "x-source": "inject",
           "x-form-label": "Subtitle",
           "x-form-visible": "model.showsubtitle == 'true'",
+          "x-form-group": "content",
           "x-form-rows": 3,
           "x-form-type": "textarea"
         },
@@ -61,6 +68,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Show Text",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "text": {
@@ -68,6 +76,7 @@
           "x-source": "inject",
           "x-form-label": "Text",
           "x-form-visible": "model.showtext == 'true'",
+          "x-form-group": "content",
           "x-form-type": "texteditor"
         },
         "textwidth": {
@@ -75,6 +84,7 @@
           "x-source": "inject",
           "x-form-label": "Text Width",
           "x-form-type": "materialrange",
+          "x-form-group": "style",
           "x-form-min": 0,
           "x-form-max": 100,
           "x-default": 100
@@ -83,6 +93,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Show Button",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "alignbuttons": {
@@ -91,6 +102,7 @@
           "x-form-label": "Button Alignment",
           "x-form-visible": "",
           "x-form-type": "materialradio",
+          "x-form-group": "style",
           "x-default": "center",
           "properties": {
             "left": {
@@ -112,6 +124,7 @@
           "x-form-type": "materialselect",
           "x-form-visible": "model.showbutton == 'true'",
           "x-default": "default",
+          "x-form-group": "style",
           "properties":{
             "default": {
               "x-form-name": "Default",
@@ -132,6 +145,7 @@
           "x-source": "inject",
           "x-form-label": "Buttons",
           "x-form-type": "collection",
+          "x-form-group": "content",
           "x-form-visible": "model.showbutton == 'true'",
           "properties": {
             "buttontext": {
@@ -199,6 +213,7 @@
           "x-source": "inject",
           "x-form-label": "Media Position",
           "x-form-type": "materialradio",
+          "x-form-group": "style",
           "x-form-visible": "model.showmedia == 'true'",
           "x-default": "before",
           "properties": {
