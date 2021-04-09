@@ -22,10 +22,8 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
-import java.util.Optional;
 import java.util.Set;
 
 import javax.inject.Inject;
@@ -358,7 +356,6 @@ import static org.apache.commons.lang.StringUtils.isBlank;
 public class ReferenceModel extends AbstractComponent {
 
 	private static final ThreadLocal<Set<String>> forbiddenPaths = ThreadLocal.withInitial(HashSet::new);
-	private static final ThreadLocal<Map<String, String>> previousReferences = ThreadLocal.withInitial(HashMap::new);
 
     public ReferenceModel(Resource r) { super(r); }
 
@@ -612,14 +609,10 @@ public class ReferenceModel extends AbstractComponent {
 
 	    final Resource resource = getResource();
 	    final ResourceResolver resourceResolver = resource.getResourceResolver();
-	    final Map<String, String> references = previousReferences.get();
 	    final Set<String> paths = forbiddenPaths.get();
-	    if (referencesChanged(references, resourceResolver)) {
-	    	references.clear();
+	    paths.addAll(forbiddenReferences(resource.getPath()));
+	    if (paths.contains(reference)) {
 	    	paths.clear();
-	    }
-
-	    if (createsReferenceLoop(resource, references, paths)) {
 		    return null;
 	    }
 
@@ -654,48 +647,6 @@ public class ReferenceModel extends AbstractComponent {
       return null;
     }
 
-	private boolean referencesChanged(final Map<String, String> references, final ResourceResolver resourceResolver) {
-    	for (final var e : references.entrySet()) {
-    		final String path = e.getKey();
-    		if (Optional.of(path)
-				    .map(resourceResolver::getResource)
-				    .map(ReferenceModel::getReferencePath)
-				    .map(ref -> !equals(e.getValue(), ref))
-				    .orElse(true)
-		    ) {
-			    return true;
-		    }
-	    }
-
-    	return false;
-	}
-
-	private boolean createsReferenceLoop(final Resource resource, final Map<String, String> references, final Set<String> forbiddenPaths) {
-		final Optional<String> referenceOpt = Optional.of(resource)
-				.filter(r -> r.isResourceType("themecleanflex/components/reference"))
-				.map(ReferenceModel::getReferencePath);
-		final String path = resource.getPath();
-		referenceOpt.ifPresent(ref -> references.put(path, ref));
-		if (forbiddenPaths.contains(path)) {
-    		return true;
-	    }
-
-		forbiddenPaths.addAll(forbiddenReferences(path));
-		if (referenceOpt.map(resource.getResourceResolver()::getResource)
-					.map(r -> createsReferenceLoop(r, references, forbiddenPaths))
-					.orElse(false)) {
-			return true;
-		}
-
-    	for (final Resource child : resource.getChildren()) {
-    		if (createsReferenceLoop(child, references, forbiddenPaths)) {
-    			return true;
-		    }
-	    }
-
-	    return false;
-	}
-
 	private static Set<String> forbiddenReferences(final String path) {
 		final Set<String> result = new HashSet<>();
 		result.add(path);
@@ -718,17 +669,6 @@ public class ReferenceModel extends AbstractComponent {
 
 	private static boolean isJcrContentDescendant(final String path) {
 		return contains(path, "/jcr:content/");
-	}
-
-	private static String getReferencePath(final Resource resource) {
-		return getStringProperty(resource, "reference");
-	}
-
-	private static String getStringProperty(final Resource resource, final String name) {
-		return Optional.ofNullable(resource)
-				.map(Resource::getValueMap)
-				.map(props -> props.get(name, String.class))
-				.orElse(null);
 	}
 
 	// find a node with the given key/value pair in our json output
