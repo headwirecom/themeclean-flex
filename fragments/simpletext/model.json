@@ -2,18 +2,21 @@
   "definitions": {
     "Simpletext": {
       "type": "object",
+      "x-form-groups": ["content", "style", "advanced"],
       "x-type": "component",
       "properties": {
         "text": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Text",
+          "x-form-group": "content",
           "x-form-type": "text"
         },
         "element": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Choose Element Type",
+          "x-form-group": "content",
           "x-form-type": "materialselect",
           "x-default": "p",
           "properties": {

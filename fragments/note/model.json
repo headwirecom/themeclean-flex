@@ -2,11 +2,13 @@
   "definitions": {
     "Note": {
       "type": "object",
+      "x-form-groups": ["content", "style", "advanced"],
       "x-type": "component",
       "properties": {
         "text": {
           "type": "string",
           "x-source": "inject",
+          "x-form-group": "content",
           "x-form-type": "texteditor"
         },
         "notetype": {
@@ -14,6 +16,7 @@
           "x-source": "inject",
           "x-form-label": "Note Type",
           "x-form-type": "materialselect",
+          "x-form-group": "content",
           "x-default": "note",
           "properties":{
             "note": {

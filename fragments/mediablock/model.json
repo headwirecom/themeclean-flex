@@ -2,6 +2,7 @@
   "definitions": {
     "Mediablock": {
       "type": "object",
+      "x-form-groups": ["content", "style", "advanced"],
       "x-type": "component",
       "properties": {
         "mediaref": {

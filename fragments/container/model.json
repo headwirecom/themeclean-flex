@@ -2,12 +2,14 @@
   "definitions": {
     "Container": {
       "type": "object",
+      "x-form-groups": ["content", "style", "advanced"],
       "x-type": "component",
       "properties": {
         "width": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Container Width",
+          "x-form-group": "content",
           "x-form-type": "materialradio",
           "x-default": "auto",
           "properties": {
@@ -25,6 +27,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Column Span (12 Columns)",
+          "x-form-group": "content",
           "x-form-type": "materialrange",
           "x-form-min": 1,
           "x-form-max": 12,
@@ -36,6 +39,7 @@
           "x-source": "inject",
           "x-form-label": "Container Width (Tablet)",
           "x-form-type": "materialradio",
+          "x-form-group": "content",
           "x-default": "auto",
           "properties": {
             "auto": {
@@ -52,6 +56,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Column Span (12 Columns)",
+          "x-form-group": "content",
           "x-form-type": "materialrange",
           "x-form-min": 1,
           "x-form-max": 12,
@@ -63,6 +68,7 @@
           "x-source": "inject",
           "x-form-label": "Container Width (Mobile)",
           "x-form-type": "materialradio",
+          "x-form-group": "content",
           "x-default": "auto",
           "properties": {
             "auto": {
@@ -79,6 +85,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Column Span (12 Columns)",
+          "x-form-group": "content",
           "x-form-type": "materialrange",
           "x-form-min": 1,
           "x-form-max": 12,
@@ -90,6 +97,7 @@
           "x-source": "inject",
           "x-form-label": "Semantic Element",
           "x-form-type": "materialselect",
+          "x-form-group": "content",
           "x-default": "section",
           "properties":{
             "section": {

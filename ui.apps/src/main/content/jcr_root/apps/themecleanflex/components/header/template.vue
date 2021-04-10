@@ -48,9 +48,9 @@
         mounted: function() {
           this.menuHeight = this.$refs.autoHeight.clientHeight;
           window.addEventListener('pageRendered', (e) => {
-              if (this.menuActive) {
-                this.toggleMenu();
-              }
+            if (this.menuActive) {
+              this.toggleMenu();
+            }
           }, false);
         },
         computed: {
