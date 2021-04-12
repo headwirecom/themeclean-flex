@@ -631,8 +631,8 @@ public class ReferenceModel extends AbstractComponent {
 	    }
 
       try {
-        final boolean isLevelZero = recursionStarter.get();
-        recursionStarter.set(false);
+	    final boolean isLevelZero = recursionStarter.get();
+	    recursionStarter.set(false);
         final Map result = modelFactory.exportModelForResource(referencedResource,
             PerConstants.JACKSON, Map.class, Collections.emptyMap());
         final boolean looped = foundLoop.get();
@@ -710,7 +710,7 @@ public class ReferenceModel extends AbstractComponent {
 		return contains(path, "/jcr:content/");
 	}
 
-	private Resource findComponentWithProperty(final Resource resource, final String name, final String value) {
+	private static Resource findComponentWithProperty(final Resource resource, final String name, final String value) {
     	for (final Resource child : resource.getChildren()) {
 		    if (!equals(child.getResourceType(), NT_UNSTRUCTURED) && equals(child.getValueMap().get(name, String.class), value)) {
 		    	return child;
