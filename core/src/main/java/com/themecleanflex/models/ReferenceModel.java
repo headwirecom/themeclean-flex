@@ -356,6 +356,8 @@ import static org.apache.commons.lang.StringUtils.isBlank;
 public class ReferenceModel extends AbstractComponent {
 
 	private static final ThreadLocal<Set<String>> forbiddenPaths = ThreadLocal.withInitial(HashSet::new);
+	private static final ThreadLocal<Boolean> foundLoop = ThreadLocal.withInitial(() -> false);
+	private static final ThreadLocal<Boolean> recursionStarter = ThreadLocal.withInitial(() -> true);
 
     public ReferenceModel(Resource r) { super(r); }
 
@@ -612,7 +614,7 @@ public class ReferenceModel extends AbstractComponent {
 	    final Set<String> paths = forbiddenPaths.get();
 	    paths.addAll(forbiddenReferences(resource.getPath()));
 	    if (paths.contains(reference)) {
-	    	paths.clear();
+		    foundLoop.set(true);
 		    return null;
 	    }
 
@@ -622,8 +624,20 @@ public class ReferenceModel extends AbstractComponent {
         return null;
       }
       try {
+        final boolean isLevelZero = recursionStarter.get();
+	      recursionStarter.set(false);
         Map referenceMap = modelFactory.exportModelForResource(referencedResource,
-            PerConstants.JACKSON, Map.class, Collections.<String, String>emptyMap());
+            PerConstants.JACKSON, Map.class, Collections.emptyMap());
+        final boolean looped = foundLoop.get();
+        if (isLevelZero) {
+	        paths.clear();
+	        foundLoop.set(false);
+	        recursionStarter.set(true);
+        }
+
+	    if (looped) {
+        	return null;
+        }
 
         // TODO: finding the node should happen before the export due to the fact that this
         // could result in a recursion if we point to content on the same page
