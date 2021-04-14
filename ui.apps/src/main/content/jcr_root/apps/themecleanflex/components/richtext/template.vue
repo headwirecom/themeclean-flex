@@ -20,10 +20,10 @@ export default {
     props: ['model'],
     computed: {
         isEditAndEmpty() {
-            if (!$peregrineApp.isAuthorMode()) return false
-            return this.$helper.areAllEmpty(this.model.text)
-        }
-    }
-}
+            if (!$peregrineApp.isAuthorMode()) return false;
+            return this.$helper.areAllEmpty(this.model.text);
+        },
+    },
+};
 </script>
 

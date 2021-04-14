@@ -38,10 +38,10 @@ export default {
     props: ['model'],
     computed: {
         isEditAndEmpty() {
-            if (!$peregrineApp.isAuthorMode()) return false
-            return this.$helper.areAllEmpty(this.model.prevlabel, this.model.nextlabel)
-        }
-    }
-}
+            if (!$peregrineApp.isAuthorMode()) return false;
+            return this.$helper.areAllEmpty(this.model.prevlabel, this.model.nextlabel);
+        },
+    },
+};
 </script>
 

@@ -4,15 +4,15 @@ var Analytics = _analytics.init({
         {
             name: 'console-plugin',
             track: ({ payload }) => {
-                console.log(payload)
-            }
+                console.log(payload);
+            },
         },
         analyticsPerfumeJs({
             perfume: Perfume,
-            category: 'perfMetrics'
+            category: 'perfMetrics',
         }),
         analyticsGa.init({
-            trackingId: 'YOUR-GOOGLE-TRACKING-ID'
-        })
-    ]
-})
+            trackingId: 'YOUR-GOOGLE-TRACKING-ID',
+        }),
+    ],
+});

@@ -26,13 +26,13 @@ export default {
     props: ['model'],
     computed: {
         tags() {
-            return $peregrineApp.getView().page.tags
+            return $peregrineApp.getView().page.tags;
         },
         isEditAndEmpty() {
-            if (!$peregrineApp.isAuthorMode()) return false
-            return this.tags.length === 0
-        }
-    }
-}
+            if (!$peregrineApp.isAuthorMode()) return false;
+            return this.tags.length === 0;
+        },
+    },
+};
 </script>
 

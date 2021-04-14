@@ -7,7 +7,7 @@ function objectify(array) {
     const obj = array.map(optionObjectsArr => {
         let combinedName = optionObjectsArr.reduce((combinedName, optionObject) => {
             return combinedName ? (combinedName + '; ' + optionObject.name) : optionObject.name;
-        }, "");
+        }, '');
         return Object.assign({}, ...optionObjectsArr, { name: combinedName });
     });
     return obj;
@@ -25,7 +25,7 @@ function createVariationMap(root = '../variation-fragments/') {
                 if (optionName.endsWith('.json')) {
                     const optionJson = fs.readJSONSync(root + name + '/' + optionName);
                     let optionLabel = optionName.substring(0, optionName.length - 5);
-                    optionLabel = optionLabel.replace("-", ": ");
+                    optionLabel = optionLabel.replace('-', ': ');
                     optionJson.name = optionLabel;
                     variation.push(optionJson);
                 }
@@ -42,7 +42,7 @@ module.exports = {
         let cartified = cartesian(...variations);
         let objectified = objectify(cartified);
         return objectified;
-    }
-}
+    },
+};
 
 //delete object.name;

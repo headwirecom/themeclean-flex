@@ -1,4 +1,4 @@
-let marked = require('marked')
+let marked = require('marked');
 
 let idx = 0;
 
@@ -17,7 +17,7 @@ function card(title, text, link) {
         title="${ title }"
         text="${ escape(md) }">
         </card${ idx++ }>
-    `
+    `;
 }
 
 module.exports = {
@@ -59,14 +59,14 @@ module.exports = {
         </c5></columns>
 <icons jcr:primaryType="nt:unstructured"></icons>
         </clfooter>        
-        </jcr:content></jcr:root>`
+        </jcr:content></jcr:root>`;
     },
 
     title(title) {
         return `<title${ idx } jcr:primaryType="nt:unstructured" 
     sling:resourceType="themecleanflex/components/richtext" 
     text="${ escape('<h1>' + title + '</h1>') }">
-</title${ idx++ }>`
+</title${ idx++ }>`;
     },
 
     subtitle(title) {
@@ -78,14 +78,14 @@ module.exports = {
             backgroundtype="color"
             bgcolor="#eeeeee"
             text="${ escape('<h2>' + title + '</h2>') }">
-        </title${ idx++ }>`
+        </title${ idx++ }>`;
     },
 
     text(text) {
         return `<text${ idx } jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="${ escape(text) }">
-        </text${ idx++ }>`
+        </text${ idx++ }>`;
     },
 
     listChildren(path, children) {
@@ -98,7 +98,7 @@ ${ children.map((child => `<li><a href="${ path }${ child }.html">${ child }</a>
     tag(name, attrs, children = []) {
         return `<${ name }${ idx }
         ${ attrs.map((attr) => attr[0] + '="' + escape(attr[1]) + '"').join(' ') }>${ children.join('\n') }
-        </${ name }${ idx++ }>`
+        </${ name }${ idx++ }>`;
     },
 
     home() {
@@ -142,7 +142,7 @@ ${ children.map((child => `<li><a href="${ path }${ child }.html">${ child }</a>
             bgcolor="#eeeeee"
             text="${ escape(marked(md)) }">
         </intro${ idx++ }>
-        `
+        `;
     },
 
     container(el, content) {
@@ -151,7 +151,7 @@ ${ children.map((child => `<li><a href="${ path }${ child }.html">${ child }</a>
             sling:resourceType="themecleanflex/components/container"
             htmlelement="${ el }">
             ${ content }
-        </container${ idx++ }>`
+        </container${ idx++ }>`;
     },
 
 
@@ -172,10 +172,10 @@ ${ children.map((child => `<li><a href="${ path }${ child }.html">${ child }</a>
             customcardcolor="true"
             cardcolor="#eeeeee">
                 <cards jcr:primaryType="nt:unstructured">
-                    ${ cards.reduce((cards, { title, text, link }) => cards + card(title, text, link), "") }
+                    ${ cards.reduce((cards, { title, text, link }) => cards + card(title, text, link), '') }
                 </cards>
         </cards${ cardNum }>
-        `)
-    }
+        `);
+    },
 
-}
+};

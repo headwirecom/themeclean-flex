@@ -25,16 +25,16 @@ export default {
     props: ['model'],
     computed: {
         renderPlaceholderEmpty() {
-            return this.model.children.length === 0
+            return this.model.children.length === 0;
         },
         renderPlaceholder() {
             if (this.model.fromTemplate
                 && this.model.children.length > 0
                 && this.model.children[0].fromTemplate) {
-                return false
+                return false;
             }
-            return !this.renderPlaceholderEmpty
-        }
-    }
-}
+            return !this.renderPlaceholderEmpty;
+        },
+    },
+};
 </script>

@@ -77,39 +77,39 @@ export default {
         return {
             active: new Array(numElements).fill(false),
             heights: new Array(numElements).fill(0),
-        }
+        };
     },
     created() {
-        addEventListener("resize", this.setHeights);
+        addEventListener('resize', this.setHeights);
     },
     destroyed() {
-        removeEventListener("resize", this.setHeights);
+        removeEventListener('resize', this.setHeights);
     },
     mounted: function() {
         this.setHeights();
     },
     computed: {
         isEditAndEmpty() {
-            if (!$peregrineApp.isAuthorMode()) return false
+            if (!$peregrineApp.isAuthorMode()) return false;
             return this.$helper.areAllEmpty(this.model.showtitle === 'true' && this.model.title, this.model.showmedia === 'true', this.model.accordiontoggle);
-        }
+        },
     },
     methods: {
         setHeights: function() {
             this.heights.forEach((item, i) => {
-                    Vue.set(this.heights, i, this.$refs[`cardContent${ i }`][0].clientHeight)
-                }
+                    Vue.set(this.heights, i, this.$refs[`cardContent${ i }`][0].clientHeight);
+                },
             );
         },
         toggleItem(i) {
             if (this.model.toggletype === 'accordion') {
                 this.active.forEach((active, j) => {
                     Vue.set(this.active, j, j === i ? !this.active[j] : false);
-                })
+                });
             } else {
-                Vue.set(this.active, i, !this.active[i])
+                Vue.set(this.active, i, !this.active[i]);
             }
-        }
-    }
-}
+        },
+    },
+};
 </script>

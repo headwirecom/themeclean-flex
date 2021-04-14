@@ -18,26 +18,26 @@ export default {
                 if (!lang || !Prism.languages[lang]) {
                     lang = 'javascript';
                 }
-                return Prism.highlight(this.model.text ? this.model.text : '', Prism.languages[lang], lang)
+                return Prism.highlight(this.model.text ? this.model.text : '', Prism.languages[lang], lang);
             } else {
                 return this.model.text;
             }
         },
         isEditAndEmpty() {
-            if (!$peregrineApp.isAuthorMode()) return false
+            if (!$peregrineApp.isAuthorMode()) return false;
             return this.$helper.areAllEmpty(this.model.text);
-        }
+        },
     },
     mounted: function() {
         if (window.Prism) {
-            Prism.highlightAllUnder(this.$el)
+            Prism.highlightAllUnder(this.$el);
         }
     },
     updated: function() {
         if (window.Prism) {
-            Prism.highlightAllUnder(this.$el)
+            Prism.highlightAllUnder(this.$el);
         }
-    }
-}
+    },
+};
 </script>
 

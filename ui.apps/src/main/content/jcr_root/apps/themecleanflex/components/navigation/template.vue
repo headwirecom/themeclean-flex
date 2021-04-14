@@ -34,9 +34,9 @@ export default {
     props: ['model'],
     methods: {
         beforeSave(data) {
-            delete data.childrenPages
-            return data
-        }
+            delete data.childrenPages;
+            return data;
+        },
     },
     computed: {
         isEditAndEmpty() {
@@ -44,9 +44,9 @@ export default {
             if (this.$helper.areAllEmpty(this.model.rootpage)) return 'Please choose a root page';
             if (this.model.childrenPages && this.model.childrenPages.length == 0) return 'Chosen root page has no children (May need reload after root change)';
             return false;
-        }
-    }
-}
+        },
+    },
+};
 </script>
 
 <style>

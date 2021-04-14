@@ -15,10 +15,11 @@
 <script>
 import VLazyImage from 'v-lazy-image';
 
+
 export default {
-    props: ["model"],
+    props: ['model'],
     components: {
-        VLazyImage
-    }
-}
+        VLazyImage,
+    },
+};
 </script>

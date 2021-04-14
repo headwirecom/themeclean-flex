@@ -11,10 +11,10 @@ export default {
     props: ['model'],
     computed: {
         isEditAndEmpty() {
-            if (!$peregrineApp.isAuthorMode()) return false
+            if (!$peregrineApp.isAuthorMode()) return false;
             //return !(this.model.imagesrc || this.model.videosrc)
-            return this.$helper.areAllEmpty(this.model.imagesrc, this.model.videosrc)
-        }
-    }
-}
+            return this.$helper.areAllEmpty(this.model.imagesrc, this.model.videosrc);
+        },
+    },
+};
 </script>

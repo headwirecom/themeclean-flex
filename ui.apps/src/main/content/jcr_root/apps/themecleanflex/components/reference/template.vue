@@ -17,24 +17,24 @@ export default {
         },
         refModel() {
             try {
-                return JSON.parse(this.model.referenceJson)
+                return JSON.parse(this.model.referenceJson);
             } catch (error) {
-                return { component: 'themecleanflex-components-note' }
+                return { component: 'themecleanflex-components-note' };
             }
         },
         reference() {
-            return this.model.reference
+            return this.model.reference;
         },
         overlayStyle() {
             if (this.reference.endsWith(this.refModel.path)) {
-                return 'background-color: transparent'
-            } else return 'background-color: rgba(230, 230, 230, 0.5)'
+                return 'background-color: transparent';
+            } else return 'background-color: rgba(230, 230, 230, 0.5)';
         },
         isEditAndEmpty() {
             if (!$peregrineApp.isAuthorMode()) return false;
             if (!this.refModel) return 'Referenced component was not found';
             return false;
-        }
+        },
     },
     methods: {
         beforeSave(data) {
@@ -46,7 +46,7 @@ export default {
                 .map(segment => segment.charAt(0).toUpperCase() + segment.slice(1))
                 .join('');
             return window[cmpName];
-        }
-    }
-}
+        },
+    },
+};
 </script>

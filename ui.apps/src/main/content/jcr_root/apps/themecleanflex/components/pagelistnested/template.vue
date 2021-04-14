@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    props: ['model', 'references']
-}
+    props: ['model', 'references'],
+};
 </script>
 

@@ -20,9 +20,9 @@ export default {
     props: ['model'],
     computed: {
         activeClass(url) {
-            return { 'font-bold': this.$data.path === url }
-        }
-    }
-}
+            return { 'font-bold': this.$data.path === url };
+        },
+    },
+};
 </script>
 

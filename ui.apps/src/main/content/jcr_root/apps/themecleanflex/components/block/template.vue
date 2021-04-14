@@ -21,23 +21,23 @@
 export default {
     props: {
         model: {
-            type: Object
-        }
+            type: Object,
+        },
     },
     data: function() {
         return {
-            loadVideo: null
-        }
+            loadVideo: null,
+        };
     },
     mounted() {
         this.$nextTick(function() {
             this.loadVideo = true;
-        })
+        });
 
         // Add top margin to perApp to account for fixed header when sticky is true
         if (this.model.sticky === 'true' && !$peregrineApp.isAuthorMode()) {
             if (this.$refs.section.style.position === 'fixed') {
-                const height = this.$refs.section.clientHeight
+                const height = this.$refs.section.clientHeight;
                 this.$refs.section.parentElement.style.marginTop = height + 'px';
             }
         }
@@ -54,13 +54,13 @@ export default {
     },
     computed: {
         videoSource() {
-            return this.loadVideo ? this.model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1' : "";
+            return this.loadVideo ? this.model.bgvideo + '?autoplay=1&amp;loop=1&amp;controls=0&amp;mute=1' : '';
         },
         classes: function() {
-            let classObject = {}
-            classObject['min-h-screen'] = this.model.fullheight == 'true'
-            classObject[`elevation-${ this.model.elevation }`] = this.model.elevation > 0
-            return classObject
+            let classObject = {};
+            classObject['min-h-screen'] = this.model.fullheight == 'true';
+            classObject[`elevation-${ this.model.elevation }`] = this.model.elevation > 0;
+            return classObject;
         },
         colors: function() {
             let classes = {};
@@ -70,17 +70,17 @@ export default {
             return classes;
         },
         sticky: function() {
-            const sticky = this.model.sticky === 'true'
+            const sticky = this.model.sticky === 'true';
             return sticky && !$peregrineApp.isAuthorMode() ?
                 {
                     position: 'sticky',
                     top: '0',
                     width: '100%',
-                    zIndex: '1000'
-                } : {}
+                    zIndex: '1000',
+                } : {};
         },
         styles: function() {
-            let styles = {}
+            let styles = {};
 
             if (this.model.toppadding) styles.paddingTop = `${ this.model.toppadding }px`;
             if (this.model.bottompadding) styles.paddingBottom = `${ this.model.bottompadding }px`;
@@ -97,28 +97,28 @@ export default {
             styles.backgroundRepeat = 'no-repeat';
 
             return styles;
-        }
+        },
     },
     methods: {
         backgroundStyles() {
-            if (this.model.custombackground === 'false') return ''
+            if (this.model.custombackground === 'false') return '';
             switch (this.model.backgroundtype) {
 
                 case 'image':
-                    const overlay = this.model.overlay === 'true' ? `${ this.overlayStyle() },` : ''
+                    const overlay = this.model.overlay === 'true' ? `${ this.overlayStyle() },` : '';
                     if (this.model.bgimage) {
-                        return overlay + `url("${ this.model.bgimage }")`
+                        return overlay + `url("${ this.model.bgimage }")`;
                     }
-                    return overlay
+                    return overlay;
 
                 case 'gradient':
-                    return `linear-gradient(to right,${ this.model.bgcolor },${ this.model.color2 })`
+                    return `linear-gradient(to right,${ this.model.bgcolor },${ this.model.color2 })`;
 
                 case 'color':
-                    return `${ this.model.bgcolor }`
+                    return `${ this.model.bgcolor }`;
 
                 default:
-                    return ''
+                    return '';
 
             }
         },
@@ -127,13 +127,13 @@ export default {
             return `rgba(${ parseInt(hex.slice(1, 3), 16) },
                          ${ parseInt(hex.slice(3, 5), 16) },
                          ${ parseInt(hex.slice(5, 7), 16) },
-                         ${ this.model.overlayopacity / 100 } )`
+                         ${ this.model.overlayopacity / 100 } )`;
         },
         overlayStyle() {
-            return `linear-gradient(to right, ${ this.colorOpacity() }, ${ this.colorOpacity() })`
-        }
-    }
+            return `linear-gradient(to right, ${ this.colorOpacity() }, ${ this.colorOpacity() })`;
+        },
+    },
 
-}
+};
 </script>
 

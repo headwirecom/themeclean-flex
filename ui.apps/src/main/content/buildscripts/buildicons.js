@@ -8,10 +8,10 @@ var SVGSpriter = require('svg-sprite'),
         dest: 'out',
         mode: {
             symbol: {
-                inline: true
-            }
-        }
-    })
+                inline: true,
+            },
+        },
+    });
 
 var basePath = path.resolve('./src/main/content/jcr_root');
 var iconPath = basePath + '/content/themecleanflex/assets/icons';
@@ -24,9 +24,9 @@ glob.glob('**/*.svg', { cwd: iconPath }, function(err, files) {
         spriter.add(new File({
             path: path.join(iconPath, file),                      // Absolute path to the SVG file
             base: iconPath,                                       // Base path (see `name` argument)
-            contents: fs.readFileSync(path.join(iconPath, file))  // SVG file contents
+            contents: fs.readFileSync(path.join(iconPath, file)),  // SVG file contents
         }));
-    })
+    });
 
     spriter.compile(function(error, result, data) {
         fs.writeFileSync(basePath + '/apps/themecleanflex/components/page/iconsprites.html', result.symbol.sprite.contents);

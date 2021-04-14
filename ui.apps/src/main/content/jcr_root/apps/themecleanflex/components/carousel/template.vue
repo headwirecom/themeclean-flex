@@ -34,21 +34,22 @@
 <script>
 import { Carousel, Slide } from 'vue-carousel';
 
+
 export default {
     props: ['model'],
     computed: {
         name() {
-            return this.model.path.split('/').slice(1).join('-').slice(4)
+            return this.model.path.split('/').slice(1).join('-').slice(4);
         },
         isEditAndEmpty() {
-            if (!$peregrineApp.isAuthorMode()) return false
+            if (!$peregrineApp.isAuthorMode()) return false;
             //return (this.model.cards.length === 0)
-            return this.$helper.areAllEmpty(this.model.slides)
-        }
+            return this.$helper.areAllEmpty(this.model.slides);
+        },
     },
     components: {
         Carousel,
-        Slide
+        Slide,
     },
-}
+};
 </script>

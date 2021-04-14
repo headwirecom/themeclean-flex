@@ -24,17 +24,17 @@ export default {
     props: ['model'],
     computed: {
         isEditAndEmpty() {
-            if (!$peregrineApp.isAuthorMode()) return false
+            if (!$peregrineApp.isAuthorMode()) return false;
             //return (this.model.cards.length === 0)
-            return this.$helper.areAllEmpty(this.model.links)
-        }
+            return this.$helper.areAllEmpty(this.model.links);
+        },
     },
     methods: {
         beforeSave(data) {
-            delete data.links
-            return data
-        }
-    }
-}
+            delete data.links;
+            return data;
+        },
+    },
+};
 </script>
 

@@ -38,14 +38,14 @@ export default {
     data: function() {
         return {
             menuActive: false,
-            menuHeight: 0
-        }
+            menuHeight: 0,
+        };
     },
     created() {
-        addEventListener("resize", this.resizeHandler);
+        addEventListener('resize', this.resizeHandler);
     },
     destroyed() {
-        removeEventListener("resize", this.resizeHandler);
+        removeEventListener('resize', this.resizeHandler);
     },
     mounted: function() {
         this.menuHeight = this.$refs.autoHeight.clientHeight;
@@ -57,19 +57,19 @@ export default {
     },
     computed: {
         isEditAndEmpty() {
-            if (!$peregrineApp.isAuthorMode()) return false
-            return this.$helper.areAllEmpty(this.model.logo, this.model.links, this.model.buttons)
-        }
+            if (!$peregrineApp.isAuthorMode()) return false;
+            return this.$helper.areAllEmpty(this.model.logo, this.model.links, this.model.buttons);
+        },
     },
     methods: {
         resizeHandler: function(e) {
-            const height = this.$refs.autoHeight.clientHeight
+            const height = this.$refs.autoHeight.clientHeight;
             if (this.menuActive) this.menuActive = false;
             this.menuHeight = height;
         },
         toggleMenu: function() {
-            this.menuActive = !this.menuActive
-        }
-    }
-}
+            this.menuActive = !this.menuActive;
+        },
+    },
+};
 </script>

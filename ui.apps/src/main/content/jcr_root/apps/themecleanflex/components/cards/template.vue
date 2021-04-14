@@ -76,19 +76,19 @@ export default {
     props: ['model'],
     computed: {
         isEditAndEmpty() {
-            if (!$peregrineApp.isAuthorMode()) return false
-            return this.$helper.areAllEmpty(this.model.cards)
-        }
+            if (!$peregrineApp.isAuthorMode()) return false;
+            return this.$helper.areAllEmpty(this.model.cards);
+        },
     },
     methods: {
         showbutton(card) {
-            return this.model.showbutton === 'true' && card.buttontext.length
+            return this.model.showbutton === 'true' && card.buttontext.length;
         },
         placeholderSrc(item) {
-            const size = item.imageSize
-            return size ? `data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${ size.width } ${ size.height }"%3E%3C/svg%3E` : null
-        }
-    }
-}
+            const size = item.imageSize;
+            return size ? `data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${ size.width } ${ size.height }"%3E%3C/svg%3E` : null;
+        },
+    },
+};
 </script>
 

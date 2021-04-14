@@ -27,7 +27,7 @@
                 'isIntersecting', {
                     get: function() {
                         return this.intersectionRatio > 0;
-                    }
+                    },
                 });
         }
         return;
@@ -283,7 +283,7 @@
                         attributes: true,
                         childList: true,
                         characterData: true,
-                        subtree: true
+                        subtree: true,
                     });
                 }
             }
@@ -336,7 +336,7 @@
                 target: target,
                 boundingClientRect: targetRect,
                 rootBounds: rootRect,
-                intersectionRect: intersectionRect
+                intersectionRect: intersectionRect,
             });
 
             if (!oldEntry) {
@@ -441,7 +441,7 @@
                 right: html.clientWidth || body.clientWidth,
                 width: html.clientWidth || body.clientWidth,
                 bottom: html.clientHeight || body.clientHeight,
-                height: html.clientHeight || body.clientHeight
+                height: html.clientHeight || body.clientHeight,
             };
         }
         return this._expandRectByRootMargin(rootRect);
@@ -463,7 +463,7 @@
             top: rect.top - margins[0],
             right: rect.right + margins[1],
             bottom: rect.bottom + margins[2],
-            left: rect.left - margins[3]
+            left: rect.left - margins[3],
         };
         newRect.width = newRect.right - newRect.left;
         newRect.height = newRect.bottom - newRect.top;
@@ -637,7 +637,7 @@
             left: left,
             right: right,
             width: width,
-            height: height
+            height: height,
         };
     }
 
@@ -667,7 +667,7 @@
                 bottom: rect.bottom,
                 left: rect.left,
                 width: rect.right - rect.left,
-                height: rect.bottom - rect.top
+                height: rect.bottom - rect.top,
             };
         }
         return rect;
@@ -686,7 +686,7 @@
             left: 0,
             right: 0,
             width: 0,
-            height: 0
+            height: 0,
         };
     }
 

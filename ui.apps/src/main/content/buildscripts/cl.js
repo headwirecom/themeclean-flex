@@ -7,14 +7,14 @@ const compvars = require('./variations.js');
 function outSample(name, sample, variation = null) {
     const data = fs.readJSONSync('../fragments/' + name + '/' + sample);
 
-    let out = ""
+    let out = '';
     if (variation) {
         const variationName = variation.name;
         const withoutName = Object.assign({}, variation);
         delete withoutName.name;
         Object.assign(data.model, withoutName);
-        data.group = ".hidden";
-        data.title += " Sample Variation - " + variationName;
+        data.group = '.hidden';
+        data.title += ' Sample Variation - ' + variationName;
     }
     out += clfrags.subtitle(`${ data.title } (${ data.group })`);
     const attrs = [['jcr:primaryType', 'nt:unstructured'], ['sling:resourceType', 'themecleanflex/components/' + name]];
@@ -54,13 +54,13 @@ function buildPage(target, name, samples, readme, variations) {
     out.write(clfrags.home());
     out.write(clfrags.pager());
 
-    let readmeContent = ""
+    let readmeContent = '';
     if (readme) {
         let md = fs.readFileSync('../fragments/' + name + '/readme.md', 'utf-8');
         readmeContent = clfrags.intro(md);
     }
 
-    const samplesContent = samples.reduce((val, sample) => val + outSample(name, sample), readmeContent)
+    const samplesContent = samples.reduce((val, sample) => val + outSample(name, sample), readmeContent);
     out.write(clfrags.container('main', samplesContent));
     out.write(clfrags.pager());
     out.write(clfrags.footer());
@@ -75,7 +75,7 @@ function buildVariationPages(target, name, samples, variations) {
             return;
         }
         const sampleName = sample.substring(0, sample.length - 5);
-        const targetFolder = targetRoot + '/' + sampleName
+        const targetFolder = targetRoot + '/' + sampleName;
         fs.mkdirsSync(targetFolder);
         const out = fs.createWriteStream(targetFolder + '/.content.xml');
         out.write(clfrags.header(name + sampleName));
@@ -97,14 +97,14 @@ function buildIndexPage(target, pages) {
     out.write(clfrags.header('component library'));
     out.write(clfrags.pager());
 
-    let mainContent = ""
+    let mainContent = '';
     mainContent += clfrags.title('component library');
 
     let cards = pages.map(page => ({
         title: page.name,
         text: fs.readFileSync('../fragments/' + page.name + '/readme.md', 'utf-8'),
-        link: `library/${ page.name }.html`
-    }))
+        link: `library/${ page.name }.html`,
+    }));
 
     mainContent += clfrags.cards(cards);
 

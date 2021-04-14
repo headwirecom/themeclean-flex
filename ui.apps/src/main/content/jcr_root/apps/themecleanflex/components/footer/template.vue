@@ -30,10 +30,10 @@ export default {
     props: ['model'],
     computed: {
         isEditAndEmpty() {
-            if (!$peregrineApp.isAuthorMode()) return false
-            return this.$helper.areAllEmpty(this.model.showlogo === 'true', this.model.columns, this.model.copyright, this.model.icons)
-        }
-    }
-}
+            if (!$peregrineApp.isAuthorMode()) return false;
+            return this.$helper.areAllEmpty(this.model.showlogo === 'true', this.model.columns, this.model.copyright, this.model.icons);
+        },
+    },
+};
 </script>
 

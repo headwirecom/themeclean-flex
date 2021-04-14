@@ -33,7 +33,7 @@ function diff(name) {
 }
 
 function report(out, url, version, name) {
-    out.push({ url, version, name })
+    out.push({ url, version, name });
 }
 
 function generateReport(out, name) {
@@ -47,7 +47,7 @@ function generateReport(out, name) {
         data.push(`<td style="width: 30%" valign="top"><img style="max-width: 100%" src="../../approved/${ entry.name }"></td>`);
         data.push(`<td style="width: 30%" valign="top"><img style="max-width: 100%" src="diff/${ entry.name }"></td>`);
         data.push(`</tr>`);
-    })
+    });
     data.push(`</table`);
     fs.writeFileSync(`${ out_path }/${ name }.html`, data.join('\n'));
 }
@@ -87,7 +87,7 @@ async function makeRenditions(base, path) {
             }
         }
     });
-    console.log(queue.length, 'items to go')
+    console.log(queue.length, 'items to go');
 
     await browser.close();
     generateReport(out, name);
@@ -122,8 +122,8 @@ function makeIndexPage(pages) {
     makeDirs('approved');
     console.log('vaildatepage <parentUrl> <relativePath> [single]');
     if (process.argv.length >= 3) {
-        const url = process.argv[2] + process.argv[3]
-        const single = process.argv[4]
+        const url = process.argv[2] + process.argv[3];
+        const single = process.argv[4];
         const parent = process.argv[2];
         queue.push(url);
         let ps = [];
@@ -135,7 +135,7 @@ function makeIndexPage(pages) {
                 ps.push(new Promise(async (res, rej) => {
                     await makeRenditions(parent, href);
                     res();
-                }))
+                }));
             }
             await Promise.all(ps);
             ps = [];

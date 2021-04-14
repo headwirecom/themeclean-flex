@@ -11,7 +11,7 @@ if (workbox) {
         new workbox.strategies.NetworkFirst({
             // Use a custom cache name.
             cacheName: 'css-cache',
-        })
+        }),
     );
 
     workbox.routing.registerRoute(
@@ -21,14 +21,14 @@ if (workbox) {
         new workbox.strategies.NetworkFirst({
             // Use a custom cache name.
             cacheName: 'json-cache',
-        })
+        }),
     );
 
     workbox.routing.registerRoute(
         // Cache CSS files.
         /\.html$/,
         // Use cache but update in the background.
-        new workbox.strategies.NetworkFirst()
+        new workbox.strategies.NetworkFirst(),
     );
 
     workbox.routing.registerRoute(
@@ -44,9 +44,9 @@ if (workbox) {
                     maxEntries: 20,
                     // Cache for a maximum of a week.
                     maxAgeSeconds: 7 * 24 * 60 * 60,
-                })
+                }),
             ],
-        })
+        }),
     );
 
 } else {
