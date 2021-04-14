@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-            jcr:primaryType="per:Page"
-            jcr:title="tf-cl | footer"
-            jcr:description="footer themecleanflex component library"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="per:Page"
+          jcr:title="tf-cl | footer"
+          jcr:description="footer themecleanflex component library"
 >
     <jcr:content
         jcr:primaryType="per:PageContent"
@@ -11,170 +12,268 @@
         description="footer themecleanflex component library"
         brand="themecleanflex"
         template="/content/themecleanflex/templates"
-            ><clheader
-            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/themecleanflex/pages/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
-    <links jcr:primaryType="nt:unstructured"></links>
-    <buttons jcr:primaryType="nt:unstructured"></buttons>
-            </clheader><clbreadcrumb
-        colorscheme="light"
-        custombackground="false"
-        backgroundtype="color"
-        bgcolor="#eeeeee"
-        htmlelement="nav"
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
-        <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager0
-        colorscheme="light"
-        toppadding="30"
-        bottompadding="30"
-        custombackground="false"
-        backgroundtype="color"
-        bgcolor="#eeeeee"
-        htmlelement="nav"
-        prevlabel="&lt; previous"
-        nextlabel="next &gt;"
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager0><container36
+    >
+        <clheader
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header"
+            backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10"
+            bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false"
+            logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo"
+            logourl="/content/themecleanflex/pages/library.html" logosize="60" buttonsize="default">
+            <elevation jcr:primaryType="nt:unstructured"></elevation>
+            <links jcr:primaryType="nt:unstructured"></links>
+            <buttons jcr:primaryType="nt:unstructured"></buttons>
+        </clheader>
+        <clbreadcrumb
+            colorscheme="light"
+            custombackground="false"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            htmlelement="nav"
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2">
+            <toppadding jcr:primaryType="nt:unstructured"></toppadding>
+            <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        </clbreadcrumb>
+        <pager0
+            colorscheme="light"
+            toppadding="30"
+            bottompadding="30"
+            custombackground="false"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            htmlelement="nav"
+            prevlabel="&lt; previous"
+            nextlabel="next &gt;"
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager0>
+        <container36
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
-            
-        <intro1 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            bottompadding="25"
-            toppadding="25"
-            htmlelement="banner"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h1 id=&quot;footer&quot;&gt;Footer&lt;/h1&gt;
+
+            <intro1 jcr:primaryType="nt:unstructured"
+                    sling:resourceType="themecleanflex/components/richtext"
+                    bottompadding="25"
+                    toppadding="25"
+                    htmlelement="banner"
+                    custombackground="true"
+                    backgroundtype="color"
+                    bgcolor="#eeeeee"
+                    text="&lt;h1 id=&quot;footer&quot;&gt;Footer&lt;/h1&gt;
 &lt;p&gt;The Footer component is a great way to display extra information or navigation related to your site.&lt;/p&gt;
 ">
-        </intro1>
-        <title2 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
+            </intro1>
+            <title2 jcr:primaryType="nt:unstructured"
+                    sling:resourceType="themecleanflex/components/richtext"
+                    toppadding="25"
+                    bottompadding="25"
+                    custombackground="true"
+                    backgroundtype="color"
+                    bgcolor="#eeeeee"
+                    text="&lt;h2&gt;Footer (Chrome)&lt;/h2&gt;">
+            </title2>
+            <footer3
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer">
+                <coluimns jcr:primaryType="nt:unstructured"></coluimns>
+            </footer3>
+            <title4 jcr:primaryType="nt:unstructured"
+                    sling:resourceType="themecleanflex/components/richtext"
+                    toppadding="25"
+                    bottompadding="25"
+                    custombackground="true"
+                    backgroundtype="color"
+                    bgcolor="#eeeeee"
+                    text="&lt;h2&gt;Footer - light (Chrome)&lt;/h2&gt;">
+            </title4>
+            <footer13
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer"
+                htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30"
+                colorscheme="light" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg"
+                logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60"
+                copyright="Copyright 2017 Peregrine - All Rights Reserved">
+                <columns jcr:primaryType="nt:unstructured">
+                    <c5
+                        jcr:primaryType="nt:unstructured" title="" text="">
+                    </c5>
+                    <c6
+                        jcr:primaryType="nt:unstructured" title="Contact"
+                        text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+                    </c6>
+                    <c7
+                        jcr:primaryType="nt:unstructured" title="Location"
+                        text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+                    </c7>
+                </columns>
+                <icons jcr:primaryType="nt:unstructured">
+                    <c8
+                        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook"
+                        iconalttext="Facebook">
+                    </c8>
+                    <c9
+                        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter"
+                        iconalttext="Twitter">
+                    </c9>
+                    <c10
+                        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram"
+                        iconalttext="Instagram">
+                    </c10>
+                    <c11
+                        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest"
+                        iconalttext="Pinterest">
+                    </c11>
+                    <c12
+                        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube"
+                        iconalttext="Youtube">
+                    </c12>
+                </icons>
+            </footer13>
+            <title14 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Footer With All RTE Styles (.hidden)&lt;/h2&gt;">
+            </title14>
+            <footer23
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer"
+                htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30"
+                colorscheme="dark" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg"
+                logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60"
+                copyright="Copyright 2017 Peregrine - All Rights Reserved">
+                <columns jcr:primaryType="nt:unstructured">
+                    <c15
+                        jcr:primaryType="nt:unstructured" title="" text="">
+                    </c15>
+                    <c16
+                        jcr:primaryType="nt:unstructured" title="Contact"
+                        text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+                    </c16>
+                    <c17
+                        jcr:primaryType="nt:unstructured" title="Location"
+                        text="&lt;h1&gt;Left (Default) Alignment Test&lt;/h1&gt;&lt;h2&gt;Header h2&lt;/h2&gt;&lt;h3&gt;Header h3&lt;/h3&gt;&lt;h4&gt;Header h4&lt;/h4&gt;&lt;p&gt;Text:&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: center; &quot;&gt;Center Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: center; &quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: center; &quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: center; &quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: center; &quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: center; &quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: center; &quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: right; &quot;&gt;Right Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: right; &quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: right; &quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: right; &quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: right; &quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: right; &quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: right; &quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: justify;&quot;&gt;Justified Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: justify;&quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: justify;&quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: justify;&quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;another line&lt;/p&gt;">
+                    </c17>
+                </columns>
+                <icons jcr:primaryType="nt:unstructured">
+                    <c18
+                        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook"
+                        iconalttext="Facebook">
+                    </c18>
+                    <c19
+                        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter"
+                        iconalttext="Twitter">
+                    </c19>
+                    <c20
+                        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram"
+                        iconalttext="Instagram">
+                    </c20>
+                    <c21
+                        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest"
+                        iconalttext="Pinterest">
+                    </c21>
+                    <c22
+                        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube"
+                        iconalttext="Youtube">
+                    </c22>
+                </icons>
+            </footer23>
+            <title24 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Footer - Dark (Chrome)&lt;/h2&gt;">
+            </title24>
+            <footer33
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer"
+                htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30"
+                colorscheme="dark" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg"
+                logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60"
+                copyright="Copyright 2017 Peregrine - All Rights Reserved">
+                <columns jcr:primaryType="nt:unstructured">
+                    <c25
+                        jcr:primaryType="nt:unstructured" title="" text="">
+                    </c25>
+                    <c26
+                        jcr:primaryType="nt:unstructured" title="Contact"
+                        text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
+                    </c26>
+                    <c27
+                        jcr:primaryType="nt:unstructured" title="Location"
+                        text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+                    </c27>
+                </columns>
+                <icons jcr:primaryType="nt:unstructured">
+                    <c28
+                        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook"
+                        iconalttext="Facebook">
+                    </c28>
+                    <c29
+                        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter"
+                        iconalttext="Twitter">
+                    </c29>
+                    <c30
+                        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram"
+                        iconalttext="Instagram">
+                    </c30>
+                    <c31
+                        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest"
+                        iconalttext="Pinterest">
+                    </c31>
+                    <c32
+                        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube"
+                        iconalttext="Youtube">
+                    </c32>
+                </icons>
+            </footer33>
+            <title34 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Footer no default values (Empty)&lt;/h2&gt;">
+            </title34>
+            <footer35
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer">
+                <coluimns jcr:primaryType="nt:unstructured"></coluimns>
+            </footer35>
+        </container36>
+        <pager37
+            colorscheme="light"
+            toppadding="30"
+            bottompadding="30"
+            custombackground="false"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Footer (Chrome)&lt;/h2&gt;">
-        </title2><footer3
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer"><coluimns jcr:primaryType="nt:unstructured"></coluimns>
-        </footer3><title4 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Footer - light (Chrome)&lt;/h2&gt;">
-        </title4><footer13
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved"><columns jcr:primaryType="nt:unstructured"><c5
-        jcr:primaryType="nt:unstructured" title="" text="">
-        </c5><c6
-        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
-        </c6><c7
-        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
-        </c7></columns>
-<icons jcr:primaryType="nt:unstructured"><c8
-        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
-        </c8><c9
-        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
-        </c9><c10
-        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
-        </c10><c11
-        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
-        </c11><c12
-        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
-        </c12></icons>
-        </footer13><title14 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Footer With All RTE Styles (.hidden)&lt;/h2&gt;">
-        </title14><footer23
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved"><columns jcr:primaryType="nt:unstructured"><c15
-        jcr:primaryType="nt:unstructured" title="" text="">
-        </c15><c16
-        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
-        </c16><c17
-        jcr:primaryType="nt:unstructured" title="Location" text="&lt;h1&gt;Left (Default) Alignment Test&lt;/h1&gt;&lt;h2&gt;Header h2&lt;/h2&gt;&lt;h3&gt;Header h3&lt;/h3&gt;&lt;h4&gt;Header h4&lt;/h4&gt;&lt;p&gt;Text:&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: center; &quot;&gt;Center Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: center; &quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: center; &quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: center; &quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: center; &quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: center; &quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: center; &quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: right; &quot;&gt;Right Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: right; &quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: right; &quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: right; &quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: right; &quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: right; &quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: right; &quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: justify;&quot;&gt;Justified Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: justify;&quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: justify;&quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: justify;&quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;another line&lt;/p&gt;">
-        </c17></columns>
-<icons jcr:primaryType="nt:unstructured"><c18
-        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
-        </c18><c19
-        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
-        </c19><c20
-        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
-        </c20><c21
-        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
-        </c21><c22
-        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
-        </c22></icons>
-        </footer23><title24 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Footer - Dark (Chrome)&lt;/h2&gt;">
-        </title24><footer33
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="dark" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logourl="http://www.peregrine-cms.com" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2017 Peregrine - All Rights Reserved"><columns jcr:primaryType="nt:unstructured"><c25
-        jcr:primaryType="nt:unstructured" title="" text="">
-        </c25><c26
-        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;email@email.com&lt;br&gt;1-800-888-8888&lt;/p&gt;">
-        </c26><c27
-        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;1234 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
-        </c27></columns>
-<icons jcr:primaryType="nt:unstructured"><c28
-        jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook">
-        </c28><c29
-        jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter">
-        </c29><c30
-        jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram">
-        </c30><c31
-        jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest">
-        </c31><c32
-        jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube">
-        </c32></icons>
-        </footer33><title34 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Footer no default values (Empty)&lt;/h2&gt;">
-        </title34><footer35
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer"><coluimns jcr:primaryType="nt:unstructured"></coluimns>
-        </footer35>
-        </container36><pager37
-        colorscheme="light"
-        toppadding="30"
-        bottompadding="30"
-        custombackground="false"
-        backgroundtype="color"
-        bgcolor="#eeeeee"
-        htmlelement="nav"
-        prevlabel="&lt; previous"
-        nextlabel="next &gt;"
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+            htmlelement="nav"
+            prevlabel="&lt; previous"
+            nextlabel="next &gt;"
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
         </pager37>
         <clfooter
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logourl="/content/themecleanflex/pages/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
-        <columns jcr:primaryType="nt:unstructured">
-        <c3
-        jcr:primaryType="nt:unstructured" title="" text="">
-        </c3><c4
-        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
-        </c4><c5
-        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
-        </c5></columns>
-<icons jcr:primaryType="nt:unstructured"></icons>
-        </clfooter>        
-        </jcr:content></jcr:root>
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer"
+            backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light"
+            showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg"
+            logourl="/content/themecleanflex/pages/library.html" logoalttext="Peregrine CMS Logo" logosize="60"
+            copyright="Copyright 2019 Peregrine - All Rights Reserved">
+            <columns jcr:primaryType="nt:unstructured">
+                <c3
+                    jcr:primaryType="nt:unstructured" title="" text="">
+                </c3>
+                <c4
+                    jcr:primaryType="nt:unstructured" title="Contact"
+                    text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
+                </c4>
+                <c5
+                    jcr:primaryType="nt:unstructured" title="Location"
+                    text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+                </c5>
+            </columns>
+            <icons jcr:primaryType="nt:unstructured"></icons>
+        </clfooter>
+    </jcr:content>
+</jcr:root>

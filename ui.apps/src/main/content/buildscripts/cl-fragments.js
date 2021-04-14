@@ -3,20 +3,20 @@ let marked = require('marked')
 let idx = 0;
 
 function escape(text) {
-    return text.replace(/&/g,'&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 function card(title, text, link) {
     let shortened = text.split('#');
     let md = marked('###' + shortened[1]);
-    return `<card${idx}
+    return `<card${ idx }
         jcr:primaryType="nt:unstructured"
-        buttontext="See ${title}"
-        buttonlink="${link}"
+        buttontext="See ${ title }"
+        buttonlink="${ link }"
         buttoncolor="primary"
-        title="${title}"
-        text="${escape(md)}">
-        </card${idx++}>
+        title="${ title }"
+        text="${ escape(md) }">
+        </card${ idx++ }>
     `
 }
 
@@ -26,15 +26,15 @@ module.exports = {
         return `<?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
             jcr:primaryType="per:Page"
-            jcr:title="tf-cl | ${name}"
+            jcr:title="tf-cl | ${ name }"
             doNotCopy="{Boolean}true"
-            jcr:description="${name} themecleanflex component library"
+            jcr:description="${ name } themecleanflex component library"
 >
     <jcr:content
         jcr:primaryType="per:PageContent"
         sling:resourceType="themecleanflex/components/page"
-        jcr:title="${name}"
-        description="${name} themecleanflex component library"
+        jcr:title="${ name }"
+        description="${ name } themecleanflex component library"
         excludeFromSitemap="true"
         brand="themecleanflex"
         template="/content/themecleanflex/templates"
@@ -63,42 +63,42 @@ module.exports = {
     },
 
     title(title) {
-return `<title${idx} jcr:primaryType="nt:unstructured" 
+        return `<title${ idx } jcr:primaryType="nt:unstructured" 
     sling:resourceType="themecleanflex/components/richtext" 
-    text="${escape('<h1>'+title+'</h1>')}">
-</title${idx++}>`
+    text="${ escape('<h1>' + title + '</h1>') }">
+</title${ idx++ }>`
     },
 
     subtitle(title) {
-        return `<title${idx} jcr:primaryType="nt:unstructured" 
+        return `<title${ idx } jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="${escape('<h2>'+title+'</h2>')}">
-        </title${idx++}>`
-            },
+            text="${ escape('<h2>' + title + '</h2>') }">
+        </title${ idx++ }>`
+    },
 
     text(text) {
-        return `<text${idx} jcr:primaryType="nt:unstructured" 
+        return `<text${ idx } jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
-            text="${escape(text)}">
-        </text${idx++}>`
-            },
+            text="${ escape(text) }">
+        </text${ idx++ }>`
+    },
 
     listChildren(path, children) {
         const text = `<ul>
-${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)).join('')}
+${ children.map((child => `<li><a href="${ path }${ child }.html">${ child }</a></li>`)).join('') }
 </ul>`;
         return this.text(text);
     },
 
     tag(name, attrs, children = []) {
-        return `<${name}${idx}
-        ${attrs.map( (attr) => attr[0]+'="'+escape(attr[1])+'"').join(' ')}>${children.join('\n')}
-        </${name}${idx++}>`
+        return `<${ name }${ idx }
+        ${ attrs.map((attr) => attr[0] + '="' + escape(attr[1]) + '"').join(' ') }>${ children.join('\n') }
+        </${ name }${ idx++ }>`
     },
 
     home() {
@@ -115,7 +115,7 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
     },
 
     pager() {
-        return `<pager${idx}
+        return `<pager${ idx }
         colorscheme="light"
         toppadding="30"
         bottompadding="30"
@@ -126,13 +126,13 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
         prevlabel="&lt; previous"
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager${idx++}>`;
+        </pager${ idx++ }>`;
         // return this.text('<p><a href="/content/themecleanflex/pages/library.html">component library home</a></p>');
     },
 
     intro(md) {
         return `
-        <intro${idx} jcr:primaryType="nt:unstructured" 
+        <intro${ idx } jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             bottompadding="25"
             toppadding="25"
@@ -140,18 +140,18 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
             custombackground="true"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="${escape(marked(md))}">
-        </intro${idx++}>
+            text="${ escape(marked(md)) }">
+        </intro${ idx++ }>
         `
     },
 
     container(el, content) {
-        return `<container${idx}
+        return `<container${ idx }
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
-            htmlelement="${el}">
-            ${content}
-        </container${idx++}>`
+            htmlelement="${ el }">
+            ${ content }
+        </container${ idx++ }>`
     },
 
 
@@ -159,7 +159,7 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
         let cardNum = idx;
         idx++;
         return (
-        `<cards${cardNum}
+            `<cards${ cardNum }
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/cards"
             bgcolor="#ffffff" bottompadding="20"
@@ -172,9 +172,9 @@ ${children.map((child => `<li><a href="${path}${child}.html">${child}</a></li>`)
             customcardcolor="true"
             cardcolor="#eeeeee">
                 <cards jcr:primaryType="nt:unstructured">
-                    ${cards.reduce( (cards, {title,text,link}) => cards + card(title,text,link), "")}
+                    ${ cards.reduce((cards, { title, text, link }) => cards + card(title, text, link), "") }
                 </cards>
-        </cards${cardNum}>
+        </cards${ cardNum }>
         `)
     }
 

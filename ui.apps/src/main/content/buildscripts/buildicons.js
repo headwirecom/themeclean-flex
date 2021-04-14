@@ -8,7 +8,7 @@ var SVGSpriter = require('svg-sprite'),
         dest: 'out',
         mode: {
             symbol: {
-              inline: true
+                inline: true
             }
         }
     })
@@ -17,8 +17,8 @@ var basePath = path.resolve('./src/main/content/jcr_root');
 var iconPath = basePath + '/content/themecleanflex/assets/icons';
 
 // Find SVG files recursively via `glob`
-glob.glob('**/*.svg', { cwd: iconPath }, function (err, files) {
-    files.forEach(function (file) {
+glob.glob('**/*.svg', { cwd: iconPath }, function(err, files) {
+    files.forEach(function(file) {
 
         // Create and add a vinyl file instance for each SVG
         spriter.add(new File({
@@ -28,7 +28,7 @@ glob.glob('**/*.svg', { cwd: iconPath }, function (err, files) {
         }));
     })
 
-    spriter.compile(function (error, result, data) {
-      fs.writeFileSync(basePath + '/apps/themecleanflex/components/page/iconsprites.html', result.symbol.sprite.contents);
+    spriter.compile(function(error, result, data) {
+        fs.writeFileSync(basePath + '/apps/themecleanflex/components/page/iconsprites.html', result.symbol.sprite.contents);
     });
 });

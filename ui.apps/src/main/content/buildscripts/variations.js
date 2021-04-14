@@ -8,7 +8,7 @@ function objectify(array) {
         let combinedName = optionObjectsArr.reduce((combinedName, optionObject) => {
             return combinedName ? (combinedName + '; ' + optionObject.name) : optionObject.name;
         }, "");
-        return Object.assign({}, ...optionObjectsArr, {name: combinedName});
+        return Object.assign({}, ...optionObjectsArr, { name: combinedName });
     });
     return obj;
 }
@@ -17,18 +17,18 @@ function createVariationMap(root = '../variation-fragments/') {
     const variations = [];
     const folders = fs.readdirSync(root);
     folders.forEach((name) => {
-        const entry = fs.statSync(root+name);
-        if(entry.isDirectory()) {
+        const entry = fs.statSync(root + name);
+        if (entry.isDirectory()) {
             const variation = [];
-            const options = fs.readdirSync(root+name);
+            const options = fs.readdirSync(root + name);
             options.forEach((optionName) => {
-               if(optionName.endsWith('.json')) {
-                   const optionJson = fs.readJSONSync(root+name+'/'+optionName);
-                   let optionLabel = optionName.substring(0,optionName.length - 5);
-                   optionLabel = optionLabel.replace("-", ": ");
-                   optionJson.name = optionLabel;
-                   variation.push(optionJson);
-               }
+                if (optionName.endsWith('.json')) {
+                    const optionJson = fs.readJSONSync(root + name + '/' + optionName);
+                    let optionLabel = optionName.substring(0, optionName.length - 5);
+                    optionLabel = optionLabel.replace("-", ": ");
+                    optionJson.name = optionLabel;
+                    variation.push(optionJson);
+                }
             });
             variations.push(variation);
         }

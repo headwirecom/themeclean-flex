@@ -1,8 +1,8 @@
 <template>
-  <ul class="list-none flex flex-col items-center md:flex-row p-0">
-    <li class="m-2" v-for="(item, i) in model.links" :key="item.path || i">
-      <a class="no-underline p-3 hover:underline" v-bind:href="$helper.pathToUrl(item.link)"
-      v-bind:data-per-inline="`model.links.${i}.text`" v-bind:class="{
+    <ul class="list-none flex flex-col items-center md:flex-row p-0">
+        <li class="m-2" v-for="(item, i) in model.links" :key="item.path || i">
+            <a class="no-underline p-3 hover:underline" v-bind:href="$helper.pathToUrl(item.link)"
+               v-bind:data-per-inline="`model.links.${i}.text`" v-bind:class="{
             'text-blue-700': model.linkcolor === 'primary',
             'text-green-700 hover:text-green-600': model.linkcolor === 'success',
             'text-red-700 hover:text-red-600': model.linkcolor === 'danger',
@@ -10,19 +10,19 @@
             'text-white hover:text-white': model.linkcolor === 'light',
             'text-gray-800 hover:text-black': model.linkcolor === 'dark',
             'font-bold' : $data.path === $helper.pathToUrl(item.link)
-        }">{{item.text}}</a>
-    </li>
-  </ul>
+        }">{{ item.text }}</a>
+        </li>
+    </ul>
 </template>
 
 <script>
-    export default {
-        props: ['model'],
-        computed: {
-          activeClass (url) {
-            return {'font-bold': this.$data.path === url}
-          }
+export default {
+    props: ['model'],
+    computed: {
+        activeClass(url) {
+            return { 'font-bold': this.$data.path === url }
         }
     }
+}
 </script>
 

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-            jcr:primaryType="per:Page"
-            jcr:title="tf-cl | menubuttonssample"
-            jcr:description="menubuttonssample themecleanflex component library"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="per:Page"
+          jcr:title="tf-cl | menubuttonssample"
+          jcr:description="menubuttonssample themecleanflex component library"
 >
     <jcr:content
         jcr:primaryType="per:PageContent"
@@ -11,520 +12,889 @@
         description="menubuttonssample themecleanflex component library"
         brand="themecleanflex"
         template="/content/themecleanflex/templates"
-            ><clheader
-            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/themecleanflex/pages/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
-    <links jcr:primaryType="nt:unstructured"></links>
-    <buttons jcr:primaryType="nt:unstructured"></buttons>
-            </clheader><clbreadcrumb
-        colorscheme="light"
-        custombackground="false"
-        backgroundtype="color"
-        bgcolor="#eeeeee"
-        htmlelement="nav"
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
-        <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager0
-        colorscheme="light"
-        toppadding="30"
-        bottompadding="30"
-        custombackground="false"
-        backgroundtype="color"
-        bgcolor="#eeeeee"
-        htmlelement="nav"
-        prevlabel="&lt; previous"
-        nextlabel="next &gt;"
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager0><container146
+    >
+        <clheader
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header"
+            backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10"
+            bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false"
+            logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo"
+            logourl="/content/themecleanflex/pages/library.html" logosize="60" buttonsize="default">
+            <elevation jcr:primaryType="nt:unstructured"></elevation>
+            <links jcr:primaryType="nt:unstructured"></links>
+            <buttons jcr:primaryType="nt:unstructured"></buttons>
+        </clheader>
+        <clbreadcrumb
+            colorscheme="light"
+            custombackground="false"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            htmlelement="nav"
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2">
+            <toppadding jcr:primaryType="nt:unstructured"></toppadding>
+            <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        </clbreadcrumb>
+        <pager0
+            colorscheme="light"
+            toppadding="30"
+            bottompadding="30"
+            custombackground="false"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            htmlelement="nav"
+            prevlabel="&lt; previous"
+            nextlabel="next &gt;"
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager0>
+        <container146
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
-            [object Object]<title1 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
+            [object Object]
+            <title1 jcr:primaryType="nt:unstructured"
+                    sling:resourceType="themecleanflex/components/richtext"
+                    toppadding="25"
+                    bottompadding="25"
+                    custombackground="true"
+                    backgroundtype="color"
+                    bgcolor="#eeeeee"
+                    text="&lt;h2&gt;Menu Buttons Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title1>
+            <menubuttons5
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="dark"
+                fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c2
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c2>
+                    <c3
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c3>
+                    <c4
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c4>
+                </buttons>
+            </menubuttons5>
+            <title6 jcr:primaryType="nt:unstructured"
+                    sling:resourceType="themecleanflex/components/richtext"
+                    toppadding="25"
+                    bottompadding="25"
+                    custombackground="true"
+                    backgroundtype="color"
+                    bgcolor="#eeeeee"
+                    text="&lt;h2&gt;Menu Buttons Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title6>
+            <menubuttons10
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light"
+                fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c7
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c7>
+                    <c8
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c8>
+                    <c9
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c9>
+                </buttons>
+            </menubuttons10>
+            <title11 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title11>
+            <menubuttons15
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light"
+                fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c12
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c12>
+                    <c13
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c13>
+                    <c14
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c14>
+                </buttons>
+            </menubuttons15>
+            <title16 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title16>
+            <menubuttons20
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme=""
+                fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c17
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c17>
+                    <c18
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c18>
+                    <c19
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c19>
+                </buttons>
+            </menubuttons20>
+            <title21 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title21>
+            <menubuttons25
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme=""
+                fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c22
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c22>
+                    <c23
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c23>
+                    <c24
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c24>
+                </buttons>
+            </menubuttons25>
+            <title26 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title26>
+            <menubuttons30
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff"
+                colorscheme="dark" fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c27
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c27>
+                    <c28
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c28>
+                    <c29
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c29>
+                </buttons>
+            </menubuttons30>
+            <title31 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title31>
+            <menubuttons35
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff"
+                colorscheme="dark" fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c32
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c32>
+                    <c33
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c33>
+                    <c34
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c34>
+                </buttons>
+            </menubuttons35>
+            <title36 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title36>
+            <menubuttons40
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff"
+                colorscheme="light" fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c37
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c37>
+                    <c38
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c38>
+                    <c39
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c39>
+                </buttons>
+            </menubuttons40>
+            <title41 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title41>
+            <menubuttons45
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff"
+                colorscheme="light" fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c42
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c42>
+                    <c43
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c43>
+                    <c44
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c44>
+                </buttons>
+            </menubuttons45>
+            <title46 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title46>
+            <menubuttons50
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff"
+                colorscheme="" fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c47
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c47>
+                    <c48
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c48>
+                    <c49
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c49>
+                </buttons>
+            </menubuttons50>
+            <title51 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title51>
+            <menubuttons55
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff"
+                colorscheme="" fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c52
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c52>
+                    <c53
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c53>
+                    <c54
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c54>
+                </buttons>
+            </menubuttons55>
+            <title56 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title56>
+            <menubuttons60
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="image"
+                bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg"
+                colorscheme="dark" fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c57
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c57>
+                    <c58
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c58>
+                    <c59
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c59>
+                </buttons>
+            </menubuttons60>
+            <title61 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title61>
+            <menubuttons65
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="image"
+                bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg"
+                colorscheme="dark" fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c62
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c62>
+                    <c63
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c63>
+                    <c64
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c64>
+                </buttons>
+            </menubuttons65>
+            <title66 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title66>
+            <menubuttons70
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="image"
+                bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg"
+                colorscheme="light" fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c67
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c67>
+                    <c68
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c68>
+                    <c69
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c69>
+                </buttons>
+            </menubuttons70>
+            <title71 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title71>
+            <menubuttons75
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="image"
+                bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg"
+                colorscheme="light" fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c72
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c72>
+                    <c73
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c73>
+                    <c74
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c74>
+                </buttons>
+            </menubuttons75>
+            <title76 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title76>
+            <menubuttons80
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="image"
+                bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg"
+                colorscheme="" fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c77
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c77>
+                    <c78
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c78>
+                    <c79
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c79>
+                </buttons>
+            </menubuttons80>
+            <title81 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title81>
+            <menubuttons85
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="image"
+                bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg"
+                colorscheme="" fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c82
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c82>
+                    <c83
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c83>
+                    <c84
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c84>
+                </buttons>
+            </menubuttons85>
+            <title86 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title86>
+            <menubuttons90
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="false" colorscheme="dark" fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c87
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c87>
+                    <c88
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c88>
+                    <c89
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c89>
+                </buttons>
+            </menubuttons90>
+            <title91 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title91>
+            <menubuttons95
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="false" colorscheme="dark" fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c92
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c92>
+                    <c93
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c93>
+                    <c94
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c94>
+                </buttons>
+            </menubuttons95>
+            <title96 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Menu Buttons Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title96>
+            <menubuttons100
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="false" colorscheme="light" fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c97
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c97>
+                    <c98
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c98>
+                    <c99
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c99>
+                </buttons>
+            </menubuttons100>
+            <title101 jcr:primaryType="nt:unstructured"
+                      sling:resourceType="themecleanflex/components/richtext"
+                      toppadding="25"
+                      bottompadding="25"
+                      custombackground="true"
+                      backgroundtype="color"
+                      bgcolor="#eeeeee"
+                      text="&lt;h2&gt;Menu Buttons Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title101>
+            <menubuttons105
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="false" colorscheme="light" fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c102
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c102>
+                    <c103
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c103>
+                    <c104
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c104>
+                </buttons>
+            </menubuttons105>
+            <title106 jcr:primaryType="nt:unstructured"
+                      sling:resourceType="themecleanflex/components/richtext"
+                      toppadding="25"
+                      bottompadding="25"
+                      custombackground="true"
+                      backgroundtype="color"
+                      bgcolor="#eeeeee"
+                      text="&lt;h2&gt;Menu Buttons Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title106>
+            <menubuttons110
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="false" colorscheme="" fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c107
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c107>
+                    <c108
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c108>
+                    <c109
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c109>
+                </buttons>
+            </menubuttons110>
+            <title111 jcr:primaryType="nt:unstructured"
+                      sling:resourceType="themecleanflex/components/richtext"
+                      toppadding="25"
+                      bottompadding="25"
+                      custombackground="true"
+                      backgroundtype="color"
+                      bgcolor="#eeeeee"
+                      text="&lt;h2&gt;Menu Buttons Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title111>
+            <menubuttons115
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="false" colorscheme="" fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c112
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c112>
+                    <c113
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c113>
+                    <c114
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c114>
+                </buttons>
+            </menubuttons115>
+            <title116 jcr:primaryType="nt:unstructured"
+                      sling:resourceType="themecleanflex/components/richtext"
+                      toppadding="25"
+                      bottompadding="25"
+                      custombackground="true"
+                      backgroundtype="color"
+                      bgcolor="#eeeeee"
+                      text="&lt;h2&gt;Menu Buttons Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title116>
+            <menubuttons120
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="video"
+                bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c117
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c117>
+                    <c118
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c118>
+                    <c119
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c119>
+                </buttons>
+            </menubuttons120>
+            <title121 jcr:primaryType="nt:unstructured"
+                      sling:resourceType="themecleanflex/components/richtext"
+                      toppadding="25"
+                      bottompadding="25"
+                      custombackground="true"
+                      backgroundtype="color"
+                      bgcolor="#eeeeee"
+                      text="&lt;h2&gt;Menu Buttons Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title121>
+            <menubuttons125
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="video"
+                bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c122
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c122>
+                    <c123
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c123>
+                    <c124
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c124>
+                </buttons>
+            </menubuttons125>
+            <title126 jcr:primaryType="nt:unstructured"
+                      sling:resourceType="themecleanflex/components/richtext"
+                      toppadding="25"
+                      bottompadding="25"
+                      custombackground="true"
+                      backgroundtype="color"
+                      bgcolor="#eeeeee"
+                      text="&lt;h2&gt;Menu Buttons Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title126>
+            <menubuttons130
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="video"
+                bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c127
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c127>
+                    <c128
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c128>
+                    <c129
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c129>
+                </buttons>
+            </menubuttons130>
+            <title131 jcr:primaryType="nt:unstructured"
+                      sling:resourceType="themecleanflex/components/richtext"
+                      toppadding="25"
+                      bottompadding="25"
+                      custombackground="true"
+                      backgroundtype="color"
+                      bgcolor="#eeeeee"
+                      text="&lt;h2&gt;Menu Buttons Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title131>
+            <menubuttons135
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="video"
+                bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c132
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c132>
+                    <c133
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c133>
+                    <c134
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c134>
+                </buttons>
+            </menubuttons135>
+            <title136 jcr:primaryType="nt:unstructured"
+                      sling:resourceType="themecleanflex/components/richtext"
+                      toppadding="25"
+                      bottompadding="25"
+                      custombackground="true"
+                      backgroundtype="color"
+                      bgcolor="#eeeeee"
+                      text="&lt;h2&gt;Menu Buttons Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
+            </title136>
+            <menubuttons140
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="video"
+                bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="false">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c137
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c137>
+                    <c138
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c138>
+                    <c139
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c139>
+                </buttons>
+            </menubuttons140>
+            <title141 jcr:primaryType="nt:unstructured"
+                      sling:resourceType="themecleanflex/components/richtext"
+                      toppadding="25"
+                      bottompadding="25"
+                      custombackground="true"
+                      backgroundtype="color"
+                      bgcolor="#eeeeee"
+                      text="&lt;h2&gt;Menu Buttons Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
+            </title141>
+            <menubuttons145
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons"
+                custombackground="true" bgsize="cover" backgroundtype="video"
+                bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="true">
+                <buttons jcr:primaryType="nt:unstructured">
+                    <c142
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Try It Now" buttoncolor="primary">
+                    </c142>
+                    <c143
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages"
+                        buttontext="Click Here!" buttoncolor="primary">
+                    </c143>
+                    <c144
+                        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter"
+                        buttoncolor="warning">
+                    </c144>
+                </buttons>
+            </menubuttons145>
+        </container146>
+        <pager147
+            colorscheme="light"
+            toppadding="30"
+            bottompadding="30"
+            custombackground="false"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: color; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title1><menubuttons5
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="dark" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c2
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c2><c3
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c3><c4
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c4></buttons>
-        </menubuttons5><title6 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: color; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title6><menubuttons10
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c7
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c7><c8
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c8><c9
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c9></buttons>
-        </menubuttons10><title11 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: color; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title11><menubuttons15
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="light" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c12
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c12><c13
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c13><c14
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c14></buttons>
-        </menubuttons15><title16 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: color; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title16><menubuttons20
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c17
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c17><c18
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c18><c19
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c19></buttons>
-        </menubuttons20><title21 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: color; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title21><menubuttons25
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="color" bgcolor="#ff80c0" colorscheme="" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c22
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c22><c23
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c23><c24
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c24></buttons>
-        </menubuttons25><title26 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: gradient; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title26><menubuttons30
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="dark" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c27
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c27><c28
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c28><c29
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c29></buttons>
-        </menubuttons30><title31 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: gradient; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title31><menubuttons35
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="dark" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c32
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c32><c33
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c33><c34
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c34></buttons>
-        </menubuttons35><title36 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: gradient; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title36><menubuttons40
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="light" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c37
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c37><c38
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c38><c39
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c39></buttons>
-        </menubuttons40><title41 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: gradient; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title41><menubuttons45
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="light" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c42
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c42><c43
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c43><c44
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c44></buttons>
-        </menubuttons45><title46 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: gradient; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title46><menubuttons50
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c47
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c47><c48
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c48><c49
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c49></buttons>
-        </menubuttons50><title51 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: gradient; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title51><menubuttons55
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="gradient" bgcolor="#ff8040" color2="#0080ff" colorscheme="" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c52
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c52><c53
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c53><c54
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c54></buttons>
-        </menubuttons55><title56 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: image; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title56><menubuttons60
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c57
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c57><c58
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c58><c59
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c59></buttons>
-        </menubuttons60><title61 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: image; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title61><menubuttons65
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="dark" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c62
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c62><c63
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c63><c64
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c64></buttons>
-        </menubuttons65><title66 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: image; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title66><menubuttons70
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c67
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c67><c68
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c68><c69
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c69></buttons>
-        </menubuttons70><title71 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: image; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title71><menubuttons75
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="light" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c72
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c72><c73
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c73><c74
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c74></buttons>
-        </menubuttons75><title76 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: image; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title76><menubuttons80
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c77
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c77><c78
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c78><c79
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c79></buttons>
-        </menubuttons80><title81 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: image; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title81><menubuttons85
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg" colorscheme="" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c82
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c82><c83
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c83><c84
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c84></buttons>
-        </menubuttons85><title86 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: none; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title86><menubuttons90
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="false" colorscheme="dark" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c87
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c87><c88
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c88><c89
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c89></buttons>
-        </menubuttons90><title91 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: none; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title91><menubuttons95
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="false" colorscheme="dark" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c92
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c92><c93
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c93><c94
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c94></buttons>
-        </menubuttons95><title96 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: none; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title96><menubuttons100
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="false" colorscheme="light" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c97
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c97><c98
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c98><c99
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c99></buttons>
-        </menubuttons100><title101 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: none; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title101><menubuttons105
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="false" colorscheme="light" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c102
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c102><c103
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c103><c104
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c104></buttons>
-        </menubuttons105><title106 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: none; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title106><menubuttons110
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="false" colorscheme="" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c107
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c107><c108
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c108><c109
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c109></buttons>
-        </menubuttons110><title111 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: none; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title111><menubuttons115
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="false" colorscheme="" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c112
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c112><c113
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c113><c114
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c114></buttons>
-        </menubuttons115><title116 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: video; colorscheme: dark; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title116><menubuttons120
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c117
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c117><c118
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c118><c119
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c119></buttons>
-        </menubuttons120><title121 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: video; colorscheme: dark; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title121><menubuttons125
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="dark" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c122
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c122><c123
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c123><c124
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c124></buttons>
-        </menubuttons125><title126 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: video; colorscheme: light; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title126><menubuttons130
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c127
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c127><c128
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c128><c129
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c129></buttons>
-        </menubuttons130><title131 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: video; colorscheme: light; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title131><menubuttons135
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="light" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c132
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c132><c133
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c133><c134
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c134></buttons>
-        </menubuttons135><title136 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: video; colorscheme: none; fullheight: false (.hidden)&lt;/h2&gt;">
-        </title136><menubuttons140
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="false"><buttons jcr:primaryType="nt:unstructured"><c137
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c137><c138
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c138><c139
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c139></buttons>
-        </menubuttons140><title141 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Menu Buttons Sample Variation - background: video; colorscheme: none; fullheight: true (.hidden)&lt;/h2&gt;">
-        </title141><menubuttons145
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/menubuttons" custombackground="true" bgsize="cover" backgroundtype="video" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" colorscheme="" fullheight="true"><buttons jcr:primaryType="nt:unstructured"><c142
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Try It Now" buttoncolor="primary">
-        </c142><c143
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Click Here!" buttoncolor="primary">
-        </c143><c144
-        jcr:primaryType="nt:unstructured" buttonlink="/content/themecleanflex/pages" buttontext="Enter" buttoncolor="warning">
-        </c144></buttons>
-        </menubuttons145>
-        </container146><pager147
-        colorscheme="light"
-        toppadding="30"
-        bottompadding="30"
-        custombackground="false"
-        backgroundtype="color"
-        bgcolor="#eeeeee"
-        htmlelement="nav"
-        prevlabel="&lt; previous"
-        nextlabel="next &gt;"
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+            htmlelement="nav"
+            prevlabel="&lt; previous"
+            nextlabel="next &gt;"
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
         </pager147>
         <clfooter
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logourl="/content/themecleanflex/pages/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
-        <columns jcr:primaryType="nt:unstructured">
-        <c3
-        jcr:primaryType="nt:unstructured" title="" text="">
-        </c3><c4
-        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
-        </c4><c5
-        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
-        </c5></columns>
-<icons jcr:primaryType="nt:unstructured"></icons>
-        </clfooter>        
-        </jcr:content></jcr:root>
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer"
+            backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light"
+            showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg"
+            logourl="/content/themecleanflex/pages/library.html" logoalttext="Peregrine CMS Logo" logosize="60"
+            copyright="Copyright 2019 Peregrine - All Rights Reserved">
+            <columns jcr:primaryType="nt:unstructured">
+                <c3
+                    jcr:primaryType="nt:unstructured" title="" text="">
+                </c3>
+                <c4
+                    jcr:primaryType="nt:unstructured" title="Contact"
+                    text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
+                </c4>
+                <c5
+                    jcr:primaryType="nt:unstructured" title="Location"
+                    text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+                </c5>
+            </columns>
+            <icons jcr:primaryType="nt:unstructured"></icons>
+        </clfooter>
+    </jcr:content>
+</jcr:root>

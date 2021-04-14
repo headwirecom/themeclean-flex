@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Page List - Example">
-  <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
-    <sample jcr:primaryType="nt:unstructured" title="Page List - Example" group="Features">
-      <jcr:content jcr:primaryType="nt:unstructured" bottompadding="20" toppadding="20" rootpage="/content/themecleanflex/pages" levels="2"/>
-    </sample>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Page List" group="Features">
-      <jcr:content jcr:primaryType="nt:unstructured"/>
-    </sample-blank>
-  </jcr:content>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Page List - Example">
+    <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
+        <sample jcr:primaryType="nt:unstructured" title="Page List - Example" group="Features">
+            <jcr:content jcr:primaryType="nt:unstructured" bottompadding="20" toppadding="20"
+                         rootpage="/content/themecleanflex/pages" levels="2"/>
+        </sample>
+        <sample-blank jcr:primaryType="nt:unstructured" title="Page List" group="Features">
+            <jcr:content jcr:primaryType="nt:unstructured"/>
+        </sample-blank>
+    </jcr:content>
 </jcr:root>

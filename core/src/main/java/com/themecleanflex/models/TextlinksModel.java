@@ -2,13 +2,14 @@ package com.themecleanflex.models;
 
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
-import java.util.List;
-import javax.inject.Inject;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
+
+import javax.inject.Inject;
+import java.util.List;
 
 /*
     //GEN[:DATA
@@ -88,44 +89,46 @@ import org.apache.sling.models.annotations.Model;
 
 //GEN[:DEF
 @Model(
-        adaptables = Resource.class,
-        resourceType = "themecleanflex/components/textlinks",
-        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
-        adapters = IComponent.class
+    adaptables = Resource.class,
+    resourceType = "themecleanflex/components/textlinks",
+    defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
+    adapters = IComponent.class
 )
 @Exporter(
-        name = "jackson",
-        extensions = "json"
+    name = "jackson",
+    extensions = "json"
 )
 
 //GEN]
 public class TextlinksModel extends AbstractComponent {
 
-    public TextlinksModel(Resource r) { super(r); }
+    public TextlinksModel(Resource r) {
+        super(r);
+    }
 
     //GEN[:INJECT
-    	/* {"type":"object","x-source":"inject","x-form-group":"content","x-form-type":"collection","x-form-label":"Links","properties":{"text":{"type":"string","x-source":"inject","x-form-label":"Link Text","x-form-type":"text"},"link":{"type":"string","x-source":"inject","x-form-label":"Link Url","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"}}} */
-	@Inject
-	private List<IComponent> links;
+    /* {"type":"object","x-source":"inject","x-form-group":"content","x-form-type":"collection","x-form-label":"Links","properties":{"text":{"type":"string","x-source":"inject","x-form-label":"Link Text","x-form-type":"text"},"link":{"type":"string","x-source":"inject","x-form-label":"Link Url","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"}}} */
+    @Inject
+    private List<IComponent> links;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Link Color","x-form-group":"style","x-form-type":"materialselect","x-default":"text-blue-800","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
-	@Inject
-	@Default(values ="text-blue-800")
-	private String linkcolor;
+    /* {"type":"string","x-source":"inject","x-form-label":"Link Color","x-form-group":"style","x-form-type":"materialselect","x-default":"text-blue-800","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
+    @Inject
+    @Default(values = "text-blue-800")
+    private String linkcolor;
 
 
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"object","x-source":"inject","x-form-group":"content","x-form-type":"collection","x-form-label":"Links","properties":{"text":{"type":"string","x-source":"inject","x-form-label":"Link Text","x-form-type":"text"},"link":{"type":"string","x-source":"inject","x-form-label":"Link Url","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"}}} */
-	public List<IComponent> getLinks() {
-		return links;
-	}
+    /* {"type":"object","x-source":"inject","x-form-group":"content","x-form-type":"collection","x-form-label":"Links","properties":{"text":{"type":"string","x-source":"inject","x-form-label":"Link Text","x-form-type":"text"},"link":{"type":"string","x-source":"inject","x-form-label":"Link Url","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"}}} */
+    public List<IComponent> getLinks() {
+        return links;
+    }
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Link Color","x-form-group":"style","x-form-type":"materialselect","x-default":"text-blue-800","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
-	public String getLinkcolor() {
-		return linkcolor;
-	}
+    /* {"type":"string","x-source":"inject","x-form-label":"Link Color","x-form-group":"style","x-form-type":"materialselect","x-default":"text-blue-800","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
+    public String getLinkcolor() {
+        return linkcolor;
+    }
 
 
 //GEN]
