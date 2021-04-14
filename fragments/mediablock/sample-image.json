@@ -1,12 +1,12 @@
 {
-  "title": "Media - Image",
-  "group": "Features",
-  "model": {
-    "mediatype": "image",
-    "imagesrc": "/content/themecleanflex/assets/samples/sailing-lake_large.jpg",
-    "mediatitle": "Sailboat on a lake",
-    "toppadding": "30",
-    "bottompadding": "30",
-    "backgroundtype": "color"
-  }
+	"title": "Media - Image",
+	"group": "Features",
+	"model": {
+		"mediatype": "image",
+		"imagesrc": "/content/themecleanflex/assets/samples/sailing-lake_large.jpg",
+		"mediatitle": "Sailboat on a lake",
+		"toppadding": "30",
+		"bottompadding": "30",
+		"backgroundtype": "color"
+	}
 }

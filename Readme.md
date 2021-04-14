@@ -6,11 +6,11 @@ This project was created by the Sling Project Maven Archetype which created
 two modules:
 
 1. **core**: OSGi Bundle deployed to Sling which includes your Servlets, Filters,
-             Sling Models and much more. This module is **not intended** to
-             contain Sling Content.
+   Sling Models and much more. This module is **not intended** to
+   contain Sling Content.
 2. **ui.apps**: JCR Content Module which is used to install a JCR Package into Sling
-                by using **Composum**. For that it must be installed and the Composum
-                Package Manager must be whitelisted.
+   by using **Composum**. For that it must be installed and the Composum
+   Package Manager must be whitelisted.
 
 There are also two modules which provide some examples; these have the same name as
 above but with an extension **.example**. These modules should not be deployed, they
@@ -41,13 +41,12 @@ but the most important reason is that a JCR Package allows the **Sling
 Tooling** to update a single file rather than an entire Bundle and also
 to import a Node from Sling into the project.
 
-
 #### Build and Installation
 
 The project is built quite simple:
 
     mvn clean install
-    
+
 To install the OSGi bundle use the project **autoInstallBundle**:
 
     mvn clean install -P autoInstallBundle

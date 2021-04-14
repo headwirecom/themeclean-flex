@@ -1,17 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Text - Example">
+<?xml version="1.0" encoding="utf-8" ?>
+<jcr:root
+	xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+	jcr:primaryType="per:Component"
+	jcr:title="Text - Example"
+>
   <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
-    <sample jcr:primaryType="nt:unstructured" title="Text - Example" group="Text Components">
-      <jcr:content jcr:primaryType="nt:unstructured" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." element="p"/>
+    <sample
+			jcr:primaryType="nt:unstructured"
+			title="Text - Example"
+			group="Text Components"
+		>
+      <jcr:content
+				jcr:primaryType="nt:unstructured"
+				text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				element="p"
+			/>
     </sample>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Text" group="Text Components">
-      <jcr:content jcr:primaryType="nt:unstructured" text=""/>
+    <sample-blank
+			jcr:primaryType="nt:unstructured"
+			title="Text"
+			group="Text Components"
+		>
+      <jcr:content jcr:primaryType="nt:unstructured" text="" />
     </sample-blank>
-    <sample-h1 jcr:primaryType="nt:unstructured" title="Text - Heading 1" group="Text Components">
-      <jcr:content jcr:primaryType="nt:unstructured" text="Themeclean Heading" element="h1"/>
+    <sample-h1
+			jcr:primaryType="nt:unstructured"
+			title="Text - Heading 1"
+			group="Text Components"
+		>
+      <jcr:content
+				jcr:primaryType="nt:unstructured"
+				text="Themeclean Heading"
+				element="h1"
+			/>
     </sample-h1>
-    <sample-h2 jcr:primaryType="nt:unstructured" title="Text - Heading 2" group="Text Components">
-      <jcr:content jcr:primaryType="nt:unstructured" text="Themeclean Secondary Heading" element="h2"/>
+    <sample-h2
+			jcr:primaryType="nt:unstructured"
+			title="Text - Heading 2"
+			group="Text Components"
+		>
+      <jcr:content
+				jcr:primaryType="nt:unstructured"
+				text="Themeclean Secondary Heading"
+				element="h2"
+			/>
     </sample-h2>
   </jcr:content>
 </jcr:root>

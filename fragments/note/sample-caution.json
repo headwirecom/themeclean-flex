@@ -1,10 +1,10 @@
 {
-  "title": "Note - Caution",
-  "group": "Text Components",
-  "model": {
-    "text": "<p>caution</p>",
-    "notetype": "caution",
-    "toppadding": "30",
-    "bottompadding": "30"
-  }
+	"title": "Note - Caution",
+	"group": "Text Components",
+	"model": {
+		"text": "<p>caution</p>",
+		"notetype": "caution",
+		"toppadding": "30",
+		"bottompadding": "30"
+	}
 }

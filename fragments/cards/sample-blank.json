@@ -1,13 +1,11 @@
 {
-  "title": "Cards",
-  "group": "Features",
-  "model": {
-    "showtitle": "true",
-    "showtext" : "true",
-    "showbutton": "true",
-    "showcard": "true",
-    "cards": [
-      
-    ]
-  }
+	"title": "Cards",
+	"group": "Features",
+	"model": {
+		"showtitle": "true",
+		"showtext": "true",
+		"showbutton": "true",
+		"showcard": "true",
+		"cards": []
+	}
 }

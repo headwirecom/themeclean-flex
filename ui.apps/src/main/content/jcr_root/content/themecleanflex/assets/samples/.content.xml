@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
-  jcr:primaryType="sling:OrderedFolder"
-  jcr:title="samples"
-  doNotCopy="{Boolean}true"
-  jcr:description="samples">
+<?xml version="1.0" encoding="UTF-8" ?>
+<jcr:root
+	xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	jcr:primaryType="sling:OrderedFolder"
+	jcr:title="samples"
+	doNotCopy="{Boolean}true"
+	jcr:description="samples"
+>
     <aerial-sailboat.jpg />
     <anchored.jpg />
     <architecture-blue-skies_extra-large.jpg />
@@ -27,7 +29,7 @@
     <oldboat_large.jpg />
     <oldboat_small.jpg />
     <organized-lg.jpg />
-    <organized-small.jpg/>
+    <organized-small.jpg />
     <peregrine-logo.svg />
     <sailing-lake_large.jpg />
     <sailing-lake_small.jpg />

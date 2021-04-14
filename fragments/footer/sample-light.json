@@ -1,58 +1,59 @@
 {
-  "title": "Footer - light",
-  "group": "Chrome",
-  "model": {
-    "htmlelement": "footer",
-    "backgroundtype": "color",
-    "bgcolor": "#eeeeee",
-    "bottompadding": "0",
-    "toppadding": "30",
-    "colorscheme": "light",
-    "showlogo": "true",
-    "logo": "/content/themecleanflex/assets/samples/peregrine-logo.svg",
-    "logourl": "http://www.peregrine-cms.com",
-    "logoalttext": "Peregrine CMS Logo",
-    "logosize": "60",
-    "copyright": "Copyright 2017 Peregrine - All Rights Reserved",
-    "columns": [
-      {
-        "title": "",
-        "text": ""
-      },
-      {
-        "title": "Contact",
-        "text": "<p>email@email.com<br>1-800-888-8888</p>"
-      },{
-        "title": "Location",
-        "text": "<p>1234 S Pointe Drive, Laguna Hills, CA 92653</p>"
-      }
-    ],
-    "icons": [
-      {
-        "url": "https://www.facebook.com/",
-        "icon": "facebook",
-        "iconalttext": "Facebook"
-      },
-      {
-        "url": "https://twitter.com/",
-        "icon": "twitter",
-        "iconalttext": "Twitter"
-      },
-      {
-        "url": "https://www.instagram.com/",
-        "icon": "instagram",
-        "iconalttext": "Instagram"
-      },
-      {
-        "url": "https://www.pinterest.com/",
-        "icon": "pinterest",
-        "iconalttext": "Pinterest"
-      },
-      {
-        "url": "https://www.youtube.com/",
-        "icon": "youtube",
-        "iconalttext": "Youtube"
-      }
-    ]
-  }
+	"title": "Footer - light",
+	"group": "Chrome",
+	"model": {
+		"htmlelement": "footer",
+		"backgroundtype": "color",
+		"bgcolor": "#eeeeee",
+		"bottompadding": "0",
+		"toppadding": "30",
+		"colorscheme": "light",
+		"showlogo": "true",
+		"logo": "/content/themecleanflex/assets/samples/peregrine-logo.svg",
+		"logourl": "http://www.peregrine-cms.com",
+		"logoalttext": "Peregrine CMS Logo",
+		"logosize": "60",
+		"copyright": "Copyright 2017 Peregrine - All Rights Reserved",
+		"columns": [
+			{
+				"title": "",
+				"text": ""
+			},
+			{
+				"title": "Contact",
+				"text": "<p>email@email.com<br>1-800-888-8888</p>"
+			},
+			{
+				"title": "Location",
+				"text": "<p>1234 S Pointe Drive, Laguna Hills, CA 92653</p>"
+			}
+		],
+		"icons": [
+			{
+				"url": "https://www.facebook.com/",
+				"icon": "facebook",
+				"iconalttext": "Facebook"
+			},
+			{
+				"url": "https://twitter.com/",
+				"icon": "twitter",
+				"iconalttext": "Twitter"
+			},
+			{
+				"url": "https://www.instagram.com/",
+				"icon": "instagram",
+				"iconalttext": "Instagram"
+			},
+			{
+				"url": "https://www.pinterest.com/",
+				"icon": "pinterest",
+				"iconalttext": "Pinterest"
+			},
+			{
+				"url": "https://www.youtube.com/",
+				"icon": "youtube",
+				"iconalttext": "Youtube"
+			}
+		]
+	}
 }

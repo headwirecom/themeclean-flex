@@ -1,11 +1,11 @@
 module.exports = {
-    convert: function($, f) {
-    	f.wrap($, 'themecleanflex-components-block');
-        f.bindAttribute($.parent(),'model','model');
+	convert: function ($, f) {
+		f.wrap($, "themecleanflex-components-block");
+		f.bindAttribute($.parent(), "model", "model");
 
-        f.mapRichField( $.find('div'), 'model.text');
+		f.mapRichField($.find("div"), "model.text");
 
-        let styles = `{
+		let styles = `{
             'note-note': model.notetype === "note",
             'note-tip': model.notetype === "tip",
             'note-warning': model.notetype === "warning",
@@ -13,6 +13,6 @@ module.exports = {
             'note-caution': model.notetype === "caution"
         }`;
 
-        f.bindAttribute($, 'class', styles, false);
-    }
-}
+		f.bindAttribute($, "class", styles, false);
+	},
+};

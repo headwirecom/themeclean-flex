@@ -1,34 +1,36 @@
 {
-  "title": "Accordion - Background Image",
-  "group": "Features",
-  "model": {
-    "showtitle": "true",
-    "title": "Peregrine Accordion",
-    "custombackground": "true",
-    "bgsize": "cover",
-    "backgroundtype": "image",
-    "bgimage": "/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg",
-    "colorscheme": "light",
-    "overlay": "true",
-    "overlaycolor": "#000000",
-    "overlayopacity": "25",
-    "bottompadding": "150",
-    "toppadding": "150",
-    "showmedia": "false",
-    "mediawidth": "33",
-    "blockwidth": "article",
-    "accordionortoggle": "false",
-    "accordiontoggle": [
-      {
-        "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>",
-        "title": "Why accordion?"
-      },{
-        "text": "<p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>",
-        "title": "How to accordion?"
-      },{
-        "text": "<p>remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>",
-        "title": "Join accordion"
-      }
-    ]
-  }
+	"title": "Accordion - Background Image",
+	"group": "Features",
+	"model": {
+		"showtitle": "true",
+		"title": "Peregrine Accordion",
+		"custombackground": "true",
+		"bgsize": "cover",
+		"backgroundtype": "image",
+		"bgimage": "/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg",
+		"colorscheme": "light",
+		"overlay": "true",
+		"overlaycolor": "#000000",
+		"overlayopacity": "25",
+		"bottompadding": "150",
+		"toppadding": "150",
+		"showmedia": "false",
+		"mediawidth": "33",
+		"blockwidth": "article",
+		"accordionortoggle": "false",
+		"accordiontoggle": [
+			{
+				"text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>",
+				"title": "Why accordion?"
+			},
+			{
+				"text": "<p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>",
+				"title": "How to accordion?"
+			},
+			{
+				"text": "<p>remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>",
+				"title": "Join accordion"
+			}
+		]
+	}
 }

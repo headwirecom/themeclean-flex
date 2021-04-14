@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <!--
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
@@ -17,8 +17,11 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -143,7 +146,8 @@
                             <goal>package</goal>
                         </goals>
                         <configuration>
-                            <embeddedTarget>/apps/themecleanflex/install</embeddedTarget>
+                            <embeddedTarget
+							>/apps/themecleanflex/install</embeddedTarget>
                             <embeddeds>
                                 <embedded>
                                     <groupId>${project.groupId}</groupId>
@@ -168,31 +172,37 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${basedir}/target/classes/etc/felibs/themecleanflex/dependencies</outputDirectory>
+                            <outputDirectory
+							>${basedir}/target/classes/etc/felibs/themecleanflex/dependencies</outputDirectory>
                             <resources>          
                                 <resource>
-                                    <directory>${basedir}/node_modules/analytics/dist</directory>
+                                    <directory
+									>${basedir}/node_modules/analytics/dist</directory>
                                     <includes>
                                         <include>analytics.min.js</include>
                                     </includes>
                                     <filtering>false</filtering>
                                 </resource>
                                 <resource>
-                                    <directory>${basedir}/node_modules/@analytics/perfumejs/dist/@analytics</directory>
+                                    <directory
+									>${basedir}/node_modules/@analytics/perfumejs/dist/@analytics</directory>
                                     <includes>
                                         <include>perfumejs.min.js</include>
                                     </includes>
                                     <filtering>false</filtering>
                                 </resource>
                                 <resource>
-                                    <directory>${basedir}/node_modules/@analytics/google-analytics/dist/@analytics</directory>
+                                    <directory
+									>${basedir}/node_modules/@analytics/google-analytics/dist/@analytics</directory>
                                     <includes>
-                                        <include>google-analytics.min.js</include>
+                                        <include
+										>google-analytics.min.js</include>
                                     </includes>
                                     <filtering>false</filtering>
                                 </resource>
                                 <resource>
-                                    <directory>${basedir}/node_modules/perfume.js/dist</directory>
+                                    <directory
+									>${basedir}/node_modules/perfume.js/dist</directory>
                                     <includes>
                                         <include>perfume.umd.min.js</include>
                                     </includes>
@@ -212,7 +222,8 @@
                 <plugins>
                     <plugin>
                         <groupId>io.wcm.maven.plugins</groupId>
-                        <artifactId>wcmio-content-package-maven-plugin</artifactId>
+                        <artifactId
+						>wcmio-content-package-maven-plugin</artifactId>
                         <executions>
                             <execution>
                                 <id>install-package</id>

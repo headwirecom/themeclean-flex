@@ -1,10 +1,10 @@
 {
-  "title": "Note - Tip",
-  "group": "Text Components",
-  "model": {
-    "text": "<p>tip</p>",
-    "notetype": "tip",
-    "toppadding": "30",
-    "bottompadding": "30"
-  }
+	"title": "Note - Tip",
+	"group": "Text Components",
+	"model": {
+		"text": "<p>tip</p>",
+		"notetype": "tip",
+		"toppadding": "30",
+		"bottompadding": "30"
+	}
 }

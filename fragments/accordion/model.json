@@ -1,129 +1,130 @@
 {
-  "definitions": {
-    "Accordion": {
-      "type": "object",
-      "x-form-groups": ["content", "style", "advanced"],
-      "x-type": "component",
-      "properties": {
-        "toggletype": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Collapse Style",
-          "x-form-group": "style",
-          "x-form-type": "materialradio",
-          "x-default": "accordion",
-          "properties": {
-            "toggle": {
-              "x-form-name": "Toggle",
-              "x-form-value": "toggle"
-            },
-            "accordion": {
-              "x-form-name": "Accordion",
-              "x-form-value": "accordion"
-            }
-          }
-        },
-        "showtitle": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Show Title",
-          "x-form-group": "style",
-          "x-form-type": "materialswitch"
-        },
-        "title": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Title",
-          "x-form-visible": "model.showtitle == 'true'",
-          "x-form-group": "content",
-          "x-form-type": "text"
-        },
-        "mediaref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/mediavisible/model.json#/definitions/Mediavisible"
-        },
-        "mediaposition": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Media Position",
-          "x-form-type": "materialradio",
-          "x-form-group": "style",
-          "x-form-visible": "model.showmedia == 'true'",
-          "x-default": "before",
-          "properties": {
-    		    "type1": {
-    		      "x-form-name": "Before Content",
-    		      "x-form-value": "before"
-    		    },"type2": {
-    		      "x-form-name": "After Content",
-    		      "x-form-value": "after"
-    		    }
-  		    }
-        },
-        "cardborder": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Show Card Border",
-          "x-form-group": "style",
-          "x-form-type": "materialswitch",
-          "x-default": "true"
-        },
-        "roundedcorners": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Rounded Corners",
-          "x-form-group": "style",
-          "x-form-type": "materialselect",
-          "x-default": "none",
-          "properties":{
-            "none": {
-              "x-form-name": "none",
-              "x-form-value": "none"
-            },
-            "small": {
-              "x-form-name": "small",
-              "x-form-value": "small"
-            },
-            "medium": {
-              "x-form-name": "medium",
-              "x-form-value": "medium"
-            },
-            "large": {
-              "x-form-name": "large",
-              "x-form-value": "large"
-            },
-            "full": {
-              "x-form-name": "full",
-              "x-form-value": "full"
-            }
-          }
-        },
-        "accordiontoggle": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Accordion/Toggle",
-          "x-form-group": "content",
-          "x-form-type": "collection",
-          "properties": {
-            "title": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Title",
-              "x-form-type": "text"
-            },
-            "text": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Text",
-              "x-form-type": "texteditor"
-            }
-          }
-        },
-        "bgref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/block/model.json#/definitions/Block"
-        }
-      }
-    }
-  }
+	"definitions": {
+		"Accordion": {
+			"type": "object",
+			"x-form-groups": ["content", "style", "advanced"],
+			"x-type": "component",
+			"properties": {
+				"toggletype": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Collapse Style",
+					"x-form-group": "style",
+					"x-form-type": "materialradio",
+					"x-default": "accordion",
+					"properties": {
+						"toggle": {
+							"x-form-name": "Toggle",
+							"x-form-value": "toggle"
+						},
+						"accordion": {
+							"x-form-name": "Accordion",
+							"x-form-value": "accordion"
+						}
+					}
+				},
+				"showtitle": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Show Title",
+					"x-form-group": "style",
+					"x-form-type": "materialswitch"
+				},
+				"title": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Title",
+					"x-form-visible": "model.showtitle == 'true'",
+					"x-form-group": "content",
+					"x-form-type": "text"
+				},
+				"mediaref": {
+					"x-form-type": "reference",
+					"$ref": "fragments/mediavisible/model.json#/definitions/Mediavisible"
+				},
+				"mediaposition": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Media Position",
+					"x-form-type": "materialradio",
+					"x-form-group": "style",
+					"x-form-visible": "model.showmedia == 'true'",
+					"x-default": "before",
+					"properties": {
+						"type1": {
+							"x-form-name": "Before Content",
+							"x-form-value": "before"
+						},
+						"type2": {
+							"x-form-name": "After Content",
+							"x-form-value": "after"
+						}
+					}
+				},
+				"cardborder": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Show Card Border",
+					"x-form-group": "style",
+					"x-form-type": "materialswitch",
+					"x-default": "true"
+				},
+				"roundedcorners": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Rounded Corners",
+					"x-form-group": "style",
+					"x-form-type": "materialselect",
+					"x-default": "none",
+					"properties": {
+						"none": {
+							"x-form-name": "none",
+							"x-form-value": "none"
+						},
+						"small": {
+							"x-form-name": "small",
+							"x-form-value": "small"
+						},
+						"medium": {
+							"x-form-name": "medium",
+							"x-form-value": "medium"
+						},
+						"large": {
+							"x-form-name": "large",
+							"x-form-value": "large"
+						},
+						"full": {
+							"x-form-name": "full",
+							"x-form-value": "full"
+						}
+					}
+				},
+				"accordiontoggle": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Accordion/Toggle",
+					"x-form-group": "content",
+					"x-form-type": "collection",
+					"properties": {
+						"title": {
+							"type": "string",
+							"x-source": "inject",
+							"x-form-label": "Title",
+							"x-form-type": "text"
+						},
+						"text": {
+							"type": "string",
+							"x-source": "inject",
+							"x-form-label": "Text",
+							"x-form-type": "texteditor"
+						}
+					}
+				},
+				"bgref": {
+					"x-form-type": "reference",
+					"$ref": "fragments/block/model.json#/definitions/Block"
+				}
+			}
+		}
+	}
 }

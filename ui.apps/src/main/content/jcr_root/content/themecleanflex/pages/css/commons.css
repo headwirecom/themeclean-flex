@@ -1,97 +1,97 @@
 /* Colors */
 #peregrine-app {
-  --bg-primary: #ffffff;
-  --bg-secondary: #ffffff;
+	--bg-primary: #ffffff;
+	--bg-secondary: #ffffff;
 
-  --text-primary-color: #000000;
-  --text-secondary-color: #000000;
+	--text-primary-color: #000000;
+	--text-secondary-color: #000000;
 
-  --border-primary-color: #808080;
+	--border-primary-color: #808080;
 
-  --link-primary-color: var(--color-blue-700);
-  --link-primary-color-hover: var(--color-blue-800);;
+	--link-primary-color: var(--color-blue-700);
+	--link-primary-color-hover: var(--color-blue-800);
 
-  --figcaption-primary-bg: rgba(255, 255, 255, 0);
+	--figcaption-primary-bg: rgba(255, 255, 255, 0);
 
-  --note-text-color: #000000;
+	--note-text-color: #000000;
 
-  --note-note-bg: var(--color-blue-200);
-  --note-note-border-color: var(--color-blue-500);
+	--note-note-bg: var(--color-blue-200);
+	--note-note-border-color: var(--color-blue-500);
 
-  --note-tip-bg: var(--color-green-200);
-  --note-tip-border-color: var(--color-green-500);
+	--note-tip-bg: var(--color-green-200);
+	--note-tip-border-color: var(--color-green-500);
 
-  --note-warning-bg: var(--color-orange-200);
-  --note-warning-border-color: var(--color-orange-500);
+	--note-warning-bg: var(--color-orange-200);
+	--note-warning-border-color: var(--color-orange-500);
 
-  --note-important-bg: var(--color-red-200);
-  --note-important-border-color: var(--color-red-500);
+	--note-important-bg: var(--color-red-200);
+	--note-important-border-color: var(--color-red-500);
 
-  --note-caution-bg: var(--color-yellow-200);
-  --note-caution-border-color: var(--color-yellow-500);
+	--note-caution-bg: var(--color-yellow-200);
+	--note-caution-border-color: var(--color-yellow-500);
 
-  --focus-border-color: var(--color-blue-900);
+	--focus-border-color: var(--color-blue-900);
 
-  --btn-color: #ffffff;
-  --btn-bg: var(--color-blue-700);
-  --btn-hover-bg: var(--color-blue-800);
-  --btn-hover-color: #ffffff;
-  --btn-focus-color: #ffffff;
-  --btn-focus-bg: var(--color-blue-800);
-  --btn-focus-border-color: var(--focus-border-color);
+	--btn-color: #ffffff;
+	--btn-bg: var(--color-blue-700);
+	--btn-hover-bg: var(--color-blue-800);
+	--btn-hover-color: #ffffff;
+	--btn-focus-color: #ffffff;
+	--btn-focus-bg: var(--color-blue-800);
+	--btn-focus-border-color: var(--focus-border-color);
 
-  --btn-primary-color: var(--btn-color);
-  --btn-primary-bg: var(--btn-bg);
-  --btn-primary-hover-bg: var(--btn-hover-bg);
-  --btn-primary-hover-color: var(--btn-hover-color);
-  --btn-primary-focus-color: var(--btn-focus-color);
-  --btn-primary-focus-bg: var(--btn-focus-bg);
-  --btn-primary-focus-border-color: var(--btn-focus-border-color);
+	--btn-primary-color: var(--btn-color);
+	--btn-primary-bg: var(--btn-bg);
+	--btn-primary-hover-bg: var(--btn-hover-bg);
+	--btn-primary-hover-color: var(--btn-hover-color);
+	--btn-primary-focus-color: var(--btn-focus-color);
+	--btn-primary-focus-bg: var(--btn-focus-bg);
+	--btn-primary-focus-border-color: var(--btn-focus-border-color);
 
-  --btn-secondary-bg: var(--color-gray-200);
-  --btn-secondary-color: var(--color-gray-800);
-  --btn-secondary-border-width: 1px;
-  --btn-secondary-border-color: var(--color-gray-300);
-  --btn-secondary-border-width: 1px;
-  --btn-secondary-hover-bg: var(--color-blue-800);
-  --btn-secondary-hover-color: #ffffff;
-  --btn-secondary-focus-color: var(--btn-primary-color);
-  --btn-secondary-focus-bg: var(--btn-focus-bg);
-  --btn-secondary-focus-border-color: var(--btn-focus-border-color);
+	--btn-secondary-bg: var(--color-gray-200);
+	--btn-secondary-color: var(--color-gray-800);
+	--btn-secondary-border-width: 1px;
+	--btn-secondary-border-color: var(--color-gray-300);
+	--btn-secondary-border-width: 1px;
+	--btn-secondary-hover-bg: var(--color-blue-800);
+	--btn-secondary-hover-color: #ffffff;
+	--btn-secondary-focus-color: var(--btn-primary-color);
+	--btn-secondary-focus-bg: var(--btn-focus-bg);
+	--btn-secondary-focus-border-color: var(--btn-focus-border-color);
 
-  --btn-success-bg: var(--color-green-600);
-  --btn-success-hover-bg: var(--color-green-800);
+	--btn-success-bg: var(--color-green-600);
+	--btn-success-hover-bg: var(--color-green-800);
 
-  --btn-danger-bg: var(--color-red-600);
-  --btn-danger-hover-bg: var(--color-red-800);
+	--btn-danger-bg: var(--color-red-600);
+	--btn-danger-hover-bg: var(--color-red-800);
 
-  --btn-warning-bg: var(--color-orange-600);
-  --btn-warning-hover-bg: var(--color-orange-800);
+	--btn-warning-bg: var(--color-orange-600);
+	--btn-warning-hover-bg: var(--color-orange-800);
 
-  --btn-light-bg: var(--color-blue-100);
-  --btn-light-color: var(--link-primary-color);
-  --btn-light-hover-bg: var(--color-blue-300);
+	--btn-light-bg: var(--color-blue-100);
+	--btn-light-color: var(--link-primary-color);
+	--btn-light-hover-bg: var(--color-blue-300);
 
-  --btn-dark-bg: black;
-  --btn-dark-color: var(--btn-primary-color);
-  --btn-dark-hover-bg: var(--color-gray-900);
+	--btn-dark-bg: black;
+	--btn-dark-color: var(--btn-primary-color);
+	--btn-dark-hover-bg: var(--color-gray-900);
 }
 
 #peregrine-app .theme-dark {
-  --note-text-color: #ffffff;
+	--note-text-color: #ffffff;
 
-  --note-note-bg: var(--color-blue-600);
-  --note-note-border-color: var(--color-blue-900);
+	--note-note-bg: var(--color-blue-600);
+	--note-note-border-color: var(--color-blue-900);
 
-  --note-tip-bg: var(--color-green-600);
-  --note-tip-border-color: var(--color-green-900);
+	--note-tip-bg: var(--color-green-600);
+	--note-tip-border-color: var(--color-green-900);
 
-  --note-warning-bg: var(--color-orange-600);
-  --note-warning-border-color: var(--color-orange-900);
+	--note-warning-bg: var(--color-orange-600);
+	--note-warning-border-color: var(--color-orange-900);
 
-  --note-important-bg: var(--color-red-600);
-  --note-important-border-color: var(--color-red-900);
+	--note-important-bg: var(--color-red-600);
+	--note-important-border-color: var(--color-red-900);
 
-  --note-caution-bg: var(--color-yellow-600);
-  --note-caution-border-color: var(--color-yellow-900);
+	--note-caution-bg: var(--color-yellow-600);
+	--note-caution-border-color: var(--color-yellow-900);
 }

@@ -1,5 +1,7 @@
-  <div v-if="model.mediatype === 'video'" class="embed-responsive embed-responsive-16by9">
-    <iframe :src="model.mediasrc" frameborder="0" allowfullscreen></iframe>
-    </iframe>
-  </div>
-  <img v-else :src="model.mediasrc"> 
+<div
+	v-if="model.mediatype === 'video'"
+	class="embed-responsive embed-responsive-16by9"
+>
+	<iframe :src="model.mediasrc" frameborder="0" allowfullscreen></iframe>
+</div>
+<img v-else :src="model.mediasrc" />

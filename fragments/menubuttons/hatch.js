@@ -1,8 +1,7 @@
 module.exports = {
-    convert: function($, f) {
-
-        //Button
-        let aClasses = `{
+	convert: function ($, f) {
+		//Button
+		let aClasses = `{
             'btn-lg': model.buttonsize === 'large',
             'btn-sm': model.buttonsize === 'small',
             'btn-primary': item.buttoncolor === 'primary',
@@ -12,12 +11,12 @@ module.exports = {
             'btn-warning': item.buttoncolor === 'warning',
             'btn-light': item.buttoncolor === 'light',
             'btn-dark': item.buttoncolor === 'dark'
-        }`
+        }`;
 
-        let a = $.find('a')
-    	f.addFor( a, 'model.buttons')
-        f.bindAttribute( a, 'href', f.pathToUrl('item.buttonlink'))
-        f.bindAttribute( a, 'class', aClasses, false)
-        f.mapField( a, "item.buttontext", "model.buttons", "buttontext")
-    }
-}
+		let a = $.find("a");
+		f.addFor(a, "model.buttons");
+		f.bindAttribute(a, "href", f.pathToUrl("item.buttonlink"));
+		f.bindAttribute(a, "class", aClasses, false);
+		f.mapField(a, "item.buttontext", "model.buttons", "buttontext");
+	},
+};

@@ -1,10 +1,10 @@
 {
-  "title": "Note - Warning",
-  "group": "Text Components",
-  "model": {
-    "text": "<p>warning</p>",
-    "notetype": "warning",
-    "toppadding": "30",
-    "bottompadding": "30"
-  }
+	"title": "Note - Warning",
+	"group": "Text Components",
+	"model": {
+		"text": "<p>warning</p>",
+		"notetype": "warning",
+		"toppadding": "30",
+		"bottompadding": "30"
+	}
 }

@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <workspaceFilter version="1.0">
   <filter root="/content/themecleanflex">
-    <exclude pattern="/content/themecleanflex/objects/tags/.*"/>
+    <exclude pattern="/content/themecleanflex/objects/tags/.*" />
   </filter>
-  <filter root="/etc/felibs/themecleanflex"/>
+  <filter root="/etc/felibs/themecleanflex" />
   <filter root="/apps/themecleanflex">
-    <exclude pattern="/apps/themecleanflex/install/.*"/>
+    <exclude pattern="/apps/themecleanflex/install/.*" />
   </filter>
 </workspaceFilter>

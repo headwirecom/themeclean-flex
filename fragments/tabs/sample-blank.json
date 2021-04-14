@@ -1,9 +1,7 @@
 {
-  "title": "Tabs",
-  "group": "Features",
-  "model": {
-    "tabs": [
-      
-    ]
-  }
+	"title": "Tabs",
+	"group": "Features",
+	"model": {
+		"tabs": []
+	}
 }

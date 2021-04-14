@@ -2,11 +2,11 @@
 
 This component renders the text as `<pre><code class="language-{{language}} {{classes}}">{{text}}</code></pre>`
 
-If the base template includes prism.js it will be used to generate the markup of the code. 
+If the base template includes prism.js it will be used to generate the markup of the code.
 
 ## Configuring Prism
 
-*Please note: Using Prism will impact your site's accessibility and mobile performance score. This is not an issue with Peregrine, rather a consequence of using Prism.*
+_Please note: Using Prism will impact your site's accessibility and mobile performance score. This is not an issue with Peregrine, rather a consequence of using Prism._
 
 If you wish to use [https://prismjs.com/](Prism) with the code component, perform the following steps:
 
@@ -14,7 +14,7 @@ If you wish to use [https://prismjs.com/](Prism) with the code component, perfor
 
 2. Upload `prism.js` and `prism.css` to `Assets`. It is recommended that you create folders for `/content/_tenant_/assets/css/` and `/content/_tenant_/assets/js/` first, then upload `prism.js` and `prism.css` to their respective folders.
 
-3. Click on the `Template` tile from the home screen, then click on the page icon for your tenant.  
+3. Click on the `Template` tile from the home screen, then click on the page icon for your tenant.
 
 4. Click `page start`.
 
@@ -28,5 +28,5 @@ If you wish to use [https://prismjs.com/](Prism) with the code component, perfor
 
 ## Pending Features & Issues
 
-* Add support for defining Prism data attributes
-* Update the code component to be less plugin dependent
+-   Add support for defining Prism data attributes
+-   Update the code component to be less plugin dependent

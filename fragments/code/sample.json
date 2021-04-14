@@ -1,9 +1,9 @@
 {
-  "title": "Code - Example",
-  "default": true,
-  "group": "Text Components",
-  "model": {
-    "text": "var a = {};",
-    "language": "javascript"
-  }
+	"title": "Code - Example",
+	"default": true,
+	"group": "Text Components",
+	"model": {
+		"text": "var a = {};",
+		"language": "javascript"
+	}
 }

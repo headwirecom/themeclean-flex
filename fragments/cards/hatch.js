@@ -1,9 +1,9 @@
 module.exports = {
-    convert: function($, f) {
-    	f.wrap($, 'themecleanflex-components-block')
-        f.bindAttribute($.parent(),'model','model')
+	convert: function ($, f) {
+		f.wrap($, "themecleanflex-components-block");
+		f.bindAttribute($.parent(), "model", "model");
 
-        let widths = `{
+		let widths = `{
             'lg:w-full': model.cardsperrow == 1,
             'lg:w-1/2': model.cardsperrow == 2,
             'lg:w-1/3': model.cardsperrow == 3,
@@ -22,13 +22,13 @@ module.exports = {
             'w-1/4': model.cardsperrowmobile == 4,
             'w-1/5': model.cardsperrowmobile == 5,
             'w-1/6': model.cardsperrowmobile == 6,
-        }`
+        }`;
 
-        //Card Width
-        f.bindAttribute($.find('div.card').first(), 'class', widths, false);
+		//Card Width
+		f.bindAttribute($.find("div.card").first(), "class", widths, false);
 
-        //Card
-        let cardClasses = `{
+		//Card
+		let cardClasses = `{
             'card--bg': model.showcard === 'true' || model.customcardcolor === 'true',
             'bg-secondary': model.showcard === 'true' && model.customcardcolor !== 'true',
             'border border-solid': (model.customcardcolor !== 'true') && model.cardborder === 'true',
@@ -36,37 +36,76 @@ module.exports = {
             'rounded-sm': model.roundedcorners == 'small',
             'rounded': model.roundedcorners == 'medium',
             'rounded-lg': model.roundedcorners == 'large'
-        }`
+        }`;
 
-        f.addFor($.find('div.card').first(), 'model.cards')
-        f.addStyle($.find('div.card > div').first(), 'background-color', "model.customcardcolor === 'true' && model.showcard === 'true' ? model.cardcolor: ''")
-        f.bindAttribute($.find('div.card > div').first(), 'class', cardClasses, false)
+		f.addFor($.find("div.card").first(), "model.cards");
+		f.addStyle(
+			$.find("div.card > div").first(),
+			"background-color",
+			"model.customcardcolor === 'true' && model.showcard === 'true' ? model.cardcolor: ''"
+		);
+		f.bindAttribute(
+			$.find("div.card > div").first(),
+			"class",
+			cardClasses,
+			false
+		);
 
-        let cardBodyClasses = `{
+		let cardBodyClasses = `{
             'p-6': model.showcard === 'true' || model.cardborder === 'true'
-        }`
-        f.bindAttribute($.find('div.card>div>div').eq(1), 'class', cardBodyClasses, false)
+        }`;
+		f.bindAttribute(
+			$.find("div.card>div>div").eq(1),
+			"class",
+			cardBodyClasses,
+			false
+		);
 
-        f.bindAttribute($.find('div.card>div>div').eq(0), 'style', '{width: item.imagewidth + "%"}')
-        //Image
-        f.replace($.find('img'), '<v-lazy-image></v-lazy-image>')
-        f.bindAttribute($.find('v-lazy-image').first(), 'class', "model.showcard === 'true' ||  model.cardborder === 'true' ? 'card-img w-full' : 'card-img mb-3 w-full'")
-        f.bindAttribute($.find('v-lazy-image').first(), 'src', f.pathToUrl('item.image'))
-        f.bindAttribute($.find('v-lazy-image').first(), 'alt', 'item.imagealttext')
-        f.bindAttribute($.find('v-lazy-image').first(), 'src-placeholder', 'placeholderSrc(item)')
-        f.addIf($.find('v-lazy-image').first(), 'item.image')
+		f.bindAttribute(
+			$.find("div.card>div>div").eq(0),
+			"style",
+			'{width: item.imagewidth + "%"}'
+		);
+		//Image
+		f.replace($.find("img"), "<v-lazy-image></v-lazy-image>");
+		f.bindAttribute(
+			$.find("v-lazy-image").first(),
+			"class",
+			"model.showcard === 'true' ||  model.cardborder === 'true' ? 'card-img w-full' : 'card-img mb-3 w-full'"
+		);
+		f.bindAttribute(
+			$.find("v-lazy-image").first(),
+			"src",
+			f.pathToUrl("item.image")
+		);
+		f.bindAttribute(
+			$.find("v-lazy-image").first(),
+			"alt",
+			"item.imagealttext"
+		);
+		f.bindAttribute(
+			$.find("v-lazy-image").first(),
+			"src-placeholder",
+			"placeholderSrc(item)"
+		);
+		f.addIf($.find("v-lazy-image").first(), "item.image");
 
-        //Title
-        f.addIf($.find('h2').first(), 'model.showtitle == \'true\'')
-        f.mapField($.find('h2').first(), "item.title", "model.cards", "title")
-        f.addStyle($.find('h2').first(), 'color', 'item.color')
+		//Title
+		f.addIf($.find("h2").first(), "model.showtitle == 'true'");
+		f.mapField($.find("h2").first(), "item.title", "model.cards", "title");
+		f.addStyle($.find("h2").first(), "color", "item.color");
 
-        //Text
-        f.addIf($.find('h2 + div').first(), 'model.showtext == \'true\'')
-        f.mapRichField($.find('h2 + div').first(), "item.text", "model.cards", "text")
+		//Text
+		f.addIf($.find("h2 + div").first(), "model.showtext == 'true'");
+		f.mapRichField(
+			$.find("h2 + div").first(),
+			"item.text",
+			"model.cards",
+			"text"
+		);
 
-        //Button
-        let aClasses = `{
+		//Button
+		let aClasses = `{
             'btn-lg': item.buttonsize === 'large',
             'btn-sm': item.buttonsize === 'small',
             'btn-primary': item.buttoncolor === 'primary',
@@ -78,16 +117,18 @@ module.exports = {
             'self-center': item.buttonalign === 'center',
             'self-end': item.buttonalign === 'right',
             'my-3': model.cardborder !== 'true' && model.showcard !== 'true'
-        }`
+        }`;
 
-        let a = $.find('a.btn')
-        f.addIf($.find('div.text-center').first(), 'item.buttontext')
-        f.addIf( a, 'showbutton(item)')
-        f.bindAttribute( a, 'href', f.pathToUrl('item.buttonlink'))
-        f.bindAttribute( a, 'class', aClasses, false)
-        f.mapField( a, "item.buttontext", "model.cards", "buttontext")
+		let a = $.find("a.btn");
+		f.addIf($.find("div.text-center").first(), "item.buttontext");
+		f.addIf(a, "showbutton(item)");
+		f.bindAttribute(a, "href", f.pathToUrl("item.buttonlink"));
+		f.bindAttribute(a, "class", aClasses, false);
+		f.mapField(a, "item.buttontext", "model.cards", "buttontext");
 
-        f.addElse($);
-        $.parent().prepend('<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>')
-    }
-}
+		f.addElse($);
+		$.parent().prepend(
+			'<div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>'
+		);
+	},
+};
