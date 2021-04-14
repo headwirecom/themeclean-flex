@@ -1,4 +1,4 @@
-<code_scheme name="peregrine-cms" version="1">
+<code_scheme name="peregrine-cms" version="173">
   <CssCodeStyleSettings>
     <option name="HEX_COLOR_LOWER_CASE" value="true" />
     <option name="HEX_COLOR_LONG_FORMAT" value="true" />
@@ -17,6 +17,11 @@
     <option name="SPACES_WITHIN_INTERPOLATION_EXPRESSIONS" value="true" />
   </JSCodeStyleSettings>
   <JavaCodeStyleSettings>
+    <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="99999" />
+    <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="99999" />
+    <option name="PACKAGES_TO_USE_IMPORT_ON_DEMAND">
+      <value />
+    </option>
     <option name="RECORD_COMPONENTS_WRAP" value="5" />
   </JavaCodeStyleSettings>
   <TypeScriptCodeStyleSettings version="0">
