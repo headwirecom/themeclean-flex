@@ -1,56 +1,56 @@
 {
-  "definitions": {
-    "Breadcrumb": {
-      "type": "object",
-      "x-form-groups": ["content", "style", "advanced"],
-      "x-type": "component",
-      "properties": {
-        "level": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Number Of Levels",
-          "x-form-group": "content",
-          "x-form-type": "number"
-        },
-        "linkcolor": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Link Color",
-          "x-form-type": "materialselect",
-          "x-form-group": "style",
-          "x-default": "primary",
-          "properties": {
-            "primary": {
-              "x-form-name": "Primary",
-              "x-form-value": "primary"
-            },
-            "success": {
-              "x-form-name": "Success",
-              "x-form-value": "success"
-            },
-            "danger": {
-              "x-form-name": "Danger",
-              "x-form-value": "danger"
-            },
-            "warning": {
-              "x-form-name": "Warning",
-              "x-form-value": "warning"
-            },
-            "light": {
-              "x-form-name": "Light",
-              "x-form-value": "light"
-            },
-            "dark": {
-              "x-form-name": "Dark",
-              "x-form-value": "dark"
-            }
-          }
-        },
-        "bgref": {
-          "$ref": "fragments/block/model.json#/definitions/Block",
-          "x-form-type": "reference"
-        }
-      }
-    }
-  }
+	"definitions": {
+		"Breadcrumb": {
+			"type": "object",
+			"x-form-groups": ["content", "style", "advanced"],
+			"x-type": "component",
+			"properties": {
+				"level": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Number Of Levels",
+					"x-form-group": "content",
+					"x-form-type": "number"
+				},
+				"linkcolor": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Link Color",
+					"x-form-type": "materialselect",
+					"x-form-group": "style",
+					"x-default": "primary",
+					"properties": {
+						"primary": {
+							"x-form-name": "Primary",
+							"x-form-value": "primary"
+						},
+						"success": {
+							"x-form-name": "Success",
+							"x-form-value": "success"
+						},
+						"danger": {
+							"x-form-name": "Danger",
+							"x-form-value": "danger"
+						},
+						"warning": {
+							"x-form-name": "Warning",
+							"x-form-value": "warning"
+						},
+						"light": {
+							"x-form-name": "Light",
+							"x-form-value": "light"
+						},
+						"dark": {
+							"x-form-name": "Dark",
+							"x-form-value": "dark"
+						}
+					}
+				},
+				"bgref": {
+					"$ref": "fragments/block/model.json#/definitions/Block",
+					"x-form-type": "reference"
+				}
+			}
+		}
+	}
 }

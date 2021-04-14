@@ -1,12 +1,12 @@
 {
-  "title": "Media - Video",
-  "group": "Features",
-  "model": {
-    "mediatype": "video",
-    "videosrc": "https://www.youtube-nocookie.com/embed/R5qdE0_mOcw",
-    "mediatitle": "Sailing Video",
-    "toppadding": "30",
-    "bottompadding": "30",
-    "backgroundtype": "color"
-  }
+	"title": "Media - Video",
+	"group": "Features",
+	"model": {
+		"mediatype": "video",
+		"videosrc": "https://www.youtube-nocookie.com/embed/R5qdE0_mOcw",
+		"mediatitle": "Sailing Video",
+		"toppadding": "30",
+		"bottompadding": "30",
+		"backgroundtype": "color"
+	}
 }

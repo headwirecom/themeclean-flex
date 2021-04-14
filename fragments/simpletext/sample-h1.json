@@ -1,8 +1,8 @@
 {
-  "title": "Text - Heading 1",
-  "group": "Text Components",
-  "model": {
-    "text": "Themeclean Heading",
-    "element": "h1"
-  }
+	"title": "Text - Heading 1",
+	"group": "Text Components",
+	"model": {
+		"text": "Themeclean Heading",
+		"element": "h1"
+	}
 }

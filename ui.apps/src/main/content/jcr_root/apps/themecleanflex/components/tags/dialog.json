@@ -1,330 +1,330 @@
 {
-  "groups": [
-    {
-      "legend": "content",
-      "fields": [
-        {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "tagslabel",
-          "label": "Tags Label",
-          "model": "tagslabel",
-          "x_form_group": "content"
-        },
-        {
-          "type": "pathbrowser",
-          "browserRoot": "/content/themecleanflex/pages",
-          "placeholder": "pagelink",
-          "label": "Tag Link Base Path",
-          "model": "pagelink",
-          "x_form_group": "content"
-        }
-      ]
-    },
-    {
-      "legend": "style",
-      "fields": [
-        {
-          "type": "material-select",
-          "values": [
-            {
-              "name": "Blue",
-              "value": "blue"
-            },
-            {
-              "name": "Green",
-              "value": "green"
-            },
-            {
-              "name": "Orange",
-              "value": "orange"
-            },
-            {
-              "name": "Red",
-              "value": "red"
-            },
-            {
-              "name": "Yellow",
-              "value": "yellow"
-            }
-          ],
-          "placeholder": "tagcolor",
-          "label": "Tag Color",
-          "model": "tagcolor",
-          "x_form_group": "style"
-        },
-        {
-          "type": "material-radios",
-          "values": [
-            {
-              "name": "None",
-              "value": ""
-            },
-            {
-              "name": "Light",
-              "value": "light"
-            },
-            {
-              "name": "Dark",
-              "value": "dark"
-            }
-          ],
-          "placeholder": "colorscheme",
-          "label": "Block Color Scheme",
-          "model": "colorscheme",
-          "x_form_group": "style"
-        },
-        {
-          "type": "materialswitch",
-          "textOn": "yes",
-          "textOff": "no",
-          "valueOn": "true",
-          "valueOff": "false",
-          "placeholder": "custombackground",
-          "label": "Custom Background",
-          "model": "custombackground",
-          "x_form_group": "style"
-        },
-        {
-          "type": "material-radios",
-          "values": [
-            {
-              "name": "Color",
-              "value": "color"
-            },
-            {
-              "name": "Gradient",
-              "value": "gradient"
-            },
-            {
-              "name": "Image",
-              "value": "image"
-            },
-            {
-              "name": "Video",
-              "value": "video"
-            }
-          ],
-          "placeholder": "backgroundtype",
-          "label": "Background Type",
-          "model": "backgroundtype",
-          "visible": "model.custombackground == 'true'",
-          "x_form_group": "style"
-        },
-        {
-          "type": "pathbrowser",
-          "browserRoot": "/content/themecleanflex/assets",
-          "placeholder": "bgvideo",
-          "label": "Background Video",
-          "model": "bgvideo",
-          "visible": "model.backgroundtype == 'video' and model.custombackground == 'true'",
-          "x_form_group": "style"
-        },
-        {
-          "type": "pathbrowser",
-          "browserRoot": "/content/themecleanflex/assets",
-          "placeholder": "bgimage",
-          "label": "Background Image",
-          "model": "bgimage",
-          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
-          "x_form_group": "style"
-        },
-        {
-          "type": "material-range",
-          "placeholder": "bgxposition",
-          "label": "Background X Position",
-          "model": "bgxposition",
-          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
-          "min": 0,
-          "max": 100,
-          "x_form_group": "style"
-        },
-        {
-          "type": "material-range",
-          "placeholder": "bgyposition",
-          "label": "Background Y Position",
-          "model": "bgyposition",
-          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
-          "min": 0,
-          "max": 100,
-          "x_form_group": "style"
-        },
-        {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "bgsize",
-          "label": "Background Size Style",
-          "model": "bgsize",
-          "x_form_group": "style"
-        },
-        {
-          "type": "materialswitch",
-          "textOn": "yes",
-          "textOff": "no",
-          "valueOn": "true",
-          "valueOff": "false",
-          "placeholder": "overlay",
-          "label": "Overlay",
-          "model": "overlay",
-          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
-          "x_form_group": "style"
-        },
-        {
-          "type": "input",
-          "inputType": "color",
-          "placeholder": "overlaycolor",
-          "label": "Overlay Color",
-          "model": "overlaycolor",
-          "visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'",
-          "x_form_group": "style"
-        },
-        {
-          "type": "material-range",
-          "placeholder": "overlayopacity",
-          "label": "Overlay opacity",
-          "model": "overlayopacity",
-          "visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'",
-          "min": 0,
-          "max": 100,
-          "x_form_group": "style"
-        },
-        {
-          "type": "input",
-          "inputType": "color",
-          "placeholder": "bgcolor",
-          "label": "Background Color",
-          "model": "bgcolor",
-          "visible": "(model.backgroundtype == 'color' or model.backgroundtype == 'gradient') and model.custombackground == 'true'",
-          "x_form_group": "style"
-        },
-        {
-          "type": "input",
-          "inputType": "color",
-          "placeholder": "color2",
-          "label": "Color 2",
-          "model": "color2",
-          "visible": "model.backgroundtype == 'gradient' and model.custombackground == 'true'",
-          "x_form_group": "style"
-        },
-        {
-          "type": "material-radios",
-          "values": [
-            {
-              "name": "Default",
-              "value": "default"
-            },
-            {
-              "name": "Full Width",
-              "value": "full"
-            },
-            {
-              "name": "Article Width",
-              "value": "article"
-            }
-          ],
-          "placeholder": "blockwidth",
-          "label": "Block Width",
-          "model": "blockwidth",
-          "x_form_group": "style"
-        },
-        {
-          "type": "materialswitch",
-          "textOn": "yes",
-          "textOff": "no",
-          "valueOn": "true",
-          "valueOff": "false",
-          "placeholder": "fullheight",
-          "label": "Full Height",
-          "model": "fullheight",
-          "x_form_group": "style"
-        },
-        {
-          "type": "material-range",
-          "placeholder": "toppadding",
-          "label": "Top Padding",
-          "model": "toppadding",
-          "visible": "model.fullheight != 'true'",
-          "min": 0,
-          "max": 300,
-          "x_form_group": "style"
-        },
-        {
-          "type": "material-range",
-          "placeholder": "bottompadding",
-          "label": "Bottom Padding",
-          "model": "bottompadding",
-          "visible": "model.fullheight != 'true'",
-          "min": 0,
-          "max": 300,
-          "x_form_group": "style"
-        }
-      ]
-    },
-    {
-      "legend": "advanced",
-      "fields": [
-        {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "anchorname",
-          "label": "Anchor Name",
-          "model": "anchorname",
-          "x_form_group": "advanced"
-        },
-        {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "extraclasses",
-          "label": "Additonal Classes",
-          "model": "extraclasses",
-          "x_form_group": "advanced"
-        },
-        {
-          "type": "material-select",
-          "values": [
-            {
-              "name": "section",
-              "value": "section"
-            },
-            {
-              "name": "article",
-              "value": "article"
-            },
-            {
-              "name": "main",
-              "value": "main"
-            },
-            {
-              "name": "div",
-              "value": "div"
-            },
-            {
-              "name": "header",
-              "value": "header"
-            },
-            {
-              "name": "nav",
-              "value": "nav"
-            },
-            {
-              "name": "footer",
-              "value": "footer"
-            }
-          ],
-          "placeholder": "htmlelement",
-          "label": "Semantic Element",
-          "model": "htmlelement",
-          "x_form_group": "advanced"
-        },
-        {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "contentname",
-          "label": "Content Name",
-          "model": "contentname",
-          "x_form_group": "advanced"
-        }
-      ]
-    }
-  ]
+	"groups": [
+		{
+			"legend": "content",
+			"fields": [
+				{
+					"type": "input",
+					"inputType": "text",
+					"placeholder": "tagslabel",
+					"label": "Tags Label",
+					"model": "tagslabel",
+					"x_form_group": "content"
+				},
+				{
+					"type": "pathbrowser",
+					"browserRoot": "/content/themecleanflex/pages",
+					"placeholder": "pagelink",
+					"label": "Tag Link Base Path",
+					"model": "pagelink",
+					"x_form_group": "content"
+				}
+			]
+		},
+		{
+			"legend": "style",
+			"fields": [
+				{
+					"type": "material-select",
+					"values": [
+						{
+							"name": "Blue",
+							"value": "blue"
+						},
+						{
+							"name": "Green",
+							"value": "green"
+						},
+						{
+							"name": "Orange",
+							"value": "orange"
+						},
+						{
+							"name": "Red",
+							"value": "red"
+						},
+						{
+							"name": "Yellow",
+							"value": "yellow"
+						}
+					],
+					"placeholder": "tagcolor",
+					"label": "Tag Color",
+					"model": "tagcolor",
+					"x_form_group": "style"
+				},
+				{
+					"type": "material-radios",
+					"values": [
+						{
+							"name": "None",
+							"value": ""
+						},
+						{
+							"name": "Light",
+							"value": "light"
+						},
+						{
+							"name": "Dark",
+							"value": "dark"
+						}
+					],
+					"placeholder": "colorscheme",
+					"label": "Block Color Scheme",
+					"model": "colorscheme",
+					"x_form_group": "style"
+				},
+				{
+					"type": "materialswitch",
+					"textOn": "yes",
+					"textOff": "no",
+					"valueOn": "true",
+					"valueOff": "false",
+					"placeholder": "custombackground",
+					"label": "Custom Background",
+					"model": "custombackground",
+					"x_form_group": "style"
+				},
+				{
+					"type": "material-radios",
+					"values": [
+						{
+							"name": "Color",
+							"value": "color"
+						},
+						{
+							"name": "Gradient",
+							"value": "gradient"
+						},
+						{
+							"name": "Image",
+							"value": "image"
+						},
+						{
+							"name": "Video",
+							"value": "video"
+						}
+					],
+					"placeholder": "backgroundtype",
+					"label": "Background Type",
+					"model": "backgroundtype",
+					"visible": "model.custombackground == 'true'",
+					"x_form_group": "style"
+				},
+				{
+					"type": "pathbrowser",
+					"browserRoot": "/content/themecleanflex/assets",
+					"placeholder": "bgvideo",
+					"label": "Background Video",
+					"model": "bgvideo",
+					"visible": "model.backgroundtype == 'video' and model.custombackground == 'true'",
+					"x_form_group": "style"
+				},
+				{
+					"type": "pathbrowser",
+					"browserRoot": "/content/themecleanflex/assets",
+					"placeholder": "bgimage",
+					"label": "Background Image",
+					"model": "bgimage",
+					"visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+					"x_form_group": "style"
+				},
+				{
+					"type": "material-range",
+					"placeholder": "bgxposition",
+					"label": "Background X Position",
+					"model": "bgxposition",
+					"visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+					"min": 0,
+					"max": 100,
+					"x_form_group": "style"
+				},
+				{
+					"type": "material-range",
+					"placeholder": "bgyposition",
+					"label": "Background Y Position",
+					"model": "bgyposition",
+					"visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+					"min": 0,
+					"max": 100,
+					"x_form_group": "style"
+				},
+				{
+					"type": "input",
+					"inputType": "text",
+					"placeholder": "bgsize",
+					"label": "Background Size Style",
+					"model": "bgsize",
+					"x_form_group": "style"
+				},
+				{
+					"type": "materialswitch",
+					"textOn": "yes",
+					"textOff": "no",
+					"valueOn": "true",
+					"valueOff": "false",
+					"placeholder": "overlay",
+					"label": "Overlay",
+					"model": "overlay",
+					"visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+					"x_form_group": "style"
+				},
+				{
+					"type": "input",
+					"inputType": "color",
+					"placeholder": "overlaycolor",
+					"label": "Overlay Color",
+					"model": "overlaycolor",
+					"visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'",
+					"x_form_group": "style"
+				},
+				{
+					"type": "material-range",
+					"placeholder": "overlayopacity",
+					"label": "Overlay opacity",
+					"model": "overlayopacity",
+					"visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'",
+					"min": 0,
+					"max": 100,
+					"x_form_group": "style"
+				},
+				{
+					"type": "input",
+					"inputType": "color",
+					"placeholder": "bgcolor",
+					"label": "Background Color",
+					"model": "bgcolor",
+					"visible": "(model.backgroundtype == 'color' or model.backgroundtype == 'gradient') and model.custombackground == 'true'",
+					"x_form_group": "style"
+				},
+				{
+					"type": "input",
+					"inputType": "color",
+					"placeholder": "color2",
+					"label": "Color 2",
+					"model": "color2",
+					"visible": "model.backgroundtype == 'gradient' and model.custombackground == 'true'",
+					"x_form_group": "style"
+				},
+				{
+					"type": "material-radios",
+					"values": [
+						{
+							"name": "Default",
+							"value": "default"
+						},
+						{
+							"name": "Full Width",
+							"value": "full"
+						},
+						{
+							"name": "Article Width",
+							"value": "article"
+						}
+					],
+					"placeholder": "blockwidth",
+					"label": "Block Width",
+					"model": "blockwidth",
+					"x_form_group": "style"
+				},
+				{
+					"type": "materialswitch",
+					"textOn": "yes",
+					"textOff": "no",
+					"valueOn": "true",
+					"valueOff": "false",
+					"placeholder": "fullheight",
+					"label": "Full Height",
+					"model": "fullheight",
+					"x_form_group": "style"
+				},
+				{
+					"type": "material-range",
+					"placeholder": "toppadding",
+					"label": "Top Padding",
+					"model": "toppadding",
+					"visible": "model.fullheight != 'true'",
+					"min": 0,
+					"max": 300,
+					"x_form_group": "style"
+				},
+				{
+					"type": "material-range",
+					"placeholder": "bottompadding",
+					"label": "Bottom Padding",
+					"model": "bottompadding",
+					"visible": "model.fullheight != 'true'",
+					"min": 0,
+					"max": 300,
+					"x_form_group": "style"
+				}
+			]
+		},
+		{
+			"legend": "advanced",
+			"fields": [
+				{
+					"type": "input",
+					"inputType": "text",
+					"placeholder": "anchorname",
+					"label": "Anchor Name",
+					"model": "anchorname",
+					"x_form_group": "advanced"
+				},
+				{
+					"type": "input",
+					"inputType": "text",
+					"placeholder": "extraclasses",
+					"label": "Additonal Classes",
+					"model": "extraclasses",
+					"x_form_group": "advanced"
+				},
+				{
+					"type": "material-select",
+					"values": [
+						{
+							"name": "section",
+							"value": "section"
+						},
+						{
+							"name": "article",
+							"value": "article"
+						},
+						{
+							"name": "main",
+							"value": "main"
+						},
+						{
+							"name": "div",
+							"value": "div"
+						},
+						{
+							"name": "header",
+							"value": "header"
+						},
+						{
+							"name": "nav",
+							"value": "nav"
+						},
+						{
+							"name": "footer",
+							"value": "footer"
+						}
+					],
+					"placeholder": "htmlelement",
+					"label": "Semantic Element",
+					"model": "htmlelement",
+					"x_form_group": "advanced"
+				},
+				{
+					"type": "input",
+					"inputType": "text",
+					"placeholder": "contentname",
+					"label": "Content Name",
+					"model": "contentname",
+					"x_form_group": "advanced"
+				}
+			]
+		}
+	]
 }

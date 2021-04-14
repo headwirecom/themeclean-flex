@@ -1,10 +1,16 @@
 module.exports = {
-  convert: function ($, f) {
-    f.addFor($.find("li").first(), "model.links");
-    f.bindAttribute($.find("a").first(), "href", f.pathToUrl("item.link"));
-    f.mapField($.find("a").first(), "item.text", "model.links", "text", false);
+	convert: function ($, f) {
+		f.addFor($.find("li").first(), "model.links");
+		f.bindAttribute($.find("a").first(), "href", f.pathToUrl("item.link"));
+		f.mapField(
+			$.find("a").first(),
+			"item.text",
+			"model.links",
+			"text",
+			false
+		);
 
-    let aClasses = `{
+		let aClasses = `{
             'text-blue-700': model.linkcolor === 'primary',
             'text-green-700 hover:text-green-600': model.linkcolor === 'success',
             'text-red-700 hover:text-red-600': model.linkcolor === 'danger',
@@ -14,6 +20,6 @@ module.exports = {
             'font-bold' : $data.path === $helper.pathToUrl(item.link)
         }`;
 
-    f.bindAttribute($.find("a").first(), "class", aClasses, false);
-  },
+		f.bindAttribute($.find("a").first(), "class", aClasses, false);
+	},
 };

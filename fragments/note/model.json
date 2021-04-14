@@ -1,51 +1,51 @@
 {
-  "definitions": {
-    "Note": {
-      "type": "object",
-      "x-form-groups": ["content", "style", "advanced"],
-      "x-type": "component",
-      "properties": {
-        "text": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-group": "content",
-          "x-form-type": "texteditor"
-        },
-        "notetype": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Note Type",
-          "x-form-type": "materialselect",
-          "x-form-group": "content",
-          "x-default": "note",
-          "properties": {
-            "note": {
-              "x-form-name": "Note",
-              "x-form-value": "note"
-            },
-            "tip": {
-              "x-form-name": "Tip",
-              "x-form-value": "tip"
-            },
-            "important": {
-              "x-form-name": "Important",
-              "x-form-value": "important"
-            },
-            "caution": {
-              "x-form-name": "Caution",
-              "x-form-value": "caution"
-            },
-            "warning": {
-              "x-form-name": "Warning",
-              "x-form-value": "warning"
-            }
-          }
-        },
-        "bgref": {
-          "$ref": "fragments/block/model.json#/definitions/Block",
-          "x-form-type": "reference"
-        }
-      }
-    }
-  }
+	"definitions": {
+		"Note": {
+			"type": "object",
+			"x-form-groups": ["content", "style", "advanced"],
+			"x-type": "component",
+			"properties": {
+				"text": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-group": "content",
+					"x-form-type": "texteditor"
+				},
+				"notetype": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Note Type",
+					"x-form-type": "materialselect",
+					"x-form-group": "content",
+					"x-default": "note",
+					"properties": {
+						"note": {
+							"x-form-name": "Note",
+							"x-form-value": "note"
+						},
+						"tip": {
+							"x-form-name": "Tip",
+							"x-form-value": "tip"
+						},
+						"important": {
+							"x-form-name": "Important",
+							"x-form-value": "important"
+						},
+						"caution": {
+							"x-form-name": "Caution",
+							"x-form-value": "caution"
+						},
+						"warning": {
+							"x-form-name": "Warning",
+							"x-form-value": "warning"
+						}
+					}
+				},
+				"bgref": {
+					"$ref": "fragments/block/model.json#/definitions/Block",
+					"x-form-type": "reference"
+				}
+			}
+		}
+	}
 }

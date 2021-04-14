@@ -1,56 +1,56 @@
 {
-  "definitions": {
-    "Simpletext": {
-      "type": "object",
-      "x-form-groups": ["content", "style", "advanced"],
-      "x-type": "component",
-      "properties": {
-        "text": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Text",
-          "x-form-group": "content",
-          "x-form-type": "text"
-        },
-        "element": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Choose Element Type",
-          "x-form-group": "content",
-          "x-form-type": "materialselect",
-          "x-default": "p",
-          "properties": {
-            "h1": {
-              "x-form-name": "h1",
-              "x-form-value": "h1"
-            },
-            "h2": {
-              "x-form-name": "h2",
-              "x-form-value": "h2"
-            },
-            "h3": {
-              "x-form-name": "h3",
-              "x-form-value": "h3"
-            },
-            "h4": {
-              "x-form-name": "h4",
-              "x-form-value": "h4"
-            },
-            "h5": {
-              "x-form-name": "h5",
-              "x-form-value": "h5"
-            },
-            "p": {
-              "x-form-name": "p",
-              "x-form-value": "p"
-            }
-          }
-        },
-        "bgref": {
-          "$ref": "fragments/block/model.json#/definitions/Block",
-          "x-form-type": "reference"
-        }
-      }
-    }
-  }
+	"definitions": {
+		"Simpletext": {
+			"type": "object",
+			"x-form-groups": ["content", "style", "advanced"],
+			"x-type": "component",
+			"properties": {
+				"text": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Text",
+					"x-form-group": "content",
+					"x-form-type": "text"
+				},
+				"element": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Choose Element Type",
+					"x-form-group": "content",
+					"x-form-type": "materialselect",
+					"x-default": "p",
+					"properties": {
+						"h1": {
+							"x-form-name": "h1",
+							"x-form-value": "h1"
+						},
+						"h2": {
+							"x-form-name": "h2",
+							"x-form-value": "h2"
+						},
+						"h3": {
+							"x-form-name": "h3",
+							"x-form-value": "h3"
+						},
+						"h4": {
+							"x-form-name": "h4",
+							"x-form-value": "h4"
+						},
+						"h5": {
+							"x-form-name": "h5",
+							"x-form-value": "h5"
+						},
+						"p": {
+							"x-form-name": "p",
+							"x-form-value": "p"
+						}
+					}
+				},
+				"bgref": {
+					"$ref": "fragments/block/model.json#/definitions/Block",
+					"x-form-type": "reference"
+				}
+			}
+		}
+	}
 }

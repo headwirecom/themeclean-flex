@@ -1,10 +1,10 @@
 {
-  "title": "Multilevel Navigation - Example",
-  "group": "Chrome",
-  "model": {
-    "bottompadding": "0",
-    "toppadding": "0",
-    "rootpage": "/content/themecleanflex/pages",
-    "justifyitems": "end"
-  }
+	"title": "Multilevel Navigation - Example",
+	"group": "Chrome",
+	"model": {
+		"bottompadding": "0",
+		"toppadding": "0",
+		"rootpage": "/content/themecleanflex/pages",
+		"justifyitems": "end"
+	}
 }

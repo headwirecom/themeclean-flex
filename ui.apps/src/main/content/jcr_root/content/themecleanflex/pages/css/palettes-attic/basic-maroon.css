@@ -1,39 +1,39 @@
 /* balance-color palette */
 
 #peregrine-app {
-  /* NONE definitions to overwrite :root vars */
+	/* NONE definitions to overwrite :root vars */
 }
 
 #peregrine-app .theme-light {
-  --bg-primary: #dad6d6;
-  --bg-secondary: #f5f5f5;
+	--bg-primary: #dad6d6;
+	--bg-secondary: #f5f5f5;
 
-  --text-primary-color: #722525;
-  --text-secondary-color: #0a0a0a;
+	--text-primary-color: #722525;
+	--text-secondary-color: #0a0a0a;
 
-  --border-primary-color: var(--color-gray-300);
+	--border-primary-color: var(--color-gray-300);
 
-  --link-primary-color: #722525;
+	--link-primary-color: #722525;
 
-  --btn-primary-bg: #722525;
-  --btn-primary-color: #ffffff;
+	--btn-primary-bg: #722525;
+	--btn-primary-color: #ffffff;
 
-  --figcaption-primary-bg: #ffffff99;
+	--figcaption-primary-bg: #ffffff99;
 }
 
 #peregrine-app .theme-dark {
-  --bg-primary: #5e5e5e;
-  --bg-secondary: #2d2d2d;
+	--bg-primary: #5e5e5e;
+	--bg-secondary: #2d2d2d;
 
-  --text-primary-color: #ffffff;
-  --text-secondary-color: #810202;
+	--text-primary-color: #ffffff;
+	--text-secondary-color: #810202;
 
-  --border-primary-color: var(--color-gray-100);
+	--border-primary-color: var(--color-gray-100);
 
-  --link-primary-color: #dadada;
+	--link-primary-color: #dadada;
 
-  --btn-primary-bg: #810202;
-  --btn-primary-color: #ffffff;
+	--btn-primary-bg: #810202;
+	--btn-primary-color: #ffffff;
 
-  --figcaption-primary-bg: #00000080;
+	--figcaption-primary-bg: #00000080;
 }

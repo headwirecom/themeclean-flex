@@ -1,45 +1,45 @@
 {
-  "definitions": {
-    "Richtext": {
-      "type": "object",
-      "x-form-groups": ["content", "style", "advanced"],
-      "x-type": "component",
-      "properties": {
-        "text": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Text",
-          "x-form-group": "content",
-          "x-form-type": "texteditor"
-        },
-        "mediaref": {
-          "x-form-type": "reference",
-          "$ref": "fragments/mediavisible/model.json#/definitions/Mediavisible"
-        },
-        "mediaposition": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Media Position",
-          "x-form-type": "materialradio",
-          "x-form-group": "style",
-          "x-form-visible": "model.showmedia == 'true'",
-          "x-default": "before",
-          "properties": {
-            "type1": {
-              "x-form-name": "Before Content",
-              "x-form-value": "before"
-            },
-            "type2": {
-              "x-form-name": "After Content",
-              "x-form-value": "after"
-            }
-          }
-        },
-        "bgref": {
-          "$ref": "fragments/block/model.json#/definitions/Block",
-          "x-form-type": "reference"
-        }
-      }
-    }
-  }
+	"definitions": {
+		"Richtext": {
+			"type": "object",
+			"x-form-groups": ["content", "style", "advanced"],
+			"x-type": "component",
+			"properties": {
+				"text": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Text",
+					"x-form-group": "content",
+					"x-form-type": "texteditor"
+				},
+				"mediaref": {
+					"x-form-type": "reference",
+					"$ref": "fragments/mediavisible/model.json#/definitions/Mediavisible"
+				},
+				"mediaposition": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Media Position",
+					"x-form-type": "materialradio",
+					"x-form-group": "style",
+					"x-form-visible": "model.showmedia == 'true'",
+					"x-default": "before",
+					"properties": {
+						"type1": {
+							"x-form-name": "Before Content",
+							"x-form-value": "before"
+						},
+						"type2": {
+							"x-form-name": "After Content",
+							"x-form-value": "after"
+						}
+					}
+				},
+				"bgref": {
+					"$ref": "fragments/block/model.json#/definitions/Block",
+					"x-form-type": "reference"
+				}
+			}
+		}
+	}
 }

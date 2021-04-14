@@ -1,11 +1,11 @@
 {
-  "title": "Quote - Block",
-  "group": "Text Components",
-  "model": {
-    "text": "<p>If you think you can do a thing or think you cant do a thing, youre right. </p></i>- Henry Ford</i>",
-    "blockquote": "true",
-    "blockwidth": "article",
-    "toppadding": "30",
-    "bottompadding": "30"
-  }
+	"title": "Quote - Block",
+	"group": "Text Components",
+	"model": {
+		"text": "<p>If you think you can do a thing or think you cant do a thing, youre right. </p></i>- Henry Ford</i>",
+		"blockquote": "true",
+		"blockwidth": "article",
+		"toppadding": "30",
+		"bottompadding": "30"
+	}
 }

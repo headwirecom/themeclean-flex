@@ -3,17 +3,17 @@ let marked = require("marked");
 let idx = 0;
 
 function escape(text) {
-  return text
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+	return text
+		.replace(/&/g, "&amp;")
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;")
+		.replace(/"/g, "&quot;");
 }
 
 function card(title, text, link) {
-  let shortened = text.split("#");
-  let md = marked("###" + shortened[1]);
-  return `<card${idx}
+	let shortened = text.split("#");
+	let md = marked("###" + shortened[1]);
+	return `<card${idx}
         jcr:primaryType="nt:unstructured"
         buttontext="See ${title}"
         buttonlink="${link}"
@@ -25,9 +25,9 @@ function card(title, text, link) {
 }
 
 module.exports = {
-  header(name) {
-    idx = 0;
-    return `<?xml version="1.0" encoding="UTF-8"?>
+	header(name) {
+		idx = 0;
+		return `<?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
             jcr:primaryType="per:Page"
             jcr:title="tf-cl | ${name}"
@@ -47,10 +47,10 @@ module.exports = {
     <links jcr:primaryType="nt:unstructured"></links>
     <buttons jcr:primaryType="nt:unstructured"></buttons>
             </clheader>`;
-  },
+	},
 
-  footer() {
-    return `
+	footer() {
+		return `
         <clfooter
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logourl="/content/themecleanflex/pages/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
         <columns jcr:primaryType="nt:unstructured">
@@ -64,17 +64,17 @@ module.exports = {
 <icons jcr:primaryType="nt:unstructured"></icons>
         </clfooter>        
         </jcr:content></jcr:root>`;
-  },
+	},
 
-  title(title) {
-    return `<title${idx} jcr:primaryType="nt:unstructured" 
+	title(title) {
+		return `<title${idx} jcr:primaryType="nt:unstructured" 
     sling:resourceType="themecleanflex/components/richtext" 
     text="${escape("<h1>" + title + "</h1>")}">
 </title${idx++}>`;
-  },
+	},
 
-  subtitle(title) {
-    return `<title${idx} jcr:primaryType="nt:unstructured" 
+	subtitle(title) {
+		return `<title${idx} jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             toppadding="25"
             bottompadding="25"
@@ -83,34 +83,34 @@ module.exports = {
             bgcolor="#eeeeee"
             text="${escape("<h2>" + title + "</h2>")}">
         </title${idx++}>`;
-  },
+	},
 
-  text(text) {
-    return `<text${idx} jcr:primaryType="nt:unstructured" 
+	text(text) {
+		return `<text${idx} jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             text="${escape(text)}">
         </text${idx++}>`;
-  },
+	},
 
-  listChildren(path, children) {
-    const text = `<ul>
+	listChildren(path, children) {
+		const text = `<ul>
 ${children
-  .map((child) => `<li><a href="${path}${child}.html">${child}</a></li>`)
-  .join("")}
+	.map((child) => `<li><a href="${path}${child}.html">${child}</a></li>`)
+	.join("")}
 </ul>`;
-    return this.text(text);
-  },
+		return this.text(text);
+	},
 
-  tag(name, attrs, children = []) {
-    return `<${name}${idx}
+	tag(name, attrs, children = []) {
+		return `<${name}${idx}
         ${attrs
-          .map((attr) => attr[0] + '="' + escape(attr[1]) + '"')
-          .join(" ")}>${children.join("\n")}
+			.map((attr) => attr[0] + '="' + escape(attr[1]) + '"')
+			.join(" ")}>${children.join("\n")}
         </${name}${idx++}>`;
-  },
+	},
 
-  home() {
-    return `<clbreadcrumb
+	home() {
+		return `<clbreadcrumb
         colorscheme="light"
         custombackground="false"
         backgroundtype="color"
@@ -119,11 +119,11 @@ ${children
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
         <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
         </clbreadcrumb>`;
-    // return this.text('<p><a href="/content/themecleanflex/pages/library.html">component library home</a></p>');
-  },
+		// return this.text('<p><a href="/content/themecleanflex/pages/library.html">component library home</a></p>');
+	},
 
-  pager() {
-    return `<pager${idx}
+	pager() {
+		return `<pager${idx}
         colorscheme="light"
         toppadding="30"
         bottompadding="30"
@@ -135,11 +135,11 @@ ${children
         nextlabel="next &gt;"
         jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
         </pager${idx++}>`;
-    // return this.text('<p><a href="/content/themecleanflex/pages/library.html">component library home</a></p>');
-  },
+		// return this.text('<p><a href="/content/themecleanflex/pages/library.html">component library home</a></p>');
+	},
 
-  intro(md) {
-    return `
+	intro(md) {
+		return `
         <intro${idx} jcr:primaryType="nt:unstructured" 
             sling:resourceType="themecleanflex/components/richtext" 
             bottompadding="25"
@@ -151,21 +151,21 @@ ${children
             text="${escape(marked(md))}">
         </intro${idx++}>
         `;
-  },
+	},
 
-  container(el, content) {
-    return `<container${idx}
+	container(el, content) {
+		return `<container${idx}
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="${el}">
             ${content}
         </container${idx++}>`;
-  },
+	},
 
-  cards(cards) {
-    let cardNum = idx;
-    idx++;
-    return `<cards${cardNum}
+	cards(cards) {
+		let cardNum = idx;
+		idx++;
+		return `<cards${cardNum}
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/cards"
             bgcolor="#ffffff" bottompadding="20"
@@ -179,12 +179,12 @@ ${children
             cardcolor="#eeeeee">
                 <cards jcr:primaryType="nt:unstructured">
                     ${cards.reduce(
-                      (cards, { title, text, link }) =>
-                        cards + card(title, text, link),
-                      ""
-                    )}
+						(cards, { title, text, link }) =>
+							cards + card(title, text, link),
+						""
+					)}
                 </cards>
         </cards${cardNum}>
         `;
-  },
+	},
 };

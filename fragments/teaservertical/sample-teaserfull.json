@@ -1,37 +1,37 @@
 {
-  "title": "Teaser Vertical - Full Height",
-  "group": "Features",
-  "model": {
-    "showtitle": "true",
-    "showsubtitle": "true",
-    "showbutton": "true",
-    "isprimary": "true",
-    "fullheight": "true",
-    "custombackground": "true",
-    "backgroundtype": "image",
-    "bgimage": "/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg",
-    "overlay": "true",
-    "overlaycolor": "#ffffff",
-    "overlayopacity": "70",
-    "bottompadding": "30",
-    "toppadding": "30",
-    "text": "<p>Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.</p>",
-    "subtitle": "Molestiae alias et inventore voluptas",
-    "buttonsize": "large",
-    "title": "Themeclean Flex Blocks",
-    "buttons": [
-      {
-        "buttonlink": "/content/themecleanflex/pages",
-        "buttontext": "See More",
-        "buttoncolor": "primary",
-        "iconclass": ""
-      },
-      {
-        "buttonlink": "/content/themecleanflex/pages",
-        "buttontext": "About Us",
-        "buttoncolor": "primary",
-        "iconclass": ""
-      }
-    ]
-  }
+	"title": "Teaser Vertical - Full Height",
+	"group": "Features",
+	"model": {
+		"showtitle": "true",
+		"showsubtitle": "true",
+		"showbutton": "true",
+		"isprimary": "true",
+		"fullheight": "true",
+		"custombackground": "true",
+		"backgroundtype": "image",
+		"bgimage": "/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg",
+		"overlay": "true",
+		"overlaycolor": "#ffffff",
+		"overlayopacity": "70",
+		"bottompadding": "30",
+		"toppadding": "30",
+		"text": "<p>Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.</p>",
+		"subtitle": "Molestiae alias et inventore voluptas",
+		"buttonsize": "large",
+		"title": "Themeclean Flex Blocks",
+		"buttons": [
+			{
+				"buttonlink": "/content/themecleanflex/pages",
+				"buttontext": "See More",
+				"buttoncolor": "primary",
+				"iconclass": ""
+			},
+			{
+				"buttonlink": "/content/themecleanflex/pages",
+				"buttontext": "About Us",
+				"buttoncolor": "primary",
+				"iconclass": ""
+			}
+		]
+	}
 }

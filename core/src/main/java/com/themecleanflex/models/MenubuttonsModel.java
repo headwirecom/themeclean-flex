@@ -113,44 +113,44 @@ import org.apache.sling.models.annotations.Model;
 
 //GEN[:DEF
 @Model(
-  adaptables = Resource.class,
-  resourceType = "themecleanflex/components/menubuttons",
-  defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
-  adapters = IComponent.class
+	adaptables = Resource.class,
+	resourceType = "themecleanflex/components/menubuttons",
+	defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
+	adapters = IComponent.class
 )
 @Exporter(name = "jackson", extensions = "json")
 //GEN]
 public class MenubuttonsModel extends AbstractComponent {
 
-  public MenubuttonsModel(Resource r) {
-    super(r);
-  }
+	public MenubuttonsModel(Resource r) {
+		super(r);
+	}
 
-  //GEN[:INJECT
-  /* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-group":"style","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
-  @Inject
-  @Default(values = "default")
-  private String buttonsize;
+	//GEN[:INJECT
+	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-group":"style","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
+	@Inject
+	@Default(values = "default")
+	private String buttonsize;
 
-  /* {"type":"string","x-source":"inject","x-form-label":"Buttons","x-form-group":"content","x-form-type":"collection","properties":{"buttontext":{"type":"string","x-source":"inject","x-form-label":"Button Text","x-form-type":"text"},"buttonlink":{"type":"string","x-source":"inject","x-form-label":"Button Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"buttoncolor":{"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}}}} */
-  @Inject
-  private List<IComponent> buttons;
+	/* {"type":"string","x-source":"inject","x-form-label":"Buttons","x-form-group":"content","x-form-type":"collection","properties":{"buttontext":{"type":"string","x-source":"inject","x-form-label":"Button Text","x-form-type":"text"},"buttonlink":{"type":"string","x-source":"inject","x-form-label":"Button Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"buttoncolor":{"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}}}} */
+	@Inject
+	private List<IComponent> buttons;
 
-  //GEN]
+	//GEN]
 
-  //GEN[:GETTERS
-  /* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-group":"style","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
-  public String getButtonsize() {
-    return buttonsize;
-  }
+	//GEN[:GETTERS
+	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-group":"style","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
+	public String getButtonsize() {
+		return buttonsize;
+	}
 
-  /* {"type":"string","x-source":"inject","x-form-label":"Buttons","x-form-group":"content","x-form-type":"collection","properties":{"buttontext":{"type":"string","x-source":"inject","x-form-label":"Button Text","x-form-type":"text"},"buttonlink":{"type":"string","x-source":"inject","x-form-label":"Button Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"buttoncolor":{"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}}}} */
-  public List<IComponent> getButtons() {
-    return buttons;
-  }
-  //GEN]
+	/* {"type":"string","x-source":"inject","x-form-label":"Buttons","x-form-group":"content","x-form-type":"collection","properties":{"buttontext":{"type":"string","x-source":"inject","x-form-label":"Button Text","x-form-type":"text"},"buttonlink":{"type":"string","x-source":"inject","x-form-label":"Button Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"buttoncolor":{"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}}}} */
+	public List<IComponent> getButtons() {
+		return buttons;
+	}
+	//GEN]
 
-  //GEN[:CUSTOMGETTERS
-  //GEN]
+	//GEN[:CUSTOMGETTERS
+	//GEN]
 
 }

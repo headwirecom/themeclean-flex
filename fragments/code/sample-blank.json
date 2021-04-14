@@ -1,8 +1,8 @@
 {
-  "title": "Code",
-  "group": "Text Components",
-  "model": {
-    "text": "",
-    "language": ""
-  }
+	"title": "Code",
+	"group": "Text Components",
+	"model": {
+		"text": "",
+		"language": ""
+	}
 }

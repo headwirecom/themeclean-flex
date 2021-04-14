@@ -1,32 +1,32 @@
 {
-  "title": "Carousel - Example",
-  "group": "Features",
-  "model": {
-    "blockwidth": "full",
-    "captionbg": "true",
-    "colorscheme": "light",
-    "carouselheight": 45,
-    "toppadding": 0,
-    "bottompadding": 0,
-    "slides": [
-      {
-        "imagepath": "/content/themecleanflex/assets/samples/architecture-blue-skies_large.jpg",
-        "imagefit": "cover",
-        "text": "<h2>Slide One Title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.</p>",
-        "alt": "Sailboats in front of city skyline and sunset"
-      },
-      {
-        "imagepath": "/content/themecleanflex/assets/samples/sailing-lake_large.jpg",
-        "imagefit": "cover",
-        "text": "<h2>Slide Two Title</h2><p>Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis.</p>",
-        "alt": "Sailboat sailing on a lake"
-      },
-      {
-        "imagepath": "/content/themecleanflex/assets/samples/beach-boats-ocean_large.jpg",
-        "imagefit": "cover",
-        "text": "<h2>Slide Three Title</h2><p>Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis.</p>",
-        "alt": "Sailboats sailing on an ocean"
-      }
-    ]
-  }
+	"title": "Carousel - Example",
+	"group": "Features",
+	"model": {
+		"blockwidth": "full",
+		"captionbg": "true",
+		"colorscheme": "light",
+		"carouselheight": 45,
+		"toppadding": 0,
+		"bottompadding": 0,
+		"slides": [
+			{
+				"imagepath": "/content/themecleanflex/assets/samples/architecture-blue-skies_large.jpg",
+				"imagefit": "cover",
+				"text": "<h2>Slide One Title</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.</p>",
+				"alt": "Sailboats in front of city skyline and sunset"
+			},
+			{
+				"imagepath": "/content/themecleanflex/assets/samples/sailing-lake_large.jpg",
+				"imagefit": "cover",
+				"text": "<h2>Slide Two Title</h2><p>Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis.</p>",
+				"alt": "Sailboat sailing on a lake"
+			},
+			{
+				"imagepath": "/content/themecleanflex/assets/samples/beach-boats-ocean_large.jpg",
+				"imagefit": "cover",
+				"text": "<h2>Slide Three Title</h2><p>Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis.</p>",
+				"alt": "Sailboats sailing on an ocean"
+			}
+		]
+	}
 }

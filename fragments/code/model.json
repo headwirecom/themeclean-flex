@@ -1,34 +1,34 @@
 {
-  "definitions": {
-    "Code": {
-      "type": "object",
-      "x-form-groups": ["content", "style", "advanced"],
-      "x-type": "component",
-      "properties": {
-        "language": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-group": "content",
-          "x-form-type": "text"
-        },
-        "classes": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-group": "style",
-          "x-form-type": "text"
-        },
-        "text": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-group": "content",
-          "x-form-type": "textarea",
-          "x-form-max": "16000"
-        },
-        "bgref": {
-          "$ref": "fragments/block/model.json#/definitions/Block",
-          "x-form-type": "reference"
-        }
-      }
-    }
-  }
+	"definitions": {
+		"Code": {
+			"type": "object",
+			"x-form-groups": ["content", "style", "advanced"],
+			"x-type": "component",
+			"properties": {
+				"language": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-group": "content",
+					"x-form-type": "text"
+				},
+				"classes": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-group": "style",
+					"x-form-type": "text"
+				},
+				"text": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-group": "content",
+					"x-form-type": "textarea",
+					"x-form-max": "16000"
+				},
+				"bgref": {
+					"$ref": "fragments/block/model.json#/definitions/Block",
+					"x-form-type": "reference"
+				}
+			}
+		}
+	}
 }

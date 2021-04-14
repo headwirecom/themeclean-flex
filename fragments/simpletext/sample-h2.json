@@ -1,8 +1,8 @@
 {
-  "title": "Text - Heading 2",
-  "group": "Text Components",
-  "model": {
-    "text": "Themeclean Secondary Heading",
-    "element": "h2"
-  }
+	"title": "Text - Heading 2",
+	"group": "Text Components",
+	"model": {
+		"text": "Themeclean Secondary Heading",
+		"element": "h2"
+	}
 }

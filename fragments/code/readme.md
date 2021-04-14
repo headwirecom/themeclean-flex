@@ -28,5 +28,5 @@ If you wish to use [https://prismjs.com/](Prism) with the code component, perfor
 
 ## Pending Features & Issues
 
-- Add support for defining Prism data attributes
-- Update the code component to be less plugin dependent
+-   Add support for defining Prism data attributes
+-   Update the code component to be less plugin dependent
