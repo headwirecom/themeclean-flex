@@ -10,7 +10,7 @@ import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 
 import javax.inject.Inject;
-import java.awt.*;
+import java.awt.Dimension;
 import java.util.List;
 
 /*
