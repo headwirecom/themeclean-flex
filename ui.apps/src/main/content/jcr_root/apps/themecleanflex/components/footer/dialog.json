@@ -43,10 +43,7 @@
         {
           "type": "collection",
           "multifield": true,
-          "fieldLabel": [
-            "title",
-            "value"
-          ],
+          "fieldLabel": ["title", "value"],
           "fields": [
             {
               "type": "input",
@@ -79,10 +76,7 @@
         {
           "type": "collection",
           "multifield": true,
-          "fieldLabel": [
-            "icon",
-            "value"
-          ],
+          "fieldLabel": ["icon", "value"],
           "fields": [
             {
               "type": "input",

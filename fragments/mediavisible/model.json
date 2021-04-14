@@ -11,7 +11,7 @@
           "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
-        "mediatype" : {
+        "mediatype": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Media type",

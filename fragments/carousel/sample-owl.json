@@ -1,7 +1,7 @@
 {
   "title": "Carousel - Owl",
   "group": "Features",
-  "model" : {
+  "model": {
     "blockwidth": "article",
     "captionbg": "true",
     "colorscheme": "none",
@@ -15,11 +15,14 @@
     "slides": [
       {
         "imagepath": "/content/themecleanflex/assets/icons/google.svg"
-      },{
+      },
+      {
         "imagepath": "/content/themecleanflex/assets/icons/facebook.svg"
-      },{
+      },
+      {
         "imagepath": "/content/themecleanflex/assets/icons/linkedin.svg"
-      },{
+      },
+      {
         "imagepath": "/content/themecleanflex/assets/icons/pinterest.svg"
       }
     ]

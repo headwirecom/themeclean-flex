@@ -6,10 +6,7 @@
         {
           "type": "collection",
           "multifield": true,
-          "fieldLabel": [
-            "text",
-            "value"
-          ],
+          "fieldLabel": ["text", "value"],
           "fields": [
             {
               "type": "input",

@@ -1,41 +1,41 @@
 /* default palette */
 
 #peregrine-app {
-    /* NONE definitions to overwrite :root vars */
-  }
-  
-  #peregrine-app .theme-light {
-    --bg-primary: #f4f4f4;
-    --bg-secondary: #dcd0c0;
-  
-    --text-primary-color:#373737;
-    --text-secondary-color: #63365a;
-  
-    --border-primary-color: #373737;
-  
-    --link-primary-color: #373737;
-    --link-primary-color-hover: #63365a;
-  
-    --btn-primary-bg: #373737;
-    --btn-primary-color: #f4f4f4;
-  
-    --figcaption-primary-bg: #ffffff99;
-  }
-  
-  #peregrine-app .theme-dark {
-    --bg-primary: #373737;
-    --bg-secondary: #63365a;
-  
-    --text-primary-color: #f4f4f4;
-    --text-secondary-color: #dcd0c0;
-  
-    --border-primary-color: #f4f4f4;
-  
-    --link-primary-color: #f4f4f4;
-    --link-primary-color-hover: #dcd0c0;
-  
-    --btn-primary-bg: #f4f4f4;
-    --btn-primary-color: #373737;
-  
-    --figcaption-primary-bg: #00000080;
-  }
+  /* NONE definitions to overwrite :root vars */
+}
+
+#peregrine-app .theme-light {
+  --bg-primary: #f4f4f4;
+  --bg-secondary: #dcd0c0;
+
+  --text-primary-color: #373737;
+  --text-secondary-color: #63365a;
+
+  --border-primary-color: #373737;
+
+  --link-primary-color: #373737;
+  --link-primary-color-hover: #63365a;
+
+  --btn-primary-bg: #373737;
+  --btn-primary-color: #f4f4f4;
+
+  --figcaption-primary-bg: #ffffff99;
+}
+
+#peregrine-app .theme-dark {
+  --bg-primary: #373737;
+  --bg-secondary: #63365a;
+
+  --text-primary-color: #f4f4f4;
+  --text-secondary-color: #dcd0c0;
+
+  --border-primary-color: #f4f4f4;
+
+  --link-primary-color: #f4f4f4;
+  --link-primary-color-hover: #dcd0c0;
+
+  --btn-primary-bg: #f4f4f4;
+  --btn-primary-color: #373737;
+
+  --figcaption-primary-bg: #00000080;
+}

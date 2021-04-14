@@ -15,10 +15,7 @@
         {
           "type": "collection",
           "multifield": true,
-          "fieldLabel": [
-            "title",
-            "value"
-          ],
+          "fieldLabel": ["title", "value"],
           "fields": [
             {
               "type": "input",

@@ -11,7 +11,7 @@
           "x-form-group": "style",
           "x-form-type": "materialselect",
           "x-default": "default",
-          "properties":{
+          "properties": {
             "default": {
               "x-form-name": "Default",
               "x-form-value": "default"
@@ -52,7 +52,7 @@
               "x-form-label": "Button Color",
               "x-form-type": "materialselect",
               "x-default": "primary",
-              "properties":{
+              "properties": {
                 "primary": {
                   "x-form-name": "Primary",
                   "x-form-value": "primary"

@@ -2,8 +2,6 @@
   "title": "Tabs no default values",
   "group": "Empty",
   "model": {
-    "tabs": [
-      
-    ]
+    "tabs": []
   }
 }

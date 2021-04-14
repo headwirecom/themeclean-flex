@@ -16,10 +16,12 @@
             "left": {
               "x-form-name": "Left",
               "x-form-value": "left"
-            },"center": {
+            },
+            "center": {
               "x-form-name": "Center",
               "x-form-value": "center"
-            },"right": {
+            },
+            "right": {
               "x-form-name": "Right",
               "x-form-value": "right"
             }
@@ -108,7 +110,8 @@
             "left": {
               "x-form-name": "Before Content",
               "x-form-value": "left"
-            },"right": {
+            },
+            "right": {
               "x-form-name": "After Content",
               "x-form-value": "right"
             }
@@ -122,7 +125,7 @@
           "x-form-visible": "model.showbutton == 'true'",
           "x-form-group": "style",
           "x-default": "default",
-          "properties":{
+          "properties": {
             "default": {
               "x-form-name": "Default",
               "x-form-value": "default"
@@ -164,7 +167,7 @@
               "x-form-label": "Button Color",
               "x-form-type": "materialselect",
               "x-default": "primary",
-              "properties":{
+              "properties": {
                 "primary": {
                   "x-form-name": "Primary",
                   "x-form-value": "primary"

@@ -36,7 +36,7 @@
           "x-form-type": "materialrange",
           "x-default": 50,
           "x-form-min": 1,
-          "x-form-max": 300 
+          "x-form-max": 300
         },
         "collapsed": {
           "type": "string",
@@ -64,16 +64,16 @@
           "x-form-type": "materialswitch"
         },
         "linksref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/textlinks/model.json#/definitions/Textlinks"
+          "x-form-type": "reference",
+          "$ref": "fragments/textlinks/model.json#/definitions/Textlinks"
         },
         "buttonsref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/menubuttons/model.json#/definitions/Menubuttons"
+          "x-form-type": "reference",
+          "$ref": "fragments/menubuttons/model.json#/definitions/Menubuttons"
         },
         "bgref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/block/model.json#/definitions/Block"
+          "x-form-type": "reference",
+          "$ref": "fragments/block/model.json#/definitions/Block"
         }
       }
     }

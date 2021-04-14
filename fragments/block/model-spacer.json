@@ -11,7 +11,7 @@
           "x-form-group": "advanced",
           "x-form-type": "text"
         },
-        "colorscheme" : {
+        "colorscheme": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Block Color Scheme",
@@ -39,7 +39,7 @@
           "x-form-label": "Custom Background",
           "x-form-group": "style",
           "x-form-type": "materialswitch",
-          "x-default": "false" 
+          "x-default": "false"
         },
         "backgroundtype": {
           "type": "string",
@@ -52,13 +52,16 @@
             "color": {
               "x-form-name": "Color",
               "x-form-value": "color"
-            },"gradient": {
+            },
+            "gradient": {
               "x-form-name": "Gradient",
               "x-form-value": "gradient"
-            },"image": {
+            },
+            "image": {
               "x-form-name": "Image",
               "x-form-value": "image"
-            },"video": {
+            },
+            "video": {
               "x-form-name": "Video",
               "x-form-value": "video"
             }
@@ -113,7 +116,7 @@
           "x-form-type": "materialselect",
           "x-form-visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
           "x-default": "cover",
-          "properties":{
+          "properties": {
             "section": {
               "x-form-name": "cover",
               "x-form-value": "cover"

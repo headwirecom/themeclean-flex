@@ -32,7 +32,7 @@
           "x-form-min": 1,
           "x-form-max": 12,
           "x-form-visible": "model.width == 'custom'",
-          "x-default": 12 
+          "x-default": 12
         },
         "tabletwidth": {
           "type": "string",
@@ -61,7 +61,7 @@
           "x-form-min": 1,
           "x-form-max": 12,
           "x-form-visible": "model.tabletwidth == 'custom'",
-          "x-default": 12 
+          "x-default": 12
         },
         "mobilewidth": {
           "type": "string",
@@ -90,7 +90,7 @@
           "x-form-min": 1,
           "x-form-max": 12,
           "x-form-visible": "model.mobilewidth == 'custom'",
-          "x-default": 12 
+          "x-default": 12
         },
         "htmlelement": {
           "type": "string",
@@ -99,7 +99,7 @@
           "x-form-type": "materialselect",
           "x-form-group": "content",
           "x-default": "section",
-          "properties":{
+          "properties": {
             "section": {
               "x-form-name": "section",
               "x-form-value": "section"

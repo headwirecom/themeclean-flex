@@ -1,43 +1,41 @@
 <!-- js includes required for this renderer -->
-<noscript>
-    this site requires javascript to be enabled
-</noscript>
+<noscript> this site requires javascript to be enabled </noscript>
 
-<sly data-sly-use.helper="apps.pagerendervue.structure.page.Helper"/>
-<sly data-sly-include="/apps/pagerendervue/structure/page/renderer.html"/>
+<sly data-sly-use.helper="apps.pagerendervue.structure.page.Helper" />
+<sly data-sly-include="/apps/pagerendervue/structure/page/renderer.html" />
 
 <script src="/etc/felibs/themecleanflex/dependencies/intersection-observer.js"></script>
 <script src="/etc/felibs/themecleanflex/dependencies/v-lazy-image.min.js"></script>
 <script src="/etc/felibs/${helper.siteName}.js"></script>
 
 <script>
-    // data path shortener (currently disabled)
-    // if(false) {
-    //     $perProcessData = function(data) {
-    //         var PROPS = ['link', 'buttonlink']
-    //         function processNode(data) {
-    //             for(key in data) {
-    //                 if(data[key] instanceof Object) {
-    //                     processNode(data[key]);
-    //                 } else {
-    //                     if(PROPS.indexOf(key) >= 0 && data[key].startsWith($peregrineSiteRoot+'/')) {
-    //                         data[key] = data[key].substring($peregrineSiteRoot.length)
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //         processNode(data);
-    //         return data;
-    //     }
-    // }
+  // data path shortener (currently disabled)
+  // if(false) {
+  //     $perProcessData = function(data) {
+  //         var PROPS = ['link', 'buttonlink']
+  //         function processNode(data) {
+  //             for(key in data) {
+  //                 if(data[key] instanceof Object) {
+  //                     processNode(data[key]);
+  //                 } else {
+  //                     if(PROPS.indexOf(key) >= 0 && data[key].startsWith($peregrineSiteRoot+'/')) {
+  //                         data[key] = data[key].substring($peregrineSiteRoot.length)
+  //                     }
+  //                 }
+  //             }
+  //         }
+  //         processNode(data);
+  //         return data;
+  //     }
+  // }
 
-    Vue.use(window.VLazyImage.VLazyImagePlugin)
-    $peregrineApp.loadComponent('pagerendervue-components-placeholder')
-    $peregrineApp.loadComponent('themecleanflex-components-block')
-    $peregrineApp.loadComponent('themecleanflex-components-media')
-    $peregrineApp.loadComponent('themecleanflex-components-mediavisible')
-    $peregrineApp.loadComponent('themecleanflex-components-textlinks')
-    $peregrineApp.loadComponent('themecleanflex-components-menubuttons')
-    $peregrineApp.loadComponent('themecleanflex-components-socialicons')
-    $peregrineApp.loadComponent('themecleanflex-components-pagelistnested')
+  Vue.use(window.VLazyImage.VLazyImagePlugin);
+  $peregrineApp.loadComponent("pagerendervue-components-placeholder");
+  $peregrineApp.loadComponent("themecleanflex-components-block");
+  $peregrineApp.loadComponent("themecleanflex-components-media");
+  $peregrineApp.loadComponent("themecleanflex-components-mediavisible");
+  $peregrineApp.loadComponent("themecleanflex-components-textlinks");
+  $peregrineApp.loadComponent("themecleanflex-components-menubuttons");
+  $peregrineApp.loadComponent("themecleanflex-components-socialicons");
+  $peregrineApp.loadComponent("themecleanflex-components-pagelistnested");
 </script>

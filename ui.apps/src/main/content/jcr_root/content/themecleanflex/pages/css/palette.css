@@ -156,7 +156,7 @@
 }
 
 #peregrine-app svg:not(.fill-current) {
-  fill: var(--text-primary-color)
+  fill: var(--text-primary-color);
 }
 
 #peregrine-app [class$="-components-carousel"] figcaption {

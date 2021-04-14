@@ -2,8 +2,6 @@
   "title": "Tabs",
   "group": "Features",
   "model": {
-    "tabs": [
-      
-    ]
+    "tabs": []
   }
 }

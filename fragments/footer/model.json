@@ -46,7 +46,7 @@
           "x-form-type": "materialrange",
           "x-form-visible": "model.showlogo == 'true'",
           "x-form-min": 1,
-          "x-form-max": 300 
+          "x-form-max": 300
         },
         "columns": {
           "type": "string",
@@ -78,12 +78,12 @@
           "x-form-type": "text"
         },
         "socialref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/socialicons/model.json#/definitions/Socialicons"
+          "x-form-type": "reference",
+          "$ref": "fragments/socialicons/model.json#/definitions/Socialicons"
         },
         "bgref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/block/model.json#/definitions/Block"
+          "x-form-type": "reference",
+          "$ref": "fragments/block/model.json#/definitions/Block"
         }
       }
     }

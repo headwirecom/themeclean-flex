@@ -46,10 +46,7 @@
         {
           "type": "collection",
           "multifield": true,
-          "fieldLabel": [
-            "contentname",
-            "value"
-          ],
+          "fieldLabel": ["contentname", "value"],
           "fields": [
             {
               "type": "input",

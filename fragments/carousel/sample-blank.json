@@ -2,8 +2,6 @@
   "title": "Carousel",
   "group": "Features",
   "model": {
-    "slides": [
-
-    ]
+    "slides": []
   }
 }

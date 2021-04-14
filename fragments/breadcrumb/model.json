@@ -19,7 +19,7 @@
           "x-form-type": "materialselect",
           "x-form-group": "style",
           "x-default": "primary",
-          "properties":{
+          "properties": {
             "primary": {
               "x-form-name": "Primary",
               "x-form-value": "primary"

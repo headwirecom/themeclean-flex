@@ -39,8 +39,8 @@
           "x-form-type": "text"
         },
         "mediaref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/mediavisible/model.json#/definitions/Mediavisible"
+          "x-form-type": "reference",
+          "$ref": "fragments/mediavisible/model.json#/definitions/Mediavisible"
         },
         "mediaposition": {
           "type": "string",
@@ -51,14 +51,15 @@
           "x-form-visible": "model.showmedia == 'true'",
           "x-default": "before",
           "properties": {
-    		    "type1": {
-    		      "x-form-name": "Before Content",
-    		      "x-form-value": "before"
-    		    },"type2": {
-    		      "x-form-name": "After Content",
-    		      "x-form-value": "after"
-    		    }
-  		    }
+            "type1": {
+              "x-form-name": "Before Content",
+              "x-form-value": "before"
+            },
+            "type2": {
+              "x-form-name": "After Content",
+              "x-form-value": "after"
+            }
+          }
         },
         "cardborder": {
           "type": "string",
@@ -75,7 +76,7 @@
           "x-form-group": "style",
           "x-form-type": "materialselect",
           "x-default": "none",
-          "properties":{
+          "properties": {
             "none": {
               "x-form-name": "none",
               "x-form-value": "none"
@@ -120,8 +121,8 @@
           }
         },
         "bgref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/block/model.json#/definitions/Block"
+          "x-form-type": "reference",
+          "$ref": "fragments/block/model.json#/definitions/Block"
         }
       }
     }

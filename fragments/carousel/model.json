@@ -127,10 +127,10 @@
               "x-form-type": "texteditor"
             },
             "alt": {
-	          "type": "string",
-	          "x-source": "inject",
-	          "x-form-label": "Image Alt Text",
-	          "x-form-type": "text"
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Image Alt Text",
+              "x-form-type": "text"
             }
           }
         },

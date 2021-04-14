@@ -3,11 +3,9 @@
   "group": "Features",
   "model": {
     "showtitle": "true",
-    "showtext" : "true",
+    "showtext": "true",
     "showbutton": "true",
     "showcard": "true",
-    "cards": [
-      
-    ]
+    "cards": []
   }
 }

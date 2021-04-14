@@ -32,10 +32,7 @@
         {
           "type": "collection",
           "multifield": true,
-          "fieldLabel": [
-            "buttontext",
-            "value"
-          ],
+          "fieldLabel": ["buttontext", "value"],
           "fields": [
             {
               "type": "input",

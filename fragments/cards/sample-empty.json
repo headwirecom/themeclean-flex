@@ -2,8 +2,6 @@
   "title": "Cards no default value",
   "group": "Empty",
   "model": {
-    "cards": [
-      
-    ]
+    "cards": []
   }
 }

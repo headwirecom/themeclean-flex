@@ -1,9 +1,12 @@
 :root {
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --font-size-xs: .75rem;
-  --font-size-sm: .875rem;
+  --font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
@@ -126,7 +129,6 @@ a {
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 
-
 strong {
   font-weight: bolder;
 }
@@ -187,7 +189,8 @@ input {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -196,7 +199,8 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 
-button { /* 1 */
+button {
+  /* 1 */
   text-transform: none;
 }
 
@@ -377,7 +381,6 @@ button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
-
 
 ul {
   list-style: none;
@@ -1069,7 +1072,8 @@ video {
 }
 
 .shadow-md {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .fill-current {
@@ -1339,7 +1343,7 @@ html {
 }
 
 .enlarge-text h1:not([class]),
-.enlarge-text .text-5xl:not([class*=my-]):not([class*=mt-]),
+.enlarge-text .text-5xl:not([class*="my-"]):not([class*="mt-"]),
 .text-6xl {
   margin-top: var(--spacing-24);
 }
@@ -1420,7 +1424,7 @@ h6:not([class]) {
   margin-bottom: 0;
 }
 
-.enlarge-text p:not([class*=text-]),
+.enlarge-text p:not([class*="text-"]),
 .enlarge-text .text-lg {
   font-size: var(--font-size-xl);
   line-height: var(--line-height-2);
@@ -1430,7 +1434,11 @@ h6 {
   font-weight: 700;
 }
 
-h1:not([class]), h2:not([class]), h3:not([class]), h4:not([class]), h5:not([class]) {
+h1:not([class]),
+h2:not([class]),
+h3:not([class]),
+h4:not([class]),
+h5:not([class]) {
   margin-top: var(--spacing-6);
   margin-bottom: var(--spacing-6);
 }
@@ -1511,32 +1519,32 @@ p {
 /* Drop Shadow Helpers */
 
 .elevation-1 {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   z-index: 10;
 }
 
 .elevation-2 {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   z-index: 10;
 }
 
 .elevation-3 {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   z-index: 10;
 }
 
 .elevation-4 {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   z-index: 10;
 }
 
 .elevation-5 {
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   z-index: 10;
 }
 
@@ -1582,7 +1590,7 @@ p {
   padding-bottom: var(--spacing-4);
   padding-left: var(--spacing-5);
   padding-right: var(--spacing-5);
-  font-size: var(--font-size-lg)
+  font-size: var(--font-size-lg);
 }
 
 .btn-sm {
@@ -1590,7 +1598,7 @@ p {
   padding-bottom: var(--spacing-2);
   padding-left: var(--spacing-2);
   padding-right: var(--spacing-2);
-  font-size: var(--font-size-sm)
+  font-size: var(--font-size-sm);
 }
 
 .btn-blue {
@@ -1659,7 +1667,7 @@ p {
   flex-shrink: 1 !important;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .media-sizeable {
     flex-shrink: 0 !important;
   }
@@ -1733,7 +1741,6 @@ p {
 /* purgecss end ignore */
 
 @media (min-width: 640px) {
-
   .sm\:mx-3 {
     margin-left: var(--spacing-3);
     margin-right: var(--spacing-3);
@@ -1858,7 +1865,6 @@ p {
 }
 
 @media (min-width: 768px) {
-
   .md\:flex {
     display: flex;
   }
@@ -2019,7 +2025,6 @@ p {
 }
 
 @media (min-width: 1024px) {
-
   .lg\:flex-row {
     flex-direction: row;
   }

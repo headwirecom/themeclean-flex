@@ -4,7 +4,7 @@
       "type": "object",
       "x-type": "component",
       "properties": {
-        "mediatype" : {
+        "mediatype": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Media type",

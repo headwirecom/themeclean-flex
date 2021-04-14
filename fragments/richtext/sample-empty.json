@@ -1,7 +1,5 @@
 {
   "title": "Empty Rich Text Test",
   "group": "Empty",
-  "model": {
-    
-  }
+  "model": {}
 }

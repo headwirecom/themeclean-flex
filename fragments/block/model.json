@@ -25,7 +25,7 @@
           "x-form-label": "Semantic Element",
           "x-form-type": "materialselect",
           "x-default": "section",
-          "properties":{
+          "properties": {
             "section": {
               "x-form-name": "section",
               "x-form-value": "section"
@@ -56,7 +56,7 @@
             }
           }
         },
-        "colorscheme" : {
+        "colorscheme": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Block Color Scheme",
@@ -84,7 +84,7 @@
           "x-form-label": "Custom Background",
           "x-form-group": "style",
           "x-form-type": "materialswitch",
-          "x-default": "false" 
+          "x-default": "false"
         },
         "backgroundtype": {
           "type": "string",
@@ -97,13 +97,16 @@
             "color": {
               "x-form-name": "Color",
               "x-form-value": "color"
-            },"gradient": {
+            },
+            "gradient": {
               "x-form-name": "Gradient",
               "x-form-value": "gradient"
-            },"image": {
+            },
+            "image": {
               "x-form-name": "Image",
               "x-form-value": "image"
-            },"video": {
+            },
+            "video": {
               "x-form-name": "Video",
               "x-form-value": "video"
             }

@@ -2,7 +2,6 @@
   "title": "Accordion no default values",
   "group": "Empty",
   "model": {
-    "tabs": [
-    ]
+    "tabs": []
   }
 }

@@ -4,7 +4,7 @@
   /* NONE definitions to overwrite :root vars */
 }
 
-#peregrine-app .theme-dark{
+#peregrine-app .theme-dark {
   --bg-primary: var(--color-green-900);
   --bg-secondary: var(--color-green-800);
 

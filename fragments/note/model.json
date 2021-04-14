@@ -18,7 +18,7 @@
           "x-form-type": "materialselect",
           "x-form-group": "content",
           "x-default": "note",
-          "properties":{
+          "properties": {
             "note": {
               "x-form-name": "Note",
               "x-form-value": "note"

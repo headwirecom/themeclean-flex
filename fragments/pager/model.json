@@ -28,7 +28,7 @@
           "x-form-type": "materialselect",
           "x-form-group": "style",
           "x-default": "default",
-          "properties":{
+          "properties": {
             "default": {
               "x-form-name": "Default",
               "x-form-value": "default"
@@ -50,7 +50,7 @@
           "x-form-type": "materialselect",
           "x-form-group": "style",
           "x-default": "primary",
-          "properties":{
+          "properties": {
             "primary": {
               "x-form-name": "Primary",
               "x-form-value": "primary"
@@ -118,8 +118,8 @@
           "x-default": false
         },
         "bgref": {
-            "x-form-type": "reference",
-            "$ref": "fragments/block/model.json#/definitions/Block"
+          "x-form-type": "reference",
+          "$ref": "fragments/block/model.json#/definitions/Block"
         }
       }
     }

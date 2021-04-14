@@ -26,7 +26,8 @@
         "buttontext": "See More",
         "buttoncolor": "primary",
         "iconclass": ""
-      },{
+      },
+      {
         "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "About Us",
         "buttoncolor": "primary",

@@ -13,8 +13,8 @@
           "x-form-type": "texteditor"
         },
         "mediaref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/mediavisible/model.json#/definitions/Mediavisible"
+          "x-form-type": "reference",
+          "$ref": "fragments/mediavisible/model.json#/definitions/Mediavisible"
         },
         "mediaposition": {
           "type": "string",
@@ -25,14 +25,15 @@
           "x-form-visible": "model.showmedia == 'true'",
           "x-default": "before",
           "properties": {
-		    "type1": {
-		      "x-form-name": "Before Content",
-		      "x-form-value": "before"
-		    },"type2": {
-		      "x-form-name": "After Content",
-		      "x-form-value": "after"
-		    }
-  		  }
+            "type1": {
+              "x-form-name": "Before Content",
+              "x-form-value": "before"
+            },
+            "type2": {
+              "x-form-name": "After Content",
+              "x-form-value": "after"
+            }
+          }
         },
         "bgref": {
           "$ref": "fragments/block/model.json#/definitions/Block",

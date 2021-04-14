@@ -12,7 +12,7 @@
           "x-form-group": "content",
           "x-form-type": "materialrange",
           "x-form-min": 0,
-          "x-form-max": 100 
+          "x-form-max": 100
         },
         "bgref": {
           "$ref": "fragments/block/model-spacer.json#/definitions/Block",

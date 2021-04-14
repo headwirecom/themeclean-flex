@@ -1,31 +1,46 @@
 <div class="w-full">
-	<h2 class="text-xl text-center pb-4">Toggle with media</h2>
+  <h2 class="text-xl text-center pb-4">Toggle with media</h2>
 
-	<div class="flex -mx-3 flex-grow">
+  <div class="flex -mx-3 flex-grow">
+    <div class="img-wrapper px-0 md:px-3">
+      <img
+        src="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg"
+      />
+    </div>
 
-		<div class="img-wrapper px-0 md:px-3">
-			<img src="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg">
-		</div>
+    <div class="accordion-container px-0 sm:mx-3 flex-grow overflow-hidden">
+      <div
+        class="accordion-item border-b transition-colors duration-200 ease-in-out"
+      >
+        <h3 class="accordion-item-header">
+          <button
+            type="button"
+            class="accordion-toggle-button font-bold m-0 flex justify-between items-center p-3 cursor-pointer w-full"
+          >
+            <span>Toggle Title</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              focusable="false"
+              class="transition-transform duration-150 ease-in-out"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"
+              />
+            </svg>
+          </button>
+        </h3>
 
-		<div class="accordion-container px-0 sm:mx-3 flex-grow overflow-hidden">
-			<div class="accordion-item border-b transition-colors duration-200 ease-in-out">
-
-				<h3 class="accordion-item-header">
-					<button type="button" class="accordion-toggle-button font-bold m-0 flex justify-between items-center p-3 cursor-pointer w-full">
-						<span>Toggle Title</span>
-						<svg width="16" height="16" viewBox="0 0 16 16" focusable="false" class="transition-transform duration-150 ease-in-out">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M13.293 4.29291L14.7072 5.70712L8.00008 12.4142L1.29297 5.70712L2.70718 4.29291L8.00008 9.5858L13.293 4.29291Z"/>
-						</svg>
-					</button>
-				</h3>
-
-				<div class="card-content overflow-hidden transition-height" role="tabpanel">
-					<div class="p-3">
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
+        <div
+          class="card-content overflow-hidden transition-height"
+          role="tabpanel"
+        >
+          <div class="p-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

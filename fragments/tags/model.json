@@ -19,7 +19,7 @@
           "x-form-type": "materialselect",
           "x-form-group": "style",
           "x-default": "blue",
-          "properties":{
+          "properties": {
             "note": {
               "x-form-name": "Blue",
               "x-form-value": "blue"

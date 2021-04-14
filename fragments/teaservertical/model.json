@@ -16,10 +16,12 @@
             "left": {
               "x-form-name": "Left",
               "x-form-value": "left"
-            },"center": {
+            },
+            "center": {
               "x-form-name": "Center",
               "x-form-value": "center"
-            },"right": {
+            },
+            "right": {
               "x-form-name": "Right",
               "x-form-value": "right"
             }
@@ -108,10 +110,12 @@
             "left": {
               "x-form-name": "Left",
               "x-form-value": "start"
-            },"center": {
+            },
+            "center": {
               "x-form-name": "Center",
               "x-form-value": "center"
-            },"right": {
+            },
+            "right": {
               "x-form-name": "Right",
               "x-form-value": "end"
             }
@@ -125,7 +129,7 @@
           "x-form-visible": "model.showbutton == 'true'",
           "x-default": "default",
           "x-form-group": "style",
-          "properties":{
+          "properties": {
             "default": {
               "x-form-name": "Default",
               "x-form-value": "default"
@@ -167,7 +171,7 @@
               "x-form-label": "Button Color",
               "x-form-type": "materialselect",
               "x-default": "primary",
-              "properties":{
+              "properties": {
                 "primary": {
                   "x-form-name": "Primary",
                   "x-form-value": "primary"
@@ -206,7 +210,7 @@
         },
         "mediaref": {
           "x-form-type": "reference",
-        	"$ref": "fragments/mediavisible/model.json#/definitions/Mediavisible"
+          "$ref": "fragments/mediavisible/model.json#/definitions/Mediavisible"
         },
         "mediaposition": {
           "type": "string",

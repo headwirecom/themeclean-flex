@@ -33,7 +33,7 @@
           "x-form-group": "style",
           "x-form-type": "materialselect",
           "x-default": "text-blue-800",
-          "properties":{
+          "properties": {
             "primary": {
               "x-form-name": "Primary",
               "x-form-value": "primary"

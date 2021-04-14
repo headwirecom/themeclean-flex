@@ -65,7 +65,7 @@
           "x-form-type": "materialselect",
           "x-form-group": "style",
           "x-default": "none",
-          "properties":{
+          "properties": {
             "none": {
               "x-form-name": "none",
               "x-form-value": "none"
@@ -155,11 +155,11 @@
               "x-form-max": "100"
             },
             "imagealttext": {
-	          "type": "string",
-	          "x-source": "inject",
-	          "x-form-label": "Image Alt Text",
-	          "x-form-type": "text"
-	        },
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Image Alt Text",
+              "x-form-type": "text"
+            },
             "buttontext": {
               "type": "string",
               "x-source": "inject",
@@ -181,7 +181,7 @@
               "x-form-label": "Button Color",
               "x-form-type": "materialselect",
               "x-default": "primary",
-              "properties":{
+              "properties": {
                 "primary": {
                   "x-form-name": "Primary",
                   "x-form-value": "primary"
@@ -214,7 +214,7 @@
               "x-form-label": "Button Size",
               "x-form-type": "materialselect",
               "x-default": "default",
-              "properties":{
+              "properties": {
                 "default": {
                   "x-form-name": "Default",
                   "x-form-value": "default"
@@ -235,7 +235,7 @@
               "x-form-label": "Button Alignment",
               "x-form-type": "materialselect",
               "x-default": "center",
-              "properties":{
+              "properties": {
                 "left": {
                   "x-form-name": "Left",
                   "x-form-value": "left"

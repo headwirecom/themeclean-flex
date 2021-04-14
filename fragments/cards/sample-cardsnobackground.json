@@ -21,7 +21,8 @@
         "imagealttext": "Organized rope hanging on a winch",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.",
         "title": "Card One"
-      },{
+      },
+      {
         "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "View",
         "buttoncolor": "info",
@@ -31,7 +32,8 @@
         "imagealttext": "Several sets of rope",
         "text": "Maecenas fermentum neque feugiat purus condimentum, sed molestie dolor fermentum. Nullam vestibulum tellus dolor. Cras viverra vel diam quis iaculis.",
         "title": "Card Two"
-      },{
+      },
+      {
         "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "View",
         "buttoncolor": "info",
@@ -41,7 +43,8 @@
         "imagealttext": "Messy pile of rope",
         "text": "Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor.Cras viverra vel diam quis iaculis.",
         "title": "Card Three"
-      },{
+      },
+      {
         "buttonlink": "/content/themecleanflex/pages",
         "buttontext": "View",
         "buttoncolor": "info",
