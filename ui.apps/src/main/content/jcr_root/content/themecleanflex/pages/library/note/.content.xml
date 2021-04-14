@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-            jcr:primaryType="per:Page"
-            jcr:title="tf-cl | note"
-            jcr:description="note themecleanflex component library"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="per:Page"
+          jcr:title="tf-cl | note"
+          jcr:description="note themecleanflex component library"
 >
     <jcr:content
         jcr:primaryType="per:PageContent"
@@ -11,159 +12,208 @@
         description="note themecleanflex component library"
         brand="themecleanflex"
         template="/content/themecleanflex/templates"
-            ><clheader
-            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header" backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10" bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo" logourl="/content/themecleanflex/pages/library.html" logosize="60" buttonsize="default"><elevation jcr:primaryType="nt:unstructured"></elevation>
-    <links jcr:primaryType="nt:unstructured"></links>
-    <buttons jcr:primaryType="nt:unstructured"></buttons>
-            </clheader><clbreadcrumb
-        colorscheme="light"
-        custombackground="false"
-        backgroundtype="color"
-        bgcolor="#eeeeee"
-        htmlelement="nav"
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2"><toppadding jcr:primaryType="nt:unstructured"></toppadding>
-        <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
-        </clbreadcrumb><pager0
-        colorscheme="light"
-        toppadding="30"
-        bottompadding="30"
-        custombackground="false"
-        backgroundtype="color"
-        bgcolor="#eeeeee"
-        htmlelement="nav"
-        prevlabel="&lt; previous"
-        nextlabel="next &gt;"
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
-        </pager0><container20
+    >
+        <clheader
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/header" htmlelement="header"
+            backgroundtype="color" bgcolor="#eeeeee" colorscheme="light" toppadding="10" bottompadding="10"
+            bgvideo="https://www.youtube.com/embed/Ju86mknumYM" collapsed="false"
+            logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logoalttext="Peregrine CMS Logo"
+            logourl="/content/themecleanflex/pages/library.html" logosize="60" buttonsize="default">
+            <elevation jcr:primaryType="nt:unstructured"></elevation>
+            <links jcr:primaryType="nt:unstructured"></links>
+            <buttons jcr:primaryType="nt:unstructured"></buttons>
+        </clheader>
+        <clbreadcrumb
+            colorscheme="light"
+            custombackground="false"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            htmlelement="nav"
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/breadcrumb" level="2">
+            <toppadding jcr:primaryType="nt:unstructured"></toppadding>
+            <bottompadding jcr:primaryType="nt:unstructured"></bottompadding>
+        </clbreadcrumb>
+        <pager0
+            colorscheme="light"
+            toppadding="30"
+            bottompadding="30"
+            custombackground="false"
+            backgroundtype="color"
+            bgcolor="#eeeeee"
+            htmlelement="nav"
+            prevlabel="&lt; previous"
+            nextlabel="next &gt;"
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+        </pager0>
+        <container20
             jcr:primaryType="nt:unstructured"
             sling:resourceType="themecleanflex/components/container"
             htmlelement="main">
-            
-        <intro1 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            bottompadding="25"
-            toppadding="25"
-            htmlelement="banner"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h1 id=&quot;note&quot;&gt;Note&lt;/h1&gt;
+
+            <intro1 jcr:primaryType="nt:unstructured"
+                    sling:resourceType="themecleanflex/components/richtext"
+                    bottompadding="25"
+                    toppadding="25"
+                    htmlelement="banner"
+                    custombackground="true"
+                    backgroundtype="color"
+                    bgcolor="#eeeeee"
+                    text="&lt;h1 id=&quot;note&quot;&gt;Note&lt;/h1&gt;
 &lt;p&gt;The Note component is used to display small important messages to the reader&lt;/p&gt;
 ">
-        </intro1>
-        <title2 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
+            </intro1>
+            <title2 jcr:primaryType="nt:unstructured"
+                    sling:resourceType="themecleanflex/components/richtext"
+                    toppadding="25"
+                    bottompadding="25"
+                    custombackground="true"
+                    backgroundtype="color"
+                    bgcolor="#eeeeee"
+                    text="&lt;h2&gt;Note (Text Components)&lt;/h2&gt;">
+            </title2>
+            <note3
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note">
+            </note3>
+            <title4 jcr:primaryType="nt:unstructured"
+                    sling:resourceType="themecleanflex/components/richtext"
+                    toppadding="25"
+                    bottompadding="25"
+                    custombackground="true"
+                    backgroundtype="color"
+                    bgcolor="#eeeeee"
+                    text="&lt;h2&gt;Note - Caution (Text Components)&lt;/h2&gt;">
+            </title4>
+            <note5
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note"
+                text="&lt;p&gt;caution&lt;/p&gt;" notetype="caution" toppadding="30" bottompadding="30">
+            </note5>
+            <title6 jcr:primaryType="nt:unstructured"
+                    sling:resourceType="themecleanflex/components/richtext"
+                    toppadding="25"
+                    bottompadding="25"
+                    custombackground="true"
+                    backgroundtype="color"
+                    bgcolor="#eeeeee"
+                    text="&lt;h2&gt;Note - Important (Text Components)&lt;/h2&gt;">
+            </title6>
+            <note7
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note"
+                text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30">
+            </note7>
+            <title8 jcr:primaryType="nt:unstructured"
+                    sling:resourceType="themecleanflex/components/richtext"
+                    toppadding="25"
+                    bottompadding="25"
+                    custombackground="true"
+                    backgroundtype="color"
+                    bgcolor="#eeeeee"
+                    text="&lt;h2&gt;Note - Note (Text Components)&lt;/h2&gt;">
+            </title8>
+            <note9
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note"
+                text="&lt;p&gt;note&lt;/p&gt;" notetype="note" toppadding="30" bottompadding="30">
+            </note9>
+            <title10 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Note With All RTE Styles (.hidden)&lt;/h2&gt;">
+            </title10>
+            <note11
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note"
+                text="&lt;h1&gt;Left (Default) Alignment Test&lt;/h1&gt;&lt;h2&gt;Header h2&lt;/h2&gt;&lt;h3&gt;Header h3&lt;/h3&gt;&lt;h4&gt;Header h4&lt;/h4&gt;&lt;p&gt;Text:&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: center; &quot;&gt;Center Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: center; &quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: center; &quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: center; &quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: center; &quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: center; &quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: center; &quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: right; &quot;&gt;Right Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: right; &quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: right; &quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: right; &quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: right; &quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: right; &quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: right; &quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: justify;&quot;&gt;Justified Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: justify;&quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: justify;&quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: justify;&quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;another line&lt;/p&gt;"
+                toppadding="30" bottompadding="30">
+            </note11>
+            <title12 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Note - Tip (Text Components)&lt;/h2&gt;">
+            </title12>
+            <note13
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note"
+                text="&lt;p&gt;tip&lt;/p&gt;" notetype="tip" toppadding="30" bottompadding="30">
+            </note13>
+            <title14 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Note - Warning Dark (.hidden)&lt;/h2&gt;">
+            </title14>
+            <note15
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note"
+                text="&lt;p&gt;warning&lt;/p&gt;" notetype="warning" colorscheme="dark" toppadding="30"
+                bottompadding="30">
+            </note15>
+            <title16 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Note - Warning (Text Components)&lt;/h2&gt;">
+            </title16>
+            <note17
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note"
+                text="&lt;p&gt;warning&lt;/p&gt;" notetype="warning" toppadding="30" bottompadding="30">
+            </note17>
+            <title18 jcr:primaryType="nt:unstructured"
+                     sling:resourceType="themecleanflex/components/richtext"
+                     toppadding="25"
+                     bottompadding="25"
+                     custombackground="true"
+                     backgroundtype="color"
+                     bgcolor="#eeeeee"
+                     text="&lt;h2&gt;Note - Example (Text Components)&lt;/h2&gt;">
+            </title18>
+            <note19
+                jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note"
+                text="&lt;p&gt;Here is some example note text default style&lt;/p&gt;" toppadding="30"
+                bottompadding="30">
+            </note19>
+        </container20>
+        <pager21
+            colorscheme="light"
+            toppadding="30"
+            bottompadding="30"
+            custombackground="false"
             backgroundtype="color"
             bgcolor="#eeeeee"
-            text="&lt;h2&gt;Note (Text Components)&lt;/h2&gt;">
-        </title2><note3
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note">
-        </note3><title4 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Note - Caution (Text Components)&lt;/h2&gt;">
-        </title4><note5
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;caution&lt;/p&gt;" notetype="caution" toppadding="30" bottompadding="30">
-        </note5><title6 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Note - Important (Text Components)&lt;/h2&gt;">
-        </title6><note7
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;important&lt;/p&gt;" notetype="important" toppadding="30" bottompadding="30">
-        </note7><title8 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Note - Note (Text Components)&lt;/h2&gt;">
-        </title8><note9
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;note&lt;/p&gt;" notetype="note" toppadding="30" bottompadding="30">
-        </note9><title10 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Note With All RTE Styles (.hidden)&lt;/h2&gt;">
-        </title10><note11
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;h1&gt;Left (Default) Alignment Test&lt;/h1&gt;&lt;h2&gt;Header h2&lt;/h2&gt;&lt;h3&gt;Header h3&lt;/h3&gt;&lt;h4&gt;Header h4&lt;/h4&gt;&lt;p&gt;Text:&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li&gt;item 1&lt;/li&gt;&lt;li&gt;item 2&lt;/li&gt;&lt;li&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: center; &quot;&gt;Center Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: center; &quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: center; &quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: center; &quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: center; &quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: center; &quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: center; &quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: center; &quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: center; &quot;&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: right; &quot;&gt;Right Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: right; &quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: right; &quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: right; &quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: right; &quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: right; &quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: right; &quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: right; &quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: right; &quot;&gt;another line&lt;/p&gt;&lt;h1 style=&quot;text-align: justify;&quot;&gt;Justified Alignment Test&lt;/h1&gt;&lt;h2 style=&quot;text-align: justify;&quot;&gt;Header h2&lt;/h2&gt;&lt;h3 style=&quot;text-align: justify;&quot;&gt;Header h3&lt;/h3&gt;&lt;h4 style=&quot;text-align: justify;&quot;&gt;Header h4&lt;/h4&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Text:&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare felis at ligula suscipit, eu condimentum tortor venenatis. Maecenas laoreet blandit tempor. Praesent fermentum malesuada ante eget condimentum. Nulla feugiat, tortor vel consectetur mollis, neque mauris lacinia nisi, id tristique sapien eros sed neque. Integer nec nunc nec elit condimentum faucibus a sit amet dolor. Aliquam nec metus urna. Donec id urna lacus. Nam luctus efficitur leo, at lobortis eros. Phasellus ut tincidunt orci, vitae lacinia lacus.&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;unordered list:&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 3&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;ordered list&lt;/p&gt;&lt;ol&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 1&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 2&lt;/li&gt;&lt;li style=&quot;text-align: justify;&quot;&gt;item 3&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;sub&lt;sub&gt;script&lt;/sub&gt; super&lt;sup&gt;script&lt;/sup&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;bold&lt;/strong&gt; &lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;a href=&quot;https://www.example.com&quot; title=&quot;example.com&quot;&gt;some link text&lt;/a&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;a line followed by a shift return (&amp;lt;br/&amp;gt;) &lt;br&gt;a line followed by a return (end of paragraph)&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;another line&lt;/p&gt;" toppadding="30" bottompadding="30">
-        </note11><title12 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Note - Tip (Text Components)&lt;/h2&gt;">
-        </title12><note13
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;tip&lt;/p&gt;" notetype="tip" toppadding="30" bottompadding="30">
-        </note13><title14 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Note - Warning Dark (.hidden)&lt;/h2&gt;">
-        </title14><note15
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;warning&lt;/p&gt;" notetype="warning" colorscheme="dark" toppadding="30" bottompadding="30">
-        </note15><title16 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Note - Warning (Text Components)&lt;/h2&gt;">
-        </title16><note17
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;warning&lt;/p&gt;" notetype="warning" toppadding="30" bottompadding="30">
-        </note17><title18 jcr:primaryType="nt:unstructured" 
-            sling:resourceType="themecleanflex/components/richtext" 
-            toppadding="25"
-            bottompadding="25"
-            custombackground="true"
-            backgroundtype="color"
-            bgcolor="#eeeeee"
-            text="&lt;h2&gt;Note - Example (Text Components)&lt;/h2&gt;">
-        </title18><note19
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/note" text="&lt;p&gt;Here is some example note text default style&lt;/p&gt;" toppadding="30" bottompadding="30">
-        </note19>
-        </container20><pager21
-        colorscheme="light"
-        toppadding="30"
-        bottompadding="30"
-        custombackground="false"
-        backgroundtype="color"
-        bgcolor="#eeeeee"
-        htmlelement="nav"
-        prevlabel="&lt; previous"
-        nextlabel="next &gt;"
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
+            htmlelement="nav"
+            prevlabel="&lt; previous"
+            nextlabel="next &gt;"
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/pager">
         </pager21>
         <clfooter
-        jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer" backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light" showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg" logourl="/content/themecleanflex/pages/library.html" logoalttext="Peregrine CMS Logo" logosize="60" copyright="Copyright 2019 Peregrine - All Rights Reserved">
-        <columns jcr:primaryType="nt:unstructured">
-        <c3
-        jcr:primaryType="nt:unstructured" title="" text="">
-        </c3><c4
-        jcr:primaryType="nt:unstructured" title="Contact" text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
-        </c4><c5
-        jcr:primaryType="nt:unstructured" title="Location" text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
-        </c5></columns>
-<icons jcr:primaryType="nt:unstructured"></icons>
-        </clfooter>        
-        </jcr:content></jcr:root>
+            jcr:primaryType="nt:unstructured" sling:resourceType="themecleanflex/components/footer" htmlelement="footer"
+            backgroundtype="color" bgcolor="#eeeeee" bottompadding="0" toppadding="30" colorscheme="light"
+            showlogo="true" logo="/content/themecleanflex/assets/samples/peregrine-logo.svg"
+            logourl="/content/themecleanflex/pages/library.html" logoalttext="Peregrine CMS Logo" logosize="60"
+            copyright="Copyright 2019 Peregrine - All Rights Reserved">
+            <columns jcr:primaryType="nt:unstructured">
+                <c3
+                    jcr:primaryType="nt:unstructured" title="" text="">
+                </c3>
+                <c4
+                    jcr:primaryType="nt:unstructured" title="Contact"
+                    text="&lt;p&gt;info@headwire.com&lt;br&gt;&lt;/p&gt;">
+                </c4>
+                <c5
+                    jcr:primaryType="nt:unstructured" title="Location"
+                    text="&lt;p&gt;23293 S Pointe Drive, Laguna Hills, CA 92653&lt;/p&gt;">
+                </c5>
+            </columns>
+            <icons jcr:primaryType="nt:unstructured"></icons>
+        </clfooter>
+    </jcr:content>
+</jcr:root>

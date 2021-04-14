@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Spacer">
-  <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
-    <sample jcr:primaryType="nt:unstructured" title="Spacer" group="Chrome">
-      <jcr:content jcr:primaryType="nt:unstructured" height="20"/>
-    </sample>
-    <sample-blank jcr:primaryType="nt:unstructured" title="Spacer (Empty)" group=".hidden">
-      <jcr:content jcr:primaryType="nt:unstructured" height="20"/>
-    </sample-blank>
-    <sample-image jcr:primaryType="nt:unstructured" title="Spacer - Image" group="Chrome">
-      <jcr:content jcr:primaryType="nt:unstructured" height="80" custombackground="true" backgroundtype="image" bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg"/>
-    </sample-image>
-  </jcr:content>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Spacer">
+    <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
+        <sample jcr:primaryType="nt:unstructured" title="Spacer" group="Chrome">
+            <jcr:content jcr:primaryType="nt:unstructured" height="20"/>
+        </sample>
+        <sample-blank jcr:primaryType="nt:unstructured" title="Spacer (Empty)" group=".hidden">
+            <jcr:content jcr:primaryType="nt:unstructured" height="20"/>
+        </sample-blank>
+        <sample-image jcr:primaryType="nt:unstructured" title="Spacer - Image" group="Chrome">
+            <jcr:content jcr:primaryType="nt:unstructured" height="80" custombackground="true" backgroundtype="image"
+                         bgimage="/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg"/>
+        </sample-image>
+    </jcr:content>
 </jcr:root>

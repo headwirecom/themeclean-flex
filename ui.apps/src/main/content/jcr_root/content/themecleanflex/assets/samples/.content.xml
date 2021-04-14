@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
-  jcr:primaryType="sling:OrderedFolder"
-  jcr:title="samples"
-  doNotCopy="{Boolean}true"
-  jcr:description="samples">
-    <aerial-sailboat.jpg />
-    <anchored.jpg />
-    <architecture-blue-skies_extra-large.jpg />
-    <architecture-blue-skies_large.jpg />
-    <beach-bird-s-eye-view-daytime-1249586.jpg />
-    <beach-boats-ocean_large.jpg />
-    <beach-boats-ocean_small.jpg />
-    <beach-clouds-daytime_large.jpg />
-    <beach-clouds-daytime_small.jpg />
-    <boat-rope-hanging-knot_large.jpg />
-    <boat-rope-hanging-knot_small.jpg />
-    <chain-close-up-daylight-1170601.jpg />
-    <close-up-cordage.jpg />
-    <clouds-daylight-environment_large.jpg />
-    <clouds-daylight-environment_small.jpg />
-    <clouds-golden-hour-nature-944440.jpg />
-    <harbor-sunet_large.jpg />
-    <harbot-sunet_small.jpg />
-    <heel_large.jpg />
-    <heel_small.jpg />
-    <oldboat_large.jpg />
-    <oldboat_small.jpg />
-    <organized-lg.jpg />
+          jcr:primaryType="sling:OrderedFolder"
+          jcr:title="samples"
+          doNotCopy="{Boolean}true"
+          jcr:description="samples">
+    <aerial-sailboat.jpg/>
+    <anchored.jpg/>
+    <architecture-blue-skies_extra-large.jpg/>
+    <architecture-blue-skies_large.jpg/>
+    <beach-bird-s-eye-view-daytime-1249586.jpg/>
+    <beach-boats-ocean_large.jpg/>
+    <beach-boats-ocean_small.jpg/>
+    <beach-clouds-daytime_large.jpg/>
+    <beach-clouds-daytime_small.jpg/>
+    <boat-rope-hanging-knot_large.jpg/>
+    <boat-rope-hanging-knot_small.jpg/>
+    <chain-close-up-daylight-1170601.jpg/>
+    <close-up-cordage.jpg/>
+    <clouds-daylight-environment_large.jpg/>
+    <clouds-daylight-environment_small.jpg/>
+    <clouds-golden-hour-nature-944440.jpg/>
+    <harbor-sunet_large.jpg/>
+    <harbot-sunet_small.jpg/>
+    <heel_large.jpg/>
+    <heel_small.jpg/>
+    <oldboat_large.jpg/>
+    <oldboat_small.jpg/>
+    <organized-lg.jpg/>
     <organized-small.jpg/>
-    <peregrine-logo.svg />
-    <sailing-lake_large.jpg />
-    <sailing-lake_small.jpg />
+    <peregrine-logo.svg/>
+    <sailing-lake_large.jpg/>
+    <sailing-lake_small.jpg/>
 </jcr:root>

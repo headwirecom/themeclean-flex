@@ -1,9 +1,7 @@
 ---
-name: Feature request
-about: Thanks for helping us improve Peregrine CMS!
+name: Feature request about: Thanks for helping us improve Peregrine CMS!
 title: ''
-labels: enhancement
-assignees: ''
+labels: enhancement assignees: ''
 
 ---
 

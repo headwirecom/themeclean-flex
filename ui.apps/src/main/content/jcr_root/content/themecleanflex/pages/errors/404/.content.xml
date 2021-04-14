@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
-    jcr:lastModified="{Date}2019-05-06T21:14:05.790Z"
-    jcr:lastModifiedBy="admin"
-    jcr:primaryType="per:Page">
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
+          jcr:lastModified="{Date}2019-05-06T21:14:05.790Z"
+          jcr:lastModifiedBy="admin"
+          jcr:primaryType="per:Page">
     <jcr:content
         jcr:lastModified="{Date}2019-05-06T21:15:41.195Z"
         jcr:lastModifiedBy="admin"
@@ -15,8 +16,10 @@
         templatePath="/content/themecleanflex/templates">
         <nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b jcr:primaryType="nt:unstructured">
             <n764b8eef-0b83-434a-94dd-c03d6da81778 jcr:primaryType="nt:unstructured">
-                <text   jcr:primaryType="nt:unstructured" htmlelement="section" sling:resourceType="themecleanflex/components/richtext" 
-                        text="&lt;h1 style=&quot;text-align: center; &quot;>404 - Sorry, the requested page was not found&lt;/h1>" bottompadding="156" toppadding="156" videosrc="">
+                <text jcr:primaryType="nt:unstructured" htmlelement="section"
+                      sling:resourceType="themecleanflex/components/richtext"
+                      text="&lt;h1 style=&quot;text-align: center; &quot;>404 - Sorry, the requested page was not found&lt;/h1>"
+                      bottompadding="156" toppadding="156" videosrc="">
                 </text>
             </n764b8eef-0b83-434a-94dd-c03d6da81778>
         </nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b>

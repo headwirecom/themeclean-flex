@@ -2,40 +2,40 @@
 
 #peregrine-app {
     /* NONE definitions to overwrite :root vars */
-  }
-  
-  #peregrine-app .theme-light {
+}
+
+#peregrine-app .theme-light {
     --bg-primary: #d7dfdd;
     --bg-secondary: #f5f5f5;
-  
-    --text-primary-color:#0e0b16;
+
+    --text-primary-color: #0e0b16;
     --text-secondary-color: #4711f6;
-  
+
     --border-primary-color: #373737;
-  
+
     --link-primary-color: #0e0b16;
     --link-primary-color-hover: #4711f6;
-  
+
     --btn-primary-bg: #4711f6;
     --btn-primary-color: #d7dfdd;
-  
+
     --figcaption-primary-bg: #ffffff99;
-  }
-  
-  #peregrine-app .theme-dark {
+}
+
+#peregrine-app .theme-dark {
     --bg-primary: #0e0b16;
     --bg-secondary: #00003c;
-  
+
     --text-primary-color: #d7dfdd;
     --text-secondary-color: #4711f6;
-  
+
     --border-primary-color: #d7dfdd;
-  
+
     --link-primary-color: #d7dfdd;
     --link-primary-color-hover: #4711f6;
-  
+
     --btn-primary-bg: #d7dfdd;
     --btn-primary-color: #4711f6;
-  
+
     --figcaption-primary-bg: #00000080;
-  }
+}

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Text Links" group=".hidden">
-  <jcr:content jcr:primaryType="nt:unstructured">
-    <links jcr:primaryType="nt:unstructured">
-      <links0 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services" color="dark"/>
-      <links1 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us" color="dark"/>
-      <links2 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us" color="dark"/>
-    </links>
-  </jcr:content>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Text Links"
+          group=".hidden">
+    <jcr:content jcr:primaryType="nt:unstructured">
+        <links jcr:primaryType="nt:unstructured">
+            <links0 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Services"
+                    color="dark"/>
+            <links1 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="About Us"
+                    color="dark"/>
+            <links2 jcr:primaryType="nt:unstructured" link="/content/themecleanflex/pages" text="Contact Us"
+                    color="dark"/>
+        </links>
+    </jcr:content>
 </jcr:root>
