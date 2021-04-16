@@ -2,6 +2,7 @@
   "definitions": {
     "Header": {
       "type": "object",
+      "x-form-groups": ["content", "style", "advanced"],
       "x-type": "component",
       "properties": {
         "logo": {
@@ -9,18 +10,21 @@
           "x-source": "inject",
           "x-form-label": "Logo",
           "x-form-type": "pathbrowser",
+          "x-form-group": "content",
           "x-form-browserRoot": "/content/themecleanflex/assets"
         },
         "logoalttext": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Logo Alt Text",
+          "x-form-group": "content",
           "x-form-type": "text"
         },
         "logourl": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Logo Url",
+          "x-form-group": "content",
           "x-form-type": "pathbrowser",
           "x-form-browserRoot": "/content/themecleanflex/pages"
         },
@@ -28,6 +32,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Logo Size",
+          "x-form-group": "content",
           "x-form-type": "materialrange",
           "x-default": 50,
           "x-form-min": 1,
@@ -37,6 +42,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Collapse Menu",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "elevation": {
@@ -44,6 +50,7 @@
           "x-source": "inject",
           "x-form-label": "Elevation",
           "x-form-visible": "",
+          "x-form-group": "style",
           "x-form-type": "materialrange",
           "x-default": 0,
           "x-form-min": 0,
@@ -53,6 +60,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Sticky",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "linksref": {

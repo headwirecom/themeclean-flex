@@ -13,7 +13,8 @@
         name="errors"
         template="/content/themecleanflex/templates/footer/header-footer"
         templatePath="/content/themecleanflex/templates"
-        excludeFromSitemap="{Boolean}true">
+        excludeFromSitemap="{Boolean}true"
+        excludeTreeFromSitemap="{Boolean}true">
         <nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b jcr:primaryType="nt:unstructured">
             <n764b8eef-0b83-434a-94dd-c03d6da81778 jcr:primaryType="nt:unstructured">
                 <text   jcr:primaryType="nt:unstructured" htmlelement="section" sling:resourceType="themecleanflex/components/richtext" 

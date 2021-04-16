@@ -2,12 +2,14 @@
   "definitions": {
     "Footer": {
       "type": "object",
+      "x-form-groups": ["content", "style", "advanced"],
       "x-type": "component",
       "properties": {
         "showlogo": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Show Logo",
+          "x-form-group": "style",
           "x-form-type": "materialswitch"
         },
         "logo": {
@@ -16,12 +18,14 @@
           "x-form-label": "Logo",
           "x-form-type": "pathbrowser",
           "x-form-visible": "model.showlogo == 'true'",
+          "x-form-group": "content",
           "x-form-browserRoot": "/content/themecleanflex/assets"
         },
         "logoalttext": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Logo Alt Text",
+          "x-form-group": "content",
           "x-form-visible": "model.showlogo == 'true'",
           "x-form-type": "text"
         },
@@ -30,6 +34,7 @@
           "x-source": "inject",
           "x-form-label": "Logo Url",
           "x-form-type": "pathbrowser",
+          "x-form-group": "content",
           "x-form-visible": "model.showlogo == 'true'",
           "x-form-browserRoot": "/content/themecleanflex/pages"
         },
@@ -37,6 +42,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Logo Size",
+          "x-form-group": "content",
           "x-form-type": "materialrange",
           "x-form-visible": "model.showlogo == 'true'",
           "x-form-min": 1,
@@ -47,6 +53,7 @@
           "x-source": "inject",
           "x-form-label": "Columns",
           "x-form-type": "collection",
+          "x-form-group": "content",
           "x-form-multifield": "true",
           "properties": {
             "title": {
@@ -67,6 +74,7 @@
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Copyright Text",
+          "x-form-group": "content",
           "x-form-type": "text"
         },
         "socialref": {

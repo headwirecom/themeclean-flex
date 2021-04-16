@@ -2,6 +2,7 @@
   "definitions": {
     "Pager": {
       "type": "object",
+      "x-form-groups": ["content", "style", "advanced"],
       "x-type": "component",
       "properties": {
         "rootpage": {
@@ -9,12 +10,14 @@
           "x-source": "inject",
           "x-form-type": "pathbrowser",
           "x-form-label": "Root Page",
+          "x-form-group": "content",
           "x-form-browserRoot": "/content/themecleanflex/pages"
         },
         "includeroot": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Include Root",
+          "x-form-group": "content",
           "x-form-type": "materialswitch",
           "x-default": false
         },
@@ -23,6 +26,7 @@
           "x-source": "inject",
           "x-form-label": "Button Size",
           "x-form-type": "materialselect",
+          "x-form-group": "style",
           "x-default": "default",
           "properties":{
             "default": {
@@ -44,6 +48,7 @@
           "x-source": "inject",
           "x-form-label": "Button Color",
           "x-form-type": "materialselect",
+          "x-form-group": "style",
           "x-default": "primary",
           "properties":{
             "primary": {
@@ -85,6 +90,7 @@
           "x-source": "inject",
           "x-form-label": "Previous Label",
           "x-form-type": "text",
+          "x-form-group": "content",
           "x-default": "Previous"
         },
         "nextlabel": {
@@ -92,6 +98,7 @@
           "x-source": "inject",
           "x-form-label": "Next Label",
           "x-form-type": "text",
+          "x-form-group": "content",
           "x-default": "Next"
         },
         "disableprevious": {
@@ -99,12 +106,14 @@
           "x-source": "inject",
           "x-form-label": "Disable the previous button",
           "x-form-type": "materialswitch",
+          "x-form-group": "content",
           "x-default": false
         },
         "excludesitemapexcludes": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Exclude pages Excluded in Sitemap",
+          "x-form-group": "content",
           "x-form-type": "materialswitch",
           "x-default": false
         },
