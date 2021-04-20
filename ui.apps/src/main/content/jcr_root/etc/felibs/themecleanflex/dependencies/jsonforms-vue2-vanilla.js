@@ -1,4 +1,4 @@
-const jsonForms2VanillaInitInverval = setInterval(() => {(function (global, factory) {
+(function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@jsonforms/core'), require('@vue/composition-api'), require('@jsonforms/vue2'), require('lodash/merge'), require('lodash/cloneDeep'), require('lodash/mergeWith')) :
   typeof define === 'function' && define.amd ? define(['exports', '@jsonforms/core', '@vue/composition-api', '@jsonforms/vue2', 'lodash/merge', 'lodash/cloneDeep', 'lodash/mergeWith'], factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.JSONFormsVue2Vanilla = {}, global.JSONFormsCore, global.VueCompositionAPI, global.JSONFormsVue2, global._.merge, global._.cloneDeep, global._.mergeWith));
@@ -1857,9 +1857,4 @@ const jsonForms2VanillaInitInverval = setInterval(() => {(function (global, fact
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-  //TODO: workaround until a solution for the dependency loading order is found!
-  if (JSONFormsVue2Vanilla) {
-    clearInterval(jsonForms2VanillaInitInverval);
-  }
-
-})))}, 1000);
+})));

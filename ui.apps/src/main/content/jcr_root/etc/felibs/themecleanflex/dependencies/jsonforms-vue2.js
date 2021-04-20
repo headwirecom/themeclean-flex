@@ -1,4 +1,4 @@
-const jsonForms2InitInverval = setInterval(() => {(function (global, factory) {
+(function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@vue/composition-api'), require('lodash/maxBy'), require('@jsonforms/core')) :
   typeof define === 'function' && define.amd ? define(['exports', '@vue/composition-api', 'lodash/maxBy', '@jsonforms/core'], factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.JSONFormsVue2 = {}, global.VueCompositionAPI, global._.maxBy, global.JSONFormsCore));
@@ -1091,8 +1091,4 @@ const jsonForms2InitInverval = setInterval(() => {(function (global, factory) {
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-  //TODO: workaround until a solution for the dependency loading order is found!
-  if (JSONFormsVue2) {
-    clearInterval(jsonForms2InitInverval);
-  }
-})))}, 1000);
+})));

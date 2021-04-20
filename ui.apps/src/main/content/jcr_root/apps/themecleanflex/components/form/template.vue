@@ -2,9 +2,9 @@
   <themecleanflex-components-block v-if="isReady" v-bind:model="model">
     <div class="w-full" v-bind:data-per-path="model.path">
       <div class="text-black p-2 rounded-r mt-4 border-l-4 shadow-md note-important"
-           v-if="( failureText || schemaError )">
-        <p class="ml-2" v-if="failureText">{{ failureText }}</p>
-        <p class="ml-2" v-if="schemaError">{{ schemaError }}</p>
+      v-if="( failureText || schemaError )">
+        <p class="ml-2" v-if="failureText">{{failureText}}</p>
+        <p class="ml-2" v-if="schemaError">{{schemaError}}</p>
       </div>
       <form class="w-full flex flex-col md:p-4 sm:p-2" v-bind:class="{
             'justify-button-start': model.submitalignment === 'start',
@@ -16,13 +16,8 @@
             'full-button': model.submitsize === 'full',
         }" v-on:submit.prevent.stop="onSubmit">
         <json-forms v-bind:class="`w-full mb-4 md:flex md:flex-wrap md:justify-between`"
-                    v-bind:ref="`jsonForms`"
-                    v-bind:key="jsonFormsKey"
-                    v-bind:data="form"
-                    v-bind:schema="schema"
-                    v-bind:uischema="uischema"
-                    v-bind:renderers="renderers"
-                    v-on:change="onChange"></json-forms>
+        v-bind:ref="`jsonForms`" v-bind:key="jsonFormsKey" v-bind:data="form" v-bind:schema="schema"
+        v-bind:uischema="uischema" v-bind:renderers="renderers" v-on:change="onChange"></json-forms>
         <input class="btn mb-4" type="submit" v-bind:value="model.submittext">
       </form>
     </div>
@@ -31,6 +26,10 @@
 
 <!--suppress JSUnresolvedVariable, JSUnresolvedFunction -->
 <script>
+const renderers = [
+  ...JSONFormsVue2Vanilla.vanillaRenderers
+];
+
 export default {
   props: ['model'],
   data() {
@@ -38,7 +37,7 @@ export default {
     return {
       form: {},
       failureText: '',
-      renderers: []
+      renderers: Object.freeze(renderers)
     };
   },
   computed: {
@@ -93,15 +92,6 @@ export default {
     if (!Vue.options.components['json-forms']) {
       Vue.component('json-forms', window.JSONFormsVue2.JsonForms);
     }
-  },
-  created() {
-    //TODO: workaround until a solution for the dependency loading order is found!
-    const rendererInitInterval = setInterval(() => {
-      if (JSONFormsVue2Vanilla) {
-        this.renderers = Object.freeze([...JSONFormsVue2Vanilla.vanillaRenderers]);
-        clearInterval(rendererInitInterval);
-      }
-    });
   },
   mounted() {
     window.addEventListener('form-clear', this.clearForm);
@@ -160,14 +150,14 @@ export default {
       this.$refs.jsonForms.$el
           .querySelectorAll('button:not([type="button"])')
           .forEach((button) => {
-            button.setAttribute('type', 'button');
-          });
+            button.setAttribute('type', 'button')
+          })
     }
   },
   provide() {
     const { defaultStyles, mergeStyles } = JSONFormsVue2Vanilla;
     const formControlStyles = 'border py-2 px-3';
-    const btnStyles = 'focus:outline-none text-sm py-2.5 px-5 rounded-full border';
+    const btnStyles = 'focus:outline-none text-sm py-2.5 px-5 rounded-full border'
     const customStyles = {
       verticalLayout: {
         item: 'flex flex-col mb-4 w-full',
