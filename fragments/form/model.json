@@ -9,6 +9,7 @@
           "x-source": "inject",
           "x-form-label": "Form schema",
           "x-form-type": "textarea",
+          "x-form-group": "content",
           "x-form-hint": "JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>",
           "x-form-max": "16000"
         },
@@ -17,6 +18,7 @@
           "x-source": "inject",
           "x-form-label": "Form uischema",
           "x-form-type": "textarea",
+          "x-form-group": "content",
           "x-form-hint": "UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>",
           "x-form-max": "16000"
         },
@@ -25,6 +27,7 @@
           "x-source": "inject",
           "x-form-label": "Form submit endpoint URL",
           "x-form-type": "text",
+          "x-form-group": "content",
           "x-default": ""
         },
         "submitfunction": {
@@ -33,6 +36,7 @@
           "x-form-label": "Javascript function to call on submit",
           "x-form-hint": "Function must accept (model, formdata)",
           "x-form-type": "text",
+          "x-form-group": "content",
           "x-default": ""
         },
         "submittext": {
@@ -40,6 +44,7 @@
           "x-source": "inject",
           "x-form-label": "Submit Button Text",
           "x-form-type": "text",
+          "x-form-group": "content",
           "x-default": "Submit"
         },
         "submitsize": {
@@ -47,6 +52,7 @@
           "x-source": "inject",
           "x-form-label": "Submit button size",
           "x-form-type": "materialselect",
+          "x-form-group": "style",
           "x-default": "normal",
           "properties":{
             "section": {
@@ -72,6 +78,7 @@
           "x-source": "inject",
           "x-form-label": "Submit button alignment",
           "x-form-type": "materialselect",
+          "x-form-group": "style",
           "x-default": "start",
           "properties":{
             "start": {
@@ -93,6 +100,7 @@
           "x-source": "inject",
           "x-form-label": "Failure Message",
           "x-form-type": "text",
+          "x-form-group": "content",
           "x-default": "Error processing form"
         },
         "successpage": {
@@ -100,6 +108,7 @@
           "x-source": "inject",
           "x-form-type": "pathbrowser",
           "x-form-label": "Submit Success Page",
+          "x-form-group": "content",
           "x-form-browserRoot": "/content/themecleanflex/pages"
         },
         "bgref": {

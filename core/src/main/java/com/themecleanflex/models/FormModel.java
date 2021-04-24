@@ -26,6 +26,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Form schema",
           "x-form-type": "textarea",
+          "x-form-group": "content",
           "x-form-hint": "JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>",
           "x-form-max": "16000"
         },
@@ -34,6 +35,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Form uischema",
           "x-form-type": "textarea",
+          "x-form-group": "content",
           "x-form-hint": "UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>",
           "x-form-max": "16000"
         },
@@ -42,6 +44,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Form submit endpoint URL",
           "x-form-type": "text",
+          "x-form-group": "content",
           "x-default": ""
         },
         "submitfunction": {
@@ -50,6 +53,7 @@ import javax.inject.Named;
           "x-form-label": "Javascript function to call on submit",
           "x-form-hint": "Function must accept (model, formdata)",
           "x-form-type": "text",
+          "x-form-group": "content",
           "x-default": ""
         },
         "submittext": {
@@ -57,6 +61,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Submit Button Text",
           "x-form-type": "text",
+          "x-form-group": "content",
           "x-default": "Submit"
         },
         "submitsize": {
@@ -64,6 +69,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Submit button size",
           "x-form-type": "materialselect",
+          "x-form-group": "style",
           "x-default": "normal",
           "properties": {
             "section": {
@@ -89,6 +95,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Submit button alignment",
           "x-form-type": "materialselect",
+          "x-form-group": "style",
           "x-default": "start",
           "properties": {
             "start": {
@@ -110,6 +117,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Failure Message",
           "x-form-type": "text",
+          "x-form-group": "content",
           "x-default": "Error processing form"
         },
         "successpage": {
@@ -117,6 +125,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-type": "pathbrowser",
           "x-form-label": "Submit Success Page",
+          "x-form-group": "content",
           "x-form-browserRoot": "/content/themecleanflex/pages"
         },
         "bgref": {
@@ -416,45 +425,45 @@ public class FormModel extends AbstractComponent {
     public FormModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form schema","x-form-type":"textarea","x-form-hint":"JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>","x-form-max":"16000"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Form schema","x-form-type":"textarea","x-form-group":"content","x-form-hint":"JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>","x-form-max":"16000"} */
 	@Inject
 	private String schema;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Form uischema","x-form-type":"textarea","x-form-hint":"UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>","x-form-max":"16000"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Form uischema","x-form-type":"textarea","x-form-group":"content","x-form-hint":"UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>","x-form-max":"16000"} */
 	@Inject
 	private String uischema;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-default":""} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-form-group":"content","x-default":""} */
 	@Inject
 	@Default(values ="")
 	private String endpointurl;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-hint":"Function must accept (model, formdata)","x-form-type":"text","x-default":""} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-hint":"Function must accept (model, formdata)","x-form-type":"text","x-form-group":"content","x-default":""} */
 	@Inject
 	@Default(values ="")
 	private String submitfunction;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Submit Button Text","x-form-type":"text","x-default":"Submit"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit Button Text","x-form-type":"text","x-form-group":"content","x-default":"Submit"} */
 	@Inject
 	@Default(values ="Submit")
 	private String submittext;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Submit button size","x-form-type":"materialselect","x-default":"normal","properties":{"section":{"x-form-name":"normal","x-form-value":"normal"},"small":{"x-form-name":"small","x-form-value":"small"},"large":{"x-form-name":"large","x-form-value":"large"},"full":{"x-form-name":"full width","x-form-value":"full"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit button size","x-form-type":"materialselect","x-form-group":"style","x-default":"normal","properties":{"section":{"x-form-name":"normal","x-form-value":"normal"},"small":{"x-form-name":"small","x-form-value":"small"},"large":{"x-form-name":"large","x-form-value":"large"},"full":{"x-form-name":"full width","x-form-value":"full"}}} */
 	@Inject
 	@Default(values ="normal")
 	private String submitsize;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Submit button alignment","x-form-type":"materialselect","x-default":"start","properties":{"start":{"x-form-name":"start","x-form-value":"start"},"center":{"x-form-name":"center","x-form-value":"center"},"end":{"x-form-name":"end","x-form-value":"end"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit button alignment","x-form-type":"materialselect","x-form-group":"style","x-default":"start","properties":{"start":{"x-form-name":"start","x-form-value":"start"},"center":{"x-form-name":"center","x-form-value":"center"},"end":{"x-form-name":"end","x-form-value":"end"}}} */
 	@Inject
 	@Default(values ="start")
 	private String submitalignment;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-default":"Error processing form"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-form-group":"content","x-default":"Error processing form"} */
 	@Inject
 	@Default(values ="Error processing form")
 	private String failmessage;
 
-	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Submit Success Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Submit Success Page","x-form-group":"content","x-form-browserRoot":"/content/themecleanflex/pages"} */
 	@Inject
 	private String successpage;
 
@@ -559,47 +568,47 @@ public class FormModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form schema","x-form-type":"textarea","x-form-hint":"JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>","x-form-max":"16000"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Form schema","x-form-type":"textarea","x-form-group":"content","x-form-hint":"JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>","x-form-max":"16000"} */
 	public String getSchema() {
 		return schema;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Form uischema","x-form-type":"textarea","x-form-hint":"UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>","x-form-max":"16000"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Form uischema","x-form-type":"textarea","x-form-group":"content","x-form-hint":"UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>","x-form-max":"16000"} */
 	public String getUischema() {
 		return uischema;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-default":""} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-form-group":"content","x-default":""} */
 	public String getEndpointurl() {
 		return endpointurl;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-hint":"Function must accept (model, formdata)","x-form-type":"text","x-default":""} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-hint":"Function must accept (model, formdata)","x-form-type":"text","x-form-group":"content","x-default":""} */
 	public String getSubmitfunction() {
 		return submitfunction;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Submit Button Text","x-form-type":"text","x-default":"Submit"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit Button Text","x-form-type":"text","x-form-group":"content","x-default":"Submit"} */
 	public String getSubmittext() {
 		return submittext;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Submit button size","x-form-type":"materialselect","x-default":"normal","properties":{"section":{"x-form-name":"normal","x-form-value":"normal"},"small":{"x-form-name":"small","x-form-value":"small"},"large":{"x-form-name":"large","x-form-value":"large"},"full":{"x-form-name":"full width","x-form-value":"full"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit button size","x-form-type":"materialselect","x-form-group":"style","x-default":"normal","properties":{"section":{"x-form-name":"normal","x-form-value":"normal"},"small":{"x-form-name":"small","x-form-value":"small"},"large":{"x-form-name":"large","x-form-value":"large"},"full":{"x-form-name":"full width","x-form-value":"full"}}} */
 	public String getSubmitsize() {
 		return submitsize;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Submit button alignment","x-form-type":"materialselect","x-default":"start","properties":{"start":{"x-form-name":"start","x-form-value":"start"},"center":{"x-form-name":"center","x-form-value":"center"},"end":{"x-form-name":"end","x-form-value":"end"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Submit button alignment","x-form-type":"materialselect","x-form-group":"style","x-default":"start","properties":{"start":{"x-form-name":"start","x-form-value":"start"},"center":{"x-form-name":"center","x-form-value":"center"},"end":{"x-form-name":"end","x-form-value":"end"}}} */
 	public String getSubmitalignment() {
 		return submitalignment;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-default":"Error processing form"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-form-group":"content","x-default":"Error processing form"} */
 	public String getFailmessage() {
 		return failmessage;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Submit Success Page","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Submit Success Page","x-form-group":"content","x-form-browserRoot":"/content/themecleanflex/pages"} */
 	public String getSuccesspage() {
 		return successpage;
 	}

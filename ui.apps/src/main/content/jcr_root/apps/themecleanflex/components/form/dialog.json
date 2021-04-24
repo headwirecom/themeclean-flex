@@ -1,74 +1,120 @@
 {
   "groups": [
     {
-      "legend": "advanced",
+      "legend": "content",
       "fields": [
         {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "anchorname",
-          "label": "Anchor Name",
-          "model": "anchorname",
-          "x_form_group": "advanced"
+          "type": "material-textarea",
+          "rows": 10,
+          "max": "16000",
+          "placeholder": "schema",
+          "label": "Form schema",
+          "model": "schema",
+          "hint": "JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>",
+          "x_form_group": "content"
+        },
+        {
+          "type": "material-textarea",
+          "rows": 10,
+          "max": "16000",
+          "placeholder": "uischema",
+          "label": "Form uischema",
+          "model": "uischema",
+          "hint": "UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>",
+          "x_form_group": "content"
         },
         {
           "type": "input",
           "inputType": "text",
-          "placeholder": "extraclasses",
-          "label": "Additonal Classes",
-          "model": "extraclasses",
-          "x_form_group": "advanced"
-        },
-        {
-          "type": "material-select",
-          "values": [
-            {
-              "name": "section",
-              "value": "section"
-            },
-            {
-              "name": "article",
-              "value": "article"
-            },
-            {
-              "name": "main",
-              "value": "main"
-            },
-            {
-              "name": "div",
-              "value": "div"
-            },
-            {
-              "name": "header",
-              "value": "header"
-            },
-            {
-              "name": "nav",
-              "value": "nav"
-            },
-            {
-              "name": "footer",
-              "value": "footer"
-            }
-          ],
-          "placeholder": "htmlelement",
-          "label": "Semantic Element",
-          "model": "htmlelement",
-          "x_form_group": "advanced"
+          "placeholder": "endpointurl",
+          "label": "Form submit endpoint URL",
+          "model": "endpointurl",
+          "x_form_group": "content"
         },
         {
           "type": "input",
           "inputType": "text",
-          "placeholder": "contentname",
-          "label": "Content Name",
-          "model": "contentname",
-          "x_form_group": "advanced"
+          "placeholder": "submitfunction",
+          "label": "Javascript function to call on submit",
+          "model": "submitfunction",
+          "hint": "Function must accept (model, formdata)",
+          "x_form_group": "content"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "submittext",
+          "label": "Submit Button Text",
+          "model": "submittext",
+          "x_form_group": "content"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "failmessage",
+          "label": "Failure Message",
+          "model": "failmessage",
+          "x_form_group": "content"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/themecleanflex/pages",
+          "placeholder": "successpage",
+          "label": "Submit Success Page",
+          "model": "successpage",
+          "x_form_group": "content"
         }
       ]
     },
     {
       "legend": "style",
       "fields": [
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "normal",
+              "value": "normal"
+            },
+            {
+              "name": "small",
+              "value": "small"
+            },
+            {
+              "name": "large",
+              "value": "large"
+            },
+            {
+              "name": "full width",
+              "value": "full"
+            }
+          ],
+          "placeholder": "submitsize",
+          "label": "Submit button size",
+          "model": "submitsize",
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "start",
+              "value": "start"
+            },
+            {
+              "name": "center",
+              "value": "center"
+            },
+            {
+              "name": "end",
+              "value": "end"
+            }
+          ],
+          "placeholder": "submitalignment",
+          "label": "Submit button alignment",
+          "model": "submitalignment",
+          "x_form_group": "style"
+        },
         {
           "type": "material-radios",
           "values": [
@@ -275,106 +321,72 @@
           "x_form_group": "style"
         }
       ]
-    }
-  ],
-  "fields": [
-    {
-      "type": "material-textarea",
-      "rows": 10,
-      "max": "16000",
-      "placeholder": "schema",
-      "label": "Form schema",
-      "model": "schema",
-      "hint": "JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>"
     },
     {
-      "type": "material-textarea",
-      "rows": 10,
-      "max": "16000",
-      "placeholder": "uischema",
-      "label": "Form uischema",
-      "model": "uischema",
-      "hint": "UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "endpointurl",
-      "label": "Form submit endpoint URL",
-      "model": "endpointurl"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "submitfunction",
-      "label": "Javascript function to call on submit",
-      "model": "submitfunction",
-      "hint": "Function must accept (model, formdata)"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "submittext",
-      "label": "Submit Button Text",
-      "model": "submittext"
-    },
-    {
-      "type": "material-select",
-      "values": [
+      "legend": "advanced",
+      "fields": [
         {
-          "name": "normal",
-          "value": "normal"
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "anchorname",
+          "label": "Anchor Name",
+          "model": "anchorname",
+          "x_form_group": "advanced"
         },
         {
-          "name": "small",
-          "value": "small"
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "extraclasses",
+          "label": "Additonal Classes",
+          "model": "extraclasses",
+          "x_form_group": "advanced"
         },
         {
-          "name": "large",
-          "value": "large"
+          "type": "material-select",
+          "values": [
+            {
+              "name": "section",
+              "value": "section"
+            },
+            {
+              "name": "article",
+              "value": "article"
+            },
+            {
+              "name": "main",
+              "value": "main"
+            },
+            {
+              "name": "div",
+              "value": "div"
+            },
+            {
+              "name": "header",
+              "value": "header"
+            },
+            {
+              "name": "nav",
+              "value": "nav"
+            },
+            {
+              "name": "footer",
+              "value": "footer"
+            }
+          ],
+          "placeholder": "htmlelement",
+          "label": "Semantic Element",
+          "model": "htmlelement",
+          "x_form_group": "advanced"
         },
         {
-          "name": "full width",
-          "value": "full"
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "contentname",
+          "label": "Content Name",
+          "model": "contentname",
+          "x_form_group": "advanced"
         }
-      ],
-      "placeholder": "submitsize",
-      "label": "Submit button size",
-      "model": "submitsize"
-    },
-    {
-      "type": "material-select",
-      "values": [
-        {
-          "name": "start",
-          "value": "start"
-        },
-        {
-          "name": "center",
-          "value": "center"
-        },
-        {
-          "name": "end",
-          "value": "end"
-        }
-      ],
-      "placeholder": "submitalignment",
-      "label": "Submit button alignment",
-      "model": "submitalignment"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "failmessage",
-      "label": "Failure Message",
-      "model": "failmessage"
-    },
-    {
-      "type": "pathbrowser",
-      "browserRoot": "/content/themecleanflex/pages",
-      "placeholder": "successpage",
-      "label": "Submit Success Page",
-      "model": "successpage"
+      ]
     }
   ]
 }

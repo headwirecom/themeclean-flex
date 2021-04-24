@@ -46,6 +46,5 @@ module.exports = {
     f.bindAttribute(jsonForms, 'renderers', 'renderers');
     f.bindEvent(jsonForms, 'change', 'onChange');
 
-    f.bindPath($);
   }
 };

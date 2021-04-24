@@ -1,6 +1,6 @@
 <template>
   <themecleanflex-components-block v-if="isReady" v-bind:model="model">
-    <div class="w-full" v-bind:data-per-path="model.path">
+    <div class="w-full">
       <div class="text-black p-2 rounded-r mt-4 border-l-4 shadow-md note-important"
       v-if="( failureText || schemaError )">
         <p class="ml-2" v-if="failureText">{{failureText}}</p>
