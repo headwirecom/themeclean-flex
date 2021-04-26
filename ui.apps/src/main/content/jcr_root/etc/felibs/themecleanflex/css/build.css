@@ -467,6 +467,10 @@ button,
   cursor: pointer;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 h1,
 h2,
 h3,
@@ -570,6 +574,8 @@ video {
     max-width: 1280px;
   }
 }
+
+@tailwind perflight;
 
 .bg-white {
   --bg-opacity: 1;
@@ -675,6 +681,11 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-r {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -713,6 +724,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .hidden {
@@ -815,6 +830,10 @@ video {
   height: 100%;
 }
 
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+
 .text-lg {
   font-size: var(--font-size-lg);
 }
@@ -903,12 +922,24 @@ video {
   margin-top: var(--spacing-0);
 }
 
+.mt-1 {
+  margin-top: var(--spacing-1);
+}
+
 .mb-1 {
   margin-bottom: var(--spacing-1);
 }
 
+.ml-1 {
+  margin-left: var(--spacing-1);
+}
+
 .mr-2 {
   margin-right: var(--spacing-2);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-2);
 }
 
 .ml-2 {
@@ -923,8 +954,16 @@ video {
   margin-bottom: var(--spacing-3);
 }
 
+.mt-4 {
+  margin-top: var(--spacing-4);
+}
+
 .mr-4 {
   margin-right: var(--spacing-4);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-4);
 }
 
 .mb-6 {
@@ -963,6 +1002,10 @@ video {
   opacity: 1;
 }
 
+.focus\:outline-none:focus {
+  outline: 0;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -971,8 +1014,28 @@ video {
   overflow-x: auto;
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 .p-0 {
   padding: var(--spacing-0);
+}
+
+.p-1 {
+  padding: var(--spacing-1);
+}
+
+.p-2 {
+  padding: var(--spacing-2);
 }
 
 .p-3 {
@@ -1009,6 +1072,11 @@ video {
 .py-3 {
   padding-top: var(--spacing-3);
   padding-bottom: var(--spacing-3);
+}
+
+.px-3 {
+  padding-left: var(--spacing-3);
+  padding-right: var(--spacing-3);
 }
 
 .px-4 {
@@ -1152,6 +1220,10 @@ video {
   color: var(--color-green-600);
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .no-underline {
   text-decoration: none;
 }
@@ -1160,12 +1232,32 @@ video {
   text-decoration: underline;
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
 .visible {
   visibility: visible;
 }
 
 .invisible {
   visibility: hidden;
+}
+
+.w-24 {
+  width: 24px;
+}
+
+.w-48 {
+  width: 48px;
 }
 
 .w-auto {
@@ -1324,7 +1416,9 @@ video {
 
 /* Base Overrides */
 
-html {
+html,
+textarea,
+select {
   font-family: var(--font-sans);
   font-size: var(--font-size-base);
 }
@@ -1730,6 +1824,89 @@ p {
   border-radius: 9999px;
 }
 
+/* form */
+
+[class$="components-form"] fieldset{
+  padding: 0;
+  margin: 0;
+}
+
+[class$="components-form"] legend {
+  font-size: 20px;
+}
+
+.vue-form-generator .field-label span {
+  margin-left: 0;
+}
+
+.vue-form-generator .field-checkbox input {
+  margin-right: 5px;
+  margin-left: 1px;
+}
+
+[class$="components-form"] .field-checkbox {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+[class$="components-form"] .normal-button input[type="submit"]{
+  width: min-content;
+}
+
+[class$="components-form"] .lg-button input[type="submit"]{
+  width: min-content;
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
+  padding-left: var(--spacing-5);
+  padding-right: var(--spacing-5);
+  font-size: var(--font-size-lg)
+}
+
+[class$="components-form"] .sm-button input[type="submit"]{
+  width: min-content;
+  padding-top: var(--spacing-2);
+  padding-bottom: var(--spacing-2);
+  padding-left: var(--spacing-2);
+  padding-right: var(--spacing-2);
+  font-size: var(--font-size-sm)
+}
+
+[class$="components-form"] .full-button input[type="submit"]{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+[class$="components-form"] .justify-button-start{
+  align-items: flex-start;
+}
+
+[class$="components-form"] .justify-button-start .field-submit > div{
+  justify-content: flex-start;
+}
+
+[class$="components-form"] .justify-button-center{
+  align-items: center;
+}
+
+[class$="components-form"] .justify-button-center .field-submit > div{
+  justify-content: center;
+}
+
+[class$="components-form"] .justify-button-end{
+  align-items: flex-end;
+}
+
+[class$="components-form"] .justify-button-end .field-submit > div{
+  justify-content: flex-end;
+}
+
+[class$="components-form"] .error {
+  color: var(--color-red-500) !important;
+}
+
 /* purgecss end ignore */
 
 @media (min-width: 640px) {
@@ -1737,6 +1914,10 @@ p {
   .sm\:mx-3 {
     margin-left: var(--spacing-3);
     margin-right: var(--spacing-3);
+  }
+
+  .sm\:p-2 {
+    padding: var(--spacing-2);
   }
 
   .sm\:px-0 {
@@ -1875,12 +2056,20 @@ p {
     flex-direction: row-reverse;
   }
 
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .md\:justify-start {
     justify-content: flex-start;
   }
 
   .md\:justify-end {
     justify-content: flex-end;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:flex-grow-0 {
@@ -1898,6 +2087,10 @@ p {
 
   .md\:mb-0 {
     margin-bottom: var(--spacing-0);
+  }
+
+  .md\:p-4 {
+    padding: var(--spacing-4);
   }
 
   .md\:px-3 {

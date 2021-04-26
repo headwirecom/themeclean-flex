@@ -1,0 +1,7 @@
+{
+  "title": "Form",
+  "group": "Features",
+  "model": {
+    "schema": "\\{\n  \"type\": \"object\",\n  \"properties\": {\n    \"name\": {\n      \"type\": \"string\",\n      \"description\": \"Your Name\"\n    }\n  },\n  \"required\": [\"name\"]\n}"
+  }
+}
