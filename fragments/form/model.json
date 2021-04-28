@@ -4,6 +4,14 @@
       "type": "object",
       "x-type": "component",
       "properties": {
+        "objectdefinitionreference": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Object Definition Reference",
+          "x-form-type": "objectdefinitionreference",
+          "x-form-group": "content",
+          "x-form-hint": "Object Definition Reference"
+        },
         "schema": {
           "type": "string",
           "x-source": "inject",
@@ -54,7 +62,7 @@
           "x-form-type": "materialselect",
           "x-form-group": "style",
           "x-default": "normal",
-          "properties":{
+          "properties": {
             "section": {
               "x-form-name": "normal",
               "x-form-value": "normal"
@@ -80,7 +88,7 @@
           "x-form-type": "materialselect",
           "x-form-group": "style",
           "x-default": "start",
-          "properties":{
+          "properties": {
             "start": {
               "x-form-name": "start",
               "x-form-value": "start"

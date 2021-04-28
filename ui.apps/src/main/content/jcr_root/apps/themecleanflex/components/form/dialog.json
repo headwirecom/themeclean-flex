@@ -4,6 +4,14 @@
       "legend": "content",
       "fields": [
         {
+          "type": "object-definition-reference",
+          "placeholder": "reference",
+          "label": "Object Definition Reference",
+          "model": "objectdefinitionreference",
+          "hint": "Object Definition Reference",
+          "x_form_group": "content"
+        },
+        {
           "type": "material-textarea",
           "rows": 10,
           "max": "16000",

@@ -21,6 +21,14 @@ import javax.inject.Named;
       "type": "object",
       "x-type": "component",
       "properties": {
+        "objectdefinitionreference": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Object Definition Reference",
+          "x-form-type": "objectdefinitionreference",
+          "x-form-group": "content",
+          "x-form-hint": "Object Definition Reference"
+        },
         "schema": {
           "type": "string",
           "x-source": "inject",
@@ -425,7 +433,11 @@ public class FormModel extends AbstractComponent {
     public FormModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form schema","x-form-type":"textarea","x-form-group":"content","x-form-hint":"JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>","x-form-max":"16000"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Object Definition Reference","x-form-type":"objectdefinitionreference","x-form-group":"content","x-form-hint":"Object Definition Reference"} */
+	@Inject
+	private String objectdefinitionreference;
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Form schema","x-form-type":"textarea","x-form-group":"content","x-form-hint":"JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>","x-form-max":"16000"} */
 	@Inject
 	private String schema;
 
@@ -568,7 +580,12 @@ public class FormModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form schema","x-form-type":"textarea","x-form-group":"content","x-form-hint":"JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>","x-form-max":"16000"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Object Definition Reference","x-form-type":"objectdefinitionreference","x-form-group":"content","x-form-hint":"Object Definition Reference"} */
+	public String getObjectdefinitionreference() {
+		return objectdefinitionreference;
+	}
+
+	/* {"type":"string","x-source":"inject","x-form-label":"Form schema","x-form-type":"textarea","x-form-group":"content","x-form-hint":"JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>","x-form-max":"16000"} */
 	public String getSchema() {
 		return schema;
 	}
