@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "description": "First Name"
+    },
+    "surname": {
+      "type": "string",
+      "description": "Last Name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email"
+    },
+    "text": {
+      "type": "string",
+      "multi": true,
+      "description": "Enter text here"
+    }
+  },
+  "required": [
+    "email",
+    "text"
+  ]
+}

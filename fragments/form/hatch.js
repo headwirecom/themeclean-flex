@@ -4,15 +4,16 @@ module.exports = {
     f.addIf($.parent(), 'isReady');
     f.bindAttribute($.parent(), 'model', 'model');
 
-    const failureP = $.find('p').eq(0);
-    f.mapField(failureP, 'failureText', false);
-    f.addIf(failureP, 'failureText');
-    const schemaErrorP = $.find('p').eq(1);
+    const messageContainer = $.find('div').eq(0);
+    f.addIf(messageContainer, '( schemaError || uischemaError )');
+
+    const schemaErrorP = $.find('p').eq(0);
     f.mapField(schemaErrorP, 'schemaError', false);
     f.addIf(schemaErrorP, 'schemaError');
 
-    const messageContainer = $.find('div').eq(0);
-    f.addIf(messageContainer, '( failureText || schemaError )');
+    const uischemaErrorP = $.find('p').eq(1);
+    f.mapField(uischemaErrorP, 'uischemaError', false);
+    f.addIf(uischemaErrorP, 'uischemaError');
 
     const submit = $.find('input').first();
     f.bindAttribute(submit, 'value', 'model.submittext');
