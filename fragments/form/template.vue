@@ -2,9 +2,9 @@
   <themecleanflex-components-block v-if="isReady" v-bind:model="model">
     <div class="w-full">
       <div class="text-black p-2 rounded-r mt-4 border-l-4 shadow-md note-important"
-      v-if="( failureText || schemaError )">
-        <p class="ml-2" v-if="failureText">{{failureText}}</p>
+      v-if="( schemaError || uischemaError )">
         <p class="ml-2" v-if="schemaError">{{schemaError}}</p>
+        <p class="ml-2" v-if="uischemaError">{{uischemaError}}</p>
       </div>
       <form class="w-full flex flex-col md:p-4 sm:p-2" v-bind:class="{
             'justify-button-start': model.submitalignment === 'start',
@@ -37,27 +37,17 @@ export default {
     return {
       form: {},
       failureText: '',
-      renderers: Object.freeze(renderers)
+      schema: {},
+      uischema: {},
+      renderers: Object.freeze(renderers),
+      schemaError: null,
+      uischemaError: null,
     };
   },
   computed: {
     isReady() {
       const { Vue, VueCompositionAPI, JSONFormsCore, JSONFormsVue2, JSONFormsVue2Vanilla } = window;
       return Vue && VueCompositionAPI && JSONFormsCore && JSONFormsVue2 && JSONFormsVue2Vanilla;
-    },
-    schema() {
-      try {
-        return JSON.parse(this.model.schema);
-      } catch (error) {
-        return null;
-      }
-    },
-    uischema() {
-      try {
-        return JSON.parse(this.model.uischema);
-      } catch (error) {
-        return null;
-      }
     },
     jsonFormsKey() {
       const { sha256 } = window;
@@ -67,14 +57,6 @@ export default {
       } else {
         return str;
       }
-    },
-    schemaError() {
-      try {
-        JSON.parse(this.model.schema);
-      } catch (error) {
-        return 'Error parsing form model: ' + error;
-      }
-      return '';
     }
   },
   watch: {
@@ -86,6 +68,14 @@ export default {
     },
     form() {
       this.applyMissingButtonTypeWorkaround();
+    },
+    model: {
+      deep: true,
+      immediate: true,
+      handler() {
+        this.updateSchema();
+        this.updateUischema();
+      }
     }
   },
   beforeCreate() {
@@ -150,14 +140,28 @@ export default {
       this.$refs.jsonForms.$el
           .querySelectorAll('button:not([type="button"])')
           .forEach((button) => {
-            button.setAttribute('type', 'button')
-          })
+            button.setAttribute('type', 'button');
+          });
+    },
+    updateSchema() {
+      if (this.model.schema) {
+        axios.get(this.$helper.pathToUrl(this.model.schema))
+            .then(({ data }) => this.schema = data)
+            .catch(({message}) => this.schemaError = message);
+      }
+    },
+    updateUischema() {
+      if (this.model.uischema) {
+        axios.get(this.$helper.pathToUrl(this.model.uischema))
+            .then(({ data }) => this.uischema = data)
+            .catch(({message}) => this.uischemaError = message);
+      }
     }
   },
   provide() {
     const { defaultStyles, mergeStyles } = JSONFormsVue2Vanilla;
     const formControlStyles = 'border py-2 px-3';
-    const btnStyles = 'focus:outline-none text-sm py-2.5 px-5 rounded-full border'
+    const btnStyles = 'focus:outline-none text-sm py-2.5 px-5 rounded-full border';
     const customStyles = {
       verticalLayout: {
         item: 'flex flex-col mb-4 w-full',

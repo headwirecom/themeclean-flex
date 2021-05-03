@@ -24,20 +24,18 @@ import javax.inject.Named;
         "schema": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Form schema",
-          "x-form-type": "textarea",
+          "x-form-label": "Schema",
+          "x-form-type": "object-definition-reference",
           "x-form-group": "content",
-          "x-form-hint": "JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>",
-          "x-form-max": "16000"
+          "x-form-hint": "object definition containing the json-forms-schema"
         },
         "uischema": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Form uischema",
-          "x-form-type": "textarea",
+          "x-form-label": "UI-Schema",
+          "x-form-type": "object-definition-reference",
           "x-form-group": "content",
-          "x-form-hint": "UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>",
-          "x-form-max": "16000"
+          "x-form-hint": "object definition containing the json-forms-uischema"
         },
         "endpointurl": {
           "type": "string",
@@ -425,11 +423,11 @@ public class FormModel extends AbstractComponent {
     public FormModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form schema","x-form-type":"textarea","x-form-group":"content","x-form-hint":"JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>","x-form-max":"16000"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Schema","x-form-type":"object-definition-reference","x-form-group":"content","x-form-hint":"object definition containing the json-forms-schema"} */
 	@Inject
 	private String schema;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Form uischema","x-form-type":"textarea","x-form-group":"content","x-form-hint":"UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>","x-form-max":"16000"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"UI-Schema","x-form-type":"object-definition-reference","x-form-group":"content","x-form-hint":"object definition containing the json-forms-uischema"} */
 	@Inject
 	private String uischema;
 
@@ -568,12 +566,12 @@ public class FormModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Form schema","x-form-type":"textarea","x-form-group":"content","x-form-hint":"JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>","x-form-max":"16000"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Schema","x-form-type":"object-definition-reference","x-form-group":"content","x-form-hint":"object definition containing the json-forms-schema"} */
 	public String getSchema() {
 		return schema;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Form uischema","x-form-type":"textarea","x-form-group":"content","x-form-hint":"UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>","x-form-max":"16000"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"UI-Schema","x-form-type":"object-definition-reference","x-form-group":"content","x-form-hint":"object definition containing the json-forms-uischema"} */
 	public String getUischema() {
 		return uischema;
 	}

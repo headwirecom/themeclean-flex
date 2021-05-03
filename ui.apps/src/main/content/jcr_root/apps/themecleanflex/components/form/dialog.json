@@ -4,23 +4,19 @@
       "legend": "content",
       "fields": [
         {
-          "type": "material-textarea",
-          "rows": 10,
-          "max": "16000",
+          "type": "object-definition-reference",
           "placeholder": "schema",
-          "label": "Form schema",
+          "label": "Schema",
           "model": "schema",
-          "hint": "JSON Schema passed to json-forms.\nSee <a href='https://json-schema.org/learn/' target='_blank'>JSON Scehma</a>",
+          "hint": "object definition containing the json-forms-schema",
           "x_form_group": "content"
         },
         {
-          "type": "material-textarea",
-          "rows": 10,
-          "max": "16000",
+          "type": "object-definition-reference",
           "placeholder": "uischema",
-          "label": "Form uischema",
+          "label": "UI-Schema",
           "model": "uischema",
-          "hint": "UI-Schema passed to json-forms.\nIf you are unsure what this is or want to keep your form simple just leave it blank.\nSee <a href='https://jsonforms.io/docs/uischema' target='_blank'>jsonforms ui-schema</a>",
+          "hint": "object definition containing the json-forms-uischema",
           "x_form_group": "content"
         },
         {
