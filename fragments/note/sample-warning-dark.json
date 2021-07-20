@@ -1,11 +1,11 @@
 {
-  "title": "Note - Warning Dark",
-  "group": ".hidden",
-  "model": {
-    "text": "<p>warning</p>",
-    "notetype": "warning",
-    "colorscheme": "dark",
-    "toppadding": "30",
-    "bottompadding": "30"
-  }
+	"title": "Note - Warning Dark",
+	"group": ".hidden",
+	"model": {
+		"text": "<p>warning</p>",
+		"notetype": "warning",
+		"colorscheme": "dark",
+		"toppadding": "30",
+		"bottompadding": "30"
+	}
 }

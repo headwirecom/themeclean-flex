@@ -1,17 +1,16 @@
 package com.themecleanflex.models;
 
 import com.peregrine.nodetypes.models.AbstractComponent;
-import com.peregrine.nodetypes.models.IComponent;
 import com.peregrine.nodetypes.models.Container;
+import com.peregrine.nodetypes.models.IComponent;
+import java.util.List;
+import javax.inject.Inject;
+import javax.inject.Named;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
-import java.util.List;
-
-import javax.inject.Inject;
-import javax.inject.Named;
 
 /*
     //GEN[:DATA
@@ -407,23 +406,21 @@ import javax.inject.Named;
 
 //GEN[:DEF
 @Model(
-        adaptables = Resource.class,
-        resourceType = "themecleanflex/components/form",
-        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
-        adapters = IComponent.class
+	adaptables = Resource.class,
+	resourceType = "themecleanflex/components/form",
+	defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
+	adapters = IComponent.class
 )
-@Exporter(
-        name = "jackson",
-        extensions = "json"
-)
-
+@Exporter(name = "jackson", extensions = "json")
 //GEN]
 public class FormModel extends AbstractComponent {
 
-    public FormModel(Resource r) { super(r); }
+	public FormModel(Resource r) {
+		super(r);
+	}
 
-    //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Schema","x-form-type":"object-definition-reference","x-form-group":"content","x-form-hint":"object definition containing the json-forms-schema"} */
+	//GEN[:INJECT
+	/* {"type":"string","x-source":"inject","x-form-label":"Schema","x-form-type":"object-definition-reference","x-form-group":"content","x-form-hint":"object definition containing the json-forms-schema"} */
 	@Inject
 	private String schema;
 
@@ -433,32 +430,32 @@ public class FormModel extends AbstractComponent {
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Form submit endpoint URL","x-form-type":"text","x-form-group":"content","x-default":""} */
 	@Inject
-	@Default(values ="")
+	@Default(values = "")
 	private String endpointurl;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call on submit","x-form-hint":"Function must accept (model, formdata)","x-form-type":"text","x-form-group":"content","x-default":""} */
 	@Inject
-	@Default(values ="")
+	@Default(values = "")
 	private String submitfunction;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Submit Button Text","x-form-type":"text","x-form-group":"content","x-default":"Submit"} */
 	@Inject
-	@Default(values ="Submit")
+	@Default(values = "Submit")
 	private String submittext;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Submit button size","x-form-type":"materialselect","x-form-group":"style","x-default":"normal","properties":{"section":{"x-form-name":"normal","x-form-value":"normal"},"small":{"x-form-name":"small","x-form-value":"small"},"large":{"x-form-name":"large","x-form-value":"large"},"full":{"x-form-name":"full width","x-form-value":"full"}}} */
 	@Inject
-	@Default(values ="normal")
+	@Default(values = "normal")
 	private String submitsize;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Submit button alignment","x-form-type":"materialselect","x-form-group":"style","x-default":"start","properties":{"start":{"x-form-name":"start","x-form-value":"start"},"center":{"x-form-name":"center","x-form-value":"center"},"end":{"x-form-name":"end","x-form-value":"end"}}} */
 	@Inject
-	@Default(values ="start")
+	@Default(values = "start")
 	private String submitalignment;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Failure Message","x-form-type":"text","x-form-group":"content","x-default":"Error processing form"} */
 	@Inject
-	@Default(values ="Error processing form")
+	@Default(values = "Error processing form")
 	private String failmessage;
 
 	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Submit Success Page","x-form-group":"content","x-form-browserRoot":"/content/themecleanflex/pages"} */
@@ -475,17 +472,17 @@ public class FormModel extends AbstractComponent {
 
 	/* {"type":"string","x-form-group":"advanced","x-source":"inject","x-form-label":"Semantic Element","x-form-type":"materialselect","x-default":"section","properties":{"section":{"x-form-name":"section","x-form-value":"section"},"article":{"x-form-name":"article","x-form-value":"article"},"main":{"x-form-name":"main","x-form-value":"main"},"div":{"x-form-name":"div","x-form-value":"div"},"header":{"x-form-name":"header","x-form-value":"header"},"nav":{"x-form-name":"nav","x-form-value":"nav"},"footer":{"x-form-name":"footer","x-form-value":"footer"}}} */
 	@Inject
-	@Default(values ="section")
+	@Default(values = "section")
 	private String htmlelement;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Block Color Scheme","x-form-type":"materialradio","x-form-group":"style","x-default":"","properties":{"none":{"x-form-name":"None","x-form-value":""},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}} */
 	@Inject
-	@Default(values ="")
+	@Default(values = "")
 	private String colorscheme;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Custom Background","x-form-group":"style","x-form-type":"materialswitch","x-default":"false"} */
 	@Inject
-	@Default(values ="false")
+	@Default(values = "false")
 	private String custombackground;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Background Type","x-form-group":"style","x-form-type":"materialradio","x-form-visible":"model.custombackground == 'true'","properties":{"color":{"x-form-name":"Color","x-form-value":"color"},"gradient":{"x-form-name":"Gradient","x-form-value":"gradient"},"image":{"x-form-name":"Image","x-form-value":"image"},"video":{"x-form-name":"Video","x-form-value":"video"}}} */
@@ -494,7 +491,7 @@ public class FormModel extends AbstractComponent {
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Background Video","x-form-group":"style","x-form-type":"pathbrowser","x-form-visible":"model.backgroundtype == 'video' and model.custombackground == 'true'","x-default":"https://www.youtube.com/embed/Ju86mknumYM","x-form-browserRoot":"/content/themecleanflex/assets"} */
 	@Inject
-	@Default(values ="https://www.youtube.com/embed/Ju86mknumYM")
+	@Default(values = "https://www.youtube.com/embed/Ju86mknumYM")
 	private String bgvideo;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Background Image","x-form-type":"pathbrowser","x-form-group":"style","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-form-browserRoot":"/content/themecleanflex/assets"} */
@@ -503,17 +500,17 @@ public class FormModel extends AbstractComponent {
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Background X Position","x-form-type":"materialrange","x-form-group":"style","x-form-min":0,"x-form-max":100,"x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-default":"50"} */
 	@Inject
-	@Default(values ="50")
+	@Default(values = "50")
 	private String bgxposition;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Background Y Position","x-form-group":"style","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'","x-default":"50"} */
 	@Inject
-	@Default(values ="50")
+	@Default(values = "50")
 	private String bgyposition;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Background Size Style","x-form-type":"text","x-form-group":"style","x-default":"cover"} */
 	@Inject
-	@Default(values ="cover")
+	@Default(values = "cover")
 	private String bgsize;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Overlay","x-form-type":"materialswitch","x-form-group":"style","x-form-visible":"model.backgroundtype == 'image' and model.custombackground == 'true'"} */
@@ -522,32 +519,32 @@ public class FormModel extends AbstractComponent {
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Overlay Color","x-form-group":"style","x-form-type":"color","x-form-visible":"model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'","x-default":"#ffffff"} */
 	@Inject
-	@Default(values ="#ffffff")
+	@Default(values = "#ffffff")
 	private String overlaycolor;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Overlay opacity","x-form-group":"style","x-form-type":"materialrange","x-form-min":0,"x-form-max":100,"x-form-visible":"model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'","x-default":"50"} */
 	@Inject
-	@Default(values ="50")
+	@Default(values = "50")
 	private String overlayopacity;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Background Color","x-form-group":"style","x-form-type":"color","x-form-visible":"(model.backgroundtype == 'color' or model.backgroundtype == 'gradient') and model.custombackground == 'true'","x-default":"#ffffff"} */
 	@Inject
-	@Default(values ="#ffffff")
+	@Default(values = "#ffffff")
 	private String bgcolor;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Color 2","x-form-group":"style","x-form-type":"color","x-form-visible":"model.backgroundtype == 'gradient' and model.custombackground == 'true'","x-default":"#c0c0c0"} */
 	@Inject
-	@Default(values ="#c0c0c0")
+	@Default(values = "#c0c0c0")
 	private String color2;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Block Width","x-form-type":"materialradio","x-form-group":"style","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"full":{"x-form-name":"Full Width","x-form-value":"full"},"article":{"x-form-name":"Article Width","x-form-value":"article"}}} */
 	@Inject
-	@Default(values ="default")
+	@Default(values = "default")
 	private String blockwidth;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Full Height","x-form-type":"materialswitch","x-form-group":"style","x-default":"false"} */
 	@Inject
-	@Default(values ="false")
+	@Default(values = "false")
 	private String fullheight;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Top Padding","x-form-type":"materialrange","x-form-min":0,"x-form-max":300,"x-form-group":"style","x-form-visible":"model.fullheight != 'true'"} */
@@ -562,11 +559,10 @@ public class FormModel extends AbstractComponent {
 	@Inject
 	private String contentname;
 
+	//GEN]
 
-//GEN]
-
-    //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Schema","x-form-type":"object-definition-reference","x-form-group":"content","x-form-hint":"object definition containing the json-forms-schema"} */
+	//GEN[:GETTERS
+	/* {"type":"string","x-source":"inject","x-form-label":"Schema","x-form-type":"object-definition-reference","x-form-group":"content","x-form-hint":"object definition containing the json-forms-schema"} */
 	public String getSchema() {
 		return schema;
 	}
@@ -715,11 +711,9 @@ public class FormModel extends AbstractComponent {
 	public String getContentname() {
 		return contentname;
 	}
+	//GEN]
 
-
-//GEN]
-
-    //GEN[:CUSTOMGETTERS
-    //GEN]
+	//GEN[:CUSTOMGETTERS
+	//GEN]
 
 }

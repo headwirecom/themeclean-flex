@@ -1,8 +1,8 @@
 {
-  "title": "Form",
-  "group": "Features",
-  "model": {
-    "schema": "",
-    "uischema": ""
-  }
+	"title": "Form",
+	"group": "Features",
+	"model": {
+		"schema": "",
+		"uischema": ""
+	}
 }

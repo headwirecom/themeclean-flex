@@ -1,9 +1,9 @@
 {
-  "title": "Note - Example",
-  "group": "Text Components",
-  "model": {
-    "text": "<p>Here is some example note text default style</p>",
-    "toppadding": "30",
-    "bottompadding": "30"
-  }
+	"title": "Note - Example",
+	"group": "Text Components",
+	"model": {
+		"text": "<p>Here is some example note text default style</p>",
+		"toppadding": "30",
+		"bottompadding": "30"
+	}
 }

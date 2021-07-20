@@ -46,20 +46,23 @@ Create a new page and add the Form - Contact sample component. This component ha
     ]}
 
 Edit the component configuration and update the following:
-- Endpoint URL: *url you would like to post to*
-- Failure Message: "Error processing form"
-- Success Page: *path to page when form submits successfully*
+
+-   Endpoint URL: _url you would like to post to_
+-   Failure Message: "Error processing form"
+-   Success Page: _path to page when form submits successfully_
 
 Now the form will attempt to do an AJAX post to the endpoint URL. If you put an invalid URL, you can see that the failure message will show up when the form attempts to submit. If the submission is successful (the POST request gets a 200 OK HTTP status), then peregrine will forward the user to the configured success page.
 
 ### Form Javascript Events
 
 #### form-clear
-The form component has an event listener for the 
+
+The form component has an event listener for the
 
 ### Form Component Configuration
 
 #### Form Model
+
 The Form Model takes a Vue Form Generator JSON configuration. For an example and a list of the configuration options for each type of field see the [Vue Form Generator fields documentation](https://vue-generators.gitbook.io/vue-generators/fields)
 
 Here is an example form with a single field called name:
@@ -79,13 +82,16 @@ Here is an example form with a single field called name:
     ]}
 
 #### Form Submit Endpoint URL
+
 The form will do an ajax POST with the form data to this URL. If the response is successful, it will forward the user to the configured Submit Success Page.
 
 #### Javascript Function to Call on Submit
-Instead of the default POST behaviour, the user can configure a custom function to be called instead. This function can be part of any object as long as it can be accessed through the javascript window object. 
+
+Instead of the default POST behaviour, the user can configure a custom function to be called instead. This function can be part of any object as long as it can be accessed through the javascript window object.
 It will be passed two parameters:
-- model - the Vue object model with the component configuration
-- formData - an object containing the form data
+
+-   model - the Vue object model with the component configuration
+-   formData - an object containing the form data
 
 #### Submit Button Text
 

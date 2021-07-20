@@ -1,186 +1,220 @@
 /* purple rain palette */
 
 #peregrine-app {
-    --color-accent-1-900: #62319E;
-    --color-accent-1-800: #6F309A;
-    --color-accent-1-700: #7C2E96;
-    --color-accent-1-600: #882D92;
-    --color-accent-1-500: #A72B95;
-    --color-accent-1-400: #BB2881;
-    --color-accent-1-300: #D02261;
-    --color-accent-1-200: #DC5EBE;
-    --color-accent-1-100: #DEA1E9;
-    --color-accent-1-50: #EFEAF5;
-  
-    --color-accent-2-100: #ffffff;
-    --color-accent-2-200: #f8f8f8;
-  
-    --dawn-gradient-1: linear-gradient(20deg, var(--color-accent-1-600) 0%, transparent 100%) var(--color-accent-1-300);
-    --dawn-gradient-1-hover: linear-gradient(20deg, var(--color-accent-1-600) 0%, transparent 100%) var(--color-accent-1-600);
-  
-    --bg-primary: var(--color-accent-2-100);
-    --bg-secondary: var(--color-accent-2-200);
-    --border-primary-color: rgba(66, 67, 68, 0.2);
-  
-    --link-primary-color: var(--color-accent-1-500);
-    --link-primary-color-hover: var(--color-accent-1-800);
-  
-    --focus-border-color: var(--color-accent-1-500);
-  
-    --btn-color: #ffffff;
-    --btn-bg: var(--dawn-gradient-1);
-    --btn-hover-color: #ffffff;
-    --btn-hover-bg: var(--dawn-gradient-1-hover);
-    --btn-focus-color: #ffffff;
-    --btn-focus-bg: var(--btn-hover-bg);
-    --btn-focus-border-color: var(--color-accent-1-300);
-  
-    --btn-secondary-color: var(--color-accent-1-900);
-    --btn-secondary-bg: var(--color-accent-1-50);
-    --btn-secondary-border-width: 0;
-    --btn-secondary-border-color: transparent;
-    --btn-secondary-hover-color: var(--color-accent-1-50);
-    --btn-secondary-hover-bg: var(--color-accent-1-900);
-    --btn-secondary-focus-color: var(--btn-secondary-hover-color);
-    --btn-secondary-focus-bg: var(--btn-secondary-hover-bg);
-  
-    --btn-light-bg: var(--color-accent-1-300);
-    --btn-light-color: #ffffff;
-  
-    --btn-dark-bg: var(--color-accent-1-900);
-    --btn-dark-color: #ffffff;
-  
-    --text-primary-color: rgba(0,0,0,0.87);
-    --text-secondary-color: rgba(0,0,0,0.6);
-  }
-  
-  #peregrine-app .theme-light {
-    --bg-primary: var(--color-accent-2-200);
-    --bg-secondary: var(--dawn-gradient-1);
-  
-    --border-primary-color: rgba(0,0,0,0.1);
-  }
-  
-  #peregrine-app .theme-dark,
-  #peregrine-app .themecleanflex-components-cards.theme-light .card--bg {
-    --btn-color: var(--color-accent-1-500);
-    --btn-bg: var(--color-accent-1-50);
-    --btn-hover-color: var(--color-accent-1-900);
-    --btn-hover-bg: var(--color-accent-1-100);
-    --btn-focus-color: var(--btn-hover-color);
-    --btn-focus-bg: var(--btn-hover-bg);
-    --btn-focus-border-color: var(--color-accent-1-200);
-  
-    --btn-primary-color: var(--btn-color);
-    --btn-primary-bg: var(--btn-bg);
-    --btn-primary-hover-color: var(--btn-hover-color);
-    --btn-primary-hover-bg: var(--btn-hover-bg);
-    --btn-primary-focus-color: var(--btn-focus-color);
-    --btn-primary-focus-bg: var(--btn-focus-bg);
-    --btn-primary-focus-border-color: var(--btn-focus-border-color);
-  
-    --btn-secondary-color: #ffffff;
-    --btn-secondary-bg: transparent;
-    --btn-secondary-border-width: 1px;
-    --btn-secondary-border-color: #ffffff;
-    --btn-secondary-hover-color: var(--btn-secondary-color);
-    --btn-secondary-hover-bg: var(--color-accent-1-700);
-    --btn-secondary-hover-border-color: rgba(255,255,255,0);
-    --btn-secondary-focus-color: var(--btn-secondary-hover-color);
-    --btn-secondary-focus-bg: var(--btn-secondary-hover-bg);
-    --btn-secondary-focus-border-color: var(--btn-focus-border-color);
-  }
-  
-  #peregrine-app .theme-dark {
-    --bg-primary: var(--dawn-gradient-1);
-    --bg-secondary: #ffffff;
-  
-    --border-primary-color: rgba(255,255,255,0.6);
-  
-    --text-primary-color: rgba(255,255,255,0.87);
-    --text-secondary-color: rgba(255,255,255,0.6);
-  
-    --link-primary-color: #ffffff;
-    --link-primary-color-hover: var(--color-accent-1-50);
-    --focus-border-color: var(--color-accent-1-100);
-  }
-  
-  /* Individual overwrites */
-  
-  #peregrine-app [class$='components-cards'].theme-light .card--bg {
-    --text-primary-color: rgba(255,255,255,0.87);
-    --text-secondary-color: rgba(255,255,255,0.6);
-  }
-  
-  #peregrine-app [class$='components-cards'].theme-dark .card--bg,
-  #peregrine-app [class$='components-accordion'].theme-dark .accordion-container .bg-secondary {
-     /* Apply black text colour because otherwise it would render white on white */
-    --text-primary-color: rgba(0,0,0,0.87);
-    --text-secondary-color: rgba(0,0,0,0.6);
+	--color-accent-1-900: #62319e;
+	--color-accent-1-800: #6f309a;
+	--color-accent-1-700: #7c2e96;
+	--color-accent-1-600: #882d92;
+	--color-accent-1-500: #a72b95;
+	--color-accent-1-400: #bb2881;
+	--color-accent-1-300: #d02261;
+	--color-accent-1-200: #dc5ebe;
+	--color-accent-1-100: #dea1e9;
+	--color-accent-1-50: #efeaf5;
 
-    --btn-color: #ffffff;
-    --btn-bg: var(--dawn-gradient-1);
-    --btn-hover-color: #ffffff;
-    --btn-hover-bg: var(--dawn-gradient-1-hover);
-    --btn-focus-color: #ffffff;
-    --btn-focus-bg: var(--btn-hover-bg);
-    --btn-focus-border-color: var(--color-accent-1-300);
+	--color-accent-2-100: #ffffff;
+	--color-accent-2-200: #f8f8f8;
 
-    --btn-primary-color: var(--btn-color);
-    --btn-primary-bg: var(--btn-bg);
-    --btn-primary-hover-color: var(--btn-hover-color);
-    --btn-primary-hover-bg: var(--btn-hover-bg);
-    --btn-primary-focus-color: var(--btn-focus-color);
-    --btn-primary-focus-bg: var(--btn-focus-bg);
-    --btn-primary-focus-border-color: var(--btn-focus-border-color);
-  }
-  
-  #peregrine-app [class$='components-accordion'].theme-light .accordion-container .bg-secondary {
-     /* Reduce strong visual noise by removing the default primary background colour */
-    --bg-secondary: rgba(255,255,255,0.6);
-  }
-  
-  #peregrine-app .theme-light .accordion-container.accordion-container,
-  #peregrine-app .theme-dark .accordion-container.accordion-container {
-    background: transparent;
-  }
-  
-  #peregrine-app [class$='components-quote'] {
-    --border-primary-color: var(--color-accent-1-700);
-  }
-  
-  #peregrine-app .theme-dark[class$="-components-form"] input,
-  #peregrine-app .theme-dark[class$="-components-form"] textarea,
-  #peregrine-app .theme-dark[class$="-components-form"] .form-control,
-  #peregrine-app .theme-dark[class$="-components-form"] .form-control *{
-    --text-primary-color: rgba(0,0,0,0.87);
-    --text-secondary-color: rgba(0,0,0,0.6);
-  }
+	--dawn-gradient-1: linear-gradient(
+			20deg,
+			var(--color-accent-1-600) 0%,
+			transparent 100%
+		)
+		var(--color-accent-1-300);
+	--dawn-gradient-1-hover: linear-gradient(
+			20deg,
+			var(--color-accent-1-600) 0%,
+			transparent 100%
+		)
+		var(--color-accent-1-600);
+
+	--bg-primary: var(--color-accent-2-100);
+	--bg-secondary: var(--color-accent-2-200);
+	--border-primary-color: rgba(66, 67, 68, 0.2);
+
+	--link-primary-color: var(--color-accent-1-500);
+	--link-primary-color-hover: var(--color-accent-1-800);
+
+	--focus-border-color: var(--color-accent-1-500);
+
+	--btn-color: #ffffff;
+	--btn-bg: var(--dawn-gradient-1);
+	--btn-hover-color: #ffffff;
+	--btn-hover-bg: var(--dawn-gradient-1-hover);
+	--btn-focus-color: #ffffff;
+	--btn-focus-bg: var(--btn-hover-bg);
+	--btn-focus-border-color: var(--color-accent-1-300);
+
+	--btn-secondary-color: var(--color-accent-1-900);
+	--btn-secondary-bg: var(--color-accent-1-50);
+	--btn-secondary-border-width: 0;
+	--btn-secondary-border-color: transparent;
+	--btn-secondary-hover-color: var(--color-accent-1-50);
+	--btn-secondary-hover-bg: var(--color-accent-1-900);
+	--btn-secondary-focus-color: var(--btn-secondary-hover-color);
+	--btn-secondary-focus-bg: var(--btn-secondary-hover-bg);
+
+	--btn-light-bg: var(--color-accent-1-300);
+	--btn-light-color: #ffffff;
+
+	--btn-dark-bg: var(--color-accent-1-900);
+	--btn-dark-color: #ffffff;
+
+	--text-primary-color: rgba(0, 0, 0, 0.87);
+	--text-secondary-color: rgba(0, 0, 0, 0.6);
+}
+
+#peregrine-app .theme-light {
+	--bg-primary: var(--color-accent-2-200);
+	--bg-secondary: var(--dawn-gradient-1);
+
+	--border-primary-color: rgba(0, 0, 0, 0.1);
+}
+
+#peregrine-app .theme-dark,
+#peregrine-app .themecleanflex-components-cards.theme-light .card--bg {
+	--btn-color: var(--color-accent-1-500);
+	--btn-bg: var(--color-accent-1-50);
+	--btn-hover-color: var(--color-accent-1-900);
+	--btn-hover-bg: var(--color-accent-1-100);
+	--btn-focus-color: var(--btn-hover-color);
+	--btn-focus-bg: var(--btn-hover-bg);
+	--btn-focus-border-color: var(--color-accent-1-200);
+
+	--btn-primary-color: var(--btn-color);
+	--btn-primary-bg: var(--btn-bg);
+	--btn-primary-hover-color: var(--btn-hover-color);
+	--btn-primary-hover-bg: var(--btn-hover-bg);
+	--btn-primary-focus-color: var(--btn-focus-color);
+	--btn-primary-focus-bg: var(--btn-focus-bg);
+	--btn-primary-focus-border-color: var(--btn-focus-border-color);
+
+	--btn-secondary-color: #ffffff;
+	--btn-secondary-bg: transparent;
+	--btn-secondary-border-width: 1px;
+	--btn-secondary-border-color: #ffffff;
+	--btn-secondary-hover-color: var(--btn-secondary-color);
+	--btn-secondary-hover-bg: var(--color-accent-1-700);
+	--btn-secondary-hover-border-color: rgba(255, 255, 255, 0);
+	--btn-secondary-focus-color: var(--btn-secondary-hover-color);
+	--btn-secondary-focus-bg: var(--btn-secondary-hover-bg);
+	--btn-secondary-focus-border-color: var(--btn-focus-border-color);
+}
+
+#peregrine-app .theme-dark {
+	--bg-primary: var(--dawn-gradient-1);
+	--bg-secondary: #ffffff;
+
+	--border-primary-color: rgba(255, 255, 255, 0.6);
+
+	--text-primary-color: rgba(255, 255, 255, 0.87);
+	--text-secondary-color: rgba(255, 255, 255, 0.6);
+
+	--link-primary-color: #ffffff;
+	--link-primary-color-hover: var(--color-accent-1-50);
+	--focus-border-color: var(--color-accent-1-100);
+}
+
+/* Individual overwrites */
+
+#peregrine-app [class$="components-cards"].theme-light .card--bg {
+	--text-primary-color: rgba(255, 255, 255, 0.87);
+	--text-secondary-color: rgba(255, 255, 255, 0.6);
+}
+
+#peregrine-app [class$="components-cards"].theme-dark .card--bg,
+#peregrine-app
+	[class$="components-accordion"].theme-dark
+	.accordion-container
+	.bg-secondary {
+	/* Apply black text colour because otherwise it would render white on white */
+	--text-primary-color: rgba(0, 0, 0, 0.87);
+	--text-secondary-color: rgba(0, 0, 0, 0.6);
+
+	--btn-color: #ffffff;
+	--btn-bg: var(--dawn-gradient-1);
+	--btn-hover-color: #ffffff;
+	--btn-hover-bg: var(--dawn-gradient-1-hover);
+	--btn-focus-color: #ffffff;
+	--btn-focus-bg: var(--btn-hover-bg);
+	--btn-focus-border-color: var(--color-accent-1-300);
+
+	--btn-primary-color: var(--btn-color);
+	--btn-primary-bg: var(--btn-bg);
+	--btn-primary-hover-color: var(--btn-hover-color);
+	--btn-primary-hover-bg: var(--btn-hover-bg);
+	--btn-primary-focus-color: var(--btn-focus-color);
+	--btn-primary-focus-bg: var(--btn-focus-bg);
+	--btn-primary-focus-border-color: var(--btn-focus-border-color);
+}
+
+#peregrine-app
+	[class$="components-accordion"].theme-light
+	.accordion-container
+	.bg-secondary {
+	/* Reduce strong visual noise by removing the default primary background colour */
+	--bg-secondary: rgba(255, 255, 255, 0.6);
+}
+
+#peregrine-app .theme-light .accordion-container.accordion-container,
+#peregrine-app .theme-dark .accordion-container.accordion-container {
+	background: transparent;
+}
+
+#peregrine-app [class$="components-quote"] {
+	--border-primary-color: var(--color-accent-1-700);
+}
+
+#peregrine-app .theme-dark[class$="-components-form"] input,
+#peregrine-app .theme-dark[class$="-components-form"] textarea,
+#peregrine-app .theme-dark[class$="-components-form"] .form-control,
+#peregrine-app .theme-dark[class$="-components-form"] .form-control * {
+	--text-primary-color: rgba(0, 0, 0, 0.87);
+	--text-secondary-color: rgba(0, 0, 0, 0.6);
+}
 
 #peregrine-app [class$="components-datalist"] table th,
 #peregrine-app [class$="components-datalist"] table th *,
 #peregrine-app [class$="components-datalist"] table td.mobile-header,
 #peregrine-app [class$="components-datalist"] table td.mobile-header * {
-  --bg-primary: var(--color-accent-1-700);
-  --text-primary-color: rgba(255,255,255);
+	--bg-primary: var(--color-accent-1-700);
+	--text-primary-color: rgba(255, 255, 255);
 }
-#peregrine-app .theme-light[class$="components-datalist"] table.striped tbody td,
-#peregrine-app .theme-light[class$="components-datalist"] table.striped tbody td *{
-  --bg-secondary: rgba(255,255,255,0.6);
+#peregrine-app
+	.theme-light[class$="components-datalist"]
+	table.striped
+	tbody
+	td,
+#peregrine-app
+	.theme-light[class$="components-datalist"]
+	table.striped
+	tbody
+	td
+	* {
+	--bg-secondary: rgba(255, 255, 255, 0.6);
 }
 #peregrine-app .theme-dark[class$="components-datalist"] table th,
 #peregrine-app .theme-dark[class$="components-datalist"] table th *,
 #peregrine-app .theme-dark[class$="components-datalist"] table td.mobile-header,
-#peregrine-app .theme-dark[class$="components-datalist"] table td.mobile-header *  {
-  --bg-primary: #fff;
-  --text-primary-color: rgba(0,0,0,0.87);
+#peregrine-app
+	.theme-dark[class$="components-datalist"]
+	table
+	td.mobile-header
+	* {
+	--bg-primary: #fff;
+	--text-primary-color: rgba(0, 0, 0, 0.87);
 }
 #peregrine-app .theme-dark[class$="components-datalist"] table.striped tbody td,
-#peregrine-app .theme-dark[class$="components-datalist"] table.striped tbody td *{
-  --bg-secondary: #f8f8f8;
-  --text-secondary-color: rgba(0,0,0,0.87);
+#peregrine-app
+	.theme-dark[class$="components-datalist"]
+	table.striped
+	tbody
+	td
+	* {
+	--bg-secondary: #f8f8f8;
+	--text-secondary-color: rgba(0, 0, 0, 0.87);
 }
 
-  #peregrine-app .theme-dark[class$="-components-navigation"] a:hover{
-    color: var(--color-accent-1-700);
-  }
+#peregrine-app .theme-dark[class$="-components-navigation"] a:hover {
+	color: var(--color-accent-1-700);
+}

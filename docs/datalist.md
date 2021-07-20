@@ -1,6 +1,7 @@
 # Datalist Implementation
 
 ### Quickstart
+
 The easiest way to get started with the Datalist is to use the <code>$formsapp</code> javascript connected to a form. This will store data into your local browser storage that will then be displayed in the datalist.
 
 Create a new page and add a Form component. Edit the form to use the following form model:
@@ -28,30 +29,33 @@ Create a new page and add a Form component. Edit the form to use the following f
       }
     ]}
 
-- Endpoint URL: <code>list</code>
-- Submit Function: <code>$formsapp.save</code>
+-   Endpoint URL: <code>list</code>
+-   Submit Function: <code>$formsapp.save</code>
 
-Add a Datalist component. You can leave the *endpoint URL*, *load function*, and *delete function* blank. Add two columns
-in the *Table Configuration* with the following values:
-- Header: **First Name**
-- Data Value: **firstName**
-- Header: **Last Name**
-- Data Value: **lastName**
+Add a Datalist component. You can leave the _endpoint URL_, _load function_, and _delete function_ blank. Add two columns
+in the _Table Configuration_ with the following values:
+
+-   Header: **First Name**
+-   Data Value: **firstName**
+-   Header: **Last Name**
+-   Data Value: **lastName**
 
 Now, if you submit a first and last name through the form and refresh the page, your values should show up in the table.
-If you edit the Datalist component and turn on *Selectable Table* you will get the option to delete rows from the table.
+If you edit the Datalist component and turn on _Selectable Table_ you will get the option to delete rows from the table.
 
 ### Datalist Javascript Events
 
 #### datalist-storage-update
-The datalist component has an event listener for the <code>datalist-storage-update</code> event. If this event is fired, it will trigger a reload of the backing data. You can use this event in other javascript functions to force a reload when data has been changed. 
+
+The datalist component has an event listener for the <code>datalist-storage-update</code> event. If this event is fired, it will trigger a reload of the backing data. You can use this event in other javascript functions to force a reload when data has been changed.
 
 See the **themecleanflex/pages/js/formsapp.js** <code>save()</code> function for an example of this in action.
 
 ### Datalist Component Configuration
 
-#### Datalist Data Retrieval 
-If a endpoint URL is indicated, then the datalist will do an axios GET request with the table data to this URL. 
+#### Datalist Data Retrieval
+
+If a endpoint URL is indicated, then the datalist will do an axios GET request with the table data to this URL.
 
 The endpoint should return a list of objects.
 ex.
@@ -68,27 +72,34 @@ ex.
     }]
 
 #### Javascript Function to Get Data
+
 Instead of the default GET endpoint behaviour, the user can configure a custom function to be called instead. This function can be part of any object as long as it can be accessed through the javascript window object.
 This function will be passed one parameter
-- Path - the endpoint URL specified in the configuration
+
+-   Path - the endpoint URL specified in the configuration
 
 #### Javascript Function to Delete Data
-If the table is selectable, the user can configure a custom function to delete data. If the load function is defined, this function must also be defined for table delete action to work correctly. 
+
+If the table is selectable, the user can configure a custom function to delete data. If the load function is defined, this function must also be defined for table delete action to work correctly.
 The function will be passed three parameters:
-- Table Data - the data array currently backing the table
-- Active - a boolean array denoting which rows of the table data array are currently selected
-- Path - the endpoint URL specified in the configuration
+
+-   Table Data - the data array currently backing the table
+-   Active - a boolean array denoting which rows of the table data array are currently selected
+-   Path - the endpoint URL specified in the configuration
 
 This function is expected to return a new data array with the selected rows removed.
 
 #### Table Configuration
+
 Add columns with any header value with the data value being a property in the objects returned by the endpoint/local storage.
 Each column takes three configuration options:
-- Header - The name to be displayed in the column header
-- Data Value - The data in the backing model to display in this column
-- Column Alignment - The horizontal alignment to render text in the cell.
+
+-   Header - The name to be displayed in the column header
+-   Data Value - The data in the backing model to display in this column
+-   Column Alignment - The horizontal alignment to render text in the cell.
 
 #### Row Alignment
+
 Defines the default row vertical alignment for the table.
 
 #### Striped Rows

@@ -1,14 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Form">
+<?xml version="1.0" encoding="utf-8" ?>
+<jcr:root
+	xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+	jcr:primaryType="per:Component"
+	jcr:title="Form"
+>
   <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
     <sample jcr:primaryType="nt:unstructured" title="Form" group="Features">
-      <jcr:content jcr:primaryType="nt:unstructured" schema="" uischema=""/>
+      <jcr:content jcr:primaryType="nt:unstructured" schema="" uischema="" />
     </sample>
-    <sample-all jcr:primaryType="nt:unstructured" title="Form - Input Types" group="Features">
-      <jcr:content jcr:primaryType="nt:unstructured" schema="/content/themecleanflex/object-definitions/example-form-all/schema.json" uischema="/content/themecleanflex/object-definitions/example-form-all/uischema.json"/>
+    <sample-all
+			jcr:primaryType="nt:unstructured"
+			title="Form - Input Types"
+			group="Features"
+		>
+      <jcr:content
+				jcr:primaryType="nt:unstructured"
+				schema="/content/themecleanflex/object-definitions/example-form-all/schema.json"
+				uischema="/content/themecleanflex/object-definitions/example-form-all/uischema.json"
+			/>
     </sample-all>
-    <sample-contact jcr:primaryType="nt:unstructured" title="Form - Contact" group="Features">
-      <jcr:content jcr:primaryType="nt:unstructured" schema="/content/themecleanflex/object-definitions/example-form-contact/schema.json" uischema="/content/themecleanflex/object-definitions/example-form-contact/uischema.json"/>
+    <sample-contact
+			jcr:primaryType="nt:unstructured"
+			title="Form - Contact"
+			group="Features"
+		>
+      <jcr:content
+				jcr:primaryType="nt:unstructured"
+				schema="/content/themecleanflex/object-definitions/example-form-contact/schema.json"
+				uischema="/content/themecleanflex/object-definitions/example-form-contact/uischema.json"
+			/>
     </sample-contact>
   </jcr:content>
 </jcr:root>

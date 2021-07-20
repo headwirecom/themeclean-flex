@@ -1,114 +1,137 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
-    jcr:lastModified="{Date}2020-07-13T14:33:02.090-07:00"
-    jcr:lastModifiedBy="admin"
-    jcr:primaryType="per:Page">
+<?xml version="1.0" encoding="UTF-8" ?>
+<jcr:root
+	xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+	xmlns:per="http://www.peregrine-cms.com/jcr/cms/1.0"
+	jcr:lastModified="{Date}2020-07-13T14:33:02.090-07:00"
+	jcr:lastModifiedBy="admin"
+	jcr:primaryType="per:Page"
+>
     <jcr:content
-        jcr:lastModified="{Date}2020-07-13T14:33:02.090-07:00"
-        jcr:lastModifiedBy="admin"
-        jcr:primaryType="per:PageContent"
-        jcr:title="Nicole Ford"
-        sling:resourceType="themecleanflex/components/page"
-        name="nicole-ford"
-        ogImage=""
-        ogImageAlt=""
-        ogTitle=""
-        ogType="website"
-        ogUrl=""
-        skeletonPagePath="/content/themecleanflex/pages/skeleton-pages/author"
-        template="/content/themecleanflex/templates/footer/header-footer/article"
-        templatePath=""
-        useDescription="true"
-        useTitle="true">
-        <nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b jcr:primaryType="nt:unstructured">
-            <n764b8eef-0b83-434a-94dd-c03d6da81778 jcr:primaryType="nt:unstructured">
-                <nb8fdb7e0-c386-412c-951c-67d94dbdee55 jcr:primaryType="nt:unstructured">
+		jcr:lastModified="{Date}2020-07-13T14:33:02.090-07:00"
+		jcr:lastModifiedBy="admin"
+		jcr:primaryType="per:PageContent"
+		jcr:title="Nicole Ford"
+		sling:resourceType="themecleanflex/components/page"
+		name="nicole-ford"
+		ogImage=""
+		ogImageAlt=""
+		ogTitle=""
+		ogType="website"
+		ogUrl=""
+		skeletonPagePath="/content/themecleanflex/pages/skeleton-pages/author"
+		template="/content/themecleanflex/templates/footer/header-footer/article"
+		templatePath=""
+		useDescription="true"
+		useTitle="true"
+	>
+        <nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b
+			jcr:primaryType="nt:unstructured"
+		>
+            <n764b8eef-0b83-434a-94dd-c03d6da81778
+				jcr:primaryType="nt:unstructured"
+			>
+                <nb8fdb7e0-c386-412c-951c-67d94dbdee55
+					jcr:primaryType="nt:unstructured"
+				>
                     <ne9c0f0bc-c1fd-4557-90e9-352e9da32aaf
-                        jcr:lastModified="{Date}2020-07-13T14:32:19.906-07:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="themecleanflex/components/teaservertical"
-                        alignbuttons="center"
-                        aligncontent="left"
-                        backgroundtype="gradient"
-                        bgcolor="#ffffff"
-                        bgsize="cover"
-                        bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
-                        bgxposition="50"
-                        bgyposition="50"
-                        blockwidth="default"
-                        bottompadding="30"
-                        buttonsize="default"
-                        color2="#c0c0c0"
-                        colorscheme=""
-                        custombackground="false"
-                        fullheight="false"
-                        gradient="true"
-                        htmlelement="section"
-                        imagesrc="/content/themecleanflex/assets/placeholders/woman.jpg"
-                        mediaposition="after"
-                        mediatype="image"
-                        mediawidth="25"
-                        overlaycolor="#ffffff"
-                        overlayopacity="50"
-                        showbutton="false"
-                        showmedia="true"
-                        showsubtitle="true"
-                        showtext="false"
-                        showtitle="true"
-                        subtitle="CEO - example.com, Inc"
-                        text="&lt;p>Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p>"
-                        textwidth="100"
-                        title="Nicole Ford"
-                        toppadding="30"
-                        videosrc="">
+						jcr:lastModified="{Date}2020-07-13T14:32:19.906-07:00"
+						jcr:lastModifiedBy="admin"
+						jcr:primaryType="nt:unstructured"
+						sling:resourceType="themecleanflex/components/teaservertical"
+						alignbuttons="center"
+						aligncontent="left"
+						backgroundtype="gradient"
+						bgcolor="#ffffff"
+						bgsize="cover"
+						bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
+						bgxposition="50"
+						bgyposition="50"
+						blockwidth="default"
+						bottompadding="30"
+						buttonsize="default"
+						color2="#c0c0c0"
+						colorscheme=""
+						custombackground="false"
+						fullheight="false"
+						gradient="true"
+						htmlelement="section"
+						imagesrc="/content/themecleanflex/assets/placeholders/woman.jpg"
+						mediaposition="after"
+						mediatype="image"
+						mediawidth="25"
+						overlaycolor="#ffffff"
+						overlayopacity="50"
+						showbutton="false"
+						showmedia="true"
+						showsubtitle="true"
+						showtext="false"
+						showtitle="true"
+						subtitle="CEO - example.com, Inc"
+						text="&lt;p>Eligendi fugit asperiores et. Corrupti voluptatum quasi sit. Adipisci ut voluptatem necessitatibus cumque aspernatur.&lt;/p>"
+						textwidth="100"
+						title="Nicole Ford"
+						toppadding="30"
+						videosrc=""
+					>
                         <buttons jcr:primaryType="nt:unstructured">
                             <buttons0
-                                jcr:lastModified="{Date}2020-07-13T14:32:19.904-07:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                buttoncolor="primary"
-                                buttonlink="/content/themecleanflex/pages"
-                                buttontext="See More"
-                                component="nt:unstructured"
-                                iconclass=""
-                                name="buttons0"
-                                path="/jcr:content/nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b/n764b8eef-0b83-434a-94dd-c03d6da81778/nb8fdb7e0-c386-412c-951c-67d94dbdee55/ne9c0f0bc-c1fd-4557-90e9-352e9da32aaf/buttons/buttons0"/>
+								jcr:lastModified="{Date}2020-07-13T14:32:19.904-07:00"
+								jcr:lastModifiedBy="admin"
+								jcr:primaryType="nt:unstructured"
+								buttoncolor="primary"
+								buttonlink="/content/themecleanflex/pages"
+								buttontext="See More"
+								component="nt:unstructured"
+								iconclass=""
+								name="buttons0"
+								path="/jcr:content/nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b/n764b8eef-0b83-434a-94dd-c03d6da81778/nb8fdb7e0-c386-412c-951c-67d94dbdee55/ne9c0f0bc-c1fd-4557-90e9-352e9da32aaf/buttons/buttons0"
+							/>
                             <buttons1
-                                jcr:lastModified="{Date}2020-07-13T14:32:19.905-07:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                buttoncolor="primary"
-                                buttonlink="/content/themecleanflex/pages"
-                                buttontext="About Us"
-                                component="nt:unstructured"
-                                iconclass=""
-                                name="buttons1"
-                                path="/jcr:content/nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b/n764b8eef-0b83-434a-94dd-c03d6da81778/nb8fdb7e0-c386-412c-951c-67d94dbdee55/ne9c0f0bc-c1fd-4557-90e9-352e9da32aaf/buttons/buttons1"/>
+								jcr:lastModified="{Date}2020-07-13T14:32:19.905-07:00"
+								jcr:lastModifiedBy="admin"
+								jcr:primaryType="nt:unstructured"
+								buttoncolor="primary"
+								buttonlink="/content/themecleanflex/pages"
+								buttontext="About Us"
+								component="nt:unstructured"
+								iconclass=""
+								name="buttons1"
+								path="/jcr:content/nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b/n764b8eef-0b83-434a-94dd-c03d6da81778/nb8fdb7e0-c386-412c-951c-67d94dbdee55/ne9c0f0bc-c1fd-4557-90e9-352e9da32aaf/buttons/buttons1"
+							/>
                         </buttons>
                     </ne9c0f0bc-c1fd-4557-90e9-352e9da32aaf>
                 </nb8fdb7e0-c386-412c-951c-67d94dbdee55>
-                <n6ae7522f-5162-430b-82af-302ab57a3908 jcr:primaryType="nt:unstructured">
-                    <n72f3e20d-71ee-4600-8ecd-10f2dab74275 jcr:primaryType="nt:unstructured">
+                <n6ae7522f-5162-430b-82af-302ab57a3908
+					jcr:primaryType="nt:unstructured"
+				>
+                    <n72f3e20d-71ee-4600-8ecd-10f2dab74275
+						jcr:primaryType="nt:unstructured"
+					>
                         <nc2a0eb52-c4cc-412c-b58e-7062e21ba2f3
-                            jcr:lastModified="{Date}2020-07-13T13:27:41.926-07:00"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="themecleanflex/components/richtext"
-                            text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>"/>
+							jcr:lastModified="{Date}2020-07-13T13:27:41.926-07:00"
+							jcr:lastModifiedBy="admin"
+							jcr:primaryType="nt:unstructured"
+							sling:resourceType="themecleanflex/components/richtext"
+							text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>"
+						/>
                     </n72f3e20d-71ee-4600-8ecd-10f2dab74275>
-                    <nf4b96cfd-3f24-4402-b15c-2ccfec8cd064 jcr:primaryType="nt:unstructured"/>
+                    <nf4b96cfd-3f24-4402-b15c-2ccfec8cd064
+						jcr:primaryType="nt:unstructured"
+					/>
                 </n6ae7522f-5162-430b-82af-302ab57a3908>
             </n764b8eef-0b83-434a-94dd-c03d6da81778>
         </nebf8e89b-7765-4d9c-9e19-bff3f4d03a7b>
         <tags jcr:primaryType="nt:unstructured">
             <blog_x0020_article
-                jcr:lastModified="{Date}2020-07-13T14:33:02.089-07:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                name="blog article"
-                path="/content/themecleanflex/pages/authors/nicole-ford/jcr:content/tags/blog article"
-                value="/content/themecleanflex/objects/tags/blog article"/>
+				jcr:lastModified="{Date}2020-07-13T14:33:02.089-07:00"
+				jcr:lastModifiedBy="admin"
+				jcr:primaryType="nt:unstructured"
+				name="blog article"
+				path="/content/themecleanflex/pages/authors/nicole-ford/jcr:content/tags/blog article"
+				value="/content/themecleanflex/objects/tags/blog article"
+			/>
         </tags>
     </jcr:content>
 </jcr:root>

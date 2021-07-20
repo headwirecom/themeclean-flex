@@ -1,15 +1,15 @@
 {
-  "title": "Rich Text - with media",
-  "default": true,
-  "group": "Text Components",
-  "model": {
-    "showmedia": "true",
-    "mediatype": "image",
-    "imagesrc": "/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg",
-    "mediatitle": "Bird's eye view of the beach",
-    "mediawidth": "50",
-    "toppadding": "50",
-    "bottompadding": "50",
-    "text": "<p>Today's web frontend frameworks allow us to render pages on the device instead of the server. Leveraging client side rendering allows us to transfer only the content when a client clicks from one page to another resulting in a faster page transition and offloading a vast amount of work that is traditionally done on the server to the web browser.</p>"
-  }
+	"title": "Rich Text - with media",
+	"default": true,
+	"group": "Text Components",
+	"model": {
+		"showmedia": "true",
+		"mediatype": "image",
+		"imagesrc": "/content/themecleanflex/assets/samples/beach-bird-s-eye-view-daytime-1249586.jpg",
+		"mediatitle": "Bird's eye view of the beach",
+		"mediawidth": "50",
+		"toppadding": "50",
+		"bottompadding": "50",
+		"text": "<p>Today's web frontend frameworks allow us to render pages on the device instead of the server. Leveraging client side rendering allows us to transfer only the content when a client clicks from one page to another resulting in a faster page transition and offloading a vast amount of work that is traditionally done on the server to the web browser.</p>"
+	}
 }

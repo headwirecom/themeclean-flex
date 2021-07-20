@@ -1,119 +1,118 @@
 /* default palette */
 
 #peregrine-app {
-  --color-accent-1-900: #000653;
-  --color-accent-1-800: #001477;
-  --color-accent-1-700: #00289B;
-  --color-accent-1-600: #0042BF;
-  --color-accent-1-500: #054CC6;
-  --color-accent-1-400: #186DDB;
-  --color-accent-1-300: #237EE5;
-  --color-accent-1-200: #5198EC;
-  --color-accent-1-100: #81B4F2;
-  --color-accent-1-50: #E8F2FF;
+	--color-accent-1-900: #000653;
+	--color-accent-1-800: #001477;
+	--color-accent-1-700: #00289b;
+	--color-accent-1-600: #0042bf;
+	--color-accent-1-500: #054cc6;
+	--color-accent-1-400: #186ddb;
+	--color-accent-1-300: #237ee5;
+	--color-accent-1-200: #5198ec;
+	--color-accent-1-100: #81b4f2;
+	--color-accent-1-50: #e8f2ff;
 
-  --color-accent-2-100: #ffffff;
-  --color-accent-2-200: #f2f2f2;
+	--color-accent-2-100: #ffffff;
+	--color-accent-2-200: #f2f2f2;
 
-  --color-accent-3-800: #191919;
-  --color-accent-3-900: #000000;
+	--color-accent-3-800: #191919;
+	--color-accent-3-900: #000000;
 
-  --bg-primary: var(--color-accent-2-100);
-  --bg-secondary: var(--color-accent-2-200);
-  --border-primary-color: rgba(66, 67, 68, 0.2);
+	--bg-primary: var(--color-accent-2-100);
+	--bg-secondary: var(--color-accent-2-200);
+	--border-primary-color: rgba(66, 67, 68, 0.2);
 
-  --link-primary-color: var(--color-accent-1-500);
-  --link-primary-color-hover: var(--color-accent-1-800);
+	--link-primary-color: var(--color-accent-1-500);
+	--link-primary-color-hover: var(--color-accent-1-800);
 
-  --focus-border-color: var(--color-accent-1-500);
+	--focus-border-color: var(--color-accent-1-500);
 
-  --btn-color: #ffffff;
-  --btn-bg: var(--color-accent-3-900);
-  --btn-hover-color: #ffffff;
-  --btn-hover-bg: var(--color-accent-3-800);
-  --btn-focus-color: #ffffff;
-  --btn-focus-bg: var(--color-accent-3-800);
-  --btn-focus-border-color: var(--color-accent-1-300);
+	--btn-color: #ffffff;
+	--btn-bg: var(--color-accent-3-900);
+	--btn-hover-color: #ffffff;
+	--btn-hover-bg: var(--color-accent-3-800);
+	--btn-focus-color: #ffffff;
+	--btn-focus-bg: var(--color-accent-3-800);
+	--btn-focus-border-color: var(--color-accent-1-300);
 
-  --btn-secondary-color: var(--color-accent-3-900);
-  --btn-secondary-bg: #ffffff;
-  --btn-secondary-border-width: 1px;
-  --btn-secondary-border-color: var(--color-accent-3-900);
-  --btn-secondary-hover-color: var(--btn-secondary-color);
-  --btn-secondary-hover-bg: #dddcdc;
-  --btn-secondary-focus-color: #ffffff;
-  --btn-secondary-focus-bg: var(--color-accent-3-800);
+	--btn-secondary-color: var(--color-accent-3-900);
+	--btn-secondary-bg: #ffffff;
+	--btn-secondary-border-width: 1px;
+	--btn-secondary-border-color: var(--color-accent-3-900);
+	--btn-secondary-hover-color: var(--btn-secondary-color);
+	--btn-secondary-hover-bg: #dddcdc;
+	--btn-secondary-focus-color: #ffffff;
+	--btn-secondary-focus-bg: var(--color-accent-3-800);
 
-  --btn-light-bg: var(--color-accent-1-200);
-  --btn-light-hover-bg: var(--color-accent-1-300);
-  --btn-light-hover-color: var(--color-accent-1-900);
+	--btn-light-bg: var(--color-accent-1-200);
+	--btn-light-hover-bg: var(--color-accent-1-300);
+	--btn-light-hover-color: var(--color-accent-1-900);
 
-  --btn-dark-bg: var(--color-accent-1-600);
-  --btn-dark-hover-bg: var(--color-accent-1-700);
+	--btn-dark-bg: var(--color-accent-1-600);
+	--btn-dark-hover-bg: var(--color-accent-1-700);
 
-  --text-primary-color: rgba(0,0,0,0.87);
-  --text-secondary-color: rgba(0,0,0,0.6);
+	--text-primary-color: rgba(0, 0, 0, 0.87);
+	--text-secondary-color: rgba(0, 0, 0, 0.6);
 }
 
 #peregrine-app .theme-light {
-  --bg-primary: var(--color-accent-2-200);
-  --bg-secondary: var(--color-accent-2-100);
-  
-  --btn-secondary-color: var(--color-accent-1-900);
-  --btn-secondary-bg: var(--bg-secondary);
-  --btn-secondary-border-width: 0;
-  --btn-secondary-hover-color: var(--btn-secondary-color);
-  --btn-secondary-hover-bg: var(--color-accent-1-300);
-  --btn-secondary-focus-color: var(--btn-secondary-color);
-  --btn-secondary-focus-bg: var(--color-accent-1-300);
-  
-  --link-primary-color: var(--text-primary-color);
-  --link-primary-color-hover: #000000;
+	--bg-primary: var(--color-accent-2-200);
+	--bg-secondary: var(--color-accent-2-100);
 
-  --figcaption-primary-bg: #ffffff99;
+	--btn-secondary-color: var(--color-accent-1-900);
+	--btn-secondary-bg: var(--bg-secondary);
+	--btn-secondary-border-width: 0;
+	--btn-secondary-hover-color: var(--btn-secondary-color);
+	--btn-secondary-hover-bg: var(--color-accent-1-300);
+	--btn-secondary-focus-color: var(--btn-secondary-color);
+	--btn-secondary-focus-bg: var(--color-accent-1-300);
+
+	--link-primary-color: var(--text-primary-color);
+	--link-primary-color-hover: #000000;
+
+	--figcaption-primary-bg: #ffffff99;
 }
 
 #peregrine-app .theme-dark {
-  --bg-primary: var(--color-accent-3-900);
-  --bg-secondary: var(--color-accent-3-800);
-  --border-primary-color: rgba(255, 255, 255, 0.2);
+	--bg-primary: var(--color-accent-3-900);
+	--bg-secondary: var(--color-accent-3-800);
+	--border-primary-color: rgba(255, 255, 255, 0.2);
 
-  --link-primary-color: var(--color-accent-1-200);
-  --link-primary-color-hover: var(--color-accent-1-100);
+	--link-primary-color: var(--color-accent-1-200);
+	--link-primary-color-hover: var(--color-accent-1-100);
 
-  --text-primary-color: #ffffff;
-  --text-secondary-color: rgba(255,255,255,0.6);
+	--text-primary-color: #ffffff;
+	--text-secondary-color: rgba(255, 255, 255, 0.6);
 
-  --btn-focus-border-color: #ffffff;
+	--btn-focus-border-color: #ffffff;
 
-  --btn-color: var(--color-accent-3-900);
-  --btn-bg: #ffffff;
-  --btn-hover-color: #ffffff;
-  --btn-hover-bg: var(--color-accent-3-800);
-  --btn-focus-color: var(--color-accent-3-800);
-  --btn-focus-bg: #e4e4e4;
-  --btn-focus-border-color: var(--color-accent-1-500);
+	--btn-color: var(--color-accent-3-900);
+	--btn-bg: #ffffff;
+	--btn-hover-color: #ffffff;
+	--btn-hover-bg: var(--color-accent-3-800);
+	--btn-focus-color: var(--color-accent-3-800);
+	--btn-focus-bg: #e4e4e4;
+	--btn-focus-border-color: var(--color-accent-1-500);
 
-  --btn-primary-color: var(--btn-color);
-  --btn-primary-bg: var(--btn-bg);
-  --btn-primary-hover-color: var(--btn-hover-color);
-  --btn-primary-hover-bg: var(--btn-hover-bg);
-  --btn-primary-focus-color: var(--btn-focus-color);
-  --btn-primary-focus-bg: var(--btn-focus-bg);
-  --btn-primary-focus-border-color: var(--btn-focus-border-color);
+	--btn-primary-color: var(--btn-color);
+	--btn-primary-bg: var(--btn-bg);
+	--btn-primary-hover-color: var(--btn-hover-color);
+	--btn-primary-hover-bg: var(--btn-hover-bg);
+	--btn-primary-focus-color: var(--btn-focus-color);
+	--btn-primary-focus-bg: var(--btn-focus-bg);
+	--btn-primary-focus-border-color: var(--btn-focus-border-color);
 
-  --btn-secondary-bg: var(--color-accent-3-900);
-  --btn-secondary-color: #ffffff;
-  --btn-secondary-border-width: 1px;
-  --btn-secondary-border-color: #ffffff;
-  --btn-secondary-hover-color: #ffffff;
-  --btn-secondary-hover-bg: var(--color-accent-3-800);
-  --btn-secondary-focus-color: #ffffff;
-  --btn-secondary-focus-bg: var(--color-accent-3-800);
+	--btn-secondary-bg: var(--color-accent-3-900);
+	--btn-secondary-color: #ffffff;
+	--btn-secondary-border-width: 1px;
+	--btn-secondary-border-color: #ffffff;
+	--btn-secondary-hover-color: #ffffff;
+	--btn-secondary-hover-bg: var(--color-accent-3-800);
+	--btn-secondary-focus-color: #ffffff;
+	--btn-secondary-focus-bg: var(--color-accent-3-800);
 
-/*   --link-primary-color: var(--text-primary-color);
+	/*   --link-primary-color: var(--text-primary-color);
   --link-primary-color-hover: #ffffff; */
- 
 
-  --figcaption-primary-bg: #00000080;
+	--figcaption-primary-bg: #00000080;
 }

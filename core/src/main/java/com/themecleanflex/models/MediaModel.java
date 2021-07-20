@@ -114,23 +114,21 @@ import org.apache.sling.models.annotations.Model;
 
 //GEN[:DEF
 @Model(
-        adaptables = Resource.class,
-        resourceType = "themecleanflex/components/media",
-        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
-        adapters = IComponent.class
+	adaptables = Resource.class,
+	resourceType = "themecleanflex/components/media",
+	defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
+	adapters = IComponent.class
 )
-@Exporter(
-        name = "jackson",
-        extensions = "json"
-)
-
+@Exporter(name = "jackson", extensions = "json")
 //GEN]
 public class MediaModel extends AbstractComponent {
 
-    public MediaModel(Resource r) { super(r); }
+	public MediaModel(Resource r) {
+		super(r);
+	}
 
-    //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Media type","x-form-type":"materialradio","properties":{"image":{"x-form-name":"Image","x-form-value":"image"},"video":{"x-form-name":"Video","x-form-value":"video"},"icon":{"x-form-name":"Icon","x-form-value":"icon"}}} */
+	//GEN[:INJECT
+	/* {"type":"string","x-source":"inject","x-form-label":"Media type","x-form-type":"materialradio","properties":{"image":{"x-form-name":"Image","x-form-value":"image"},"video":{"x-form-name":"Video","x-form-value":"video"},"icon":{"x-form-name":"Icon","x-form-value":"icon"}}} */
 	@Inject
 	private String mediatype;
 
@@ -140,12 +138,12 @@ public class MediaModel extends AbstractComponent {
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Icon Size","x-form-type":"materialrange","x-form-visible":"model.mediatype == 'icon'","x-default":50,"x-form-min":1,"x-form-max":1000} */
 	@Inject
-	@Default(values ="50")
+	@Default(values = "50")
 	private String mediaiconsize;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Icon Color","x-form-type":"color","x-form-visible":"model.mediatype == 'icon'","x-default":"#000000"} */
 	@Inject
-	@Default(values ="#000000")
+	@Default(values = "#000000")
 	private String mediaiconcolor;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-visible":"model.mediatype == 'image'","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"} */
@@ -162,14 +160,13 @@ public class MediaModel extends AbstractComponent {
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Width","x-form-type":"materialrange","x-default":100,"x-form-min":10,"x-form-max":100} */
 	@Inject
-	@Default(values ="100")
+	@Default(values = "100")
 	private String mediawidth;
 
+	//GEN]
 
-//GEN]
-
-    //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Media type","x-form-type":"materialradio","properties":{"image":{"x-form-name":"Image","x-form-value":"image"},"video":{"x-form-name":"Video","x-form-value":"video"},"icon":{"x-form-name":"Icon","x-form-value":"icon"}}} */
+	//GEN[:GETTERS
+	/* {"type":"string","x-source":"inject","x-form-label":"Media type","x-form-type":"materialradio","properties":{"image":{"x-form-name":"Image","x-form-value":"image"},"video":{"x-form-name":"Video","x-form-value":"video"},"icon":{"x-form-name":"Icon","x-form-value":"icon"}}} */
 	public String getMediatype() {
 		return mediatype;
 	}
@@ -208,11 +205,9 @@ public class MediaModel extends AbstractComponent {
 	public String getMediawidth() {
 		return mediawidth;
 	}
+	//GEN]
 
-
-//GEN]
-
-    //GEN[:CUSTOMGETTERS
-    //GEN]
+	//GEN[:CUSTOMGETTERS
+	//GEN]
 
 }

@@ -1,64 +1,64 @@
 {
-  "definitions": {
-    "Socialicons": {
-      "type": "object",
-      "x-type": "component",
-      "properties": {
-        "iconcustomcolor": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Custom Icons Color",
-          "x-form-group": "style",
-          "x-form-type": "materialswitch"
-        },
-        "iconcolor": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Icon Color",
-          "x-default": "#000000",
-          "x-form-group": "style",
-          "x-form-visible": "model.iconcustomcolor == 'true'",
-          "x-form-type": "color"
-        },
-        "iconsize": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Icon Size",
-          "x-form-group": "style",
-          "x-form-type": "materialrange",
-          "x-default": "25",
-          "x-form-min": 0,
-          "x-form-max": 150
-        },
-        "icons": {
-          "type": "object",
-          "x-form-type": "collection",
-          "x-form-label": "Icons",
-          "x-form-group": "content",
-          "x-source": "inject",
-          "properties": {
-            "icon": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Icon Name",
-              "x-form-type": "text"
-            },
-            "url": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Icon Url",
-              "x-form-type": "pathbrowser",
-              "x-form-browserRoot": "/content/themecleanflex/pages"
-            },
-            "iconalttext": {
-              "type": "string",
-              "x-source": "inject",
-              "x-form-label": "Icon Alt Text",
-              "x-form-type": "text"
-            }
-          }
-        }
-      }
-    }
-  }
+	"definitions": {
+		"Socialicons": {
+			"type": "object",
+			"x-type": "component",
+			"properties": {
+				"iconcustomcolor": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Custom Icons Color",
+					"x-form-group": "style",
+					"x-form-type": "materialswitch"
+				},
+				"iconcolor": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Icon Color",
+					"x-default": "#000000",
+					"x-form-group": "style",
+					"x-form-visible": "model.iconcustomcolor == 'true'",
+					"x-form-type": "color"
+				},
+				"iconsize": {
+					"type": "string",
+					"x-source": "inject",
+					"x-form-label": "Icon Size",
+					"x-form-group": "style",
+					"x-form-type": "materialrange",
+					"x-default": "25",
+					"x-form-min": 0,
+					"x-form-max": 150
+				},
+				"icons": {
+					"type": "object",
+					"x-form-type": "collection",
+					"x-form-label": "Icons",
+					"x-form-group": "content",
+					"x-source": "inject",
+					"properties": {
+						"icon": {
+							"type": "string",
+							"x-source": "inject",
+							"x-form-label": "Icon Name",
+							"x-form-type": "text"
+						},
+						"url": {
+							"type": "string",
+							"x-source": "inject",
+							"x-form-label": "Icon Url",
+							"x-form-type": "pathbrowser",
+							"x-form-browserRoot": "/content/themecleanflex/pages"
+						},
+						"iconalttext": {
+							"type": "string",
+							"x-source": "inject",
+							"x-form-label": "Icon Alt Text",
+							"x-form-type": "text"
+						}
+					}
+				}
+			}
+		}
+	}
 }

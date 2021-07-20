@@ -1,8 +1,8 @@
 {
-  "title": "Form - Input Types",
-  "group": "Features",
-  "model": {
-    "schema": "/content/themecleanflex/object-definitions/example-form-all/schema.json",
-    "uischema": "/content/themecleanflex/object-definitions/example-form-all/uischema.json"
-  }
+	"title": "Form - Input Types",
+	"group": "Features",
+	"model": {
+		"schema": "/content/themecleanflex/object-definitions/example-form-all/schema.json",
+		"uischema": "/content/themecleanflex/object-definitions/example-form-all/uischema.json"
+	}
 }

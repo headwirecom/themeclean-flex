@@ -1,10 +1,9 @@
 ---
 name: Feature request
 about: Thanks for helping us improve Peregrine CMS!
-title: ''
+title: ""
 labels: enhancement
-assignees: ''
-
+assignees: ""
 ---
 
 **Please describe the problem.**

@@ -1,8 +1,8 @@
 {
-  "title": "Form - Contact",
-  "group": "Features",
-  "model": {
-    "schema": "/content/themecleanflex/object-definitions/example-form-contact/schema.json",
-    "uischema": "/content/themecleanflex/object-definitions/example-form-contact/uischema.json"
-  }
+	"title": "Form - Contact",
+	"group": "Features",
+	"model": {
+		"schema": "/content/themecleanflex/object-definitions/example-form-contact/schema.json",
+		"uischema": "/content/themecleanflex/object-definitions/example-form-contact/uischema.json"
+	}
 }

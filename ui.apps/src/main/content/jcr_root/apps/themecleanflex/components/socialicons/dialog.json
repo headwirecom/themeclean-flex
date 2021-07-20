@@ -1,78 +1,75 @@
 {
-  "groups": [
-    {
-      "legend": "style",
-      "fields": [
-        {
-          "type": "materialswitch",
-          "textOn": "yes",
-          "textOff": "no",
-          "valueOn": "true",
-          "valueOff": "false",
-          "placeholder": "iconcustomcolor",
-          "label": "Custom Icons Color",
-          "model": "iconcustomcolor",
-          "x_form_group": "style"
-        },
-        {
-          "type": "input",
-          "inputType": "color",
-          "placeholder": "iconcolor",
-          "label": "Icon Color",
-          "model": "iconcolor",
-          "visible": "model.iconcustomcolor == 'true'",
-          "x_form_group": "style"
-        },
-        {
-          "type": "material-range",
-          "placeholder": "iconsize",
-          "label": "Icon Size",
-          "model": "iconsize",
-          "min": 0,
-          "max": 150,
-          "x_form_group": "style"
-        }
-      ]
-    },
-    {
-      "legend": "content",
-      "fields": [
-        {
-          "type": "collection",
-          "multifield": true,
-          "fieldLabel": [
-            "icon",
-            "value"
-          ],
-          "fields": [
-            {
-              "type": "input",
-              "inputType": "text",
-              "placeholder": "icon",
-              "label": "Icon Name",
-              "model": "icon"
-            },
-            {
-              "type": "pathbrowser",
-              "browserRoot": "/content/themecleanflex/pages",
-              "placeholder": "url",
-              "label": "Icon Url",
-              "model": "url"
-            },
-            {
-              "type": "input",
-              "inputType": "text",
-              "placeholder": "iconalttext",
-              "label": "Icon Alt Text",
-              "model": "iconalttext"
-            }
-          ],
-          "placeholder": "icons",
-          "label": "Icons",
-          "model": "icons",
-          "x_form_group": "content"
-        }
-      ]
-    }
-  ]
+	"groups": [
+		{
+			"legend": "style",
+			"fields": [
+				{
+					"type": "materialswitch",
+					"textOn": "yes",
+					"textOff": "no",
+					"valueOn": "true",
+					"valueOff": "false",
+					"placeholder": "iconcustomcolor",
+					"label": "Custom Icons Color",
+					"model": "iconcustomcolor",
+					"x_form_group": "style"
+				},
+				{
+					"type": "input",
+					"inputType": "color",
+					"placeholder": "iconcolor",
+					"label": "Icon Color",
+					"model": "iconcolor",
+					"visible": "model.iconcustomcolor == 'true'",
+					"x_form_group": "style"
+				},
+				{
+					"type": "material-range",
+					"placeholder": "iconsize",
+					"label": "Icon Size",
+					"model": "iconsize",
+					"min": 0,
+					"max": 150,
+					"x_form_group": "style"
+				}
+			]
+		},
+		{
+			"legend": "content",
+			"fields": [
+				{
+					"type": "collection",
+					"multifield": true,
+					"fieldLabel": ["icon", "value"],
+					"fields": [
+						{
+							"type": "input",
+							"inputType": "text",
+							"placeholder": "icon",
+							"label": "Icon Name",
+							"model": "icon"
+						},
+						{
+							"type": "pathbrowser",
+							"browserRoot": "/content/themecleanflex/pages",
+							"placeholder": "url",
+							"label": "Icon Url",
+							"model": "url"
+						},
+						{
+							"type": "input",
+							"inputType": "text",
+							"placeholder": "iconalttext",
+							"label": "Icon Alt Text",
+							"model": "iconalttext"
+						}
+					],
+					"placeholder": "icons",
+					"label": "Icons",
+					"model": "icons",
+					"x_form_group": "content"
+				}
+			]
+		}
+	]
 }

@@ -1,75 +1,72 @@
 {
-  "groups": [
-    {
-      "legend": "content",
-      "fields": [
-        {
-          "type": "collection",
-          "multifield": true,
-          "fieldLabel": [
-            "text",
-            "value"
-          ],
-          "fields": [
-            {
-              "type": "input",
-              "inputType": "text",
-              "placeholder": "text",
-              "label": "Link Text",
-              "model": "text"
-            },
-            {
-              "type": "pathbrowser",
-              "browserRoot": "/content/themecleanflex/pages",
-              "placeholder": "link",
-              "label": "Link Url",
-              "model": "link"
-            }
-          ],
-          "placeholder": "links",
-          "label": "Links",
-          "model": "links",
-          "x_form_group": "content"
-        }
-      ]
-    },
-    {
-      "legend": "style",
-      "fields": [
-        {
-          "type": "material-select",
-          "values": [
-            {
-              "name": "Primary",
-              "value": "primary"
-            },
-            {
-              "name": "Success",
-              "value": "success"
-            },
-            {
-              "name": "Danger",
-              "value": "danger"
-            },
-            {
-              "name": "Warning",
-              "value": "warning"
-            },
-            {
-              "name": "Light",
-              "value": "light"
-            },
-            {
-              "name": "Dark",
-              "value": "dark"
-            }
-          ],
-          "placeholder": "linkcolor",
-          "label": "Link Color",
-          "model": "linkcolor",
-          "x_form_group": "style"
-        }
-      ]
-    }
-  ]
+	"groups": [
+		{
+			"legend": "content",
+			"fields": [
+				{
+					"type": "collection",
+					"multifield": true,
+					"fieldLabel": ["text", "value"],
+					"fields": [
+						{
+							"type": "input",
+							"inputType": "text",
+							"placeholder": "text",
+							"label": "Link Text",
+							"model": "text"
+						},
+						{
+							"type": "pathbrowser",
+							"browserRoot": "/content/themecleanflex/pages",
+							"placeholder": "link",
+							"label": "Link Url",
+							"model": "link"
+						}
+					],
+					"placeholder": "links",
+					"label": "Links",
+					"model": "links",
+					"x_form_group": "content"
+				}
+			]
+		},
+		{
+			"legend": "style",
+			"fields": [
+				{
+					"type": "material-select",
+					"values": [
+						{
+							"name": "Primary",
+							"value": "primary"
+						},
+						{
+							"name": "Success",
+							"value": "success"
+						},
+						{
+							"name": "Danger",
+							"value": "danger"
+						},
+						{
+							"name": "Warning",
+							"value": "warning"
+						},
+						{
+							"name": "Light",
+							"value": "light"
+						},
+						{
+							"name": "Dark",
+							"value": "dark"
+						}
+					],
+					"placeholder": "linkcolor",
+					"label": "Link Color",
+					"model": "linkcolor",
+					"x_form_group": "style"
+				}
+			]
+		}
+	]
 }

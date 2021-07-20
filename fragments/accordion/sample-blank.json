@@ -1,8 +1,7 @@
 {
-  "title": "Accordion",
-  "group": "Features",
-  "model": {
-    "tabs": [
-    ]
-  }
+	"title": "Accordion",
+	"group": "Features",
+	"model": {
+		"tabs": []
+	}
 }

@@ -1,12 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Social Icons" group=".hidden">
+<?xml version="1.0" encoding="utf-8" ?>
+<jcr:root
+	xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+	jcr:primaryType="per:Component"
+	jcr:title="Social Icons"
+	group=".hidden"
+>
   <jcr:content jcr:primaryType="nt:unstructured">
     <icons jcr:primaryType="nt:unstructured">
-      <icons0 jcr:primaryType="nt:unstructured" url="https://www.facebook.com/" icon="facebook" iconalttext="Facebook"/>
-      <icons1 jcr:primaryType="nt:unstructured" url="https://twitter.com/" icon="twitter" iconalttext="Twitter"/>
-      <icons2 jcr:primaryType="nt:unstructured" url="https://www.instagram.com/" icon="instagram" iconalttext="Instagram"/>
-      <icons3 jcr:primaryType="nt:unstructured" url="https://www.pinterest.com/" icon="pinterest" iconalttext="Pinterest"/>
-      <icons4 jcr:primaryType="nt:unstructured" url="https://www.youtube.com/" icon="youtube" iconalttext="Youtube"/>
+      <icons0
+				jcr:primaryType="nt:unstructured"
+				url="https://www.facebook.com/"
+				icon="facebook"
+				iconalttext="Facebook"
+			/>
+      <icons1
+				jcr:primaryType="nt:unstructured"
+				url="https://twitter.com/"
+				icon="twitter"
+				iconalttext="Twitter"
+			/>
+      <icons2
+				jcr:primaryType="nt:unstructured"
+				url="https://www.instagram.com/"
+				icon="instagram"
+				iconalttext="Instagram"
+			/>
+      <icons3
+				jcr:primaryType="nt:unstructured"
+				url="https://www.pinterest.com/"
+				icon="pinterest"
+				iconalttext="Pinterest"
+			/>
+      <icons4
+				jcr:primaryType="nt:unstructured"
+				url="https://www.youtube.com/"
+				icon="youtube"
+				iconalttext="Youtube"
+			/>
     </icons>
   </jcr:content>
 </jcr:root>

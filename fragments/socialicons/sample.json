@@ -1,33 +1,33 @@
 {
-  "title": "Social Icons",
-  "group": ".hidden",
-  "model": {
-    "icons": [
-      {
-        "url": "https://www.facebook.com/",
-        "icon": "facebook",
-        "iconalttext": "Facebook"
-      },
-      {
-        "url": "https://twitter.com/",
-        "icon": "twitter",
-        "iconalttext": "Twitter"
-      },
-      {
-        "url": "https://www.instagram.com/",
-        "icon": "instagram",
-        "iconalttext": "Instagram"
-      },
-      {
-        "url": "https://www.pinterest.com/",
-        "icon": "pinterest",
-        "iconalttext": "Pinterest"
-      },
-      {
-        "url": "https://www.youtube.com/",
-        "icon": "youtube",
-        "iconalttext": "Youtube"
-      }
-    ]
-  }
+	"title": "Social Icons",
+	"group": ".hidden",
+	"model": {
+		"icons": [
+			{
+				"url": "https://www.facebook.com/",
+				"icon": "facebook",
+				"iconalttext": "Facebook"
+			},
+			{
+				"url": "https://twitter.com/",
+				"icon": "twitter",
+				"iconalttext": "Twitter"
+			},
+			{
+				"url": "https://www.instagram.com/",
+				"icon": "instagram",
+				"iconalttext": "Instagram"
+			},
+			{
+				"url": "https://www.pinterest.com/",
+				"icon": "pinterest",
+				"iconalttext": "Pinterest"
+			},
+			{
+				"url": "https://www.youtube.com/",
+				"icon": "youtube",
+				"iconalttext": "Youtube"
+			}
+		]
+	}
 }

@@ -28,30 +28,27 @@ import org.apache.sling.models.annotations.Model;
 
 //GEN[:DEF
 @Model(
-        adaptables = Resource.class,
-        resourceType = "themecleanflex/components/pagelistnested",
-        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
-        adapters = IComponent.class
+	adaptables = Resource.class,
+	resourceType = "themecleanflex/components/pagelistnested",
+	defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
+	adapters = IComponent.class
 )
-@Exporter(
-        name = "jackson",
-        extensions = "json"
-)
-
+@Exporter(name = "jackson", extensions = "json")
 //GEN]
 public class PagelistnestedModel extends AbstractComponent {
 
-    public PagelistnestedModel(Resource r) { super(r); }
+	public PagelistnestedModel(Resource r) {
+		super(r);
+	}
+	//GEN[:INJECT
 
-    //GEN[:INJECT
-    
-//GEN]
+	//GEN]
 
-    //GEN[:GETTERS
-    
-//GEN]
+	//GEN[:GETTERS
 
-    //GEN[:CUSTOMGETTERS
-    //GEN]
+	//GEN]
+
+	//GEN[:CUSTOMGETTERS
+	//GEN]
 
 }

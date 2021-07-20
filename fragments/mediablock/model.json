@@ -1,19 +1,19 @@
 {
-  "definitions": {
-    "Mediablock": {
-      "type": "object",
-      "x-form-groups": ["content", "style", "advanced"],
-      "x-type": "component",
-      "properties": {
-        "mediaref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/media/model.json#/definitions/Media"
-        },
-        "bgref": {
-            "x-form-type": "reference",
-        	"$ref": "fragments/block/model.json#/definitions/Block"
-        }
-      }
-    }
-  }
+	"definitions": {
+		"Mediablock": {
+			"type": "object",
+			"x-form-groups": ["content", "style", "advanced"],
+			"x-type": "component",
+			"properties": {
+				"mediaref": {
+					"x-form-type": "reference",
+					"$ref": "fragments/media/model.json#/definitions/Media"
+				},
+				"bgref": {
+					"x-form-type": "reference",
+					"$ref": "fragments/block/model.json#/definitions/Block"
+				}
+			}
+		}
+	}
 }

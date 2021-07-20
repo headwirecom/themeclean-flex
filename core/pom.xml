@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <!--
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
@@ -17,7 +17,11 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -52,8 +56,10 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Embed-Dependency>*;scope=compile;inline=true</Embed-Dependency>
-                        <Sling-Model-Packages>com.themecleanflex.models</Sling-Model-Packages>
+                        <Embed-Dependency
+						>*;scope=compile;inline=true</Embed-Dependency>
+                        <Sling-Model-Packages
+						>com.themecleanflex.models</Sling-Model-Packages>
                         <_dsannotations>*</_dsannotations>
                         <_metatypeannotations>*</_metatypeannotations>
                         <_removeheaders>
@@ -76,7 +82,8 @@
                 <groupId>org.apache.sling</groupId>
                 <artifactId>maven-sling-plugin</artifactId>
                 <configuration>
-                    <slingUrl>http://${sling.host}:${sling.port}/system/console</slingUrl>
+                    <slingUrl
+					>http://${sling.host}:${sling.port}/system/console</slingUrl>
                     <user>${sling.user}</user>
                     <password>${sling.password}</password>
                 </configuration>
@@ -170,7 +177,8 @@
         </dependency>
 
         <dependency>
-            <artifactId>org.apache.sling.scripting.sightly.compiler.java</artifactId>
+            <artifactId
+			>org.apache.sling.scripting.sightly.compiler.java</artifactId>
             <version>1.0.8</version>
             <groupId>org.apache.sling</groupId>
             <scope>provided</scope>

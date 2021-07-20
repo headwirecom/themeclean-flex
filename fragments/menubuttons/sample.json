@@ -1,23 +1,23 @@
 {
-  "title": "Menu Buttons",
-  "group": ".hidden",
-  "model": {
-    "buttons": [
-      {
-        "buttonlink": "/content/themecleanflex/pages",
-        "buttontext": "Try It Now",
-        "buttoncolor": "primary"
-      },
-      {
-        "buttonlink": "/content/themecleanflex/pages",
-        "buttontext": "Click Here!",
-        "buttoncolor": "primary"
-      },
-      {
-        "buttonlink": "/content/themecleanflex/pages",
-        "buttontext": "Enter",
-        "buttoncolor": "warning"
-      }
-    ]
-  }
+	"title": "Menu Buttons",
+	"group": ".hidden",
+	"model": {
+		"buttons": [
+			{
+				"buttonlink": "/content/themecleanflex/pages",
+				"buttontext": "Try It Now",
+				"buttoncolor": "primary"
+			},
+			{
+				"buttonlink": "/content/themecleanflex/pages",
+				"buttontext": "Click Here!",
+				"buttoncolor": "primary"
+			},
+			{
+				"buttonlink": "/content/themecleanflex/pages",
+				"buttontext": "Enter",
+				"buttoncolor": "warning"
+			}
+		]
+	}
 }

@@ -1,7 +1,7 @@
 {
-  "title": "Spacer (Empty)",
-  "group": ".hidden",
-  "model": {
-    "height": "20"
-  }
+	"title": "Spacer (Empty)",
+	"group": ".hidden",
+	"model": {
+		"height": "20"
+	}
 }

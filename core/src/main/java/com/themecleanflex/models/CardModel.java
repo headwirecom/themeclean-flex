@@ -1,18 +1,15 @@
 package com.themecleanflex.models;
 
+import com.peregrine.model.api.ImageInfo;
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
+import java.awt.Dimension;
+import javax.inject.Inject;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
-
-import javax.inject.Inject;
-
-import com.peregrine.model.api.ImageInfo;
-import java.awt.Dimension;
-
 
 /*
     //GEN[:DATA
@@ -168,23 +165,21 @@ import java.awt.Dimension;
 
 //GEN[:DEF
 @Model(
-        adaptables = Resource.class,
-        resourceType = "themecleanflex/components/cards/cards",
-        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
-        adapters = IComponent.class
+	adaptables = Resource.class,
+	resourceType = "themecleanflex/components/cards/cards",
+	defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
+	adapters = IComponent.class
 )
-@Exporter(
-        name = "jackson",
-        extensions = "json"
-)
-
+@Exporter(name = "jackson", extensions = "json")
 //GEN]
 public class CardModel extends AbstractComponent {
 
-    public CardModel(final Resource r) { super(r); }
+	public CardModel(final Resource r) {
+		super(r);
+	}
 
-    //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Card Title","x-form-visible":"model.showtitle == 'true'","x-form-type":"text"} */
+	//GEN[:INJECT
+	/* {"type":"string","x-source":"inject","x-form-label":"Card Title","x-form-visible":"model.showtitle == 'true'","x-form-type":"text"} */
 	@Inject
 	private String title;
 
@@ -197,12 +192,12 @@ public class CardModel extends AbstractComponent {
 	private String image;
 
 	@Inject
-	@ImageInfo(name="image")
+	@ImageInfo(name = "image")
 	private Dimension imageSize;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Image Width","x-form-type":"materialrange","x-default":"100","x-form-min":"10","x-form-max":"100"} */
 	@Inject
-	@Default(values ="100")
+	@Default(values = "100")
 	private String imagewidth;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"} */
@@ -219,24 +214,23 @@ public class CardModel extends AbstractComponent {
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Button Color","x-form-type":"materialselect","x-default":"primary","properties":{"primary":{"x-form-name":"Primary","x-form-value":"primary"},"secondary":{"x-form-name":"Secondary","x-form-value":"secondary"},"success":{"x-form-name":"Success","x-form-value":"success"},"danger":{"x-form-name":"Danger","x-form-value":"danger"},"warning":{"x-form-name":"Warning","x-form-value":"warning"},"info":{"x-form-name":"Info","x-form-value":"info"}}} */
 	@Inject
-	@Default(values ="primary")
+	@Default(values = "primary")
 	private String buttoncolor;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Button Size","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"Default","x-form-value":"default"},"large":{"x-form-name":"Large","x-form-value":"large"},"small":{"x-form-name":"Small","x-form-value":"small"}}} */
 	@Inject
-	@Default(values ="default")
+	@Default(values = "default")
 	private String buttonsize;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Button Alignment","x-form-type":"materialselect","x-default":"center","properties":{"left":{"x-form-name":"Left","x-form-value":"left"},"center":{"x-form-name":"Center","x-form-value":"center"},"right":{"x-form-name":"Right","x-form-value":"right"}}} */
 	@Inject
-	@Default(values ="center")
+	@Default(values = "center")
 	private String buttonalign;
 
+	//GEN]
 
-//GEN]
-
-    //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Card Title","x-form-visible":"model.showtitle == 'true'","x-form-type":"text"} */
+	//GEN[:GETTERS
+	/* {"type":"string","x-source":"inject","x-form-label":"Card Title","x-form-visible":"model.showtitle == 'true'","x-form-type":"text"} */
 	public String getTitle() {
 		return title;
 	}
@@ -289,11 +283,9 @@ public class CardModel extends AbstractComponent {
 	public String getButtonalign() {
 		return buttonalign;
 	}
+	//GEN]
 
-
-//GEN]
-
-    //GEN[:CUSTOMGETTERS
-    //GEN]
+	//GEN[:CUSTOMGETTERS
+	//GEN]
 
 }

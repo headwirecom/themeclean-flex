@@ -1,18 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <jcr:root
-  xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-  xmlns:jcr="http://www.jcp.org/jcr/1.0"
-  jcr:primaryType="per:Page">
+	xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+	xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	jcr:primaryType="per:Page"
+>
 
   <jcr:content
-    jcr:primaryType="per:PageContent"
-    sling:resourceType="themecleanflex/components/page"
-    jcr:title="themecleanflex root template"
-    siteJS="[/etc/felibs/admin/dependencies/vfg.js,/content/themecleanflex/pages/js/formsapp.js,/etc/felibs/themecleanflex/dependencies/sha256.js,/etc/felibs/themecleanflex/dependencies/jsonforms-core.js,/etc/felibs/themecleanflex/dependencies/jsonforms-vue2.js,/etc/felibs/themecleanflex/dependencies/jsonforms-vue2-vanilla.js,/etc/felibs/themecleanflex/dependencies/customElements.js]"
-    siteCSS="[/etc/felibs/admin/dependencies/vfg.css,/content/themecleanflex/pages/css/commons.css,/content/themecleanflex/pages/css/palettes/default.css,/content/themecleanflex/pages/css/palette.css,/etc/felibs/themecleanflex.css,/content/themecleanflex/pages/css/custom.css,https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap]"
-    prefetchDNS="[https://www.youtube.com,https://s.ytimg.com,https://www.google.com,https://fonts.gstatic.com,https://www.youtube-nocookie.com]"/>
+		jcr:primaryType="per:PageContent"
+		sling:resourceType="themecleanflex/components/page"
+		jcr:title="themecleanflex root template"
+		siteJS="[/etc/felibs/admin/dependencies/vfg.js,/content/themecleanflex/pages/js/formsapp.js,/etc/felibs/themecleanflex/dependencies/sha256.js,/etc/felibs/themecleanflex/dependencies/jsonforms-core.js,/etc/felibs/themecleanflex/dependencies/jsonforms-vue2.js,/etc/felibs/themecleanflex/dependencies/jsonforms-vue2-vanilla.js,/etc/felibs/themecleanflex/dependencies/customElements.js]"
+		siteCSS="[/etc/felibs/admin/dependencies/vfg.css,/content/themecleanflex/pages/css/commons.css,/content/themecleanflex/pages/css/palettes/default.css,/content/themecleanflex/pages/css/palette.css,/etc/felibs/themecleanflex.css,/content/themecleanflex/pages/css/custom.css,https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap]"
+		prefetchDNS="[https://www.youtube.com,https://s.ytimg.com,https://www.google.com,https://fonts.gstatic.com,https://www.youtube-nocookie.com]"
+	/>
 
-    <footer/>
-    <blank/>
+    <footer />
+    <blank />
 
 </jcr:root>
