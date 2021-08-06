@@ -1,0 +1,12 @@
+{
+    "fields":[
+        {
+            "type":"material-textarea",
+            "rows":50,
+            "placeholder":"text",
+            "label":"text",
+            "model":"text",
+            "x_form_group": "content"
+        }
+    ]
+}
