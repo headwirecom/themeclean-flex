@@ -4,8 +4,9 @@
             "type":"material-textarea",
             "rows":50,
             "placeholder":"text",
-            "label":"text",
+            "label":"HTML Code",
             "model":"text",
+            "hint": "Embed external code with caution",
             "x_form_group": "content"
         }
     ]
