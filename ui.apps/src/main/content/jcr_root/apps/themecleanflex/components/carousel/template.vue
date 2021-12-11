@@ -5,16 +5,21 @@
     v-bind:navigationEnabled="model.controls === 'true'" v-bind:paginationEnabled="model.indicators === 'true'"
     v-bind:autoplayHoverPause="model.pause === 'true'" v-bind:centerMode="true"
     v-bind:loop="model.wrap === 'true'" v-bind:autoplayTimeout="model.interval * 1000"
-    v-bind:perPage="model.itemsperpage" v-else>
+    v-bind:perPage="model.itemsperpage" v-else="">
       <slide v-for="(item, i) in model.slides" :key="item.path || i">
-        <div class="relative overflow-hidden flex flex-col justify-center" v-bind:style="`height:${model.carouselheight}vh;maxHeight:${model.carouselheight}vh;`">
+        <div class="relative overflow-hidden flex flex-col justify-center" v-bind:style="`height:${model.carouselheight}vh;maxHeight:${model.carouselheight}vh;`"
+        v-bind:class="{
+            'theme-dark': item.colorscheme === 'dark',
+            'theme-light': item.colorscheme === 'light',
+        }">
           <a class="absolute inset-0 z-10" v-if="item.slidelink" v-bind:href="item.slidelink"></a>
           <v-lazy-image class="absolute top-0 w-full h-full object-center" v-if="item.imagepath"
           v-bind:src="item.imagepath" v-bind:alt="item.alt" v-bind:class="item.imagefit === 'cover' ? 'object-cover' : 'object-contain'"></v-lazy-image>
           <figcaption class="relative w-full h-full flex flex-col justify-center items-center text-lg font-medium"
           v-bind:class="{
             'pb-12': model.indicators === 'true',
-            'with-bg': model.captionbg === 'true' &amp;&amp; (model.colorscheme === 'light' || model.colorscheme === 'dark')
+            'with-bg': model.captionbg === 'true' &amp;&amp; (model.colorscheme === 'light' || model.colorscheme === 'dark' ||
+                                                      item.colorscheme === 'light' || item.colorscheme === 'dark')
         }">
             <div class="container">
               <div class="px-4 sm:px-0 sm:w-full md:w-4/5 lg:w-1/2" v-if="item.text"

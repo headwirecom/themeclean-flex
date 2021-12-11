@@ -35,6 +35,26 @@
               "model": "imagefit"
             },
             {
+              "type": "material-radios",
+              "values": [
+                {
+                  "name": "Inherit",
+                  "value": ""
+                },
+                {
+                  "name": "Light",
+                  "value": "light"
+                },
+                {
+                  "name": "Dark",
+                  "value": "dark"
+                }
+              ],
+              "placeholder": "colorscheme",
+              "label": "Slide Color Scheme",
+              "model": "colorscheme"
+            },
+            {
               "type": "pathbrowser",
               "browserRoot": "/content/themecleanflex/pages",
               "placeholder": "slidelink",

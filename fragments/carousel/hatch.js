@@ -19,6 +19,11 @@ module.exports = {
         let slide = $.find('slide').first();
         f.addFor(slide, "model.slides");
 
+        f.bindAttribute(slide.find('div').first(), 'class', `{
+            'theme-dark': item.colorscheme === 'dark',
+            'theme-light': item.colorscheme === 'light',
+        }`, false)
+
         let link = $.find('a');
         f.addIf(link, "item.slidelink")
         f.bindAttribute(link, 'href', "item.slidelink")
@@ -32,7 +37,8 @@ module.exports = {
 
         let captionClasses = `{
             'pb-12': model.indicators === 'true',
-            'with-bg': model.captionbg === 'true' && (model.colorscheme === 'light' || model.colorscheme === 'dark')
+            'with-bg': model.captionbg === 'true' && (model.colorscheme === 'light' || model.colorscheme === 'dark' ||
+                                                      item.colorscheme === 'light' || item.colorscheme === 'dark')
         }`
 
         let figcaption = $.find('figcaption').first()

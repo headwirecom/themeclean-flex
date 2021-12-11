@@ -113,6 +113,27 @@
                 }
               }
             },
+            "colorscheme": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Slide Color Scheme",
+              "x-form-type": "materialradio",
+              "x-default": "",
+              "properties": {
+                "none": {
+                  "x-form-name": "Inherit",
+                  "x-form-value": ""
+                },
+                "light": {
+                  "x-form-name": "Light",
+                  "x-form-value": "light"
+                },
+                "dark": {
+                  "x-form-name": "Dark",
+                  "x-form-value": "dark"
+                }
+              }
+            },
             "slidelink": {
               "type": "string",
               "x-source": "inject",

@@ -131,6 +131,27 @@ import org.apache.sling.models.annotations.Model;
                 }
               }
             },
+            "colorscheme": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Slide Color Scheme",
+              "x-form-type": "materialradio",
+              "x-default": "",
+              "properties": {
+                "none": {
+                  "x-form-name": "Inherit",
+                  "x-form-value": ""
+                },
+                "light": {
+                  "x-form-name": "Light",
+                  "x-form-value": "light"
+                },
+                "dark": {
+                  "x-form-name": "Dark",
+                  "x-form-value": "dark"
+                }
+              }
+            },
             "slidelink": {
               "type": "string",
               "x-source": "inject",
@@ -492,7 +513,7 @@ public class CarouselModel extends AbstractComponent {
 	@Inject
 	private String captionbg;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Slides","x-form-fieldLabel":"heading","x-form-group":"content","x-form-type":"collection","properties":{"imagepath":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"},"imagefit":{"type":"string","x-source":"inject","x-form-label":"Slide Image Fit","x-form-type":"materialradio","x-default":"cover","properties":{"toggle":{"x-form-name":"Contain","x-form-value":"contain"},"accordion":{"x-form-name":"Cover","x-form-value":"cover"}}},"slidelink":{"type":"string","x-source":"inject","x-form-label":"Slide Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"text":{"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"},"alt":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Slides","x-form-fieldLabel":"heading","x-form-group":"content","x-form-type":"collection","properties":{"imagepath":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"},"imagefit":{"type":"string","x-source":"inject","x-form-label":"Slide Image Fit","x-form-type":"materialradio","x-default":"cover","properties":{"toggle":{"x-form-name":"Contain","x-form-value":"contain"},"accordion":{"x-form-name":"Cover","x-form-value":"cover"}}},"colorscheme":{"type":"string","x-source":"inject","x-form-label":"Slide Color Scheme","x-form-type":"materialradio","x-default":"","properties":{"none":{"x-form-name":"Inherit","x-form-value":""},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}},"slidelink":{"type":"string","x-source":"inject","x-form-label":"Slide Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"text":{"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"},"alt":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"}}} */
 	@Inject
 	private List<IComponent> slides;
 
@@ -642,7 +663,7 @@ public class CarouselModel extends AbstractComponent {
 		return captionbg;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Slides","x-form-fieldLabel":"heading","x-form-group":"content","x-form-type":"collection","properties":{"imagepath":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"},"imagefit":{"type":"string","x-source":"inject","x-form-label":"Slide Image Fit","x-form-type":"materialradio","x-default":"cover","properties":{"toggle":{"x-form-name":"Contain","x-form-value":"contain"},"accordion":{"x-form-name":"Cover","x-form-value":"cover"}}},"slidelink":{"type":"string","x-source":"inject","x-form-label":"Slide Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"text":{"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"},"alt":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Slides","x-form-fieldLabel":"heading","x-form-group":"content","x-form-type":"collection","properties":{"imagepath":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"},"imagefit":{"type":"string","x-source":"inject","x-form-label":"Slide Image Fit","x-form-type":"materialradio","x-default":"cover","properties":{"toggle":{"x-form-name":"Contain","x-form-value":"contain"},"accordion":{"x-form-name":"Cover","x-form-value":"cover"}}},"colorscheme":{"type":"string","x-source":"inject","x-form-label":"Slide Color Scheme","x-form-type":"materialradio","x-default":"","properties":{"none":{"x-form-name":"Inherit","x-form-value":""},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}},"slidelink":{"type":"string","x-source":"inject","x-form-label":"Slide Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"text":{"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"},"alt":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"}}} */
 	public List<IComponent> getSlides() {
 		return slides;
 	}
