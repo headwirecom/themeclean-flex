@@ -18,10 +18,14 @@
           <figcaption class="relative w-full h-full flex flex-col justify-center items-center text-lg font-medium"
           v-bind:class="{
             'pb-12': model.indicators === 'true',
-            'with-bg': model.captionbg === 'true' &amp;&amp; (model.colorscheme === 'light' || model.colorscheme === 'dark' ||
-                                                      item.colorscheme === 'light' || item.colorscheme === 'dark')
+            'with-bg': ((model.captionbg === 'true' &amp;&amp; item.captionbg !== 'false') || item.captionbg === 'true') &amp;&amp;
+                       (model.colorscheme === 'light' || model.colorscheme === 'dark' || item.colorscheme === 'light' || item.colorscheme === 'dark')
         }">
-            <div class="container">
+            <div class="container flex flex-col" v-bind:class="{
+            'items-start': (item.captionalign === 'inherit' &amp;&amp; model.captionalign === 'left') || item.captionalign === 'left',
+            'items-center': (item.captionalign === 'inherit' &amp;&amp; model.captionalign === 'center') || item.captionalign === 'center',
+            'items-end': (item.captionalign === 'inherit' &amp;&amp; model.captionalign === 'right') || item.captionalign === 'right',
+        }">
               <div class="px-4 sm:px-0 sm:w-full md:w-4/5 lg:w-1/2" v-if="item.text"
               v-html="item.text" v-bind:data-per-inline="`model.slides.${i}.text`"></div>
             </div>

@@ -35,13 +35,22 @@ module.exports = {
         f.bindAttribute(image, "alt", "item.alt")
         f.bindAttribute(image, "class", "item.imagefit === 'cover' ? 'object-cover' : 'object-contain'", false)
 
+        let figcaptionContainerClasses = `{
+            'items-start': (item.captionalign === 'inherit' && model.captionalign === 'left') || item.captionalign === 'left',
+            'items-center': (item.captionalign === 'inherit' && model.captionalign === 'center') || item.captionalign === 'center',
+            'items-end': (item.captionalign === 'inherit' && model.captionalign === 'right') || item.captionalign === 'right',
+        }`
+
         let captionClasses = `{
             'pb-12': model.indicators === 'true',
-            'with-bg': model.captionbg === 'true' && (model.colorscheme === 'light' || model.colorscheme === 'dark' ||
-                                                      item.colorscheme === 'light' || item.colorscheme === 'dark')
+            'with-bg': ((model.captionbg === 'true' && item.captionbg !== 'false') || item.captionbg === 'true') &&
+                       (model.colorscheme === 'light' || model.colorscheme === 'dark' || item.colorscheme === 'light' || item.colorscheme === 'dark')
         }`
 
         let figcaption = $.find('figcaption').first()
+        let figcaptionContainer = $.find('figcaption > .container').first()
+        f.bindAttribute(figcaptionContainer, 'class', figcaptionContainerClasses, false)
+
         let figcaptionContent = $.find('figcaption > .container > div').first()
         f.addIf(figcaptionContent, "item.text", "model.slides", "text")
         f.mapRichField(figcaptionContent, "item.text", "model.slides", "text")

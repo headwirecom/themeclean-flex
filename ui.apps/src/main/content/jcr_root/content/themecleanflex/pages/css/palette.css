@@ -159,7 +159,7 @@
   fill: var(--text-primary-color)
 }
 
-#peregrine-app [class$="-components-carousel"] figcaption {
+#peregrine-app [class$="-components-carousel"] figcaption.with-bg {
   background-color: var(--figcaption-primary-bg, rgba(255, 255, 255, 0));
 }
 

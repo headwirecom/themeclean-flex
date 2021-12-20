@@ -39,7 +39,7 @@
               "values": [
                 {
                   "name": "Inherit",
-                  "value": ""
+                  "value": "inherit"
                 },
                 {
                   "name": "Light",
@@ -53,6 +53,50 @@
               "placeholder": "colorscheme",
               "label": "Slide Color Scheme",
               "model": "colorscheme"
+            },
+            {
+              "type": "material-radios",
+              "values": [
+                {
+                  "name": "Inherit",
+                  "value": "inherit"
+                },
+                {
+                  "name": "No",
+                  "value": "false"
+                },
+                {
+                  "name": "Yes",
+                  "value": "true"
+                }
+              ],
+              "placeholder": "captionbg",
+              "label": "Slide Caption Background",
+              "model": "captionbg"
+            },
+            {
+              "type": "material-radios",
+              "values": [
+                {
+                  "name": "Inherit",
+                  "value": "inherit"
+                },
+                {
+                  "name": "Left",
+                  "value": "left"
+                },
+                {
+                  "name": "Center",
+                  "value": "center"
+                },
+                {
+                  "name": "Right",
+                  "value": "right"
+                }
+              ],
+              "placeholder": "captionalign",
+              "label": "Slide Caption Alignment",
+              "model": "captionalign"
             },
             {
               "type": "pathbrowser",
@@ -178,6 +222,27 @@
           "placeholder": "captionbg",
           "label": "Caption Background",
           "model": "captionbg",
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-radios",
+          "values": [
+            {
+              "name": "Left",
+              "value": "left"
+            },
+            {
+              "name": "Center",
+              "value": "center"
+            },
+            {
+              "name": "Right",
+              "value": "right"
+            }
+          ],
+          "placeholder": "captionalign",
+          "label": "Caption Alignment",
+          "model": "captionalign",
           "x_form_group": "style"
         },
         {
