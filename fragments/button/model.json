@@ -1,0 +1,87 @@
+{
+  "definitions": {
+    "Button": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "submitfunction": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Javascript function to call on submit",
+          "x-form-hint": "Function must accept (model, formdata)",
+          "x-form-type": "text",
+          "x-form-group": "content",
+          "x-default": ""
+        },
+        "submittext": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Submit Button Text",
+          "x-form-type": "text",
+          "x-form-group": "content",
+          "x-default": "Submit"
+        },
+        "submitsize": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Submit button size",
+          "x-form-type": "materialselect",
+          "x-form-group": "style",
+          "x-default": "normal",
+          "properties":{
+            "section": {
+              "x-form-name": "normal",
+              "x-form-value": "normal"
+            },
+            "small": {
+              "x-form-name": "small",
+              "x-form-value": "small"
+            },
+            "large": {
+              "x-form-name": "large",
+              "x-form-value": "large"
+            },
+            "full": {
+              "x-form-name": "full width",
+              "x-form-value": "full"
+            }
+          }
+        },
+        "submitalignment": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Submit button alignment",
+          "x-form-type": "materialselect",
+          "x-form-group": "style",
+          "x-default": "start",
+          "properties":{
+            "start": {
+              "x-form-name": "start",
+              "x-form-value": "start"
+            },
+            "center": {
+              "x-form-name": "center",
+              "x-form-value": "center"
+            },
+            "end": {
+              "x-form-name": "end",
+              "x-form-value": "end"
+            }
+          }
+        },
+        "successpage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "pathbrowser",
+          "x-form-label": "Submit Success Page",
+          "x-form-group": "content",
+          "x-form-browserRoot": "/content/themecleanflex/pages"
+        },
+        "bgref": {
+          "$ref": "fragments/block/model.json#/definitions/Block",
+          "x-form-type": "reference"
+        }
+      }
+    }
+  }
+}
