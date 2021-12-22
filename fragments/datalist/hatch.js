@@ -113,8 +113,12 @@ module.exports = {
         }`
         f.bindAttribute(table, 'class', tableClasses, false)
 
+        const thRowActionText = table.find('th.header-row-actions').first()
+        console.log(`TH Row Action Text: ${thRowActionText}`)
+
         const thText = $.find('th.header-item').first()
         console.log(`TH Row Text: ${thText}`)
+
         f.addFor(thText, 'model.columns', 'col')
         const thTextClasses = `{
             'p-3': model.densetable !== 'true',
@@ -128,8 +132,6 @@ module.exports = {
         f.bindAttribute(thText, 'class', thTextClasses, false)
         f.mapField(thText.find('span'), 'col.header', false)
 
-        const thRowActionText = $.find('th.header-row-actions').first()
-        console.log(`TH Row Action Text: ${thRowActionText}`)
         f.bindAttribute(thRowActionText, 'class', thTextClasses, false)
 
         const thAction = $.find('th.action-head').first()
@@ -141,6 +143,9 @@ module.exports = {
 
         const tbody = $.find('tbody').first()
         const tr = tbody.find('tr').first()
+        console.log(`TR: ${tr}`)
+        const tdActionColumn = tr.find('td.action-column').first()
+        console.log(`TD Action Column: ${tdActionColumn}`)
         const tdItem = tr.find('td.item').first()
         tr.attr('v-for', `(data, j) in storageData`)
         tr.attr(':key', `data.path || j`)
@@ -175,8 +180,10 @@ module.exports = {
         f.bindEvent(tdAction.find('.action').eq(0), 'click', 'toggleRow(j)');
         f.bindAttribute(tdAction, 'class', tdClasses, false)
 
-        const tdActionColumn = $.find('td.action-column').first()
-        console.log(`TD Action Column: ${tdActionColumn}`)
+        const divActionRow = tdActionColumn.find('.selected-row-actions').eq(0);
+        console.log(`Div Action Row: ${divActionRow}`)
+        f.addIf(tdActionColumn, "true")
+        f.bindAttribute(tdActionColumn, 'class', tdClasses, false)
         f.bindEvent(tdActionColumn.find('.selected-row-actions').eq(0), 'click', 'loadDetailsFunction(j)');
 
         const caption = $.find('caption')
