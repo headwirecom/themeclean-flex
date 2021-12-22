@@ -25,6 +25,14 @@
           "x-form-hint": "Function must accept (tableData, activeSelections, endpointurl)",
           "x-form-type": "text"
         },
+        "detailsPage": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-type": "pathbrowser",
+          "x-form-label": "Form Details Page",
+          "x-form-group": "content",
+          "x-form-browserRoot": "/content/themecleanflex/pages"
+        },
         "columns": {
           "type": "string",
           "x-source": "inject",

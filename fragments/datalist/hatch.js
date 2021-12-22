@@ -114,6 +114,7 @@ module.exports = {
         f.bindAttribute(table, 'class', tableClasses, false)
 
         const thText = $.find('th.header-item').first()
+        console.log(`TH Row Text: ${thText}`)
         f.addFor(thText, 'model.columns', 'col')
         const thTextClasses = `{
             'p-3': model.densetable !== 'true',
@@ -126,6 +127,10 @@ module.exports = {
         }`
         f.bindAttribute(thText, 'class', thTextClasses, false)
         f.mapField(thText.find('span'), 'col.header', false)
+
+        const thRowActionText = $.find('th.header-row-actions').first()
+        console.log(`TH Row Action Text: ${thRowActionText}`)
+        f.bindAttribute(thRowActionText, 'class', thTextClasses, false)
 
         const thAction = $.find('th.action-head').first()
         f.addIf(thAction, "model.selectable === 'true'")
@@ -161,6 +166,7 @@ module.exports = {
         f.addStyle(tdItem.find('span.item-text'), 'color',"active[j] ? 'var(--text-secondary-color) !important' : ''");
         
         const tdAction = $.find('td.action-item').first()
+        console.log(`TD Action Item: ${tdAction}`)
         f.addStyle(tdAction, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
         f.addIf(tdAction, "model.selectable === 'true'")
         f.addIf(tdAction.find('.unchecked'), '!active[j]');
@@ -168,6 +174,10 @@ module.exports = {
         f.addStyle(tdAction.find('.checked'), 'fill',"active[j] ? 'var(--text-secondary-color) !important' : ''");
         f.bindEvent(tdAction.find('.action').eq(0), 'click', 'toggleRow(j)');
         f.bindAttribute(tdAction, 'class', tdClasses, false)
+
+        const tdActionColumn = $.find('td.action-column').first()
+        console.log(`TD Action Column: ${tdActionColumn}`)
+        f.bindEvent(tdActionColumn.find('.selected-row-actions').eq(0), 'click', 'loadDetailsFunction(j)');
 
         const caption = $.find('caption')
         const captionClasses = `{
