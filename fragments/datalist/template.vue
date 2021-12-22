@@ -1,7 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
-    <div class="w-full" v-else="">
+    <div class="w-full" v-else>
       <div class="selected w-full flex justify-between p-3" v-bind:class="{
             'hidden': active.filter(element => element === true).length === 0,
         }">
@@ -11,7 +11,8 @@
           <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
           aria-hidden="true">
             <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-            v-if="(!active.every(element => element === true) || active.length === 0)"></path>
+            v-if="(!active.every(element =&gt; element === true) || active.length === 0)"
+            />
             <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
             v-else=""></path>
           </svg>
@@ -54,6 +55,9 @@
                 </svg>
               </div>
             </th>
+            <th class="header-action-column">
+              <span class="header-row-action-text">Actions</span>
+            </th>
             <th class="header-item" v-for="(col, i) in model.columns" :key="col.path || i"
             v-bind:class="{
             'p-3': model.densetable !== 'true',
@@ -93,6 +97,14 @@
                 </svg>
               </span>
             </td>
+            <td class="action-column" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`">
+              <span class="row-action">
+                <svg class="w-24 cursor-pointer action-btn" focusable="false" viewBox="0 0 24 24"
+                aria-hidden="true">
+                  <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                </svg>
+              </span>
+            </td>
             <td class="item" v-for="(col, i) in model.columns" :key="col.path || i"
             v-bind:class="{
             'border': model.cellborders === 'true',
@@ -106,7 +118,6 @@
             'align-bottom':  model.rowalignment === 'bottom'
         }" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`">
               <span class="item-text" v-bind:style="`color:${active[j] ? 'var(--text-secondary-color) !important' : ''};`">{{data[col.value]}}</span>
-              <span class="item-text3"></span>
             </td>
           </tr>
         </tbody>
@@ -128,6 +139,8 @@
         }">
         <tbody class="mobile-default" v-if="model.mobiletablestyle === &quot;&quot; || model.mobiletablestyle === &quot;default&quot;">
           <template v-for="(data, j) in storageData" v-if="rowHasData(data,model.columns)">
+            <tr class="item-row" v-for="(col, i) in model.columns" :key="data.path || j"
+            v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`">
             <td class="action-head w-24" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`"
             v-if="i === 0" v-bind:class="{
             'border': model.cellborders === 'true', 
@@ -174,6 +187,7 @@
             'align-center':  model.rowalignment === 'center',
             'align-bottom':  model.rowalignment === 'bottom'
         }">{{data[col.value]}}</td>
+            </tr>
           </template>
         </tbody>
         <tbody class="mobile-scroll" v-else="">
@@ -191,7 +205,8 @@
                 <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
                 aria-hidden="true">
                   <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                  v-if="(!active.every(element => element === true) || active.length === 0)"></path>
+                  v-if="(!active.every(element =&gt; element === true) || active.length === 0)"
+                  />
                   <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                   v-else=""></path>
                 </svg>

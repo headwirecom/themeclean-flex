@@ -37,6 +37,7 @@ module.exports = {
         f.addIf(mobileDefaultBody, 'model.mobiletablestyle === "" || model.mobiletablestyle === "default"' )
 
         const mobileDefaultTr =  mobileContainer.find('tr.item-row').eq(0)
+        console.log(`Mobile Item Row: ${mobileDefaultTr}`)
         f.addFor(mobileDefaultTr, 'model.columns', 'col')
         mobileDefaultTr.attr(':key', `data.path || j`)
         f.addStyle(mobileDefaultTr, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
@@ -113,12 +114,7 @@ module.exports = {
         }`
         f.bindAttribute(table, 'class', tableClasses, false)
 
-        const thRowActionText = table.find('th.header-row-actions').first()
-        console.log(`TH Row Action Text: ${thRowActionText}`)
-
         const thText = $.find('th.header-item').first()
-        console.log(`TH Row Text: ${thText}`)
-
         f.addFor(thText, 'model.columns', 'col')
         const thTextClasses = `{
             'p-3': model.densetable !== 'true',
@@ -132,8 +128,6 @@ module.exports = {
         f.bindAttribute(thText, 'class', thTextClasses, false)
         f.mapField(thText.find('span'), 'col.header', false)
 
-        f.bindAttribute(thRowActionText, 'class', thTextClasses, false)
-
         const thAction = $.find('th.action-head').first()
         f.addIf(thAction, "model.selectable === 'true'")
         f.addIf(thAction.find('.unchecked'), '(!active.every(element => element === true) || active.length === 0)');
@@ -141,11 +135,11 @@ module.exports = {
         f.bindEvent(thAction.find('.action').eq(0), 'click', 'toggleAllRows');
         f.bindAttribute(thAction, 'class', thTextClasses, false)
 
+        const thActionColumn = $.find('th.header-action-column').first()
+        console.log(`TH Action Column: ${thActionColumn}`)
+
         const tbody = $.find('tbody').first()
         const tr = tbody.find('tr').first()
-        console.log(`TR: ${tr}`)
-        const tdActionColumn = tr.find('td.action-column').first()
-        console.log(`TD Action Column: ${tdActionColumn}`)
         const tdItem = tr.find('td.item').first()
         tr.attr('v-for', `(data, j) in storageData`)
         tr.attr(':key', `data.path || j`)
@@ -164,14 +158,13 @@ module.exports = {
             'align-top':  model.rowalignment === 'top' ||  model.rowalignment === '',
             'align-center':  model.rowalignment === 'center',
             'align-bottom':  model.rowalignment === 'bottom'
-        }`    
+        }`
         f.bindAttribute(tdItem, 'class', tdClasses, false)
         f.addStyle(tdItem, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
 
         f.addStyle(tdItem.find('span.item-text'), 'color',"active[j] ? 'var(--text-secondary-color) !important' : ''");
-        
+
         const tdAction = $.find('td.action-item').first()
-        console.log(`TD Action Item: ${tdAction}`)
         f.addStyle(tdAction, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
         f.addIf(tdAction, "model.selectable === 'true'")
         f.addIf(tdAction.find('.unchecked'), '!active[j]');
@@ -180,11 +173,10 @@ module.exports = {
         f.bindEvent(tdAction.find('.action').eq(0), 'click', 'toggleRow(j)');
         f.bindAttribute(tdAction, 'class', tdClasses, false)
 
-        const divActionRow = tdActionColumn.find('.selected-row-actions').eq(0);
-        console.log(`Div Action Row: ${divActionRow}`)
-        f.addIf(tdActionColumn, "true")
-        f.bindAttribute(tdActionColumn, 'class', tdClasses, false)
-        f.bindEvent(tdActionColumn.find('.selected-row-actions').eq(0), 'click', 'loadDetailsFunction(j)');
+        const tdActionColumn = $.find('td.action-column').first()
+        console.log(`TD Action Column: ${tdActionColumn}`)
+        f.addStyle(tdActionColumn, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
+        f.bindEvent(tdAction.find('.row-action svg').eq(0), 'click', 'toggleRow(j)');
 
         const caption = $.find('caption')
         const captionClasses = `{
