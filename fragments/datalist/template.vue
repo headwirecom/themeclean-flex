@@ -3,18 +3,18 @@
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full" v-else>
       <div class="selected w-full flex justify-between p-3" v-bind:class="{
-            'hidden': active.filter(element => element === true).length === 0,
+            'hidden': active.filter(element =&gt; element === true).length === 0,
         }">
         <span class="action relative cursor-pointer" v-if="(model.mobiletablestyle === &quot;&quot; || model.mobiletablestyle === &quot;default&quot;) &amp;&amp; isMobile"
         v-on:click="toggleAllRows">
-          <input type="checkbox" data-indeterminate="false" value="" class="h-100 m-0 opacity-0 p-0 z-10 w-24 absolute">
+          <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-24 absolute">
           <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
           aria-hidden="true">
             <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
             v-if="(!active.every(element =&gt; element === true) || active.length === 0)"
             />
             <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-            v-else=""></path>
+            v-else="" />
           </svg>
         </span>
         <div class="selected-text">{{`${active.filter(element =&gt; element === true).length} selected`}}</div>
@@ -22,7 +22,8 @@
         class="selected-actions">
           <svg class="w-24 cursor-pointer action-btn" focusable="false" viewBox="0 0 24 24"
           aria-hidden="true" v-on:click="deleteAction">
-            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+            />
           </svg>
       </div>
     </div>
@@ -35,7 +36,8 @@
         }">
         <thead>
           <tr>
-            <th class="action-head w-24" v-if="model.selectable === 'true'" v-bind:class="{
+            <th class="action-head w-24" v-if="model.selectable === 'true'"
+            v-bind:class="{
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true',
             'sticky': model.stickyheader === 'true',
@@ -45,13 +47,14 @@
             'text-right':  col &amp;&amp; col.textalignment === 'right',
         }">
               <div class="action relative cursor-pointer" v-on:click="toggleAllRows">
-                <input type="checkbox" data-indeterminate="false" value="" class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
+                <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
                 <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
                 aria-hidden="true">
                   <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                  v-if="(!active.every(element => element === true) || active.length === 0)"></path>
+                  v-if="(!active.every(element =&gt; element === true) || active.length === 0)"
+                  />
                   <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  v-else=""></path>
+                  v-else="" />
                 </svg>
               </div>
             </th>
@@ -87,21 +90,24 @@
             'align-bottom':  model.rowalignment === 'bottom'
         }">
               <span class="action relative cursor-pointer" v-on:click="toggleRow(j)">
-                <input type="checkbox" data-indeterminate="false" value="" class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
+                <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-48 absolute">
                 <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
                 aria-hidden="true">
                   <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                  v-if="!active[j]"></path>
+                  v-if="!active[j]" />
                   <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  v-if="active[j]" v-bind:style="`fill:${active[j] ? 'var(--text-secondary-color) !important' : ''};`"></path>
+                  v-if="active[j]" v-bind:style="`fill:${active[j] ? 'var(--text-secondary-color) !important' : ''};`"
+                  />
                 </svg>
               </span>
             </td>
-            <td class="action-column" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`">
+            <td class="action-column" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`"
+            v-on:click="loadDetailsFunction(j)">
               <span class="row-action">
                 <svg class="w-24 cursor-pointer action-btn" focusable="false" viewBox="0 0 24 24"
                 aria-hidden="true">
-                  <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+                  <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                  />
                 </svg>
               </span>
             </td>
@@ -141,8 +147,8 @@
           <template v-for="(data, j) in storageData" v-if="rowHasData(data,model.columns)">
             <tr class="item-row" v-for="(col, i) in model.columns" :key="data.path || j"
             v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`">
-            <td class="action-head w-24" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`"
-            v-if="i === 0" v-bind:class="{
+              <td class="action-head w-24" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`"
+              v-if="i === 0" v-bind:class="{
             'border': model.cellborders === 'true', 
             'p-3': model.densetable !== 'true', 
             'p-1': model.densetable === 'true',
@@ -150,19 +156,20 @@
             'align-center':  model.rowalignment === 'center',
             'align-bottom':  model.rowalignment === 'bottom'
         }">
-              <span class="action relative cursor-pointer" v-on:click="toggleRow(j)">
-                <input type="checkbox" data-indeterminate="false" value="" class="h-100 m-0 opacity-0 p-0 z-10 w-24 absolute">
-                <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
-                aria-hidden="true">
-                  <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                  v-if="!active[j]"></path>
-                  <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  v-if="active[j]" v-bind:style="`fill:${active[j] ? 'var(--text-secondary-color) !important' : ''};`"></path>
-                </svg>
-              </span>
-            </td>
-            <td class="mobile-action-spacer" v-if="i !== 0" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`"
-            v-bind:class="{
+                <span class="action relative cursor-pointer" v-on:click="toggleRow(j)">
+                  <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-24 absolute">
+                  <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
+                  aria-hidden="true">
+                    <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    v-if="!active[j]" />
+                    <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    v-if="active[j]" v-bind:style="`fill:${active[j] ? 'var(--text-secondary-color) !important' : ''};`"
+                    />
+                  </svg>
+                </span>
+              </td>
+              <td class="mobile-action-spacer" v-if="i !== 0" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`"
+              v-bind:class="{
             'border': model.cellborders === 'true', 
             'p-3': model.densetable !== 'true', 
             'p-1': model.densetable === 'true',
@@ -170,7 +177,7 @@
             'align-center':  model.rowalignment === 'center',
             'align-bottom':  model.rowalignment === 'bottom'
         }"></td>
-            <td class="mobile-header" :key="col.path || i" v-bind:class="{
+              <td class="mobile-header" :key="col.path || i" v-bind:class="{
             'border': model.cellborders === 'true', 
             'p-3': model.densetable !== 'true', 
             'p-1': model.densetable === 'true',
@@ -178,8 +185,8 @@
             'align-center':  model.rowalignment === 'center',
             'align-bottom':  model.rowalignment === 'bottom'
         }">{{col.header}}</td>
-            <td class="mobile-item" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};color:${active[j] ? 'var(--text-secondary-color) !important' : ''};`"
-            v-bind:class="{
+              <td class="mobile-item" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};color:${active[j] ? 'var(--text-secondary-color) !important' : ''};`"
+              v-bind:class="{
             'border': model.cellborders === 'true', 
             'p-3': model.densetable !== 'true', 
             'p-1': model.densetable === 'true',
@@ -190,7 +197,7 @@
             </tr>
           </template>
         </tbody>
-        <tbody class="mobile-scroll" v-else="">
+        <tbody class="mobile-scroll" v-else>
           <tr class="action-row">
             <td class="action-item-all mobile-header" v-bind:class="{
             'border': model.cellborders === 'true', 
@@ -201,14 +208,14 @@
             'align-bottom':  model.rowalignment === 'bottom'
         }">
               <span class="action relative cursor-pointer" v-on:click="toggleAllRows">
-                <input type="checkbox" data-indeterminate="false" value="" class="h-100 m-0 opacity-0 p-0 z-10 w-24 absolute">
+                <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-24 absolute">
                 <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
                 aria-hidden="true">
                   <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                   v-if="(!active.every(element =&gt; element === true) || active.length === 0)"
                   />
                   <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  v-else=""></path>
+                  v-else="" />
                 </svg>
               </span>
             </td>
@@ -223,13 +230,14 @@
             'align-bottom':  model.rowalignment === 'bottom'
         }">
               <span class="action relative cursor-pointer" v-on:click="toggleRow(i)">
-                <input type="checkbox" data-indeterminate="false" value="" class="h-100 m-0 opacity-0 p-0 z-10 w-24 absolute">
+                <input type="checkbox" data-indeterminate="false" value class="h-100 m-0 opacity-0 p-0 z-10 w-24 absolute">
                 <svg class="action-active-svg w-24" focusable="false" viewBox="0 0 24 24"
                 aria-hidden="true">
                   <path class="unchecked" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                  v-if="!active[i]"></path>
+                  v-if="!active[i]" />
                   <path class="checked" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  v-if="active[i]" v-bind:style="`fill:${active[i] ? 'var(--text-secondary-color) !important' : ''};`"></path>
+                  v-if="active[i]" v-bind:style="`fill:${active[i] ? 'var(--text-secondary-color) !important' : ''};`"
+                  />
                 </svg>
               </span>
             </td>
@@ -374,6 +382,12 @@
           loadData: function(data) {
             Vue.set(this, 'storageData', data)
             Vue.set(this, 'active', new Array(data.length).fill(false))
+          },
+          loadDetailsFunction: function(id) {
+            console.log(`Load Details Page: ${this.model.detailsPage} with id: ${id}`)
+            if(this.model.detailsPage && this.model.detailsPage !== '') {
+              $peregrineApp.loadContent(this.model.detailsPage + ".html/" + id);
+            }
           },
           deleteAction: function() {
             if(this.model.deletefunction && this.model.deletefunction !== '') {

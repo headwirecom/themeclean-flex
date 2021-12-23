@@ -176,7 +176,7 @@ module.exports = {
         const tdActionColumn = $.find('td.action-column').first()
         console.log(`TD Action Column: ${tdActionColumn}`)
         f.addStyle(tdActionColumn, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
-        f.bindEvent(tdAction.find('.row-action svg').eq(0), 'click', 'toggleRow(j)');
+        f.bindEvent(tdActionColumn, 'click', 'loadDetailsFunction(j)');
 
         const caption = $.find('caption')
         const captionClasses = `{
