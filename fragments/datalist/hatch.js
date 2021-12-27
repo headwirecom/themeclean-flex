@@ -115,7 +115,7 @@ module.exports = {
         f.bindAttribute(table, 'class', tableClasses, false)
 
         const thText = $.find('th.header-item').first()
-        f.addFor(thText, 'model.columns', 'col')
+        f.addFor(thText, 'model.columns', 'col', false)
         const thTextClasses = `{
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true',
@@ -142,7 +142,7 @@ module.exports = {
         tr.attr(':key', `data.path || j`)
         f.addIf(tr, 'rowHasData(data,model.columns)')
 
-        f.addFor(tdItem, 'model.columns', 'col')
+        f.addFor(tdItem, 'model.columns', 'col', false)
         f.mapField(tdItem.find('span.item-text'), 'data[col.value]', false)
 
         const tdClasses = `{
