@@ -1,0 +1,19 @@
+{
+  "title": "Datalist - Contacts",
+  "group": "",
+  "model": {
+    "detailsPage": "/content/themecleanflex/pages/example-form-contact",
+    "loadfunction": "$formsapp.load",
+    "deletefunction": "$formsapp.delete",
+    "columns": [
+      {
+        "header": "Email",
+        "value": "email"
+      },
+      {
+        "header": "Text",
+        "value": "text"
+      }
+    ]
+  }
+}

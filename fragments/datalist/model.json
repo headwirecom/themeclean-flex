@@ -30,7 +30,7 @@
           "x-source": "inject",
           "x-form-type": "pathbrowser",
           "x-form-label": "Form Details Page",
-          "x-form-group": "content",
+          "x-form-hint": "Form must be able to handle row index as suffix to load data",
           "x-form-browserRoot": "/content/themecleanflex/pages"
         },
         "columns": {

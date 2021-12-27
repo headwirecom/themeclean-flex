@@ -1,19 +1,6 @@
 {
   "groups": [
     {
-      "legend": "content",
-      "fields": [
-        {
-          "type": "pathbrowser",
-          "browserRoot": "/content/themecleanflex/pages",
-          "placeholder": "detailsPage",
-          "label": "Form Details Page",
-          "model": "detailsPage",
-          "x_form_group": "content"
-        }
-      ]
-    },
-    {
       "legend": "advanced",
       "fields": [
         {
@@ -314,6 +301,14 @@
           "label": "Javascript function to call to delete rows",
           "model": "deletefunction",
           "hint": "Function must accept (tableData, activeSelections, endpointurl)"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/themecleanflex/pages",
+          "placeholder": "detailsPage",
+          "label": "Form Details Page",
+          "model": "detailsPage",
+          "hint": "Form must be able to handle row index as suffix to load data"
         },
         {
           "type": "collection",

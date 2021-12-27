@@ -29,6 +29,7 @@
 const renderers = [
   ...JSONFormsVue2Vanilla.vanillaRenderers
 ];
+let row = -1;
 
 export default {
   props: ['model'],
@@ -96,6 +97,7 @@ export default {
       try {
         const data = JSON.parse(storage)
         form = data[id]
+        this.row = id
       }
       catch(err) {
         console.error('JSON parsing error loading storage: ' + storage + ', error: ' + err)
@@ -122,7 +124,7 @@ export default {
         while (obj && parent[obj]) {
           if (objs.length === 0) {
             try {
-              const result = parent[obj](this.model, this.form);
+              const result = parent[obj](this.model, this.form, this.row);
               if (result === false) {
                 this.$set(this, 'failureText', this.model.failmessage);
               }

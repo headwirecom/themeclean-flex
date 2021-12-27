@@ -135,9 +135,6 @@ module.exports = {
         f.bindEvent(thAction.find('.action').eq(0), 'click', 'toggleAllRows');
         f.bindAttribute(thAction, 'class', thTextClasses, false)
 
-        const thActionColumn = $.find('th.header-action-column').first()
-        console.log(`TH Action Column: ${thActionColumn}`)
-
         const tbody = $.find('tbody').first()
         const tr = tbody.find('tr').first()
         const tdItem = tr.find('td.item').first()

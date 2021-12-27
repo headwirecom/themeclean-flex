@@ -1,12 +1,24 @@
 $formsapp = {
-    save(model, data) {
+    save(model, data, index) {
         var records = localStorage.getItem(model.endpointurl);
         if(!records) { 
             records = [];
         } else {
             records = JSON.parse(records);
         }
-        records.push(data);
+        if(index !== undefined) {
+            if(typeof(index) !== 'number') {
+                index = parseInt(index);
+            }
+        } else {
+            index = -1;
+        }
+        console.log(`Row Index: ${index}`)
+        if(index >= 0 && records.length > index) {
+            records[index] = data;
+        } else {
+            records.push(data);
+        }
         localStorage.setItem(model.endpointurl, JSON.stringify(records, true, 2));
         window.dispatchEvent(new CustomEvent('datalist-storage-update',{}));
         window.dispatchEvent(new CustomEvent('form-clear',{}));

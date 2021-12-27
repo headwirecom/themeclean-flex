@@ -47,7 +47,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-type": "pathbrowser",
           "x-form-label": "Form Details Page",
-          "x-form-group": "content",
+          "x-form-hint": "Form must be able to handle row index as suffix to load data",
           "x-form-browserRoot": "/content/themecleanflex/pages"
         },
         "columns": {
@@ -547,7 +547,7 @@ public class DatalistModel extends AbstractComponent {
 	@Inject
 	private String deletefunction;
 
-	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Form Details Page","x-form-group":"content","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Form Details Page","x-form-hint":"Form must be able to handle row index as suffix to load data","x-form-browserRoot":"/content/themecleanflex/pages"} */
 	@Inject
 	private String detailsPage;
 
@@ -728,7 +728,7 @@ public class DatalistModel extends AbstractComponent {
 		return deletefunction;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Form Details Page","x-form-group":"content","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Form Details Page","x-form-hint":"Form must be able to handle row index as suffix to load data","x-form-browserRoot":"/content/themecleanflex/pages"} */
 	public String getDetailsPage() {
 		return detailsPage;
 	}
