@@ -9,6 +9,7 @@
           "x-source": "inject",
           "x-form-label": "URL to load JSON data for table",
           "x-form-type": "text",
+          "x-form-group": "content",
           "x-default": ""
         },
         "loadfunction": {
@@ -16,14 +17,16 @@
           "x-source": "inject",
           "x-form-label": "Javascript function to call to load data",
           "x-form-hint": "Function must accept (endpointurl)",
-          "x-form-type": "text"
+          "x-form-type": "text",
+          "x-form-group": "content"
         },
         "deletefunction": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Javascript function to call to delete rows",
           "x-form-hint": "Function must accept (tableData, activeSelections, endpointurl)",
-          "x-form-type": "text"
+          "x-form-type": "text",
+          "x-form-group": "content"
         },
         "detailsPage": {
           "type": "string",
@@ -31,7 +34,8 @@
           "x-form-type": "pathbrowser",
           "x-form-label": "Form Details Page",
           "x-form-hint": "Form must be able to handle row index as suffix to load data",
-          "x-form-browserRoot": "/content/themecleanflex/pages"
+          "x-form-browserRoot": "/content/themecleanflex/pages",
+          "x-form-group": "content"
         },
         "columns": {
           "type": "string",
@@ -39,6 +43,7 @@
           "x-form-label": "Table Configuration",
           "x-form-fieldLabel": "header",
           "x-form-type": "collection",
+          "x-form-group": "table",
           "properties": {
             "header": {
               "type": "string",
@@ -81,6 +86,7 @@
           "x-form-label": "Row alignment",
           "x-form-type": "materialselect",
           "x-default": "top",
+          "x-form-group": "table",
           "properties":{
             "top": {
               "x-form-name": "top",
@@ -102,6 +108,7 @@
           "x-form-label": "Mobile table style",
           "x-form-type": "materialselect",
           "x-default": "default",
+          "x-form-group": "table",
           "properties":{
             "default": {
               "x-form-name": "default",
@@ -118,21 +125,24 @@
           "x-source": "inject",
           "x-form-label": "Striped Rows",
           "x-form-type": "materialswitch",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "densetable": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Dense Table",
           "x-form-type": "materialswitch",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "scrollabletable": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Scrollable Table",
           "x-form-type": "materialswitch",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "stickyheader": {
           "type": "string",
@@ -140,7 +150,8 @@
           "x-form-label": "Sticky Header",
           "x-form-type": "materialswitch",
           "x-form-visible": "model.scrollabletable == 'true'",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "tableheight": {
           "type": "string",
@@ -150,35 +161,40 @@
           "x-form-min": 100,
           "x-form-max": 500,
           "x-default": 300,
-          "x-form-visible": "model.scrollabletable == 'true'"
+          "x-form-visible": "model.scrollabletable == 'true'",
+          "x-form-group": "table"
         },
         "selectable": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Selectable Table",
           "x-form-type": "materialswitch",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "cellborders": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Add borders around individual cells",
           "x-form-type": "materialswitch",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "caption": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Table caption",
           "x-form-type": "materialswitch",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "captiontext": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Caption text",
           "x-form-type": "text",
-          "x-form-visible": "model.caption == 'true'"
+          "x-form-visible": "model.caption == 'true'",
+          "x-form-group": "table"
         },
         "captionplacement": {
           "type": "string",
@@ -187,6 +203,7 @@
           "x-form-type": "materialselect",
           "x-default": "bottom",
           "x-form-visible": "model.caption == 'true'",
+          "x-form-group": "table",
           "properties":{
             "top": {
               "x-form-name": "top",
@@ -205,6 +222,7 @@
           "x-form-type": "materialselect",
           "x-default": "left",
           "x-form-visible": "model.caption == 'true'",
+          "x-form-group": "table",
           "properties":{
             "left": {
               "x-form-name": "left",

@@ -3,11 +3,21 @@ module.exports = {
         f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
 
+// Selection Container section
+
         const selectedContainer = $.find('div.selected').eq(0)
         const selectedContainerClasses = `{
             'hidden': active.filter(element => element === true).length === 0,
         }`
         f.bindAttribute(selectedContainer, 'class', selectedContainerClasses, false)
+
+        const detailLinkSection = $.find('div.detail-link-wrapper').first()
+        const detailLink = detailLinkSection.find('a.detail-link').first()
+        f.addIf(detailLinkSection, 'model.detailsPage && model.detailsPage !== ""')
+        f.bindAttribute(detailLink, 'href', 'model.detailsPage')
+
+// Mobile Table section
+
         const mobileSelectAction = selectedContainer.find('.action').eq(0)
         f.addIf(mobileSelectAction, '(model.mobiletablestyle === "" || model.mobiletablestyle === "default") && isMobile' )
         f.bindEvent(mobileSelectAction, 'click', 'toggleAllRows');
@@ -135,6 +145,9 @@ module.exports = {
         f.bindEvent(thAction.find('.action').eq(0), 'click', 'toggleAllRows');
         f.bindAttribute(thAction, 'class', thTextClasses, false)
 
+        const thActions = $.find('th.header-action-column').first()
+        f.addIf(thActions, 'model.detailsPage && model.detailsPage !== ""')
+
         const tbody = $.find('tbody').first()
         const tr = tbody.find('tr').first()
         const tdItem = tr.find('td.item').first()
@@ -171,7 +184,8 @@ module.exports = {
         f.bindAttribute(tdAction, 'class', tdClasses, false)
 
         const tdActionColumn = $.find('td.action-column').first()
-        console.log(`TD Action Column: ${tdActionColumn}`)
+        // console.log(`TD Action Column: ${tdActionColumn}`)
+        f.addIf(tdActionColumn, 'model.detailsPage && model.detailsPage !== ""')
         f.addStyle(tdActionColumn, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
         f.bindEvent(tdActionColumn, 'click', 'loadDetailsFunction(j)');
 

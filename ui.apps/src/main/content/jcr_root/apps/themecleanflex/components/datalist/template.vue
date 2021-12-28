@@ -2,6 +2,9 @@
   <themecleanflex-components-block v-bind:model="model">
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full" v-else>
+      <div class="detail-link-wrapper" v-if="model.detailsPage &amp;&amp; model.detailsPage !== &quot;&quot;">
+        <a class="detail-link" v-bind:href="model.detailsPage">Create a New Detail</a>
+      </div>
       <div class="selected w-full flex justify-between p-3" v-bind:class="{
             'hidden': active.filter(element =&gt; element === true).length === 0,
         }">
@@ -70,7 +73,7 @@
         }">
               <span class="header-item-text">{{col.header}}</span>
             </th>
-            <th class="header-action-column">
+            <th class="header-action-column" v-if="model.detailsPage &amp;&amp; model.detailsPage !== &quot;&quot;">
               <span class="header-row-action-text">Actions</span>
             </th>
           </tr>
@@ -115,7 +118,8 @@
         }" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`">
               <span class="item-text" v-bind:style="`color:${active[j] ? 'var(--text-secondary-color) !important' : ''};`">{{data[col.value]}}</span>
             </td>
-            <td class="action-column" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`"
+            <td class="action-column" v-if="model.detailsPage &amp;&amp; model.detailsPage !== &quot;&quot;"
+            v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`"
             v-on:click="loadDetailsFunction(j)">
               <span class="row-action">
                 <svg class="w-24 cursor-pointer action-btn" focusable="false" viewBox="0 0 128 128"
@@ -285,10 +289,13 @@
         data() {
           let data = []
           let numElements = 0;
-
-          if((!this.model.endpointurl || this.model.endpointurl === '') &&
+          let endpoint = 'list';
+          if((!this.model.endpointurl || this.model.endpointurl === '')) {
+            endpoint = this.model.endpointurl;
+          }
+          if((!endpoint || endpoint === '') &&
                 (!this.model.loadfunction || this.model.loadfunction === '')) {
-            const storage = localStorage.getItem('list')
+            const storage = localStorage.getItem(endpoint)
             try {
               data = JSON.parse(storage)
             }
@@ -333,6 +340,7 @@
             }
           },
           loadAction: function() {
+            console.log(`loadAction(), loadfunction: ${this.model.loadfunction}, Endpoint URL: ${this.model.endpointurl}`)
             if(this.model.loadfunction && this.model.loadfunction !== '') {
               const objs = this.model.loadfunction.split('.')
               let parent = window
@@ -372,7 +380,12 @@
             }
           },
           loadFromLocalStorage: function() {
-            const data = localStorage.getItem('list')
+            let endpoint = 'list';
+            if((!this.model.endpointurl || this.model.endpointurl === '')) {
+              endpoint = this.model.endpointurl;
+            }
+            console.log(`Endpoint for Local Storage: ${endpoint}`)
+            const data = localStorage.getItem(endpoint)
             try {
               this.loadData(JSON.parse(data))
             }

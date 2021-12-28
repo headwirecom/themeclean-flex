@@ -1,6 +1,274 @@
 {
   "groups": [
     {
+      "legend": "content",
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "endpointurl",
+          "label": "URL to load JSON data for table",
+          "model": "endpointurl",
+          "x_form_group": "content"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "loadfunction",
+          "label": "Javascript function to call to load data",
+          "model": "loadfunction",
+          "hint": "Function must accept (endpointurl)",
+          "x_form_group": "content"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "deletefunction",
+          "label": "Javascript function to call to delete rows",
+          "model": "deletefunction",
+          "hint": "Function must accept (tableData, activeSelections, endpointurl)",
+          "x_form_group": "content"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/themecleanflex/pages",
+          "placeholder": "detailsPage",
+          "label": "Form Details Page",
+          "model": "detailsPage",
+          "hint": "Form must be able to handle row index as suffix to load data",
+          "x_form_group": "content"
+        }
+      ]
+    },
+    {
+      "legend": "table",
+      "fields": [
+        {
+          "type": "collection",
+          "multifield": true,
+          "fieldLabel": [
+            "header",
+            "value"
+          ],
+          "fields": [
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "header",
+              "label": "Column Header",
+              "model": "header"
+            },
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "value",
+              "label": "Data Value",
+              "model": "value"
+            },
+            {
+              "type": "material-select",
+              "values": [
+                {
+                  "name": "left",
+                  "value": "left"
+                },
+                {
+                  "name": "center",
+                  "value": "center"
+                },
+                {
+                  "name": "right",
+                  "value": "right"
+                }
+              ],
+              "placeholder": "textalignment",
+              "label": "Text alignment",
+              "model": "textalignment"
+            }
+          ],
+          "placeholder": "columns",
+          "label": "Table Configuration",
+          "model": "columns",
+          "x_form_group": "table"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "top",
+              "value": "top"
+            },
+            {
+              "name": "center",
+              "value": "center"
+            },
+            {
+              "name": "bottom",
+              "value": "bottom"
+            }
+          ],
+          "placeholder": "rowalignment",
+          "label": "Row alignment",
+          "model": "rowalignment",
+          "x_form_group": "table"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "default",
+              "value": "default"
+            },
+            {
+              "name": "scroll",
+              "value": "scroll"
+            }
+          ],
+          "placeholder": "mobiletablestyle",
+          "label": "Mobile table style",
+          "model": "mobiletablestyle",
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "stripedrows",
+          "label": "Striped Rows",
+          "model": "stripedrows",
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "densetable",
+          "label": "Dense Table",
+          "model": "densetable",
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "scrollabletable",
+          "label": "Scrollable Table",
+          "model": "scrollabletable",
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "stickyheader",
+          "label": "Sticky Header",
+          "model": "stickyheader",
+          "visible": "model.scrollabletable == 'true'",
+          "x_form_group": "table"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "tableheight",
+          "label": "Table Height",
+          "model": "tableheight",
+          "visible": "model.scrollabletable == 'true'",
+          "min": 100,
+          "max": 500,
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "selectable",
+          "label": "Selectable Table",
+          "model": "selectable",
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "cellborders",
+          "label": "Add borders around individual cells",
+          "model": "cellborders",
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "caption",
+          "label": "Table caption",
+          "model": "caption",
+          "x_form_group": "table"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "captiontext",
+          "label": "Caption text",
+          "model": "captiontext",
+          "visible": "model.caption == 'true'",
+          "x_form_group": "table"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "top",
+              "value": "top"
+            },
+            {
+              "name": "bottom",
+              "value": "bottom"
+            }
+          ],
+          "placeholder": "captionplacement",
+          "label": "Caption placement",
+          "model": "captionplacement",
+          "visible": "model.caption == 'true'",
+          "x_form_group": "table"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "left",
+              "value": "left"
+            },
+            {
+              "name": "center",
+              "value": "center"
+            },
+            {
+              "name": "right",
+              "value": "right"
+            }
+          ],
+          "placeholder": "captionalignment",
+          "label": "Caption alignment",
+          "model": "captionalignment",
+          "visible": "model.caption == 'true'",
+          "x_form_group": "table"
+        }
+      ]
+    },
+    {
       "legend": "advanced",
       "fields": [
         {
@@ -273,251 +541,6 @@
           "min": 0,
           "max": 300,
           "x_form_group": "style"
-        }
-      ]
-    },
-    {
-      "legend": "others",
-      "fields": [
-        {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "endpointurl",
-          "label": "URL to load JSON data for table",
-          "model": "endpointurl"
-        },
-        {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "loadfunction",
-          "label": "Javascript function to call to load data",
-          "model": "loadfunction",
-          "hint": "Function must accept (endpointurl)"
-        },
-        {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "deletefunction",
-          "label": "Javascript function to call to delete rows",
-          "model": "deletefunction",
-          "hint": "Function must accept (tableData, activeSelections, endpointurl)"
-        },
-        {
-          "type": "pathbrowser",
-          "browserRoot": "/content/themecleanflex/pages",
-          "placeholder": "detailsPage",
-          "label": "Form Details Page",
-          "model": "detailsPage",
-          "hint": "Form must be able to handle row index as suffix to load data"
-        },
-        {
-          "type": "collection",
-          "multifield": true,
-          "fieldLabel": [
-            "header",
-            "value"
-          ],
-          "fields": [
-            {
-              "type": "input",
-              "inputType": "text",
-              "placeholder": "header",
-              "label": "Column Header",
-              "model": "header"
-            },
-            {
-              "type": "input",
-              "inputType": "text",
-              "placeholder": "value",
-              "label": "Data Value",
-              "model": "value"
-            },
-            {
-              "type": "material-select",
-              "values": [
-                {
-                  "name": "left",
-                  "value": "left"
-                },
-                {
-                  "name": "center",
-                  "value": "center"
-                },
-                {
-                  "name": "right",
-                  "value": "right"
-                }
-              ],
-              "placeholder": "textalignment",
-              "label": "Text alignment",
-              "model": "textalignment"
-            }
-          ],
-          "placeholder": "columns",
-          "label": "Table Configuration",
-          "model": "columns"
-        },
-        {
-          "type": "material-select",
-          "values": [
-            {
-              "name": "top",
-              "value": "top"
-            },
-            {
-              "name": "center",
-              "value": "center"
-            },
-            {
-              "name": "bottom",
-              "value": "bottom"
-            }
-          ],
-          "placeholder": "rowalignment",
-          "label": "Row alignment",
-          "model": "rowalignment"
-        },
-        {
-          "type": "material-select",
-          "values": [
-            {
-              "name": "default",
-              "value": "default"
-            },
-            {
-              "name": "scroll",
-              "value": "scroll"
-            }
-          ],
-          "placeholder": "mobiletablestyle",
-          "label": "Mobile table style",
-          "model": "mobiletablestyle"
-        },
-        {
-          "type": "materialswitch",
-          "textOn": "yes",
-          "textOff": "no",
-          "valueOn": "true",
-          "valueOff": "false",
-          "placeholder": "stripedrows",
-          "label": "Striped Rows",
-          "model": "stripedrows"
-        },
-        {
-          "type": "materialswitch",
-          "textOn": "yes",
-          "textOff": "no",
-          "valueOn": "true",
-          "valueOff": "false",
-          "placeholder": "densetable",
-          "label": "Dense Table",
-          "model": "densetable"
-        },
-        {
-          "type": "materialswitch",
-          "textOn": "yes",
-          "textOff": "no",
-          "valueOn": "true",
-          "valueOff": "false",
-          "placeholder": "scrollabletable",
-          "label": "Scrollable Table",
-          "model": "scrollabletable"
-        },
-        {
-          "type": "materialswitch",
-          "textOn": "yes",
-          "textOff": "no",
-          "valueOn": "true",
-          "valueOff": "false",
-          "placeholder": "stickyheader",
-          "label": "Sticky Header",
-          "model": "stickyheader",
-          "visible": "model.scrollabletable == 'true'"
-        },
-        {
-          "type": "material-range",
-          "placeholder": "tableheight",
-          "label": "Table Height",
-          "model": "tableheight",
-          "visible": "model.scrollabletable == 'true'",
-          "min": 100,
-          "max": 500
-        },
-        {
-          "type": "materialswitch",
-          "textOn": "yes",
-          "textOff": "no",
-          "valueOn": "true",
-          "valueOff": "false",
-          "placeholder": "selectable",
-          "label": "Selectable Table",
-          "model": "selectable"
-        },
-        {
-          "type": "materialswitch",
-          "textOn": "yes",
-          "textOff": "no",
-          "valueOn": "true",
-          "valueOff": "false",
-          "placeholder": "cellborders",
-          "label": "Add borders around individual cells",
-          "model": "cellborders"
-        },
-        {
-          "type": "materialswitch",
-          "textOn": "yes",
-          "textOff": "no",
-          "valueOn": "true",
-          "valueOff": "false",
-          "placeholder": "caption",
-          "label": "Table caption",
-          "model": "caption"
-        },
-        {
-          "type": "input",
-          "inputType": "text",
-          "placeholder": "captiontext",
-          "label": "Caption text",
-          "model": "captiontext",
-          "visible": "model.caption == 'true'"
-        },
-        {
-          "type": "material-select",
-          "values": [
-            {
-              "name": "top",
-              "value": "top"
-            },
-            {
-              "name": "bottom",
-              "value": "bottom"
-            }
-          ],
-          "placeholder": "captionplacement",
-          "label": "Caption placement",
-          "model": "captionplacement",
-          "visible": "model.caption == 'true'"
-        },
-        {
-          "type": "material-select",
-          "values": [
-            {
-              "name": "left",
-              "value": "left"
-            },
-            {
-              "name": "center",
-              "value": "center"
-            },
-            {
-              "name": "right",
-              "value": "right"
-            }
-          ],
-          "placeholder": "captionalignment",
-          "label": "Caption alignment",
-          "model": "captionalignment",
-          "visible": "model.caption == 'true'"
         }
       ]
     }

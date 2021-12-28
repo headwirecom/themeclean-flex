@@ -26,6 +26,7 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "URL to load JSON data for table",
           "x-form-type": "text",
+          "x-form-group": "content",
           "x-default": ""
         },
         "loadfunction": {
@@ -33,14 +34,16 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Javascript function to call to load data",
           "x-form-hint": "Function must accept (endpointurl)",
-          "x-form-type": "text"
+          "x-form-type": "text",
+          "x-form-group": "content"
         },
         "deletefunction": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Javascript function to call to delete rows",
           "x-form-hint": "Function must accept (tableData, activeSelections, endpointurl)",
-          "x-form-type": "text"
+          "x-form-type": "text",
+          "x-form-group": "content"
         },
         "detailsPage": {
           "type": "string",
@@ -48,7 +51,8 @@ import javax.inject.Named;
           "x-form-type": "pathbrowser",
           "x-form-label": "Form Details Page",
           "x-form-hint": "Form must be able to handle row index as suffix to load data",
-          "x-form-browserRoot": "/content/themecleanflex/pages"
+          "x-form-browserRoot": "/content/themecleanflex/pages",
+          "x-form-group": "content"
         },
         "columns": {
           "type": "string",
@@ -56,6 +60,7 @@ import javax.inject.Named;
           "x-form-label": "Table Configuration",
           "x-form-fieldLabel": "header",
           "x-form-type": "collection",
+          "x-form-group": "table",
           "properties": {
             "header": {
               "type": "string",
@@ -98,6 +103,7 @@ import javax.inject.Named;
           "x-form-label": "Row alignment",
           "x-form-type": "materialselect",
           "x-default": "top",
+          "x-form-group": "table",
           "properties": {
             "top": {
               "x-form-name": "top",
@@ -119,6 +125,7 @@ import javax.inject.Named;
           "x-form-label": "Mobile table style",
           "x-form-type": "materialselect",
           "x-default": "default",
+          "x-form-group": "table",
           "properties": {
             "default": {
               "x-form-name": "default",
@@ -135,21 +142,24 @@ import javax.inject.Named;
           "x-source": "inject",
           "x-form-label": "Striped Rows",
           "x-form-type": "materialswitch",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "densetable": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Dense Table",
           "x-form-type": "materialswitch",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "scrollabletable": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Scrollable Table",
           "x-form-type": "materialswitch",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "stickyheader": {
           "type": "string",
@@ -157,7 +167,8 @@ import javax.inject.Named;
           "x-form-label": "Sticky Header",
           "x-form-type": "materialswitch",
           "x-form-visible": "model.scrollabletable == 'true'",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "tableheight": {
           "type": "string",
@@ -167,35 +178,40 @@ import javax.inject.Named;
           "x-form-min": 100,
           "x-form-max": 500,
           "x-default": 300,
-          "x-form-visible": "model.scrollabletable == 'true'"
+          "x-form-visible": "model.scrollabletable == 'true'",
+          "x-form-group": "table"
         },
         "selectable": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Selectable Table",
           "x-form-type": "materialswitch",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "cellborders": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Add borders around individual cells",
           "x-form-type": "materialswitch",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "caption": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Table caption",
           "x-form-type": "materialswitch",
-          "x-default": false
+          "x-default": false,
+          "x-form-group": "table"
         },
         "captiontext": {
           "type": "string",
           "x-source": "inject",
           "x-form-label": "Caption text",
           "x-form-type": "text",
-          "x-form-visible": "model.caption == 'true'"
+          "x-form-visible": "model.caption == 'true'",
+          "x-form-group": "table"
         },
         "captionplacement": {
           "type": "string",
@@ -204,6 +220,7 @@ import javax.inject.Named;
           "x-form-type": "materialselect",
           "x-default": "bottom",
           "x-form-visible": "model.caption == 'true'",
+          "x-form-group": "table",
           "properties": {
             "top": {
               "x-form-name": "top",
@@ -222,6 +239,7 @@ import javax.inject.Named;
           "x-form-type": "materialselect",
           "x-default": "left",
           "x-form-visible": "model.caption == 'true'",
+          "x-form-group": "table",
           "properties": {
             "left": {
               "x-form-name": "left",
@@ -534,80 +552,80 @@ public class DatalistModel extends AbstractComponent {
     public DatalistModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"URL to load JSON data for table","x-form-type":"text","x-default":""} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"URL to load JSON data for table","x-form-type":"text","x-form-group":"content","x-default":""} */
 	@Inject
 	@Default(values ="")
 	private String endpointurl;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (endpointurl)","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (endpointurl)","x-form-type":"text","x-form-group":"content"} */
 	@Inject
 	private String loadfunction;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to delete rows","x-form-hint":"Function must accept (tableData, activeSelections, endpointurl)","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to delete rows","x-form-hint":"Function must accept (tableData, activeSelections, endpointurl)","x-form-type":"text","x-form-group":"content"} */
 	@Inject
 	private String deletefunction;
 
-	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Form Details Page","x-form-hint":"Form must be able to handle row index as suffix to load data","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Form Details Page","x-form-hint":"Form must be able to handle row index as suffix to load data","x-form-browserRoot":"/content/themecleanflex/pages","x-form-group":"content"} */
 	@Inject
 	private String detailsPage;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"textalignment":{"type":"string","x-source":"inject","x-form-label":"Text alignment","x-form-type":"materialselect","x-default":"left","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","x-form-group":"table","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"textalignment":{"type":"string","x-source":"inject","x-form-label":"Text alignment","x-form-type":"materialselect","x-default":"left","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}}}} */
 	@Inject
 	private List<IComponent> columns;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Row alignment","x-form-type":"materialselect","x-default":"top","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"center":{"x-form-name":"center","x-form-value":"center"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Row alignment","x-form-type":"materialselect","x-default":"top","x-form-group":"table","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"center":{"x-form-name":"center","x-form-value":"center"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
 	@Inject
 	@Default(values ="top")
 	private String rowalignment;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Mobile table style","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"default","x-form-value":"default"},"scroll":{"x-form-name":"scroll","x-form-value":"scroll"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Mobile table style","x-form-type":"materialselect","x-default":"default","x-form-group":"table","properties":{"default":{"x-form-name":"default","x-form-value":"default"},"scroll":{"x-form-name":"scroll","x-form-value":"scroll"}}} */
 	@Inject
 	@Default(values ="default")
 	private String mobiletablestyle;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Striped Rows","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Striped Rows","x-form-type":"materialswitch","x-default":false,"x-form-group":"table"} */
 	@Inject
 	private String stripedrows;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Dense Table","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Dense Table","x-form-type":"materialswitch","x-default":false,"x-form-group":"table"} */
 	@Inject
 	private String densetable;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Scrollable Table","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Scrollable Table","x-form-type":"materialswitch","x-default":false,"x-form-group":"table"} */
 	@Inject
 	private String scrollabletable;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Sticky Header","x-form-type":"materialswitch","x-form-visible":"model.scrollabletable == 'true'","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Sticky Header","x-form-type":"materialswitch","x-form-visible":"model.scrollabletable == 'true'","x-default":false,"x-form-group":"table"} */
 	@Inject
 	private String stickyheader;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Table Height","x-form-type":"materialrange","x-form-min":100,"x-form-max":500,"x-default":300,"x-form-visible":"model.scrollabletable == 'true'"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Height","x-form-type":"materialrange","x-form-min":100,"x-form-max":500,"x-default":300,"x-form-visible":"model.scrollabletable == 'true'","x-form-group":"table"} */
 	@Inject
 	@Default(values ="300")
 	private String tableheight;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Selectable Table","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Selectable Table","x-form-type":"materialswitch","x-default":false,"x-form-group":"table"} */
 	@Inject
 	private String selectable;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false,"x-form-group":"table"} */
 	@Inject
 	private String cellborders;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Table caption","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Table caption","x-form-type":"materialswitch","x-default":false,"x-form-group":"table"} */
 	@Inject
 	private String caption;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Caption text","x-form-type":"text","x-form-visible":"model.caption == 'true'"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption text","x-form-type":"text","x-form-visible":"model.caption == 'true'","x-form-group":"table"} */
 	@Inject
 	private String captiontext;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Caption placement","x-form-type":"materialselect","x-default":"bottom","x-form-visible":"model.caption == 'true'","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption placement","x-form-type":"materialselect","x-default":"bottom","x-form-visible":"model.caption == 'true'","x-form-group":"table","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
 	@Inject
 	@Default(values ="bottom")
 	private String captionplacement;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Caption alignment","x-form-type":"materialselect","x-default":"left","x-form-visible":"model.caption == 'true'","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption alignment","x-form-type":"materialselect","x-default":"left","x-form-visible":"model.caption == 'true'","x-form-group":"table","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}} */
 	@Inject
 	@Default(values ="left")
 	private String captionalignment;
@@ -713,92 +731,92 @@ public class DatalistModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"URL to load JSON data for table","x-form-type":"text","x-default":""} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"URL to load JSON data for table","x-form-type":"text","x-form-group":"content","x-default":""} */
 	public String getEndpointurl() {
 		return endpointurl;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (endpointurl)","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to load data","x-form-hint":"Function must accept (endpointurl)","x-form-type":"text","x-form-group":"content"} */
 	public String getLoadfunction() {
 		return loadfunction;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to delete rows","x-form-hint":"Function must accept (tableData, activeSelections, endpointurl)","x-form-type":"text"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Javascript function to call to delete rows","x-form-hint":"Function must accept (tableData, activeSelections, endpointurl)","x-form-type":"text","x-form-group":"content"} */
 	public String getDeletefunction() {
 		return deletefunction;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Form Details Page","x-form-hint":"Form must be able to handle row index as suffix to load data","x-form-browserRoot":"/content/themecleanflex/pages"} */
+	/* {"type":"string","x-source":"inject","x-form-type":"pathbrowser","x-form-label":"Form Details Page","x-form-hint":"Form must be able to handle row index as suffix to load data","x-form-browserRoot":"/content/themecleanflex/pages","x-form-group":"content"} */
 	public String getDetailsPage() {
 		return detailsPage;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"textalignment":{"type":"string","x-source":"inject","x-form-label":"Text alignment","x-form-type":"materialselect","x-default":"left","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Configuration","x-form-fieldLabel":"header","x-form-type":"collection","x-form-group":"table","properties":{"header":{"type":"string","x-source":"inject","x-form-label":"Column Header","x-form-type":"text"},"value":{"type":"string","x-source":"inject","x-form-label":"Data Value","x-form-type":"text"},"textalignment":{"type":"string","x-source":"inject","x-form-label":"Text alignment","x-form-type":"materialselect","x-default":"left","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}}}} */
 	public List<IComponent> getColumns() {
 		return columns;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Row alignment","x-form-type":"materialselect","x-default":"top","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"center":{"x-form-name":"center","x-form-value":"center"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Row alignment","x-form-type":"materialselect","x-default":"top","x-form-group":"table","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"center":{"x-form-name":"center","x-form-value":"center"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
 	public String getRowalignment() {
 		return rowalignment;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Mobile table style","x-form-type":"materialselect","x-default":"default","properties":{"default":{"x-form-name":"default","x-form-value":"default"},"scroll":{"x-form-name":"scroll","x-form-value":"scroll"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Mobile table style","x-form-type":"materialselect","x-default":"default","x-form-group":"table","properties":{"default":{"x-form-name":"default","x-form-value":"default"},"scroll":{"x-form-name":"scroll","x-form-value":"scroll"}}} */
 	public String getMobiletablestyle() {
 		return mobiletablestyle;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Striped Rows","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Striped Rows","x-form-type":"materialswitch","x-default":false,"x-form-group":"table"} */
 	public String getStripedrows() {
 		return stripedrows;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Dense Table","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Dense Table","x-form-type":"materialswitch","x-default":false,"x-form-group":"table"} */
 	public String getDensetable() {
 		return densetable;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Scrollable Table","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Scrollable Table","x-form-type":"materialswitch","x-default":false,"x-form-group":"table"} */
 	public String getScrollabletable() {
 		return scrollabletable;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Sticky Header","x-form-type":"materialswitch","x-form-visible":"model.scrollabletable == 'true'","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Sticky Header","x-form-type":"materialswitch","x-form-visible":"model.scrollabletable == 'true'","x-default":false,"x-form-group":"table"} */
 	public String getStickyheader() {
 		return stickyheader;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Table Height","x-form-type":"materialrange","x-form-min":100,"x-form-max":500,"x-default":300,"x-form-visible":"model.scrollabletable == 'true'"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Table Height","x-form-type":"materialrange","x-form-min":100,"x-form-max":500,"x-default":300,"x-form-visible":"model.scrollabletable == 'true'","x-form-group":"table"} */
 	public String getTableheight() {
 		return tableheight;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Selectable Table","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Selectable Table","x-form-type":"materialswitch","x-default":false,"x-form-group":"table"} */
 	public String getSelectable() {
 		return selectable;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Add borders around individual cells","x-form-type":"materialswitch","x-default":false,"x-form-group":"table"} */
 	public String getCellborders() {
 		return cellborders;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Table caption","x-form-type":"materialswitch","x-default":false} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Table caption","x-form-type":"materialswitch","x-default":false,"x-form-group":"table"} */
 	public String getCaption() {
 		return caption;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Caption text","x-form-type":"text","x-form-visible":"model.caption == 'true'"} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption text","x-form-type":"text","x-form-visible":"model.caption == 'true'","x-form-group":"table"} */
 	public String getCaptiontext() {
 		return captiontext;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Caption placement","x-form-type":"materialselect","x-default":"bottom","x-form-visible":"model.caption == 'true'","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption placement","x-form-type":"materialselect","x-default":"bottom","x-form-visible":"model.caption == 'true'","x-form-group":"table","properties":{"top":{"x-form-name":"top","x-form-value":"top"},"bottom":{"x-form-name":"bottom","x-form-value":"bottom"}}} */
 	public String getCaptionplacement() {
 		return captionplacement;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Caption alignment","x-form-type":"materialselect","x-default":"left","x-form-visible":"model.caption == 'true'","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}} */
+	/* {"type":"string","x-source":"inject","x-form-label":"Caption alignment","x-form-type":"materialselect","x-default":"left","x-form-visible":"model.caption == 'true'","x-form-group":"table","properties":{"left":{"x-form-name":"left","x-form-value":"left"},"center":{"x-form-name":"center","x-form-value":"center"},"right":{"x-form-name":"right","x-form-value":"right"}}} */
 	public String getCaptionalignment() {
 		return captionalignment;
 	}
