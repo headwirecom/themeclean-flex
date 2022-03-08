@@ -3,10 +3,13 @@ package com.themecleanflex.models;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.peregrine.commons.util.PerConstants;
 
+import com.peregrine.commons.util.PerUtil;
 import com.peregrine.nodetypes.models.AbstractComponent;
 import com.peregrine.nodetypes.models.IComponent;
+import org.apache.commons.lang.StringUtils;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
@@ -19,13 +22,17 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.StringWriter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import javax.inject.Inject;
 
+import static com.peregrine.commons.util.PerConstants.JCR_CONTENT;
+import static com.peregrine.commons.util.PerConstants.NT_UNSTRUCTURED;
 import static java.util.Objects.isNull;
+
+import static java.util.Objects.nonNull;
+import static org.apache.commons.lang.StringUtils.contains;
 
 /*
     //GEN[:DATA
@@ -349,7 +356,15 @@ import static java.util.Objects.isNull;
 //GEN]
 public class ReferenceModel extends AbstractComponent {
 
-    public ReferenceModel(Resource r) { super(r); }
+	private static final String PN_CONTENT_NAME = "contentname";
+
+	private static final ObjectMapper MAPPER = new ObjectMapper();
+
+	private static final ThreadLocal<Set<String>> forbiddenPaths = ThreadLocal.withInitial(HashSet::new);
+	private static final ThreadLocal<Boolean> foundLoop = ThreadLocal.withInitial(() -> false);
+	private static final ThreadLocal<Boolean> recursionStarter = ThreadLocal.withInitial(() -> true);
+
+	public ReferenceModel(Resource r) { super(r); }
 
     //GEN[:INJECT
     	/* {"type":"string","x-source":"inject","x-form-label":"Reference","x-form-group":"content","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"} */
@@ -595,31 +610,46 @@ public class ReferenceModel extends AbstractComponent {
     }
   
     private String generateReferenceJson() {
-      if(reference == null || "".equals(reference)) {
-        return null;
-      }
-      ResourceResolver resourceResolver = getResource().getResourceResolver();
-      Resource referencedResource = resourceResolver.getResource(reference+"/jcr:content");
-      if(referencedResource == null) {
-        LOG.error("Reference '{}' does not resolve to a resource.", reference);
-        return null;
-      }
-      try {
-        Map referenceMap = modelFactory.exportModelForResource(referencedResource,
-            PerConstants.JACKSON, Map.class, Collections.<String, String>emptyMap());
+	    final Resource resource = getResource();
+	    final ResourceResolver resourceResolver = resource.getResourceResolver();
+	    final String contentName = getContentnameref();
+	    final Resource referencedResource = Optional.ofNullable(reference)
+			    .map(resourceResolver::getResource)
+			    .map(r -> r.getChild(JCR_CONTENT))
+			    .map(r -> findComponentWithProperty(r, PN_CONTENT_NAME, contentName))
+			    .orElse(null);
+	    if (isNull(referencedResource)) {
+		    LOG.error("Reference '{}' does not resolve to a resource.", reference);
+		    return null;
+	    }
 
-        // TODO: finding the node should happen before the export due to the fact that this
-        // could result in a recursion if we point to content on the same page
-        Map result = findNode(referenceMap, "contentname", getContentnameref());
-        if(result != null) {
-          StringWriter writer = new StringWriter();
-          ObjectMapper mapper = new ObjectMapper();
-          mapper.writeValue(writer, result);
-          writer.close();
-          return writer.toString();
-        } else {
-          return null;
+	    final Set<String> paths = forbiddenPaths.get();
+	    paths.addAll(forbiddenReferences(resource));
+	    if (paths.contains(ref(reference, contentName))) {
+		    foundLoop.set(true);
+		    return null;
+	    }
+
+      try {
+	    final boolean isLevelZero = recursionStarter.get();
+	    recursionStarter.set(false);
+        final Map result = modelFactory.exportModelForResource(referencedResource,
+            PerConstants.JACKSON, Map.class, Collections.emptyMap());
+        final boolean looped = foundLoop.get();
+        if (isLevelZero) {
+	        paths.clear();
+	        foundLoop.set(false);
+	        recursionStarter.set(true);
         }
+
+	    if (looped || isNull(result)) {
+        	return null;
+        }
+
+        StringWriter writer = new StringWriter();
+        MAPPER.writeValue(writer, result);
+        writer.close();
+        return writer.toString();
       } catch (ExportException e) {
         LOG.error("Export failed for resource " + reference, e);
       } catch (MissingExporterException e) {
@@ -630,27 +660,72 @@ public class ReferenceModel extends AbstractComponent {
       return null;
     }
 
-    // find a node with the given key/value pair in our json output
-    private Map findNode(Map map, String name, String value) {
-      for (Object key : map.keySet()) {
-        Object val = map.get(key);
-        if(equals(key, name)) {
-          if(equals(value, val)) {
-            return map;
-          }
-        }
-        if("children".equals(key) && val instanceof ArrayList) {
-          ArrayList children = (ArrayList) val;
-          for (Object child : children) {
-            if(child instanceof Map) {
-              Map ret = findNode((Map) child, name, value);
-              if(ret != null) return ret;
-            }
-          }
-        }
-      }
-      return null;
+    private static String ref(final String path, final Object contentName) {
+    	return isNull(contentName) ? path : contentName + "@" + path;
     }
+
+	private static Set<String> forbiddenReferences(final Resource resource) {
+		final Set<String> result = new HashSet<>();
+		final Set<String> contentNames = new HashSet<>();
+		contentNames.add(contentName(resource));
+		result.addAll(refs(resource, contentNames));
+		final String path = resource.getPath();
+		if (!isJcrContentDescendant(path)) {
+			if (PerUtil.isJcrContent(path)) {
+				result.addAll(refs(resource.getParent(), contentNames));
+			}
+
+			return result;
+		}
+
+		Resource parent = resource.getParent();
+		contentNames.add(contentName(parent));
+		do {
+			parent = parent.getParent();
+			contentNames.add(contentName(parent));
+			result.addAll(refs(parent, contentNames));
+		} while (!JCR_CONTENT.equals(parent.getName()));
+		parent = parent.getParent();
+		contentNames.add(contentName(parent));
+		result.addAll(refs(parent, contentNames));
+		return result;
+	}
+
+	private static Set<String> refs(final Resource resource, final Set<?> contentNames) {
+		return refs(resource.getPath(), contentNames);
+	}
+
+	private static Set<String> refs(final String path, final Set<?> contentNames) {
+		return contentNames.stream().map(cn -> ref(path, cn)).collect(Collectors.toSet());
+	}
+
+	private static String contentName(final Resource resource) {
+    	return Optional.ofNullable(resource)
+			    .map(Resource::getValueMap)
+			    .map(props -> props.get(PN_CONTENT_NAME, String.class))
+			    .orElse(null);
+	}
+
+	private static boolean isJcrContentDescendant(final String path) {
+		return contains(path, "/jcr:content/");
+	}
+
+	private static Resource findComponentWithProperty(final Resource resource, final String name, final String value) {
+    	for (final Resource child : resource.getChildren()) {
+		    if (!equals(child.getResourceType(), NT_UNSTRUCTURED) && equals(child.getValueMap().get(name, String.class), value)) {
+		    	return child;
+		    }
+	    }
+
+		for (final Resource child : resource.getChildren()) {
+			final Resource result = findComponentWithProperty(child, name, value);
+			if (nonNull(result)) {
+				return result;
+			}
+		}
+
+    	return null;
+	}
 
     private static boolean equals(final Object obj, final Object other) {
 	    if (obj == other) {
