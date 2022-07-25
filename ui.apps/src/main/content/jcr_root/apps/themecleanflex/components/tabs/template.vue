@@ -1,7 +1,7 @@
 <template>
   <themecleanflex-components-block v-bind:model="model">
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
-    <div class="w-full" v-else>
+    <div class="w-full" v-else="">
       <div>
         <h1 class="text-center pb-4" v-if="model.showtitle == 'true' &amp;&amp; model.title"
         data-per-inline="model.title">{{model.title}}</h1>
@@ -13,8 +13,7 @@
             'lg:flex-row-reverse': model.mediaposition === 'after'
 
         }">
-        <div class="img-wrapper mx-3" v-if="model.showmedia == 'true'"
-        v-bind:style="{'flex':`0 0 ${model.mediawidth}%`}">
+        <div class="img-wrapper mx-3" v-if="model.showmedia == 'true'" v-bind:style="{'flex':`0 0 ${model.mediawidth}%`}">
           <themecleanflex-components-media :model="model"></themecleanflex-components-media>
         </div>
         <div class="py-3 flex flex-col mx-3 lg:flex-grow">
@@ -36,14 +35,14 @@
             'text-light' : active !== i &amp;&amp; model.tabcolor === 'light' || active === i &amp;&amp; model.tabcolor === 'dark',
             'text-dark' : active !== i &amp;&amp; model.tabcolor === 'dark' || active === i &amp;&amp; model.tabcolor === 'light',
         }" v-bind:id="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:aria-controls="`tab${_uid}${parseInt(i)+1}`"
-            v-bind:aria-selected="active === i" v-on:click="toggleActive(i)" data-per-inline="item.title">{{item.title}}</a>
+            v-bind:aria-selected="active === i" v-on:click="toggleActive(i)" v-bind:data-per-inline="`model.tabs.${i}.title`">{{item.title}}</a>
           </div>
           <!-- Tab Content -->
           <div class="relative">
             <div class="w-full py-3 opacity-0 transition-opacity" role="tabpanel"
             v-for="(item, i) in model.tabs" :key="item.path || i" v-bind:id="`tab${_uid}${parseInt(i)+1}`"
             v-bind:aria-labelledby="`tab-control-${_uid}${parseInt(i)+1}`" v-bind:class="active === i ? 'block opacity-100' : 'hidden'"
-            v-html="item.text" v-bind:data-per-inline="`item.text`"></div>
+            v-html="item.text" v-bind:data-per-inline="`model.tabs.${i}.text`"></div>
           </div>
         </div>
       </div>

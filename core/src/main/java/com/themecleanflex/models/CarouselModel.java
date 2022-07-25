@@ -97,10 +97,33 @@ import org.apache.sling.models.annotations.Model;
           "x-source": "inject",
           "x-form-group": "style",
           "x-form-label": "Caption Background",
-          "x-form-type": "materialswitch"
+          "x-form-type": "materialswitch",
+          "x-default": "true"
+        },
+        "captionalign": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-group": "style",
+          "x-form-label": "Caption Alignment",
+          "x-form-type": "materialradio",
+          "x-default": "left",
+          "properties": {
+            "left": {
+              "x-form-name": "Left",
+              "x-form-value": "left"
+            },
+            "center": {
+              "x-form-name": "Center",
+              "x-form-value": "center"
+            },
+            "right": {
+              "x-form-name": "Right",
+              "x-form-value": "right"
+            }
+          }
         },
         "slides": {
-          "type": "string",
+          "x-collection-type": "CarouselSlide",
           "x-source": "inject",
           "x-form-label": "Slides",
           "x-form-fieldLabel": "heading",
@@ -128,6 +151,73 @@ import org.apache.sling.models.annotations.Model;
                 "accordion": {
                   "x-form-name": "Cover",
                   "x-form-value": "cover"
+                }
+              }
+            },
+            "colorscheme": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Slide Color Scheme",
+              "x-form-type": "materialradio",
+              "x-default": "inherit",
+              "properties": {
+                "none": {
+                  "x-form-name": "Inherit",
+                  "x-form-value": "inherit"
+                },
+                "light": {
+                  "x-form-name": "Light",
+                  "x-form-value": "light"
+                },
+                "dark": {
+                  "x-form-name": "Dark",
+                  "x-form-value": "dark"
+                }
+              }
+            },
+            "captionbg": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Slide Caption Background",
+              "x-form-type": "materialradio",
+              "x-default": "inherit",
+              "properties": {
+                "none": {
+                  "x-form-name": "Inherit",
+                  "x-form-value": "inherit"
+                },
+                "light": {
+                  "x-form-name": "No",
+                  "x-form-value": "false"
+                },
+                "dark": {
+                  "x-form-name": "Yes",
+                  "x-form-value": "true"
+                }
+              }
+            },
+            "captionalign": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Slide Caption Alignment",
+              "x-form-type": "materialradio",
+              "x-default": "inherit",
+              "properties": {
+                "none": {
+                  "x-form-name": "Inherit",
+                  "x-form-value": "inherit"
+                },
+                "left": {
+                  "x-form-name": "Left",
+                  "x-form-value": "left"
+                },
+                "center": {
+                  "x-form-name": "Center",
+                  "x-form-value": "center"
+                },
+                "right": {
+                  "x-form-name": "Right",
+                  "x-form-value": "right"
                 }
               }
             },
@@ -488,13 +578,19 @@ public class CarouselModel extends AbstractComponent {
 	@Default(values ="true")
 	private String controls;
 
-	/* {"type":"string","x-source":"inject","x-form-group":"style","x-form-label":"Caption Background","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-group":"style","x-form-label":"Caption Background","x-form-type":"materialswitch","x-default":"true"} */
 	@Inject
+	@Default(values ="true")
 	private String captionbg;
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Slides","x-form-fieldLabel":"heading","x-form-group":"content","x-form-type":"collection","properties":{"imagepath":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"},"imagefit":{"type":"string","x-source":"inject","x-form-label":"Slide Image Fit","x-form-type":"materialradio","x-default":"cover","properties":{"toggle":{"x-form-name":"Contain","x-form-value":"contain"},"accordion":{"x-form-name":"Cover","x-form-value":"cover"}}},"slidelink":{"type":"string","x-source":"inject","x-form-label":"Slide Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"text":{"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"},"alt":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"}}} */
+	/* {"type":"string","x-source":"inject","x-form-group":"style","x-form-label":"Caption Alignment","x-form-type":"materialradio","x-default":"left","properties":{"left":{"x-form-name":"Left","x-form-value":"left"},"center":{"x-form-name":"Center","x-form-value":"center"},"right":{"x-form-name":"Right","x-form-value":"right"}}} */
 	@Inject
-	private List<IComponent> slides;
+	@Default(values ="left")
+	private String captionalign;
+
+	/* {"x-collection-type":"CarouselSlide","x-source":"inject","x-form-label":"Slides","x-form-fieldLabel":"heading","x-form-group":"content","x-form-type":"collection","properties":{"imagepath":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"},"imagefit":{"type":"string","x-source":"inject","x-form-label":"Slide Image Fit","x-form-type":"materialradio","x-default":"cover","properties":{"toggle":{"x-form-name":"Contain","x-form-value":"contain"},"accordion":{"x-form-name":"Cover","x-form-value":"cover"}}},"colorscheme":{"type":"string","x-source":"inject","x-form-label":"Slide Color Scheme","x-form-type":"materialradio","x-default":"inherit","properties":{"none":{"x-form-name":"Inherit","x-form-value":"inherit"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}},"captionbg":{"type":"string","x-source":"inject","x-form-label":"Slide Caption Background","x-form-type":"materialradio","x-default":"inherit","properties":{"none":{"x-form-name":"Inherit","x-form-value":"inherit"},"light":{"x-form-name":"No","x-form-value":"false"},"dark":{"x-form-name":"Yes","x-form-value":"true"}}},"captionalign":{"type":"string","x-source":"inject","x-form-label":"Slide Caption Alignment","x-form-type":"materialradio","x-default":"inherit","properties":{"none":{"x-form-name":"Inherit","x-form-value":"inherit"},"left":{"x-form-name":"Left","x-form-value":"left"},"center":{"x-form-name":"Center","x-form-value":"center"},"right":{"x-form-name":"Right","x-form-value":"right"}}},"slidelink":{"type":"string","x-source":"inject","x-form-label":"Slide Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"text":{"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"},"alt":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"}}} */
+	@Inject
+	private List<CarouselSlideModel> slides;
 
 	/* {"type":"string","x-source":"inject","x-form-label":"Anchor Name","x-form-group":"advanced","x-form-type":"text"} */
 	@Inject
@@ -637,13 +733,18 @@ public class CarouselModel extends AbstractComponent {
 		return controls;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-group":"style","x-form-label":"Caption Background","x-form-type":"materialswitch"} */
+	/* {"type":"string","x-source":"inject","x-form-group":"style","x-form-label":"Caption Background","x-form-type":"materialswitch","x-default":"true"} */
 	public String getCaptionbg() {
 		return captionbg;
 	}
 
-	/* {"type":"string","x-source":"inject","x-form-label":"Slides","x-form-fieldLabel":"heading","x-form-group":"content","x-form-type":"collection","properties":{"imagepath":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"},"imagefit":{"type":"string","x-source":"inject","x-form-label":"Slide Image Fit","x-form-type":"materialradio","x-default":"cover","properties":{"toggle":{"x-form-name":"Contain","x-form-value":"contain"},"accordion":{"x-form-name":"Cover","x-form-value":"cover"}}},"slidelink":{"type":"string","x-source":"inject","x-form-label":"Slide Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"text":{"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"},"alt":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"}}} */
-	public List<IComponent> getSlides() {
+	/* {"type":"string","x-source":"inject","x-form-group":"style","x-form-label":"Caption Alignment","x-form-type":"materialradio","x-default":"left","properties":{"left":{"x-form-name":"Left","x-form-value":"left"},"center":{"x-form-name":"Center","x-form-value":"center"},"right":{"x-form-name":"Right","x-form-value":"right"}}} */
+	public String getCaptionalign() {
+		return captionalign;
+	}
+
+	/* {"x-collection-type":"CarouselSlide","x-source":"inject","x-form-label":"Slides","x-form-fieldLabel":"heading","x-form-group":"content","x-form-type":"collection","properties":{"imagepath":{"type":"string","x-source":"inject","x-form-label":"Image Source","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/assets"},"imagefit":{"type":"string","x-source":"inject","x-form-label":"Slide Image Fit","x-form-type":"materialradio","x-default":"cover","properties":{"toggle":{"x-form-name":"Contain","x-form-value":"contain"},"accordion":{"x-form-name":"Cover","x-form-value":"cover"}}},"colorscheme":{"type":"string","x-source":"inject","x-form-label":"Slide Color Scheme","x-form-type":"materialradio","x-default":"inherit","properties":{"none":{"x-form-name":"Inherit","x-form-value":"inherit"},"light":{"x-form-name":"Light","x-form-value":"light"},"dark":{"x-form-name":"Dark","x-form-value":"dark"}}},"captionbg":{"type":"string","x-source":"inject","x-form-label":"Slide Caption Background","x-form-type":"materialradio","x-default":"inherit","properties":{"none":{"x-form-name":"Inherit","x-form-value":"inherit"},"light":{"x-form-name":"No","x-form-value":"false"},"dark":{"x-form-name":"Yes","x-form-value":"true"}}},"captionalign":{"type":"string","x-source":"inject","x-form-label":"Slide Caption Alignment","x-form-type":"materialradio","x-default":"inherit","properties":{"none":{"x-form-name":"Inherit","x-form-value":"inherit"},"left":{"x-form-name":"Left","x-form-value":"left"},"center":{"x-form-name":"Center","x-form-value":"center"},"right":{"x-form-name":"Right","x-form-value":"right"}}},"slidelink":{"type":"string","x-source":"inject","x-form-label":"Slide Link","x-form-type":"pathbrowser","x-form-browserRoot":"/content/themecleanflex/pages"},"text":{"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"},"alt":{"type":"string","x-source":"inject","x-form-label":"Image Alt Text","x-form-type":"text"}}} */
+	public List<CarouselSlideModel> getSlides() {
 		return slides;
 	}
 

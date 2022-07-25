@@ -71,6 +71,9 @@
   --link-primary-color-hover: #000000;
 
   --figcaption-primary-bg: #ffffff99;
+
+  --text-primary-color: rgba(0,0,0,0.87);
+  --text-secondary-color: rgba(0,0,0,0.6);
 }
 
 #peregrine-app .theme-dark {

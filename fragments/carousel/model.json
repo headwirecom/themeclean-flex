@@ -2,7 +2,11 @@
   "definitions": {
     "Carousel": {
       "type": "object",
-      "x-form-groups": ["content", "style", "advanced"],
+      "x-form-groups": [
+        "content",
+        "style",
+        "advanced"
+      ],
       "x-type": "component",
       "properties": {
         "carouselheight": {
@@ -79,10 +83,33 @@
           "x-source": "inject",
           "x-form-group": "style",
           "x-form-label": "Caption Background",
-          "x-form-type": "materialswitch"
+          "x-form-type": "materialswitch",
+          "x-default": "true"
+        },
+        "captionalign": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-group": "style",
+          "x-form-label": "Caption Alignment",
+          "x-form-type": "materialradio",
+          "x-default": "left",
+          "properties": {
+            "left": {
+              "x-form-name": "Left",
+              "x-form-value": "left"
+            },
+            "center": {
+              "x-form-name": "Center",
+              "x-form-value": "center"
+            },
+            "right": {
+              "x-form-name": "Right",
+              "x-form-value": "right"
+            }
+          }
         },
         "slides": {
-          "type": "string",
+          "x-collection-type": "CarouselSlide",
           "x-source": "inject",
           "x-form-label": "Slides",
           "x-form-fieldLabel": "heading",
@@ -113,6 +140,73 @@
                 }
               }
             },
+            "colorscheme": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Slide Color Scheme",
+              "x-form-type": "materialradio",
+              "x-default": "inherit",
+              "properties": {
+                "none": {
+                  "x-form-name": "Inherit",
+                  "x-form-value": "inherit"
+                },
+                "light": {
+                  "x-form-name": "Light",
+                  "x-form-value": "light"
+                },
+                "dark": {
+                  "x-form-name": "Dark",
+                  "x-form-value": "dark"
+                }
+              }
+            },
+            "captionbg": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Slide Caption Background",
+              "x-form-type": "materialradio",
+              "x-default": "inherit",
+              "properties": {
+                "none": {
+                  "x-form-name": "Inherit",
+                  "x-form-value": "inherit"
+                },
+                "light": {
+                  "x-form-name": "No",
+                  "x-form-value": "false"
+                },
+                "dark": {
+                  "x-form-name": "Yes",
+                  "x-form-value": "true"
+                }
+              }
+            },
+            "captionalign": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Slide Caption Alignment",
+              "x-form-type": "materialradio",
+              "x-default": "inherit",
+              "properties": {
+                "none": {
+                  "x-form-name": "Inherit",
+                  "x-form-value": "inherit"
+                },
+                "left": {
+                  "x-form-name": "Left",
+                  "x-form-value": "left"
+                },
+                "center": {
+                  "x-form-name": "Center",
+                  "x-form-value": "center"
+                },
+                "right": {
+                  "x-form-name": "Right",
+                  "x-form-value": "right"
+                }
+              }
+            },
             "slidelink": {
               "type": "string",
               "x-source": "inject",
@@ -127,10 +221,10 @@
               "x-form-type": "texteditor"
             },
             "alt": {
-	          "type": "string",
-	          "x-source": "inject",
-	          "x-form-label": "Image Alt Text",
-	          "x-form-type": "text"
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Image Alt Text",
+              "x-form-type": "text"
             }
           }
         },
