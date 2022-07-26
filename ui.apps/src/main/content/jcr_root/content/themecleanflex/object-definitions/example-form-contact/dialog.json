@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "type": "input",
+      "inputType": "text",
+      "label": "firstName",
+      "model": "firstName"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "label": "surname",
+      "model": "surname"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "label": "email",
+      "model": "email"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "label": "text",
+      "model": "text"
+    }
+  ]
+}
