@@ -14,15 +14,33 @@
     },
     {
       "type": "input",
-      "inputType": "text",
+      "inputType": "email",
       "label": "email",
       "model": "email"
     },
     {
       "type": "input",
       "inputType": "text",
-      "label": "text",
-      "model": "text"
+      "label": "address",
+      "model": "address"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "label": "city",
+      "model": "city"
+    },
+    {
+      "type": "input",
+      "inputType": "number",
+      "label": "zip",
+      "model": "zip"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "label": "state",
+      "model": "state"
     }
   ]
 }

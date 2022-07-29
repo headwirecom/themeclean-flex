@@ -8,7 +8,7 @@
     },
     {
       "type": "input",
-      "inputType": "boolean",
+      "inputType": "text",
       "label": "boolean",
       "model": "boolean"
     },
@@ -32,13 +32,13 @@
     },
     {
       "type": "input",
-      "inputType": "text",
+      "inputType": "time",
       "label": "time",
       "model": "time"
     },
     {
       "type": "input",
-      "inputType": "text",
+      "inputType": "datetime",
       "label": "dateTime",
       "model": "dateTime"
     },
