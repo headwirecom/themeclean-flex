@@ -2,6 +2,9 @@
   <themecleanflex-components-block v-bind:model="model">
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div class="w-full" v-else>
+      <div class="detail-link-wrapper" v-if="model.detailsPage &amp;&amp; model.detailsPage !== &quot;&quot;">
+        <a class="detail-link" v-bind:href="model.detailsPage">Create a New Detail</a>
+      </div>
       <div class="selected w-full flex justify-between p-3" v-bind:class="{
             'hidden': active.filter(element =&gt; element === true).length === 0,
         }">
@@ -70,6 +73,9 @@
         }">
               <span class="header-item-text">{{col.header}}</span>
             </th>
+            <th class="header-action-column" v-if="model.detailsPage &amp;&amp; model.detailsPage !== &quot;&quot;">
+              <span class="header-row-action-text">Actions</span>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -111,6 +117,19 @@
             'align-bottom':  model.rowalignment === 'bottom'
         }" v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`">
               <span class="item-text" v-bind:style="`color:${active[j] ? 'var(--text-secondary-color) !important' : ''};`">{{data[col.value]}}</span>
+            </td>
+            <td class="action-column" v-if="model.detailsPage &amp;&amp; model.detailsPage !== &quot;&quot;"
+            v-bind:style="`background:${active[j] ? 'var(--color-red-500) !important' : ''};`"
+            v-on:click="loadDetailsFunction(j)">
+              <span class="row-action">
+                <svg class="w-24 cursor-pointer action-btn" focusable="false" viewBox="0 0 128 128"
+                aria-hidden="true">
+                  <path d="M100 109.5c0 3.6-2.9 6.5-6.5 6.5h-75c-3.6 0-6.5-2.9-6.5-6.5v-75c0-3.6 2.9-6.5 6.5-6.5h55.1l12-12H18.5C8.3 16 0 24.3 0 34.5v75C0 119.7 8.3 128 18.5 128h75c10.2 0 18.5-8.3 18.5-18.5V42.4l-12 12V109.5z"
+                  />
+                  <path d="M126.4 8.9l-7.2-7.3c-2.2-2.2-5.7-2.2-7.9 0L39.6 73.3 32 96l22.7-7.6 71.6-71.6C128.5 14.6 128.5 11 126.4 8.9z"
+                  />
+                </svg>
+              </span>
             </td>
           </tr>
         </tbody>
@@ -270,10 +289,13 @@
         data() {
           let data = []
           let numElements = 0;
-
-          if((!this.model.endpointurl || this.model.endpointurl === '') &&
+          let endpoint = 'list';
+          if((!this.model.endpointurl || this.model.endpointurl === '')) {
+            endpoint = this.model.endpointurl;
+          }
+          if((!endpoint || endpoint === '') &&
                 (!this.model.loadfunction || this.model.loadfunction === '')) {
-            const storage = localStorage.getItem('list')
+            const storage = localStorage.getItem(endpoint)
             try {
               data = JSON.parse(storage)
             }
@@ -318,6 +340,7 @@
             }
           },
           loadAction: function() {
+            console.log(`loadAction(), loadfunction: ${this.model.loadfunction}, Endpoint URL: ${this.model.endpointurl}`)
             if(this.model.loadfunction && this.model.loadfunction !== '') {
               const objs = this.model.loadfunction.split('.')
               let parent = window
@@ -357,7 +380,12 @@
             }
           },
           loadFromLocalStorage: function() {
-            const data = localStorage.getItem('list')
+            let endpoint = 'list';
+            if((!this.model.endpointurl || this.model.endpointurl === '')) {
+              endpoint = this.model.endpointurl;
+            }
+            console.log(`Endpoint for Local Storage: ${endpoint}`)
+            const data = localStorage.getItem(endpoint)
             try {
               this.loadData(JSON.parse(data))
             }
@@ -369,6 +397,12 @@
           loadData: function(data) {
             Vue.set(this, 'storageData', data)
             Vue.set(this, 'active', new Array(data.length).fill(false))
+          },
+          loadDetailsFunction: function(id) {
+            console.log(`Load Details Page: ${this.model.detailsPage} with id: ${id}`)
+            if(this.model.detailsPage && this.model.detailsPage !== '') {
+              $peregrineApp.loadContent(this.model.detailsPage + ".html/" + id);
+            }
           },
           deleteAction: function() {
             if(this.model.deletefunction && this.model.deletefunction !== '') {

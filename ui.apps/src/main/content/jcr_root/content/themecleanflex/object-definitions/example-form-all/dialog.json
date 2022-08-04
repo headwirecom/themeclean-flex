@@ -1,0 +1,52 @@
+{
+  "fields": [
+    {
+      "type": "input",
+      "inputType": "text",
+      "label": "string",
+      "model": "string"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "label": "boolean",
+      "model": "boolean"
+    },
+    {
+      "type": "input",
+      "inputType": "number",
+      "label": "number",
+      "model": "number"
+    },
+    {
+      "type": "input",
+      "inputType": "number",
+      "label": "integer",
+      "model": "integer"
+    },
+    {
+      "type": "input",
+      "inputType": "date",
+      "label": "date",
+      "model": "date"
+    },
+    {
+      "type": "input",
+      "inputType": "time",
+      "label": "time",
+      "model": "time"
+    },
+    {
+      "type": "input",
+      "inputType": "datetime",
+      "label": "dateTime",
+      "model": "dateTime"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "label": "enum",
+      "model": "enum"
+    }
+  ]
+}

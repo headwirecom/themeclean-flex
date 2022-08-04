@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Datalist" group="">
-  <jcr:content jcr:primaryType="nt:unstructured" text="example"/>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Datalist">
+  <jcr:content jcr:primaryType="nt:unstructured" __variations="true">
+    <sample jcr:primaryType="nt:unstructured" title="Datalist" group="">
+      <jcr:content jcr:primaryType="nt:unstructured" text="example"/>
+    </sample>
+    <sample-contact-list jcr:primaryType="nt:unstructured" title="Datalist - Contacts" group="">
+      <jcr:content jcr:primaryType="nt:unstructured" detailsPage="/content/themecleanflex/pages/example-form-contact" loadfunction="$formsapp.load" deletefunction="$formsapp.delete">
+        <columns jcr:primaryType="nt:unstructured">
+          <columns0 jcr:primaryType="nt:unstructured" header="Email" value="email"/>
+          <columns1 jcr:primaryType="nt:unstructured" header="Text" value="text"/>
+        </columns>
+      </jcr:content>
+    </sample-contact-list>
+  </jcr:content>
 </jcr:root>

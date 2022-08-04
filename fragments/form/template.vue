@@ -29,11 +29,11 @@
 const renderers = [
   ...JSONFormsVue2Vanilla.vanillaRenderers
 ];
+let row = -1;
 
 export default {
   props: ['model'],
   data() {
-    console.log('success successpage1', this.model.successpage);
     return {
       form: {},
       failureText: '',
@@ -41,7 +41,7 @@ export default {
       uischema: {},
       renderers: Object.freeze(renderers),
       schemaError: null,
-      uischemaError: null,
+      uischemaError: null
     };
   },
   computed: {
@@ -84,6 +84,26 @@ export default {
     }
   },
   mounted() {
+    let form = {}
+    let id = -1
+    const index = location.pathname.indexOf('.html/')
+    if(index > 0) {
+      const suffix = location.pathname.substring(index + 6)
+      id = parseInt(suffix)
+    }
+    console.log(`Forms Id: ${id}`)
+    if(!this.model.loadfunction || this.model.loadfunction === ''|| index < 0) {
+      const storage = localStorage.getItem(this.model.endpointurl)
+      try {
+        const data = JSON.parse(storage)
+        form = data[id]
+        this.row = id
+      }
+      catch(err) {
+        console.error('JSON parsing error loading storage: ' + storage + ', error: ' + err)
+      }
+      this.form = form
+    }
     window.addEventListener('form-clear', this.clearForm);
   },
   beforeDestroy() {
@@ -104,7 +124,7 @@ export default {
         while (obj && parent[obj]) {
           if (objs.length === 0) {
             try {
-              const result = parent[obj](this.model, this.form);
+              const result = parent[obj](this.model, this.form, this.row);
               if (result === false) {
                 this.$set(this, 'failureText', this.model.failmessage);
               }

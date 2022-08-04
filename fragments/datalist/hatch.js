@@ -3,11 +3,21 @@ module.exports = {
         f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
 
+// Selection Container section
+
         const selectedContainer = $.find('div.selected').eq(0)
         const selectedContainerClasses = `{
             'hidden': active.filter(element => element === true).length === 0,
         }`
         f.bindAttribute(selectedContainer, 'class', selectedContainerClasses, false)
+
+        const detailLinkSection = $.find('div.detail-link-wrapper').first()
+        const detailLink = detailLinkSection.find('a.detail-link').first()
+        f.addIf(detailLinkSection, 'model.detailsPage && model.detailsPage !== ""')
+        f.bindAttribute(detailLink, 'href', 'model.detailsPage')
+
+// Mobile Table section
+
         const mobileSelectAction = selectedContainer.find('.action').eq(0)
         f.addIf(mobileSelectAction, '(model.mobiletablestyle === "" || model.mobiletablestyle === "default") && isMobile' )
         f.bindEvent(mobileSelectAction, 'click', 'toggleAllRows');
@@ -37,6 +47,7 @@ module.exports = {
         f.addIf(mobileDefaultBody, 'model.mobiletablestyle === "" || model.mobiletablestyle === "default"' )
 
         const mobileDefaultTr =  mobileContainer.find('tr.item-row').eq(0)
+        console.log(`Mobile Item Row: ${mobileDefaultTr}`)
         f.addFor(mobileDefaultTr, 'model.columns', 'col')
         mobileDefaultTr.attr(':key', `data.path || j`)
         f.addStyle(mobileDefaultTr, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
@@ -114,7 +125,7 @@ module.exports = {
         f.bindAttribute(table, 'class', tableClasses, false)
 
         const thText = $.find('th.header-item').first()
-        f.addFor(thText, 'model.columns', 'col')
+        f.addFor(thText, 'model.columns', 'col', false)
         const thTextClasses = `{
             'p-3': model.densetable !== 'true',
             'p-1': model.densetable === 'true',
@@ -134,6 +145,9 @@ module.exports = {
         f.bindEvent(thAction.find('.action').eq(0), 'click', 'toggleAllRows');
         f.bindAttribute(thAction, 'class', thTextClasses, false)
 
+        const thActions = $.find('th.header-action-column').first()
+        f.addIf(thActions, 'model.detailsPage && model.detailsPage !== ""')
+
         const tbody = $.find('tbody').first()
         const tr = tbody.find('tr').first()
         const tdItem = tr.find('td.item').first()
@@ -141,7 +155,7 @@ module.exports = {
         tr.attr(':key', `data.path || j`)
         f.addIf(tr, 'rowHasData(data,model.columns)')
 
-        f.addFor(tdItem, 'model.columns', 'col')
+        f.addFor(tdItem, 'model.columns', 'col', false)
         f.mapField(tdItem.find('span.item-text'), 'data[col.value]', false)
 
         const tdClasses = `{
@@ -154,12 +168,12 @@ module.exports = {
             'align-top':  model.rowalignment === 'top' ||  model.rowalignment === '',
             'align-center':  model.rowalignment === 'center',
             'align-bottom':  model.rowalignment === 'bottom'
-        }`    
+        }`
         f.bindAttribute(tdItem, 'class', tdClasses, false)
         f.addStyle(tdItem, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
 
         f.addStyle(tdItem.find('span.item-text'), 'color',"active[j] ? 'var(--text-secondary-color) !important' : ''");
-        
+
         const tdAction = $.find('td.action-item').first()
         f.addStyle(tdAction, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
         f.addIf(tdAction, "model.selectable === 'true'")
@@ -168,6 +182,12 @@ module.exports = {
         f.addStyle(tdAction.find('.checked'), 'fill',"active[j] ? 'var(--text-secondary-color) !important' : ''");
         f.bindEvent(tdAction.find('.action').eq(0), 'click', 'toggleRow(j)');
         f.bindAttribute(tdAction, 'class', tdClasses, false)
+
+        const tdActionColumn = $.find('td.action-column').first()
+        // console.log(`TD Action Column: ${tdActionColumn}`)
+        f.addIf(tdActionColumn, 'model.detailsPage && model.detailsPage !== ""')
+        f.addStyle(tdActionColumn, 'background', "active[j] ? 'var(--color-red-500) !important' : ''")
+        f.bindEvent(tdActionColumn, 'click', 'loadDetailsFunction(j)');
 
         const caption = $.find('caption')
         const captionClasses = `{

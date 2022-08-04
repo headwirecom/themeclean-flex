@@ -1,49 +1,248 @@
 {
-  "fields": [
+  "groups": [
     {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "endpointurl",
-      "label": "URL to load JSON data for table",
-      "model": "endpointurl"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "loadfunction",
-      "label": "Javascript function to call to load data",
-      "model": "loadfunction",
-      "hint": "Function must accept (endpointurl)"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "deletefunction",
-      "label": "Javascript function to call to delete rows",
-      "model": "deletefunction",
-      "hint": "Function must accept (tableData, activeSelections, endpointurl)"
-    },
-    {
-      "type": "collection",
-      "multifield": true,
-      "fieldLabel": [
-        "header",
-        "value"
-      ],
+      "legend": "content",
       "fields": [
         {
           "type": "input",
           "inputType": "text",
-          "placeholder": "header",
-          "label": "Column Header",
-          "model": "header"
+          "placeholder": "endpointurl",
+          "label": "URL to load JSON data for table",
+          "model": "endpointurl",
+          "x_form_group": "content"
         },
         {
           "type": "input",
           "inputType": "text",
-          "placeholder": "value",
-          "label": "Data Value",
-          "model": "value"
+          "placeholder": "loadfunction",
+          "label": "Javascript function to call to load data",
+          "model": "loadfunction",
+          "hint": "Function must accept (endpointurl)",
+          "x_form_group": "content"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "deletefunction",
+          "label": "Javascript function to call to delete rows",
+          "model": "deletefunction",
+          "hint": "Function must accept (tableData, activeSelections, endpointurl)",
+          "x_form_group": "content"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/themecleanflex/pages",
+          "placeholder": "detailsPage",
+          "label": "Form Details Page",
+          "model": "detailsPage",
+          "hint": "Form must be able to handle row index as suffix to load data",
+          "x_form_group": "content"
+        }
+      ]
+    },
+    {
+      "legend": "table",
+      "fields": [
+        {
+          "type": "collection",
+          "multifield": true,
+          "fieldLabel": [
+            "header",
+            "value"
+          ],
+          "fields": [
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "header",
+              "label": "Column Header",
+              "model": "header"
+            },
+            {
+              "type": "input",
+              "inputType": "text",
+              "placeholder": "value",
+              "label": "Data Value",
+              "model": "value"
+            },
+            {
+              "type": "material-select",
+              "values": [
+                {
+                  "name": "left",
+                  "value": "left"
+                },
+                {
+                  "name": "center",
+                  "value": "center"
+                },
+                {
+                  "name": "right",
+                  "value": "right"
+                }
+              ],
+              "placeholder": "textalignment",
+              "label": "Text alignment",
+              "model": "textalignment"
+            }
+          ],
+          "placeholder": "columns",
+          "label": "Table Configuration",
+          "model": "columns",
+          "x_form_group": "table"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "top",
+              "value": "top"
+            },
+            {
+              "name": "center",
+              "value": "center"
+            },
+            {
+              "name": "bottom",
+              "value": "bottom"
+            }
+          ],
+          "placeholder": "rowalignment",
+          "label": "Row alignment",
+          "model": "rowalignment",
+          "x_form_group": "table"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "default",
+              "value": "default"
+            },
+            {
+              "name": "scroll",
+              "value": "scroll"
+            }
+          ],
+          "placeholder": "mobiletablestyle",
+          "label": "Mobile table style",
+          "model": "mobiletablestyle",
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "stripedrows",
+          "label": "Striped Rows",
+          "model": "stripedrows",
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "densetable",
+          "label": "Dense Table",
+          "model": "densetable",
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "scrollabletable",
+          "label": "Scrollable Table",
+          "model": "scrollabletable",
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "stickyheader",
+          "label": "Sticky Header",
+          "model": "stickyheader",
+          "visible": "model.scrollabletable == 'true'",
+          "x_form_group": "table"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "tableheight",
+          "label": "Table Height",
+          "model": "tableheight",
+          "visible": "model.scrollabletable == 'true'",
+          "min": 100,
+          "max": 500,
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "selectable",
+          "label": "Selectable Table",
+          "model": "selectable",
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "cellborders",
+          "label": "Add borders around individual cells",
+          "model": "cellborders",
+          "x_form_group": "table"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "caption",
+          "label": "Table caption",
+          "model": "caption",
+          "x_form_group": "table"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "captiontext",
+          "label": "Caption text",
+          "model": "captiontext",
+          "visible": "model.caption == 'true'",
+          "x_form_group": "table"
+        },
+        {
+          "type": "material-select",
+          "values": [
+            {
+              "name": "top",
+              "value": "top"
+            },
+            {
+              "name": "bottom",
+              "value": "bottom"
+            }
+          ],
+          "placeholder": "captionplacement",
+          "label": "Caption placement",
+          "model": "captionplacement",
+          "visible": "model.caption == 'true'",
+          "x_form_group": "table"
         },
         {
           "type": "material-select",
@@ -61,421 +260,289 @@
               "value": "right"
             }
           ],
-          "placeholder": "textalignment",
-          "label": "Text alignment",
-          "model": "textalignment"
+          "placeholder": "captionalignment",
+          "label": "Caption alignment",
+          "model": "captionalignment",
+          "visible": "model.caption == 'true'",
+          "x_form_group": "table"
         }
-      ],
-      "placeholder": "columns",
-      "label": "Table Configuration",
-      "model": "columns"
+      ]
     },
     {
-      "type": "material-select",
-      "values": [
+      "legend": "advanced",
+      "fields": [
         {
-          "name": "top",
-          "value": "top"
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "anchorname",
+          "label": "Anchor Name",
+          "model": "anchorname",
+          "x_form_group": "advanced"
         },
         {
-          "name": "center",
-          "value": "center"
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "extraclasses",
+          "label": "Additonal Classes",
+          "model": "extraclasses",
+          "x_form_group": "advanced"
         },
         {
-          "name": "bottom",
-          "value": "bottom"
+          "type": "material-select",
+          "values": [
+            {
+              "name": "section",
+              "value": "section"
+            },
+            {
+              "name": "article",
+              "value": "article"
+            },
+            {
+              "name": "main",
+              "value": "main"
+            },
+            {
+              "name": "div",
+              "value": "div"
+            },
+            {
+              "name": "header",
+              "value": "header"
+            },
+            {
+              "name": "nav",
+              "value": "nav"
+            },
+            {
+              "name": "footer",
+              "value": "footer"
+            }
+          ],
+          "placeholder": "htmlelement",
+          "label": "Semantic Element",
+          "model": "htmlelement",
+          "x_form_group": "advanced"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "contentname",
+          "label": "Content Name",
+          "model": "contentname",
+          "x_form_group": "advanced"
         }
-      ],
-      "placeholder": "rowalignment",
-      "label": "Row alignment",
-      "model": "rowalignment"
+      ]
     },
     {
-      "type": "material-select",
-      "values": [
+      "legend": "style",
+      "fields": [
         {
-          "name": "default",
-          "value": "default"
+          "type": "material-radios",
+          "values": [
+            {
+              "name": "None",
+              "value": ""
+            },
+            {
+              "name": "Light",
+              "value": "light"
+            },
+            {
+              "name": "Dark",
+              "value": "dark"
+            }
+          ],
+          "placeholder": "colorscheme",
+          "label": "Block Color Scheme",
+          "model": "colorscheme",
+          "x_form_group": "style"
         },
         {
-          "name": "scroll",
-          "value": "scroll"
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "custombackground",
+          "label": "Custom Background",
+          "model": "custombackground",
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-radios",
+          "values": [
+            {
+              "name": "Color",
+              "value": "color"
+            },
+            {
+              "name": "Gradient",
+              "value": "gradient"
+            },
+            {
+              "name": "Image",
+              "value": "image"
+            },
+            {
+              "name": "Video",
+              "value": "video"
+            }
+          ],
+          "placeholder": "backgroundtype",
+          "label": "Background Type",
+          "model": "backgroundtype",
+          "visible": "model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/themecleanflex/assets",
+          "placeholder": "bgvideo",
+          "label": "Background Video",
+          "model": "bgvideo",
+          "visible": "model.backgroundtype == 'video' and model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/themecleanflex/assets",
+          "placeholder": "bgimage",
+          "label": "Background Image",
+          "model": "bgimage",
+          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "bgxposition",
+          "label": "Background X Position",
+          "model": "bgxposition",
+          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "min": 0,
+          "max": 100,
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "bgyposition",
+          "label": "Background Y Position",
+          "model": "bgyposition",
+          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "min": 0,
+          "max": 100,
+          "x_form_group": "style"
+        },
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "bgsize",
+          "label": "Background Size Style",
+          "model": "bgsize",
+          "x_form_group": "style"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "overlay",
+          "label": "Overlay",
+          "model": "overlay",
+          "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "input",
+          "inputType": "color",
+          "placeholder": "overlaycolor",
+          "label": "Overlay Color",
+          "model": "overlaycolor",
+          "visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "overlayopacity",
+          "label": "Overlay opacity",
+          "model": "overlayopacity",
+          "visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'",
+          "min": 0,
+          "max": 100,
+          "x_form_group": "style"
+        },
+        {
+          "type": "input",
+          "inputType": "color",
+          "placeholder": "bgcolor",
+          "label": "Background Color",
+          "model": "bgcolor",
+          "visible": "(model.backgroundtype == 'color' or model.backgroundtype == 'gradient') and model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "input",
+          "inputType": "color",
+          "placeholder": "color2",
+          "label": "Color 2",
+          "model": "color2",
+          "visible": "model.backgroundtype == 'gradient' and model.custombackground == 'true'",
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-radios",
+          "values": [
+            {
+              "name": "Default",
+              "value": "default"
+            },
+            {
+              "name": "Full Width",
+              "value": "full"
+            },
+            {
+              "name": "Article Width",
+              "value": "article"
+            }
+          ],
+          "placeholder": "blockwidth",
+          "label": "Block Width",
+          "model": "blockwidth",
+          "x_form_group": "style"
+        },
+        {
+          "type": "materialswitch",
+          "textOn": "yes",
+          "textOff": "no",
+          "valueOn": "true",
+          "valueOff": "false",
+          "placeholder": "fullheight",
+          "label": "Full Height",
+          "model": "fullheight",
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "toppadding",
+          "label": "Top Padding",
+          "model": "toppadding",
+          "visible": "model.fullheight != 'true'",
+          "min": 0,
+          "max": 300,
+          "x_form_group": "style"
+        },
+        {
+          "type": "material-range",
+          "placeholder": "bottompadding",
+          "label": "Bottom Padding",
+          "model": "bottompadding",
+          "visible": "model.fullheight != 'true'",
+          "min": 0,
+          "max": 300,
+          "x_form_group": "style"
         }
-      ],
-      "placeholder": "mobiletablestyle",
-      "label": "Mobile table style",
-      "model": "mobiletablestyle"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "stripedrows",
-      "label": "Striped Rows",
-      "model": "stripedrows"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "densetable",
-      "label": "Dense Table",
-      "model": "densetable"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "scrollabletable",
-      "label": "Scrollable Table",
-      "model": "scrollabletable"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "stickyheader",
-      "label": "Sticky Header",
-      "model": "stickyheader",
-      "visible": "model.scrollabletable == 'true'"
-    },
-    {
-      "type": "material-range",
-      "placeholder": "tableheight",
-      "label": "Table Height",
-      "model": "tableheight",
-      "visible": "model.scrollabletable == 'true'",
-      "min": 100,
-      "max": 500
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "selectable",
-      "label": "Selectable Table",
-      "model": "selectable"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "cellborders",
-      "label": "Add borders around individual cells",
-      "model": "cellborders"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "caption",
-      "label": "Table caption",
-      "model": "caption"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "captiontext",
-      "label": "Caption text",
-      "model": "captiontext",
-      "visible": "model.caption == 'true'"
-    },
-    {
-      "type": "material-select",
-      "values": [
-        {
-          "name": "top",
-          "value": "top"
-        },
-        {
-          "name": "bottom",
-          "value": "bottom"
-        }
-      ],
-      "placeholder": "captionplacement",
-      "label": "Caption placement",
-      "model": "captionplacement",
-      "visible": "model.caption == 'true'"
-    },
-    {
-      "type": "material-select",
-      "values": [
-        {
-          "name": "left",
-          "value": "left"
-        },
-        {
-          "name": "center",
-          "value": "center"
-        },
-        {
-          "name": "right",
-          "value": "right"
-        }
-      ],
-      "placeholder": "captionalignment",
-      "label": "Caption alignment",
-      "model": "captionalignment",
-      "visible": "model.caption == 'true'"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "anchorname",
-      "label": "Anchor Name",
-      "model": "anchorname"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "extraclasses",
-      "label": "Additonal Classes",
-      "model": "extraclasses"
-    },
-    {
-      "type": "material-select",
-      "values": [
-        {
-          "name": "section",
-          "value": "section"
-        },
-        {
-          "name": "article",
-          "value": "article"
-        },
-        {
-          "name": "main",
-          "value": "main"
-        },
-        {
-          "name": "div",
-          "value": "div"
-        },
-        {
-          "name": "header",
-          "value": "header"
-        },
-        {
-          "name": "nav",
-          "value": "nav"
-        },
-        {
-          "name": "footer",
-          "value": "footer"
-        }
-      ],
-      "placeholder": "htmlelement",
-      "label": "Semantic Element",
-      "model": "htmlelement"
-    },
-    {
-      "type": "material-radios",
-      "values": [
-        {
-          "name": "None",
-          "value": ""
-        },
-        {
-          "name": "Light",
-          "value": "light"
-        },
-        {
-          "name": "Dark",
-          "value": "dark"
-        }
-      ],
-      "placeholder": "colorscheme",
-      "label": "Block Color Scheme",
-      "model": "colorscheme"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "custombackground",
-      "label": "Custom Background",
-      "model": "custombackground"
-    },
-    {
-      "type": "material-radios",
-      "values": [
-        {
-          "name": "Color",
-          "value": "color"
-        },
-        {
-          "name": "Gradient",
-          "value": "gradient"
-        },
-        {
-          "name": "Image",
-          "value": "image"
-        },
-        {
-          "name": "Video",
-          "value": "video"
-        }
-      ],
-      "placeholder": "backgroundtype",
-      "label": "Background Type",
-      "model": "backgroundtype",
-      "visible": "model.custombackground == 'true'"
-    },
-    {
-      "type": "pathbrowser",
-      "browserRoot": "/content/themecleanflex/assets",
-      "placeholder": "bgvideo",
-      "label": "Background Video",
-      "model": "bgvideo",
-      "visible": "model.backgroundtype == 'video' and model.custombackground == 'true'"
-    },
-    {
-      "type": "pathbrowser",
-      "browserRoot": "/content/themecleanflex/assets",
-      "placeholder": "bgimage",
-      "label": "Background Image",
-      "model": "bgimage",
-      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'"
-    },
-    {
-      "type": "material-range",
-      "placeholder": "bgxposition",
-      "label": "Background X Position",
-      "model": "bgxposition",
-      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
-      "min": 0,
-      "max": 100
-    },
-    {
-      "type": "material-range",
-      "placeholder": "bgyposition",
-      "label": "Background Y Position",
-      "model": "bgyposition",
-      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'",
-      "min": 0,
-      "max": 100
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "bgsize",
-      "label": "Background Size Style",
-      "model": "bgsize"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "overlay",
-      "label": "Overlay",
-      "model": "overlay",
-      "visible": "model.backgroundtype == 'image' and model.custombackground == 'true'"
-    },
-    {
-      "type": "input",
-      "inputType": "color",
-      "placeholder": "overlaycolor",
-      "label": "Overlay Color",
-      "model": "overlaycolor",
-      "visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'"
-    },
-    {
-      "type": "material-range",
-      "placeholder": "overlayopacity",
-      "label": "Overlay opacity",
-      "model": "overlayopacity",
-      "visible": "model.overlay == 'true' and model.backgroundtype == 'image' and model.custombackground == 'true'",
-      "min": 0,
-      "max": 100
-    },
-    {
-      "type": "input",
-      "inputType": "color",
-      "placeholder": "bgcolor",
-      "label": "Background Color",
-      "model": "bgcolor",
-      "visible": "(model.backgroundtype == 'color' or model.backgroundtype == 'gradient') and model.custombackground == 'true'"
-    },
-    {
-      "type": "input",
-      "inputType": "color",
-      "placeholder": "color2",
-      "label": "Color 2",
-      "model": "color2",
-      "visible": "model.backgroundtype == 'gradient' and model.custombackground == 'true'"
-    },
-    {
-      "type": "material-radios",
-      "values": [
-        {
-          "name": "Default",
-          "value": "default"
-        },
-        {
-          "name": "Full Width",
-          "value": "full"
-        },
-        {
-          "name": "Article Width",
-          "value": "article"
-        }
-      ],
-      "placeholder": "blockwidth",
-      "label": "Block Width",
-      "model": "blockwidth"
-    },
-    {
-      "type": "materialswitch",
-      "textOn": "yes",
-      "textOff": "no",
-      "valueOn": "true",
-      "valueOff": "false",
-      "placeholder": "fullheight",
-      "label": "Full Height",
-      "model": "fullheight"
-    },
-    {
-      "type": "material-range",
-      "placeholder": "toppadding",
-      "label": "Top Padding",
-      "model": "toppadding",
-      "visible": "model.fullheight != 'true'",
-      "min": 0,
-      "max": 300
-    },
-    {
-      "type": "material-range",
-      "placeholder": "bottompadding",
-      "label": "Bottom Padding",
-      "model": "bottompadding",
-      "visible": "model.fullheight != 'true'",
-      "min": 0,
-      "max": 300
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "contentname",
-      "label": "Content Name",
-      "model": "contentname"
+      ]
     }
   ]
 }
