@@ -4,7 +4,9 @@
   xmlns:jcr="http://www.jcp.org/jcr/1.0"
   jcr:primaryType="per:Page"
   jcr:title="themecleanflex root object"
-  jcr:description="themecleanflex Objects Root">
+  jcr:description="themecleanflex Objects Root"
+  allowedNodeTypes="[per:ObjectDefinition]"
+>
 
   <jcr:content
     jcr:primaryType="per:PageContent"
