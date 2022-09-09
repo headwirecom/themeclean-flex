@@ -5,7 +5,7 @@
   jcr:primaryType="per:Page"
   jcr:title="themecleanflex root object"
   jcr:description="themecleanflex Objects Root"
-  allowedNodeTypes="[per:ObjectDefinition]"
+  allowedObjects="[]"
 >
 
   <jcr:content
