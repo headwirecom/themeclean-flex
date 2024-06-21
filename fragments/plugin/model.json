@@ -1,0 +1,32 @@
+{
+  "definitions": {
+    "Plugin": {
+      "type": "object",
+      "x-type": "component",
+      "properties": {
+        "mount": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Javascript function to call on component mount",
+          "x-form-hint": "Function must accept (el)",
+          "x-form-type": "text",
+          "x-form-group": "content",
+          "x-default": ""
+        },
+        "unmount": {
+          "type": "string",
+          "x-source": "inject",
+          "x-form-label": "Javascript function to call on component unmount",
+          "x-form-hint": "Function must accept (el)",
+          "x-form-type": "text",
+          "x-form-group": "content",
+          "x-default": ""
+        },
+        "bgref": {
+          "$ref": "fragments/block/model.json#/definitions/Block",
+          "x-form-type": "reference"
+        }
+      }
+    }
+  }
+}
