@@ -36,7 +36,7 @@
           <div class="self-center" v-bind:style="{width: item.imagewidth + &quot;%&quot;}">
             <v-lazy-image v-bind:class="model.showcard === 'true' ||  model.cardborder === 'true' ? 'card-img w-full' : 'card-img mb-3 w-full'"
             v-bind:src="$helper.pathToUrl(item.image)" v-bind:alt="item.imagealttext"
-            v-if="item.image"></v-lazy-image>
+            v-bind:src-placeholder="placeholderSrc(item)" v-if="item.image"></v-lazy-image>
           </div>
           <div class="flex flex-grow flex-col justify-between p-0" v-bind:class="{
             'p-6': model.showcard === 'true' || model.cardborder === 'true'
@@ -80,6 +80,10 @@
       methods: {
           showbutton(card) {
             return this.model.showbutton === 'true' && card.buttontext.length
+          },
+          placeholderSrc(item) {
+            const size = item.imageSize
+            return size ? `data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size.width} ${size.height}"%3E%3C/svg%3E` : null
           }
       }
   }

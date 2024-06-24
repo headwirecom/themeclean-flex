@@ -1,0 +1,7 @@
+{
+  "title": "Form - Input Types",
+  "group": "Features",
+  "model": {
+    "schema": "{\n\"groups\":[\n{\n\"legend\":\"Text Inputs\",\n\"fields\": [\n  {\n    \"type\": \"label\",\n    \"label\": \"Label\",\n    \"model\": \"label\"\n  },{\n    \"type\": \"input\",\n    \"inputType\": \"text\",\n    \"label\": \"Text\",\n    \"model\": \"text\",\n    \"id\": \"text\",\n    \"placeholder\": \"Text\"\n  },{\n    \"type\": \"textArea\",\n    \"label\": \"Text Area\",\n    \"model\": \"textarea\",\n    \"id\": \"textarea\",\n    \"rows\": 4,\n    \"placeholder\": \"Enter text here\"\n  }\n  ]\n},\n{\n\"legend\":\"Other Inputs\",\n\"fields\": [\n  {\n    \"type\": \"radios\",\n    \"label\": \"Radios\",\n    \"model\": \"radios\",\n    \"values\": [\n      \"Option 1\",\n      \"Option 2\"\n    ]\n  },{\n    \"type\": \"checkbox\",\n    \"label\": \"Checkbox\",\n    \"model\": \"checkbox\",\n    \"default\": true\n  },{\n    \"type\": \"checklist\",\n    \"label\": \"Checklist\",\n    \"model\": \"checklist\",\n    \"listBox\": true,\n    \"values\": [\n      \"Option 1\",\n      \"Option 2\"\n    ]\n  },{\n    \"type\": \"select\",\n    \"label\": \"Select\",\n    \"model\": \"select\",\n    \"values\": [\n      \"Option 1\",\n      \"Option 2\"\n    ]\n  },{\n    \"type\": \"submit\",\n    \"buttonText\": \"Submit Button\",\n    \"validateBeforeSubmit\": false\n  }\n]}]}"
+  }
+}

@@ -8,7 +8,9 @@
 
 /* Base Overrides */
 
-html {
+html,
+textarea,
+select {
   @apply font-sans text-base;
 }
 
@@ -278,7 +280,6 @@ p {
   }
 }
 
-
 /* header */
 [class$="components-header"] a {
   @apply text-sm font-medium;
@@ -324,5 +325,60 @@ p {
   border-radius: 9999px;
 }
 
+/* form */
+[class$="components-form"] fieldset{
+  padding: 0;
+  margin: 0;
+}
+[class$="components-form"] legend {
+  font-size: 20px;
+}
+.vue-form-generator .field-label span {
+  margin-left: 0;
+}
+.vue-form-generator .field-checkbox input {
+  margin-right: 5px;
+  margin-left: 1px;
+}
+[class$="components-form"] .field-checkbox {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
 
+[class$="components-form"] .normal-button input[type="submit"]{
+  width: min-content;
+}
+[class$="components-form"] .lg-button input[type="submit"]{
+  width: min-content;
+  @apply py-4 px-5 text-lg
+}
+[class$="components-form"] .sm-button input[type="submit"]{
+  width: min-content;
+  @apply py-2 px-2 text-sm
+}
+[class$="components-form"] .full-button input[type="submit"]{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+[class$="components-form"] .justify-button-start{
+  align-items: flex-start;
+}
+[class$="components-form"] .justify-button-start .field-submit > div{
+  justify-content: flex-start;
+}
+[class$="components-form"] .justify-button-center{
+  align-items: center;
+}
+[class$="components-form"] .justify-button-center .field-submit > div{
+  justify-content: center;
+}
+[class$="components-form"] .justify-button-end{
+  align-items: flex-end;
+}
+[class$="components-form"] .justify-button-end .field-submit > div{
+  justify-content: flex-end;
+}
 /* purgecss end ignore */

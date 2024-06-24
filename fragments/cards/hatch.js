@@ -53,6 +53,7 @@ module.exports = {
         f.bindAttribute($.find('v-lazy-image').first(), 'class', "model.showcard === 'true' ||  model.cardborder === 'true' ? 'card-img w-full' : 'card-img mb-3 w-full'")
         f.bindAttribute($.find('v-lazy-image').first(), 'src', f.pathToUrl('item.image'))
         f.bindAttribute($.find('v-lazy-image').first(), 'alt', 'item.imagealttext')
+        f.bindAttribute($.find('v-lazy-image').first(), 'src-placeholder', 'placeholderSrc(item)')
         f.addIf($.find('v-lazy-image').first(), 'item.image')
 
         //Title
