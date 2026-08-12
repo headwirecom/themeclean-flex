@@ -56,7 +56,7 @@
         <jar.plugin.version>3.0.2</jar.plugin.version>
         <enforcer.plugin.version>1.4.1</enforcer.plugin.version>
         <compiler.plugin.version>3.6.1</compiler.plugin.version>
-        <bundle.plugin.version>4.2.1</bundle.plugin.version>
+        <bundle.plugin.version>5.1.9</bundle.plugin.version>
         <clean.plugin.version>3.0.0</clean.plugin.version>
         <installer.plugin.version>2.5.2</installer.plugin.version>
         <surfire.plugin.version>2.20</surfire.plugin.version>
@@ -80,12 +80,13 @@
         <jettyplugin.version>6.1.23</jettyplugin.version>
 
         <!-- various properties which influence generated archetypes -->
-        <archetype.java.version>11</archetype.java.version>
+        <archetype.java.version>17</archetype.java.version>
 
         <!-- dependency versions to use in generated archetypes -->
         <junit.version>4.13.2</junit.version>
         <scrannotations.version>1.9.12</scrannotations.version>
-        <slingapi.version>2.23.0</slingapi.version>
+        <!-- must match the Sling API shipped by peregrine-builder (Starter 14) -->
+        <slingapi.version>3.0.2</slingapi.version>
         <slf4japi.version>1.7.6</slf4japi.version>
 
         <!-- define archetype tooling version in a central place -->

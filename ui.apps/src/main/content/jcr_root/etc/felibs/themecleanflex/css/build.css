@@ -126,11 +126,6 @@ a {
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 
-
-strong {
-  font-weight: bolder;
-}
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -365,7 +360,6 @@ pre {
 button {
   background-color: transparent;
   background-image: none;
-  padding: 0;
 }
 
 /**
@@ -528,7 +522,6 @@ code {
 img,
 svg,
 video,
-canvas,
 iframe,
 object {
   display: block;
@@ -575,8 +568,6 @@ video {
     max-width: 1280px;
   }
 }
-
-@tailwind perflight;
 
 .bg-white {
   --bg-opacity: 1;
@@ -1004,7 +995,8 @@ video {
 }
 
 .focus\:outline-none:focus {
-  outline: 0;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .overflow-hidden {
@@ -1401,6 +1393,37 @@ video {
   transition-duration: 200ms;
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
 .aspect-ratio-16\/9 {
   padding-bottom: 56.25%;
 }
@@ -1412,8 +1435,6 @@ video {
 .transition-height {
   transition: height 200ms ease;
 }
-
-/* purgecss start ignore */
 
 /* Base Overrides */
 
@@ -1662,7 +1683,8 @@ p {
 }
 
 .btn:focus {
-  outline: 0;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
@@ -1907,8 +1929,6 @@ p {
 [class$="components-form"] .error {
   color: var(--color-red-500) !important;
 }
-
-/* purgecss end ignore */
 
 @media (min-width: 640px) {
 
