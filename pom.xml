@@ -260,6 +260,14 @@
                     <artifactId>maven-bundle-plugin</artifactId>
                     <version>${bundle.plugin.version}</version>
                     <inherited>true</inherited>
+                    <configuration>
+                        <instructions>
+                            <!-- bnd 6.x stamps osgi.ee="UNKNOWN" for Java 25 class files
+                                 (unknown class-file version 69), leaving bundles unresolved.
+                                 Suppress the EE requirement; runtime JDK is pinned by the far. -->
+                            <_noee>true</_noee>
+                        </instructions>
+                    </configuration>
                 </plugin>
                 <!-- Maven Dependency Plugin -->
                 <plugin>
